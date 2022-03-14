@@ -1,0 +1,149 @@
+
+\ProvidesClass{ucalgmthesis}[2019/10/24
+  University of Calgary Memoir Thesis Class]
+
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+
+%% Options for spacing (default is 1.5 spacing)
+
+% All pages must be double or one-and-one-half spaced (Note: this
+% includes your Abstract, Acknowledgments, Dedications, etc.).  You
+% can use single-line spacing if you have a long Table of Contents,
+% List of Tables, List of Figures, or for long quotes in the body of
+% your thesis). Use \verb|memoir|'s \verb|SingleSpace| environment to
+% typeset, e.g., a quotation single spaced.
+
+\DeclareOption{singlespaced}{\AtEndOfClass{\SingleSpacing}}
+\DeclareOption{onehalfspaced}{\AtEndOfClass{\OnehalfSpacing}}
+\DeclareOption{doublespaced}{\AtEndOfClass{\DoubleSpacing}}
+
+% Options for typefaces
+
+              
+% options for headings
+
+\DeclareOption{plain}{\AtBeginDocument{\pagestyle{plain}}}
+\DeclareOption{headers}{\AtBeginDocument{\pagestyle{ucalgaryruled}}}
+
+% options for the typeblock
+
+% fullpage uses the entire space available: 1 in on all sides, set the
+% typeblock to fill to the margins. We do this when the class is loaded
+% so it takes into account any changes to the fonts and type
+% size made using the class options, but not anything done later
+% after the class is called. Since memoir will set the line
+% width to \textwidth when it first computes the default type block
+% size, we have to reset that after we change the type block.
+
+\DeclareOption{fullpage}{
+  \AtEndOfClass{\fullpagethesis}}
+
+% manuscript sets the typeblock to approximately 72 characters by 25
+% lines at 12pt and using double line spacing and sets left and right
+% margins evenly.
+              
+% All other options are passed to the base class directly.
+
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{memoir}}
+
+% By default, typeset with one half spacing, no running heads
+
+\ExecuteOptions{onehalfspaced,plain}
+
+\PassOptionsToClass{12pt}{memoir}
+\ProcessOptions
+
+% now load memoir
+
+\LoadClass{memoir}
+
+\newcommand*{\fixmdhrulefill}{\def\hrulefill{\leavevmode\leaders \hrule height \rulethickness \hfill\kern\z@}}
+
+% \makethesistitle formats the title page
+
+\newcommand{\makethesistitle}{
+  \begin{titlingpage*}
+    \begin{center}\begin{DoubleSpace}
+      UNIVERSITY OF CALGARY \\
+      \vfill
+      {\@title \par}
+      \vfill        
+      by \\
+      \vfill
+      {\@author \par}
+      \vfill
+      {A \@thesis} \par
+      SUBMITTED TO THE FACULTY OF GRADUATE STUDIES \par
+      IN PARTIAL FULFILLMENT OF THE REQUIREMENTS FOR THE \par
+      {DEGREE OF \@degree}
+      \vfill
+      \@dept \par
+      \vfill
+      {CALGARY, ALBERTA \par}
+      {{\@monthname}, {\@gradyear} \par}
+      \vfill
+      {\copyright\ {\@author}~{\@gradyear} \par}
+    \end{DoubleSpace}\end{center}
+  \end{titlingpage*}
+}
+
+\newcommand{\dedication}[1]{%
+  {\clearpage\thispagestyle{plain}\mbox{}\vfill
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Dedication}%
+    \centering #1 \par\vfill\clearpage}}
+
+% Commands for the thesis title page
+
+\def\dept#1{\gdef\@dept{\uppercase{#1}}}
+\let\prog\dept % compatibility with ucalgthes class
+\def\degree#1{\gdef\@degree{\uppercase{#1}}}
+\def\monthname#1{\gdef\@monthname{#1}}
+\def\gradyear#1{\gdef\@gradyear{#1}}
+\let\thesisyear\gradyear
+\def\thesis#1{\gdef\@thesis{\uppercase{#1}}}
+\thesis{Thesis}
+
+% Ruled pagestyle according to rules: folio centered in footer,
+% headers with a rule. Chapter number and title flush right.  Also
+% works twosided, in which case the verso headers hold the chapter
+% title and the recto headers the section title.
+
+\copypagestyle{ucalgaryruled}{ruled}
+\if@twoside
+    \makeevenhead{ucalgaryruled}{\leftmark}{}{}
+    \makeoddhead{ucalgaryruled}{}{}{\rightmark}
+\else
+    \makeoddhead{ucalgaryruled}{}{}{\leftmark}
+\fi
+
+\makeoddfoot{ucalgaryruled}{}{\thepage}{}
+\makeevenfoot{ucalgaryruled}{}{\thepage}{}
+
+% Since the TOC must include everything in the front matter, the
+% default TOC style looks odd. We reduce the space between chapter
+% entries and add dotted leaders also to chapters.
+
+\setlength{\cftbeforechapterskip}{1pt plus 0pt}
+
+\renewcommand{\cftchapterleader}{\normalfont\cftdotfill{\cftsectiondotsep}}
+\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\@listI}{%
+	\leftmargin=25pt
+	\rightmargin=0pt
+	\labelsep=5pt
+	\labelwidth=20pt
+	\itemindent=0pt
+	\listparindent=0pt
+	\topsep=0pt plus 2pt minus 4pt
+	\partopsep=0pt plus 1pt minus 1pt
+	\parsep=0pt plus 1pt
+	\itemsep=\parsep}
+
+
+
+% we need toc, lof, lot to begin on a new page
+
+\def\tocheadstart{\clearpage}
+\def\lofheadstart{\clearpage}
+\def\lotheadstart{\clearpage}
