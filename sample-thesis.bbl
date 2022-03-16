@@ -1289,6 +1289,31 @@
     \field{year}{2002}
   \endentry
 
+  \entry{Knuth1986}{book}{}
+    \name{author}{1}{}{%
+      {{hash=KDE}{%
+         family={Knuth},
+         familyi={K\bibinitperiod},
+         given={Donald\bibnamedelima E.},
+         giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Addison-Wesley}%
+    }
+    \strng{namehash}{KDE1}
+    \strng{fullhash}{KDE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{The TeXbook}
+    \list{location}{1}{%
+      {Boston}%
+    }
+    \field{year}{1986}
+  \endentry
+
   \entry{krings2012effects}{article}{}
     \name{author}{5}{}{%
       {{hash=KG}{%
@@ -1338,6 +1363,31 @@
     \field{volume}{1}
     \field{journaltitle}{EPJ Data Science}
     \field{year}{2012}
+  \endentry
+
+  \entry{Lamport1986}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LL}{%
+         family={Lamport},
+         familyi={L\bibinitperiod},
+         given={Leslie},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Addison-Wesley}%
+    }
+    \strng{namehash}{LL1}
+    \strng{fullhash}{LL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{LaTeX: A Document Preparation System}
+    \list{location}{1}{%
+      {Reading, Mass.}%
+    }
+    \field{year}{1986}
   \endentry
 
   \entry{leskovec2008microscopic}{inproceedings}{}
@@ -2356,6 +2406,28 @@
     \field{journaltitle}{Journal of Statistical Mechanics: Theory and
   Experiment}
     \field{year}{2021}
+  \endentry
+
+  \entry{Wilson2016}{booklet}{}
+    \name{author}{1}{}{%
+      {{hash=WP}{%
+         family={Wilson},
+         familyi={W\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WP1}
+    \strng{fullhash}{WP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{The Memoir Class for Configurable Typesetting}
+    \verb{url}
+    \verb https://ctan.org/pkg/memoir?lang=en
+    \endverb
+    \field{year}{2016}
   \endentry
 
   \entry{yang2014structure}{article}{}

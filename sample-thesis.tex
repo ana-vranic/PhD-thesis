@@ -6,13 +6,8 @@
 \usepackage{mathpazo} % Use the Palatino font by default
 %\usepackage{times} %use times new font
 
-% Using LaTeX? Then you're probably using math, and so you want to use
-% the AMS math commands and define some theorem environments! But you
-% can take these out or use your own favorite theorem package.
-
 \usepackage{amsmath,amsthm}
 \usepackage[backend=bibtex,style=numeric,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
-
 \addbibresource{sample-thesis.bib} % The filename of the bibliography
 
 \usepackage{graphicx}
@@ -23,9 +18,18 @@
 \theoremstyle{definition}
 \newtheorem{defn}[thm]{Definition} % please number all of them together!
 
-\usepackage{titlesec}
-\titlespacing{\section}{0pt}{\baselineskip}{\baselineskip}
-\titlespacing{\subsection}{0pt}{\baselineskip}{\baselineskip}
+%\usepackage{titlesec}
+%\titlespacing{\section}{0pt}{0.5\baselineskip}{\baselineskip}
+%\titlespacing{\subsection}{0pt}{0.5\baselineskip}{\baselineskip}
+
+
+%\usepackage{enumitem}
+%\setlist{nosep} 
+%\setlist{noitemsep}
+%\setlist{topsep=0pt,itemsep=0ex,partopsep=0ex,parsep=0ex}
+%\tightlists
+
+
 
 % microtype makes everything look better
 
@@ -132,7 +136,7 @@
 % frontmatter.tex contains the abstract, preface, acknowledgments, and
 % the commands to produce the table of contents, list of tables, etc.
 
-%\include{frontmatter}
+\include{frontmatter}
 
 % The main matter of the thesis contains the actual content, separated
 % into chapters.

@@ -1,0 +1,106 @@
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Contents}{i}{section*.1}%
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Complex networks}{1}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}The structure of complex networks}{2}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}The dynamics of complex networks}{3}{section.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{The random graph model }{3}{section*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Small world networks}{3}{section*.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Barabasi-Albert model}{4}{section*.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Nonlinear BA model}{5}{section*.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4} Network structures}{6}{section.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Bipartite networks}{6}{section*.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Core-periphery networks}{7}{section*.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Communities}{7}{section*.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Stochastic block model}{8}{section*.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Distributions properties}{9}{section.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{power law}{9}{section*.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{log normal}{9}{section*.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}Graph isomorphism}{9}{section.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.7}In This Thesis}{9}{section.1.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {2}Driving signals}{11}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Growing signals}{11}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Long range correlated signals}{11}{section*.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Multifractal analysis}{12}{section*.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Real signals}{13}{section*.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Growing network model with aging nodes}{15}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Structural differences between networks }{16}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{D-measure}{16}{section*.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{The assortativity and clustering}{18}{section*.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Conclusions}{22}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {3}Groups growth model}{23}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Introduction}{23}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Data }{25}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Empirical analysis of social group growth }{26}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Model }{27}{section.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Results }{30}{section.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {4}Stack Exchange}{33}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Data }{33}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Method }{35}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Network mapping}{35}{section*.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Clustering}{36}{section*.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Core-periphery structure}{36}{section*.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Dynamic reputation model}{37}{section*.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Results }{40}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Clustering and core-periphery structure of knowledge-sharing networks}{40}{section*.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Dynamic reputation of users within the network of interactions}{42}{section*.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Negative interactions}{44}{section*.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Dynamic reputation - $\beta $ parameter}{44}{section*.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Dynamic reputation in the network of interactions}{48}{section*.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Core-periphery structure of the interaction networks}{49}{section*.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{The choice of the sliding window}{53}{section*.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Area51 criteria}{54}{section*.28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{57}{section*.30}%

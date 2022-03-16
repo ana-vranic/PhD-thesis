@@ -21,34 +21,19 @@
 
               
 % options for headings
-
 \DeclareOption{plain}{\AtBeginDocument{\pagestyle{plain}}}
 \DeclareOption{headers}{\AtBeginDocument{\pagestyle{ucalgaryruled}}}
 
-% options for the typeblock
-
-% fullpage uses the entire space available: 1 in on all sides, set the
-% typeblock to fill to the margins. We do this when the class is loaded
-% so it takes into account any changes to the fonts and type
-% size made using the class options, but not anything done later
-% after the class is called. Since memoir will set the line
-% width to \textwidth when it first computes the default type block
-% size, we have to reset that after we change the type block.
 
 \DeclareOption{fullpage}{
   \AtEndOfClass{\fullpagethesis}}
 
-% manuscript sets the typeblock to approximately 72 characters by 25
-% lines at 12pt and using double line spacing and sets left and right
-% margins evenly.
-              
-% All other options are passed to the base class directly.
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{memoir}}
 
 % By default, typeset with one half spacing, no running heads
 
-\ExecuteOptions{onehalfspaced,plain}
+\ExecuteOptions{singlespaced,plain}
 
 \PassOptionsToClass{12pt}{memoir}
 \ProcessOptions
@@ -128,19 +113,6 @@
 
 \renewcommand{\cftchapterleader}{\normalfont\cftdotfill{\cftsectiondotsep}}
 \renewcommand{\contentsname}{Table of Contents}
-\renewcommand{\@listI}{%
-	\leftmargin=25pt
-	\rightmargin=0pt
-	\labelsep=5pt
-	\labelwidth=20pt
-	\itemindent=0pt
-	\listparindent=0pt
-	\topsep=0pt plus 2pt minus 4pt
-	\partopsep=0pt plus 1pt minus 1pt
-	\parsep=0pt plus 1pt
-	\itemsep=\parsep}
-
-
 
 % we need toc, lof, lot to begin on a new page
 

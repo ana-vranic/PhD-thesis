@@ -161,7 +161,6 @@ The simple method for finding core-periphery structure is to assume that nodes i
 
 The another way to detect core-periphery structure is to use the inference method based on fits to a stochastic block model. In this method we fit observed network to a block model with two groups, such that edge-probabilities have form $p_{11}> p_{12} > p_{22}$. The only downside of this model is that method is going to find the structure that optimize likelihood, and we can not say weather it is core-periphery or community structure. 
 
-
 \subsection{Communities}
 
 Thus the ability to find groups or clusters in a network can be a useful tool for revealing structure and organization within networks at a scale larger than that of a single node or a
@@ -188,7 +187,6 @@ detection. Simple though it is to describe, community detection turns out to be
 a challenging task, but a number of methods have been developed that return
 good results in practical situations.
 
-
 \subsection{Stochastic block model}
 The network or graph is the structure of nodes and edges, where each edge connects two nodes. Nodes can be organized into groups, called communities. Identifying these hidden blocks can lead to interesting insights into the network. However, the community detection problem does not give a precise definition of what a community is. As a consequence, many approaches try to recover such structural patterns in the network \cite{martin}.
 
@@ -197,14 +195,17 @@ A common definition of a community is that it is densely connected subgraph \cit
 Another type of networks is the bipartite network that has two disjoint sets of nodes. The edges exist only between nodes from different sets. Networks of this class can appear in real-world data, such as users-movies preference, collaboration network for scientists and papers, etc. Application of density-based approach requires to first project bipartite network to one of its partitions and then find communities in that projection. With this, some information is lost. On the other hand, the method that is directly applicable to bipartite networks is Stochastic Block model, from which the models considered in this paper are derived.
 
 Stochastic block model (SBM) is based on connection probabilities between nodes. It is a generative model which includes existence of communities. Parameters that describe SBM for network G with N nodes are:
+
 \begin{itemize}
 	\item k: number of groups
 	\item group assignment vector, g: $g_i \in\{1,2..k\}$, gives the group index of node $i$.
 	\item SBM matrix, $p_{k \times k}$, whose elements $p_{ij}$ are the probabilities that edges between groups $g_i$ and $g_j$ exist.
 \end{itemize}
+
 Note that nodes within one group have the same connection probabilities.
 
 SBM can generate and describe different types of network structures. Figure \ref{fig:SBM} \cite{userguide} shows how the model matrix corresponds to resulting networks with two communities. First, for the assortative network (\ref{fig:SBM} a), diagonal elements of the matrix have higher probabilities. This indicates dense connections inside the group, just like in classic community structures. In disassortative structure, (\ref{fig:SBM} b), more connections exist between two partitions than inside them, i.e. off-diagonal elements have higher probabilities. Bipartite networks can be represented like this. 
+
 Figure (\ref{fig:SBM} c) shows how the model represents core-periphery networks. Nodes of one block (core) are well connected with itself and with other partition (periphery). From the last case, we can note that SBM with one group is the Erdos Renyi random graph (\ref{fig:SBM} d) because all probabilities inside and between groups are equal.
 
 The benefit of this model is that we can generate many networks with similar group structure. The model can fit real data, which results in finding network communities. For the given network $G$ and number of groups $k$, the best nodes partition $g$ is found by maximizing the likelihood function. Beside inferring communities, SBM has application in prediction of missing links. This simply formulated model has many variants, motivated by specific properties of real data. For example, for networks which are degree heterogeneous, there is degree corrected SBM. In some social networks, users can belong to more than one group, and this can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, hierarchical model, etc. Also, several algorithms for optimization of likelihood function are proposed. The overview of these versions and methods are given in \cite{comparison}. In this paper, we will focus on Single and Mixed Membership SBM applied on bipartite networks.  
@@ -215,14 +216,23 @@ The benefit of this model is that we can generate many networks with similar gro
 	\label{fig:SBM}
 \end{figure}
 
-\section{Graph isomorphism}
 
+\section{Distributions properties}
+
+\subsection{power law}
+\subsection{log normal}
+
+\section{Graph isomorphism}
 
 Weisfeiler-Lehman Test
 
+<<<<<<< HEAD
 \section{Distributions}
 
 Power-law distributions characterize many social and biological systems. Power-law distributions are also easy to generate. 
+=======
+
+>>>>>>> c35d6da4d7cfa5b4cdc7563fd5fadc9c65cd7244
 
 \section{In This Thesis}
 
