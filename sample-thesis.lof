@@ -1,0 +1,84 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\addvspace {10pt}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces The Kronigsber problem of seven bridges.}}{2}{figure.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Stochastic Block model for different networks structures. (a) assortative. (b) dissortative. (c) core-periphery. (d) Erdos Renyi random graph.}}{11}{figure.1.2}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10pt}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Growing network model schema.}}{14}{figure.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Monofractal signals}}{15}{figure.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Growth signals for TECH (a) and MySpace (b) social groups, their randomized counterparts, and random signal drawn from Poasonian distribution with mean $1$. The cumulative signals are shown in insets.}}{17}{figure.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Dependence of Hurst exponent on parameter $q$ for all five signals shown in figure \ref {fig:signals} obtained with MFDFA. }}{17}{figure.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Phase diagram of aging network model}}{18}{figure.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces D-distance between networks generated with different long-range correlated signals with fixed value of Hurst exponent and networks generated with constant signal M=4.}}{20}{figure.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces The comparison of networks grown with growth signals shown in figure \ref {fig:signals} versus ones grown with constant signal $M=1$, for value of parameter $\alpha \in [-3,-1]$ and $\beta \in [1,3]$. $M(t)$ is the number of new nodes, and $L$ is the number of links added to the network in each time step. The compared networks are of the same size.}}{22}{figure.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Aindex}}{23}{figure.2.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Degree distribution, the dependence of average first neighbor degree on node degree, dependence of node clustering on node degree for networks grown with different time-varying and constant signals. Model parameters have value $\alpha =-1.0$, $\beta =1.5$ and $L=2$ for all networks. The networks are from scale-free class.}}{24}{figure.2.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Degree distribution, the dependence of average first neighbor degree on node degree, dependence of node clustering on node degree for networks grown with different time-varying and constant signals. Model parameters have value $L=2, \alpha =-1.5$, $\beta =1.5$. The networks have stretched exponential degree distribution.}}{24}{figure.2.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Degree distribution, the dependence of average first neighbor degree on node degree, dependence of node clustering on node degree for networks grown with different time-varying and constant signals. Model parameters have value $ L=2, \alpha =-1.0$, $\beta =2.0$. Generated networks have scale-free properties.}}{25}{figure.2.11}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10pt}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The number of groups over time, sizes distribution and logrates distribution for Meetup groups created in London from 08-2002 until 07-2017 that were active in 2017 and subreddits created in the period from 01-2006 to the 12-2011 that were active in 2017. }}{31}{figure.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The figure shows the groups' sizes distributions and log rates distributions. Each distribution collects groups founded in the same year and is normalized with its mean value. The group sizes are at the end of 2017. for meetups and 2011. for subreddits. }}{33}{figure.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The top panel shows bipartite (user-group) and social (user-user) network. Filled nodes are active users, while thick lines are new links in this time step. In the social network dashed lines show that users are friends but still do not share same groups. The lower panel shows model schema. \textbf {Example:} user $u_6$ is new user. First it will make random link with node $u_4$, and then with probability $p_g$ makes new group $g_5$. With probability $p_a$ user $u_3$ is active, while others stay inactive for this time step. User $u_3$ will with probability $1-p_g$ choose to join one of old groups and with probability $p_{aff}$ linking is chosen to be social. As its friend $u_2$ is member of group $g_1$, user $u_3$ will also join group $g_1$. Joining group $g_1$, user $u_3$ will make more social connections, in this case it is user $u_1$.}}{35}{figure.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces }}{36}{figure.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces }}{37}{figure.3.5}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10pt}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Number of active questions within 7 days sliding windows. Solid line - active sites; dashed lines - closed sites.}}{41}{figure.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Dynamic Reputation on the four pairs of Stack Exchange websites: Astronomy, Literature, Economics, Physics and Theoretical Physics.}}{47}{figure.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Mean clustering coefficient.}}{49}{figure.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Links per node in core and links per node between core and periphery.}}{50}{figure.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Dynamical reputation within core.}}{51}{figure.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Dependence of parameter $\beta $ and number of days $\Delta $ needed for reputation $I_n$ to drop to $I_{n_0} = 1$. Dependence of parameter $\beta $ and number of days when reputation due inactivity decreases from $I_n$ to $I_0$ is given as $\beta = (\frac {I_{n0}}{I_{n}})^{(1/\Delta )}$ }}{53}{figure.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces RMSE between number of active users in sliding window of 30 days and number of users with reputation $>1$ for $0.94< \beta <0.97$ with step $0.001$. }}{54}{figure.4.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Number of active users in a sliding window of 30 days and number of users with dynamic reputation higher than 1 for $\beta =0.954$ and $\beta =0.96 $ which provide the best fit to the number of users in 30 days sub-networks for each community}}{54}{figure.4.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Solid lines represent number of users with dynamic reputation higher than 1 for $\beta =0.96$ while dashed lines are number of users within 30 days sliding window who were active and remained to be active. Blue lines are beta, while red lines are area51 communities.}}{55}{figure.4.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Gini index of dynamic reputation within population\textbf {Podsetnik da i ova slika treba da ide do 180 dana}}}{56}{figure.4.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Dynamic Reputation assortativity in the network of interactions (questions, answers, comments, unweighted, undirected network). Solid lines - active sites; dashed lines - closed sites.}}{57}{figure.4.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Coefficient of correlation between users' Dynamic Reputation and users' network degree (top) and users's betweenness centrality (bottom). Solid lines - active sites; dashed lines - closed sites.}}{58}{figure.4.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Minimum description lenght, number of nodes in core, normalized mutual information, adjusted rand index, F1 measure and Jaccard index, among 50 samples for 30days sub-networks. Results are given for closed astronomy. }}{59}{figure.4.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Jaccard index between core users in sub-networks at time points $t1$ and $t2$}}{60}{figure.4.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Jaccard index between core users in 30days sub-networks for all possible pairs of 30 days sub-networks separated by time interval $|t_i - t_j|$}}{60}{figure.4.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Just for reference size of the core (top) and fraction of users in core (bottom). Solid lines - active sites; dashed lines - closed sites.}}{61}{figure.4.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Ratio between the total reputation within network core and periphery. Solid lines beta communities, dashed lines area 51 communities.}}{61}{figure.4.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Links per node among popular users (top 10\% of users) and between popular and casual users (everyone but popular users). Reminder: only 3rd and 5th columns should stay and only for reference to previous research, while our point is to this selection via core/periphery decomposition without thresholding.}}{62}{figure.4.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Results for different sliding windows. Example is for astronomy, blue solid lines- active, orange dashed lines - closed site. }}{64}{figure.4.19}%

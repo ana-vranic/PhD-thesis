@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: sample-thesis.aux
 The style file: biblatex.bst
+A level-1 auxiliary file: frontmatter.aux
 A level-1 auxiliary file: Chapters/Chapter_Introduction.aux
 A level-1 auxiliary file: Chapters/Chapter_DrivingSignal.aux
 A level-1 auxiliary file: Chapters/Chapter_GroupsGrowth.aux
@@ -21,7 +22,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 14174 items from 5000.
+Reallocated field_info (elt_size=4) to 14591 items from 5000.
 Database file #1: sample-thesis-blx.bib
 Database file #2: sample-thesis.bib
 You're missing a field name---line 1033 of file sample-thesis.bib
@@ -53,45 +54,45 @@ Warning--I didn't find a database entry for "www.meetup.com"
 Biblatex version: 3.13
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 61 entries,
+You've used 64 entries,
             6365 wiz_defined-function locations,
-            1570 strings with 23160 characters,
-and the built_in function-call counts, 542043 in all, are:
-= -- 42898
-> -- 8784
-< -- 2584
-+ -- 14153
-- -- 3484
-* -- 40823
-:= -- 60601
+            1588 strings with 23441 characters,
+and the built_in function-call counts, 555223 in all, are:
+= -- 43728
+> -- 9068
+< -- 2702
++ -- 14378
+- -- 3558
+* -- 41625
+:= -- 61656
 add.period$ -- 0
-call.type$ -- 61
-change.case$ -- 1626
+call.type$ -- 64
+change.case$ -- 1703
 chr.to.int$ -- 72
-cite$ -- 120
-duplicate$ -- 53232
-empty$ -- 47361
-format.name$ -- 5222
-if$ -- 110405
+cite$ -- 126
+duplicate$ -- 54671
+empty$ -- 48663
+format.name$ -- 5367
+if$ -- 113337
 int.to.chr$ -- 0
-int.to.str$ -- 181
+int.to.str$ -- 191
 missing$ -- 0
-newline$ -- 2608
-num.names$ -- 3627
-pop$ -- 22412
+newline$ -- 2680
+num.names$ -- 3808
+pop$ -- 23401
 preamble$ -- 1
-purify$ -- 2136
+purify$ -- 2219
 quote$ -- 0
-skip$ -- 13729
+skip$ -- 14346
 stack$ -- 0
-substring$ -- 80067
-swap$ -- 11620
-text.length$ -- 1788
-text.prefix$ -- 60
+substring$ -- 81227
+swap$ -- 12013
+text.length$ -- 1860
+text.prefix$ -- 63
 top$ -- 1
-type$ -- 2062
+type$ -- 2164
 warning$ -- 0
-while$ -- 7777
+while$ -- 7914
 width$ -- 0
-write$ -- 2548
+write$ -- 2617
 (There were 5 error messages)
