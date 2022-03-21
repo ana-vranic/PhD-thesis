@@ -217,22 +217,77 @@ The benefit of this model is that we can generate many networks with similar gro
 \end{figure}
 
 
-\section{Distributions properties}
-
-\subsection{power law}
-\subsection{log normal}
-
 \section{Graph isomorphism}
 
 Weisfeiler-Lehman Test
 
-<<<<<<< HEAD
 \section{Distributions}
 
+\subsection{power-law}
 Power-law distributions characterize many social and biological systems. Power-law distributions are also easy to generate. 
-=======
 
->>>>>>> c35d6da4d7cfa5b4cdc7563fd5fadc9c65cd7244
+\subsection{log-normal}
+Many measurments in the nature show a more or less skewed distribution. They are common when mean values are low, variances are large and values can not be negative as example in distribution of minearal resources in the Eart. Such skewed distributions often closely fit to log-normal distribution. 
+
+What is the difference between normal and lognormal variability? A major difference is that effect can be additive or multiplicative, leading to normal or lognormal distribution. Basic principles of additive and multiplicative effects can be easily demonstrated with the help od two dices. Adding the two numbers, which is the principle of the most games, leads to values from 2 to 12 with mean of 7, and simetrical frequency distribution. Multiplying the two numbers, leads to values from 1 to 36 with highly skewed distribution. Although these examples are not normal or lognormal they give us clear difference how different distributions can emerge. 
+
+Log-normal distributions are usually characterized in the term of the log-transformed variable, using as parameters the expected value, or the mean, and the standard deviation. This characerization can be advantageous as by definition log-normal distributions are simetrical at the log level. 
+
+The basic properties of the lognormal distributions
+
+Random variable $X$ if $log(X)$ is normaly distributed. Only positive values are possible for the variable and distribution is skewed. Two parameters are needed to specify lognormal distribution. Traditionaly the mean $\mu$ and standard deviation $\sigma$ or the variance of the $\sigma^2$ of $log(X)$ are used. However there are clear advantages of using transformed data, $\mu^{*} = e^{\mu}$, $\sigma^{*}= e ^{\sigma}$. The median of this lognormal distribution is $med(X)=\mu^{*}=e^{\mu}$, since $\mu$ is median of the $log(X)$.
+
+\begin{equation}
+f(x) = \frac{1}{x \sigma \sqrt{2\pi}}exp(-\frac{1}{2\sigma^2}(log(x)-\mu)^2)
+\end{equation}
+
+The mean is $exp(\mu + \sigma /2)$ and variance is $(exp(\sigma^2)-1)exp(2\mu+\sigma^2)$. 
+
+Estimation: The asymptotically most efficient (maximum likelihood) estimators are 
+\begin{equation}
+x* = exp (\frac{1}{n}\sum_{i=1}^n log(x_i)) = (\prod_{i=1}^nx_i)^{\frac{1}{n}}
+\end{equation}
+
+\begin{equation}
+s* = exp([\frac{1}{n-1}\sum[log(\frac{x_i}{x*})]^2]^{\frac{1}{2}})
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \section{In This Thesis}
 

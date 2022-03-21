@@ -29,15 +29,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Stochastic block model}{8}{section*.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Distributions properties}{9}{section.1.5}%
+\contentsline {section}{\numberline {1.5}Graph isomorphism}{9}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{power law}{9}{section*.10}%
+\contentsline {section}{\numberline {1.6}Distributions}{9}{section.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{log normal}{9}{section*.11}%
+\contentsline {subsection}{power-law}{9}{section*.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Graph isomorphism}{9}{section.1.6}%
+\contentsline {subsection}{log-normal}{9}{section*.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.7}In This Thesis}{9}{section.1.7}%
+\contentsline {section}{\numberline {1.7}In This Thesis}{10}{section.1.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {2}Driving signals}{11}{chapter.2}%
 \defcounter {refsection}{0}\relax 
