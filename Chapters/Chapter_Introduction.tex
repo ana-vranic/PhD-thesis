@@ -226,6 +226,25 @@ Weisfeiler-Lehman Test
 \subsection{power-law}
 Power-law distributions characterize many social and biological systems. Power-law distributions are also easy to generate. 
 
+the distributions: basic definitions and properties
+
+The nonnegative random variable X is said to have a power law distribution if 
+\begin{equation}
+Pr[X>x] \sim c x ^{-\alpha}
+\end{equation}
+
+for constants $c>0$ and $\alpha >0$. In power-law distribution asymptotically the tails fall according to power $\alpha$. Such distribution leads to much havier tails than other common models, as exponential distribution. 
+
+One specific power-law distribution is Pareto distribution which satisfies 
+
+\begin{equation}
+	Pr[X>x] = \frac{x}{k} ^{-\alpha}
+\end{equation}
+
+for some $\alpha>0$ and $k>0$. The Pareto requires $X>k$. The density function of Pareto distribution is $f(x)=\alpha k^\alpha x^{-\alpha-1}$. For power law distribution $\alpha$ is in the range $0 < \alpha < 2$, in which case X has infinite variance, if alpha <1 X has infinite mean.
+
+if X has power law distribution, then a in log-log plot $Pr(x)$ will behave as straight line. For the specific case of Pareto distribution, the behaviour is exactly linear as $ln (Pr(x)) = -\alpha (lnx -ln k) $. Similarly the density function is also straight line. $ln(f(x)) = (-\alpha - 1) ln (x) + \alpha ln (k) + ln(a)$
+
 \subsection{log-normal}
 Many measurments in the nature show a more or less skewed distribution. They are common when mean values are low, variances are large and values can not be negative as example in distribution of minearal resources in the Eart. Such skewed distributions often closely fit to log-normal distribution. 
 
@@ -235,7 +254,9 @@ Log-normal distributions are usually characterized in the term of the log-transf
 
 The basic properties of the lognormal distributions
 
-Random variable $X$ if $log(X)$ is normaly distributed. Only positive values are possible for the variable and distribution is skewed. Two parameters are needed to specify lognormal distribution. Traditionaly the mean $\mu$ and standard deviation $\sigma$ or the variance of the $\sigma^2$ of $log(X)$ are used. However there are clear advantages of using transformed data, $\mu^{*} = e^{\mu}$, $\sigma^{*}= e ^{\sigma}$. The median of this lognormal distribution is $med(X)=\mu^{*}=e^{\mu}$, since $\mu$ is median of the $log(X)$.
+Random variable $X$ if $log(X)$ is normally distributed., if $Y=ln X$ has normal Gaussian distribution.  
+
+Only positive values are possible for the variable and distribution is skewed. Two parameters are needed to specify lognormal distribution. Traditionaly the mean $\mu$ and standard deviation $\sigma$ or the variance of the $\sigma^2$ of $log(X)$ are used. However there are clear advantages of using transformed data, $\mu^{*} = e^{\mu}$, $\sigma^{*}= e ^{\sigma}$. The median of this lognormal distribution is $med(X)=\mu^{*}=e^{\mu}$, since $\mu$ is median of the $log(X)$.
 
 \begin{equation}
 f(x) = \frac{1}{x \sigma \sqrt{2\pi}}exp(-\frac{1}{2\sigma^2}(log(x)-\mu)^2)
@@ -253,32 +274,17 @@ s* = exp([\frac{1}{n-1}\sum[log(\frac{x_i}{x*})]^2]^{\frac{1}{2}})
 \end{equation}
 
 
+The lognormal distribution is skewed with mean $e^{\mu + \frac{1}{2}\sigma^2}$, median $e^\mu$ and mode $e^{\mu - \sigma^2 }$. It has finite mean and variance, in contrast to the power-law distribution.  
 
+Despite it has finite moments, the lognormal distribution can be similar to power-law. If $X$ has a lognormal distribution then loglog plot of density function can apear as straight line for a large portion of a body of distribution. If the variance is large, the distribution may appear linear on log-log plot for several orders of magnitude. The variance of the corresponding normal distribution is large, the distribution may appear linear on a log-log plot. To see this we can check the logarithm of density function. 
 
+\begin{equation}
+ln f(x) = - ln (x) - ln \sqrt{2\pi} \sigma - \frac{\ln(x)-\mu}^2{2\sigma^2} = -
+\end{equation}
 
+If $\sigma$ is large then the quadratic term will be small for large range of x values, so the logarithm of the density function will appear almost linear for large range of values. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Recall that normal distribution have property that the sum of two independent normal variables is normal variable. It follows that product of two lognormaly distributed random variables also has a lognormal distribution. 
 
 
 

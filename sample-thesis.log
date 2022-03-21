@@ -1,16 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.4)  21 MAR 2022 12:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.4)  21 MAR 2022 16:32
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**sample-thesis.tex
-(./sample-thesis.tex
+**/home/anav/github-working/PhD-thesis/sample-thesis.tex
+(/home/anav/github-working/PhD-thesis/sample-thesis.tex
 LaTeX2e <2020-02-02> patch level 2
-L3 programming layer <2020-02-14> (./ucalgmthesis.cls
-Document Class: ucalgmthesis 2019/10/24 University of Calgary Memoir Thesis Cla
-ss
+L3 programming layer <2020-02-14> (/home/anav/github-working/PhD-thesis/ucalgmthesis.cls
+Document Class: ucalgmthesis 2019/10/24 University of Calgary Memoir Thesis Class
 (/usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
-Document Class: memoir 2019/11/21 v3.7j configurable book, report, article docu
-ment class
+Document Class: memoir 2019/11/21 v3.7j configurable book, report, article document class
 \onelineskip=\skip47
 \lxvchars=\skip48
 \xlvchars=\skip49
@@ -24,8 +23,7 @@ Package: iftex 2019/11/07 v1.0c TeX engine tests
 \stockwidth=\skip51
 \trimtop=\skip52
 \trimedge=\skip53
-
-(/usr/share/texlive/texmf-dist/tex/latex/memoir/mem12.clo
+ (/usr/share/texlive/texmf-dist/tex/latex/memoir/mem12.clo
 File: mem12.clo 2010/10/19 v0.4b memoir class 12pt size option
 )
 \binding=\skip54
@@ -115,8 +113,7 @@ File: mem12.clo 2010/10/19 v0.4b memoir class 12pt size option
 \beforePoemTitleskip=\skip114
 \midPoemTitleskip=\skip115
 \afterPoemTitleskip=\skip116
-
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen139
 \ar@mcellbox=\box45
@@ -125,14 +122,11 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \extratabsurround=\skip117
 \backup@length=\skip118
 \ar@cellbox=\box46
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/delarray.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/delarray.sty
 Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@col@width=\dimen141
 \TX@old@table=\dimen142
@@ -293,8 +287,7 @@ LaTeX Info: Redefining \! on input line 12189.
 \c@sheetsequence=\count285
 \c@lastsheet=\count286
 \c@lastpage=\count287
-
-(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
 )
 \c@figure=\count288
@@ -338,15 +331,12 @@ Package tocloft [2008/07/23] emulated by memoir.
 Package tocvsec2 [2008/07/23] emulated by memoir.
 Package verbatim [2008/07/23] emulated by memoir.
 Package verse [2008/07/23] emulated by memoir.
-))
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
-)
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count292
@@ -361,37 +351,30 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen185
 \Gm@layoutvoffset=\dimen186
 \Gm@dimlist=\toks23
-)
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks24
 \inpenc@posthook=\toks25
-)
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
-)
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathpazo.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathpazo.sty
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip191
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks26
 \ex@=\dimen187
-))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen188
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count295
@@ -431,8 +414,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \mathdisplay@stack=\toks30
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks31
 \thm@bodyfont=\toks32
@@ -443,45 +425,33 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@postskip=\skip195
 \thm@headsep=\skip196
 \dth@everypar=\toks36
-)
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
-
-(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count307
-)
-(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count308
-
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+ (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -541,1153 +511,10 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \c@mincompwidth=\count352
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
-Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count353
-\c@savedafterword=\count354
-\c@annotator=\count355
-\c@savedannotator=\count356
-\c@author=\count357
-\c@savedauthor=\count358
-\c@bookauthor=\count359
-\c@savedbookauthor=\count360
-\c@commentator=\count361
-\c@savedcommentator=\count362
-\c@editor=\count363
-\c@savededitor=\count364
-\c@editora=\count365
-\c@savededitora=\count366
-\c@editorb=\count367
-\c@savededitorb=\count368
-\c@editorc=\count369
-\c@savededitorc=\count370
-\c@foreword=\count371
-\c@savedforeword=\count372
-\c@holder=\count373
-\c@savedholder=\count374
-\c@introduction=\count375
-\c@savedintroduction=\count376
-\c@namea=\count377
-\c@savednamea=\count378
-\c@nameb=\count379
-\c@savednameb=\count380
-\c@namec=\count381
-\c@savednamec=\count382
-\c@translator=\count383
-\c@savedtranslator=\count384
-\c@shortauthor=\count385
-\c@savedshortauthor=\count386
-\c@shorteditor=\count387
-\c@savedshorteditor=\count388
-\c@labelname=\count389
-\c@savedlabelname=\count390
-\c@institution=\count391
-\c@savedinstitution=\count392
-\c@lista=\count393
-\c@savedlista=\count394
-\c@listb=\count395
-\c@savedlistb=\count396
-\c@listc=\count397
-\c@savedlistc=\count398
-\c@listd=\count399
-\c@savedlistd=\count400
-\c@liste=\count401
-\c@savedliste=\count402
-\c@listf=\count403
-\c@savedlistf=\count404
-\c@location=\count405
-\c@savedlocation=\count406
-\c@organization=\count407
-\c@savedorganization=\count408
-\c@origlocation=\count409
-\c@savedoriglocation=\count410
-\c@origpublisher=\count411
-\c@savedorigpublisher=\count412
-\c@publisher=\count413
-\c@savedpublisher=\count414
-\c@language=\count415
-\c@savedlanguage=\count416
-\c@origlanguage=\count417
-\c@savedoriglanguage=\count418
-\c@pageref=\count419
-\c@savedpageref=\count420
-\shorthandwidth=\skip261
-\shortjournalwidth=\skip262
-\shortserieswidth=\skip263
-\shorttitlewidth=\skip264
-\shortauthorwidth=\skip265
-\shorteditorwidth=\skip266
-\locallabelnumberwidth=\skip267
-\locallabelalphawidth=\skip268
-\localshorthandwidth=\skip269
-\localshortjournalwidth=\skip270
-\localshortserieswidth=\skip271
-\localshorttitlewidth=\skip272
-\localshortauthorwidth=\skip273
-\localshorteditorwidth=\skip274
-Package biblatex Info: Trying to load compatibility code...
-Package biblatex Info: ... file 'blx-compat.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-)
-Package biblatex Info: Trying to load BibTeX backend compatibility...
-Package biblatex Info: ... file 'blx-bibtex.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-bibtex.def
-File: blx-bibtex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-
-
-Package biblatex Warning: Using fall-back BibTeX(8) backend:
-(biblatex)                functionality may be reduced/unavailable.
-
-)
-Package biblatex Info: Trying to load generic definitions...
-Package biblatex Info: ... file 'biblatex.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count421
-\c@textcitetotal=\count422
-\c@textcitemaxnames=\count423
-\c@biburlbigbreakpenalty=\count424
-\c@biburlbreakpenalty=\count425
-\c@biburlnumpenalty=\count426
-\c@biburlucpenalty=\count427
-\c@biburllcpenalty=\count428
-\biburlbigskip=\muskip18
-\biburlnumskip=\muskip19
-\biburlucskip=\muskip20
-\biburllcskip=\muskip21
-\c@smartand=\count429
-)
-Package biblatex Info: Trying to load natbib compatibility...
-Package biblatex Info: ... file 'blx-natbib.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-natbib.def
-File: blx-natbib.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
- overwriting.
-)
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-Package biblatex Info: Trying to load bibliography style 'standard'...
-Package biblatex Info: ... file 'standard.bbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count430
-\c@bbx:relatedtotal=\count431
-))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\parencite'.
-Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
-Package biblatex Info: Redefining '\textcite'.
-Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
-)
-Package biblatex Info: Trying to load configuration file...
-Package biblatex Info: ... file 'biblatex.cfg' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
-File: biblatex.cfg 
-))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 105.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen196
-\Gin@req@width=\dimen197
-)
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip275
-\multirow@cntb=\count432
-\multirow@dima=\skip276
-\bigstrutjot=\dimen198
-)
-\c@thm=\count433
-
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
-\MT@toks=\toks37
-\MT@count=\count434
-LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen256
-LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
-\MT@listname@count=\count435
-
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
-
-LaTeX Info: Redefining \lsstyle on input line 914.
-LaTeX Info: Redefining \lslig on input line 914.
-\MT@outer@space=\skip277
-)
-Package microtype Info: Loading configuration file microtype.cfg.
-
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
-File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-\@linkdim=\dimen257
-\Hy@linkcounter=\count436
-\Hy@pagecounter=\count437
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
-)
-(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
-\Hy@SavedSpaceFactor=\count438
-\pdfmajorversion=\count439
-Package hyperref Info: Option `colorlinks' set `true' on input line 4421.
-Package hyperref Info: Hyper figures OFF on input line 4547.
-Package hyperref Info: Link nesting OFF on input line 4552.
-Package hyperref Info: Hyper index ON on input line 4555.
-Package hyperref Info: Plain pages OFF on input line 4562.
-Package hyperref Info: Backreferencing OFF on input line 4567.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count440
-LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen258
-
-(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
-))
-\Fld@menulength=\count441
-\Field@Width=\dimen259
-\Fld@charsize=\dimen260
-Package hyperref Info: Hyper figures OFF on input line 6430.
-Package hyperref Info: Link nesting OFF on input line 6435.
-Package hyperref Info: Hyper index ON on input line 6438.
-Package hyperref Info: backreferencing OFF on input line 6445.
-Package hyperref Info: Link coloring ON on input line 6448.
-Package hyperref Info: Link coloring with OCG OFF on input line 6455.
-Package hyperref Info: PDF/A mode OFF on input line 6460.
-LaTeX Info: Redefining \ref on input line 6500.
-LaTeX Info: Redefining \pageref on input line 6504.
-
-(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
-)
-\Hy@abspage=\count442
-\c@Item=\count443
-\c@Hfootnote=\count444
-)
-(/usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
-Package: memhfixc 2019/10/24 v1.18 nameref/hyperref package fixes for memoir cl
-ass
-\c@memhycontfloat=\count445
-\c@Hpagenote=\count446
-)
-Package hyperref Info: Driver (autodetected): hpdftex.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
-)
-\Fld@listcount=\count447
-\c@bookmark@seq@number=\count448
-
-(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
-)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-86.
-)
-\Hy@SectionHShift=\skip278
-)
-(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
-Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
-
-(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
-File: bkm-pdftex.def 2019/12/03 v1.28 bookmark driver for pdfTeX (HO)
-\BKM@id=\count449
-))
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/02/14 3.40 The Babel package
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2020/02/14 3.40 Babel switching mechanism
-)
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/02/14 3.40 Babel common definitions
-\babel@savecnt=\count450
-\U@D=\dimen261
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@readstream=\read4
-\bbl@dirlevel=\count451
-)
-Package babel Info: \l@british = using hyphenrules for english
-(babel)             (\language0) on input line 82.
-Package babel Info: \l@UKenglish = using hyphenrules for english
-(babel)             (\language0) on input line 83.
-Package babel Info: \l@canadian = using hyphenrules for english
-(babel)             (\language0) on input line 102.
-Package babel Info: \l@australian = using hyphenrules for english
-(babel)             (\language0) on input line 105.
-Package babel Info: \l@newzealand = using hyphenrules for english
-(babel)             (\language0) on input line 108.
-))
-(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-Package: blindtext 2012/01/06 V2.0 blindtext-Package
-
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-\c@blindtext=\count452
-\c@Blindtext=\count453
-\c@blind@countparstart=\count454
-\blind@countxx=\count455
-\blindtext@numBlindtext=\count456
-\blind@countyy=\count457
-\c@blindlist=\count458
-\c@blindlistlevel=\count459
-\c@blindlist@level=\count460
-\blind@listitem=\count461
-\c@blind@listcount=\count462
-\c@blind@levelcount=\count463
-\blind@mathformula=\count464
-\blind@Mathformula=\count465
-\c@blind@randomcount=\count466
-\c@blind@randommax=\count467
-\c@blind@pangramcount=\count468
-\c@blind@pangrammax=\count469
-)
-\@notefile=\write5
-\openout5 = `sample-thesis.ent'.
-
-LaTeX Info: Redefining \pagenote on input line 110.
-LaTeX Info: Redefining \mem@footto@pagenote on input line 110.
-
-Writing note file sample-thesis.ent
-
-Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
-(biblatex)                Loading 'csquotes' recommended.
-
-\@quotelevel=\count470
-\@quotereset=\count471
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count472
-\l__pdf_internal_box=\box52
-)
-(./sample-thesis.aux (./frontmatter.aux) (./Chapters/Chapter_Introduction.aux)
-(./Chapters/Chapter_DrivingSignal.aux) (./Chapters/Chapter_GroupsGrowth.aux)
-(./Chapters/Chapter_Trust.aux
-
-LaTeX Warning: Label `sec:data' multiply defined.
-
-))
-\openout1 = `sample-thesis.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 12
-7.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
-File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-)
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
-* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=500.484pt
-* \textheight=681.15898pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-49.73828pt
-* \headheight=14.5pt
-* \headsep=19.8738pt
-* \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=102.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=12.0pt plus 4.0pt minus 4.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
-)
-Package biblatex Info: Input encoding 'utf8' detected.
-Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'utf8'.
-Package biblatex Info: Input encoding 'utf8' specified.
-Package biblatex Info: Data encoding 'utf8' specified.
-(biblatex)             No need to reencode data.
-\openout4 = `sample-thesis-blx.bib'.
-
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'sample-thesis.bbl' found.
-
-(./sample-thesis.bbl
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'yashkina2020':
-(biblatex)                - Can't use 'date' + 'year'.
-
-)
-Package biblatex Info: Reference section=0 on input line 127.
-Package biblatex Info: Reference segment=0 on input line 127.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count473
-\scratchdimen=\dimen262
-\scratchbox=\box53
-\nofMPsegments=\count474
-\nofMParguments=\count475
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count476
-\MPscratchDim=\dimen263
-\MPnumerator=\count477
-\makeMPintoPDFobject=\count478
-\everyMPtoPDFconversion=\toks39
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-LaTeX Info: Redefining \microtypecontext on input line 127.
-Package microtype Info: Generating PDF output.
-Package microtype Info: Character protrusion enabled (level 2).
-Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 127.
-Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of interword spacing.
-Package microtype Info: No adjustment of character kerning.
-
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ppl.cfg
-File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
-)
-\AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring ON on input line 127.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
-
-(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count479
-)
-Redoing nameref's sectioning
-Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 127.
-LaTeX Info: Redefining \ref on input line 127.
-LaTeX Info: Redefining \pageref on input line 127.
-LaTeX Info: Redefining \nameref on input line 127.
-\openout2 = `frontmatter.aux'.
-
-(./frontmatter.tex (./sample-thesis.toc
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 2
-.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
-File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-)
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `zplm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-)) [1
-
-
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
-
-
-]
-\openout2 = `Chapters/Chapter_Introduction.aux'.
-
- (./Chapters/Chapter_Introduction.tex
-<Figures/Konigsberg_bridges.png, id=67, 303.1325pt x 238.8925pt>
-File: Figures/Konigsberg_bridges.png Graphic file (type png)
-<use Figures/Konigsberg_bridges.png>
-Package pdftex.def Info: Figures/Konigsberg_bridges.png  used on input line 15.
-
-(pdftex.def)             Requested size: 150.14671pt x 118.32687pt.
-<Figures/Konigsberg_graph.png, id=68, 501.875pt x 401.5pt>
-File: Figures/Konigsberg_graph.png Graphic file (type png)
-<use Figures/Konigsberg_graph.png>
-Package pdftex.def Info: Figures/Konigsberg_graph.png  used on input line 16.
-(pdftex.def)             Requested size: 150.14671pt x 120.1201pt.
-
-[1
-
-
- <./Figures/Konigsberg_bridges.png> <./Figures/Konigsberg_graph.png>]
-[2] [3] [4] [5] [6] [7]
-
-LaTeX Warning: Citation 'martin' on page 8 undefined on input line 191.
-
-
-LaTeX Warning: Citation 'userguide' on page 8 undefined on input line 193.
-
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 2
-00.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)
-
-LaTeX Warning: Citation 'userguide' on page 8 undefined on input line 207.
-
-
-LaTeX Warning: Citation 'comparison' on page 8 undefined on input line 211.
-
-<Figures/structures.png, id=131, 699.36281pt x 392.21532pt>
-File: Figures/structures.png Graphic file (type png)
-<use Figures/structures.png>
-Package pdftex.def Info: Figures/structures.png  used on input line 214.
-(pdftex.def)             Requested size: 350.33727pt x 196.47823pt.
-[8] [9 <./Figures/structures.png>]) [10]
-\openout2 = `Chapters/Chapter_DrivingSignal.aux'.
-
- (./Chapters/Chapter_DrivingSignal.tex
-<Figures/ciljevi3.png, id=154, 845.19765pt x 597.6729pt>
-File: Figures/ciljevi3.png Graphic file (type png)
-<use Figures/ciljevi3.png>
-Package pdftex.def Info: Figures/ciljevi3.png  used on input line 22.
-(pdftex.def)             Requested size: 300.29344pt x 212.34407pt.
-
-[11
-
-
-
-]
-<Figures/monofractals.png, id=164, 502.2765pt x 458.1918pt>
-File: Figures/monofractals.png Graphic file (type png)
-<use Figures/monofractals.png>
-Package pdftex.def Info: Figures/monofractals.png  used on input line 45.
-(pdftex.def)             Requested size: 350.33727pt x 319.59946pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[12 <./Figures/ciljevi3.png>]
-<Figures/signals.pdf, id=185, 797.15076pt x 326.22404pt>
-File: Figures/signals.pdf Graphic file (type pdf)
-<use Figures/signals.pdf>
-Package pdftex.def Info: Figures/signals.pdf  used on input line 92.
-(pdftex.def)             Requested size: 500.484pt x 204.82037pt.
- [13pdfTeX warning (ext4): destination with the same identifier (name{equation.
-2.1.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.96 
-      <./Figures/monofractals.png>]
-<Figures/hurst.pdf, id=195, 412.1774pt x 265.12738pt>
-File: Figures/hurst.pdf Graphic file (type pdf)
-<use Figures/hurst.pdf>
-Package pdftex.def Info: Figures/hurst.pdf  used on input line 99.
-(pdftex.def)             Requested size: 300.29344pt x 193.16513pt.
- [14 <./Figures/signals.pdf> <./Figures/hurst.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/hurst.pdf): PDF inclusion: mu
-ltiple pdfs with page group included in a single page
->]
-<Figures/diagram.png, id=315, 470.4777pt x 344.0052pt>
-File: Figures/diagram.png Graphic file (type png)
-<use Figures/diagram.png>
-Package pdftex.def Info: Figures/diagram.png  used on input line 132.
-(pdftex.def)             Requested size: 250.24199pt x 182.97276pt.
- [15] [16 <./Figures/diagram.png>]
-<Figures/Ddist_M4_w10.5_w20.5.png, id=338, 413.3844pt x 505.89pt>
-File: Figures/Ddist_M4_w10.5_w20.5.png Graphic file (type png)
-<use Figures/Ddist_M4_w10.5_w20.5.png>
-Package pdftex.def Info: Figures/Ddist_M4_w10.5_w20.5.png  used on input line 1
-70.
-(pdftex.def)             Requested size: 250.24199pt x 306.24579pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/Ddistance.pdf, id=342, 418.52371pt x 513.72365pt>
-File: Figures/Ddistance.pdf Graphic file (type pdf)
-<use Figures/Ddistance.pdf>
-Package pdftex.def Info: Figures/Ddistance.pdf  used on input line 182.
-(pdftex.def)             Requested size: 250.24199pt x 307.16264pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[17] [18 <./Figures/Ddist_M4_w10.5_w20.5.png>]
-<Figures/aindex.png, id=365, 402.5439pt x 271.7352pt>
-File: Figures/aindex.png Graphic file (type png)
-<use Figures/aindex.png>
-Package pdftex.def Info: Figures/aindex.png  used on input line 201.
-(pdftex.def)             Requested size: 225.21626pt x 152.03383pt.
-<Figures/clustering.png, id=366, 393.8715pt x 271.7352pt>
-File: Figures/clustering.png Graphic file (type png)
-<use Figures/clustering.png>
-Package pdftex.def Info: Figures/clustering.png  used on input line 202.
-(pdftex.def)             Requested size: 225.21626pt x 155.37993pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[19 <./Figures/Ddistance.pdf>]
-<Figures/b1.pdf, id=418, 854.79347pt x 410.81918pt>
-File: Figures/b1.pdf Graphic file (type pdf)
-<use Figures/b1.pdf>
-Package pdftex.def Info: Figures/b1.pdf  used on input line 213.
-(pdftex.def)             Requested size: 350.33727pt x 168.37427pt.
-<Figures/b3.pdf, id=420, 854.79347pt x 410.81918pt>
-File: Figures/b3.pdf Graphic file (type pdf)
-<use Figures/b3.pdf>
-Package pdftex.def Info: Figures/b3.pdf  used on input line 222.
-(pdftex.def)             Requested size: 350.33727pt x 168.37427pt.
- [20 <./Figures/aindex.png> <./Figures/clustering.png> <./Figures/b1.pdf>]
-<Figures/b2.pdf, id=504, 852.33115pt x 408.87442pt>
-File: Figures/b2.pdf Graphic file (type pdf)
-<use Figures/b2.pdf>
-Package pdftex.def Info: Figures/b2.pdf  used on input line 232.
-(pdftex.def)             Requested size: 350.33727pt x 168.06384pt.
- [21 <./Figures/b3.pdf> <./Figures/b2.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/b2.pdf): PDF inclusion: multi
-ple pdfs with page group included in a single page
->]
-
-LaTeX Warning: Reference `fig:properties' on page 22 undefined on input line 24
-3.
-
-
-LaTeX Warning: Reference `fig:properties' on page 22 undefined on input line 24
-5.
-
-) [22]
-\openout2 = `Chapters/Chapter_GroupsGrowth.aux'.
-
- (./Chapters/Chapter_GroupsGrowth.tex
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
-
- []
-
-
-LaTeX Warning: Citation 'PNAS' on page 23 undefined on input line 12.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-
- []
-
-[23
-
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
-
-LaTeX Warning: Reference `sec:con' on page 24 undefined on input line 20.
-
-
-LaTeX Warning: Citation 'www.meetup.com' on page 24 undefined on input line 24.
-
-
-[24] [25]
-<Figures/Fig2.png, id=749, 635.4942pt x 724.3863pt>
-File: Figures/Fig2.png Graphic file (type png)
-<use Figures/Fig2.png>
-Package pdftex.def Info: Figures/Fig2.png  used on input line 43.
-(pdftex.def)             Requested size: 300.29344pt x 342.3075pt.
- [26 <./Figures/Fig2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
-
- []
-
-<Figures/Fig1.png, id=771, 628.0263pt x 445.9059pt>
-File: Figures/Fig1.png Graphic file (type png)
-<use Figures/Fig1.png>
-Package pdftex.def Info: Figures/Fig1.png  used on input line 61.
-(pdftex.def)             Requested size: 400.38872pt x 284.29016pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-
- []
-
-[27]
-Underfull \vbox (badness 1960) has occurred while \output is active []
-
- [28 <./Figures/Fig1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 75--83
-
- []
-
-<Figures/test.png, id=815, 599.22362pt x 391.85593pt>
-File: Figures/test.png Graphic file (type png)
-<use Figures/test.png>
-Package pdftex.def Info: Figures/test.png  used on input line 96.
-(pdftex.def)             Requested size: 299.61107pt x 195.92747pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[29]
-<Figures/Fig3.png, id=821, 637.4214pt x 560.3334pt>
-File: Figures/Fig3.png Graphic file (type png)
-<use Figures/Fig3.png>
-Package pdftex.def Info: Figures/Fig3.png  used on input line 117.
-(pdftex.def)             Requested size: 300.29344pt x 263.98088pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/Fig4.png, id=822, 630.6762pt x 452.4102pt>
-File: Figures/Fig4.png Graphic file (type png)
-<use Figures/Fig4.png>
-Package pdftex.def Info: Figures/Fig4.png  used on input line 124.
-(pdftex.def)             Requested size: 300.29344pt x 215.41481pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 129.
-
-
-Overfull \hbox (24.55136pt too wide) in paragraph at lines 131--139
- [][] 
- []
-
-) [30 <./Figures/test.png>] [31 <./Figures/Fig3.png> <./Figures/Fig4.png>]
-\openout2 = `Chapters/Chapter_Trust.aux'.
-
-
-(./Chapters/Chapter_Trust.tex [32
-
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 9--11
-
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-[33] [34]
-<Figures/Active_questions_7days.png, id=860, 1170.3725pt x 175.65625pt>
-File: Figures/Active_questions_7days.png Graphic file (type png)
-<use Figures/Active_questions_7days.png>
-Package pdftex.def Info: Figures/Active_questions_7days.png  used on input line
- 47.
-(pdftex.def)             Requested size: 250.24199pt x 37.55629pt.
- [35 <./Figures/Active_questions_7days.png>] [36] [37]
-
-LaTeX Warning: Reference `fig:paper_summary' on page 38 undefined on input line
- 139.
-
-[38]
-<Figures/active_users_mean_dyn_rep.png, id=920, 578.16pt x 505.89pt>
-File: Figures/active_users_mean_dyn_rep.png Graphic file (type png)
-<use Figures/active_users_mean_dyn_rep.png>
-Package pdftex.def Info: Figures/active_users_mean_dyn_rep.png  used on input l
-ine 157.
-(pdftex.def)             Requested size: 250.24199pt x 218.95651pt.
-
-Underfull \vbox (badness 7203) has occurred while \output is active []
-
- [39]
-<Figures/Mean_clustering_coef.png, id=928, 279.9258pt x 448.5558pt>
-File: Figures/Mean_clustering_coef.png Graphic file (type png)
-<use Figures/Mean_clustering_coef.png>
-Package pdftex.def Info: Figures/Mean_clustering_coef.png  used on input line 1
-71.
-(pdftex.def)             Requested size: 250.24199pt x 400.99294pt.
-
-[40 <./Figures/active_users_mean_dyn_rep.png (PNG copy)>]
-Underfull \vbox (badness 3260) has occurred while \output is active []
-
- [41 <./Figures/Mean_clustering_coef.png>]
-<Figures/LN_core_coreper.png, id=946, 578.16pt x 505.89pt>
-File: Figures/LN_core_coreper.png Graphic file (type png)
-<use Figures/LN_core_coreper.png>
-Package pdftex.def Info: Figures/LN_core_coreper.png  used on input line 184.
-(pdftex.def)             Requested size: 250.24199pt x 218.95651pt.
-<Figures/core_dr_test.png, id=947, 867.24pt x 722.7pt>
-File: Figures/core_dr_test.png Graphic file (type png)
-<use Figures/core_dr_test.png>
-Package pdftex.def Info: Figures/core_dr_test.png  used on input line 195.
-(pdftex.def)             Requested size: 250.24199pt x 208.53001pt.
- [42 <./Figures/LN_core_coreper.png (PNG copy)>]
-[43 <./Figures/core_dr_test.png>]
-
-LaTeX Warning: Reference `fig:dyn_rep_coreper' on page 44 undefined on input li
-ne 209.
-
-<Figures/FigA1.png, id=963, 415.19115pt x 273.9033pt>
-File: Figures/FigA1.png Graphic file (type png)
-<use Figures/FigA1.png>
-Package pdftex.def Info: Figures/FigA1.png  used on input line 244.
-(pdftex.def)             Requested size: 250.24199pt x 165.083pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[44]
-<Figures/FigA2.png, id=975, 1077.5457pt x 289.08pt>
-File: Figures/FigA2.png Graphic file (type png)
-<use Figures/FigA2.png>
-Package pdftex.def Info: Figures/FigA2.png  used on input line 258.
-(pdftex.def)             Requested size: 500.484pt x 134.26642pt.
- [45 <./Figures/FigA1.png> <./Figures/FigA2.png>]
-<Figures/FigA3.png, id=985, 958.3002pt x 505.89pt>
-File: Figures/FigA3.png Graphic file (type png)
-<use Figures/FigA3.png>
-Package pdftex.def Info: Figures/FigA3.png  used on input line 267.
-(pdftex.def)             Requested size: 500.484pt x 264.20676pt.
-<Figures/FigA4.png, id=987, 1070.3187pt x 287.6346pt>
-File: Figures/FigA4.png Graphic file (type png)
-<use Figures/FigA4.png>
-Package pdftex.def Info: Figures/FigA4.png  used on input line 276.
-(pdftex.def)             Requested size: 500.484pt x 134.49481pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[46 <./Figures/FigA3.png>] [47 <./Figures/FigA4.png>]
-<Figures/FigA5.png, id=1001, 1097.7813pt x 287.6346pt>
-File: Figures/FigA5.png Graphic file (type png)
-<use Figures/FigA5.png>
-Package pdftex.def Info: Figures/FigA5.png  used on input line 287.
-(pdftex.def)             Requested size: 500.484pt x 131.13727pt.
-<Figures/FigA6.png, id=1003, 1078.2684pt x 287.6346pt>
-File: Figures/FigA6.png Graphic file (type png)
-<use Figures/FigA6.png>
-Package pdftex.def Info: Figures/FigA6.png  used on input line 300.
-(pdftex.def)             Requested size: 500.484pt x 133.50731pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 297--310
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[48
-
- <./Figures/FigA5.png>]
-<Figures/FigA7.png, id=1014, 909.1566pt x 395.3169pt>
-File: Figures/FigA7.png Graphic file (type png)
-<use Figures/FigA7.png>
-Package pdftex.def Info: Figures/FigA7.png  used on input line 317.
-(pdftex.def)             Requested size: 500.484pt x 217.62401pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 311--323
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[49 <./Figures/FigA6.png>]
-<Figures/FigA8.png, id=1027, 726.67485pt x 504.4446pt>
-File: Figures/FigA8.png Graphic file (type png)
-<use Figures/FigA8.png>
-Package pdftex.def Info: Figures/FigA8.png  used on input line 338.
-(pdftex.def)             Requested size: 400.38872pt x 277.9457pt.
-<Figures/FigA10.png, id=1032, 914.57684pt x 413.3844pt>
-File: Figures/FigA10.png Graphic file (type png)
-<use Figures/FigA10.png>
-Package pdftex.def Info: Figures/FigA10.png  used on input line 348.
-(pdftex.def)             Requested size: 500.484pt x 226.21411pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/FigA9.png, id=1033, 1078.2684pt x 291.2481pt>
-File: Figures/FigA9.png Graphic file (type png)
-<use Figures/FigA9.png>
-Package pdftex.def Info: Figures/FigA9.png  used on input line 355.
-(pdftex.def)             Requested size: 500.484pt x 135.18452pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/FigA11.png, id=1034, 897.95474pt x 395.3169pt>
-File: Figures/FigA11.png Graphic file (type png)
-<use Figures/FigA11.png>
-Package pdftex.def Info: Figures/FigA11.png  used on input line 364.
-(pdftex.def)             Requested size: 500.484pt x 220.3324pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/FigA12.png, id=1035, 1068.1506pt x 287.6346pt>
-File: Figures/FigA12.png Graphic file (type png)
-<use Figures/FigA12.png>
-Package pdftex.def Info: Figures/FigA12.png  used on input line 371.
-(pdftex.def)             Requested size: 500.484pt x 134.77132pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[50 <./Figures/FigA7.png>] [51 <./Figures/FigA8.png> <./Figures/FigA10.png>]
-[52 <./Figures/FigA9.png> <./Figures/FigA11.png> <./Figures/FigA12.png>]
-<Figures/popular_casual_degree_interactions_top10.pdf, id=1058, 1445.4pt x 867.
-24pt>
-File: Figures/popular_casual_degree_interactions_top10.pdf Graphic file (type p
-df)
-<use Figures/popular_casual_degree_interactions_top10.pdf>
-Package pdftex.def Info: Figures/popular_casual_degree_interactions_top10.pdf  
-used on input line 379.
-(pdftex.def)             Requested size: 500.484pt x 300.28323pt.
-
-[53
-
- <./Figures/popular_casual_degree_interactions_top10.pdf>]
-<Figures/FigA14.png, id=1110, 847.7271pt x 1378.9116pt>
-File: Figures/FigA14.png Graphic file (type png)
-<use Figures/FigA14.png>
-Package pdftex.def Info: Figures/FigA14.png  used on input line 395.
-(pdftex.def)             Requested size: 400.38872pt x 651.26567pt.
-
-
-LaTeX Warning: Float too large for page by 16.99062pt on input line 400.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [54] [55 <./Figures/FigA14.png>] [56
-
-
-]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-69.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [57] [58] [59]
-[60]
-\tf@toc=\write6
-\openout6 = `sample-thesis.toc'.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
- (./sample-thesis.aux (./frontmatter.aux)
-(./Chapters/Chapter_Introduction.aux) (./Chapters/Chapter_DrivingSignal.aux)
-(./Chapters/Chapter_GroupsGrowth.aux) (./Chapters/Chapter_Trust.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 171.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                sample-thesis
-(biblatex)                and rerun LaTeX afterwards.
-
-Package logreq Info: Writing requests to 'sample-thesis.run.xml'.
-\openout1 = `sample-thesis.run.xml'.
-
- ) 
-Here is how much of TeX's memory you used:
- 21509 strings out of 483183
- 357951 string characters out of 5966293
- 950093 words of memory out of 5000000
- 35570 multiletter control sequences out of 15000+600000
- 600010 words of font info for 347 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 42i,12n,45p,1989b,2794s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section.1.8} has been referenced but does not exi
-st, replaced by a fixed one
-
- </home/anav/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk>
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathp
-azo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on sample-thesis.pdf (62 pages, 8102349 bytes).
-PDF statistics:
- 1368 PDF objects out of 1440 (max. 8388607)
- 849 compressed objects within 9 object streams
- 242 named destinations out of 1000 (max. 500000)
- 39820 words of extra memory for PDF output out of 42996 (max. 10000000)
-
+Package biblatex Info: ... file 'biblatex-
