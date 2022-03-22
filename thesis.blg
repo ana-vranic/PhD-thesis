@@ -1,0 +1,80 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: Chapters/Chapter_Introduction.aux
+A level-1 auxiliary file: Chapters/Chapter_DrivingSignal.aux
+A level-1 auxiliary file: Chapters/Chapter_GroupsGrowth.aux
+A level-1 auxiliary file: Chapters/Chapter_Trust.aux
+The style file: unsrt.bst
+Database file #1: sample.bib
+You're missing a field name---line 1045 of file sample.bib
+ : 
+ : %   title={Expressing trust with temporal frequency of user interaction in online communities},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 1402 of file sample.bib
+ : @article{smiljanic2017associative
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1511 of file sample.bib
+ : @article{dankulov2015dynamics
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1599 of file sample.bib
+ : @inproceedings{kairam2012life
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1608 of file sample.bib
+ : @inproceedings{backstrom2006group
+ :                                  ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1697 of file sample.bib
+ : 
+ : @article{martin,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "PNAS"
+Warning--I didn't find a database entry for "www.meetup.com"
+Warning--empty booktitle in yashkina2020
+You've used 63 entries,
+            1791 wiz_defined-function locations,
+            836 strings with 15894 characters,
+and the built_in function-call counts, 16742 in all, are:
+= -- 1462
+> -- 841
+< -- 10
++ -- 303
+- -- 240
+* -- 1337
+:= -- 2647
+add.period$ -- 193
+call.type$ -- 63
+change.case$ -- 61
+chr.to.int$ -- 0
+cite$ -- 64
+duplicate$ -- 679
+empty$ -- 1563
+format.name$ -- 240
+if$ -- 3676
+int.to.chr$ -- 0
+int.to.str$ -- 63
+missing$ -- 65
+newline$ -- 319
+num.names$ -- 63
+pop$ -- 118
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 318
+stack$ -- 0
+substring$ -- 1320
+swap$ -- 155
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 166
+width$ -- 65
+write$ -- 699
+(There were 6 error messages)

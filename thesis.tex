@@ -1,0 +1,137 @@
+\documentclass[12pt,a4paper]{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage[dvips]{graphicx}
+\usepackage{xcolor}
+%\usepackage{times}
+\usepackage{mathpazo} % Use the Palatino font by default
+
+\usepackage[
+breaklinks=true,colorlinks=true,
+%linkcolor=blue,urlcolor=blue,citecolor=blue,% PDF VIEW
+linkcolor=black,urlcolor=black,citecolor=black,% PRINT
+bookmarks=true,bookmarksopenlevel=2]{hyperref}
+\usepackage{graphicx}
+\usepackage{multirow}
+
+\usepackage{geometry}
+% PDF VIEW
+% \geometry{total={210mm,297mm},
+% left=25mm,right=25mm,%
+% bindingoffset=0mm, top=25mm,bottom=25mm}
+% PRINT
+\geometry{
+left=20mm,right=20mm, top=20mm,bottom=20mm}
+
+%\OnehalfSpacing
+\linespread{1.2}
+
+%%% CHAPTER'S STYLE
+%\chapterstyle{bianchi}
+%\chapterstyle{ger}
+%\chapterstyle{madsen}
+%\chapterstyle{ell}
+%%% STYLE OF SECTIONS, SUBSECTIONS, AND SUBSUBSECTIONS
+%\setsecheadstyle{\Large\bfseries\sffamily\raggedright}
+%\setsubsecheadstyle{\large\bfseries\sffamily\raggedright}
+%\setsubsubsecheadstyle{\bfseries\sffamily\raggedright}
+
+
+%%% STYLE OF PAGES NUMBERING
+%\pagestyle{companion}\nouppercaseheads 
+%\pagestyle{headings}
+\pagestyle{ruled}
+%\pagestyle{plain}
+%\makepagestyle{plain}
+\makeevenfoot{ruled}{}{\thepage}{}
+\makeoddfoot{ruled}{}{\thepage}{}
+%\makeevenhead{plain}{}{}{}
+%\makeoddhead{plain}{}{}{}
+\makeevenhead{ruled}{\leftmark}{}{}
+\makeoddhead{ruled}{}{}{\rightmark}
+
+
+\maxsecnumdepth{subsection} % chapters, sections, and subsections are numbered
+\maxtocdepth{section} % chapters, sections, and subsections are in the Table of Contents
+
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+
+\begin{document}
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+%   TITLEPAGE
+%
+%   due to variety of titlepage schemes it is probably better to make titlepage manually
+%
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+%\thispagestyle{empty}
+
+%{%%%
+%\sffamily
+%\centering
+%\Large
+
+%~\vspace{\fill}
+
+%{\huge 
+%Thesis title: may be long or short
+%}
+
+%\vspace{2.5cm}
+
+%{\LARGE
+%Your name
+%}
+
+%\vspace{3.5cm}
+
+%A thesis submitted in partial fulfillment for the\\
+%degree of Doctor of Philosophy\\[1em]
+%in the\\[1em]
+%Faculty Name\\
+%University Name
+
+%\vspace{3.5cm}
+
+%Supervisor: Prof. Joe Doe
+
+%\vspace{\fill}
+
+%May 2013
+
+%%%
+%}%%%
+
+%\cleardoublepage
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+
+\tableofcontents*
+
+\clearpage
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+
+
+\include{Chapters/Chapter_Introduction}
+
+\include{Chapters/Chapter_DrivingSignal}
+
+\include{Chapters/Chapter_GroupsGrowth}
+
+\include{Chapters/Chapter_Trust}
+
+%\appendix
+
+%\chapter{Additional}
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+\bibliographystyle{unsrt}
+\bibliography{sample}
+
+\end{document}
+
