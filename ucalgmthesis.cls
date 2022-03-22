@@ -33,7 +33,7 @@
 
 % By default, typeset with one half spacing, no running heads
 
-\ExecuteOptions{singlespaced,plain}
+\ExecuteOptions{onehalfspaced,plain}
 
 \PassOptionsToClass{12pt}{memoir}
 \ProcessOptions

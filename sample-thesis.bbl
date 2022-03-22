@@ -1,0 +1,2838 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{powerlaw}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AJ}{%
+         family={Alstott},
+         familyi={A\bibinitperiod},
+         given={Jeff},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BE}{%
+         family={Bullmore},
+         familyi={B\bibinitperiod},
+         given={Ed},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Plenz},
+         familyi={P\bibinitperiod},
+         given={Dietmar},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science}%
+    }
+    \strng{namehash}{AJBEPD1}
+    \strng{fullhash}{AJBEPD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    Power laws are theoretically interesting probability distributions that are
+  also frequently used to describe empirical data. In recent years, effective
+  statistical methods for fitting power laws have been developed, but
+  appropriate use of these techniques requires significant programming and
+  statistical insight. In order to greatly decrease the barriers to using good
+  statistical methods for fitting power law distributions, we developed the
+  powerlaw Python package. This software package provides easy commands for
+  basic fitting and statistical analysis of distributions. Notably, it also
+  seeks to support a variety of user needs by being exhaustive in the options
+  available to the user. The source code is publicly available and easily
+  extensible.%
+    }
+    \verb{doi}
+    \verb 10.1371/journal.pone.0085777
+    \endverb
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 11}
+    \field{title}{powerlaw: A Python Package for Analysis of Heavy-Tailed
+  Distributions}
+    \verb{url}
+    \verb https://doi.org/10.1371/journal.pone.0085777
+    \endverb
+    \field{volume}{9}
+    \field{journaltitle}{PLOS ONE}
+    \field{month}{01}
+    \field{year}{2014}
+  \endentry
+
+  \entry{amaral1997scaling}{article}{}
+    \name{author}{8}{}{%
+      {{hash=ALAN}{%
+         family={Amaral},
+         familyi={A\bibinitperiod},
+         given={Lu{\'\i}s A\bibnamedelima Nunes},
+         giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  N\bibinitperiod},
+      }}%
+      {{hash=BSV}{%
+         family={Buldyrev},
+         familyi={B\bibinitperiod},
+         given={Sergey\bibnamedelima V},
+         giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Havlin},
+         familyi={H\bibinitperiod},
+         given={Shlomo},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Leschhorn},
+         familyi={L\bibinitperiod},
+         given={Heiko},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Maass},
+         familyi={M\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SMA}{%
+         family={Salinger},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima A},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SHE}{%
+         family={Stanley},
+         familyi={S\bibinitperiod},
+         given={H\bibnamedelima Eugene},
+         giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=SMH}{%
+         family={Stanley},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima HR},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {EDP Sciences}%
+    }
+    \strng{namehash}{ALAN+1}
+    \strng{fullhash}{ALANBSVHSLHMPSMASHESMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{4}
+    \field{pages}{621\bibrangedash 633}
+    \field{title}{Scaling behavior in economics: I. Empirical results for
+  company growth}
+    \field{volume}{7}
+    \field{journaltitle}{Journal de Physique I}
+    \field{year}{1997}
+  \endentry
+
+  \entry{aral2012identifying}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AS}{%
+         family={Aral},
+         familyi={A\bibinitperiod},
+         given={Sinan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Walker},
+         familyi={W\bibinitperiod},
+         given={Dylan},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
+    \strng{namehash}{ASWD1}
+    \strng{fullhash}{ASWD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{6092}
+    \field{pages}{337\bibrangedash 341}
+    \field{title}{Identifying influential and susceptible members of social
+  networks}
+    \field{volume}{337}
+    \field{journaltitle}{Science}
+    \field{year}{2012}
+  \endentry
+
+  \entry{arnold2021moving}{article}{}
+    \name{author}{7}{}{%
+      {{hash=ANA}{%
+         family={Arnold},
+         familyi={A\bibinitperiod},
+         given={Naomi\bibnamedelima A},
+         giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Steer},
+         familyi={S\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=HI}{%
+         family={Hafnaoui},
+         familyi={H\bibinitperiod},
+         given={Imane},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=PGHA}{%
+         family={Parada\bibnamedelima G},
+         familyi={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+         given={Hugo\bibnamedelima A},
+         giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MRJ}{%
+         family={Mondragon},
+         familyi={M\bibinitperiod},
+         given={Raul\bibnamedelima J},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=CF}{%
+         family={Cuadrado},
+         familyi={C\bibinitperiod},
+         given={F{\'e}lix},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=CRG}{%
+         family={Clegg},
+         familyi={C\bibinitperiod},
+         given={Richard\bibnamedelima G},
+         giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM New York, NY, USA}%
+    }
+    \strng{namehash}{ANA+1}
+    \strng{fullhash}{ANASBHIPGHAMRJCFCRG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{CSCW2}
+    \field{pages}{1\bibrangedash 17}
+    \field{title}{Moving with the Times: Investigating the Alt-Right Network
+  Gab with Temporal Interaction Graphs}
+    \field{volume}{5}
+    \field{journaltitle}{Proceedings of the ACM on Human-Computer Interaction}
+    \field{year}{2021}
+  \endentry
+
+  \entry{backstrom2006group}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=BL}{%
+         family={Backstrom},
+         familyi={B\bibinitperiod},
+         given={Lars},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Huttenlocher},
+         familyi={H\bibinitperiod},
+         given={Dan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kleinberg},
+         familyi={K\bibinitperiod},
+         given={Jon},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Lan},
+         familyi={L\bibinitperiod},
+         given={Xiangyang},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BL+1}
+    \strng{fullhash}{BLHDKJLX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{Proceedings of the 12th ACM SIGKDD international
+  conference on Knowledge discovery and data mining}
+    \field{pages}{44\bibrangedash 54}
+    \field{title}{Group formation in large social networks: membership, growth,
+  and evolution}
+    \field{year}{2006}
+  \endentry
+
+  \entry{barthelemy2016structure}{book}{}
+    \name{author}{1}{}{%
+      {{hash=BM}{%
+         family={Barthelemy},
+         familyi={B\bibinitperiod},
+         given={Marc},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{BM1}
+    \strng{fullhash}{BM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{The structure and dynamics of cities}
+    \field{year}{2016}
+  \endentry
+
+  \entry{boccaletti2006}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BS}{%
+         family={Boccaletti},
+         familyi={B\bibinitperiod},
+         given={Stefano},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LV}{%
+         family={Latora},
+         familyi={L\bibinitperiod},
+         given={Vito},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Moreno},
+         familyi={M\bibinitperiod},
+         given={Yamir},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Chavez},
+         familyi={C\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HDU}{%
+         family={Hwang},
+         familyi={H\bibinitperiod},
+         given={D-U},
+         giveni={D\bibinithyphendelim U\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BS+1}
+    \strng{fullhash}{BSLVMYCMHDU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{4-5}
+    \field{pages}{175\bibrangedash 308}
+    \field{title}{Complex networks: Structure and dynamics}
+    \field{volume}{424}
+    \field{journaltitle}{Physics reports}
+    \field{year}{2006}
+  \endentry
+
+  \entry{boccaletti2006complex}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BS}{%
+         family={Boccaletti},
+         familyi={B\bibinitperiod},
+         given={Stefano},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LV}{%
+         family={Latora},
+         familyi={L\bibinitperiod},
+         given={Vito},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Moreno},
+         familyi={M\bibinitperiod},
+         given={Yamir},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Chavez},
+         familyi={C\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HDU}{%
+         family={Hwang},
+         familyi={H\bibinitperiod},
+         given={D-U},
+         giveni={D\bibinithyphendelim U\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BS+1}
+    \strng{fullhash}{BSLVMYCMHDU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{4-5}
+    \field{pages}{175\bibrangedash 308}
+    \field{title}{Complex networks: Structure and dynamics}
+    \field{volume}{424}
+    \field{journaltitle}{Physics reports}
+    \field{year}{2006}
+  \endentry
+
+  \entry{castellano2009statistical}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CC}{%
+         family={Castellano},
+         familyi={C\bibinitperiod},
+         given={Claudio},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Fortunato},
+         familyi={F\bibinitperiod},
+         given={Santo},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LV}{%
+         family={Loreto},
+         familyi={L\bibinitperiod},
+         given={Vittorio},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{CCFSLV1}
+    \strng{fullhash}{CCFSLV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{2}
+    \field{pages}{591}
+    \field{title}{Statistical physics of social dynamics}
+    \field{volume}{81}
+    \field{journaltitle}{Reviews of modern physics}
+    \field{year}{2009}
+  \endentry
+
+  \entry{centola2007cascade}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CD}{%
+         family={Centola},
+         familyi={C\bibinitperiod},
+         given={Damon},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=EVM}{%
+         family={Egu{\'\i}luz},
+         familyi={E\bibinitperiod},
+         given={V{\'\i}ctor\bibnamedelima M},
+         giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MMW}{%
+         family={Macy},
+         familyi={M\bibinitperiod},
+         given={Michael\bibnamedelima W},
+         giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CDEVMMMW1}
+    \strng{fullhash}{CDEVMMMW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{1}
+    \field{pages}{449\bibrangedash 456}
+    \field{title}{Cascade dynamics of complex propagation}
+    \field{volume}{374}
+    \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+    \field{year}{2007}
+  \endentry
+
+  \entry{chatterjee2013universality}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CA}{%
+         family={Chatterjee},
+         familyi={C\bibinitperiod},
+         given={Arnab},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mitrovi{\'c}},
+         familyi={M\bibinitperiod},
+         given={Marija},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Fortunato},
+         familyi={F\bibinitperiod},
+         given={Santo},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{CAMMFS1}
+    \strng{fullhash}{CAMMFS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 9}
+    \field{title}{Universality in voting behavior: an empirical analysis}
+    \field{volume}{3}
+    \field{journaltitle}{Scientific reports}
+    \field{year}{2013}
+  \endentry
+
+  \entry{cho2012tea}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{3}{}{%
+      {{hash=CWKT}{%
+         family={Cho},
+         familyi={C\bibinitperiod},
+         given={Wendy K\bibnamedelima Tam},
+         giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim
+  T\bibinitperiod},
+      }}%
+      {{hash=GJG}{%
+         family={Gimpel},
+         familyi={G\bibinitperiod},
+         given={James\bibnamedelima G},
+         giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=SDR}{%
+         family={Shaw},
+         familyi={S\bibinitperiod},
+         given={Daron\bibnamedelima R},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Now Publishers, Inc.}%
+    }
+    \strng{namehash}{CWKTGJGSDR+1}
+    \strng{fullhash}{CWKTGJGSDR+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{2}
+    \field{pages}{105\bibrangedash 133}
+    \field{title}{The tea party movement and the geography of collective
+  action}
+    \field{volume}{7}
+    \field{journaltitle}{Quarterly Journal of Political Science}
+    \field{year}{2012}
+  \endentry
+
+  \entry{mitrovic2015}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DMM}{%
+         family={Dankulov},
+         familyi={D\bibinitperiod},
+         given={Marija\bibnamedelima Mitrovi{\'c}},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Melnik},
+         familyi={M\bibinitperiod},
+         given={Roderick},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=TB}{%
+         family={Tadi{\'c}},
+         familyi={T\bibinitperiod},
+         given={Bosiljka},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{DMMMRTB1}
+    \strng{fullhash}{DMMMRTB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 10}
+    \field{title}{The dynamics of meaningful social interactions and the
+  emergence of collective knowledge}
+    \field{volume}{5}
+    \field{journaltitle}{Scientific reports}
+    \field{year}{2015}
+  \endentry
+
+  \entry{dankulov2015dynamics}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DMM}{%
+         family={Dankulov},
+         familyi={D\bibinitperiod},
+         given={Marija\bibnamedelima Mitrovi{\'c}},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Melnik},
+         familyi={M\bibinitperiod},
+         given={Roderick},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=TB}{%
+         family={Tadi{\'c}},
+         familyi={T\bibinitperiod},
+         given={Bosiljka},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{DMMMRTB1}
+    \strng{fullhash}{DMMMRTB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 10}
+    \field{title}{The dynamics of meaningful social interactions and the
+  emergence of collective knowledge}
+    \field{volume}{5}
+    \field{journaltitle}{Scientific reports}
+    \field{year}{2015}
+  \endentry
+
+  \entry{davison2000talks}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DKP}{%
+         family={Davison},
+         familyi={D\bibinitperiod},
+         given={Kathryn\bibnamedelima P},
+         giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=PJW}{%
+         family={Pennebaker},
+         familyi={P\bibinitperiod},
+         given={James\bibnamedelima W},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=DSS}{%
+         family={Dickerson},
+         familyi={D\bibinitperiod},
+         given={Sally\bibnamedelima S},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Psychological Association}%
+    }
+    \strng{namehash}{DKPPJWDSS1}
+    \strng{fullhash}{DKPPJWDSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{2}
+    \field{pages}{205}
+    \field{title}{Who talks? The social psychology of illness support groups.}
+    \field{volume}{55}
+    \field{journaltitle}{American Psychologist}
+    \field{year}{2000}
+  \endentry
+
+  \entry{dorogovtsev2001b}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DSN}{%
+         family={Dorogovtsev},
+         familyi={D\bibinitperiod},
+         given={Sergey\bibnamedelima N},
+         giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=MJF}{%
+         family={Mendes},
+         familyi={M\bibinitperiod},
+         given={Jos{\'e}\bibnamedelima FF},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{DSNMJF1}
+    \strng{fullhash}{DSNMJF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{5}
+    \field{pages}{056125}
+    \field{title}{Scaling properties of scale-free evolving networks:
+  Continuous approach}
+    \field{volume}{63}
+    \field{journaltitle}{Physical Review E}
+    \field{year}{2001}
+  \endentry
+
+  \entry{dover2020sustainable}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DY}{%
+         family={Dover},
+         familyi={D\bibinitperiod},
+         given={Yaniv},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Goldenberg},
+         familyi={G\bibinitperiod},
+         given={Jacob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Shapira},
+         familyi={S\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The Royal Society Publishing}%
+    }
+    \strng{namehash}{DYGJSD1}
+    \strng{fullhash}{DYGJSD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{2239}
+    \field{pages}{20190730}
+    \field{title}{Sustainable online communities exhibit distinct hierarchical
+  structures across scales of size}
+    \field{volume}{476}
+    \field{journaltitle}{Proceedings of the Royal Society A}
+    \field{year}{2020}
+  \endentry
+
+  \entry{duma2005dynamic}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=DC}{%
+         family={Duma},
+         familyi={D\bibinitperiod},
+         given={Claudiu},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Shahmehri},
+         familyi={S\bibinitperiod},
+         given={Nahid},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Caronni},
+         familyi={C\bibinitperiod},
+         given={Germano},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{DCSNCG1}
+    \strng{fullhash}{DCSNCG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{booktitle}{16th International Workshop on Database and Expert
+  Systems Applications (DEXA'05)}
+    \field{pages}{776\bibrangedash 781}
+    \field{title}{Dynamic trust metrics for peer-to-peer systems}
+    \field{year}{2005}
+  \endentry
+
+  \entry{fazio2015pareto}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FG}{%
+         family={Fazio},
+         familyi={F\bibinitperiod},
+         given={Giorgio},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Modica},
+         familyi={M\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{FGMM1}
+    \strng{fullhash}{FGMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{5}
+    \field{pages}{736\bibrangedash 756}
+    \field{title}{Pareto or log-normal? Best fit and truncation in the
+  distribution of all cities}
+    \field{volume}{55}
+    \field{journaltitle}{Journal of Regional Science}
+    \field{year}{2015}
+  \endentry
+
+  \entry{fortunato2010community}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FS}{%
+         family={Fortunato},
+         familyi={F\bibinitperiod},
+         given={Santo},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{FS1}
+    \strng{fullhash}{FS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{3-5}
+    \field{pages}{75\bibrangedash 174}
+    \field{title}{Community detection in graphs}
+    \field{volume}{486}
+    \field{journaltitle}{Physics reports}
+    \field{year}{2010}
+  \endentry
+
+  \entry{userguide}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FS}{%
+         family={Fortunato},
+         familyi={F\bibinitperiod},
+         given={Santo},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Hric},
+         familyi={H\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \keyw{Networks, Communities, Clustering}
+    \strng{namehash}{FSHD1}
+    \strng{fullhash}{FSHD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{abstract}{%
+    Community detection in networks is one of the most popular topics of modern
+  network science. Communities, or clusters, are usually groups of vertices
+  having higher probability of being connected to each other than to members of
+  other groups, though other patterns are possible. Identifying communities is
+  an ill-defined problem. There are no universal protocols on the fundamental
+  ingredients, like the definition of community itself, nor on other crucial
+  issues, like the validation of algorithms and the comparison of their
+  performances. This has generated a number of confusions and misconceptions,
+  which undermine the progress in the field. We offer a guided tour through the
+  main aspects of the problem. We also point out strengths and weaknesses of
+  popular methods, and give directions to their use.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.physrep.2016.09.002
+    \endverb
+    \field{issn}{0370-1573}
+    \field{note}{Community detection in networks: A user guide}
+    \field{pages}{1 \bibrangedash  44}
+    \field{title}{Community detection in networks: A user guide}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0370157316302964
+    \endverb
+    \field{volume}{659}
+    \field{journaltitle}{Physics Reports}
+    \field{year}{2016}
+  \endentry
+
+  \entry{frasco2014spatially}{article}{}
+    \name{author}{4}{}{%
+      {{hash=FGF}{%
+         family={Frasco},
+         familyi={F\bibinitperiod},
+         given={Gerald\bibnamedelima F},
+         giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Jie},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RHD}{%
+         family={Rozenfeld},
+         familyi={R\bibinitperiod},
+         given={Hern{\'a}n\bibnamedelima D},
+         giveni={H\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=BAD}{%
+         family={Ben-Avraham},
+         familyi={B\bibinithyphendelim A\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{FGF+1}
+    \strng{fullhash}{FGFSJRHDBAD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{1}
+    \field{pages}{011008}
+    \field{title}{Spatially distributed social complex networks}
+    \field{volume}{4}
+    \field{journaltitle}{Physical Review X}
+    \field{year}{2014}
+  \endentry
+
+  \entry{fu2005growth}{article}{}
+    \name{author}{7}{}{%
+      {{hash=FD}{%
+         family={Fu},
+         familyi={F\bibinitperiod},
+         given={Dongfeng},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PF}{%
+         family={Pammolli},
+         familyi={P\bibinitperiod},
+         given={Fabio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BSV}{%
+         family={Buldyrev},
+         familyi={B\bibinitperiod},
+         given={Sergey\bibnamedelima V},
+         giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Riccaboni},
+         familyi={R\bibinitperiod},
+         given={Massimo},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Matia},
+         familyi={M\bibinitperiod},
+         given={Kaushik},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YK}{%
+         family={Yamasaki},
+         familyi={Y\bibinitperiod},
+         given={Kazuko},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SHE}{%
+         family={Stanley},
+         familyi={S\bibinitperiod},
+         given={H\bibnamedelima Eugene},
+         giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {National Acad Sciences}%
+    }
+    \strng{namehash}{FD+1}
+    \strng{fullhash}{FDPFBSVRMMKYKSHE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{52}
+    \field{pages}{18801\bibrangedash 18806}
+    \field{title}{The growth of business firms: Theoretical framework and
+  empirical evidence}
+    \field{volume}{102}
+    \field{journaltitle}{Proceedings of the National Academy of Sciences}
+    \field{year}{2005}
+  \endentry
+
+  \entry{comparison}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FT}{%
+         family={Funke},
+         familyi={F\bibinitperiod},
+         given={Thorben},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BT}{%
+         family={Becker},
+         familyi={B\bibinitperiod},
+         given={Till},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science}%
+    }
+    \strng{namehash}{FTBT1}
+    \strng{fullhash}{FTBT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{abstract}{%
+    Finding communities in complex networks is a challenging task and one
+  promising approach is the Stochastic Block Model (SBM). But the influences
+  from various fields led to a diversity of variants and inference methods.
+  Therefore, a comparison of the existing techniques and an independent
+  analysis of their capabilities and weaknesses is needed. As a first step, we
+  review the development of different SBM variants such as the degree-corrected
+  SBM of Karrer and Newman or Peixoto’s hierarchical SBM. Beside stating all
+  these variants in a uniform notation, we show the reasons for their
+  development. Knowing the variants, we discuss a variety of approaches to
+  infer the optimal partition like the Metropolis-Hastings algorithm. We
+  perform our analysis based on our extension of the Girvan-Newman test and the
+  Lancichinetti-Fortunato-Radicchi benchmark as well as a selection of some
+  real world networks. Using these results, we give some guidance to the
+  challenging task of selecting an inference method and SBM variant. In
+  addition, we give a simple heuristic to determine the number of steps for the
+  Metropolis-Hastings algorithms that lack a usual stop criterion. With our
+  comparison, we hope to guide researches in the field of SBM and highlight the
+  problem of existing techniques to focus future research. Finally, by making
+  our code freely available, we want to promote a faster development,
+  integration and exchange of new ideas.%
+    }
+    \verb{doi}
+    \verb 10.1371/journal.pone.0215296
+    \endverb
+    \field{number}{4}
+    \field{pages}{1\bibrangedash 40}
+    \field{title}{Stochastic block models: A comparison of variants and
+  inference methods}
+    \verb{url}
+    \verb https://doi.org/10.1371/journal.pone.0215296
+    \endverb
+    \field{volume}{14}
+    \field{journaltitle}{PLOS ONE}
+    \field{month}{04}
+    \field{year}{2019}
+  \endentry
+
+  \entry{gallagher2020clarified}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GRJ}{%
+         family={Gallagher},
+         familyi={G\bibinitperiod},
+         given={Ryan\bibnamedelima J},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=YJG}{%
+         family={Young},
+         familyi={Y\bibinitperiod},
+         given={Jean-Gabriel},
+         giveni={J\bibinithyphendelim G\bibinitperiod},
+      }}%
+      {{hash=WBF}{%
+         family={Welles},
+         familyi={W\bibinitperiod},
+         given={Brooke\bibnamedelima Foucault},
+         giveni={B\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GRJYJGWBF1}
+    \strng{fullhash}{GRJYJGWBF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{A clarified typology of core-periphery structure in networks}
+    \field{journaltitle}{arXiv preprint arXiv:2005.10191}
+    \field{year}{2020}
+  \endentry
+
+  \entry{gonzalez2013broadcasters}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GBS}{%
+         family={Gonz{\'a}lez-Bail{\'o}n},
+         familyi={G\bibinithyphendelim B\bibinitperiod},
+         given={Sandra},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BHJ}{%
+         family={Borge-Holthoefer},
+         familyi={B\bibinithyphendelim H\bibinitperiod},
+         given={Javier},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Moreno},
+         familyi={M\bibinitperiod},
+         given={Yamir},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Sage Publications Sage CA: Los Angeles, CA}%
+    }
+    \strng{namehash}{GBSBHJMY1}
+    \strng{fullhash}{GBSBHJMY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{7}
+    \field{pages}{943\bibrangedash 965}
+    \field{title}{Broadcasters and hidden influentials in online protest
+  diffusion}
+    \field{volume}{57}
+    \field{journaltitle}{American behavioral scientist}
+    \field{year}{2013}
+  \endentry
+
+  \entry{hajra2004}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HKB}{%
+         family={Hajra},
+         familyi={H\bibinitperiod},
+         given={Kamalika\bibnamedelima Basu},
+         giveni={K\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Sen},
+         familyi={S\bibinitperiod},
+         given={Parongama},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{HKBSP1}
+    \strng{fullhash}{HKBSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{5}
+    \field{pages}{056103}
+    \field{title}{Phase transitions in an aging network}
+    \field{volume}{70}
+    \field{journaltitle}{Physical Review E}
+    \field{year}{2004}
+  \endentry
+
+  \entry{hidalgo2009building}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HCA}{%
+         family={Hidalgo},
+         familyi={H\bibinitperiod},
+         given={C{\'e}sar\bibnamedelima A},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Hausmann},
+         familyi={H\bibinitperiod},
+         given={Ricardo},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {National Acad Sciences}%
+    }
+    \strng{namehash}{HCAHR1}
+    \strng{fullhash}{HCAHR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{26}
+    \field{pages}{10570\bibrangedash 10575}
+    \field{title}{The building blocks of economic complexity}
+    \field{volume}{106}
+    \field{journaltitle}{Proceedings of the national academy of sciences}
+    \field{year}{2009}
+  \endentry
+
+  \entry{holme2012}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HP}{%
+         family={Holme},
+         familyi={H\bibinitperiod},
+         given={Petter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Saram{\"a}ki},
+         familyi={S\bibinitperiod},
+         given={Jari},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{HPSJ1}
+    \strng{fullhash}{HPSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{3}
+    \field{pages}{97\bibrangedash 125}
+    \field{title}{Temporal networks}
+    \field{volume}{519}
+    \field{journaltitle}{Physics reports}
+    \field{year}{2012}
+  \endentry
+
+  \entry{ihlen2012}{article}{}
+    \name{author}{1}{}{%
+      {{hash=IEAFE}{%
+         family={Ihlen},
+         familyi={I\bibinitperiod},
+         given={Espen Alexander F{\"u}rst\bibnamedelima EAFI},
+         giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  F\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Frontiers}%
+    }
+    \strng{namehash}{IEAFE1}
+    \strng{fullhash}{IEAFE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{pages}{141}
+    \field{title}{Introduction to multifractal detrended fluctuation analysis
+  in Matlab}
+    \field{volume}{3}
+    \field{journaltitle}{Frontiers in physiology}
+    \field{year}{2012}
+  \endentry
+
+  \entry{kairam2012life}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=KSR}{%
+         family={Kairam},
+         familyi={K\bibinitperiod},
+         given={Sanjay\bibnamedelima Ram},
+         giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=WDJ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Dan\bibnamedelima J},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Leskovec},
+         familyi={L\bibinitperiod},
+         given={Jure},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KSRWDJLJ1}
+    \strng{fullhash}{KSRWDJLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{Proceedings of the fifth ACM international conference on
+  Web search and data mining}
+    \field{pages}{673\bibrangedash 682}
+    \field{title}{The life and death of online groups: Predicting group growth
+  and longevity}
+    \field{year}{2012}
+  \endentry
+
+  \entry{kantelhardt2001}{article}{}
+    \name{author}{5}{}{%
+      {{hash=KJW}{%
+         family={Kantelhardt},
+         familyi={K\bibinitperiod},
+         given={Jan\bibnamedelima W},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=KBE}{%
+         family={Koscielny-Bunde},
+         familyi={K\bibinithyphendelim B\bibinitperiod},
+         given={Eva},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=RHH}{%
+         family={Rego},
+         familyi={R\bibinitperiod},
+         given={Henio\bibnamedelima HA},
+         giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Havlin},
+         familyi={H\bibinitperiod},
+         given={Shlomo},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bunde},
+         familyi={B\bibinitperiod},
+         given={Armin},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KJW+1}
+    \strng{fullhash}{KJWKBERHHHSBA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{3-4}
+    \field{pages}{441\bibrangedash 454}
+    \field{title}{Detecting long-range correlations with detrended fluctuation
+  analysis}
+    \field{volume}{295}
+    \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+    \field{year}{2001}
+  \endentry
+
+  \entry{kantelhardt2002}{article}{}
+    \name{author}{6}{}{%
+      {{hash=KJW}{%
+         family={Kantelhardt},
+         familyi={K\bibinitperiod},
+         given={Jan\bibnamedelima W},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=ZSA}{%
+         family={Zschiegner},
+         familyi={Z\bibinitperiod},
+         given={Stephan\bibnamedelima A},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=KBE}{%
+         family={Koscielny-Bunde},
+         familyi={K\bibinithyphendelim B\bibinitperiod},
+         given={Eva},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Havlin},
+         familyi={H\bibinitperiod},
+         given={Shlomo},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bunde},
+         familyi={B\bibinitperiod},
+         given={Armin},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SHE}{%
+         family={Stanley},
+         familyi={S\bibinitperiod},
+         given={H\bibnamedelima Eugene},
+         giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KJW+1}
+    \strng{fullhash}{KJWZSAKBEHSBASHE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{1-4}
+    \field{pages}{87\bibrangedash 114}
+    \field{title}{Multifractal detrended fluctuation analysis of nonstationary
+  time series}
+    \field{volume}{316}
+    \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+    \field{year}{2002}
+  \endentry
+
+  \entry{krings2012effects}{article}{}
+    \name{author}{5}{}{%
+      {{hash=KG}{%
+         family={Krings},
+         familyi={K\bibinitperiod},
+         given={Gautier},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Karsai},
+         familyi={K\bibinitperiod},
+         given={M{\'a}rton},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bernhardsson},
+         familyi={B\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BVD}{%
+         family={Blondel},
+         familyi={B\bibinitperiod},
+         given={Vincent\bibnamedelima D},
+         giveni={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Saram{\"a}ki},
+         familyi={S\bibinitperiod},
+         given={Jari},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SpringerOpen}%
+    }
+    \strng{namehash}{KG+1}
+    \strng{fullhash}{KGKMBSBVDSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 16}
+    \field{title}{Effects of time window size and placement on the structure of
+  an aggregated communication network}
+    \field{volume}{1}
+    \field{journaltitle}{EPJ Data Science}
+    \field{year}{2012}
+  \endentry
+
+  \entry{leskovec2008microscopic}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=LJ}{%
+         family={Leskovec},
+         familyi={L\bibinitperiod},
+         given={Jure},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Backstrom},
+         familyi={B\bibinitperiod},
+         given={Lars},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Kumar},
+         familyi={K\bibinitperiod},
+         given={Ravi},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tomkins},
+         familyi={T\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LJ+1}
+    \strng{fullhash}{LJBLKRTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{Proceedings of the 14th ACM SIGKDD international
+  conference on Knowledge discovery and data mining}
+    \field{pages}{462\bibrangedash 470}
+    \field{title}{Microscopic evolution of social networks}
+    \field{year}{2008}
+  \endentry
+
+  \entry{makse1996method}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MHA}{%
+         family={Makse},
+         familyi={M\bibinitperiod},
+         given={Hern{\'a}n\bibnamedelima A},
+         giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Havlin},
+         familyi={H\bibinitperiod},
+         given={Shlomo},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Schwartz},
+         familyi={S\bibinitperiod},
+         given={Moshe},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SHE}{%
+         family={Stanley},
+         familyi={S\bibinitperiod},
+         given={H\bibnamedelima Eugene},
+         giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{MHA+1}
+    \strng{fullhash}{MHAHSSMSHE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{5}
+    \field{pages}{5445}
+    \field{title}{Method for generating long-range correlations for large
+  systems}
+    \field{volume}{53}
+    \field{journaltitle}{Physical Review E}
+    \field{year}{1996}
+  \endentry
+
+  \entry{melnikovDynamicInteractionBasedReputation2018}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=MA}{%
+         family={{Melnikov}},
+         familyi={M\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={{Lee}},
+         familyi={L\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RV}{%
+         family={{Rivera}},
+         familyi={R\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={{Mazzara}},
+         familyi={M\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={{Longo}},
+         familyi={L\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MA+1}
+    \strng{fullhash}{MALJRVMMLL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{2018 IEEE 32nd International Conference on Advanced
+  Information Networking and Applications (AINA)}
+    \verb{doi}
+    \verb 10.1109/AINA.2018.00070
+    \endverb
+    \field{pages}{422\bibrangedash 428}
+    \field{title}{Towards Dynamic Interaction-Based Reputation Models}
+    \field{year}{2018}
+  \endentry
+
+  \entry{mitrovic2011quantitative}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MM}{%
+         family={Mitrovi{\'c}},
+         familyi={M\bibinitperiod},
+         given={Marija},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Paltoglou},
+         familyi={P\bibinitperiod},
+         given={Georgios},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=TB}{%
+         family={Tadi{\'c}},
+         familyi={T\bibinitperiod},
+         given={Bosiljka},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{MMPGTB1}
+    \strng{fullhash}{MMPGTB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{02}
+    \field{pages}{P02005}
+    \field{title}{Quantitative analysis of bloggers’ collective behavior
+  powered by emotions}
+    \field{volume}{2011}
+    \field{journaltitle}{Journal of Statistical Mechanics: Theory and
+  Experiment}
+    \field{year}{2011}
+  \endentry
+
+  \entry{mitrovic2012}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=MM}{%
+         family={Mitrovi{\'{c}}},
+         familyi={M\bibinitperiod},
+         given={Marija},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TB}{%
+         family={Tadi{\'{c}}},
+         familyi={T\bibinitperiod},
+         given={Bosiljka},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer International Publishing}%
+    }
+    \strng{namehash}{MMTB1}
+    \strng{fullhash}{MMTB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Springer Optimization and Its Applications}
+    \field{pages}{209\bibrangedash 227}
+    \field{title}{Emergence and structure of Cybercommunities}
+    \field{volume}{57}
+    \field{year}{2012}
+  \endentry
+
+  \entry{mitzenmacher2004brief}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MM}{%
+         family={Mitzenmacher},
+         familyi={M\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{MM1}
+    \strng{fullhash}{MM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{2}
+    \field{pages}{226\bibrangedash 251}
+    \field{title}{A brief history of generative models for power law and
+  lognormal distributions}
+    \field{volume}{1}
+    \field{journaltitle}{Internet mathematics}
+    \field{year}{2004}
+  \endentry
+
+  \entry{mondani2014fat}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MH}{%
+         family={Mondani},
+         familyi={M\bibinitperiod},
+         given={Hernan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HP}{%
+         family={Holme},
+         familyi={H\bibinitperiod},
+         given={Petter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=LF}{%
+         family={Liljeros},
+         familyi={L\bibinitperiod},
+         given={Fredrik},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science San Francisco, USA}%
+    }
+    \strng{namehash}{MHHPLF1}
+    \strng{fullhash}{MHHPLF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{7}
+    \field{pages}{e100527}
+    \field{title}{Fat-tailed fluctuations in the size of organizations: the
+  role of social influence}
+    \field{volume}{9}
+    \field{journaltitle}{PLoS One}
+    \field{year}{2014}
+  \endentry
+
+  \entry{montazeri2001anxiety}{article}{}
+    \name{author}{7}{}{%
+      {{hash=MA}{%
+         family={Montazeri},
+         familyi={M\bibinitperiod},
+         given={Ali},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Jarvandi},
+         familyi={J\bibinitperiod},
+         given={Soghra},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Haghighat},
+         familyi={H\bibinitperiod},
+         given={Shahpar},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=VM}{%
+         family={Vahdani},
+         familyi={V\bibinitperiod},
+         given={Mariam},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sajadian},
+         familyi={S\bibinitperiod},
+         given={Akram},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=EM}{%
+         family={Ebrahimi},
+         familyi={E\bibinitperiod},
+         given={Mandana},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HMM}{%
+         family={Haji-Mahmoodi},
+         familyi={H\bibinithyphendelim M\bibinitperiod},
+         given={Mehregan},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{MA+2}
+    \strng{fullhash}{MAJSHSVMSAEMHMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{3}
+    \field{pages}{195\bibrangedash 198}
+    \field{title}{Anxiety and depression in breast cancer patients before and
+  after participation in a cancer support group}
+    \field{volume}{45}
+    \field{journaltitle}{Patient education and counseling}
+    \field{year}{2001}
+  \endentry
+
+  \entry{newman2010}{book}{}
+    \name{author}{1}{}{%
+      {{hash=NMEJ}{%
+         family={Newman},
+         familyi={N\bibinitperiod},
+         given={M.\bibnamedelima E.\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim
+  J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{NMEJ1}
+    \strng{fullhash}{NMEJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{title}{Networks: An Introductio.}
+    \field{year}{2010}
+  \endentry
+
+  \entry{orsini2015quantifying}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{10}{}{%
+      {{hash=OC}{%
+         family={Orsini},
+         familyi={O\bibinitperiod},
+         given={Chiara},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DMM}{%
+         family={Dankulov},
+         familyi={D\bibinitperiod},
+         given={Marija\bibnamedelima M},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=CdSP}{%
+         prefix={Colomer-de},
+         prefixi={C\bibinithyphendelim d\bibinitperiod},
+         family={Sim{\'o}n},
+         familyi={S\bibinitperiod},
+         given={Pol},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=JA}{%
+         family={Jamakovic},
+         familyi={J\bibinitperiod},
+         given={Almerima},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Mahadevan},
+         familyi={M\bibinitperiod},
+         given={Priya},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=VA}{%
+         family={Vahdat},
+         familyi={V\bibinitperiod},
+         given={Amin},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BKE}{%
+         family={Bassler},
+         familyi={B\bibinitperiod},
+         given={Kevin\bibnamedelima E},
+         giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=TZ}{%
+         family={Toroczkai},
+         familyi={T\bibinitperiod},
+         given={Zolt{\'a}n},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bogun{\'a}},
+         familyi={B\bibinitperiod},
+         given={Mari{\'a}n},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Caldarelli},
+         familyi={C\bibinitperiod},
+         given={Guido},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{OC+1}
+    \strng{fullhash}{OCDMMSPCdJAMPVABKETZBMCG+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 10}
+    \field{title}{Quantifying randomness in real networks}
+    \field{volume}{6}
+    \field{journaltitle}{Nature communications}
+    \field{year}{2015}
+  \endentry
+
+  \entry{peng1994}{article}{}
+    \name{author}{6}{}{%
+      {{hash=PCK}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={C-K},
+         giveni={C\bibinithyphendelim K\bibinitperiod},
+      }}%
+      {{hash=BSV}{%
+         family={Buldyrev},
+         familyi={B\bibinitperiod},
+         given={Sergey\bibnamedelima V},
+         giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Havlin},
+         familyi={H\bibinitperiod},
+         given={Shlomo},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Simons},
+         familyi={S\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SHE}{%
+         family={Stanley},
+         familyi={S\bibinitperiod},
+         given={H\bibnamedelima Eugene},
+         giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=GAL}{%
+         family={Goldberger},
+         familyi={G\bibinitperiod},
+         given={Ary\bibnamedelima L},
+         giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{PCK+1}
+    \strng{fullhash}{PCKBSVHSSMSHEGAL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{2}
+    \field{pages}{1685}
+    \field{title}{Mosaic organization of DNA nucleotides}
+    \field{volume}{49}
+    \field{journaltitle}{Physical review e}
+    \field{year}{1994}
+  \endentry
+
+  \entry{qian2014origin}{article}{}
+    \name{author}{5}{}{%
+      {{hash=QJH}{%
+         family={Qian},
+         familyi={Q\bibinitperiod},
+         given={Jiang-Hai},
+         giveni={J\bibinithyphendelim H\bibinitperiod},
+      }}%
+      {{hash=CQ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Qu},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=HDD}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Ding-Ding},
+         giveni={D\bibinithyphendelim D\bibinitperiod},
+      }}%
+      {{hash=MYG}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Yu-Gang},
+         giveni={Y\bibinithyphendelim G\bibinitperiod},
+      }}%
+      {{hash=SWQ}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={Wen-Qing},
+         giveni={W\bibinithyphendelim Q\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{QJH+1}
+    \strng{fullhash}{QJHCQHDDMYGSWQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Q}
+    \field{sortinithash}{Q}
+    \field{number}{6}
+    \field{pages}{062808}
+    \field{title}{Origin of Gibrat law in Internet: Asymmetric distribution of
+  the correlation}
+    \field{volume}{89}
+    \field{journaltitle}{Physical Review E}
+    \field{year}{2014}
+  \endentry
+
+  \entry{radicchi2008universality}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RF}{%
+         family={Radicchi},
+         familyi={R\bibinitperiod},
+         given={Filippo},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Fortunato},
+         familyi={F\bibinitperiod},
+         given={Santo},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Castellano},
+         familyi={C\bibinitperiod},
+         given={Claudio},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {National Acad Sciences}%
+    }
+    \strng{namehash}{RFFSCC1}
+    \strng{fullhash}{RFFSCC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{number}{45}
+    \field{pages}{17268\bibrangedash 17272}
+    \field{title}{Universality of citation distributions: Toward an objective
+  measure of scientific impact}
+    \field{volume}{105}
+    \field{journaltitle}{Proceedings of the National Academy of Sciences}
+    \field{year}{2008}
+  \endentry
+
+  \entry{martin}{article}{}
+    \name{author}{4}{}{%
+      {{hash=RM}{%
+         family={Rosvall},
+         familyi={R\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Delvenne},
+         familyi={D\bibinitperiod},
+         given={Jean{-}Charles},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SMT}{%
+         family={Schaub},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima T.},
+         giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=LR}{%
+         family={Lambiotte},
+         familyi={L\bibinitperiod},
+         given={Renaud},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RM+1}
+    \strng{fullhash}{RMDJSMTLR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{eprint}
+    \verb 1712.06468
+    \endverb
+    \field{title}{Different approaches to community detection}
+    \verb{url}
+    \verb http://arxiv.org/abs/1712.06468
+    \endverb
+    \field{volume}{abs/1712.06468}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
+  \endentry
+
+  \entry{santos2019activity}{article}{}
+    \name{author}{5}{}{%
+      {{hash=ST}{%
+         family={Santos},
+         familyi={S\bibinitperiod},
+         given={Tiago},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Walk},
+         familyi={W\bibinitperiod},
+         given={Simon},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Kern},
+         familyi={K\bibinitperiod},
+         given={Roman},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Strohmaier},
+         familyi={S\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Helic},
+         familyi={H\bibinitperiod},
+         given={Denis},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM New York, NY, USA}%
+    }
+    \strng{namehash}{ST+1}
+    \strng{fullhash}{STWSKRSMHD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 23}
+    \field{title}{Activity archetypes in question-and-Answer (Q8A) websites—a
+  study of 50 stack exchange instances}
+    \field{volume}{2}
+    \field{journaltitle}{ACM Transactions on Social Computing}
+    \field{year}{2019}
+  \endentry
+
+  \entry{santos2019self}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=ST}{%
+         family={Santos},
+         familyi={S\bibinitperiod},
+         given={Tiago},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Walk},
+         familyi={W\bibinitperiod},
+         given={Simon},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Kern},
+         familyi={K\bibinitperiod},
+         given={Roman},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Strohmaier},
+         familyi={S\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Helic},
+         familyi={H\bibinitperiod},
+         given={Denis},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ST+1}
+    \strng{fullhash}{STWSKRSMHD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{The World Wide Web Conference}
+    \field{pages}{1634\bibrangedash 1645}
+    \field{title}{Self-and cross-excitation in stack exchange question \&
+  answer communities}
+    \field{year}{2019}
+  \endentry
+
+  \entry{tiago2}{article}{}
+    \name{author}{6}{}{%
+      {{hash=STA}{%
+         family={Schieber},
+         familyi={S\bibinitperiod},
+         given={Tiago\bibnamedelima A},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Carpi},
+         familyi={C\bibinitperiod},
+         given={Laura},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DGA}{%
+         family={D{\'\i}az-Guilera},
+         familyi={D\bibinithyphendelim G\bibinitperiod},
+         given={Albert},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PPM}{%
+         family={Pardalos},
+         familyi={P\bibinitperiod},
+         given={Panos\bibnamedelima M},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Masoller},
+         familyi={M\bibinitperiod},
+         given={Cristina},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=RMG}{%
+         family={Ravetti},
+         familyi={R\bibinitperiod},
+         given={Mart{\'\i}n\bibnamedelima G},
+         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{STA+1}
+    \strng{fullhash}{STACLDGAPPMMCRMG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 10}
+    \field{title}{Quantification of network structural dissimilarities}
+    \field{volume}{8}
+    \field{journaltitle}{Nature communications}
+    \field{year}{2017}
+  \endentry
+
+  \entry{smiljanic2017associative}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SJ}{%
+         family={Smiljani{\'c}},
+         familyi={S\bibinitperiod},
+         given={Jelena},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MDM}{%
+         family={Mitrovi{\'c}\bibnamedelima Dankulov},
+         familyi={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+         given={Marija},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science San Francisco, CA USA}%
+    }
+    \strng{namehash}{SJMDM1}
+    \strng{fullhash}{SJMDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{2}
+    \field{pages}{e0171565}
+    \field{title}{Associative nature of event participation dynamics: A network
+  theory approach}
+    \field{volume}{12}
+    \field{journaltitle}{PloS one}
+    \field{year}{2017}
+  \endentry
+
+  \entry{smiljanic2016theoretical}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SJ}{%
+         family={Smiljani{\'c}},
+         familyi={S\bibinitperiod},
+         given={Jelena},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Chatterjee},
+         familyi={C\bibinitperiod},
+         given={Arnab},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kauppinen},
+         familyi={K\bibinitperiod},
+         given={Tomi},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MDM}{%
+         family={Mitrovi{\'c}\bibnamedelima Dankulov},
+         familyi={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+         given={Marija},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science San Francisco, CA USA}%
+    }
+    \strng{namehash}{SJ+1}
+    \strng{fullhash}{SJCAKTMDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{2}
+    \field{pages}{e0148528}
+    \field{title}{A theoretical model for the associative nature of conference
+  participation}
+    \field{volume}{11}
+    \field{journaltitle}{PloS one}
+    \field{year}{2016}
+  \endentry
+
+  \entry{stanley1996scaling}{article}{}
+    \name{author}{8}{}{%
+      {{hash=SMH}{%
+         family={Stanley},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima HR},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=ALA}{%
+         family={Amaral},
+         familyi={A\bibinitperiod},
+         given={Luis\bibnamedelima AN},
+         giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=BSV}{%
+         family={Buldyrev},
+         familyi={B\bibinitperiod},
+         given={Sergey\bibnamedelima V},
+         giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Havlin},
+         familyi={H\bibinitperiod},
+         given={Shlomo},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Leschhorn},
+         familyi={L\bibinitperiod},
+         given={Heiko},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Maass},
+         familyi={M\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SMA}{%
+         family={Salinger},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima A},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SHE}{%
+         family={Stanley},
+         familyi={S\bibinitperiod},
+         given={H\bibnamedelima Eugene},
+         giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{SMH+1}
+    \strng{fullhash}{SMHALABSVHSLHMPSMASHE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{6568}
+    \field{pages}{804\bibrangedash 806}
+    \field{title}{Scaling behaviour in the growth of companies}
+    \field{volume}{379}
+    \field{journaltitle}{Nature}
+    \field{year}{1996}
+  \endentry
+
+  \entry{suvakov2013}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SM}{%
+         family={Suvakov},
+         familyi={S\bibinitperiod},
+         given={Milovan},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mitrovic},
+         familyi={M\bibinitperiod},
+         given={Marija},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GV}{%
+         family={Gligorijevic},
+         familyi={G\bibinitperiod},
+         given={Vladimir},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=TB}{%
+         family={Tadic},
+         familyi={T\bibinitperiod},
+         given={Bosiljka},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SM+1}
+    \strng{fullhash}{SMMMGVTB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{79}
+    \field{pages}{20120819}
+    \field{title}{How the online social networks are used: dialogues-based
+  structure of MySpace}
+    \field{volume}{10}
+    \field{journaltitle}{Journal of The Royal Society Interface}
+    \field{year}{2013}
+  \endentry
+
+  \entry{torok2013opinions}{article}{}
+    \name{author}{6}{}{%
+      {{hash=TJ}{%
+         family={T{\"o}r{\"o}k},
+         familyi={T\bibinitperiod},
+         given={J{\'a}nos},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=IG}{%
+         family={I{\~n}iguez},
+         familyi={I\bibinitperiod},
+         given={Gerardo},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=YT}{%
+         family={Yasseri},
+         familyi={Y\bibinitperiod},
+         given={Taha},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SMM}{%
+         family={San\bibnamedelima Miguel},
+         familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={Maxi},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kaski},
+         familyi={K\bibinitperiod},
+         given={Kimmo},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kert{\'e}sz},
+         familyi={K\bibinitperiod},
+         given={J{\'a}nos},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{TJ+1}
+    \strng{fullhash}{TJIGYTSMMKKKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{number}{8}
+    \field{pages}{088701}
+    \field{title}{Opinions, conflicts, and consensus: modeling social dynamics
+  in a collaborative environment}
+    \field{volume}{110}
+    \field{journaltitle}{Physical review letters}
+    \field{year}{2013}
+  \endentry
+
+  \entry{vranic2021growth}{article}{}
+    \name{author}{2}{}{%
+      {{hash=VA}{%
+         family={Vrani{\'c}},
+         familyi={V\bibinitperiod},
+         given={Ana},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DMM}{%
+         family={Dankulov},
+         familyi={D\bibinitperiod},
+         given={Marija\bibnamedelima Mitrovi{\'c}},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{VADMM1}
+    \strng{fullhash}{VADMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{number}{1}
+    \field{pages}{013405}
+    \field{title}{Growth signals determine the topology of evolving networks}
+    \field{volume}{2021}
+    \field{journaltitle}{Journal of Statistical Mechanics: Theory and
+  Experiment}
+    \field{year}{2021}
+  \endentry
+
+  \entry{yang2014structure}{article}{}
+    \name{author}{2}{}{%
+      {{hash=YJ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Jaewon},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Leskovec},
+         familyi={L\bibinitperiod},
+         given={Jure},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM New York, NY, USA}%
+    }
+    \strng{namehash}{YJLJ1}
+    \strng{fullhash}{YJLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{number}{2}
+    \field{pages}{1\bibrangedash 35}
+    \field{title}{Structure and overlaps of ground-truth communities in
+  networks}
+    \field{volume}{5}
+    \field{journaltitle}{ACM Transactions on Intelligent Systems and Technology
+  (TIST)}
+    \field{year}{2014}
+  \endentry
+
+  \entry{yashkina2020}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=YE}{%
+         family={{Yashkina}},
+         familyi={Y\bibinitperiod},
+         given={{Ekaterina}},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={{Pinigin}},
+         familyi={P\bibinitperiod},
+         given={{Arseny}},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={{Lee}},
+         familyi={L\bibinitperiod},
+         given={{JooYoung}},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={{Mazzara}},
+         familyi={M\bibinitperiod},
+         given={{Manuel}},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={{Adekotujo}},
+         familyi={A\bibinitperiod},
+         given={{Akinlolu Solomon}},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={{Zubair}},
+         familyi={Z\bibinitperiod},
+         given={{Adam}},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={{Longo}},
+         familyi={L\bibinitperiod},
+         given={{Luca}},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \name{editor}{4}{}{%
+      {{hash=BL}{%
+         family={{Barolli}},
+         familyi={B\bibinitperiod},
+         given={{Leonard}},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={{Takizawa}},
+         familyi={T\bibinitperiod},
+         given={{Makoto}},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=XF}{%
+         family={{Xhafa}},
+         familyi={X\bibinitperiod},
+         given={{Fatos}},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=ET}{%
+         family={{Enokido}},
+         familyi={E\bibinitperiod},
+         given={{Tomoya}},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer International Publishing}%
+    }
+    \strng{namehash}{YE+1}
+    \strng{fullhash}{YEPALJMMAAZALL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \verb{doi}
+    \verb 10.1007/978-3-030-15032-7_95
+    \endverb
+    \field{pages}{1133\bibrangedash 1146}
+    \field{series}{Advances in Intelligent Systems and Computing}
+    \field{title}{Expressing Trust with Temporal Frequency of User Interaction
+  in Online Communities}
+    \field{langid}{en}
+    \list{location}{1}{%
+      {Cham}%
+    }
+    \field{year}{2020}
+    \warn{\item Can't use 'date' + 'year'}
+  \endentry
+
+  \entry{yasseri2012dynamics}{article}{}
+    \name{author}{5}{}{%
+      {{hash=YT}{%
+         family={Yasseri},
+         familyi={Y\bibinitperiod},
+         given={Taha},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Sumi},
+         familyi={S\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Rung},
+         familyi={R\bibinitperiod},
+         given={Andr{\'a}s},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kornai},
+         familyi={K\bibinitperiod},
+         given={Andr{\'a}s},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kert{\'e}sz},
+         familyi={K\bibinitperiod},
+         given={J{\'a}nos},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science San Francisco, USA}%
+    }
+    \strng{namehash}{YT+1}
+    \strng{fullhash}{YTSRRAKAKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{number}{6}
+    \field{pages}{e38869}
+    \field{title}{Dynamics of conflicts in Wikipedia}
+    \field{volume}{7}
+    \field{journaltitle}{PloS one}
+    \field{year}{2012}
+  \endentry
+
+  \entry{ZHANG20136100}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ZCX}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Chu-Xu},
+         giveni={C\bibinithyphendelim X\bibinitperiod},
+      }}%
+      {{hash=ZZK}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Zi-Ke},
+         giveni={Z\bibinithyphendelim K\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Chuang},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{Bipartite networks, Evolving model, Network dynamics}
+    \strng{namehash}{ZCXZZKLC1}
+    \strng{fullhash}{ZCXZZKLC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    Understanding the structure and evolution of online bipartite networks is a
+  significant task since they play a crucial role in various e-commerce
+  services nowadays. Recently, various attempts have been tried to propose
+  different models, resulting in either power-law or exponential degree
+  distributions. However, many empirical results show that the user degree
+  distribution actually follows a shifted power-law distribution, the so-called
+  Mandelbrot’s law, which cannot be fully described by previous models. In
+  this paper, we propose an evolving model, considering two different user
+  behaviors: random and preferential attachment. Extensive empirical results on
+  two real bipartite networks, Delicious and CiteULike, show that the
+  theoretical model can well characterize the structure of real networks for
+  both user and object degree distributions. In addition, we introduce a
+  structural parameter p, to demonstrate that the hybrid user behavior leads to
+  the shifted power-law degree distribution, and the region of power-law tail
+  will increase with the increment of p. The proposed model might shed some
+  lights in understanding the underlying laws governing the structure of real
+  online bipartite networks.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.physa.2013.07.027
+    \endverb
+    \field{issn}{0378-4371}
+    \field{number}{23}
+    \field{pages}{6100\bibrangedash 6106}
+    \field{title}{An evolving model of online bipartite networks}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0378437113006377
+    \endverb
+    \field{volume}{392}
+    \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+    \field{year}{2013}
+  \endentry
+
+  \entry{zheleva2009co}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=ZE}{%
+         family={Zheleva},
+         familyi={Z\bibinitperiod},
+         given={Elena},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Sharara},
+         familyi={S\bibinitperiod},
+         given={Hossam},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Getoor},
+         familyi={G\bibinitperiod},
+         given={Lise},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZESHGL1}
+    \strng{fullhash}{ZESHGL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{Proceedings of the 15th ACM SIGKDD international
+  conference on Knowledge discovery and data mining}
+    \field{pages}{1007\bibrangedash 1016}
+    \field{title}{Co-evolution of social and affiliation networks}
+    \field{year}{2009}
+  \endentry
+
+  \entry{zhu2014online}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ZK}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Konglin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Wenzhong},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=FX}{%
+         family={Fu},
+         familyi={F\bibinitperiod},
+         given={Xiaoming},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={Nagler},
+         familyi={N\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science San Francisco, USA}%
+    }
+    \strng{namehash}{ZK+1}
+    \strng{fullhash}{ZKLWFXNJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{number}{6}
+    \field{pages}{e100023}
+    \field{title}{How do online social networks grow?}
+    \field{volume}{9}
+    \field{journaltitle}{Plos one}
+    \field{year}{2014}
+  \endentry
+\enddatalist
+\endinput

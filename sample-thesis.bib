@@ -1623,3 +1623,86 @@ abstract = {Understanding the structure and evolution of online bipartite networ
   publisher={Elsevier}
 }
 
+@article{biSBM,
+  title = {Efficiently inferring community structure in bipartite networks},
+  author = {Larremore, Daniel B. and Clauset, Aaron and Jacobs, Abigail Z.},
+  journal = {Phys. Rev. E},
+  volume = {90},
+  issue = {1},
+  pages = {012805},
+  numpages = {12},
+  year = {2014},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevE.90.012805},
+  url = {https://link.aps.org/doi/10.1103/PhysRevE.90.012805}
+}
+@article {MMSBM,
+	author = {Godoy-Lorite, Antonia and Guimer{\`a}, Roger and Moore, Cristopher and Sales-Pardo, Marta},
+	title = {Accurate and scalable social recommendation using mixed-membership stochastic block models},
+	volume = {113},
+	number = {50},
+	pages = {14207--14212},
+	year = {2016},
+	doi = {10.1073/pnas.1606316113},
+	publisher = {National Academy of Sciences},
+	abstract = {Recommendation systems are designed to predict users{\textquoteright} preferences and provide them with recommendations for items such as books or movies that suit their needs. Recent developments show that some probabilistic models for user preferences yield better predictions than latent feature models such as matrix factorization. However, it has not been possible to use them in real-world datasets because they are not computationally efficient. We have developed a rigorous probabilistic model that outperforms leading approaches for recommendation and whose parameters can be fitted efficiently with an algorithm whose running time scales linearly with the size of the dataset. This model and inference algorithm open the door to more approaches to recommendation and to other problems where matrix factorization is currently used.With increasing amounts of information available, modeling and predicting user preferences{\textemdash}for books or articles, for example{\textemdash}are becoming more important. We present a collaborative filtering model, with an associated scalable algorithm, that makes accurate predictions of users{\textquoteright} ratings. Like previous approaches, we assume that there are groups of users and of items and that the rating a user gives an item is determined by their respective group memberships. However, we allow each user and each item to belong simultaneously to mixtures of different groups and, unlike many popular approaches such as matrix factorization, we do not assume that users in each group prefer a single group of items. In particular, we do not assume that ratings depend linearly on a measure of similarity, but allow probability distributions of ratings to depend freely on the user{\textquoteright}s and item{\textquoteright}s groups. The resulting overlapping groups and predicted ratings can be inferred with an expectation-maximization algorithm whose running time scales linearly with the number of observed ratings. Our approach enables us to predict user preferences in large datasets and is considerably more accurate than the current algorithms for such large datasets.},
+	issn = {0027-8424},
+	URL = {https://www.pnas.org/content/113/50/14207},
+	eprint = {https://www.pnas.org/content/113/50/14207.full.pdf},
+	journal = {Proceedings of the National Academy of Sciences}
+}
+
+@article{userguide,
+title = "Community detection in networks: A user guide",
+journal = "Physics Reports",
+volume = "659",
+pages = "1 - 44",
+year = "2016",
+note = "Community detection in networks: A user guide",
+issn = "0370-1573",
+doi = "https://doi.org/10.1016/j.physrep.2016.09.002",
+url = "http://www.sciencedirect.com/science/article/pii/S0370157316302964",
+author = "Santo Fortunato and Darko Hric",
+keywords = "Networks, Communities, Clustering",
+abstract = "Community detection in networks is one of the most popular topics of modern network science. Communities, or clusters, are usually groups of vertices having higher probability of being connected to each other than to members of other groups, though other patterns are possible. Identifying communities is an ill-defined problem. There are no universal protocols on the fundamental ingredients, like the definition of community itself, nor on other crucial issues, like the validation of algorithms and the comparison of their performances. This has generated a number of confusions and misconceptions, which undermine the progress in the field. We offer a guided tour through the main aspects of the problem. We also point out strengths and weaknesses of popular methods, and give directions to their use."
+}
+
+@article{comparison,
+    author = {Funke, Thorben AND Becker, Till},
+    journal = {PLOS ONE},
+    publisher = {Public Library of Science},
+    title = {Stochastic block models: A comparison of variants and inference methods},
+    year = {2019},
+    month = {04},
+    volume = {14},
+    url = {https://doi.org/10.1371/journal.pone.0215296},
+    pages = {1-40},
+    abstract = {Finding communities in complex networks is a challenging task and one promising approach is the Stochastic Block Model (SBM). But the influences from various fields led to a diversity of variants and inference methods. Therefore, a comparison of the existing techniques and an independent analysis of their capabilities and weaknesses is needed. As a first step, we review the development of different SBM variants such as the degree-corrected SBM of Karrer and Newman or Peixoto’s hierarchical SBM. Beside stating all these variants in a uniform notation, we show the reasons for their development. Knowing the variants, we discuss a variety of approaches to infer the optimal partition like the Metropolis-Hastings algorithm. We perform our analysis based on our extension of the Girvan-Newman test and the Lancichinetti-Fortunato-Radicchi benchmark as well as a selection of some real world networks. Using these results, we give some guidance to the challenging task of selecting an inference method and SBM variant. In addition, we give a simple heuristic to determine the number of steps for the Metropolis-Hastings algorithms that lack a usual stop criterion. With our comparison, we hope to guide researches in the field of SBM and highlight the problem of existing techniques to focus future research. Finally, by making our code freely available, we want to promote a faster development, integration and exchange of new ideas.},
+    number = {4},
+    doi = {10.1371/journal.pone.0215296}
+    
+@article{martin,
+  author    = {Martin Rosvall and
+               Jean{-}Charles Delvenne and
+               Michael T. Schaub and
+               Renaud Lambiotte},
+  title     = {Different approaches to community detection},
+  journal   = {CoRR},
+  volume    = {abs/1712.06468},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1712.06468},
+  archivePrefix = {arXiv},
+  eprint    = {1712.06468},
+  timestamp = {Mon, 13 Aug 2018 16:45:58 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1712-06468},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@misc{advocate,
+    howpublished = "https://data.world/socialmediadata/beeradvocate"
+  }
+
+@misc{stackex,
+    howpublished = "https://area51.stackexchange.com/"
+  }
+
