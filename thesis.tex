@@ -4,8 +4,8 @@
 \usepackage{microtype}
 \usepackage[dvips]{graphicx}
 \usepackage{xcolor}
-\usepackage{times}
-%\usepackage{mathpazo} % Use the Palatino font by default
+%\usepackage{times}
+\usepackage{mathpazo} % Use the Palatino font by default
 
 \usepackage[
 breaklinks=true,colorlinks=true,
@@ -15,17 +15,24 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 \usepackage{graphicx}
 \usepackage{multirow}
 
-\usepackage{geometry}
 % PDF VIEW
 % \geometry{total={210mm,297mm},
 % left=25mm,right=25mm,%
 % bindingoffset=0mm, top=25mm,bottom=25mm}
 % PRINT
-\geometry{
-left=20mm,right=20mm, top=20mm,bottom=20mm}
 
-%\OnehalfSpacing
-\linespread{1.3} %1.3 is onehalf spacing
+
+\usepackage[margin=20mm]{geometry}
+\usepackage[explicit]{titlesec}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{pdfpages}
+\usepackage{afterpage}
+
+\OnehalfSpacing
+%\linespread{1.3} %1.3 is onehalf spacing
+
+\setlength{\emergencystretch}{2.5em} %removes overfull boxes
 
 %%% CHAPTER'S STYLE
 %\chapterstyle{bianchi}

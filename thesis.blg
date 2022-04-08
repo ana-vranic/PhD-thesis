@@ -1,6 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: frontmatter.aux
 A level-1 auxiliary file: Chapters/Chapter_Introduction.aux
 A level-1 auxiliary file: Chapters/Chapter_DrivingSignal.aux
 A level-1 auxiliary file: Chapters/Chapter_GroupsGrowth.aux
@@ -38,7 +39,7 @@ Warning--I didn't find a database entry for "www.meetup.com"
 Warning--empty booktitle in yashkina2020
 You've used 63 entries,
             1791 wiz_defined-function locations,
-            836 strings with 15894 characters,
+            837 strings with 15909 characters,
 and the built_in function-call counts, 16742 in all, are:
 = -- 1462
 > -- 841

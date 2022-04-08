@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.9)  28 MAR 2022 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.9)  6 APR 2022 23:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -411,8 +411,9 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
-Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
@@ -570,66 +571,128 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen194
 \Gm@dimlist=\toks26
 )
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box50
+\beforetitleunit=\skip195
+\aftertitleunit=\skip196
+\ttl@plus=\dimen195
+\ttl@minus=\dimen196
+\ttl@toksa=\toks27
+\titlewidth=\dimen197
+\titlewidthlast=\dimen198
+\titlewidthfirst=\dimen256
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip197
+\enit@outerparindent=\dimen257
+\enit@toks=\toks28
+\enit@inbox=\box51
+\enit@count@id=\count311
+\enitdp@description=\count312
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count313
+\calc@Bcount=\count314
+\calc@Adimen=\dimen258
+\calc@Bdimen=\dimen259
+\calc@Askip=\skip198
+\calc@Bskip=\skip256
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count315
+\calc@Cskip=\skip257
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+)
+\AM@pagewidth=\dimen260
+\AM@pageheight=\dimen261
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box52
+\AM@global@opts=\toks29
+\AM@pagecnt=\count316
+\AM@toc@title=\toks30
+\c@AM@survey=\count317
+\AM@templatesizebox=\box53
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks31
+\AP@partial=\box54
+\AP@footins=\box55
+)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count311
-\l__pdf_internal_box=\box50
+\l__kernel_color_stack_int=\count318
+\l__pdf_internal_box=\box56
 )
 (./thesis.aux (./frontmatter.aux) (./Chapters/Chapter_Introduction.aux)
 (./Chapters/Chapter_DrivingSignal.aux) (./Chapters/Chapter_GroupsGrowth.aux)
 (./Chapters/Chapter_Trust.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 61
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 68
 .
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
-File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-LaTeX Info: Redefining \microtypecontext on input line 61.
+LaTeX Info: Redefining \microtypecontext on input line 68.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 61.
+LaTeX Info: Redefining \showhyphens on input line 68.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg
-File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count312
-\scratchdimen=\dimen195
-\scratchbox=\box51
-\nofMPsegments=\count313
-\nofMParguments=\count314
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count315
-\MPscratchDim=\dimen196
-\MPnumerator=\count316
-\makeMPintoPDFobject=\count317
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count319
+\scratchdimen=\dimen262
+\scratchbox=\box57
+\nofMPsegments=\count320
+\nofMParguments=\count321
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count322
+\MPscratchDim=\dimen263
+\MPnumerator=\count323
+\makeMPintoPDFobject=\count324
+\everyMPtoPDFconversion=\toks33
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -639,8 +702,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box52
-Package hyperref Info: Link coloring ON on input line 61.
+\big@size=\dimen264
+\AtBeginShipoutBox=\box58
+Package hyperref Info: Link coloring ON on input line 68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -651,14 +715,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count318
+\c@section@level=\count325
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 61.
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
+LaTeX Info: Redefining \nameref on input line 68.
+LaTeX Info: Redefining \ref on input line 68.
+LaTeX Info: Redefining \pageref on input line 68.
+LaTeX Info: Redefining \nameref on input line 68.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -698,22 +762,55 @@ LaTeX Info: Redefining \nameref on input line 61.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
 \openout2 = `frontmatter.aux'.
+
 
 (./frontmatter.tex)
 \openout2 = `Chapters/Chapter_Introduction.aux'.
 
  (./Chapters/Chapter_Introduction.tex
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
+1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 11.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 11.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 11.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
+11.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
+11.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
+11.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
+11.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `zplm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 <Figures/Konigsberg_bridges.png, id=112, 303.1325pt x 238.8925pt>
 File: Figures/Konigsberg_bridges.png Graphic file (type png)
 <use Figures/Konigsberg_bridges.png>
@@ -737,40 +834,36 @@ Non-PDF special ignored!
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figures/Konigsberg_bridg
 es.png> <./Figures/Konigsberg_graph.png>] [2] [3] [4] [5] [6] [7] [8]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 198.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 198.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 2
 05.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 ) [9]
-<Figures/structures.png, id=205, 699.36281pt x 392.21532pt>
+<Figures/structures.png, id=187, 699.36281pt x 392.21532pt>
 File: Figures/structures.png Graphic file (type png)
 <use Figures/structures.png>
 Package pdftex.def Info: Figures/structures.png  used on input line 219.
 (pdftex.def)             Requested size: 338.58632pt x 189.88905pt.
- [10 <./Figures/structures.png>] [11] [12] [13]
-Underfull \vbox (badness 3601) has occurred while \output is active []
 
- [14])
-[15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 <./Figures/structures.png>] [11] [12] [13] [14] [15]) [16]
 \openout2 = `Chapters/Chapter_DrivingSignal.aux'.
 
- (./Chapters/Chapter_DrivingSignal.tex [16
 
-
-
-]
-<Figures/ciljevi3.png, id=247, 845.19765pt x 597.6729pt>
+(./Chapters/Chapter_DrivingSignal.tex
+<Figures/ciljevi3.png, id=228, 845.19765pt x 597.6729pt>
 File: Figures/ciljevi3.png Graphic file (type png)
 <use Figures/ciljevi3.png>
 Package pdftex.def Info: Figures/ciljevi3.png  used on input line 22.
 (pdftex.def)             Requested size: 290.22107pt x 205.22156pt.
- [17]
-<Figures/monofractals.png, id=255, 502.2765pt x 458.1918pt>
+ [17
+
+
+
+]
+<Figures/monofractals.png, id=236, 502.2765pt x 458.1918pt>
 File: Figures/monofractals.png Graphic file (type png)
 <use Figures/monofractals.png>
 Package pdftex.def Info: Figures/monofractals.png  used on input line 45.
@@ -779,135 +872,90 @@ Package pdftex.def Info: Figures/monofractals.png  used on input line 45.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18 <./Figures/ciljevi3.png>]
-<Figures/signals.pdf, id=277, 797.15076pt x 326.22404pt>
+[18 <./Figures/ciljevi3.png>] [19 <./Figures/monofractals.png>]
+<Figures/signals.pdf, id=268, 797.15076pt x 326.22404pt>
 File: Figures/signals.pdf Graphic file (type pdf)
 <use Figures/signals.pdf>
 Package pdftex.def Info: Figures/signals.pdf  used on input line 92.
 (pdftex.def)             Requested size: 483.69687pt x 197.95105pt.
-
-Underfull \vbox (badness 2237) has occurred while \output is active []
-
- [19 <./Figures/monofractals.png>]
-<Figures/hurst.pdf, id=287, 412.1774pt x 265.12738pt>
+<Figures/hurst.pdf, id=269, 412.1774pt x 265.12738pt>
 File: Figures/hurst.pdf Graphic file (type pdf)
 <use Figures/hurst.pdf>
 Package pdftex.def Info: Figures/hurst.pdf  used on input line 99.
 (pdftex.def)             Requested size: 290.22107pt x 186.68826pt.
- [20 <./Figures/signals.pdf> <./Figures/hurst.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/hurst.pdf): PDF inclusion: mu
-ltiple pdfs with page group included in a single page
->] [21]
-<Figures/diagram.png, id=415, 470.4777pt x 344.0052pt>
+ [20 <./Figures/signals.pdf>] [21 <./Figures/hurst.pdf>]
+<Figures/diagram.png, id=398, 470.4777pt x 344.0052pt>
 File: Figures/diagram.png Graphic file (type png)
 <use Figures/diagram.png>
 Package pdftex.def Info: Figures/diagram.png  used on input line 132.
 (pdftex.def)             Requested size: 241.84843pt x 176.83658pt.
-
-Underfull \vbox (badness 6808) has occurred while \output is active []
-
  [22 <./Figures/diagram.png>]
-Overfull \hbox (26.90405pt too wide) in paragraph at lines 162--163
-[]\T1/ptm/m/n/12 (-20) D-measure cal-cu-lates Jensen-Shannon di-ver-gence be-tw
-een $\OML/cmm/m/it/12 N$ \T1/ptm/m/n/12 (-20) short-est path dis-tri-bu-tions, 
-$\OML/cmm/m/it/12 J\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P[]; ::; P[]\OT1/cmr/m/n/1
-2 )) =
- []
-
-<Figures/Ddist_M4_w10.5_w20.5.png, id=429, 413.3844pt x 505.89pt>
+<Figures/Ddist_M4_w10.5_w20.5.png, id=412, 413.3844pt x 505.89pt>
 File: Figures/Ddist_M4_w10.5_w20.5.png Graphic file (type png)
 <use Figures/Ddist_M4_w10.5_w20.5.png>
 Package pdftex.def Info: Figures/Ddist_M4_w10.5_w20.5.png  used on input line 1
 70.
 (pdftex.def)             Requested size: 241.84843pt x 295.97147pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Overfull \hbox (1.8017pt too wide) in paragraph at lines 175--176
-\T1/ptm/m/n/12 (-20) The D-measure be-tween net-works grown with monofrac-tal s
-ig-nal, with $\OML/cmm/m/it/12 H \OMS/cmsy/m/n/12 2 f\OT1/cmr/m/n/12 0\OML/cmm/
-m/it/12 :\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 
-:\OT1/cmr/m/n/12 6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cm
-r/m/n/12 7\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12
- 8\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 9\OML/c
-mm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0\OMS/cmsy/m/n/
-12 g$
- []
-
-[23]
-<Figures/Ddistance.pdf, id=441, 418.52371pt x 513.72365pt>
+[23] [24 <./Figures/Ddist_M4_w10.5_w20.5.png>]
+<Figures/Ddistance.pdf, id=430, 418.52371pt x 513.72365pt>
 File: Figures/Ddistance.pdf Graphic file (type pdf)
 <use Figures/Ddistance.pdf>
 Package pdftex.def Info: Figures/Ddistance.pdf  used on input line 182.
 (pdftex.def)             Requested size: 241.84843pt x 296.86249pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 4556) has occurred while \output is active []
-
- [24 <./Figures/Ddist_M4_w10.5_w20.5.png>] [25 <./Figures/Ddistance.pdf>]
-<Figures/aindex.png, id=508, 402.5439pt x 271.7352pt>
+ [25 <./Figures/Ddistance.pdf>]
+<Figures/aindex.png, id=490, 402.5439pt x 271.7352pt>
 File: Figures/aindex.png Graphic file (type png)
 <use Figures/aindex.png>
 Package pdftex.def Info: Figures/aindex.png  used on input line 201.
 (pdftex.def)             Requested size: 217.66211pt x 146.93382pt.
-<Figures/clustering.png, id=509, 393.8715pt x 271.7352pt>
+<Figures/clustering.png, id=491, 393.8715pt x 271.7352pt>
 File: Figures/clustering.png Graphic file (type png)
 <use Figures/clustering.png>
 Package pdftex.def Info: Figures/clustering.png  used on input line 202.
 (pdftex.def)             Requested size: 217.66211pt x 150.16797pt.
-<Figures/b1.pdf, id=511, 854.79347pt x 410.81918pt>
+
+[26 <./Figures/aindex.png> <./Figures/clustering.png>]
+<Figures/b1.pdf, id=501, 854.79347pt x 410.81918pt>
 File: Figures/b1.pdf Graphic file (type pdf)
 <use Figures/b1.pdf>
 Package pdftex.def Info: Figures/b1.pdf  used on input line 213.
 (pdftex.def)             Requested size: 338.58632pt x 162.72627pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/b3.pdf, id=513, 854.79347pt x 410.81918pt>
+<Figures/b3.pdf, id=503, 854.79347pt x 410.81918pt>
 File: Figures/b3.pdf Graphic file (type pdf)
 <use Figures/b3.pdf>
 Package pdftex.def Info: Figures/b3.pdf  used on input line 222.
 (pdftex.def)             Requested size: 338.58632pt x 162.72627pt.
-[26 <./Figures/aindex.png> <./Figures/clustering.png>]
-<Figures/b2.pdf, id=524, 852.33115pt x 408.87442pt>
-File: Figures/b2.pdf Graphic file (type pdf)
-<use Figures/b2.pdf>
-Package pdftex.def Info: Figures/b2.pdf  used on input line 232.
-(pdftex.def)             Requested size: 338.58632pt x 162.42386pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[27 <./Figures/b1.pdf> <./Figures/b3.pdf
+ [27 <./Figures/b1.pdf> <./Figures/b3.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/b3.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >]
+<Figures/b2.pdf, id=660, 852.33115pt x 408.87442pt>
+File: Figures/b2.pdf Graphic file (type pdf)
+<use Figures/b2.pdf>
+Package pdftex.def Info: Figures/b2.pdf  used on input line 232.
+(pdftex.def)             Requested size: 338.58632pt x 162.42386pt.
+ [28 <./Figures/b2.pdf>]
 
-LaTeX Warning: Reference `fig:properties' on page 28 undefined on input line 24
+LaTeX Warning: Reference `fig:properties' on page 29 undefined on input line 24
 3.
 
 
-LaTeX Warning: Reference `fig:properties' on page 28 undefined on input line 24
+LaTeX Warning: Reference `fig:properties' on page 29 undefined on input line 24
 5.
 
 
-Underfull \vbox (badness 3375) has occurred while \output is active []
+Underfull \vbox (badness 3482) has occurred while \output is active []
 
- [28 <./Figures/b2.pdf>]) [29]
+ [29])
+[30]
 \openout2 = `Chapters/Chapter_GroupsGrowth.aux'.
 
- (./Chapters/Chapter_GroupsGrowth.tex [30
-
-
-
-]
+ (./Chapters/Chapter_GroupsGrowth.tex
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
@@ -925,7 +973,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-[31]
+[31
+
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
@@ -935,7 +987,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-[32]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
 
 LaTeX Warning: Reference `sec:data' on page 33 undefined on input line 20.
 
@@ -947,7 +1002,7 @@ LaTeX Warning: Citation `www.meetup.com' on page 33 undefined on input line 24.
 
 
 [33]
-<Figures/Fig2.png, id=851, 635.4942pt x 724.3863pt>
+<Figures/Fig2.png, id=833, 635.4942pt x 724.3863pt>
 File: Figures/Fig2.png Graphic file (type png)
 <use Figures/Fig2.png>
 Package pdftex.def Info: Figures/Fig2.png  used on input line 43.
@@ -956,13 +1011,13 @@ Package pdftex.def Info: Figures/Fig2.png  used on input line 43.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-[34] [35 <./Figures/Fig2.png>]
-<Figures/Fig1.png, id=884, 628.0263pt x 445.9059pt>
+[35 <./Figures/Fig2.png>]
+<Figures/Fig1.png, id=865, 628.0263pt x 445.9059pt>
 File: Figures/Fig1.png Graphic file (type png)
 <use Figures/Fig1.png>
 Package pdftex.def Info: Figures/Fig1.png  used on input line 61.
@@ -977,24 +1032,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--83
 
  []
 
-[37]
-<Figures/test.png, id=922, 599.22362pt x 391.85593pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+<Figures/test.png, id=905, 599.22362pt x 391.85593pt>
 File: Figures/test.png Graphic file (type png)
 <use Figures/test.png>
 Package pdftex.def Info: Figures/test.png  used on input line 96.
 (pdftex.def)             Requested size: 299.61107pt x 195.92747pt.
- [38 <./Figures/test.png>]
-<Figures/Fig3.png, id=928, 637.4214pt x 560.3334pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 2547) has occurred while \output is active []
+
+ [38]
+<Figures/Fig3.png, id=910, 637.4214pt x 560.3334pt>
 File: Figures/Fig3.png Graphic file (type png)
 <use Figures/Fig3.png>
 Package pdftex.def Info: Figures/Fig3.png  used on input line 117.
 (pdftex.def)             Requested size: 290.22107pt x 255.1231pt.
-<Figures/Fig4.png, id=929, 630.6762pt x 452.4102pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/Fig4.png, id=911, 630.6762pt x 452.4102pt>
 File: Figures/Fig4.png Graphic file (type png)
 <use Figures/Fig4.png>
 Package pdftex.def Info: Figures/Fig4.png  used on input line 124.
 (pdftex.def)             Requested size: 290.22107pt x 208.18715pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1003,11 +1071,11 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 129.
 
 
-Overfull \hbox (36.57469pt too wide) in paragraph at lines 131--139
+Overfull \hbox (41.33849pt too wide) in paragraph at lines 131--139
  [][] 
  []
 
-) [39 <./Figures/Fig3.png>] [40 <./Figures/Fig4.png>]
+) [39 <./Figures/test.png>] [40 <./Figures/Fig3.png> <./Figures/Fig4.png>]
 \openout2 = `Chapters/Chapter_Trust.aux'.
 
 
@@ -1024,99 +1092,96 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-[41
+
+Underfull \vbox (badness 1406) has occurred while \output is active []
+
+ [41
 
 
 
 ]
-Underfull \vbox (badness 1117) has occurred while \output is active []
-
- [42]
-<Figures/Active_questions_7days.png, id=961, 1170.3725pt x 175.65625pt>
+[42]
+<Figures/Active_questions_7days.png, id=943, 1170.3725pt x 175.65625pt>
 File: Figures/Active_questions_7days.png Graphic file (type png)
 <use Figures/Active_questions_7days.png>
 Package pdftex.def Info: Figures/Active_questions_7days.png  used on input line
  47.
 (pdftex.def)             Requested size: 241.84843pt x 36.29654pt.
-
-[43 <./Figures/Active_questions_7days.png>] [44] [45] [46]
+ [43 <./Figures/Active_questions_7days.png>] [44] [45] [46]
 
 LaTeX Warning: Reference `fig:paper_summary' on page 47 undefined on input line
  139.
 
 [47]
-<Figures/active_users_mean_dyn_rep.png, id=1027, 578.16pt x 505.89pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48]
+<Figures/active_users_mean_dyn_rep.png, id=1014, 578.16pt x 505.89pt>
 File: Figures/active_users_mean_dyn_rep.png Graphic file (type png)
 <use Figures/active_users_mean_dyn_rep.png>
 Package pdftex.def Info: Figures/active_users_mean_dyn_rep.png  used on input l
 ine 157.
 (pdftex.def)             Requested size: 241.84843pt x 211.61551pt.
- [48]
-<Figures/Mean_clustering_coef.png, id=1036, 279.9258pt x 448.5558pt>
+<Figures/Mean_clustering_coef.png, id=1016, 279.9258pt x 448.5558pt>
 File: Figures/Mean_clustering_coef.png Graphic file (type png)
 <use Figures/Mean_clustering_coef.png>
 Package pdftex.def Info: Figures/Mean_clustering_coef.png  used on input line 1
 71.
 (pdftex.def)             Requested size: 241.84843pt x 387.54369pt.
- [49 <./Figures/active_users_mean_dyn_rep.png (PNG copy)>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[49 <./Figures/active_users_mean_dyn_rep.png (PNG copy)>]
+Underfull \vbox (badness 3058) has occurred while \output is active []
 
  [50 <./Figures/Mean_clustering_coef.png>]
-<Figures/LN_core_coreper.png, id=1052, 578.16pt x 505.89pt>
+<Figures/LN_core_coreper.png, id=1035, 578.16pt x 505.89pt>
 File: Figures/LN_core_coreper.png Graphic file (type png)
 <use Figures/LN_core_coreper.png>
 Package pdftex.def Info: Figures/LN_core_coreper.png  used on input line 184.
 (pdftex.def)             Requested size: 241.84843pt x 211.61551pt.
-<Figures/core_dr_test.png, id=1053, 867.24pt x 722.7pt>
+<Figures/core_dr_test.png, id=1036, 867.24pt x 722.7pt>
 File: Figures/core_dr_test.png Graphic file (type png)
 <use Figures/core_dr_test.png>
 Package pdftex.def Info: Figures/core_dr_test.png  used on input line 195.
 (pdftex.def)             Requested size: 241.84843pt x 201.53857pt.
- [51 <./Figures/LN_core_coreper.png (PNG copy)> <./Figures/core_dr_test.png>]
 
-LaTeX Warning: Reference `fig:dyn_rep_coreper' on page 52 undefined on input li
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51 <./Figures/LN_core_coreper.png (PNG copy)>] [52 <./Figures/core_dr_test.pn
+g>]
+
+LaTeX Warning: Reference `fig:dyn_rep_coreper' on page 53 undefined on input li
 ne 209.
 
-[52]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 236.
-<Figures/FigA1.png, id=1070, 415.19115pt x 273.9033pt>
+[53]
+<Figures/FigA1.png, id=1061, 415.19115pt x 273.9033pt>
 File: Figures/FigA1.png Graphic file (type png)
 <use Figures/FigA1.png>
 Package pdftex.def Info: Figures/FigA1.png  used on input line 244.
 (pdftex.def)             Requested size: 241.84843pt x 159.54526pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[53]
-<Figures/FigA2.png, id=1080, 1077.5457pt x 289.08pt>
+ [54 <./Figures/FigA1.png>]
+<Figures/FigA2.png, id=1068, 1077.5457pt x 289.08pt>
 File: Figures/FigA2.png Graphic file (type png)
 <use Figures/FigA2.png>
 Package pdftex.def Info: Figures/FigA2.png  used on input line 258.
 (pdftex.def)             Requested size: 483.69687pt x 129.76279pt.
-<Figures/FigA3.png, id=1082, 958.3002pt x 505.89pt>
+<Figures/FigA3.png, id=1070, 958.3002pt x 505.89pt>
 File: Figures/FigA3.png Graphic file (type png)
 <use Figures/FigA3.png>
 Package pdftex.def Info: Figures/FigA3.png  used on input line 267.
 (pdftex.def)             Requested size: 483.69687pt x 255.34505pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/FigA4.png, id=1084, 1070.3187pt x 287.6346pt>
+ [55 <./Figures/FigA2.png> <./Figures/FigA3.png>]
+<Figures/FigA4.png, id=1081, 1070.3187pt x 287.6346pt>
 File: Figures/FigA4.png Graphic file (type png)
 <use Figures/FigA4.png>
 Package pdftex.def Info: Figures/FigA4.png  used on input line 276.
 (pdftex.def)             Requested size: 483.69687pt x 129.98737pt.
-[54 <./Figures/FigA1.png> <./Figures/FigA2.png>] [55 <./Figures/FigA3.png> <./F
-igures/FigA4.png>]
-<Figures/FigA5.png, id=1102, 1097.7813pt x 287.6346pt>
+ [56 <./Figures/FigA4.png>]
+<Figures/FigA5.png, id=1089, 1097.7813pt x 287.6346pt>
 File: Figures/FigA5.png Graphic file (type png)
 <use Figures/FigA5.png>
 Package pdftex.def Info: Figures/FigA5.png  used on input line 287.
 (pdftex.def)             Requested size: 483.69687pt x 126.73515pt.
-<Figures/FigA6.png, id=1104, 1078.2684pt x 287.6346pt>
+<Figures/FigA6.png, id=1091, 1078.2684pt x 287.6346pt>
 File: Figures/FigA6.png Graphic file (type png)
 <use Figures/FigA6.png>
 Package pdftex.def Info: Figures/FigA6.png  used on input line 300.
@@ -1126,13 +1191,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 297--310
 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[56
+[57
 
  <./Figures/FigA5.png>]
-<Figures/FigA7.png, id=1115, 909.1566pt x 395.3169pt>
+<Figures/FigA7.png, id=1102, 909.1566pt x 395.3169pt>
 File: Figures/FigA7.png Graphic file (type png)
 <use Figures/FigA7.png>
 Package pdftex.def Info: Figures/FigA7.png  used on input line 317.
@@ -1145,30 +1207,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--323
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[57 <./Figures/FigA6.png>]
-<Figures/FigA8.png, id=1127, 726.67485pt x 504.4446pt>
+[58 <./Figures/FigA6.png>]
+<Figures/FigA8.png, id=1113, 726.67485pt x 504.4446pt>
 File: Figures/FigA8.png Graphic file (type png)
 <use Figures/FigA8.png>
 Package pdftex.def Info: Figures/FigA8.png  used on input line 338.
 (pdftex.def)             Requested size: 386.95897pt x 268.62439pt.
-<Figures/FigA10.png, id=1132, 914.57684pt x 413.3844pt>
+
+Underfull \vbox (badness 3769) has occurred while \output is active []
+
+ [59 <./Figures/FigA7.png>]
+<Figures/FigA10.png, id=1127, 914.57684pt x 413.3844pt>
 File: Figures/FigA10.png Graphic file (type png)
 <use Figures/FigA10.png>
 Package pdftex.def Info: Figures/FigA10.png  used on input line 348.
 (pdftex.def)             Requested size: 483.69687pt x 218.6259pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/FigA9.png, id=1133, 1078.2684pt x 291.2481pt>
+<Figures/FigA9.png, id=1128, 1078.2684pt x 291.2481pt>
 File: Figures/FigA9.png Graphic file (type png)
 <use Figures/FigA9.png>
 Package pdftex.def Info: Figures/FigA9.png  used on input line 355.
 (pdftex.def)             Requested size: 483.69687pt x 130.65157pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/FigA11.png, id=1134, 897.95474pt x 395.3169pt>
+<Figures/FigA11.png, id=1129, 897.95474pt x 395.3169pt>
 File: Figures/FigA11.png Graphic file (type png)
 <use Figures/FigA11.png>
 Package pdftex.def Info: Figures/FigA11.png  used on input line 364.
@@ -1176,7 +1239,7 @@ Package pdftex.def Info: Figures/FigA11.png  used on input line 364.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/FigA12.png, id=1135, 1068.1506pt x 287.6346pt>
+<Figures/FigA12.png, id=1130, 1068.1506pt x 287.6346pt>
 File: Figures/FigA12.png Graphic file (type png)
 <use Figures/FigA12.png>
 Package pdftex.def Info: Figures/FigA12.png  used on input line 371.
@@ -1184,9 +1247,9 @@ Package pdftex.def Info: Figures/FigA12.png  used on input line 371.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[58 <./Figures/FigA7.png>] [59 <./Figures/FigA8.png> <./Figures/FigA10.png>]
-[60 <./Figures/FigA9.png> <./Figures/FigA11.png> <./Figures/FigA12.png>]
-<Figures/popular_casual_degree_interactions_top10.pdf, id=1160, 1445.4pt x 867.
+[60 <./Figures/FigA8.png> <./Figures/FigA10.png>] [61 <./Figures/FigA9.png> <./
+Figures/FigA11.png> <./Figures/FigA12.png>]
+<Figures/popular_casual_degree_interactions_top10.pdf, id=1148, 1445.4pt x 867.
 24pt>
 File: Figures/popular_casual_degree_interactions_top10.pdf Graphic file (type p
 df)
@@ -1194,11 +1257,10 @@ df)
 Package pdftex.def Info: Figures/popular_casual_degree_interactions_top10.pdf  
 used on input line 379.
 (pdftex.def)             Requested size: 483.69687pt x 290.21292pt.
-
-[61
+ [62
 
  <./Figures/popular_casual_degree_interactions_top10.pdf>]
-<Figures/FigA14.png, id=1212, 847.7271pt x 1378.9116pt>
+<Figures/FigA14.png, id=1199, 847.7271pt x 1378.9116pt>
 File: Figures/FigA14.png Graphic file (type png)
 <use Figures/FigA14.png>
 Package pdftex.def Info: Figures/FigA14.png  used on input line 395.
@@ -1207,52 +1269,53 @@ Package pdftex.def Info: Figures/FigA14.png  used on input line 395.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [62] [63 <./Figures/FigA14.png>] (./thesis.bbl [64
 
+Overfull \hbox (13.66269pt too wide) in paragraph at lines 411--428
+[][] 
+ []
 
-]
+) [63] [64 <./Figures/FigA14.png>] (./thesis.bbl
 bibitemlist
-[65] [66] [67] [68]) [69]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
+[65
+
+
+] [66] [67] [68]) [69]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
  (./thesis.aux (./frontmatter.aux)
 (./Chapters/Chapter_Introduction.aux) (./Chapters/Chapter_DrivingSignal.aux)
 (./Chapters/Chapter_GroupsGrowth.aux) (./Chapters/Chapter_Trust.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 10E3BE7F9A1A52BFB67095B64D676C9F;1692.
+(rerunfilecheck)             Checksum: BFDC8EECCDB661A99D57DF14D6E7D3BC;1691.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
- 12327 strings out of 483107
- 187052 string characters out of 5964631
- 532237 words of memory out of 5000000
- 26683 multiletter control sequences out of 15000+600000
- 576252 words of font info for 178 fonts, out of 8000000 for 9000
+ 13931 strings out of 483107
+ 210492 string characters out of 5964631
+ 555813 words of memory out of 5000000
+ 28111 multiletter control sequences out of 15000+600000
+ 589983 words of font info for 311 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 37i,12n,42p,1980b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,12n,43p,1982b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (69 pages, 8156471 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mat
+hpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (69 pages, 8106202 bytes).
 PDF statistics:
- 1353 PDF objects out of 1440 (max. 8388607)
- 864 compressed objects within 9 object streams
- 259 named destinations out of 1000 (max. 500000)
- 22940 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 1320 PDF objects out of 1440 (max. 8388607)
+ 835 compressed objects within 9 object streams
+ 245 named destinations out of 1000 (max. 500000)
+ 32156 words of extra memory for PDF output out of 35830 (max. 10000000)
 
