@@ -1,10 +1,9 @@
 
-
 \chapter{Stack Exchange} % Main chapter title
 
 \label{Chapter3}
 
-\section{Data}
+\section{Stack Exchange Data}
 
 We focus the analysis on pairs of closed and active SE communities matched by topic. Astronomy, Literature, and Economics are currently active communities in the public beta phase. All three communities thrived the second time they were proposed. The first attempt to create communities on these topics was unsuccessful, and they were closed within a year. We add to the comparison the early days of Physics community and compare its evolution with the closed Theoretical Physics community. These communities do not have identical topic, but it is safe to assume that there is a high overlap of users' demographics and interests. For these reasons, we treat this pair in the same manner as others.\\ 
 The Stack Exchange data are publicly available and released in a regular time intervals. We are primarily interested in activity and interaction data, which means we extract the following information for posts (questions and answers) and comments: 1) for all posts we extract unique ID; 2) for each post or comment we extract the time of its creation and unique ID its creator - user; 3) for every question we extract information about IDs of all answers to that question and ID accepted of accepted question; for each question or answer we collect information about IDs of comments related to that question or answer. The data contains information about the official StackExchange reputation of each user but only as a single value measuring the final reputation of the user on a day when data archive was released. Because of this significant shortcoming, we do not include this information in our analysis. In SE users can give positive or negative votes to questions and answers, and mark questions as favor, however the data is again provided as a final score recorded at the moment of the realise of the database. Since this does not allows us to analyse the evolution of scores, we omit this data from our analysis.\\
@@ -44,12 +43,69 @@ The values of measures shown in Table \ref{tab:site-info} and S2, and Fig. \ref{
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=0.5\linewidth]{Figures/Active_questions_7days.png}
+	\includegraphics[width=0.5\linewidth]{Figures/figures_SE/Fig2.pdf}
 	\caption{Number of active questions within 7 days sliding windows. Solid line - active sites; dashed lines - closed sites.}
 	\label{fig:active_questions}
 \end{figure*}
 
-\section{Method \label{sec:method}}
+
+
+\subsection{Negative interactions}
+
+The average percentage of negatively voted interactions is 3.2\% for questions and 3\% for answers. Percentages for questions and answers from each community are shown in table \ref{tab:negint}.  Comments cannot have negative vote sum as they can only be upvoted.
+
+\begin{table}[hbt!]
+	\centering
+	\caption{Percentage of negatively voted interactions}
+	\label{tab:negint}
+	\begin{tabular}{@{}ccc@{}}
+		\toprule
+		Community           & Questions & Answers \\ \midrule
+		Physics Launched    & 5\%       & 4\%     \\
+		Physics A51         & 1\%       & 2\%     \\
+		Astronomy Launched  & 3\%       & 3\%     \\
+		Astronomy A51       & 2\%       & 1\%     \\
+		Economics Launched  & 4\%       & 4\%     \\
+		Economics A51       & 7\%       & 4\%     \\
+		Literature Launched & 2\%       & 5\%     \\
+		Literature A51      & 2\%       & 1\%     \\ \midrule
+		\textbf{Average}    & 3.2\%     & 3\%     \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+
+\subsection{Area51 criteria}
+
+The Stack Exchange has its own criteria for the success of sites. They measure how many questions are answered, how many questions are posted per day, and how many answers are posted per question.  There are two measures: the number of avid users and the number of visits that are not easily interpreted from the data. The site is \textit{healthy} if it has 10 questions per day, 2.5 answers per question and more than $90\%$ of answered questions. For less than $80\%$ of answered questions, 5 questions per day and 1 question per answer site \textit{needs some work}. We calculated Stack Exchange statistics for astronomy, economics, literature and physics and results are presented in the table 1. After 180 days only beta physics is healthy site while other betas are at least in two criteria labeled as \textit{okay}. Closed sites mostly \textit{need some work}, the exception is closed astronomy with \textit{excellent} percent of answered questions and \textit{okay} answer ratio. 
+
+\begin{table}[h!]
+	%\footnotesize\sf\centering
+	\caption{Community overview for first 180 days according to SE criteria  }
+	
+	\label{tab:se_c}
+	\begin{tabular}{ccccc}
+		\hline
+		
+		Site & Status &  Answered & Questions per day & Answer ratio \\ \hline
+		\multirow{2}{*}{Astronomy} & \multicolumn{1}{c|}{Closed} & \multicolumn{1}{c|}{\textbf{95} \%}  & \multicolumn{1}{c|}{2.62} & \multicolumn{1}{c}{\underline{2.02}} \\
+		& \multicolumn{1}{c|}{Beta} & \multicolumn{1}{c|}{\textbf{96} \%}  & \multicolumn{1}{c|}{3.57} & \multicolumn{1}{c}{\underline{1.49}} \\ \hline
+		\multirow{2}{*}{Economics} & \multicolumn{1}{c|}{Closed} & \multicolumn{1}{c|}{68 \%}  & \multicolumn{1}{c|}{2.04} & \multicolumn{1}{c}{\underline{1.25}} \\
+		& \multicolumn{1}{c|}{Beta} & \multicolumn{1}{c|}{\underline{84} \%}  & \multicolumn{1}{c|}{\underline{5.66}} & \multicolumn{1}{c}{\underline{1.37}} \\ \hline
+		\multirow{2}{*}{Literature} & \multicolumn{1}{c|}{Closed} & \multicolumn{1}{c|}{79 \%}  & \multicolumn{1}{c|}{1.77} & \multicolumn{1}{c}{\underline{1.65}} \\
+		& \multicolumn{1}{c|}{Beta} & \multicolumn{1}{c|}{74 \%}  & \multicolumn{1}{c|}{\underline{5.04}} & \multicolumn{1}{c}{\underline{1.10}} \\ \hline
+		\multirow{2}{*}{Physics} & \multicolumn{1}{c|}{Closed} & \multicolumn{1}{c|}{83 \%}  & \multicolumn{1}{c|}{1.93} & \multicolumn{1}{c}{\underline{1.64}} \\
+		& \multicolumn{1}{c|}{Beta} & \multicolumn{1}{c|}{\textbf{93} \%}  & \multicolumn{1}{c|}{\textbf{11.76}} & \multicolumn{1}{c}{ \textbf{2.74}} \\ \hline \hline
+		{Stack Exchange criteria} & excellent & $>$ 90 \% & $>$10 & $>$ 2.5   \\
+		& needs some work & $<$ 80 \% & $<5$ & $<$ 1   \\ \hline
+		
+		
+	\end{tabular}
+	
+\end{table}
+
+\clearpage
+
+\section{Properties of Stack Exchange data}
 
 We examine the differences between live and closed communities by analysing network properties and dynamic of collective trust. We are particularly interested in the position of trustworthy members in these communities and whether there are differences between live and close communities. For these reasons, we map the interaction data onto networks and analyse their network properties. We use dynamical reputation model to estimate the trustworthiness of each member of community.     
 
@@ -103,7 +159,59 @@ of the model is one approach to decide which model is more likely.
 %\subsection{Core-periphery sample}
 For each 30 days snapshot network we run 50 iterations and choose the model parameters $\theta$ and $p$ according to minimum description length. MDL does not change much among inferred core-periphery structure, see Fig. A8, while looking into adjusted rand index we can notice that difference exists. Still, ARI between pair-wised compared partitions is large ($ari >0.9$) indicating stability of inferred structures.
 
-\subsection{Dynamic reputation model}
+\subsection{Clustering and core-periphery structure of knowledge-sharing networks}
+
+We first analyse structural properties of Stack Exchange communities and examine the difference between successful and unsuccessful ones. We calculate the mean clustering coefficient for 30-days window networks and examine how it changes with time. Figure \ref{fig:clustering} shows the evolution of mean clustering coefficient for all eight communities. All communities that are still alive are clustered, with the value of mean clustering coefficient higher than 0.1. Physics, the only launched community, has the value of clustering coefficient above 0.2 for the first 180 days.
+During larger part of the observed period, the clustering coefficient of an active community is higher compared to the clustering coefficient of its closed pair. If we compare active communities with their closed counterpart, the closed communities have higher value of the mean clustering coefficient in the early phase while later communities that are still active have higher values of clustering coefficient. These results suggest that all communities have relatively high local cohesiveness, and that lower values of clustering coefficient in the later phase of community life may be an indicator of its decline. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth]{Figures/figures_SE/Fig3.pdf}
+	\caption{Mean clustering coefficient.}
+	\label{fig:clustering}
+\end{figure}
+Furthermore, we examine core-periphery structure of these communities and its evolution. Specifically, we are interested in the evolution of connectivity in the core. Figure \ref{fig:links_per_node} shows the number of links between nodes in the core per node $\frac{L}{N}(t)$. $\frac{2L}{N}$ is the average degree of the node in the core, and thus, $\frac{L}{N}$ is the half of the average degree. Again, Physics community has the much higher value of this quantity than Theoretical physics during the whole observed period, indicating higher connectivity between core members. Higher connectivity between core members in the active community is also characteristic for Literature, although this quantity has the same value for active and closed communities at the end of the observation period. The differences between active and closed communities are not that evident for Economics and Astronomy, see Fig. \ref{fig:links_per_node}. Active and closed Economics communities have similar connectivity in the core during the first 50 days. After this period, the connectivity in the core of the active community the twice as large as in the closed community and the difference grows at the end of observation period. The connectivity in the core of closed Astronomy community is higher that the connectivity in the core of the active community during the first 50 days. But as the time progresses, this difference changes in the favor of live community, while at the end of the observation period the difference disappears.
+
+The difference between active and closed communities is more prominent if we consider average number of core-periphery edges per core node. The connectivity between core and periphery is higher for the still active communities than for the closed ones, see Fig. \ref{fig:links_per_node}. This is very obvious if we compare Physics and Theoretical physics community. Moreover, Physics community has the highest connectivity compared to all other communities. When it comes to active communities that are still in the beta phase, they either have the same core-periphery connectivity as their closed counter part, or as in the case of Astronomy, their periphery is weaker connected to the core during the first 50 days of their life, see Fig. \ref{fig:links_per_node}. 
+
+On average, the cores of the active communities have higher number of nodes in the core than the closed communities, Fig. A11. However, the relative size of the core compared to the size of the whole network is similar when we compare closed and active communities on the same topic. This is even true for communities on physics topic. The size of the core fluctuates with time for active and closed communities. The core membership also changes with time. This core membership is changing more for the closed communities. We quantify this by calculating the Jaccard index between the cores of the subnetworks in the moment $t_{i}$ and $t_{j}$. Figure A9 in Supplementary Information shows the value of Jaccard index between any two of the 150 subnetworks. The highest value of the Jaccard index is around the diagonal and has value close to 1. This is expected, since these subnetworks are for consecutive days and the difference between them is smaller. The value of Jaccard index decreases with number of days between two subnetworks $|t_{i}-t_{j}|$ faster in closed communities Fig. A10. This difference is the most prominent for the literature communities, while this difference is practically non-existent for Astronomy. The relatively high overlap between cores of even more distant subnetworks for active communities, further confirms that the core is more stable in these communities that in their closed counterparts. 
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth]{Figures/figures_SE/Fig5.pdf}
+	\caption{Links per node in core and links per node between core and periphery.}
+	\label{fig:links_per_node}
+\end{figure}
+
+\subsection{Clustering and core-periphery structure of knowledge-sharing networks}
+
+We first analyse structural properties of Stack Exchange communities and examine the difference between successful and unsuccessful ones. We calculate the mean clustering coefficient for 30-days window networks and examine how it changes with time. Figure \ref{fig:clustering} shows the evolution of mean clustering coefficient for all eight communities. All communities that are still alive are clustered, with the value of mean clustering coefficient higher than 0.1. Physics, the only launched community, has the value of clustering coefficient above 0.2 for the first 180 days.
+During larger part of the observed period, the clustering coefficient of an active community is higher compared to the clustering coefficient of its closed pair. If we compare active communities with their closed counterpart, the closed communities have higher value of the mean clustering coefficient in the early phase while later communities that are still active have higher values of clustering coefficient. These results suggest that all communities have relatively high local cohesiveness, and that lower values of clustering coefficient in the later phase of community life may be an indicator of its decline. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth]{Figures/figures_SE/Fig3.pdf}
+	\caption{Mean clustering coefficient.}
+	\label{fig:clustering}
+\end{figure}
+Furthermore, we examine core-periphery structure of these communities and its evolution. Specifically, we are interested in the evolution of connectivity in the core. Figure \ref{fig:links_per_node} shows the number of links between nodes in the core per node $\frac{L}{N}(t)$. $\frac{2L}{N}$ is the average degree of the node in the core, and thus, $\frac{L}{N}$ is the half of the average degree. Again, Physics community has the much higher value of this quantity than Theoretical physics during the whole observed period, indicating higher connectivity between core members. Higher connectivity between core members in the active community is also characteristic for Literature, although this quantity has the same value for active and closed communities at the end of the observation period. The differences between active and closed communities are not that evident for Economics and Astronomy, see Fig. \ref{fig:links_per_node}. Active and closed Economics communities have similar connectivity in the core during the first 50 days. After this period, the connectivity in the core of the active community the twice as large as in the closed community and the difference grows at the end of observation period. The connectivity in the core of closed Astronomy community is higher that the connectivity in the core of the active community during the first 50 days. But as the time progresses, this difference changes in the favor of live community, while at the end of the observation period the difference disappears.
+
+The difference between active and closed communities is more prominent if we consider average number of core-periphery edges per core node. The connectivity between core and periphery is higher for the still active communities than for the closed ones, see Fig. \ref{fig:links_per_node}. This is very obvious if we compare Physics and Theoretical physics community. Moreover, Physics community has the highest connectivity compared to all other communities. When it comes to active communities that are still in the beta phase, they either have the same core-periphery connectivity as their closed counter part, or as in the case of Astronomy, their periphery is weaker connected to the core during the first 50 days of their life, see Fig. \ref{fig:links_per_node}. 
+
+On average, the cores of the active communities have higher number of nodes in the core than the closed communities, Fig. A11. However, the relative size of the core compared to the size of the whole network is similar when we compare closed and active communities on the same topic. This is even true for communities on physics topic. The size of the core fluctuates with time for active and closed communities. The core membership also changes with time. This core membership is changing more for the closed communities. We quantify this by calculating the Jaccard index between the cores of the subnetworks in the moment $t_{i}$ and $t_{j}$. Figure A9 in Supplementary Information shows the value of Jaccard index between any two of the 150 subnetworks. The highest value of the Jaccard index is around the diagonal and has value close to 1. This is expected, since these subnetworks are for consecutive days and the difference between them is smaller. The value of Jaccard index decreases with number of days between two subnetworks $|t_{i}-t_{j}|$ faster in closed communities Fig. A10. This difference is the most prominent for the literature communities, while this difference is practically non-existent for Astronomy. The relatively high overlap between cores of even more distant subnetworks for active communities, further confirms that the core is more stable in these communities that in their closed counterparts. 
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth]{Figures/figures_SE/Fig5.pdf}
+	\caption{Links per node in core and links per node between core and periphery.}
+	\label{fig:links_per_node}
+\end{figure}
+
+
+\clearpage
+\section{Dynamic reputation model}
 
 Any dynamical trust or reputation model has to take into account distinct social and psychological attributes of these phenomena in order to estimate the value of any given trust metric \cite{duma2005dynamic}. First of all, the dynamics of trust is asymmetric, meaning that trust is easier to lose than to gain. As part of asymmetric dynamics, in order to make trust easier to loose the trust metric has to be sensitive to new experiences (recent activity or the absence of the activity of the agent), while still maintaining nontrivial influence of old behavior. The impact of new experiences has to be independent of
 the total number of recorded or accumulated past interactions, making high levels of trust easy to lose. 
@@ -154,36 +262,9 @@ To summarize, our model of dynamical reputation has three parameters: 1) basic r
 	%%% rows 1: Physics. Theo. Physics, Econ. Beta, Econ. A51
 	%%% rows 2: Astro Beta, Astro A51, Lit Beta, Lit A51
 	\centering
-	\includegraphics[width=0.5\linewidth]{Figures/active_users_mean_dyn_rep.png}
+	\includegraphics[width=\linewidth]{Figures/figures_SE/Fig5.pdf}
 	\caption{Dynamic Reputation on the four pairs of Stack Exchange websites: Astronomy, Literature, Economics,  Physics and Theoretical Physics.}
 	\label{fig:dr6panel}
-\end{figure}
-
-\section{Results \label{sec:res}}
-
-\subsection{Clustering and core-periphery structure of knowledge-sharing networks}
-
-We first analyse structural properties of Stack Exchange communities and examine the difference between successful and unsuccessful ones. We calculate the mean clustering coefficient for 30-days window networks and examine how it changes with time. Figure \ref{fig:clustering} shows the evolution of mean clustering coefficient for all eight communities. All communities that are still alive are clustered, with the value of mean clustering coefficient higher than 0.1. Physics, the only launched community, has the value of clustering coefficient above 0.2 for the first 180 days.
-During larger part of the observed period, the clustering coefficient of an active community is higher compared to the clustering coefficient of its closed pair. If we compare active communities with their closed counterpart, the closed communities have higher value of the mean clustering coefficient in the early phase while later communities that are still active have higher values of clustering coefficient. These results suggest that all communities have relatively high local cohesiveness, and that lower values of clustering coefficient in the later phase of community life may be an indicator of its decline. 
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.5\linewidth]{Figures/Mean_clustering_coef.png}
-	\caption{Mean clustering coefficient.}
-	\label{fig:clustering}
-\end{figure}
-Furthermore, we examine core-periphery structure of these communities and its evolution. Specifically, we are interested in the evolution of connectivity in the core. Figure \ref{fig:links_per_node} shows the number of links between nodes in the core per node $\frac{L}{N}(t)$. $\frac{2L}{N}$ is the average degree of the node in the core, and thus, $\frac{L}{N}$ is the half of the average degree. Again, Physics community has the much higher value of this quantity than Theoretical physics during the whole observed period, indicating higher connectivity between core members. Higher connectivity between core members in the active community is also characteristic for Literature, although this quantity has the same value for active and closed communities at the end of the observation period. The differences between active and closed communities are not that evident for Economics and Astronomy, see Fig. \ref{fig:links_per_node}. Active and closed Economics communities have similar connectivity in the core during the first 50 days. After this period, the connectivity in the core of the active community the twice as large as in the closed community and the difference grows at the end of observation period. The connectivity in the core of closed Astronomy community is higher that the connectivity in the core of the active community during the first 50 days. But as the time progresses, this difference changes in the favor of live community, while at the end of the observation period the difference disappears.
-
-The difference between active and closed communities is more prominent if we consider average number of core-periphery edges per core node. The connectivity between core and periphery is higher for the still active communities than for the closed ones, see Fig. \ref{fig:links_per_node}. This is very obvious if we compare Physics and Theoretical physics community. Moreover, Physics community has the highest connectivity compared to all other communities. When it comes to active communities that are still in the beta phase, they either have the same core-periphery connectivity as their closed counter part, or as in the case of Astronomy, their periphery is weaker connected to the core during the first 50 days of their life, see Fig. \ref{fig:links_per_node}. 
-
-On average, the cores of the active communities have higher number of nodes in the core than the closed communities, Fig. A11. However, the relative size of the core compared to the size of the whole network is similar when we compare closed and active communities on the same topic. This is even true for communities on physics topic. The size of the core fluctuates with time for active and closed communities. The core membership also changes with time. This core membership is changing more for the closed communities. We quantify this by calculating the Jaccard index between the cores of the subnetworks in the moment $t_{i}$ and $t_{j}$. Figure A9 in Supplementary Information shows the value of Jaccard index between any two of the 150 subnetworks. The highest value of the Jaccard index is around the diagonal and has value close to 1. This is expected, since these subnetworks are for consecutive days and the difference between them is smaller. The value of Jaccard index decreases with number of days between two subnetworks $|t_{i}-t_{j}|$ faster in closed communities Fig. A10. This difference is the most prominent for the literature communities, while this difference is practically non-existent for Astronomy. The relatively high overlap between cores of even more distant subnetworks for active communities, further confirms that the core is more stable in these communities that in their closed counterparts. 
-
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.5\linewidth]{Figures/LN_core_coreper.png}
-	\caption{Links per node in core and links per node between core and periphery.}
-	\label{fig:links_per_node}
 \end{figure}
 
 
@@ -192,7 +273,7 @@ On average, the cores of the active communities have higher number of nodes in t
 \begin{figure}
 	\centering
 	%\includegraphics[width=\linewidth]{figures/Mean_core_dyn_rep.png}
-	\includegraphics[width=0.5\linewidth]{Figures/core_dr_test.png}
+	\includegraphics[width=\linewidth]{Figures/figures_SE/Fig4.pdf}
 	\caption{Dynamical reputation within core.}
 	\label{fig:dr_core}
 \end{figure}
@@ -210,28 +291,7 @@ In Figure~\ref{fig:dyn_rep_coreper} we show mean user reputation in core and in 
 
 For reference in Fig~\ref{fig:core_size} we show core sizes in all sites. We show these in absolute numbers (total number of nodes) and as a fraction of network size through time.
 
-\subsection{Negative interactions}
 
-The average percentage of negatively voted interactions is 3.2\% for questions and 3\% for answers. Percentages for questions and answers from each community are shown in table \ref{tab:negint}.  Comments cannot have negative vote sum as they can only be upvoted.
-
-\begin{table}[hbt!]
-	\centering
-	\caption{Percentage of negatively voted interactions}
-	\label{tab:negint}
-	\begin{tabular}{@{}ccc@{}}
-		\toprule
-		Community           & Questions & Answers \\ \midrule
-		Physics Launched    & 5\%       & 4\%     \\
-		Physics A51         & 1\%       & 2\%     \\
-		Astronomy Launched  & 3\%       & 3\%     \\
-		Astronomy A51       & 2\%       & 1\%     \\
-		Economics Launched  & 4\%       & 4\%     \\
-		Economics A51       & 7\%       & 4\%     \\
-		Literature Launched & 2\%       & 5\%     \\
-		Literature A51      & 2\%       & 1\%     \\ \midrule
-		\textbf{Average}    & 3.2\%     & 3\%     \\ \bottomrule
-	\end{tabular}
-\end{table}
 
 \subsection{Dynamic reputation - $\beta$ parameter}
 
@@ -399,33 +459,6 @@ become smoother. Finally, the choice of the sliding window does not change concl
 	% Ovo je primer za astronomiju (ali ako se odlucimo za neku drugu moze se zameniti)
 \end{figure}
 
-\subsection{Area51 criteria}
 
-The Stack Exchange has its own criteria for the success of sites. They measure how many questions are answered, how many questions are posted per day, and how many answers are posted per question.  There are two measures: the number of avid users and the number of visits that are not easily interpreted from the data. The site is \textit{healthy} if it has 10 questions per day, 2.5 answers per question and more than $90\%$ of answered questions. For less than $80\%$ of answered questions, 5 questions per day and 1 question per answer site \textit{needs some work}. We calculated Stack Exchange statistics for astronomy, economics, literature and physics and results are presented in the table 1. After 180 days only beta physics is healthy site while other betas are at least in two criteria labeled as \textit{okay}. Closed sites mostly \textit{need some work}, the exception is closed astronomy with \textit{excellent} percent of answered questions and \textit{okay} answer ratio. 
-
-\begin{table}[h!]
-	%\footnotesize\sf\centering
-	\caption{Community overview for first 180 days according to SE criteria  }
-	
-	\label{tab:se_c}
-	\begin{tabular}{ccccc}
-		\hline
-		
-		Site & Status &  Answered & Questions per day & Answer ratio \\ \hline
-		\multirow{2}{*}{Astronomy} & \multicolumn{1}{c|}{Closed} & \multicolumn{1}{c|}{\textbf{95} \%}  & \multicolumn{1}{c|}{2.62} & \multicolumn{1}{c}{\underline{2.02}} \\
-		& \multicolumn{1}{c|}{Beta} & \multicolumn{1}{c|}{\textbf{96} \%}  & \multicolumn{1}{c|}{3.57} & \multicolumn{1}{c}{\underline{1.49}} \\ \hline
-		\multirow{2}{*}{Economics} & \multicolumn{1}{c|}{Closed} & \multicolumn{1}{c|}{68 \%}  & \multicolumn{1}{c|}{2.04} & \multicolumn{1}{c}{\underline{1.25}} \\
-		& \multicolumn{1}{c|}{Beta} & \multicolumn{1}{c|}{\underline{84} \%}  & \multicolumn{1}{c|}{\underline{5.66}} & \multicolumn{1}{c}{\underline{1.37}} \\ \hline
-		\multirow{2}{*}{Literature} & \multicolumn{1}{c|}{Closed} & \multicolumn{1}{c|}{79 \%}  & \multicolumn{1}{c|}{1.77} & \multicolumn{1}{c}{\underline{1.65}} \\
-		& \multicolumn{1}{c|}{Beta} & \multicolumn{1}{c|}{74 \%}  & \multicolumn{1}{c|}{\underline{5.04}} & \multicolumn{1}{c}{\underline{1.10}} \\ \hline
-		\multirow{2}{*}{Physics} & \multicolumn{1}{c|}{Closed} & \multicolumn{1}{c|}{83 \%}  & \multicolumn{1}{c|}{1.93} & \multicolumn{1}{c}{\underline{1.64}} \\
-		& \multicolumn{1}{c|}{Beta} & \multicolumn{1}{c|}{\textbf{93} \%}  & \multicolumn{1}{c|}{\textbf{11.76}} & \multicolumn{1}{c}{ \textbf{2.74}} \\ \hline \hline
-		{Stack Exchange criteria} & excellent & $>$ 90 \% & $>$10 & $>$ 2.5   \\
-		& needs some work & $<$ 80 \% & $<5$ & $<$ 1   \\ \hline
-		
-		
-	\end{tabular}
-	
-\end{table}
 
        

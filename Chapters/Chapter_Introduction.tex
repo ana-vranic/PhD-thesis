@@ -1,6 +1,6 @@
 \chapter{Introduction} % Main chapter title
 
-\label{Introduction} % For referencing the chapter elsewhere, use \ref{Chapter1}}
+%\label{Introduction} % For referencing the chapter elsewhere, use \ref{Chapter1}}
 
 Complex system is a collection of a large number of units, they can interact with each other and because of the interaction some collective behaviour can emerge. The properties of the system can not be predicted from behaviour of one individual. 
 
@@ -293,71 +293,33 @@ Fractal behaviour might refer to different properties. In some systems scale-fre
 
 The self-similarity can be present in the way the different parts of a system interact with each other. This is the case with self-similar graphs and the power-law scaling appers in the distribution of topological quantities like the number of interactions per part  of the system. These phenomena are fractals in the topology. 
 
-\section{Scale-invariance and power laws}
+%\section{Scale-invariance and power laws}
 
-The mathematical form of self similarity is represented by powe-laws. Whenever the function $y = f(x)$ can be represented as a constant to the power of x. The physical example is elastic force, the gravitational and electrostatic force. In the case of fractals, their geometry can be identified by considering the numbe of boxes $N(\epsilon)$, of linear size $1/\epsilon$. $N(\epsilon) = \epsilon ^{-D}$, where D is called fractal dimension. D can also be defined using mass relation $M = L^ D$.
+%The mathematical form of self similarity is represented by powe-laws. Whenever the function $y = f(x)$ can be represented as a constant to the power of x. The physical example is elastic force, the gravitational and electrostatic force. In the case of fractals, their geometry can be identified by considering the numbe of boxes $N(\epsilon)$, of linear size $1/\epsilon$. $N(\epsilon) = \epsilon ^{-D}$, where D is called fractal dimension. D can also be defined using mass relation $M = L^ D$.
 
-Scale invariance is not restrected to geometry, but also appears in dynamical systems. In this case we have power-law distribution for different physical\setsecnumdepth{subsection} quantit\setsecnumdepth{subsection}ies. For example the evolution of some systems (sanspiles, number of species in the ecosystem) proceeds  with series of causally connected events whose size s is distributed as power-law. $P(s) s^{-\tau}$.
+%Scale invariance is not restrected to geometry, but also appears in dynamical systems. In this case we have power-law distribution for different physical\setsecnumdepth{subsection} quantit\setsecnumdepth{subsection}ies. For example the evolution of some systems (sanspiles, number of species in the ecosystem) proceeds  with series of causally connected events whose size s is distributed as power-law. $P(s) s^{-\tau}$.
 
-\subsection{plotting a power-law}
+%\subsection{plotting a power-law}
 
-if we plot the data on double logarithmic scale, we should obtain a straight line. $y = x^{\alpha}$, $ln(y) = \alpha ln(x)$. The tail of the distributon is very noisy, and it is general feature of many experiments. To avoid the fluctuations in the tail it is common to use "binning" or cumulative distribution. 
+%if we plot the data on double logarithmic scale, we should obtain a straight line. $y = x^{\alpha}$, $ln(y) = \alpha ln(x)$. The tail of the distributon is very noisy, and it is general feature of many experiments. To avoid the fluctuations in the tail it is common to use "binning" or cumulative distribution. 
 
-In this method the noise reduction is done by deviding the $x$ axis into bins, and averaging the data within each bin. As an example we can take the frequency of numbers between numbers $1$ and $10$. Let assume that bin is $10$ units wide, we can represent all data in one point $b$, with $xb$ given by average of the bin extremes and $yb$ given by the avarage value of $ys$. If the bin size is constant for large values of $x$ the density of bins becomes very large as well. 
+%In this method the noise reduction is done by deviding the $x$ axis into bins, and averaging the data within each bin. As an example we can take the frequency of numbers between numbers $1$ and $10$. Let assume that bin is $10$ units wide, we can represent all data in one point $b$, with $xb$ given by average of the bin extremes and $yb$ given by the avarage value of $ys$. If the bin size is constant for large values of $x$ the density of bins becomes very large as well. 
 
-In the case of powerlaws it is usufull to use logarithmic binning. For example take the size of the first bin to be 2, and the others are power of 2. $2^1, 2^2...$. A possible choice is to take as yb the average of the values ys in the bin, and as xb the geometrical average of the bin extremes. Bins are equaly spaced on logarithmic scale. The base can be any number larger than 1, for example 1.2. The drawbacks of this procedure are following: this method does not complitly reduce the noise and the choice of the most appropiate bin size must be determined by using trial and error. In general, small and noisy dataset , the behavior in the tail of distribution can be lost if the bins are too wide. Too small bins will not average the present fluctuations
+%In the case of powerlaws it is usufull to use logarithmic binning. For example take the size of the first bin to be 2, and the others are power of 2. $2^1, 2^2...$. A possible choice is to take as yb the average of the values ys in the bin, and as xb the geometrical average of the bin extremes. Bins are equaly spaced on logarithmic scale. The base can be any number larger than 1, for example 1.2. The drawbacks of this procedure are following: this method does not complitly reduce the noise and the choice of the most appropiate bin size must be determined by using trial and error. In general, small and noisy dataset , the behavior in the tail of distribution can be lost if the bins are too wide. Too small bins will not average the present fluctuations
 
-Using the method of cumulative distribution instead of calculating the probability that certain value x appears in the experiment, we focus on the probability that an outcome is larger than x. 
+%Using the method of cumulative distribution instead of calculating the probability that certain value x appears in the experiment, we focus on the probability that an outcome is larger than x. 
 
-For power-law, 
+%For power-law, 
 %$P>(x) = \int_{x}^{\inf} P(x^{'})dx^{'}$.
- For power law cumulative distribution is still powerlaw but with modified exponent. $-\alpha+1$. Still, in this method, if exponent is close to one, integral does not behave like powe-law, reather logarithm. The upper limit is a finite value $x_{max}$ and this can change the shape of curve. 
+% For power law cumulative distribution is still powerlaw but with modified exponent. $-\alpha+1$. Still, in this method, if exponent is close to one, integral does not behave like powe-law, reather logarithm. The upper limit is a finite value $x_{max}$ and this can change the shape of curve. 
 
-The cumulative distribution will resemble a power law only as the value of $xmax$ tends to infinity. Otherwise, the deviation from the straight line could make estimating the exponent very difficult.
+%The cumulative distribution will resemble a power law only as the value of $xmax$ tends to infinity. Otherwise, the deviation from the straight line could make estimating the exponent very difficult.
 
-\subsection{multiplicative processes}
+%\subsection{multiplicative processes}
 
-While many power laws are originated by some ‘complex’ mechanism, some
-others have a very simple explanation. By using multiplicative processes we
-can obtain quite naturally both power laws and log-normal distributions
-(that can look like power laws) (Goldstein, Morris, and Yen, 2004). We
-do not enter here into the debate over whether observed data can be best
-ﬁt by power law or log-normal variables. Here it is enough to note that
-the mechanism of multiplicative process is probably the most immediate
-model for fat-tail phenomena in nature since it naturally produces both.
+%While many power laws are originated by some ‘complex’ mechanism, some others have a very simple explanation. By using multiplicative processes we can obtain quite naturally both power laws and log-normal distributions (that can look like power laws) (Goldstein, Morris, and Yen, 2004). We do not enter here into the debate over whether observed data can be best ﬁt by power law or log-normal variables. Here it is enough to note that the mechanism of multiplicative process is probably the most immediate model for fat-tail phenomena in nature since it naturally produces both.
 
-Many textbooks and scientiﬁc papers deal with this topic. Some of them
-are very beautiful and complete and we suggest them for further reading
-(e.g. Mitzenmacher 2004; Newman 2005). Suppose you have an evolution
-process, where for example an organism transforms itself in time. As a
-general statement, the state S t at time t will be determined by the previous
-states and by the external conditions. Whenever the state of the system can
-be written as we have a multiplicative process. In other words, in a multiplicative process,
-the state of the system at time t is proportional to the state at time t-1. In
-biology this could represent the fact that the growth of an organism is ruled
-by its body mass at the previous step. In the case of city growth (Zanette and
-Manrubia, 1997; Manrubia and Zanette, 1998; Gabaix, 1999) this equation
-states that the population at a certain time step is proportional to what
-it was previously. In both cases the proportionality constant is given by
-the factor t that can change its value at any time step. Turning back to
-eqn 4.114 we can immediately see that the variable S t is determined by the
-product of the various tau where tau is between 0 and t This sum of the logarithms of the tau (under very mild conditions) is a variable following a normal distribution (regardless of the distribution of the tau ).
-This result comes from the application of the ‘central limit theorem’. This
-theorem states that, in certain very general hypotheses, the sum of identi-
-cally distributed random variables with ﬁnite variance is a new stochastic variable normally distributed. Therefore, if ln(S t ) is normally distributed,
-the variable S t is log-normally distributed. This very simple mechanism has been rediscovered and explained over
-and over many times since the deﬁnition of log-normal distributions in 1879
-(McAlister, 1879). One of the ﬁrst applications of these ideas traces back at
-least to the economist Gibrat (1930, 1931) who uses essentially this model
-under the name of proportionate eﬀect. Using a diﬀerent terminology, a
-somewhat similar idea was introduced at the beginning of last century for
-biological problems (Kapteyn 1903, 1918).
-With this idea we have two possible outcomes. As explained above we
-have true log-normal distributions that can easily be confused with power
-laws. This happens whenever the log-normal distribution is studied in a
-range of k for which $\sigma >> ln(k)$. On the other hand, a very similar situ-
-ation also triggers the formation of true power laws as shown in the next
-subsection. Powerlaws from multiplicative processes.
+%Many textbooks and scientiﬁc papers deal with this topic. Some of them are very beautiful and complete and we suggest them for further reading (e.g. Mitzenmacher 2004; Newman 2005). Suppose you have an evolution process, where for example an organism transforms itself in time. As a general statement, the state S t at time t will be determined by the previous states and by the external conditions. Whenever the state of the system can be written as we have a multiplicative process. In other words, in a multiplicative process, the state of the system at time t is proportional to the state at time t-1. In biology this could represent the fact that the growth of an organism is ruled by its body mass at the previous step. In the case of city growth (Zanette and Manrubia, 1997; Manrubia and Zanette, 1998; Gabaix, 1999) this equation states that the population at a certain time step is proportional to what it was previously. In both cases the proportionality constant is given by the factor t that can change its value at any time step. Turning back to eqn 4.114 we can immediately see that the variable S t is determined by the product of the various tau where tau is between 0 and t This sum of the logarithms of the tau (under very mild conditions) is a variable following a normal distribution (regardless of the distribution of the tau ). This result comes from the application of the ‘central limit theorem’. This theorem states that, in certain very general hypotheses, the sum of identi- cally distributed random variables with ﬁnite variance is a new stochastic variable normally distributed. Therefore, if ln(S t ) is normally distributed, the variable S t is log-normally distributed. This very simple mechanism has been rediscovered and explained over and over many times since the deﬁnition of log-normal distributions in 1879 (McAlister, 1879). One of the ﬁrst applications of these ideas traces back at least to the economist Gibrat (1930, 1931) who uses essentially this model under the name of proportionate eﬀect. Using a diﬀerent terminology, a somewhat similar idea was introduced at the beginning of last century for biological problems (Kapteyn 1903, 1918). With this idea we have two possible outcomes. As explained above we have true log-normal distributions that can easily be confused with power laws. This happens whenever the log-normal distribution is studied in a range of k for which $\sigma >> ln(k)$. On the other hand, a very similar situ- ation also triggers the formation of true power laws as shown in the next subsection. Powerlaws from multiplicative processes.
 
 \section {Preferential attachment}
 

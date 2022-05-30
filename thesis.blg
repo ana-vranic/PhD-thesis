@@ -5,7 +5,12 @@ A level-1 auxiliary file: frontmatter.aux
 A level-1 auxiliary file: Chapters/Chapter_Introduction.aux
 A level-1 auxiliary file: Chapters/Chapter_DrivingSignal.aux
 A level-1 auxiliary file: Chapters/Chapter_GroupsGrowth.aux
-A level-1 auxiliary file: Chapters/Chapter_Trust.aux
+A level-1 auxiliary file: Chapters/Chapter_Trust1.aux
+A level-1 auxiliary file: Chapters/Chapter_Trust2.aux
+A level-1 auxiliary file: Chapters/Chapter_Trust2-1.aux
+A level-1 auxiliary file: Chapters/Chapter_Trust3.aux
+A level-1 auxiliary file: Appendix/Appendix_sliding_window.aux
+A level-1 auxiliary file: Appendix/Appendix_robust.aux
 The style file: unsrt.bst
 Database file #1: sample.bib
 You're missing a field name---line 1045 of file sample.bib
@@ -34,48 +39,58 @@ I was expecting a `,' or a `}'---line 1697 of file sample.bib
  : @article{martin,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Repeated entry---line 1722 of file sample.bib
+ : @article{centola2007cascade
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1733 of file sample.bib
+ : @article{fortunato2010community
+ :                                ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "PNAS"
-Warning--I didn't find a database entry for "www.meetup.com"
+Warning--I didn't find a database entry for "jsdivergence"
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "bettencourt2007growth"
 Warning--empty booktitle in yashkina2020
-You've used 63 entries,
+You've used 69 entries,
             1791 wiz_defined-function locations,
-            837 strings with 15909 characters,
-and the built_in function-call counts, 16742 in all, are:
-= -- 1462
-> -- 841
-< -- 10
-+ -- 303
-- -- 240
-* -- 1337
-:= -- 2647
-add.period$ -- 193
-call.type$ -- 63
-change.case$ -- 61
+            873 strings with 17220 characters,
+and the built_in function-call counts, 18637 in all, are:
+= -- 1649
+> -- 904
+< -- 15
++ -- 326
+- -- 257
+* -- 1435
+:= -- 2902
+add.period$ -- 213
+call.type$ -- 69
+change.case$ -- 67
 chr.to.int$ -- 0
-cite$ -- 64
-duplicate$ -- 679
-empty$ -- 1563
-format.name$ -- 240
-if$ -- 3676
+cite$ -- 70
+duplicate$ -- 783
+empty$ -- 1750
+format.name$ -- 257
+if$ -- 4139
 int.to.chr$ -- 0
-int.to.str$ -- 63
-missing$ -- 65
-newline$ -- 319
-num.names$ -- 63
-pop$ -- 118
+int.to.str$ -- 69
+missing$ -- 71
+newline$ -- 349
+num.names$ -- 69
+pop$ -- 148
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 318
+skip$ -- 391
 stack$ -- 0
-substring$ -- 1320
-swap$ -- 155
-text.length$ -- 10
+substring$ -- 1459
+swap$ -- 204
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 166
-width$ -- 65
-write$ -- 699
-(There were 6 error messages)
+while$ -- 187
+width$ -- 71
+write$ -- 766
+(There were 8 error messages)
