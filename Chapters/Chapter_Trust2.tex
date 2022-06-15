@@ -1,19 +1,47 @@
 \section{Network properties of Stack Exchange data}
 
-We examine the differences between live and closed communities by analysing network properties and dynamic of collective trust. We are particularly interested in the position of trustworthy members in these communities and whether there are differences between live and close communities. For these reasons, we map the interaction data onto networks and analyse their network properties. We use dynamical reputation model to estimate the trustworthiness of each member of community.     
+On Stack Exchange sites, the interaction between users happens through posts. As we are interested in examining the characteristics of the users, we map interaction data to the networks. Using complex network theory, we can quantify the properties of obtained networks and compare different SE communities, e.g. alive and closed SE sites. 
+In the user interaction network, the link between two nodes, user $i$ and $j$, exists if user $i$ answers or comments on the question posted by user $j$, or user $i$ comments on the answer posted by user $j$. The created network is undirected and unweighted, meaning that we do not consider multiply interactions between users or the direction of the interaction. 
 
-\subsection{Network mapping}
-%{\color{blue} Here we need a description how we map the data onto networks, why sliding windows $30$days, sliding windows, etc....}
 
-%From Stack Exchange data, we selected questions, answers and comments. Each post is associated with the user-id and timestamp. 
-%ovo gore sam iskomentarisala zato sto postoji u data sekciji
-We treat all user interactions (answering questions, posting questions or comments, accepting answers) as equal. We construct a network of users where the link between two nodes (users) $i$ and $j$ exists if: $i$ answers or comments question posted by $j$ and vice verse, or $i$ comments answer posted by $j$ and vice verse. We do not consider the direction or the frequency of the interaction between users $i$ and $j$, and thus, we create unweighted and uncorrelated network. 
-%This is probably not good enough argument…
-We study how properties of networks evolve in the first 180 days of the community life. We create a network snapshot $G(t, t+\tau$) at the time $t$ for the time window length $\tau$. Two users $(i, j)$ are connected in a network snapshot $G(t, t+\tau$) if they had at least one interaction during the time $[t,t+\tau]$. We create 150 interaction networks, our first network accounts for interaction within the first 30 days $G[0,30)$ and we slide the window of interaction by one day and finish with $G[149,179)$ network. By sliding the time window by one day we create two consecutive networks that overlap significantly. This way we are able to to capture fine structural changes that are consequences of daily added/removed interactions. We calculate different structural properties of these networks and analyse how they change over the period of 180 days.  
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{figures/stackexchange/degree_distribution_fullnet.pdf}%Figures/figures_SE/Fig3.pdf}
+	\caption{Degree distribution.}
+	\label{fig:fullnetdeg}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{figures/stackexchange/neighdeg_fullnet.pdf}%Figures/figures_SE/Fig3.pdf}
+	\caption{Neighbour degree.}
+	\label{fig:fullneighdeg}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{figures/stackexchange/clustering_fullnet.pdf}%Figures/figures_SE/Fig3.pdf}
+	\caption{Neighbour degree.}
+	\label{fig:fullneighdeg}
+\end{figure}
+
+
+
+
+Instead of creating a static network from the data in the first 180 days of community life, we study how network snapshots evolve. At each time step $t$, we create network snapshot $G(t, t+\tau)$, for time window of the length $\tau$. We fix the time window to $\tau=30$ days and slide it by $t=1$ day through time. Discussion of how the length of the sliding window influences the results is given in appendix A. Sliding the time window by one day, we can capture changes in the network structure daily, as two 30 days consecutive networks overlap significantly. 
+
+We calculate different structural properties of observed networks and study their evolution. There are many local and global measures of the network properties \cite{boccaletti2006complex}. They are also dependent, still it was shown that degree distribution, degree-degree correlations and clustering coefficient can describe the properties of the most complex networks \cite{orsini2015quantifying}. 
+
+
+%TODO degree distribution
+%TODO degree correlations
+%TODO clustering  
+        
+
 
 
 \subsection{Clustering}
-There are many local and global measures of network properties \cite{boccaletti2006complex}. These measures are not independent. However, it was shown that degree distribution, degree-degree correlations and clustering coefficient are sufficient to fully describe most of the complex networks including social networks \cite{orsini2015quantifying}. The clustering coefficient of a node quantifies the average connectivity of between its neighbours and cohesion of its neighbourhood \cite{boccaletti2006complex}. It is a probability that two neighbours of a node are also neighbours, and is calculated using the following formula:
+The clustering coefficient of a node quantifies the average connectivity of between its neighbours and cohesion of its neighbourhood \cite{boccaletti2006complex}. It is a probability that two neighbours of a node are also neighbours, and is calculated using the following formula:
 \begin{equation}
 c_{i}=\frac{e_{i}}{\frac{1}{2}k_{i}(k_{1}-1)} \ .
 \label{eq:clust}

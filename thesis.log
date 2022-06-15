@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.9)  30 MAY 2022 10:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.9)  2 JUN 2022 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1236,39 +1236,69 @@ Overfull \hbox (13.66269pt too wide) in paragraph at lines 97--114
 ) [48]
 \openout2 = `Chapters/Chapter_Trust2.aux'.
 
- (./Chapters/Chapter_Trust2.tex [49
+ (./Chapters/Chapter_Trust2.tex
+<figures/stackexchange/degree_distribution_fullnet.pdf, id=1060, 1078.31299pt x
+ 289.56242pt>
+File: figures/stackexchange/degree_distribution_fullnet.pdf Graphic file (type 
+pdf)
+<use figures/stackexchange/degree_distribution_fullnet.pdf>
+Package pdftex.def Info: figures/stackexchange/degree_distribution_fullnet.pdf 
+ used on input line 9.
+(pdftex.def)             Requested size: 483.69687pt x 129.89098pt.
+<figures/stackexchange/neighdeg_fullnet.pdf, id=1061, 1071.8043pt x 289.56242pt
+>
+File: figures/stackexchange/neighdeg_fullnet.pdf Graphic file (type pdf)
+<use figures/stackexchange/neighdeg_fullnet.pdf>
+Package pdftex.def Info: figures/stackexchange/neighdeg_fullnet.pdf  used on in
+put line 16.
+(pdftex.def)             Requested size: 483.69687pt x 130.67744pt.
+<figures/stackexchange/clustering_fullnet.pdf, id=1062, 1078.31299pt x 289.5624
+2pt>
+File: figures/stackexchange/clustering_fullnet.pdf Graphic file (type pdf)
+<use figures/stackexchange/clustering_fullnet.pdf>
+Package pdftex.def Info: figures/stackexchange/clustering_fullnet.pdf  used on 
+input line 23.
+(pdftex.def)             Requested size: 483.69687pt x 129.89098pt.
 
 
-]
-<figures/stackexchange/clustering.pdf, id=1074, 1076.97302pt x 287.24126pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[49
+
+
+ <./figures/stackexchange/degree_distribution_fullnet.pdf> <./figures/stackexch
+ange/neighdeg_fullnet.pdf>] [50 <./figures/stackexchange/clustering_fullnet.pdf
+>]
+<figures/stackexchange/clustering.pdf, id=1214, 1076.97302pt x 287.24126pt>
 File: figures/stackexchange/clustering.pdf Graphic file (type pdf)
 <use figures/stackexchange/clustering.pdf>
 Package pdftex.def Info: figures/stackexchange/clustering.pdf  used on input li
-ne 29.
+ne 57.
 (pdftex.def)             Requested size: 483.69687pt x 129.00754pt.
-) [50 <./figures/stackexchange/clustering.pdf>]
+) [51 <./figures/stackexchange/clustering.pdf>]
 \openout2 = `Chapters/Chapter_Trust2-1.aux'.
 
- (./Chapters/Chapter_Trust2-1.tex [51
+
+(./Chapters/Chapter_Trust2-1.tex [52
 
 
-] [52]
-<figures/stackexchange/core_connectivity.pdf, id=1145, 902.71353pt x 394.84764p
+] [53]
+<figures/stackexchange/core_connectivity.pdf, id=1284, 902.71353pt x 394.84764p
 t>
 File: figures/stackexchange/core_connectivity.pdf Graphic file (type pdf)
 <use figures/stackexchange/core_connectivity.pdf>
 Package pdftex.def Info: figures/stackexchange/core_connectivity.pdf  used on i
 nput line 41.
 (pdftex.def)             Requested size: 483.69687pt x 211.56975pt.
- [53 <./figures/stackexchange/core_connectivity.pdf>]
-<figures/stackexchange/jaccard_heatmap.pdf, id=1202, 914.59097pt x 413.43271pt>
+ [54 <./figures/stackexchange/core_connectivity.pdf>]
+<figures/stackexchange/jaccard_heatmap.pdf, id=1342, 914.59097pt x 413.43271pt>
 
 File: figures/stackexchange/jaccard_heatmap.pdf Graphic file (type pdf)
 <use figures/stackexchange/jaccard_heatmap.pdf>
 Package pdftex.def Info: figures/stackexchange/jaccard_heatmap.pdf  used on inp
 ut line 64.
 (pdftex.def)             Requested size: 483.69687pt x 218.65146pt.
-<figures/stackexchange/jaccard.pdf, id=1203, 1078.83055pt x 290.07999pt>
+<figures/stackexchange/jaccard.pdf, id=1343, 1078.83055pt x 290.07999pt>
 File: figures/stackexchange/jaccard.pdf Graphic file (type pdf)
 <use figures/stackexchange/jaccard.pdf>
 Package pdftex.def Info: figures/stackexchange/jaccard.pdf  used on input line 
@@ -1278,7 +1308,7 @@ Package pdftex.def Info: figures/stackexchange/jaccard.pdf  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/stackexchange/core_users.pdf, id=1204, 914.6205pt x 394.84764pt>
+<figures/stackexchange/core_users.pdf, id=1344, 914.6205pt x 394.84764pt>
 File: figures/stackexchange/core_users.pdf Graphic file (type pdf)
 <use figures/stackexchange/core_users.pdf>
 Package pdftex.def Info: figures/stackexchange/core_users.pdf  used on input li
@@ -1287,7 +1317,7 @@ ne 80.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/stackexchange/core_per_ratio_reputation.pdf, id=1205, 1069.30374pt x 2
+<figures/stackexchange/core_per_ratio_reputation.pdf, id=1345, 1069.30374pt x 2
 87.24126pt>
 File: figures/stackexchange/core_per_ratio_reputation.pdf Graphic file (type pd
 f)
@@ -1298,17 +1328,17 @@ sed on input line 87.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[54 <./figures/stackexchange/jaccard_heatmap.pdf>] [55 <./figures/stackexchange
+[55 <./figures/stackexchange/jaccard_heatmap.pdf>] [56 <./figures/stackexchange
 /jaccard.pdf> <./figures/stackexchange/core_users.pdf> <./figures/stackexchange
 /core_per_ratio_reputation.pdf>]
-<figures/stackexchange/popular_casual_users.pdf, id=1397, 918.4473pt x 394.8476
+<figures/stackexchange/popular_casual_users.pdf, id=1535, 918.4473pt x 394.8476
 4pt>
 File: figures/stackexchange/popular_casual_users.pdf Graphic file (type pdf)
 <use figures/stackexchange/popular_casual_users.pdf>
 Package pdftex.def Info: figures/stackexchange/popular_casual_users.pdf  used o
 n input line 95.
 (pdftex.def)             Requested size: 483.69687pt x 207.94276pt.
-) [56
+) [57
 
  <./figures/stackexchange/popular_casual_users.pdf>]
 \openout2 = `Chapters/Chapter_Trust3.aux'.
@@ -1316,38 +1346,38 @@ n input line 95.
  (./Chapters/Chapter_Trust3.tex
 Underfull \vbox (badness 2020) has occurred while \output is active []
 
- [57
+ [58
 
 
 ]
 
-LaTeX Warning: Reference `fig:paper_summary' on page 58 undefined on input line
+LaTeX Warning: Reference `fig:paper_summary' on page 59 undefined on input line
  34.
 
-[58] [59]
-<figures/stackexchange/reputation_decay.pdf, id=1471, 413.9418pt x 273.59653pt>
+[59] [60]
+<figures/stackexchange/reputation_decay.pdf, id=1610, 413.9418pt x 273.59653pt>
 
 File: figures/stackexchange/reputation_decay.pdf Graphic file (type pdf)
 <use figures/stackexchange/reputation_decay.pdf>
 Package pdftex.def Info: figures/stackexchange/reputation_decay.pdf  used on in
 put line 54.
 (pdftex.def)             Requested size: 241.84843pt x 159.85083pt.
-<figures/stackexchange/single_user_reputation.pdf, id=1472, 752.0742pt x 307.64
+<figures/stackexchange/single_user_reputation.pdf, id=1611, 752.0742pt x 307.64
 925pt>
 File: figures/stackexchange/single_user_reputation.pdf Graphic file (type pdf)
 <use figures/stackexchange/single_user_reputation.pdf>
 Package pdftex.def Info: figures/stackexchange/single_user_reputation.pdf  used
  on input line 62.
 (pdftex.def)             Requested size: 483.69687pt x 197.86656pt.
- [60 <./figures/stackexchange/reputation_decay.pdf> <./figures/stackexchange/si
+ [61 <./figures/stackexchange/reputation_decay.pdf> <./figures/stackexchange/si
 ngle_user_reputation.pdf>]
-<figures/stackexchange/rmse.pdf, id=1553, 1076.11423pt x 286.70801pt>
+<figures/stackexchange/rmse.pdf, id=1694, 1076.11423pt x 286.70801pt>
 File: figures/stackexchange/rmse.pdf Graphic file (type pdf)
 <use figures/stackexchange/rmse.pdf>
 Package pdftex.def Info: figures/stackexchange/rmse.pdf  used on input line 76.
 
 (pdftex.def)             Requested size: 483.69687pt x 128.86865pt.
-<figures/stackexchange/active_users.pdf, id=1555, 958.24876pt x 505.49666pt>
+<figures/stackexchange/active_users.pdf, id=1696, 958.24876pt x 505.49666pt>
 File: figures/stackexchange/active_users.pdf Graphic file (type pdf)
 <use figures/stackexchange/active_users.pdf>
 Package pdftex.def Info: figures/stackexchange/active_users.pdf  used on input 
@@ -1357,7 +1387,7 @@ line 85.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/stackexchange/permanent_users.pdf, id=1557, 1070.2673pt x 287.24126pt>
+<figures/stackexchange/permanent_users.pdf, id=1698, 1070.2673pt x 287.24126pt>
 
 File: figures/stackexchange/permanent_users.pdf Graphic file (type pdf)
 <use figures/stackexchange/permanent_users.pdf>
@@ -1367,30 +1397,30 @@ ut line 94.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[61 <./figures/stackexchange/rmse.pdf>] [62 <./figures/stackexchange/active_use
+[62 <./figures/stackexchange/rmse.pdf>] [63 <./figures/stackexchange/active_use
 rs.pdf> <./figures/stackexchange/permanent_users.pdf>]
-<figures/stackexchange/reputation.pdf, id=1720, 902.23953pt x 394.84764pt>
+<figures/stackexchange/reputation.pdf, id=1858, 902.23953pt x 394.84764pt>
 File: figures/stackexchange/reputation.pdf Graphic file (type pdf)
 <use figures/stackexchange/reputation.pdf>
 Package pdftex.def Info: figures/stackexchange/reputation.pdf  used on input li
 ne 111.
 (pdftex.def)             Requested size: 483.69687pt x 211.68422pt.
-<figures/stackexchange/core_reputation.pdf, id=1721, 1088.88005pt x 287.24126pt
+<figures/stackexchange/core_reputation.pdf, id=1859, 1088.88005pt x 287.24126pt
 >
 File: figures/stackexchange/core_reputation.pdf Graphic file (type pdf)
 <use figures/stackexchange/core_reputation.pdf>
 Package pdftex.def Info: figures/stackexchange/core_reputation.pdf  used on inp
 ut line 119.
 (pdftex.def)             Requested size: 483.69687pt x 127.59622pt.
- [63
+ [64
 
  <./figures/stackexchange/reputation.pdf> <./figures/stackexchange/core_reputat
 ion.pdf>]
 
-LaTeX Warning: Reference `fig:dyn_rep_coreper' on page 64 undefined on input li
+LaTeX Warning: Reference `fig:dyn_rep_coreper' on page 65 undefined on input li
 ne 133.
 
-<figures/stackexchange/gini.pdf, id=1812, 1097.49709pt x 287.24126pt>
+<figures/stackexchange/gini.pdf, id=1951, 1097.49709pt x 287.24126pt>
 File: figures/stackexchange/gini.pdf Graphic file (type pdf)
 <use figures/stackexchange/gini.pdf>
 Package pdftex.def Info: figures/stackexchange/gini.pdf  used on input line 146
@@ -1399,8 +1429,8 @@ Package pdftex.def Info: figures/stackexchange/gini.pdf  used on input line 146
 
 Underfull \vbox (badness 4242) has occurred while \output is active []
 
- [64]
-<figures/stackexchange/reputation_assortativity.pdf, id=1818, 1079.40398pt x 28
+ [65]
+<figures/stackexchange/reputation_assortativity.pdf, id=1957, 1079.40398pt x 28
 7.24126pt>
 File: figures/stackexchange/reputation_assortativity.pdf Graphic file (type pdf
 )
@@ -1416,26 +1446,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--169
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/stackexchange/correlations.pdf, id=1821, 910.38281pt x 394.84764pt>
+<figures/stackexchange/correlations.pdf, id=1960, 910.38281pt x 394.84764pt>
 File: figures/stackexchange/correlations.pdf Graphic file (type pdf)
 <use figures/stackexchange/correlations.pdf>
 Package pdftex.def Info: figures/stackexchange/correlations.pdf  used on input 
 line 176.
 (pdftex.def)             Requested size: 483.69687pt x 209.78638pt.
-[65 <./figures/stackexchange/gini.pdf>]
+[66 <./figures/stackexchange/gini.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [66 <./figures/stackexchange/reputation_assortativity.pdf>] [67 <./figures/st
+) [67 <./figures/stackexchange/reputation_assortativity.pdf>] [68 <./figures/st
 ackexchange/correlations.pdf>]
 \openout2 = `Appendix/Appendix_sliding_window.aux'.
 
- (./Appendix/Appendix_sliding_window.tex [68
-
-
-
-]
-<figures/stackexchange/sliding_window_network.pdf, id=1967, 860.90431pt x 542.6
+ (./Appendix/Appendix_sliding_window.tex
+<figures/stackexchange/sliding_window_network.pdf, id=2102, 860.90431pt x 542.6
 4653pt>
 File: figures/stackexchange/sliding_window_network.pdf Graphic file (type pdf)
 <use figures/stackexchange/sliding_window_network.pdf>
@@ -1446,7 +1472,7 @@ Package pdftex.def Info: figures/stackexchange/sliding_window_network.pdf  used
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/stackexchange/sliding_window_core_periphery.pdf, id=1969, 860.90431pt 
+<figures/stackexchange/sliding_window_core_periphery.pdf, id=2104, 860.90431pt 
 x 542.64653pt>
 File: figures/stackexchange/sliding_window_core_periphery.pdf Graphic file (typ
 e pdf)
@@ -1460,7 +1486,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 8000) has occurred while \output is active []
 
- [69]
+ [69
+
+
+
+]
 
 LaTeX Warning: Text page 70 contains only floats.
 
@@ -1469,7 +1499,7 @@ Underfull \vbox (badness 4441) has occurred while \output is active []
 
  [70 <./figures/stackexchange/sliding_window_network.pdf> <./figures/stackexcha
 nge/sliding_window_core_periphery.pdf>]
-<figures/stackexchange/sliding_window_core_reputation.pdf, id=2062, 864.7468pt 
+<figures/stackexchange/sliding_window_core_reputation.pdf, id=2198, 864.7468pt 
 x 375.47215pt>
 File: figures/stackexchange/sliding_window_core_reputation.pdf Graphic file (ty
 pe pdf)
@@ -1499,7 +1529,7 @@ Underfull \vbox (badness 1571) has occurred while \output is active []
 
  [73]
 [74]
-<figures/stackexchange/blockmodel_robust.pdf, id=2135, 727.9929pt x 503.97534pt
+<figures/stackexchange/blockmodel_robust.pdf, id=2270, 727.9929pt x 503.97534pt
 >
 File: figures/stackexchange/blockmodel_robust.pdf Graphic file (type pdf)
 <use figures/stackexchange/blockmodel_robust.pdf>
@@ -1535,10 +1565,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
  ) 
 Here is how much of TeX's memory you used:
- 14683 strings out of 483107
- 223900 string characters out of 5964631
+ 14706 strings out of 483107
+ 224864 string characters out of 5964631
  573015 words of memory out of 5000000
- 28784 multiletter control sequences out of 15000+600000
+ 28801 multiletter control sequences out of 15000+600000
  590376 words of font info for 313 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  37i,12n,43p,2676b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1552,10 +1582,10 @@ public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mat
 hpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (82 pages, 6230164 bytes).
+Output written on thesis.pdf (82 pages, 6276481 bytes).
 PDF statistics:
- 2335 PDF objects out of 2487 (max. 8388607)
- 1067 compressed objects within 11 object streams
- 261 named destinations out of 1000 (max. 500000)
- 32704 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 2470 PDF objects out of 2487 (max. 8388607)
+ 1089 compressed objects within 11 object streams
+ 264 named destinations out of 1000 (max. 500000)
+ 32719 words of extra memory for PDF output out of 35830 (max. 10000000)
 
