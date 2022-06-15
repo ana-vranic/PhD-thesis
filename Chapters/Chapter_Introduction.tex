@@ -222,9 +222,9 @@ The benefit of this model is that we can generate many networks with similar gro
 \end{figure}
 
 
-\section{Graph isomorphism}
+%\section{Graph isomorphism}
 
-Weisfeiler-Lehman Test
+%Weisfeiler-Lehman Test
 
 \section{Distributions}
 
@@ -285,13 +285,13 @@ Despite it has finite moments, the lognormal distribution can be similar to powe
 If $\sigma$ is large then the quadratic term will be small for large range of x values, so the logarithm of the density function will appear almost linear for large range of values. 
 Recall that normal distribution have property that the sum of two independent normal variables is normal variable. It follows that product of two lognormaly distributed random variables also has a lognormal distribution. 
 
-\section{Scale-free networks}
+%\section{Scale-free networks}
 
-The study of scale ivariance has a long tradition. Among the fields where this property was analysed were the theory of critical phenomena, percolations and fractal geometry. One of the first examples considered eas the price fluctuations  of cotton in commodities market (Mandelbort, 1963). The future price can not be obtained with arbitary precision from past series., still this series have some form of regularity. The curves for daily, weakly and montly price fluctuations are statistically similar. The fact that some features are found at different time scales is typical sign of fractal behaviour. Similarly in the case of coastline lenght we find fractal behavior. If we try to measure the total lenght, the real shape is so complicated that we always miss some part. 
+%The study of scale ivariance has a long tradition. Among the fields where this property was analysed were the theory of critical phenomena, percolations and fractal geometry. One of the first examples considered eas the price fluctuations  of cotton in commodities market (Mandelbort, 1963). The future price can not be obtained with arbitary precision from past series., still this series have some form of regularity. The curves for daily, weakly and montly price fluctuations are statistically similar. The fact that some features are found at different time scales is typical sign of fractal behaviour. Similarly in the case of coastline lenght we find fractal behavior. If we try to measure the total lenght, the real shape is so complicated that we always miss some part. 
 
-Fractal behaviour might refer to different properties. In some systems scale-free structure is in shape. In this class the fractal shape can be robust, as in the case of branched patterns or electric breakdown. We say robust because these phenomena happen for varaity of external conditions. In the same class we have other systems that are more fragile, in the sense that they arise after precise tuning of some physical quantity. This is in the case of percolations and critical phenomena. Scale-free invariance may be related with dynamics or evolution of the system. The time activity of the system may display self-similar behaviour. The only sign of fractal behaviour is the mathematical form, power-law fluctuations of the time-series. 
+%Fractal behaviour might refer to different properties. In some systems scale-free structure is in shape. In this class the fractal shape can be robust, as in the case of branched patterns or electric breakdown. We say robust because these phenomena happen for varaity of external conditions. In the same class we have other systems that are more fragile, in the sense that they arise after precise tuning of some physical quantity. This is in the case of percolations and critical phenomena. Scale-free invariance may be related with dynamics or evolution of the system. The time activity of the system may display self-similar behaviour. The only sign of fractal behaviour is the mathematical form, power-law fluctuations of the time-series. 
 
-The self-similarity can be present in the way the different parts of a system interact with each other. This is the case with self-similar graphs and the power-law scaling appers in the distribution of topological quantities like the number of interactions per part  of the system. These phenomena are fractals in the topology. 
+%The self-similarity can be present in the way the different parts of a system interact with each other. This is the case with self-similar graphs and the power-law scaling appers in the distribution of topological quantities like the number of interactions per part  of the system. These phenomena are fractals in the topology. 
 
 %\section{Scale-invariance and power laws}
 
@@ -321,40 +321,12 @@ The self-similarity can be present in the way the different parts of a system in
 
 %Many textbooks and scientiﬁc papers deal with this topic. Some of them are very beautiful and complete and we suggest them for further reading (e.g. Mitzenmacher 2004; Newman 2005). Suppose you have an evolution process, where for example an organism transforms itself in time. As a general statement, the state S t at time t will be determined by the previous states and by the external conditions. Whenever the state of the system can be written as we have a multiplicative process. In other words, in a multiplicative process, the state of the system at time t is proportional to the state at time t-1. In biology this could represent the fact that the growth of an organism is ruled by its body mass at the previous step. In the case of city growth (Zanette and Manrubia, 1997; Manrubia and Zanette, 1998; Gabaix, 1999) this equation states that the population at a certain time step is proportional to what it was previously. In both cases the proportionality constant is given by the factor t that can change its value at any time step. Turning back to eqn 4.114 we can immediately see that the variable S t is determined by the product of the various tau where tau is between 0 and t This sum of the logarithms of the tau (under very mild conditions) is a variable following a normal distribution (regardless of the distribution of the tau ). This result comes from the application of the ‘central limit theorem’. This theorem states that, in certain very general hypotheses, the sum of identi- cally distributed random variables with ﬁnite variance is a new stochastic variable normally distributed. Therefore, if ln(S t ) is normally distributed, the variable S t is log-normally distributed. This very simple mechanism has been rediscovered and explained over and over many times since the deﬁnition of log-normal distributions in 1879 (McAlister, 1879). One of the ﬁrst applications of these ideas traces back at least to the economist Gibrat (1930, 1931) who uses essentially this model under the name of proportionate eﬀect. Using a diﬀerent terminology, a somewhat similar idea was introduced at the beginning of last century for biological problems (Kapteyn 1903, 1918). With this idea we have two possible outcomes. As explained above we have true log-normal distributions that can easily be confused with power laws. This happens whenever the log-normal distribution is studied in a range of k for which $\sigma >> ln(k)$. On the other hand, a very similar situ- ation also triggers the formation of true power laws as shown in the next subsection. Powerlaws from multiplicative processes.
 
-\section {Preferential attachment}
+%\section {Preferential attachment}
 
-One of the most successful applications of multiplicative processes is given
-by preferential attachment. To date, this is the most successful mechanism
-adopted in the study of growing networks. Interestingly, the idea that we
-are going to explain has been independently rediscovered several times in
-diﬀerent ﬁelds and ages. Precisely for this reason it has also been given
-several names. For example: Yule Process, Matthew eﬀect, Rich gets richer,
-Preferential Attachment, Cumulative advantage.
-In the community there is some agreement (Mitzenmacher, 2004; New-
-man, 2005) that the ﬁrst to present this idea has been G. Yule (1925) in
-order to explain the relative abundance of species and genera in biological
-taxonomic trees. As shown in Chapter 8 when considering a set of biolog-
-ical species we have that the classiﬁcation (taxonomic) tree has scale-free
-properties. The null hypothesis consists in considering that the set of species
-arises from a common evolution. Therefore we consider one parent species
-and after mutation we obtain a new one that very likely can be grouped
-in the same genus. Every now and then though, speciated species (the new
-ones) can be so diﬀerent from the parent one that they can form a new genus
-on their own (or be grouped in an existing diﬀerent one). The probability
-of speciating will be larger for genera that are already large, since mutation
-rate is constant for any individual.
-This explanation allow us to focus on the two ingredients of the model.
-Firstly you have to invoke a certain a priori dynamics (hereafter called
-growth). Secondly, this dynamics selects successful elements and makes
-them even more successful (hereafter called preferential attachment). In
-detail, take a set of elements each of which is characterized by a certain
-number N i t . As a possible example this could be the number of diﬀerent
-genera that have i species per genera. The set can also be a set of vertices
-in a graph and the number N i t can represent the number of pages whose
-in-degree is i. Now let us introduce a rule that introduces new elements in
-the set; these elements will not be shared equally between the older ones,
-but rather will be assigned more to those that already have many. Let us
-consider that N i t gives the number of vertices with certain degree i (the total
+%One of the most successful applications of multiplicative processes is given
+%by preferential attachment. To date, this is the most successful mechanism adopted in the study of growing networks. Interestingly, the idea that we are going to explain has been independently rediscovered several times in diﬀerent ﬁelds and ages. Precisely for this reason it has also been given several names. For example: Yule Process, Matthew eﬀect, Rich gets richer, Preferential Attachment, Cumulative advantage. In the community there is some agreement (Mitzenmacher, 2004; New- man, 2005) that the ﬁrst to present this idea has been G. Yule (1925) in order to explain the relative abundance of species and genera in biological taxonomic trees. As shown in Chapter 8 when considering a set of biolog- ical species we have that the classiﬁcation (taxonomic) tree has scale-free properties. The null hypothesis consists in considering that the set of species arises from a common evolution. Therefore we consider one parent species and after mutation we obtain a new one that very likely can be grouped in the same genus. Every now and then though, speciated species (the new ones) can be so diﬀerent from the parent one that they can form a new genus on their own (or be grouped in an existing diﬀerent one). The probability of speciating will be larger for genera that are already large, since mutation rate is constant for any individual.
+
+%This explanation allow us to focus on the two ingredients of the model. Firstly you have to invoke a certain a priori dynamics (hereafter called growth). Secondly, this dynamics selects successful elements and makes them even more successful (hereafter called preferential attachment). In detail, take a set of elements each of which is characterized by a certain number N i t . As a possible example this could be the number of diﬀerent genera that have i species per genera. The set can also be a set of vertices in a graph and the number N i t can represent the number of pages whose in-degree is i. Now let us introduce a rule that introduces new elements in the set; these elements will not be shared equally between the older ones, but rather will be assigned more to those that already have many. Let us consider that N i t gives the number of vertices with certain degree i (the total
 
 
 \section{In This Thesis}
