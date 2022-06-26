@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{boccaletti2006complex}
+Stefano Boccaletti, Vito Latora, Yamir Moreno, Martin Chavez, and D-U Hwang.
+\newblock Complex networks: Structure and dynamics.
+\newblock {\em Physics reports}, 424(4-5):175--308, 2006.
+
 \bibitem{boccaletti2006}
 Stefano Boccaletti, Vito Latora, Yamir Moreno, Martin Chavez, and D-U Hwang.
 \newblock Complex networks: Structure and dynamics.
@@ -28,6 +33,32 @@ Thorben Funke and Till Becker.
   methods.
 \newblock {\em PLOS ONE}, 14(4):1--40, 04 2019.
 
+\bibitem{kantelhardt2002}
+Jan~W Kantelhardt, Stephan~A Zschiegner, Eva Koscielny-Bunde, Shlomo Havlin,
+  Armin Bunde, and H~Eugene Stanley.
+\newblock Multifractal detrended fluctuation analysis of nonstationary time
+  series.
+\newblock {\em Physica A: Statistical Mechanics and its Applications},
+  316(1-4):87--114, 2002.
+
+\bibitem{ihlen2012}
+Espen Alexander F{\"u}rst~EAFI Ihlen.
+\newblock Introduction to multifractal detrended fluctuation analysis in
+  matlab.
+\newblock {\em Frontiers in physiology}, 3:141, 2012.
+
+\bibitem{duma2005dynamic}
+Claudiu Duma, Nahid Shahmehri, and Germano Caronni.
+\newblock Dynamic trust metrics for peer-to-peer systems.
+\newblock In {\em 16th International Workshop on Database and Expert Systems
+  Applications (DEXA'05)}, pages 776--781. IEEE, 2005.
+
+\bibitem{melnikovDynamicInteractionBasedReputation2018}
+A.~{Melnikov}, J.~{Lee}, V.~{Rivera}, M.~{Mazzara}, and L.~{Longo}.
+\newblock Towards dynamic interaction-based reputation models.
+\newblock In {\em 2018 IEEE 32nd International Conference on Advanced
+  Information Networking and Applications (AINA)}, pages 422--428, 2018.
+
 \bibitem{makse1996method}
 Hern{\'a}n~A Makse, Shlomo Havlin, Moshe Schwartz, and H~Eugene Stanley.
 \newblock Method for generating long-range correlations for large systems.
@@ -46,20 +77,6 @@ C-K Peng, Sergey~V Buldyrev, Shlomo Havlin, Michael Simons, H~Eugene Stanley,
   and Ary~L Goldberger.
 \newblock Mosaic organization of dna nucleotides.
 \newblock {\em Physical review e}, 49(2):1685, 1994.
-
-\bibitem{kantelhardt2002}
-Jan~W Kantelhardt, Stephan~A Zschiegner, Eva Koscielny-Bunde, Shlomo Havlin,
-  Armin Bunde, and H~Eugene Stanley.
-\newblock Multifractal detrended fluctuation analysis of nonstationary time
-  series.
-\newblock {\em Physica A: Statistical Mechanics and its Applications},
-  316(1-4):87--114, 2002.
-
-\bibitem{ihlen2012}
-Espen Alexander F{\"u}rst~EAFI Ihlen.
-\newblock Introduction to multifractal detrended fluctuation analysis in
-  matlab.
-\newblock {\em Frontiers in physiology}, 3:141, 2012.
 
 \bibitem{hajra2004}
 Kamalika~Basu Hajra and Parongama Sen.
@@ -331,11 +348,6 @@ Yaniv Dover, Jacob Goldenberg, and Daniel Shapira.
   structures across scales of size.
 \newblock {\em Proceedings of the Royal Society A}, 476(2239):20190730, 2020.
 
-\bibitem{boccaletti2006complex}
-Stefano Boccaletti, Vito Latora, Yamir Moreno, Martin Chavez, and D-U Hwang.
-\newblock Complex networks: Structure and dynamics.
-\newblock {\em Physics reports}, 424(4-5):175--308, 2006.
-
 \bibitem{orsini2015quantifying}
 Chiara Orsini, Marija~M Dankulov, Pol Colomer-de Sim{\'o}n, Almerima Jamakovic,
   Priya Mahadevan, Amin Vahdat, Kevin~E Bassler, Zolt{\'a}n Toroczkai,
@@ -358,18 +370,6 @@ Santo Fortunato.
 Ryan~J Gallagher, Jean-Gabriel Young, and Brooke~Foucault Welles.
 \newblock A clarified typology of core-periphery structure in networks.
 \newblock {\em arXiv preprint arXiv:2005.10191}, 2020.
-
-\bibitem{duma2005dynamic}
-Claudiu Duma, Nahid Shahmehri, and Germano Caronni.
-\newblock Dynamic trust metrics for peer-to-peer systems.
-\newblock In {\em 16th International Workshop on Database and Expert Systems
-  Applications (DEXA'05)}, pages 776--781. IEEE, 2005.
-
-\bibitem{melnikovDynamicInteractionBasedReputation2018}
-A.~{Melnikov}, J.~{Lee}, V.~{Rivera}, M.~{Mazzara}, and L.~{Longo}.
-\newblock Towards dynamic interaction-based reputation models.
-\newblock In {\em 2018 IEEE 32nd International Conference on Advanced
-  Information Networking and Applications (AINA)}, pages 422--428, 2018.
 
 \bibitem{yashkina2020}
 {Ekaterina} {Yashkina}, {Arseny} {Pinigin}, {JooYoung} {Lee}, {Manuel}

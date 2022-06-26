@@ -149,17 +149,17 @@ The equation \ref{eq:aging_master} is not solvable in a general case. It was sol
 
 \section{Structural differences between networks }
 
-\subsection{D-measure}
+%\subsection{D-measure}
 
-Between two nodes in the network, we can define different paths, but the most important one are the shortest paths, $d_{ij}$. Diameter defines the largest shortest path found in the network. For each node $i$ we can define the distribution of the shortest paths between node $i$ and all others nodes in the network, $P_{i}=\{p_{i}(j)\}$, where $p_{i}(j)$ is percent of nodes at distance $j$ from node $i$. The connectivity patterns can efficiently describe difference between two networks.    
-To specify how much $G$ and $G^{'}$ are similar we use D-measure \cite{tiago2}
+%Between two nodes in the network, we can define different paths, but the most important one are the shortest paths, $d_{ij}$. Diameter defines the largest shortest path found in the network. For each node $i$ we can define the distribution of the shortest paths between node $i$ and all others nodes in the network, $P_{i}=\{p_{i}(j)\}$, where $p_{i}(j)$ is percent of nodes at distance $j$ from node $i$. The connectivity patterns can efficiently describe difference between two networks.    
+%To specify how much $G$ and $G^{'}$ are similar we use D-measure \cite{tiago2}
 
-\begin{equation} 
-\label{eq:dmeasure}
-D(G,G') = \omega \left| \sqrt{\frac{J(P_1,..P_N)}{log(d)}}-\sqrt{\frac{J(P_1^{'},..P_N^{'})}{log(d^{'})}} \right| \nonumber +  (1-\omega) \sqrt{\frac{J(\mu_{G},\mu_{G^{'}})}{log2}}.
-\end{equation}
+%\begin{equation} 
+%\label{eq:dmeasure}
+%D(G,G') = \omega \left| \sqrt{\frac{J(P_1,..P_N)}{log(d)}}-\sqrt{\frac{J(P_1^{'},..P_N^{'})}{log(d^{'})}} \right| \nonumber +  (1-\omega) \sqrt{\frac{J(\mu_{G},\mu_{G^{'}})}{log2}}.
+%\end{equation}
 
-D-measure calculates Jensen-Shannon divergence between $N$ shortest path distributions, $J(P_1,.., P_N)) = \sum_{i,j}p_i(j)log(\frac{p_i(j)}{\mu_j})$, where  $\mu_j = (\sum_{i=1}^N p_i(j))/N$ is mean shortest path distribution. The first term in equation \ref{eq:dmeasure} compares local differences between two networks, and Jensen-Shannon divergence between $N$ shortest path distributions $J(P_{1},...,P_{N})$ is normed with network diameter $d$. The second part determines global differences, computing  ${J(\mu_{G},\mu_{G^{'}})}$ between mean shortest path distributions. We consider equally important local and global properties of the networks, and parameter $\omega$ is set to $0.5$. The D-measure ranges from $0$ to $1$. The lower D-measure is, networks are more similar and for D-measure $D = 0$, structures are isomorphic.
+%D-measure calculates Jensen-Shannon divergence between $N$ shortest path distributions, $J(P_1,.., P_N)) = \sum_{i,j}p_i(j)log(\frac{p_i(j)}{\mu_j})$, where  $\mu_j = (\sum_{i=1}^N p_i(j))/N$ is mean shortest path distribution. The first term in equation \ref{eq:dmeasure} compares local differences between two networks, and Jensen-Shannon divergence between $N$ shortest path distributions $J(P_{1},...,P_{N})$ is normed with network diameter $d$. The second part determines global differences, computing  ${J(\mu_{G},\mu_{G^{'}})}$ between mean shortest path distributions. We consider equally important local and global properties of the networks, and parameter $\omega$ is set to $0.5$. The D-measure ranges from $0$ to $1$. The lower D-measure is, networks are more similar and for D-measure $D = 0$, structures are isomorphic.
 
 The advantage this measure has is that it can distinguish between networks generated with the same model parameters. To examine how different growth signals influence the network structure, we use D-measure and compare networks generated with the same model parameters $\alpha$, $\beta$ and fixed number of links per new node $L$, but different growth signals. The growth of first network is driven by fluctuating signal $M_1 = {M(t)}$, while the other one grows by constant rate $M_2=<M(t)> = const$. 
 

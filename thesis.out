@@ -1,29 +1,9 @@
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.1.1}{In This Thesis}{chapter.1}% 2
-\BOOKMARK [0][-]{chapter.2}{Methodology}{}% 3
-\BOOKMARK [1][-]{section.2.1}{Complex networks}{chapter.2}% 4
-\BOOKMARK [1][-]{section.2.2}{Types of complex networks}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.3}{The structure of complex networks - measures}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.4}{Models}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.5}{Distributions}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.6}{Multifractality of the signals}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.7}{Dynamical reputation model}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Driving signals}{}% 11
-\BOOKMARK [1][-]{section.3.1}{Growing signals}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.2}{Growing network model with aging nodes}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.3}{Structural differences between networks }{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.4}{Conclusions}{chapter.3}% 15
-\BOOKMARK [0][-]{chapter.4}{Groups growth model}{}% 16
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.2}{Data }{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.3}{Empirical analysis of social group growth }{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.4}{Model }{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.5}{Results }{chapter.4}% 21
-\BOOKMARK [1][-]{section.4.6}{Discussion and conclusions }{chapter.4}% 22
-\BOOKMARK [0][-]{chapter.5}{The role of trust in knowledge based communities}{}% 23
-\BOOKMARK [1][-]{section.5.1}{The Stack Exchange}{chapter.5}% 24
-\BOOKMARK [1][-]{section.5.2}{Network properties of Stack Exchange data}{chapter.5}% 25
-\BOOKMARK [1][-]{section.5.3}{Dynamic reputation model}{chapter.5}% 26
-\BOOKMARK [0][-]{appendix.A}{The choice of the sliding window}{}% 27
-\BOOKMARK [0][-]{appendix.B}{Robustness of core-periphery algorithm}{}% 28
-\BOOKMARK [0][-]{appendix*.2}{Bibliography}{}% 29
+\BOOKMARK [0][-]{chapter.1}{Methodology}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Complex networks}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Types of networks}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{The structure of complex networks - measures}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Models}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{Distributions}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.6}{Multifractality of the signals}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.7}{Dynamical reputation model}{chapter.1}% 8
+\BOOKMARK [0][-]{appendix*.1}{Bibliography}{}% 9

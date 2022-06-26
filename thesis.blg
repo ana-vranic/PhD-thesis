@@ -1,8 +1,9 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: frontmatter.aux
 A level-1 auxiliary file: Chapters/Chapter_Introduction.aux
+A level-1 auxiliary file: Chapters/Chapter_Methodology.aux
+A level-1 auxiliary file: Chapters/Chapter_Methodology_2.aux
 A level-1 auxiliary file: Chapters/Chapter_DrivingSignal.aux
 A level-1 auxiliary file: Chapters/Chapter_GroupsGrowth.aux
 A level-1 auxiliary file: Chapters/Chapter_Trust1.aux
@@ -54,7 +55,7 @@ Warning--I didn't find a database entry for "bettencourt2007growth"
 Warning--empty booktitle in yashkina2020
 You've used 69 entries,
             1791 wiz_defined-function locations,
-            873 strings with 17220 characters,
+            874 strings with 17271 characters,
 and the built_in function-call counts, 18637 in all, are:
 = -- 1649
 > -- 904
