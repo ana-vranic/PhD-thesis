@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.9)  27 JUN 2022 16:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.4)  27 JUN 2022 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -981,12 +981,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
-[9]) [10] (./thesis.bbl
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+ []
+
+[9] [10]) [11] (./thesis.bbl [12
+
+
+]
 bibitemlist
-[11
-
-
-] [12] [13] [14]) [15]
+[13] [14] [15] [16]) [17]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
  (./thesis.aux (./Chapters/Chapter_Methodology.aux))
@@ -997,12 +1002,12 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 13966 strings out of 483107
- 208133 string characters out of 5964631
- 546275 words of memory out of 5000000
- 28426 multiletter control sequences out of 15000+600000
+ 13972 strings out of 483183
+ 208201 string characters out of 5966293
+ 546030 words of memory out of 5000000
+ 28421 multiletter control sequences out of 15000+600000
  579605 words of font info for 238 fonts, out of 8000000 for 9000
- 59 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  37i,11n,42p,1095b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
@@ -1013,10 +1018,10 @@ public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mat
 hpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (15 pages, 461034 bytes).
+Output written on thesis.pdf (17 pages, 463149 bytes).
 PDF statistics:
- 267 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 100 named destinations out of 1000 (max. 500000)
+ 275 PDF objects out of 1000 (max. 8388607)
+ 230 compressed objects within 3 object streams
+ 102 named destinations out of 1000 (max. 500000)
  28244 words of extra memory for PDF output out of 29859 (max. 10000000)
 
