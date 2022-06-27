@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.4)  27 JUN 2022 13:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.4)  27 JUN 2022 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -959,23 +959,29 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [5 <./figures/methodology/graph5.png>] [6]
-<Figures/structures.png, id=86, 699.36281pt x 392.21532pt>
+) [5 <./figures/methodology/graph5.png>]
+Underfull \vbox (badness 1715) has occurred while \output is active []
+
+ [6]
+Underfull \vbox (badness 4913) has occurred while \output is active []
+
+ [7]
+<Figures/structures.png, id=92, 699.36281pt x 392.21532pt>
 File: Figures/structures.png Graphic file (type png)
 <use Figures/structures.png>
-Package pdftex.def Info: Figures/structures.png  used on input line 185.
+Package pdftex.def Info: Figures/structures.png  used on input line 215.
 (pdftex.def)             Requested size: 241.84843pt x 135.6316pt.
- [7 <./Figures/structures.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
-[8] [9]) [10] (./thesis.bbl
+[8 <./Figures/structures.png>] [9] [10]) [11] (./thesis.bbl [12
+
+
+]
 bibitemlist
-[11
-
-
-] [12] [13] [14]) [15]
+[13] [14] [15] [16]) [17]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
  (./thesis.aux (./Chapters/Chapter_Methodology.aux))
@@ -986,10 +992,10 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 13967 strings out of 483183
- 208131 string characters out of 5966293
+ 13975 strings out of 483183
+ 208225 string characters out of 5966293
  546030 words of memory out of 5000000
- 28415 multiletter control sequences out of 15000+600000
+ 28421 multiletter control sequences out of 15000+600000
  579754 words of font info for 240 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  37i,11n,42p,1095b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1002,10 +1008,10 @@ public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mat
 hpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (15 pages, 459532 bytes).
+Output written on thesis.pdf (17 pages, 461894 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
- 100 named destinations out of 1000 (max. 500000)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 231 compressed objects within 3 object streams
+ 102 named destinations out of 1000 (max. 500000)
  28244 words of extra memory for PDF output out of 29859 (max. 10000000)
 

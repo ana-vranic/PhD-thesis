@@ -141,6 +141,36 @@ same set of nodes and having the same center, depending on which directed links 
 present between any two linked nodes. On occasion, it will be useful to distinguish
 between these.
 
+Eulerian tours and Hamiltonian cycles
+
+A walk is said to be closed if it starts and ends at the same node. It is clear that in
+order to have a closed walk that involves every link of a network exactly once it must
+be that each node in the network has an even degree. 39 This follows since each time a
+node is “entered” by one link on the walk it must be “exited”by a di¤erent link, and
+each time the node is visited, it must be by a link that has not appeared previously on
+the walk. Euler’s [?] simple but remarkable theorem is that this condition is necessary
+and su¢ cient for there to exist such a closed walk.
+
+A connected network g has a closed walk that involves each link ex-
+actly once if and only if the degree of each node is even.
+
+
+One can ask a related question for nodes rather than links: when is it possible to
+…nd a closed walk that involves each node in the network exactly once? Such a closed
+walk must be a cycle, and is referred to as a Hamilton Cycle or a Hamiltonian. A
+related question is whether there exists a “Hamilton path”that hits each node exactly
+once. Clearly a network that has a Hamilton cycle has a Hamilton path, while the
+converse is not true (consider a line).
+Discovering whether or not a network has a Hamilton cycle is a much more chal-
+lenging question than whether it has a Euler tour; and this has been an active area
+of research in graph theory for some time. It has direct applications to the “traveling
+salesman problem,”where a salesman must visit each city on a trip exactly once, cities
+are nodes on a network, and the path must follow the links.
+The seminal theorem on Hamilton cycles is due to Dirac [?]. Stronger theorems
+have since been developed, as we shall shortly see, but it is worth stating on its own,
+as it has an intuitive proof that helps one see the paths to proving some of the later. 
+
+
 \subsection{community structure}
 
 Thus the ability to find groups or clusters in a network can be a useful tool for revealing structure and organization within networks at a scale larger than that of a single node or a
