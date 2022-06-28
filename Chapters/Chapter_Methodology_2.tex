@@ -1,5 +1,3 @@
-
-
 \section{Models}
 
 \subsection{The random graph model }
@@ -45,8 +43,8 @@ P(k_i) = \frac{k_i}{\sum_jk_j}
 
 New node can connect to any node in the network, however nodes with larger degree have higher probability to link new nodes. After time $t$ the model generates network with $N=t+m_0$ nodes and $m_0+mt$ links. Degree distribution is power-law with exponent $\gamma=3$. As network grows nodes with larger degree becomes bigger, so we end up with few nodes with many links, called hubs. Two simple mechanisms are responsible for emergence of scale-free networks. 
 
- \textit{degree distribution}
- 
+\textit{degree distribution}
+
 To understand the emergence of scale-free properties we need to analyze the evolution of degree distribution. The rate at which an existing node get new links as result of new nodes connecting to it is
 
 \begin{equation}
@@ -96,9 +94,12 @@ better fit to the degree distribution.
 
 In real systems preferential attachment can be more influenced by the age of the node. If parameter alpha is negative, ageing effect overcomes the role of preferential attachment, and scale-free properties are lost. For large negative alpha, the network turns into the chain, where the youngest nodes are the most attractive. On the other hand for a positive alpha, new nodes will link to older nodes. Positive alpha makes the network more heterogeneous, and scale-free nature still exist but exponent gamma is different from 3.  for the high alpha all nodes will tend to connect to oldest node. 
 
+\subsection{Ageing model}
+
 In the general ageing model, we have linking rules where rules connecting probability depends on both of node degree and age difference between new and old node.  With parameters alpha and beta we can control the structure of generated networks. I already talked about some limits of the general model. We saw that for specific parameters there are SF networks, BA model, if we move from that point SF behaviour with power-law with exponent 3 is lost. And other classes of networks can appear. In general, model, when alpha and beta are both positive, rich get richer phenomena is more promoted. On the other hand, the region where beta is positive and alpha negative can be interesting, because SF networks can appear only along the critical line. 
 
 In growing network models is considered that at each time step one node is added to the network. The remaining question is if there is any change if network growth is not linear anymore and how does it influence the structure of obtained networks.  In this work, we use numerical simulations to explore the case when $M(t)$ is a correlated time-varying function and study how these properties influence the structure of generated networks for different values of parameter $-\infty<\alpha\leq-1$ and $\beta\geq1$ and constant $L$.
+
 
 %\section{Graph isomorphism}
 
@@ -263,3 +264,71 @@ T_{n}=T_{n-1} \beta^{\Delta_{n}}+I_{n}
 \end{equation}
 
 Here, $\beta$ is the forgetting factor. In our implementation of the model, the trust is updated each day for every user irrespective of their activity status. Therefore, the decay itself is a combination of $\beta$ and $\Delta_n$: the more days pass without recorded interaction from a specific user, the more their reputation decays. Lower values of beta lead to faster decay of trust as shown on figure \ref{fig:paper_summary}.
+
+\section{Communities}
+
+\subsection{community structure}
+
+Thus the ability to find groups or clusters in a network can be a useful tool for revealing structure and organization within networks at a scale larger than that of a single node or a
+few nodes. The occurrence of groups or communities is not limited to social networks.
+Clusters of nodes in a web network, for instance, might indicate groups of
+related web pages. Clusters of nodes in a metabolic network might indicate
+functional units within the network. The ability to find groups also has another practical application: it allows
+us to take a large network and break it apart into smaller subsets that can be
+studied separately. The network in Fig. 14.1 is quite small, but others may be
+much larger, millions of nodes or more, making their analysis and interpreta-
+tion challenging. Breaking such networks into their component clusters is a
+useful technique for reducing them to a manageable size. One example of this
+approach is in network visualization. A network with a million or more nodes
+can rarely be visualized in its entirety, even with the aid of good visualization
+software. Such networks are simply too big to be represented usefully on the
+screen or on paper. If the nodes of the network divide naturally into groups,
+however, then we can make a simpler but still useful picture by representing
+each group as a single node and the connections between groups as edges.
+An example is shown in Fig. 14.2. This simplified representation allows us to
+see the large-scale structure of the network without getting bogged down in
+the details of the individual nodes. If one wanted to see the individual nodes,
+one could then “zoom in” to a single group and look at its internal makeup. The problem of finding groups of nodes in networks is called community
+detection. Simple though it is to describe, community detection turns out to be
+a challenging task, but a number of methods have been developed that return
+good results in practical situations.
+
+
+\subsection{Core-periphery structure}
+
+Core-periphery structure describes a network whose nodes are divided into two community, densely connected core and less connected periphery. If we consider the average probabilities of edges within each group as $p_{11}$ and $p_{22}$, and between groups $p_{12}$, instead of traditionaly assortative or dissasortative structure we can define core-periphery structure $p_{11}> p_{12} > p_{22}$. In the principle core-periphery structure does not have to be limited to only two groups, and we can define layered, onion, structure. The network can have more cores, that are not directly connected to each other. 
+
+The simple method for finding core-periphery structure is to assume that nodes in core have higher degree in the core than in the periphery. Another simple method is to construct k-cores. K core is group of nodes that each has connection to at least k other members of the group. K-cores form a nested set, and become denser with higher k. The core-periphery structure can be detected optimizing the measure similar to modularity, as defined by Borgatti and Everett. Their goal is to find the division that minimizes the number of edges in the periphery. So they define the score function that is equal to number of edges in the periphery minus the expected number of such edges placed at random. $\rho = \frac{1}{2}\sum_{ij}(A_{ij}-p)g_ig_j$. They used genetic algorithm to minimize this function. 
+
+The another way to detect core-periphery structure is to use the inference method based on fits to a stochastic block model. In this method we fit observed network to a block model with two groups, such that edge-probabilities have form $p_{11}> p_{12} > p_{22}$. The only downside of this model is that method is going to find the structure that optimize likelihood, and we can not say weather it is core-periphery or community structure. 
+
+
+\subsection{Stochastic block model}
+The network or graph is the structure of nodes and edges, where each edge connects two nodes. Nodes can be organized into groups, called communities. Identifying these hidden blocks can lead to interesting insights into the network. However, the community detection problem does not give a precise definition of what a community is. As a consequence, many approaches try to recover such structural patterns in the network \cite{martin}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figures/structures.png}
+	\caption{Stochastic Block model for different networks structures. (a) assortative. (b) dissortative. (c) core-periphery. (d) Erdos Renyi random graph.}
+	\label{fig:SBM}
+\end{figure}
+
+A common definition of a community is that it is densely connected subgraph \cite{userguide}. We can find these subgraphs by optimizing an objective function, such as modularity function. It measures the difference in the number of edges between the given network and the network with the same number of nodes but randomly connected. In this approach, we try to maximize the density of connections inside a group by focusing more on assortative\footnote{Networks where nodes tend to connect with other nodes of a similar degree. Edges are more likely inside blocks than out of them.} group structures. 
+
+Another type of networks is the bipartite network that has two disjoint sets of nodes. The edges exist only between nodes from different sets. Networks of this class can appear in real-world data, such as users-movies preference, collaboration network for scientists and papers, etc. Application of density-based approach requires to first project bipartite network to one of its partitions and then find communities in that projection. With this, some information is lost. On the other hand, the method that is directly applicable to bipartite networks is Stochastic Block model, from which the models considered in this paper are derived. \\
+
+Stochastic block model (SBM) is based on connection probabilities between nodes. It is a generative model which includes existence of communities. Parameters that describe SBM for network G with N nodes are:
+
+\begin{itemize}
+	\item k: number of groups
+	\item group assignment vector, g: $g_i \in\{1,2..k\}$, gives the group index of node $i$.
+	\item SBM matrix, $p_{k \times k}$, whose elements $p_{ij}$ are the probabilities that edges between groups $g_i$ and $g_j$ exist.
+\end{itemize}
+
+Note that nodes within one group have the same connection probabilities.
+
+SBM can generate and describe different types of network structures. Figure \ref{fig:SBM} \cite{userguide} shows how the model matrix corresponds to resulting networks with two communities. First, for the assortative network (\ref{fig:SBM} a), diagonal elements of the matrix have higher probabilities. This indicates dense connections inside the group, just like in classic community structures. In disassortative structure, (\ref{fig:SBM} b), more connections exist between two partitions than inside them, i.e. off-diagonal elements have higher probabilities. Bipartite networks can be represented like this. 
+
+Figure (\ref{fig:SBM} c) shows how the model represents core-periphery networks. Nodes of one block (core) are well connected with itself and with other partition (periphery). From the last case, we can note that SBM with one group is the Erdos Renyi random graph (\ref{fig:SBM} d) because all probabilities inside and between groups are equal.
+
+The benefit of this model is that we can generate many networks with similar group structure. The model can fit real data, which results in finding network communities. For the given network $G$ and number of groups $k$, the best nodes partition $g$ is found by maximizing the likelihood function. Beside inferring communities, SBM has application in prediction of missing links. This simply formulated model has many variants, motivated by specific properties of real data. For example, for networks which are degree heterogeneous, there is degree corrected SBM. In some social networks, users can belong to more than one group, and this can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, hierarchical model, etc. Also, several algorithms for optimization of likelihood function are proposed. The overview of these versions and methods are given in \cite{comparison}. In this paper, we will focus on Single and Mixed Membership SBM applied on bipartite networks.  
