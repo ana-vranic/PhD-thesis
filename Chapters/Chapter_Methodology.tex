@@ -311,9 +311,86 @@ Newman proposed the alternative definition for the clustering coefficient based 
 \subsection{Real-world networks}
 Real-world networks share similar properties. The mean distance between nodes is smaller than the number of nodes in the network $l << N$, called small-world phenomena. This cause the fast spread of information or even diseases in the complex systems. In small-world networks number of vertices grow exponentially with distance; thus $l$ increase as $log(n)$ or slower. Logarithmic scaling can be proved from various network models; also, it is observed in real-world complex systems. The clustering coefficient in real-world networks is usually high. Real-world networks have one important feature; power-law degree distribution; such networks are called scale-free networks.
 
+
+\newpage
 \section{Network models}
 
 \subsection{Random network model}
+
+
+%As this process is stochastic, the network with same parameters n and p, does not have to be same structure, so it is necessary to consider the ensemble of networks. %Then the mean number of links depends on the model parameters: $\langle m \rangle = n(n-1)p / 2$.
+%The expected value of node degree can be predicted as $\langle k \rangle = (n-1)p$.
+%The probability $p$ is defined as density of the network. 
+
+
+The random graph model was introduced by mathematicians Paul Erdős and Alfred R\' {e}nyi in 1959. In this model, connections between nodes are chosen randomly, and every link has the same probability to exist. Graph is characterized only by number of the nodes $N$, and the linking probability $p$, so Erdős-R\' {e}nyi graph is written as $G(n, p)$. \\
+
+Creation of ER random network consists of the following steps:
+\begin{itemize}
+	\item we start with $N$ isolated nodes
+	\item between each $N(N-1)/2$ pair of nodes we create link with probability $p$; sampling random number $r \in (0,1)$, we create link if $r \leq p$    
+\end{itemize}
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figures/methodology/ERgraph}
+	\caption{ER graph with $N=100$ nodes and different linking probabilities $p$.}
+	\label{fig:erp}
+\end{figure}
+
+We should note that this process is stochastic. The networks $G(N, p)$ with same parameters do not need to have the same structure; i.e. they differ in the number of links. Therefore, the single random graph is only one graph from all the possible realizations in the statistical ensemble. 
+
+Two simple quantities that could be estimated are the average number of links and the average degree. For complete graph with $N$ nodes, number of edges is $N(N-1)/2$. As the probability to draw every edge is $p$, the \textbf{average number of links} is simply given as 
+
+\begin{equation}
+\langle L \rangle = \frac{N(N-1)}{2}p
+\end{equation}
+
+From there, we easily conclude that the density of the network is equal to probability $p$.
+The \textbf{average degree} is approximated as: $\langle k \rangle = 2 \langle L \rangle / N $, leading to:
+
+\begin{equation}
+\langle k \rangle = (N-1)p 
+\end{equation}
+
+The \textbf{degree distribution} of ER random graph follows the binomial distribution. 
+
+\begin{equation}
+P(k) = \binom{N-1}{k}p^k(1-p)^{N-1-k}
+\end{equation}
+
+The probability that node has degree $k$ is given with second term $p^k$, while the probability that other N-1-k links are not created is given with third part of the equation. Finally, there are  $\binom{N-1}{k}$ combinations for one node, to have $k$ links from $N-1$ possible links. 
+
+The binomial distribution describes very well small networks. For larger networks, we find that they are sparse and that average degree is much smaller than number of nodes $\langle k \rangle << N$. In this limit, binomial distribution becomes the Poisson, which now depends only on one parameter $\langle k \rangle$
+
+\begin{equation}
+p(k) = \frac{1}{k!}e^{-\langle k \rangle}\langle k \rangle^{k}
+\end{equation}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/methodology/ER_dist}
+	\caption{Degree distribution of ER graph. Degree distribution of small networks follow binominal. Larger networks are better approximated with Poison distribution, and degree distribution for fixed average degree $<k>$ becomes independent of the network size.}
+	\label{fig:erdist}
+\end{figure}
+%We have just derived an exact expression for the vertex degree distribu-tion of ER ( n, p ) graphs, which is shown in Figure 7.1(a) as the smooth curve. However, because we are considering one specific random graph, the distribution of vertex degrees for G may differ from this one, as is also shown. The situation changes when considering larger random graphs, as shown in Figure 7.1(b). In general, if we consider increasingly larger graphs with the same expected vertex degree as G, we would see that our specific exam- ples would also better approximate the theoretical degree distribution. To give a hint on why this is so, two observations are important. First, by considering graphs with the same expected vertex degree, we will essentially see that the range of observed vertex degrees is the same for all graphs, independent of their respective size. Second, if the possible vertex degrees are the same, larger graphs will have many more vertices of degree k than smaller graphs. As a consequence, the fluctuation (i.e., standard deviation) that we can expect to see in the number of vertices having degree k will also be smaller. It is beyond the scope of this text to explain these matters in more detail.
+
+%The probability $p(k)$ follows the binomial distribution of the form:
+
+%$p(k) = p^k(1-p)^{n-1-k}$. For large values of $n$, this becomes $p(k) = e^{-k}k^{-k} / k!$, which is Poisson distribution. 
+
+The random graph has a very small \textbf{average path length}, it is given as $\langle l \rangle = \frac{ln N - \gamma}{ln(pN)} + \frac{1}{2}$. This is characteristic of many large networks. The clustering coefficient is proportional to linking probability, $\langle C \rangle = p$, so in large random networks we find small clustering coefficient, contrary than in real-world networks. \\  
+
+The figure \ref{fig:erp} shows how increasing the linking probability $p$, the network becomes more connected. When $p=0$, all nodes are disconnected. In the other limit, $p=1$, network is fully connected. Between those two probabilities, exists critical probability, where the giant component appear. The giant component is sub-graph, which size is proportional to the network size. In other words, the network does not have disconnected components. Such change in the network is phase transition in network connectivity, and is related to percolation theory. 
+
+The phase transition occurs when average degree is $ \langle k  \rangle = 1$, which gives us: $p_c = \frac{1}{N-1}$, meaning that all nodes have degree larger than 1. When the $ \langle k  \rangle < 1$, network is in the sub critical regime where all components are small. In the critical regime, the size of the giant component is proportinal to the $N^{2/3}$. In the supercritical regime $ \langle k  \rangle > 1$, the probability to giant component appear is 1.
+
+%Increasing the probability $p$, the giant component may appear. This is sub-graph whose size is proportional to the size of the network. Such change in the network is phase-transition and it is important as small change in the probability p leads to fundamental change in the system properties. There are two limits of this model, when $p=0$, network is disconnected. If $p=1$, then network is fully connected, and giant component is with size $O(1)$.  This phenomena is related to percolation phase transition. On the threshold $p_c$, the component whose size is proportional to $n^{2/3}$ emerges. Average path length between two nodes, at critical point is proportional to the $ln N$. The small, logarithmic distance is the origin of the "small-world" phenomena. 
+
+%The interesting behavior of this model is that, with increasing p nodes tend to organise in giant component. The subcritical , $k <1$ where all components are dimple and small. The size of larges component is $s=O(ln n)$. In critical regime $k=1$, the size of largest component is $s=O(n^{2/3})$. Supercritical $k>1$, where the probability of having giant component is 1.  
+
+\subsection{Small-world networks}
 
 \subsection{Barabasi-Albert model}
 
