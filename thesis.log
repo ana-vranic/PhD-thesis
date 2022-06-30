@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.4)  29 JUN 2022 18:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.9)  30 JUN 2022 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -696,7 +696,11 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count330
 \l__pdf_internal_box=\box58
 )
-(./thesis.aux (./Chapters/Chapter_Methodology.aux))
+(./thesis.aux (./Chapters/Chapter_Methodology.aux
+
+LaTeX Warning: Label `fig:erdist' multiply defined.
+
+))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
@@ -717,8 +721,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
 LaTeX Font Info:    ... okay on input line 70.
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 70
 .
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 LaTeX Info: Redefining \microtypecontext on input line 70.
@@ -1022,7 +1025,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 302--303
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 
  []
 
@@ -1030,28 +1033,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 326--327
 File: figures/methodology/ERgraph.pdf Graphic file (type pdf)
 <use figures/methodology/ERgraph.pdf>
 Package pdftex.def Info: figures/methodology/ERgraph.pdf  used on input line 33
-7.
+0.
 (pdftex.def)             Requested size: 435.32422pt x 158.36787pt.
 [11 <./figures/methodology/ERgraph.pdf>]
 <figures/methodology/ER_dist.pdf, id=138, 628.25824pt x 347.3324pt>
 File: figures/methodology/ER_dist.pdf Graphic file (type pdf)
 <use figures/methodology/ER_dist.pdf>
-Package pdftex.def Info: figures/methodology/ER_dist.pdf  used on input line 37
-3.
-(pdftex.def)             Requested size: 338.58632pt x 187.1857pt.
+Package pdftex.def Info: figures/methodology/ER_dist.pdf  used on input line 36
+6.
+(pdftex.def)             Requested size: 435.32422pt x 240.66658pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
-)
-Underfull \vbox (badness 3333) has occurred while \output is active []
 
- [12 <./figures/methodology/ER_dist.pdf>] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
+
+ []
+
+[12 <./figures/methodology/ER_dist.pdf>]
+<figures/methodology/ws_graph.png, id=189, 885.3075pt x 287.0725pt>
+File: figures/methodology/ws_graph.png Graphic file (type png)
+<use figures/methodology/ws_graph.png>
+Package pdftex.def Info: figures/methodology/ws_graph.png  used on input line 3
+90.
+(pdftex.def)             Requested size: 435.32422pt x 141.16173pt.
+ [13 <./figures/methodology/ws_graph.png>] [14] [15]) [16]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
- (./thesis.aux
-(./Chapters/Chapter_Methodology.aux))
+ (./thesis.aux (./Chapters/Chapter_Methodology.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
@@ -1060,15 +1071,18 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
  ) 
 Here is how much of TeX's memory you used:
- 13788 strings out of 483183
- 205293 string characters out of 5966293
- 543962 words of memory out of 5000000
- 28344 multiletter control sequences out of 15000+600000
- 572557 words of font info for 202 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
+ 13830 strings out of 483107
+ 205903 string characters out of 5964631
+ 543825 words of memory out of 5000000
+ 28363 multiletter control sequences out of 15000+600000
+ 574522 words of font info for 217 fonts, out of 8000000 for 9000
+ 59 hyphenation exceptions out of 8191
  34i,12n,42p,1622b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
@@ -1080,10 +1094,10 @@ hpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (13 pages, 370893 bytes).
+Output written on thesis.pdf (16 pages, 478987 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 17502 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 262 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 21603 words of extra memory for PDF output out of 24883 (max. 10000000)
 
