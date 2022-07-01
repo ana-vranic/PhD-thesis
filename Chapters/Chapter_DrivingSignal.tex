@@ -117,25 +117,27 @@ MySpace signal has a long trend with additional cycles that are a consequence of
 
 \section{Growing network model with aging nodes}
 
-The model starts with small number of nodes randomly connected. Further, at each time step new node arrives in the network and makes connection with one old node, already present in the network.
-The way in which new nodes are linked is governed by various mechanisms. They can have preference to nodes with high degree (preferential attachment), or preference to nodes with specific age. In the network model with aging nodes the probability that link is created between two nodes depends on the node degree and age \cite{hajra2004}:
-\begin{equation}
-\Pi_{i}(t)\sim k_{i}(t)^{\beta}\tau_{i}^{\alpha} 
-\label{eq:1}
-\end{equation}
-where $k_{i}(t)$ is a degree of a node $i$ at time $t$, and $\tau_{i}$ is age difference between node $i$ and newly added node. 
+%The model starts with small number of nodes randomly connected. Further, at each time step new node arrives in the network and makes connection with one old node, already present in the network.
+%The way in which new nodes are linked is governed by various mechanisms. They can have preference to nodes with high degree (preferential attachment), or preference to nodes with specific age. In the network model with aging nodes the probability that link is created between two nodes depends on the node degree and age \cite{hajra2004}:
+%\begin{equation}
+%\Pi_{i}(t)\sim k_{i}(t)^{\beta}\tau_{i}^{\alpha} 
+%\label{eq:1}
+%\end{equation}
+%where $k_{i}(t)$ is a degree of a node $i$ at time $t$, and $\tau_{i}$ is age difference between node $i$ and newly added node. 
 
-The values of model parameters $\beta$ and $\alpha$ control the topology of networks.  For example if we fix $\beta=1$ and $\alpha=0$ generated networks are scale-free; degree distribution is $P(k) \sim k^{-\gamma}$ with $\gamma=3$, while in the case of nonlinear preferential attachment $\beta \neq 1$ and $\alpha=0$ scale-free properties disappear. Scale-free property can be produced along the critical line $\beta(\alpha^{*})$ in the $\alpha-\beta$ phase diagram, see Figure \ref{fig:diagram}. For $\alpha>\alpha^{*}$ networks have gel-like small world behavior, while for $\alpha<\alpha^{*}$ but close to line $\beta(\alpha^{*})$ networks have stretched exponential shape of degree distribution \cite{hajra2004}.  
+%The values of model parameters $\beta$ and $\alpha$ control the topology of networks.  For example if we fix $\beta=1$ and $\alpha=0$ generated networks are scale-free; degree distribution is $P(k) \sim k^{-\gamma}$ with $\gamma=3$, while in the case of nonlinear preferential attachment $\beta \neq 1$ and $\alpha=0$ scale-free properties disappear. Scale-free property can be produced along the critical line $\beta(\alpha^{*})$ in the $\alpha-\beta$ phase diagram, see Figure \ref{fig:diagram}. For $\alpha>\alpha^{*}$ networks have gel-like small world behavior, while for $\alpha<\alpha^{*}$ but close to line $\beta(\alpha^{*})$ networks have stretched exponential shape of degree distribution \cite{hajra2004}.  
 
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=0.5\linewidth]{Figures/diagram.png}
-	\caption{Phase diagram of aging network model}
-	\label{fig:diagram}
-\end{figure}
+%\begin{figure}[!ht]
+%	\centering
+%	\includegraphics[width=0.5\linewidth]{Figures/diagram.png}
+%	\caption{Phase diagram of aging network model}
+%	\label{fig:diagram}
+%\end{figure}
 
 
-The networks generated with constant growth signal are uncorrelated trees. To enable formation of clusters in the network new nodes need to create more than one link. We adapt the original model such that at each time step we add $M\geq1$ new nodes that make $L\geq1$ links with existing nodes in the network corresponding to probability \ref{eq:1}. 
+The networks generated with constant growth signal are uncorrelated trees. 
+
+To enable formation of clusters in the network new nodes need to create more than one link. We adapt the original model such that at each time step we add $M\geq1$ new nodes that make $L\geq1$ links with existing nodes in the network corresponding to probability \ref{eq:1}. 
 The master equation for $N_k$, $k$ degree nodes can be written as:
 
 \begin{equation}

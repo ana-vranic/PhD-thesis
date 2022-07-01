@@ -311,7 +311,6 @@ Newman proposed the alternative definition for the clustering coefficient based 
 \subsection{Real-world networks}
 Real-world networks share similar properties. The mean distance between nodes is smaller than the number of nodes in the network $l << N$, called small-world phenomena. This cause the fast spread of information or even diseases in the complex systems. In small-world networks number of vertices grow exponentially with distance; thus $l$ increase as $log(n)$ or slower. Logarithmic scaling can be proved from various network models; also, it is observed in real-world complex systems. The clustering coefficient in real-world networks is usually high. Real-world networks have one important feature; power-law degree distribution; such networks are called scale-free networks.
 
-\newpage
 \section{Network models}
 
 \subsection{Random network model}
@@ -396,77 +395,60 @@ Even though the small-world network model lacks the power-law degree distributio
 
 \subsection{Barab\' {a}si-Albert model}
 
-The ER random graph model and WS small-world model are static models, where the number of nodes are fixed. It is one of the main reasons why they can not fully explain the properties of real systems. The size of real systems does not remain constant; real networks grow. Growth means that at each time step, new nodes are added to the network. The simplest model that produces the scale-free networks is Barabasi-Albert model.
+The ER random graph model and WS small-world model are static models, where the number of nodes is fixed. It is one of the reasons why they can not fully explain the properties of real systems. The size of real systems does not remain constant; real networks grow. For the network, the growth means that at each time step, new nodes are added to the network. The simplest model that produces the scale-free networks is Barabasi-Albert model.
 
 \begin{itemize}
-	\item The model starts from the small number of randomly connected nodes.
-	\item Then at each time step, new node with $m_0$ links joins to the network. New node creates links with the nodes already present in the network, following the linking rules; i this model rules of preferential attachment. 
+	\item The model starts from the small number, $n_0$ randomly connected nodes, with $m_0$ links.
+	\item At each time step, new node with $m$ links joins to the network. New node creates links with the nodes already present in the network, following the linking rules; i this case rules of preferential attachment. 
 \end{itemize}
  
-The preferential attachment is second important ingredient for generating system with scale-free properties. In the real-system the linking between nodes is not random process, there exists the preference toward specific types of nodes. For example the popular web-pages can easily get more visits or it is common that already popular papers will get more citations. This effect is also called rich-get-richer.
+The preferential attachment is important ingredient for generating system with scale-free properties. In the real-system the linking between nodes is not random process, there exists the preference toward specific types of nodes. For example the popular web-pages can easily get more visits or it is common that already popular papers will get more citations. This effect is also called rich-get-richer or preferential attachment.
 
-The simplest formulation of the preferential attachment model is that new nodes tend to connect with high degree nodes. The linking probability is then proportional to degree $k$:  
+The simplest formulation of the preferential attachment model is that new nodes tend to connect with high degree nodes. The linking probability $\Pi$ is then proportional to node degree $k$:  
 
 \begin{equation}
-P(k_i) = \frac{k_i}{\sum_jk_j} 
+\Pi(k_i) = \frac{k_i}{\sum_jk_j} 
 \end{equation} 
 
+As at each time step one node arrive, we can estimate the number of nodes at the time step t, $N(t) = n_0+t$, with links $L(t) =m_0+ mt$. 
 
-
-
-
-
-
-\subsection{Nonlinear BA model}
-
-\subsection{Aging model}
-
-\subsection{Barabasi-Albert model}
-
-The random network model differs from real networks in the two characteristics, growth and preferential attachment. In static models, number of nodes is fixed, while in growing models we try to simulate the continuous change in the system. More important ingredient, are linking rules. In real networks, new nodes tend to link to more connected nodes.
-
-This model is defined as follows, we start from $m_0$ nodes, randomly connected, and at each timestep we add new node with m links that will connect to $m$ nodes already present in the network.  The probability that new node connects to node $i$ depends on node degree $k_i$ as
-
+First we can calculate the evolution of network degree in time.
 \begin{equation}
-P(k_i) = \frac{k_i}{\sum_jk_j} 
-\end{equation} 
-
-New node can connect to any node in the network, however nodes with larger degree have higher probability to link new nodes. After time $t$ the model generates network with $N=t+m_0$ nodes and $m_0+mt$ links. Degree distribution is power-law with exponent $\gamma=3$. As network grows nodes with larger degree becomes bigger, so we end up with few nodes with many links, called hubs. Two simple mechanisms are responsible for emergence of scale-free networks. 
-
-\textit{degree distribution}
-
-To understand the emergence of scale-free properties we need to analyze the evolution of degree distribution. The rate at which an existing node get new links as result of new nodes connecting to it is
-
-\begin{equation}
-\frac{dk_i}{dt} = mP(k_i) = m\frac{k_i}{\sum_jk_j}
+\frac{dk_i}{dt} = m\Pi(k_i) = m\frac{k_i}{\sum_jk_j} = m\frac{k_i}{m_0 + 2mt}
 \end{equation}
 
-each new node arrives with m links. The sum is $2mt - m$ so the equation for large t becomes:
-
+Note that new node, that arrived at time point $t_i$ has degree $m$, as it links to $m$ old nodes. Solving the equation we get that at $t>t_i$, has degree that grows as square root of time, also it shows that younger nodes easily acquire larger degree. 
 \begin{equation}
-\frac{dk_i}{k_i} = \frac{1}{2}\frac{dt}{t}
+k_i(t) = m \left(\frac{t}{t_i}\right)^{\frac{1}{2}}
 \end{equation}
 
-solving this equation we get that degree of node in time step t is $k_i(t)=m(\frac{t}{t_i})^\beta$, where $\beta=1/2$. 
 
-We note that degree of each node increase following power-law; the growth in degrees is sub linear, as each new node has more nodes to link than previous. The eirlier node $i$, the higher is its degree. Hubs are large as they arrived early in the network. 
+Degree distribution follows power-law, and for large k is aproximated with $P(k) = k^{-\gamma}$, such that $\gamma=3$. More precisely, the degree distribution has form:
 
-In summary, the analytical calculations predict that the Barabási-Al-
-bert model generates a scale-free network with degree exponent 3. The degree exponent is independent of the m and m 0 parameters. The degree distribution is stationary explaining how different systems have similar structural properties. 
+\begin{equation}
+P(k) = \frac{2m(m+1)}{k(k+1)(k+2)}
+\end{equation}
 
-In summary, the absence of preferential attachment leads to a growing network with a stationary but exponential degree distribution. In contrast the absence of growth leads to the loss of stationarity, forcing the network to converge to a complete graph. This failure of Models A and B to reproduce the empirically observed scale-free distribution indicates that growth and
-preferential attachment are simultaneously needed for the emergence of the scale-free property.
+For large $k$ it is exactly power-law. It is also independent of the time and size of the system, meaning the emergence of stationary scale-free state. Distributions do not depend on the N. If we vary $m$ the slope of distributions is the same, but they are parallel. After re-scaling $p(k)/m^2$, they fall on the same line. 
 
-In the past decade we witnessed the emergence of two philosophically different answers. The first one views preferential attachment as the interplay between random events and some structural property in the network. The second assumes that each new node or link balances conflicting needs. 
 
-The BA model postulates the presence of preferential attachment. Yet, we can build models that generate scale free networks without preferential attachment. The link selection model offers the simplest mechanism that generates a scale-free network. At each time step we add new nodes to the network, we select link at random and connect the new node to one of the two nodes at the end. The higher is degree of the node, the higher is chance that node is located at the end of chosen link. The more k-degree nodes are there, the more likely is that k node is at the end of chosen link. Probability that node at the end of randomly choosen link has degree k is $q_k = Ckp_k$. The fact that bias is linear with k indicates that the link selection model builds scale-free networks. 
-Copying model can also generate scale-free networks. In each time step a new node is added to the network. To decide where it connects we randomly select node u. Then with probability $p$ new node links to $u$, otherwise with probability $1-p$ we randomly choose an outgoing link of node $u$ and link the new node to its target. The likelihood that new node connects to degree-k node is $P(k)=\frac{p}{N} + \frac{1-p}{2L}k$, the second part is equivalent in selecting a node to randomly selected link. The popularity of the copying model lies in its relevance in real systems. It is common in social networks, citation networks or even protein interactions. 
-in optimization, when new nodes balance conflicting criteria as they decide where to connect
 
-\textit{diameter}
-The network diameter, represents the maximum distance in the BA model, $d \sim \frac{lnN}{lnlnN}$. The diameter grows slower than $lnN$, making the distances in BA model smaller than in random graph. The difference is found for large N. 
-\textit{clustering}
-The clustering coefficient of the BA model follows $C \sim \frac{ln N^2}{N}$. It is different from clustering found in random networks, and BA networks are in general more clustered. 
+%stationary degree dsitribution, does not depend on the system parameters, so different systems have similar behavior
+
+As network grows nodes with larger degree becomes bigger, so we end up with few nodes with many links, called hubs. The \textbf{network diameter}, represents the maximum distance in network, $d \sim \frac{lnN}{lnlnN}$. The diameter grows slower than $lnN$, making the distances in BA model smaller than in random graph. The difference is found for large N. Knowing that BA network has hubs, that shorten the path between less connected nodes. Also, if hubs are removed from the network, network easily partition in several components, loosing its  properties. 
+
+The \textbf{clustering coefficient} of the BA model follows $C \sim \frac{ln N^2}{N}$. It is different from clustering found in random networks, and BA networks are in general more clustered. 
+
+The combination of the growth and preferential attachment linking is crucial for getting scale free networks. For example, eliminating the preferential attachment; in growing network with random linking, degree distribution is stationary, but it follows exponential. In contrast, the absence of growth leads to the non-stationary degree distribution. When number of nodes is fixed, while the network grows only in number of links, such that randomly chosen node $i$ connects to node $j$ according to probability $\Pi$. At the beginning, the degree distribution follows the power-law, same as in BA model. As more links are added to the network, the distribution changes it's shape, first the peak appears, while at the end network becomes complete graph, where all nodes have the same degree.  
+
+%Absence of the preference or growth
+%In summary, the absence of preferential attachment leads to a growing network with a stationary but exponential degree distribution. In contrast the absence of growth leads to the loss of stationarity, forcing the network to converge to a complete graph. This failure of Models A and B to reproduce the empirically observed scale-free distribution indicates that growth and preferential attachment are simultaneously needed for the emergence of the scale-free property.
+
+%The BA model postulates the presence of preferential attachment. Yet, we can build models that generate scale free networks without preferential attachment. The link selection model offers the simplest mechanism that generates a scale-free network. At each time step we add new nodes to the network, we select link at random and connect the new node to one of the two nodes at the end. The higher is degree of the node, the higher is chance that node is located at the end of chosen link. The more k-degree nodes are there, the more likely is that k node is at the end of chosen link. Probability that node at the end of randomly choosen link has degree k is $q_k = Ckp_k$. The fact that bias is linear with k indicates that the link selection model builds scale-free networks. 
+%Copying model can also generate scale-free networks. In each time step a new node is added to the network. To decide where it connects we randomly select node u. Then with probability $p$ new node links to $u$, otherwise with probability $1-p$ we randomly choose an outgoing link of node $u$ and link the new node to its target. The likelihood that new node connects to degree-k node is $P(k)=\frac{p}{N} + \frac{1-p}{2L}k$, the second part is equivalent in selecting a node to randomly selected link. The popularity of the copying model lies in its relevance in real systems. It is common in social networks, citation networks or even protein interactions.  in optimization, when new nodes balance conflicting criteria as they decide where to connect
+
+\subsubsection{degree distribution derivation}
+
 
 \subsection{Nonlinear BA model}
 
@@ -485,6 +467,28 @@ better fit to the degree distribution.
 In real systems preferential attachment can be more influenced by the age of the node. If parameter alpha is negative, ageing effect overcomes the role of preferential attachment, and scale-free properties are lost. For large negative alpha, the network turns into the chain, where the youngest nodes are the most attractive. On the other hand for a positive alpha, new nodes will link to older nodes. Positive alpha makes the network more heterogeneous, and scale-free nature still exist but exponent gamma is different from 3.  for the high alpha all nodes will tend to connect to oldest node. 
 
 \subsection{Ageing model}
+
+
+The model starts with small number of nodes randomly connected. Further, at each time step new node arrives in the network and makes connection with one old node, already present in the network.
+The way in which new nodes are linked is governed by various mechanisms. They can have preference to nodes with high degree (preferential attachment), or preference to nodes with specific age. In the network model with aging nodes the probability that link is created between two nodes depends on the node degree and age \cite{hajra2004}:
+\begin{equation}
+\Pi_{i}(t)\sim k_{i}(t)^{\beta}\tau_{i}^{\alpha} 
+\label{eq:1}
+\end{equation}
+where $k_{i}(t)$ is a degree of a node $i$ at time $t$, and $\tau_{i}$ is age difference between node $i$ and newly added node. 
+
+The values of model parameters $\beta$ and $\alpha$ control the topology of networks.  For example if we fix $\beta=1$ and $\alpha=0$ generated networks are scale-free; degree distribution is $P(k) \sim k^{-\gamma}$ with $\gamma=3$, while in the case of nonlinear preferential attachment $\beta \neq 1$ and $\alpha=0$ scale-free properties disappear. Scale-free property can be produced along the critical line $\beta(\alpha^{*})$ in the $\alpha-\beta$ phase diagram, see Figure \ref{fig:diagram}. For $\alpha>\alpha^{*}$ networks have gel-like small world behavior, while for $\alpha<\alpha^{*}$ but close to line $\beta(\alpha^{*})$ networks have stretched exponential shape of degree distribution \cite{hajra2004}.  
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.5\linewidth]{Figures/diagram.png}
+	\caption{Phase diagram of aging network model}
+	\label{fig:diagram}
+\end{figure}
+
+
+The networks generated with constant growth signal are uncorrelated trees. 
+
 
 In the general ageing model, we have linking rules where rules connecting probability depends on both of node degree and age difference between new and old node.  With parameters alpha and beta we can control the structure of generated networks. I already talked about some limits of the general model. We saw that for specific parameters there are SF networks, BA model, if we move from that point SF behaviour with power-law with exponent 3 is lost. And other classes of networks can appear. In general, model, when alpha and beta are both positive, rich get richer phenomena is more promoted. On the other hand, the region where beta is positive and alpha negative can be interesting, because SF networks can appear only along the critical line. 
 
