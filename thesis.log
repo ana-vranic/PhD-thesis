@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.4)  1 JUL 2022 16:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.9)  2 JUL 2022 13:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -696,32 +696,9 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count330
 \l__pdf_internal_box=\box58
 )
-(./thesis.aux (./Chapters/Chapter_Introduction.aux)
-(./Chapters/Chapter_Methodology.aux
+(./thesis.aux (./Chapters/Chapter_Methodology.aux
 
 LaTeX Warning: Label `fig:erdist' multiply defined.
-
-) (./Chapters/Chapter_Methodology_2.aux) (./Chapters/Chapter_DrivingSignal.aux
-
-LaTeX Warning: Label `eq:cumsum' multiply defined.
-
-
-LaTeX Warning: Label `eq:var' multiply defined.
-
-) (./Chapters/Chapter_GroupsGrowth.aux) (./Chapters/Chapter_Trust1.aux)
-(./Chapters/Chapter_Trust2.aux
-
-LaTeX Warning: Label `fig:fullneighdeg' multiply defined.
-
-) (./Chapters/Chapter_Trust2-1.aux) (./Chapters/Chapter_Trust3.aux
-
-LaTeX Warning: Label `eq:ibn' multiply defined.
-
-
-LaTeX Warning: Label `eq:deltan' multiply defined.
-
-
-LaTeX Warning: Label `eq:tn' multiply defined.
 
 ))
 \openout1 = `thesis.aux'.
@@ -897,13 +874,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<Figures/Konigsberg_bridges.png, id=117, 303.1325pt x 238.8925pt>
+<Figures/Konigsberg_bridges.png, id=29, 303.1325pt x 238.8925pt>
 File: Figures/Konigsberg_bridges.png Graphic file (type png)
 <use Figures/Konigsberg_bridges.png>
 Package pdftex.def Info: Figures/Konigsberg_bridges.png  used on input line 17.
 
 (pdftex.def)             Requested size: 145.11053pt x 114.36089pt.
-<Figures/Konigsberg_graph.png, id=118, 501.875pt x 401.5pt>
+<Figures/Konigsberg_graph.png, id=30, 501.875pt x 401.5pt>
 File: Figures/Konigsberg_graph.png Graphic file (type png)
 <use Figures/Konigsberg_graph.png>
 Package pdftex.def Info: Figures/Konigsberg_graph.png  used on input line 18.
@@ -936,7 +913,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-<figures/methodology/graph1.png, id=130, 1008.76875pt x 370.38374pt>
+<figures/methodology/graph1.png, id=41, 1008.76875pt x 370.38374pt>
 File: figures/methodology/graph1.png Graphic file (type png)
 <use figures/methodology/graph1.png>
 Package pdftex.def Info: figures/methodology/graph1.png  used on input line 48.
@@ -950,7 +927,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-<figures/methodology/graph2.png, id=131, 792.9625pt x 388.45125pt>
+<figures/methodology/graph2.png, id=42, 792.9625pt x 388.45125pt>
 File: figures/methodology/graph2.png Graphic file (type png)
 <use figures/methodology/graph2.png>
 Package pdftex.def Info: figures/methodology/graph2.png  used on input line 57.
@@ -970,7 +947,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-<figures/methodology/graph4.png, id=151, 1191.45125pt x 372.39125pt>
+<figures/methodology/graph4.png, id=61, 1191.45125pt x 372.39125pt>
 File: figures/methodology/graph4.png Graphic file (type png)
 <use figures/methodology/graph4.png>
 Package pdftex.def Info: figures/methodology/graph4.png  used on input line 80.
@@ -982,7 +959,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--90
  []
 
 [4 <./figures/methodology/graph4.png>]
-<figures/methodology/graph5.png, id=159, 591.20876pt x 405.515pt>
+<figures/methodology/graph5.png, id=69, 591.20876pt x 405.515pt>
 File: figures/methodology/graph5.png Graphic file (type png)
 <use figures/methodology/graph5.png>
 Package pdftex.def Info: figures/methodology/graph5.png  used on input line 93.
@@ -1009,7 +986,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
 LaTeX Warning: Citation `newman2010' on page 7 undefined on input line 198.
 
-<figures/methodology/distributions.png, id=172, 493.845pt x 373.395pt>
+<figures/methodology/distributions.png, id=81, 493.845pt x 373.395pt>
 File: figures/methodology/distributions.png Graphic file (type png)
 <use figures/methodology/distributions.png>
 Package pdftex.def Info: figures/methodology/distributions.png  used on input l
@@ -1053,13 +1030,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 318--319
  []
 
 [10]
-<figures/methodology/ERgraph.pdf, id=207, 686.565pt x 249.77315pt>
+<figures/methodology/ERgraph.pdf, id=112, 686.565pt x 249.77315pt>
 File: figures/methodology/ERgraph.pdf Graphic file (type pdf)
 <use figures/methodology/ERgraph.pdf>
 Package pdftex.def Info: figures/methodology/ERgraph.pdf  used on input line 32
 9.
 (pdftex.def)             Requested size: 435.32422pt x 158.36787pt.
-<figures/methodology/ER_dist.pdf, id=208, 628.25824pt x 347.3324pt>
+<figures/methodology/ER_dist.pdf, id=113, 628.25824pt x 347.3324pt>
 File: figures/methodology/ER_dist.pdf Graphic file (type pdf)
 <use figures/methodology/ER_dist.pdf>
 Package pdftex.def Info: figures/methodology/ER_dist.pdf  used on input line 36
@@ -1081,7 +1058,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 372--373
 
 [11 <./figures/methodology/ERgraph.pdf>] [12 <./figures/methodology/ER_dist.pdf
 >]
-<figures/methodology/ws_graph.png, id=285, 885.3075pt x 287.0725pt>
+<figures/methodology/ws_graph.png, id=189, 885.3075pt x 287.0725pt>
 File: figures/methodology/ws_graph.png Graphic file (type png)
 <use figures/methodology/ws_graph.png>
 Package pdftex.def Info: figures/methodology/ws_graph.png  used on input line 3
@@ -1089,15 +1066,15 @@ Package pdftex.def Info: figures/methodology/ws_graph.png  used on input line 3
 (pdftex.def)             Requested size: 435.32422pt x 141.16173pt.
  [13 <./figures/methodology/ws_graph.png>] [14]
 
-LaTeX Warning: Citation `hajra2004' on page 15 undefined on input line 473.
+LaTeX Warning: Citation `hajra2004' on page 15 undefined on input line 477.
 
 
-LaTeX Warning: Citation `hajra2004' on page 15 undefined on input line 480.
+LaTeX Warning: Citation `hajra2004' on page 15 undefined on input line 484.
 
-<Figures/diagram.png, id=302, 470.4777pt x 344.0052pt>
+<Figures/diagram.png, id=208, 470.4777pt x 344.0052pt>
 File: Figures/diagram.png Graphic file (type png)
 <use Figures/diagram.png>
-Package pdftex.def Info: Figures/diagram.png  used on input line 484.
+Package pdftex.def Info: Figures/diagram.png  used on input line 488.
 (pdftex.def)             Requested size: 241.84843pt x 176.83658pt.
 [15 <./Figures/diagram.png>]) [16]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
@@ -1106,15 +1083,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
 (./Chapters/Chapter_Methodology.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: A2147A067E27F26585A2B0C0145AE389;376.
 
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: F1DC807118502A4D92456AB94822AE46;1838
-(rerunfilecheck)             After:  A2147A067E27F26585A2B0C0145AE389;376.
 
 LaTeX Warning: There were undefined references.
 
@@ -1124,117 +1095,27 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
  ) 
 Here is how much of TeX's memory you used:
- 13970 strings out of 483183
- 208387 string characters out of 5966293
- 568163 words of memory out of 5000000
- 28457 multiletter control sequences out of 15000+600000
- 572706 words of font info for 204 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 34i,12n,42p,1906b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.2.10} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.2.7} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.2.4.7} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.2.1} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.9} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.7} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, 
-replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathp
-azo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (16 pages, 570398 bytes).
+ 13815 strings out of 483107
+ 205820 string characters out of 5964631
+ 543977 words of memory out of 5000000
+ 28367 multiletter control sequences out of 15000+600000
+ 572557 words of font info for 202 fonts, out of 8000000 for 9000
+ 59 hyphenation exceptions out of 8191
+ 34i,12n,42p,1622b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mat
+hpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (16 pages, 569067 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 277 compressed objects within 3 object streams
- 81 named destinations out of 1000 (max. 500000)
- 17688 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 17512 words of extra memory for PDF output out of 20736 (max. 10000000)
 

@@ -447,27 +447,31 @@ The combination of the growth and preferential attachment linking is crucial for
 %The BA model postulates the presence of preferential attachment. Yet, we can build models that generate scale free networks without preferential attachment. The link selection model offers the simplest mechanism that generates a scale-free network. At each time step we add new nodes to the network, we select link at random and connect the new node to one of the two nodes at the end. The higher is degree of the node, the higher is chance that node is located at the end of chosen link. The more k-degree nodes are there, the more likely is that k node is at the end of chosen link. Probability that node at the end of randomly choosen link has degree k is $q_k = Ckp_k$. The fact that bias is linear with k indicates that the link selection model builds scale-free networks. 
 %Copying model can also generate scale-free networks. In each time step a new node is added to the network. To decide where it connects we randomly select node u. Then with probability $p$ new node links to $u$, otherwise with probability $1-p$ we randomly choose an outgoing link of node $u$ and link the new node to its target. The likelihood that new node connects to degree-k node is $P(k)=\frac{p}{N} + \frac{1-p}{2L}k$, the second part is equivalent in selecting a node to randomly selected link. The popularity of the copying model lies in its relevance in real systems. It is common in social networks, citation networks or even protein interactions.  in optimization, when new nodes balance conflicting criteria as they decide where to connect
 
-\subsubsection{degree distribution derivation}
+%TODO \subsubsection{degree distribution derivation}
+% u realnim mrezama koeficijent varira od 2 do 3
+
+\subsection{Nonlinear preferential attachment model}
+
+In the nonlinear preferential attachment model linking probability also depends on the node degree. The dependence is not linear and has the following a form:
+
+\begin{equation}
+\Pi(k_i) = {k_i}^{\beta}
+\end{equation} 
+
+The probability that newly added node attaches to node $i$ depends on the existing i-th node degree $k_i$, and the parameter $\beta$. When $\beta=1$, the model is BA model, where degree distribution follows the power-law. When $\beta=0$, linking probability becomes uniform; i.e. it corresponds to random network model, and degree distribution is Poisson; there is exponential decay. 
+
+For $\beta>1$, the effects of preferential attachment are increased, leading to emergence of super-hubs. The hub-and-spoke network appear in this regime, where almost all nodes are connected to few high-degree nodes. %OVDE CITIRATI kRAPIVSKY REDNER RADOVE
+
+On the other hand, if $\beta<1$, the model is in so called sub-linear preferential attachment regime. The linking probability is not random so degree distribution does not follow Poisson; but also the preference toward high degree nodes is too week for having the pure power-law. Instead degree distribution converge to stretched exponential.
+
+ %While in many systems we do observe such a linear dependence, in others, like the scientific collaboration network and the actor network, preferen- tial attachment is sublinear. This nonlinear $P(k)$ is one reason the degree distribution of real networks deviates from a pure power-law. Hence for systems with sublinear  the stretched exponential (5.23) should offer a better fit to the degree distribution.
 
 
-\subsection{Nonlinear BA model}
 
-In summary, nonlinear preferential attachment changes the degree
-distribution, either limiting the size of the hubs $(\alpha < 1)$, or leading to su-
-per-hubs ($\alpha > 1$, ). Consequently, $P(k)$ needs to depend strictly lin-
-early on the degrees for the resulting network to have a pure power law p k .
-While in many systems we do observe such a linear dependence, in others,
-like the scientific collaboration network and the actor network, preferen-
-tial attachment is sublinear. This nonlinear $P(k)$ is one reason the degree
-distribution of real networks deviates from a pure power-law. Hence for
-systems with sublinear  the stretched exponential (5.23) should offer a
-better fit to the degree distribution.
-
-
-In real systems preferential attachment can be more influenced by the age of the node. If parameter alpha is negative, ageing effect overcomes the role of preferential attachment, and scale-free properties are lost. For large negative alpha, the network turns into the chain, where the youngest nodes are the most attractive. On the other hand for a positive alpha, new nodes will link to older nodes. Positive alpha makes the network more heterogeneous, and scale-free nature still exist but exponent gamma is different from 3.  for the high alpha all nodes will tend to connect to oldest node. 
 
 \subsection{Ageing model}
 
+In real systems preferential attachment can be more influenced by the age of the node. If parameter alpha is negative, ageing effect overcomes the role of preferential attachment, and scale-free properties are lost. For large negative alpha, the network turns into the chain, where the youngest nodes are the most attractive. On the other hand for a positive alpha, new nodes will link to older nodes. Positive alpha makes the network more heterogeneous, and scale-free nature still exist but exponent gamma is different from 3.  for the high alpha all nodes will tend to connect to oldest node. 
 
 The model starts with small number of nodes randomly connected. Further, at each time step new node arrives in the network and makes connection with one old node, already present in the network.
 The way in which new nodes are linked is governed by various mechanisms. They can have preference to nodes with high degree (preferential attachment), or preference to nodes with specific age. In the network model with aging nodes the probability that link is created between two nodes depends on the node degree and age \cite{hajra2004}:
