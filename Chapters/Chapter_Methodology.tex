@@ -467,21 +467,45 @@ On the other hand, if $\beta<1$, the model is in so called sub-linear preferenti
  %While in many systems we do observe such a linear dependence, in others, like the scientific collaboration network and the actor network, preferen- tial attachment is sublinear. This nonlinear $P(k)$ is one reason the degree distribution of real networks deviates from a pure power-law. Hence for systems with sublinear  the stretched exponential (5.23) should offer a better fit to the degree distribution.
 
 
-
-
 \subsection{Ageing model}
 
-In real systems preferential attachment can be more influenced by the age of the node. If parameter alpha is negative, ageing effect overcomes the role of preferential attachment, and scale-free properties are lost. For large negative alpha, the network turns into the chain, where the youngest nodes are the most attractive. On the other hand for a positive alpha, new nodes will link to older nodes. Positive alpha makes the network more heterogeneous, and scale-free nature still exist but exponent gamma is different from 3.  for the high alpha all nodes will tend to connect to oldest node. 
+To understand how aging can impact the network structure we look into probability dependent on two parameters, nodes degree $k$ and age of node $i$ at the time point $t$ $\tau_i=(t-t_i)$, where $t_i$ is the time when node $i$ is added to the network. 
+\begin{equation}
+\Pi_{i}(t)\sim k_{i}\tau_{i}^{\alpha} 
+\label{eq:aging}
+\end{equation}
 
-The model starts with small number of nodes randomly connected. Further, at each time step new node arrives in the network and makes connection with one old node, already present in the network.
-The way in which new nodes are linked is governed by various mechanisms. They can have preference to nodes with high degree (preferential attachment), or preference to nodes with specific age. In the network model with aging nodes the probability that link is created between two nodes depends on the node degree and age \cite{hajra2004}:
+The parameter $\alpha$ controls the linking probability dependence on the nodes' age if $\alpha=0$, the ageing of nodes is disregarded. 
+
+If $\alpha>0$ is positive, the older nodes are more likely to create connections. In this regime, the preferential attachment stays present, and the high-degree and older nodes are preferred. For very high $\alpha$, each node is connected to the oldest node in the network. The scale-free properties are present; the power-law exponent $\gamma$ deviates from $\gamma=3$. It is found that $\gamma$ ranges between $2$ and $3$. 
+
+When $\alpha$ is negative, ageing overcomes the role of preferential attachment, and scale-free properties are lost. For significant negative $\alpha$ network becomes a chain; the youngest nodes are those who get connected. 
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=1\linewidth]{figures/aging_nets.png}
+	\caption{Aging model}
+	\label{fig:aging}
+\end{figure}
+
+In the general ageing model, the non-linearity on the node degree is introduced, so this model has two tunable parameters $\alpha $ and $\beta$. The probability that a link is created between the new node and the existing node is defined as
+
 \begin{equation}
 \Pi_{i}(t)\sim k_{i}(t)^{\beta}\tau_{i}^{\alpha} 
 \label{eq:1}
 \end{equation}
-where $k_{i}(t)$ is a degree of a node $i$ at time $t$, and $\tau_{i}$ is age difference between node $i$ and newly added node. 
 
-The values of model parameters $\beta$ and $\alpha$ control the topology of networks.  For example if we fix $\beta=1$ and $\alpha=0$ generated networks are scale-free; degree distribution is $P(k) \sim k^{-\gamma}$ with $\gamma=3$, while in the case of nonlinear preferential attachment $\beta \neq 1$ and $\alpha=0$ scale-free properties disappear. Scale-free property can be produced along the critical line $\beta(\alpha^{*})$ in the $\alpha-\beta$ phase diagram, see Figure \ref{fig:diagram}. For $\alpha>\alpha^{*}$ networks have gel-like small world behavior, while for $\alpha<\alpha^{*}$ but close to line $\beta(\alpha^{*})$ networks have stretched exponential shape of degree distribution \cite{hajra2004}.  
+As before, depending on model parameters network evolves to different structures \cite{hajra2004}.  
+\begin{itemize}
+	\item For example if we fix $\beta=1$ and $\alpha=0$ generated networks are scale-free; degree distribution is $P(k) \sim k^{-\gamma}$ with $\gamma=3$.
+	\item In the case of nonlinear preferential attachment $\beta \neq 1$ and $\alpha=0$ scale-free properties disappear. 
+	\item Scale-free property can be produced along the critical line $\beta(\alpha^{*})$ in the $\alpha-\beta$ phase diagram, see Figure \ref{fig:diagram}.
+	
+	\item For $\alpha>\alpha^{*}$ networks have \textbf{gel-like small world} behavior.
+	
+	\item For $\alpha<\alpha^{*}$ and near critical line $\beta(\alpha^{*})$ degree distribution has \textbf{stretched exponential} shape
+	
+\end{itemize}
 
 \begin{figure}[!ht]
 	\centering
@@ -490,13 +514,150 @@ The values of model parameters $\beta$ and $\alpha$ control the topology of netw
 	\label{fig:diagram}
 \end{figure}
 
+\section{The properties of probability distributions}
 
-The networks generated with constant growth signal are uncorrelated trees. 
+The power-law distribution is defined as 
+
+\begin{equation}
+p(k) = C k^{-\gamma}
+\end{equation}
+
+where parameter $\gamma$ is an exponent of the power-law distribution while the C is the normalizing constant. 
+
+The distribution can take both discrete and continuous values and it is defined for positive values $k>0$ so there is lower bound to the power-law function $k_{min}$ and it . For the discrete case $C=1/\zeta(\gamma, k_{min})$, while in the continuous case $C=(\gamma-1)k_{min}^{\gamma-1}$. 
+
+With plotting the distribution of the power-law data on the double logarithmic scale we should obtain the straight line, as $ln(p(k)) = \gamma ln(k) + c$. The tail of the distribution is noisy. As the size of the bins is constant, the density of the bins for large distribution values becomes large. To avoid the fluctuations in the tail, we can use logarithmic binning. The noise is reduced by dividing the $x$ axis into $n$ bins $b_n = c^n$, so the following bin is wider than before. For the base $c$ we can choose any value $c>1$. Similarly, the binning can take the following form $b_n = k_0\exp{(cn)}$, where $k_0$ is the minimum data point, while the $c$ is the arbitrary base. All data points between values $[b_n, b_{n+1})$ are represented with one point $p(k_n) = N_n/b_n$, where $N_n$ is number of nodes found in the bin $b_n$ and $k_n = \sum_i k_i / N_n$ is average degree of the nodes in the bin $b_n$. By this, averaging over bins in the tail, which now have more sampled points, reduces the statistical errors.
+
+Instead of plotting the probability distribution (i.e. creating histogram), it is possible to calculate the cumulative distribution. $P(k) = \int_{x}^{\infty} p(x^{'}) dx^{'} = x^{-(\gamma-1)}$. It is also the power-law distribution with exponent $\gamma-1$. Note that for cumulative distribution it is not necessary to use log-binning. 
+
+The likelihood function for continuous data set is defined as 
+\begin{equation}
+l(k) = \prod p(k) = \prod \frac{\gamma - 1}{ k_{min}}(\frac{k_i}{k_{min}})^{-\gamma}
+\end{equation}
+
+Minimizing the loglikelihood function, exponent is calculated as $\gamma = 1+n[\sum ln \frac{k_i}{k_{min}} ]^{-1}$. 
+
+For discrete distribution the log likelihood is $log(l) = ln\prod \frac{k_i^{-\gamma}}{\zeta(\gamma, k_{min})}$. For this equation does not exist the analytical solution, but the equation can be numericaly optimized.
+
+After estimating the parameters fits we should estimate how good the fit is, calculating the p-value. First we fit the empirical data for the model and calculate the Kolmogorov-Smirnov statistics for this fit. $KS = max|S(x)-P(x)|$, which is maximum distance between the cumulative distributions of data and fitted model. From there we estimate $p-value$.
+
+The p-value suggest that the hypothesis is not rejected. Still, even if data are fitted with power-law, it is possible that some other heavy tailed distribution may be good fit as power-law, or better. Using goodness of fit it is possible to calculate the p-value for the alternative distribution and compare it to the p-value of the power-law. If the p-value for power-law is high, while for alternative distribution low, we can say that the power law distribution is more probable fit. 
+
+the likelihood ratio test. Where the distribution with higher likelihood under data is better fit. The one can calculate the ratio of likelihoods, or its logarithm $R$, which is positive, or negative depending which distribution is better. In order to make the choice between distributions we need a log likelihood ratio that is sufficently positive or negative, and that its sign is not result of fluctuations. Using the method proposed by Vuong, the p-value is calculated, and if p-value is small p<0.1, the obtained R value sign is reilable and we can tell which model provides the better fit. 
+
+\textbf{Alternative distributions}
+
+\subsection{log-normal}
+Many measurments in the nature show a more or less skewed distribution. They are common when mean values are low, variances are large and values can not be negative as example in distribution of minearal resources in the Eart. Such skewed distributions often closely fit to log-normal distribution. 
+
+What is the difference between normal and lognormal variability? A major difference is that effect can be additive or multiplicative, leading to normal or lognormal distribution. Basic principles of additive and multiplicative effects can be easily demonstrated with the help od two dices. Adding the two numbers, which is the principle of the most games, leads to values from 2 to 12 with mean of 7, and simetrical frequency distribution. Multiplying the two numbers, leads to values from 1 to 36 with highly skewed distribution. Although these examples are not normal or lognormal they give us clear difference how different distributions can emerge. 
+
+Log-normal distributions are usually characterized in the term of the log-transformed variable, using as parameters the expected value, or the mean, and the standard deviation. This characerization can be advantageous as by definition log-normal distributions are simetrical at the log level. 
+
+The basic properties of the lognormal distributions
+
+Random variable $X$ if $log(X)$ is normally distributed., if $Y=ln X$ has normal Gaussian distribution.  
+
+Only positive values are possible for the variable and distribution is skewed. Two parameters are needed to specify lognormal distribution. Traditionaly the mean $\mu$ and standard deviation $\sigma$ or the variance of the $\sigma^2$ of $log(X)$ are used. However there are clear advantages of using transformed data, $\mu^{*} = e^{\mu}$, $\sigma^{*}= e ^{\sigma}$. The median of this lognormal distribution is $med(X)=\mu^{*}=e^{\mu}$, since $\mu$ is median of the $log(X)$.
+
+\begin{equation}
+f(x) = \frac{1}{x \sigma \sqrt{2\pi}}exp(-\frac{1}{2\sigma^2}(log(x)-\mu)^2)
+\end{equation}
+
+The mean is $exp(\mu + \sigma /2)$ and variance is $(exp(\sigma^2)-1)exp(2\mu+\sigma^2)$. 
+
+Estimation: The asymptotically most efficient (maximum likelihood) estimators are 
+\begin{equation}
+x* = exp (\frac{1}{n}\sum_{i=1}^n log(x_i)) = (\prod_{i=1}^nx_i)^{\frac{1}{n}}
+\end{equation}
+
+\begin{equation}
+s* = exp([\frac{1}{n-1}\sum[log(\frac{x_i}{x*})]^2]^{\frac{1}{2}})
+\end{equation}
 
 
-In the general ageing model, we have linking rules where rules connecting probability depends on both of node degree and age difference between new and old node.  With parameters alpha and beta we can control the structure of generated networks. I already talked about some limits of the general model. We saw that for specific parameters there are SF networks, BA model, if we move from that point SF behaviour with power-law with exponent 3 is lost. And other classes of networks can appear. In general, model, when alpha and beta are both positive, rich get richer phenomena is more promoted. On the other hand, the region where beta is positive and alpha negative can be interesting, because SF networks can appear only along the critical line. 
+The lognormal distribution is skewed with mean $e^{\mu + \frac{1}{2}\sigma^2}$, median $e^\mu$ and mode $e^{\mu - \sigma^2 }$. It has finite mean and variance, in contrast to the power-law distribution.  
 
-In growing network models is considered that at each time step one node is added to the network. The remaining question is if there is any change if network growth is not linear anymore and how does it influence the structure of obtained networks.  In this work, we use numerical simulations to explore the case when $M(t)$ is a correlated time-varying function and study how these properties influence the structure of generated networks for different values of parameter $-\infty<\alpha\leq-1$ and $\beta\geq1$ and constant $L$.
+Despite it has finite moments, the lognormal distribution can be similar to power-law. If $X$ has a lognormal distribution then loglog plot of density function can apear as straight line for a large portion of a body of distribution. If the variance is large, the distribution may appear linear on log-log plot for several orders of magnitude. The variance of the corresponding normal distribution is large, the distribution may appear linear on a log-log plot. To see this we can check the logarithm of density function. 
+If $\sigma$ is large then the quadratic term will be small for large range of x values, so the logarithm of the density function will appear almost linear for large range of values. 
+Recall that normal distribution have property that the sum of two independent normal variables is normal variable. It follows that product of two lognormaly distributed random variables also has a lognormal distribution.
+
+\subsection{multiplicative processes}
+
+While many power laws are originated by some ‘complex’ mechanism, some others have a very simple explanation. By using multiplicative processes we can obtain quite naturally both power laws and log-normal distributions (that can look like power laws) (Goldstein, Morris, and Yen, 2004). We do not enter here into the debate over whether observed data can be best ﬁt by power law or log-normal variables. Here it is enough to note that the mechanism of multiplicative process is probably the most immediate model for fat-tail phenomena in nature since it naturally produces both.
+
+Many textbooks and scientiﬁc papers deal with this topic. Some of them are very beautiful and complete and we suggest them for further reading (e.g. Mitzenmacher 2004; Newman 2005). Suppose you have an evolution process, where for example an organism transforms itself in time. As a general statement, the state S t at time t will be determined by the previous states and by the external conditions. Whenever the state of the system can be written as we have a multiplicative process. In other words, in a multiplicative process, the state of the system at time t is proportional to the state at time t-1. In biology this could represent the fact that the growth of an organism is ruled by its body mass at the previous step. In the case of city growth (Zanette and Manrubia, 1997; Manrubia and Zanette, 1998; Gabaix, 1999) this equation states that the population at a certain time step is proportional to what it was previously. In both cases the proportionality constant is given by the factor t that can change its value at any time step. Turning back to eqn 4.114 we can immediately see that the variable S t is determined by the product of the various tau where tau is between 0 and t This sum of the logarithms of the tau (under very mild conditions) is a variable following a normal distribution (regardless of the distribution of the tau ). This result comes from the application of the ‘central limit theorem’. This theorem states that, in certain very general hypotheses, the sum of identi- cally distributed random variables with ﬁnite variance is a new stochastic variable normally distributed. Therefore, if ln(S t ) is normally distributed, the variable S t is log-normally distributed. This very simple mechanism has been rediscovered and explained over and over many times since the deﬁnition of log-normal distributions in 1879 (McAlister, 1879). One of the ﬁrst applications of these ideas traces back at least to the economist Gibrat (1930, 1931) who uses essentially this model under the name of proportionate eﬀect. Using a diﬀerent terminology, a somewhat similar idea was introduced at the beginning of last century for biological problems (Kapteyn 1903, 1918). With this idea we have two possible outcomes. As explained above we have true log-normal distributions that can easily be confused with power laws. This happens whenever the log-normal distribution is studied in a range of k for which $\sigma >> ln(k)$. On the other hand, a very similar situ- ation also triggers the formation of true power laws as shown in the next subsection. Powerlaws from multiplicative processes.
+
+\subsection {Preferential attachment}
+
+One of the most successful applications of multiplicative processes is given
+by preferential attachment. To date, this is the most successful mechanism adopted in the study of growing networks. Interestingly, the idea that we are going to explain has been independently rediscovered several times in diﬀerent ﬁelds and ages. Precisely for this reason it has also been given several names. For example: Yule Process, Matthew eﬀect, Rich gets richer, Preferential Attachment, Cumulative advantage. In the community there is some agreement (Mitzenmacher, 2004; New- man, 2005) that the ﬁrst to present this idea has been G. Yule (1925) in order to explain the relative abundance of species and genera in biological taxonomic trees. As shown in Chapter 8 when considering a set of biolog- ical species we have that the classiﬁcation (taxonomic) tree has scale-free properties. The null hypothesis consists in considering that the set of species arises from a common evolution. Therefore we consider one parent species and after mutation we obtain a new one that very likely can be grouped in the same genus. Every now and then though, speciated species (the new ones) can be so diﬀerent from the parent one that they can form a new genus on their own (or be grouped in an existing diﬀerent one). The probability of speciating will be larger for genera that are already large, since mutation rate is constant for any individual.
+
+This explanation allow us to focus on the two ingredients of the model. Firstly you have to invoke a certain a priori dynamics (hereafter called growth). Secondly, this dynamics selects successful elements and makes them even more successful (hereafter called preferential attachment). In detail, take a set of elements each of which is characterized by a certain number N i t . As a possible example this could be the number of diﬀerent genera that have i species per genera. The set can also be a set of vertices in a graph and the number N i t can represent the number of pages whose in-degree is i. Now let us introduce a rule that introduces new elements in the set; these elements will not be shared equally between the older ones, but rather will be assigned more to those that already have many. Let us consider that N i t gives the number of vertices with certain degree i (the total
+
+\section{Multifractality of the signals}
+
+Multifractal detrended fluctuation analysis (MFDFA) \cite{kantelhardt2002, ihlen2012} to estimate multifractal Hurst exponent H(q). For given time series $\{x_i\}$ with length N, first we define global profile in the form of cumulative sum, equation \ref{eq:cumsum}, where where $\langle x\rangle $ represents average of the time series:
+\begin{equation}
+Y(j) = \sum_{i=0} ^j (x_i - \langle x\rangle), \quad j=1, ..., N
+\label{eq:cumsum}
+\end{equation}
+
+Subtracting the mean of the time series is supposed to eliminate global trends. The profile of the signal Y is divided into $N_s = int (N/s)$ non overlapping segments of length s. If $N$ is not divisible with s the last segment will be shorter. This is handled by doing the same division from the opposite side of time series which gives us $2N_s$ segments. From each segment $\nu$, local trend $p^m_{\nu, s}$ - polynomial of order m - should be eliminated, and the variance $F^2(\nu, s)$ of detrended signal is calculated as in equation \ref{eq:var}:
+\begin{equation}
+F^2(\nu, s) = \frac{1}{s}\sum_{j=1}^s \left[Y(j) - p^m_{\nu, s}(j)\right]^2
+\label{eq:var}
+\end{equation}
+Then the q-th order fluctuating function is: 
+\begin{equation}
+F_q(s) = \left\{\frac{1}{2N_s}\sum_{\nu}^{2N_s}\left[F^2(\nu, s)\right]^{\frac{q}{2}}\right\}^{\frac{1}{q}},  q \neq 0 \nonumber
+\end{equation}
+\begin{equation}
+F_0(s) = \exp \left\{\frac{1}{4N_s}\sum_{\nu}^{2N_s}ln \left[F^2(\nu, s)\right]\right\}, q=0
+\end{equation}
+
+The fluctuating function scales as power-law $F_q(s) \sim s^{H(q)}$ and the analysis of log-log plots $F_q(s)$ gives us an estimate of multifractal Hurst exponent $H(q)$. Multifractal signal has different scaling properties over scales while monofractal is independent of the scale, i.e., H(q) is constant. 
+
+\section{Dynamical reputation model}
+
+Any dynamical trust or reputation model has to take into account distinct social and psychological attributes of these phenomena in order to estimate the value of any given trust metric \cite{duma2005dynamic}. First of all, the dynamics of trust is asymmetric, meaning that trust is easier to lose than to gain. As part of asymmetric dynamics, in order to make trust easier to loose the trust metric has to be sensitive to new experiences (recent activity or the absence of the activity of the agent), while still maintaining nontrivial influence of old behavior. The impact of new experiences has to be independent of
+the total number of recorded or accumulated past interactions, making high levels of trust easy to lose. 
+Finally, the trust metric has to detect and penalize both the sudden misbehavior and the possibly long term oscillatory behavior which deviates from community norms.
+
+We estimate dynamic reputation of the Stack Exchange users using Dynamic Interaction Based Reputation Model (DIBRM) \cite{melnikovDynamicInteractionBasedReputation2018}. This model is based on the idea of dynamic reputation, which means that the reputation of users within the community changes continuously through time: it should rapidly decrease when there is no registered activity from the specific user in the community (reputation decay), and it should grow when frequent, constant interactions
+and contributions to the community are detected. The highest growth of user's reputation is found through bursts of activity followed by short period of inactivity. 
+
+In our implementation of the model, we do not distinguish between positive and negative interactions in the Stack Exchange communities. Therefore, we treat any interaction in the community (question, answer or comment) as potentially valuable contribution. In fact, evaluation criteria for Stack Exchange websites going through beta testing, described in SI, do not distinguish between positive and negative interactions.
+The percentage of negative interactions in the communities we investigated was below 5\%, see Table 1 in SI. Filtering positive interactions would also require filtering out comments because they are not rated by the community, and that would eliminate a large portion of
+direct interactions between the users of a community, which is essential for estimating their reputation.
+
+In DIBRM, reputation value for each user of the community is estimated combining three different factors: 1) \textit{reputation growth} - the cumulative factor which represents the importance of users' activities; 2) \textit{reputation decay} - the forgetting factor which represents the continuous decrease of reputation due to inactivity; \textit{the activity period factor} - measuring the length of the period of time in which the change of reputation happened. In case of Stack Exchange communities, the forgetting factor has a literal meaning, as we can assume that past contributions provided by a user are being forgotten by active users as their attention is captured by more recent content.
+
+In line with the the basic dichotomy of reputation dynamics, which revolves around the varying influence of past and recent behavior, DIBRM has two components: \textit{cumulative factor} - estimating the contribution of the most recent activities to the overall reputation of the user; \textit{forgetting factor} - estimating the weight of past behavior. Estimating the value of recent behavior starts with the definition of the parameter storing the basic value of a single interaction $I_{b_{n}}$. Cumulative factor $I_{c_{n}}$ then captures the additive effect of recent successive interactions. The reputational contribution $I_n$ of most recent interaction $n$ of any given user is estimated in the following way:
+
+\begin{equation}\label{eq:ibn}
+I_n = I_{b_{n}} + I_{c_{n}} = I_{b_{n}} (1+  \alpha  (1-\frac{1}{A_{n}+1}))
+\end{equation}
+
+Here, $\alpha$ is the weight of the cumulative part and $A_{n}$ is the number of sequential activities. If there is no interaction at $t_n$, this part of interactions has a value of 0. Important property of this component of dynamic reputation is the notion of sequential activities. Two successive interactions made by a user are considered sequential if the time between those two activities is less or equal to the time parameter $t_{a}$ which represents the time window of interaction. This time window represents maximum time spent by the user to make a meaningful contribution (post a question or answer or leave a comment).
+
+\begin{equation}\label{eq:deltan}
+\Delta_{n}=\frac{t_{n}-t_{n-1}}{t_{a}}
+\end{equation}
+
+If $\Delta_{n} < 1$ is less than one the number of sequential activities $A_{n}$ will increase by one, which means that the user is continuing to communicate frequently. On the other hand, large values $\Delta_{n}$ greatly increase the effect of the forgetting factor. This factor plays a major role in updating the total dynamic reputation of a user in each time step (after every recorded interaction):
+
+\begin{equation}\label{eq:tn}
+T_{n}=T_{n-1} \beta^{\Delta_{n}}+I_{n}
+\end{equation}
+
+Here, $\beta$ is the forgetting factor. In our implementation of the model, the trust is updated each day for every user irrespective of their activity status. Therefore, the decay itself is a combination of $\beta$ and $\Delta_n$: the more days pass without recorded interaction from a specific user, the more their reputation decays. Lower values of beta lead to faster decay of trust as shown on figure \ref{fig:paper_summary}.
+
+
+
+
+
+
 
 
 
