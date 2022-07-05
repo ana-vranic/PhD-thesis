@@ -2,8 +2,27 @@
 \BOOKMARK [1][-]{section.1.1}{Complex networks}{chapter.1}% 2
 \BOOKMARK [1][-]{section.1.2}{Types of networks}{chapter.1}% 3
 \BOOKMARK [1][-]{section.1.3}{The structure of complex networks}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.4}{The network analysis}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.5}{Network models}{chapter.1}% 6
-\BOOKMARK [1][-]{section.1.6}{The properties of probability distributions}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.7}{Multifractality of the signals}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.8}{Dynamical reputation model}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.3.1}{Paths and cycles}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{Community structure}{section.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.3.3}{Core-periphery structure}{section.1.3}% 7
+\BOOKMARK [1][-]{section.1.4}{The network analysis}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.4.1}{Degree distribution}{section.1.4}% 9
+\BOOKMARK [2][-]{subsection.1.4.2}{Degree correlations}{section.1.4}% 10
+\BOOKMARK [2][-]{subsection.1.4.3}{Distances}{section.1.4}% 11
+\BOOKMARK [2][-]{subsection.1.4.4}{D-measure}{section.1.4}% 12
+\BOOKMARK [2][-]{subsection.1.4.5}{Clustering coefficient}{section.1.4}% 13
+\BOOKMARK [2][-]{subsection.1.4.6}{Real-world networks}{section.1.4}% 14
+\BOOKMARK [1][-]{section.1.5}{Network models}{chapter.1}% 15
+\BOOKMARK [2][-]{subsection.1.5.1}{Random network model}{section.1.5}% 16
+\BOOKMARK [2][-]{subsection.1.5.2}{Small-world networks}{section.1.5}% 17
+\BOOKMARK [2][-]{subsection.1.5.3}{Barab\341si-Albert model}{section.1.5}% 18
+\BOOKMARK [2][-]{subsection.1.5.4}{Nonlinear preferential attachment model}{section.1.5}% 19
+\BOOKMARK [2][-]{subsection.1.5.5}{Ageing model}{section.1.5}% 20
+\BOOKMARK [1][-]{section.1.6}{The properties of probability distributions}{chapter.1}% 21
+\BOOKMARK [2][-]{subsection.1.6.1}{Power law}{section.1.6}% 22
+\BOOKMARK [2][-]{subsection.1.6.2}{Lognormal distribution}{section.1.6}% 23
+\BOOKMARK [2][-]{subsection.1.6.3}{Poisson distribution}{section.1.6}% 24
+\BOOKMARK [2][-]{subsection.1.6.4}{Power law with exponential cutoff}{section.1.6}% 25
+\BOOKMARK [2][-]{subsection.1.6.5}{Streched exponential}{section.1.6}% 26
+\BOOKMARK [1][-]{section.1.7}{Multifractality of the signals}{chapter.1}% 27
+\BOOKMARK [1][-]{section.1.8}{Dynamical reputation model}{chapter.1}% 28

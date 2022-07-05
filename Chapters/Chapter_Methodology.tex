@@ -223,7 +223,7 @@ Taking the definition of correlation coefficient we can define it for vertex deg
 r_{deg}(G) = \frac{\sum_{i=1}^{n}\sum_{i=1+1}^{n}((d_i - \bar{d}) (d_i - \bar{d}) \boldsymbol{A}[i,j] )}{\sum_{i=1}^{n}(d_i - \bar{d})^2}
 \end{equation}
 
-Using adjacency matrix, allow us to calculate the correlations between neighboring nodes. If two nodes are not connected $A[i,j]=0$, the degree correlation between them do not have contribution to the $r$.
+Using adjacency matrix, allow us to calculate the correlations between neighboring nodes. If two nodes are not connected $A[i,j]=0$, the degree correlation between them does not have contribution to the $r$.
 
 The \textbf{degree-degree correlations} in the network are measured by \textbf{assortativity}. If correlations are positive, networks are assortative; there is a tendency that connections exist between similar degree nodes. The negative correlations indicate that large degree nodes have preference to connect nodes with small degree; dissasortative networks. The average first neighbor degree $k_{nn}$ can be calculated as $k_{nn} = \sum_{k^{'}}k^{'}P(k^{'}|{k})$. The $P$ is conditional probability that an edge of degree $k$ points to node with degree $k$. The norm is $\sum_{k^{'}}P(k^{'}|k)=1$, and detailed balance conditions \cite{boccaletti2006},  $kP(k^{'}|k)P(k) = k^{'}P(k|k^{'})P(k^{'})$ \cite{boccaletti2006}. If the node degrees are uncorrelated, $k_{nn}$ does not depend on the degree, otherwise increasing/decreasing function indicates on positive/negative correlations in the network. \\
 
@@ -516,6 +516,8 @@ As before, depending on model parameters network evolves to different structures
 
 \section{The properties of probability distributions}
 
+\subsection{Power law}
+
 The power-law distribution is defined as 
 
 \begin{equation}
@@ -525,6 +527,8 @@ p(k) = C k^{-\gamma}
 where parameter $\gamma$ is an exponent of the power-law distribution while the C is the normalizing constant. 
 
 The distribution can take both discrete and continuous values and it is defined for positive values $k>0$ so there is lower bound to the power-law function $k_{min}$ and it . For the discrete case $C=1/\zeta(\gamma, k_{min})$, while in the continuous case $C=(\gamma-1)k_{min}^{\gamma-1}$. 
+
+\textbf{the meaning of the scale free distribution}
 
 With plotting the distribution of the power-law data on the double logarithmic scale we should obtain the straight line, as $ln(p(k)) = \gamma ln(k) + c$. The tail of the distribution is noisy. As the size of the bins is constant, the density of the bins for large distribution values becomes large. To avoid the fluctuations in the tail, we can use logarithmic binning. The noise is reduced by dividing the $x$ axis into $n$ bins $b_n = c^n$, so the following bin is wider than before. For the base $c$ we can choose any value $c>1$. Similarly, the binning can take the following form $b_n = k_0\exp{(cn)}$, where $k_0$ is the minimum data point, while the $c$ is the arbitrary base. All data points between values $[b_n, b_{n+1})$ are represented with one point $p(k_n) = N_n/b_n$, where $N_n$ is number of nodes found in the bin $b_n$ and $k_n = \sum_i k_i / N_n$ is average degree of the nodes in the bin $b_n$. By this, averaging over bins in the tail, which now have more sampled points, reduces the statistical errors.
 
@@ -537,63 +541,86 @@ l(k) = \prod p(k) = \prod \frac{\gamma - 1}{ k_{min}}(\frac{k_i}{k_{min}})^{-\ga
 
 Minimizing the loglikelihood function, exponent is calculated as $\gamma = 1+n[\sum ln \frac{k_i}{k_{min}} ]^{-1}$. 
 
-For discrete distribution the log likelihood is $log(l) = ln\prod \frac{k_i^{-\gamma}}{\zeta(\gamma, k_{min})}$. For this equation does not exist the analytical solution, but the equation can be numericaly optimized.
+For discrete distribution the log likelihood is $log(l) = ln\prod \frac{k_i^{-\gamma}}{\zeta(\gamma, k_{min})}$. For this equation does not exist the analytical solution, but the equation can be numericaly optimized. \\
 
-After estimating the parameters fits we should estimate how good the fit is, calculating the p-value. First we fit the empirical data for the model and calculate the Kolmogorov-Smirnov statistics for this fit. $KS = max|S(x)-P(x)|$, which is maximum distance between the cumulative distributions of data and fitted model. From there we estimate $p-value$.
+After estimating the parameters fits we should estimate how good the fit is, calculating the p-value. First we fit the empirical data for the model and calculate the Kolmogorov-Smirnov statistics for this fit. $KS = max|S(x)-P(x)|$, which is maximum distance between the cumulative distributions of data and fitted model. From there we estimate $p-value$. \\
 
-The p-value suggest that the hypothesis is not rejected. Still, even if data are fitted with power-law, it is possible that some other heavy tailed distribution may be good fit as power-law, or better. Using goodness of fit it is possible to calculate the p-value for the alternative distribution and compare it to the p-value of the power-law. If the p-value for power-law is high, while for alternative distribution low, we can say that the power law distribution is more probable fit. 
+\textbf{Alternative distributions} The p-value suggest that the hypothesis is not rejected. Still, even if data are fitted with power-law, it is possible that some other heavy tailed distribution may be good fit as power-law, or better. Using goodness of fit it is possible to calculate the p-value for the alternative distribution and compare it to the p-value of the power-law. If the p-value for power-law is high, while for alternative distribution low, we can say that the power law distribution is more probable fit. \\
 
-the likelihood ratio test. Where the distribution with higher likelihood under data is better fit. The one can calculate the ratio of likelihoods, or its logarithm $R$, which is positive, or negative depending which distribution is better. In order to make the choice between distributions we need a log likelihood ratio that is sufficently positive or negative, and that its sign is not result of fluctuations. Using the method proposed by Vuong, the p-value is calculated, and if p-value is small p<0.1, the obtained R value sign is reilable and we can tell which model provides the better fit. 
+The likelihood ratio test. Where the distribution with higher likelihood under data is better fit. The one can calculate the ratio of likelihoods, or its logarithm $R$, which is positive, or negative depending which distribution is better. In order to make the choice between distributions we need a log likelihood ratio that is sufficently positive or negative, and that its sign is not result of fluctuations. Using the method proposed by Vuong, the p-value is calculated, and if p-value is small p<0.1, the obtained R value sign is reilable and we can tell which model provides the better fit. 
 
-\textbf{Alternative distributions}
+\subsection{Lognormal distribution}
 
-\subsection{log-normal}
-Many measurments in the nature show a more or less skewed distribution. They are common when mean values are low, variances are large and values can not be negative as example in distribution of minearal resources in the Eart. Such skewed distributions often closely fit to log-normal distribution. 
-
-What is the difference between normal and lognormal variability? A major difference is that effect can be additive or multiplicative, leading to normal or lognormal distribution. Basic principles of additive and multiplicative effects can be easily demonstrated with the help od two dices. Adding the two numbers, which is the principle of the most games, leads to values from 2 to 12 with mean of 7, and simetrical frequency distribution. Multiplying the two numbers, leads to values from 1 to 36 with highly skewed distribution. Although these examples are not normal or lognormal they give us clear difference how different distributions can emerge. 
-
-Log-normal distributions are usually characterized in the term of the log-transformed variable, using as parameters the expected value, or the mean, and the standard deviation. This characerization can be advantageous as by definition log-normal distributions are simetrical at the log level. 
-
-The basic properties of the lognormal distributions
-
-Random variable $X$ if $log(X)$ is normally distributed., if $Y=ln X$ has normal Gaussian distribution.  
-
-Only positive values are possible for the variable and distribution is skewed. Two parameters are needed to specify lognormal distribution. Traditionaly the mean $\mu$ and standard deviation $\sigma$ or the variance of the $\sigma^2$ of $log(X)$ are used. However there are clear advantages of using transformed data, $\mu^{*} = e^{\mu}$, $\sigma^{*}= e ^{\sigma}$. The median of this lognormal distribution is $med(X)=\mu^{*}=e^{\mu}$, since $\mu$ is median of the $log(X)$.
+The variable $x$ has the lognormal distribution if the random variable $y=ln(x)$ is distributed as normal distribution. 
 
 \begin{equation}
-f(x) = \frac{1}{x \sigma \sqrt{2\pi}}exp(-\frac{1}{2\sigma^2}(log(x)-\mu)^2)
+f(y) = \frac{1}{2\pi\sigma}e^{-(y-\mu)^2/2\sigma^2}
 \end{equation}
-
-The mean is $exp(\mu + \sigma /2)$ and variance is $(exp(\sigma^2)-1)exp(2\mu+\sigma^2)$. 
-
-Estimation: The asymptotically most efficient (maximum likelihood) estimators are 
+where $\mu$ is mean, and $\sigma$ is standard deviation. The density distribution of the lognormal distribution is defined as
 \begin{equation}
-x* = exp (\frac{1}{n}\sum_{i=1}^n log(x_i)) = (\prod_{i=1}^nx_i)^{\frac{1}{n}}
+f(x) = \frac{1}{x \sigma \sqrt{2\pi}}e^{-(log(x)-\mu)^2 /2\sigma^2} 
 \end{equation}
 
-\begin{equation}
-s* = exp([\frac{1}{n-1}\sum[log(\frac{x_i}{x*})]^2]^{\frac{1}{2}})
-\end{equation}
+The lognormal distribution has finite mean $e^{\mu+1/2\sigma^2}$, and the variance $e^{2\mu+\sigma^2}(e^{\sigma^2 -1})$.  \cite{mitzenmacher2004brief}.
+
+Despite the finite moments, the lognormal distribution can be similar to power-law distribution. If the variance of lognormal distribution is large then the probability function on log-log plot appears linear for large range of values. 
+
+The normal distribution has property that the sum of two independent normal random variables is normal random variable with mean $\mu_1+\mu_2$, and variance $\sigma_1^2+ \sigma_2^2$. It follows that two log-normally distributed random variables also have a lognormal distribution. \cite{mitzenmacher2004brief}. 
+%A lognormal distribution has finite mean and variance. .
+
+\subsection{Poisson distribution}
+
+Poisson distribution is exponentially bounded distribution. The property of these distributions is that they decay exponentialy or faster for high x. The largest expected value grows as $logx$, meaning that outliers representing the high x values are rate. In the network science the most common distribution is Poisson distribution, while outside the network science the most common distribution is Gaussian distribution. 
+
+On the other hand, fat tailed distributions, long tailed or heavy tailed distributions refer to distributions whose decay for large x is slower than exponential. In this distributions events with large x value are rare but possible. 
+
+\subsection{Power law with exponential cutoff}
+
+The density function has the form $p(x) = C x^{-\gamma}e^{-\lambda x}$, where $x>0$ and $\gamma>0$. This function combines the power-law term and exponential term responsible for exponentially bounded tail. Taking the logarithm $ln(p(x)) = lnC - \gamma lnx - \lambda x$, when $x<<1/\lambda$ the second term dominates, so distribution follows te power-law, with exponent $\gamma$. Otherwise, the $\lambda x$ term domintes, resulting in exponential cutoff for high $x$. 
+
+\subsection{Streched exponential}
+
+the stretched exponential $p(x) = c x^{\beta - 1}e^{-(\lambda x)^{\beta}}$, the parameter $\beta$ is streching exponent determining the properties of the function $p(x)$.
+
+  
 
 
-The lognormal distribution is skewed with mean $e^{\mu + \frac{1}{2}\sigma^2}$, median $e^\mu$ and mode $e^{\mu - \sigma^2 }$. It has finite mean and variance, in contrast to the power-law distribution.  
 
-Despite it has finite moments, the lognormal distribution can be similar to power-law. If $X$ has a lognormal distribution then loglog plot of density function can apear as straight line for a large portion of a body of distribution. If the variance is large, the distribution may appear linear on log-log plot for several orders of magnitude. The variance of the corresponding normal distribution is large, the distribution may appear linear on a log-log plot. To see this we can check the logarithm of density function. 
-If $\sigma$ is large then the quadratic term will be small for large range of x values, so the logarithm of the density function will appear almost linear for large range of values. 
-Recall that normal distribution have property that the sum of two independent normal variables is normal variable. It follows that product of two lognormaly distributed random variables also has a lognormal distribution.
+%Many measurments in the nature show a more or less skewed distribution. They are common when mean values are low, variances are large and values can not be negative as example in distribution of minearal resources in the Eart. Such skewed distributions often closely fit to log-normal distribution. 
 
-\subsection{multiplicative processes}
+%What is the difference between normal and lognormal variability? A major difference is that effect can be additive or multiplicative, leading to normal or lognormal distribution. Basic principles of additive and multiplicative effects can be easily demonstrated with the help od two dices. Adding the two numbers, which is the principle of the most games, leads to values from 2 to 12 with mean of 7, and simetrical frequency distribution. Multiplying the two numbers, leads to values from 1 to 36 with highly skewed distribution. Although these examples are not normal or lognormal they give us clear difference how different distributions can emerge. 
 
-While many power laws are originated by some ‘complex’ mechanism, some others have a very simple explanation. By using multiplicative processes we can obtain quite naturally both power laws and log-normal distributions (that can look like power laws) (Goldstein, Morris, and Yen, 2004). We do not enter here into the debate over whether observed data can be best ﬁt by power law or log-normal variables. Here it is enough to note that the mechanism of multiplicative process is probably the most immediate model for fat-tail phenomena in nature since it naturally produces both.
+%Log-normal distributions are usually characterized in the term of the log-transformed variable, using as parameters the expected value, or the mean, and the standard deviation. This characerization can be advantageous as by definition log-normal distributions are simetrical at the log level. 
 
-Many textbooks and scientiﬁc papers deal with this topic. Some of them are very beautiful and complete and we suggest them for further reading (e.g. Mitzenmacher 2004; Newman 2005). Suppose you have an evolution process, where for example an organism transforms itself in time. As a general statement, the state S t at time t will be determined by the previous states and by the external conditions. Whenever the state of the system can be written as we have a multiplicative process. In other words, in a multiplicative process, the state of the system at time t is proportional to the state at time t-1. In biology this could represent the fact that the growth of an organism is ruled by its body mass at the previous step. In the case of city growth (Zanette and Manrubia, 1997; Manrubia and Zanette, 1998; Gabaix, 1999) this equation states that the population at a certain time step is proportional to what it was previously. In both cases the proportionality constant is given by the factor t that can change its value at any time step. Turning back to eqn 4.114 we can immediately see that the variable S t is determined by the product of the various tau where tau is between 0 and t This sum of the logarithms of the tau (under very mild conditions) is a variable following a normal distribution (regardless of the distribution of the tau ). This result comes from the application of the ‘central limit theorem’. This theorem states that, in certain very general hypotheses, the sum of identi- cally distributed random variables with ﬁnite variance is a new stochastic variable normally distributed. Therefore, if ln(S t ) is normally distributed, the variable S t is log-normally distributed. This very simple mechanism has been rediscovered and explained over and over many times since the deﬁnition of log-normal distributions in 1879 (McAlister, 1879). One of the ﬁrst applications of these ideas traces back at least to the economist Gibrat (1930, 1931) who uses essentially this model under the name of proportionate eﬀect. Using a diﬀerent terminology, a somewhat similar idea was introduced at the beginning of last century for biological problems (Kapteyn 1903, 1918). With this idea we have two possible outcomes. As explained above we have true log-normal distributions that can easily be confused with power laws. This happens whenever the log-normal distribution is studied in a range of k for which $\sigma >> ln(k)$. On the other hand, a very similar situ- ation also triggers the formation of true power laws as shown in the next subsection. Powerlaws from multiplicative processes.
 
-\subsection {Preferential attachment}
+%Only positive values are possible for the variable and distribution is skewed. Two parameters are needed to specify lognormal distribution. Traditionaly the mean $\mu$ and standard deviation $\sigma$ or the variance of the $\sigma^2$ of $log(X)$ are used. However there are clear advantages of using transformed data, $\mu^{*} = e^{\mu}$, $\sigma^{*}= e ^{\sigma}$. The median of this lognormal distribution is $med(X)=\mu^{*}=e^{\mu}$, since $\mu$ is median of the $log(X)$.
 
-One of the most successful applications of multiplicative processes is given
-by preferential attachment. To date, this is the most successful mechanism adopted in the study of growing networks. Interestingly, the idea that we are going to explain has been independently rediscovered several times in diﬀerent ﬁelds and ages. Precisely for this reason it has also been given several names. For example: Yule Process, Matthew eﬀect, Rich gets richer, Preferential Attachment, Cumulative advantage. In the community there is some agreement (Mitzenmacher, 2004; New- man, 2005) that the ﬁrst to present this idea has been G. Yule (1925) in order to explain the relative abundance of species and genera in biological taxonomic trees. As shown in Chapter 8 when considering a set of biolog- ical species we have that the classiﬁcation (taxonomic) tree has scale-free properties. The null hypothesis consists in considering that the set of species arises from a common evolution. Therefore we consider one parent species and after mutation we obtain a new one that very likely can be grouped in the same genus. Every now and then though, speciated species (the new ones) can be so diﬀerent from the parent one that they can form a new genus on their own (or be grouped in an existing diﬀerent one). The probability of speciating will be larger for genera that are already large, since mutation rate is constant for any individual.
 
-This explanation allow us to focus on the two ingredients of the model. Firstly you have to invoke a certain a priori dynamics (hereafter called growth). Secondly, this dynamics selects successful elements and makes them even more successful (hereafter called preferential attachment). In detail, take a set of elements each of which is characterized by a certain number N i t . As a possible example this could be the number of diﬀerent genera that have i species per genera. The set can also be a set of vertices in a graph and the number N i t can represent the number of pages whose in-degree is i. Now let us introduce a rule that introduces new elements in the set; these elements will not be shared equally between the older ones, but rather will be assigned more to those that already have many. Let us consider that N i t gives the number of vertices with certain degree i (the total
+%Estimation: The asymptotically most efficient (maximum likelihood) estimators are 
+%\begin{equation}
+%x* = exp (\frac{1}{n}\sum_{i=1}^n log(x_i)) = (\prod_{i=1}^nx_i)^{\frac{1}{n}}
+%\end{equation}
+
+%\begin{equation}
+%s* = exp([\frac{1}{n-1}\sum[log(\frac{x_i}{x*})]^2]^{\frac{1}{2}})
+%\end{equation}
+
+
+%The lognormal distribution is skewed with mean $e^{\mu + \frac{1}{2}\sigma^2}$, median $e^\mu$ and mode $e^{\mu - \sigma^2 }$. It has finite mean and variance, in contrast to the power-law distribution.  
+
+%Despite it has finite moments, the lognormal distribution can be similar to power-law. If $X$ has a lognormal distribution then loglog plot of density function can apear as straight line for a large portion of a body of distribution. If the variance is large, the distribution may appear linear on log-log plot for several orders of magnitude. The variance of the corresponding normal distribution is large, the distribution may appear linear on a log-log plot. To see this we can check the logarithm of density function.  If $\sigma$ is large then the quadratic term will be small for large range of x values, so the logarithm of the density function will appear almost linear for large range of values.  Recall that normal distribution have property that the sum of two independent normal variables is normal variable. It follows that product of two lognormaly distributed random variables also has a lognormal distribution.
+
+%\subsection{multiplicative processes}
+
+%While many power laws are originated by some ‘complex’ mechanism, some others have a very simple explanation. By using multiplicative processes we can obtain quite naturally both power laws and log-normal distributions (that can look like power laws) (Goldstein, Morris, and Yen, 2004). We do not enter here into the debate over whether observed data can be best ﬁt by power law or log-normal variables. Here it is enough to note that the mechanism of multiplicative process is probably the most immediate model for fat-tail phenomena in nature since it naturally produces both.
+
+%Many textbooks and scientiﬁc papers deal with this topic. Some of them are very beautiful and complete and we suggest them for further reading (e.g. Mitzenmacher 2004; Newman 2005). Suppose you have an evolution process, where for example an organism transforms itself in time. As a general statement, the state S t at time t will be determined by the previous states and by the external conditions. Whenever the state of the system can be written as we have a multiplicative process. In other words, in a multiplicative process, the state of the system at time t is proportional to the state at time t-1. In biology this could represent the fact that the growth of an organism is ruled by its body mass at the previous step. In the case of city growth (Zanette and Manrubia, 1997; Manrubia and Zanette, 1998; Gabaix, 1999) this equation states that the population at a certain time step is proportional to what it was previously. In both cases the proportionality constant is given by the factor t that can change its value at any time step. Turning back to eqn 4.114 we can immediately see that the variable S t is determined by the product of the various tau where tau is between 0 and t This sum of the logarithms of the tau (under very mild conditions) is a variable following a normal distribution (regardless of the distribution of the tau ). This result comes from the application of the ‘central limit theorem’. This theorem states that, in certain very general hypotheses, the sum of identi- cally distributed random variables with ﬁnite variance is a new stochastic variable normally distributed. Therefore, if ln(S t ) is normally distributed, the variable S t is log-normally distributed. This very simple mechanism has been rediscovered and explained over and over many times since the deﬁnition of log-normal distributions in 1879 (McAlister, 1879). One of the ﬁrst applications of these ideas traces back at least to the economist Gibrat (1930, 1931) who uses essentially this model under the name of proportionate eﬀect. Using a diﬀerent terminology, a somewhat similar idea was introduced at the beginning of last century for biological problems (Kapteyn 1903, 1918). With this idea we have two possible outcomes. As explained above we have true log-normal distributions that can easily be confused with power laws. This happens whenever the log-normal distribution is studied in a range of k for which $\sigma >> ln(k)$. On the other hand, a very similar situ- ation also triggers the formation of true power laws as shown in the next subsection. Powerlaws from multiplicative processes.
+
+%\subsection {Preferential attachment}
+
+%One of the most successful applications of multiplicative processes is given by preferential attachment. To date, this is the most successful mechanism adopted in the study of growing networks. Interestingly, the idea that we are going to explain has been independently rediscovered several times in diﬀerent ﬁelds and ages. Precisely for this reason it has also been given several names. For example: Yule Process, Matthew eﬀect, Rich gets richer, Preferential Attachment, Cumulative advantage. In the community there is some agreement (Mitzenmacher, 2004; New- man, 2005) that the ﬁrst to present this idea has been G. Yule (1925) in order to explain the relative abundance of species and genera in biological taxonomic trees. As shown in Chapter 8 when considering a set of biolog- ical species we have that the classiﬁcation (taxonomic) tree has scale-free properties. The null hypothesis consists in considering that the set of species arises from a common evolution. Therefore we consider one parent species and after mutation we obtain a new one that very likely can be grouped in the same genus. Every now and then though, speciated species (the new ones) can be so diﬀerent from the parent one that they can form a new genus on their own (or be grouped in an existing diﬀerent one). The probability of speciating will be larger for genera that are already large, since mutation rate is constant for any individual.
+
+%This explanation allow us to focus on the two ingredients of the model. Firstly you have to invoke a certain a priori dynamics (hereafter called growth). Secondly, this dynamics selects successful elements and makes them even more successful (hereafter called preferential attachment). In detail, take a set of elements each of which is characterized by a certain number N i t . As a possible example this could be the number of diﬀerent genera that have i species per genera. The set can also be a set of vertices in a graph and the number N i t can represent the number of pages whose in-degree is i. Now let us introduce a rule that introduces new elements in the set; these elements will not be shared equally between the older ones, but rather will be assigned more to those that already have many. Let us consider that N i t gives the number of vertices with certain degree i (the total
 
 \section{Multifractality of the signals}
 

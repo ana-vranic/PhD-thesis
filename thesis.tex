@@ -28,8 +28,8 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 \usepackage{pdfpages}
 \usepackage{afterpage}
 
-\SingleSpacing
-%\OnehalfSpacing
+%\SingleSpacing
+\OnehalfSpacing
 %\DoubleSpacing
 
 %\linespread{1.3} %1.3 is onehalf spacing
@@ -38,13 +38,14 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 
 %%% CHAPTER'S STYLE
 %\chapterstyle{bianchi}
-%\chapterstyle{ger}
+\chapterstyle{ger}
 %\chapterstyle{madsen}
 %\chapterstyle{ell}
 %%% STYLE OF SECTIONS, SUBSECTIONS, AND SUBSUBSECTIONS
 %\setsecheadstyle{\Large\bfseries\sffamily\raggedright}
 %\setsubsecheadstyle{\large\bfseries\sffamily\raggedright}
 %\setsubsubsecheadstyle{\bfseries\sffamily\raggedright}
+\setsecheadstyle{\centering\Large\bfseries}
 
 
 %%% STYLE OF PAGES NUMBERING
@@ -61,8 +62,8 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 \makeoddhead{ruled}{}{}{\rightmark}
 
 
-\maxsecnumdepth{section} % chapters, sections, and subsections are numbered
-\maxtocdepth{section} % chapters, sections, and subsections are in the Table of Contents
+\maxsecnumdepth{subsection} % chapters, sections, and subsections are numbered
+\maxtocdepth{subsection} % chapters, sections, and subsections are in the Table of Contents
 %\settocdepth{section}
 %\setsecnumdepth{section}
 %\setcounter{secnumdepth}{1}
