@@ -516,6 +516,12 @@ As before, depending on model parameters network evolves to different structures
 
 \section{The properties of probability distributions}
 
+\subsection{Poisson distribution}
+
+Poisson distribution is exponentially bounded distribution. The property of these distributions is that they decay exponentialy or faster for high x. The largest expected value grows as $logx$, meaning that outliers representing the high x values are rate. In the network science the most common distribution is Poisson distribution, while outside the network science the most common distribution is Gaussian distribution. 
+
+On the other hand, fat tailed distributions, long tailed or heavy tailed distributions refer to distributions whose decay for large x is slower than exponential. In this distributions events with large x value are rare but possible. 
+
 \subsection{Power law}
 
 The power-law distribution is defined as 
@@ -528,12 +534,6 @@ where parameter $\gamma$ is an exponent of the power-law distribution while the 
 
 The distribution can take both discrete and continuous values and it is defined for positive values $k>0$ so there is lower bound to the power-law function $k_{min}$ and it . For the discrete case $C=1/\zeta(\gamma, k_{min})$, while in the continuous case $C=(\gamma-1)k_{min}^{\gamma-1}$. 
 
-\textbf{the meaning of the scale free distribution}
-
-With plotting the distribution of the power-law data on the double logarithmic scale we should obtain the straight line, as $ln(p(k)) = \gamma ln(k) + c$. The tail of the distribution is noisy. As the size of the bins is constant, the density of the bins for large distribution values becomes large. To avoid the fluctuations in the tail, we can use logarithmic binning. The noise is reduced by dividing the $x$ axis into $n$ bins $b_n = c^n$, so the following bin is wider than before. For the base $c$ we can choose any value $c>1$. Similarly, the binning can take the following form $b_n = k_0\exp{(cn)}$, where $k_0$ is the minimum data point, while the $c$ is the arbitrary base. All data points between values $[b_n, b_{n+1})$ are represented with one point $p(k_n) = N_n/b_n$, where $N_n$ is number of nodes found in the bin $b_n$ and $k_n = \sum_i k_i / N_n$ is average degree of the nodes in the bin $b_n$. By this, averaging over bins in the tail, which now have more sampled points, reduces the statistical errors.
-
-Instead of plotting the probability distribution (i.e. creating histogram), it is possible to calculate the cumulative distribution. $P(k) = \int_{x}^{\infty} p(x^{'}) dx^{'} = x^{-(\gamma-1)}$. It is also the power-law distribution with exponent $\gamma-1$. Note that for cumulative distribution it is not necessary to use log-binning. 
-
 The likelihood function for continuous data set is defined as 
 \begin{equation}
 l(k) = \prod p(k) = \prod \frac{\gamma - 1}{ k_{min}}(\frac{k_i}{k_{min}})^{-\gamma}
@@ -543,11 +543,8 @@ Minimizing the loglikelihood function, exponent is calculated as $\gamma = 1+n[\
 
 For discrete distribution the log likelihood is $log(l) = ln\prod \frac{k_i^{-\gamma}}{\zeta(\gamma, k_{min})}$. For this equation does not exist the analytical solution, but the equation can be numericaly optimized. \\
 
-After estimating the parameters fits we should estimate how good the fit is, calculating the p-value. First we fit the empirical data for the model and calculate the Kolmogorov-Smirnov statistics for this fit. $KS = max|S(x)-P(x)|$, which is maximum distance between the cumulative distributions of data and fitted model. From there we estimate $p-value$. \\
 
-\textbf{Alternative distributions} The p-value suggest that the hypothesis is not rejected. Still, even if data are fitted with power-law, it is possible that some other heavy tailed distribution may be good fit as power-law, or better. Using goodness of fit it is possible to calculate the p-value for the alternative distribution and compare it to the p-value of the power-law. If the p-value for power-law is high, while for alternative distribution low, we can say that the power law distribution is more probable fit. \\
 
-The likelihood ratio test. Where the distribution with higher likelihood under data is better fit. The one can calculate the ratio of likelihoods, or its logarithm $R$, which is positive, or negative depending which distribution is better. In order to make the choice between distributions we need a log likelihood ratio that is sufficently positive or negative, and that its sign is not result of fluctuations. Using the method proposed by Vuong, the p-value is calculated, and if p-value is small p<0.1, the obtained R value sign is reilable and we can tell which model provides the better fit. 
 
 \subsection{Lognormal distribution}
 
@@ -568,21 +565,78 @@ Despite the finite moments, the lognormal distribution can be similar to power-l
 The normal distribution has property that the sum of two independent normal random variables is normal random variable with mean $\mu_1+\mu_2$, and variance $\sigma_1^2+ \sigma_2^2$. It follows that two log-normally distributed random variables also have a lognormal distribution. \cite{mitzenmacher2004brief}. 
 %A lognormal distribution has finite mean and variance. .
 
-\subsection{Poisson distribution}
-
-Poisson distribution is exponentially bounded distribution. The property of these distributions is that they decay exponentialy or faster for high x. The largest expected value grows as $logx$, meaning that outliers representing the high x values are rate. In the network science the most common distribution is Poisson distribution, while outside the network science the most common distribution is Gaussian distribution. 
-
-On the other hand, fat tailed distributions, long tailed or heavy tailed distributions refer to distributions whose decay for large x is slower than exponential. In this distributions events with large x value are rare but possible. 
-
 \subsection{Power law with exponential cutoff}
 
-The density function has the form $p(x) = C x^{-\gamma}e^{-\lambda x}$, where $x>0$ and $\gamma>0$. This function combines the power-law term and exponential term responsible for exponentially bounded tail. Taking the logarithm $ln(p(x)) = lnC - \gamma lnx - \lambda x$, when $x<<1/\lambda$ the second term dominates, so distribution follows te power-law, with exponent $\gamma$. Otherwise, the $\lambda x$ term domintes, resulting in exponential cutoff for high $x$. 
+The density function has the form
+\begin{equation}
+p(x) = C x^{-\gamma}e^{-\lambda x}
+\end{equation}
+
+where $x>0$ and $\gamma>0$. This function combines the power-law term and exponential term responsible for exponentially bounded tail. Taking the logarithm $ln(p(x)) = lnC - \gamma lnx - \lambda x$, when $x<<1/\lambda$ the second term dominates, so distribution follows te power-law, with exponent $\gamma$. Otherwise, the $\lambda x$ term domintes, resulting in exponential cutoff for high $x$. 
 
 \subsection{Streched exponential}
 
-the stretched exponential $p(x) = c x^{\beta - 1}e^{-(\lambda x)^{\beta}}$, the parameter $\beta$ is streching exponent determining the properties of the function $p(x)$.
+the stretched exponential 
 
-  
+\begin{equation}
+p(x) = c x^{\beta - 1}e^{-(\lambda x)^{\beta}}
+\end{equation}
+
+ the parameter $\beta$ is streching exponent determining the properties of the function $p(x)$. For $\beta=1$, the function is exponential. For $\beta<1$ it is hard to distinguish the distribution from power-law. For $\beta>1$ we have a compressed exponential function, so $x$ vary in the narrow range. \\
+
+Whenever we encounter fat-tailed distributions, there is discussions asking which distribution offers the best fit to the data. In many systems empirical data is not sufficient to distinguish between distributions. 
+
+\subsection{Plotting the fat-tailed distributions}
+
+With plotting the distribution of the power-law data on the double logarithmic scale we should obtain the straight line, as $ln(p(k)) = \gamma ln(k) + c$. The tail of the distribution is noisy. As the size of the bins is constant, the density of the bins for large distribution values becomes large. To avoid the fluctuations in the tail, we can use logarithmic binning. The noise is reduced by dividing the $x$ axis into $n$ bins $b_n = c^n$, so the following bin is wider than before. For the base $c$ we can choose any value $c>1$. Similarly, the binning can take the following form $b_n = k_0\exp{(cn)}$, where $k_0$ is the minimum data point, while the $c$ is the arbitrary base. All data points between values $[b_n, b_{n+1})$ are represented with one point $p(k_n) = N_n/b_n$, where $N_n$ is number of nodes found in the bin $b_n$ and $k_n = \sum_i k_i / N_n$ is average degree of the nodes in the bin $b_n$. By this, averaging over bins in the tail, which now have more sampled points, reduces the statistical errors.
+
+Instead of plotting the probability distribution (i.e. creating histogram), it is possible to calculate the cumulative distribution. $P(k) = \int_{x}^{\infty} p(x^{'}) dx^{'} = x^{-(\gamma-1)}$. It is also the power-law distribution with exponent $\gamma-1$. Note that for cumulative distribution it is not necessary to use log-binning. 
+
+
+\subsection{The goodness-of-fit}
+
+The tools described in previos sections allow us to fit distributions and to estimate fit parameters. Still, it does not tell us how good the fit is. 
+
+The figure shows the distributions of three small datasets, drawn from power-law with $\gamma=2.5$, lognormal $\mu=0.3, \sigma=2$ and exponential with $\lambda=0.125$. The distributions look as straight line on the log-log plot, we could try to fit them to the power law distribution and obviosly, some model parameters could be estimated. It is not straightforward to say weather particular data really follows given distribution. Even if data follow powe-law, their observed distributions are not likely to exactly follow power-lawl there are some deviations because of the random nature of sampling procedure. 
+
+The basic approach is to sample many synthetic data sets from a tru power-law and measure how they fluctuate from power-law form and compare results on empirical data. If empirical data are much further from power-law than syntetic one, the power-law is not plausible fit to the data. 
+
+
+A standard aproach to answering this kind of questions is to use goodness-of-fit test which generate the p-value that quantifies the plausibility of the hypothesis. Measuring the distance between distributions of empirical data and the model. p-value is defined to be fraction of synthetic distances that are larger than the empirical distance. 
+
+For measuring the distance between distributions we can use the Kolmogorov-Smirnov statistics, but in general other goodness of fit measures could be used.
+The Kolmogorov Smirnov statistics is the maximum distance between the CDF of the data and the fitted model.  
+\begin{equation}
+D = max |S(x) - P(x)|
+\end{equation}
+
+First we fit empirical data to get model parameters, and calculate the KS statistics of this fit. Then, large number of syntetic data sets, are generated with model optimized model parameters. Then each syntetic dataset is fitted, and KS statistics is obtained relative to its own model. Then simply we count the fraction when the KS statistics of syntetic distributions is larger than in empirical data, that represents the p-value. 
+
+If $p<0.1$ then we reject the hypothesis that this distribution describes the empirical data, otherwise the model can not be rejected. Failing to reject the hypothesis does not mean the model is correct distribution for the data. There might be other distributions that fit the data equaly good, or even better. For having accurate p-value we need large sample. For small number of syntetic distributions it is possible to have high p-value, even if the distribution is wrong model to the data. 
+
+Using goodness of fit it is possible to calculate p-value for any distribution. For example comparing p-value of power-law fit to the p-value of trunctated power-law fit, we can conclude which one is better fit to data. If p-value for powe law is high, while for alterantive distribution it is low, we can conclude that power-law is more probable fit. 
+
+The another method called the likelihood ratio test allows us to directly compare two distributions. The distribution with higher likelihood under epmpirical data is better fit, so we can calculate the likelihoods ratio $r=l_1/l_2$. It is easier to obtain the logarithm of likelihood ratio, because its sign determine which distribution is better. 
+
+\begin{equation}
+R = ln(\frac{l_1}{l_2}) = L_1 - L_2
+\end{equation}
+
+When $R>0$ the first distribution is better fit to data and when $R<0$, the other one should be chosen. When $R=0$, it is not possible to distinguish between two distributions. 
+
+The sign of $R$ is not enough criteria to conclude which distribution is better fit. It is a random variable subject to statistical fluctuations. We need loglikelihood ratio that is sufficently positive or negative, and to be sure that its sign is not result of fluctuations. Here we use standard hypothesis test, where the null hypothesis is that R= 0. If p-value is larger than threshold, the sign of R is not reliable, and the test does not favor any distribution. If p is small, $p<0.1$ than it is unlikely that observed sign is obtained by chance, so we reject the null hypothesis that $R=0$. 
+%ovaj deo jos raspisati
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -621,69 +675,6 @@ the stretched exponential $p(x) = c x^{\beta - 1}e^{-(\lambda x)^{\beta}}$, the 
 %One of the most successful applications of multiplicative processes is given by preferential attachment. To date, this is the most successful mechanism adopted in the study of growing networks. Interestingly, the idea that we are going to explain has been independently rediscovered several times in diﬀerent ﬁelds and ages. Precisely for this reason it has also been given several names. For example: Yule Process, Matthew eﬀect, Rich gets richer, Preferential Attachment, Cumulative advantage. In the community there is some agreement (Mitzenmacher, 2004; New- man, 2005) that the ﬁrst to present this idea has been G. Yule (1925) in order to explain the relative abundance of species and genera in biological taxonomic trees. As shown in Chapter 8 when considering a set of biolog- ical species we have that the classiﬁcation (taxonomic) tree has scale-free properties. The null hypothesis consists in considering that the set of species arises from a common evolution. Therefore we consider one parent species and after mutation we obtain a new one that very likely can be grouped in the same genus. Every now and then though, speciated species (the new ones) can be so diﬀerent from the parent one that they can form a new genus on their own (or be grouped in an existing diﬀerent one). The probability of speciating will be larger for genera that are already large, since mutation rate is constant for any individual.
 
 %This explanation allow us to focus on the two ingredients of the model. Firstly you have to invoke a certain a priori dynamics (hereafter called growth). Secondly, this dynamics selects successful elements and makes them even more successful (hereafter called preferential attachment). In detail, take a set of elements each of which is characterized by a certain number N i t . As a possible example this could be the number of diﬀerent genera that have i species per genera. The set can also be a set of vertices in a graph and the number N i t can represent the number of pages whose in-degree is i. Now let us introduce a rule that introduces new elements in the set; these elements will not be shared equally between the older ones, but rather will be assigned more to those that already have many. Let us consider that N i t gives the number of vertices with certain degree i (the total
-
-\section{Multifractality of the signals}
-
-Multifractal detrended fluctuation analysis (MFDFA) \cite{kantelhardt2002, ihlen2012} to estimate multifractal Hurst exponent H(q). For given time series $\{x_i\}$ with length N, first we define global profile in the form of cumulative sum, equation \ref{eq:cumsum}, where where $\langle x\rangle $ represents average of the time series:
-\begin{equation}
-Y(j) = \sum_{i=0} ^j (x_i - \langle x\rangle), \quad j=1, ..., N
-\label{eq:cumsum}
-\end{equation}
-
-Subtracting the mean of the time series is supposed to eliminate global trends. The profile of the signal Y is divided into $N_s = int (N/s)$ non overlapping segments of length s. If $N$ is not divisible with s the last segment will be shorter. This is handled by doing the same division from the opposite side of time series which gives us $2N_s$ segments. From each segment $\nu$, local trend $p^m_{\nu, s}$ - polynomial of order m - should be eliminated, and the variance $F^2(\nu, s)$ of detrended signal is calculated as in equation \ref{eq:var}:
-\begin{equation}
-F^2(\nu, s) = \frac{1}{s}\sum_{j=1}^s \left[Y(j) - p^m_{\nu, s}(j)\right]^2
-\label{eq:var}
-\end{equation}
-Then the q-th order fluctuating function is: 
-\begin{equation}
-F_q(s) = \left\{\frac{1}{2N_s}\sum_{\nu}^{2N_s}\left[F^2(\nu, s)\right]^{\frac{q}{2}}\right\}^{\frac{1}{q}},  q \neq 0 \nonumber
-\end{equation}
-\begin{equation}
-F_0(s) = \exp \left\{\frac{1}{4N_s}\sum_{\nu}^{2N_s}ln \left[F^2(\nu, s)\right]\right\}, q=0
-\end{equation}
-
-The fluctuating function scales as power-law $F_q(s) \sim s^{H(q)}$ and the analysis of log-log plots $F_q(s)$ gives us an estimate of multifractal Hurst exponent $H(q)$. Multifractal signal has different scaling properties over scales while monofractal is independent of the scale, i.e., H(q) is constant. 
-
-\section{Dynamical reputation model}
-
-Any dynamical trust or reputation model has to take into account distinct social and psychological attributes of these phenomena in order to estimate the value of any given trust metric \cite{duma2005dynamic}. First of all, the dynamics of trust is asymmetric, meaning that trust is easier to lose than to gain. As part of asymmetric dynamics, in order to make trust easier to loose the trust metric has to be sensitive to new experiences (recent activity or the absence of the activity of the agent), while still maintaining nontrivial influence of old behavior. The impact of new experiences has to be independent of
-the total number of recorded or accumulated past interactions, making high levels of trust easy to lose. 
-Finally, the trust metric has to detect and penalize both the sudden misbehavior and the possibly long term oscillatory behavior which deviates from community norms.
-
-We estimate dynamic reputation of the Stack Exchange users using Dynamic Interaction Based Reputation Model (DIBRM) \cite{melnikovDynamicInteractionBasedReputation2018}. This model is based on the idea of dynamic reputation, which means that the reputation of users within the community changes continuously through time: it should rapidly decrease when there is no registered activity from the specific user in the community (reputation decay), and it should grow when frequent, constant interactions
-and contributions to the community are detected. The highest growth of user's reputation is found through bursts of activity followed by short period of inactivity. 
-
-In our implementation of the model, we do not distinguish between positive and negative interactions in the Stack Exchange communities. Therefore, we treat any interaction in the community (question, answer or comment) as potentially valuable contribution. In fact, evaluation criteria for Stack Exchange websites going through beta testing, described in SI, do not distinguish between positive and negative interactions.
-The percentage of negative interactions in the communities we investigated was below 5\%, see Table 1 in SI. Filtering positive interactions would also require filtering out comments because they are not rated by the community, and that would eliminate a large portion of
-direct interactions between the users of a community, which is essential for estimating their reputation.
-
-In DIBRM, reputation value for each user of the community is estimated combining three different factors: 1) \textit{reputation growth} - the cumulative factor which represents the importance of users' activities; 2) \textit{reputation decay} - the forgetting factor which represents the continuous decrease of reputation due to inactivity; \textit{the activity period factor} - measuring the length of the period of time in which the change of reputation happened. In case of Stack Exchange communities, the forgetting factor has a literal meaning, as we can assume that past contributions provided by a user are being forgotten by active users as their attention is captured by more recent content.
-
-In line with the the basic dichotomy of reputation dynamics, which revolves around the varying influence of past and recent behavior, DIBRM has two components: \textit{cumulative factor} - estimating the contribution of the most recent activities to the overall reputation of the user; \textit{forgetting factor} - estimating the weight of past behavior. Estimating the value of recent behavior starts with the definition of the parameter storing the basic value of a single interaction $I_{b_{n}}$. Cumulative factor $I_{c_{n}}$ then captures the additive effect of recent successive interactions. The reputational contribution $I_n$ of most recent interaction $n$ of any given user is estimated in the following way:
-
-\begin{equation}\label{eq:ibn}
-I_n = I_{b_{n}} + I_{c_{n}} = I_{b_{n}} (1+  \alpha  (1-\frac{1}{A_{n}+1}))
-\end{equation}
-
-Here, $\alpha$ is the weight of the cumulative part and $A_{n}$ is the number of sequential activities. If there is no interaction at $t_n$, this part of interactions has a value of 0. Important property of this component of dynamic reputation is the notion of sequential activities. Two successive interactions made by a user are considered sequential if the time between those two activities is less or equal to the time parameter $t_{a}$ which represents the time window of interaction. This time window represents maximum time spent by the user to make a meaningful contribution (post a question or answer or leave a comment).
-
-\begin{equation}\label{eq:deltan}
-\Delta_{n}=\frac{t_{n}-t_{n-1}}{t_{a}}
-\end{equation}
-
-If $\Delta_{n} < 1$ is less than one the number of sequential activities $A_{n}$ will increase by one, which means that the user is continuing to communicate frequently. On the other hand, large values $\Delta_{n}$ greatly increase the effect of the forgetting factor. This factor plays a major role in updating the total dynamic reputation of a user in each time step (after every recorded interaction):
-
-\begin{equation}\label{eq:tn}
-T_{n}=T_{n-1} \beta^{\Delta_{n}}+I_{n}
-\end{equation}
-
-Here, $\beta$ is the forgetting factor. In our implementation of the model, the trust is updated each day for every user irrespective of their activity status. Therefore, the decay itself is a combination of $\beta$ and $\Delta_n$: the more days pass without recorded interaction from a specific user, the more their reputation decays. Lower values of beta lead to faster decay of trust as shown on figure \ref{fig:paper_summary}.
-
-
-
-
-
 
 
 

@@ -19,10 +19,10 @@
 \BOOKMARK [2][-]{subsection.1.5.4}{Nonlinear preferential attachment model}{section.1.5}% 19
 \BOOKMARK [2][-]{subsection.1.5.5}{Ageing model}{section.1.5}% 20
 \BOOKMARK [1][-]{section.1.6}{The properties of probability distributions}{chapter.1}% 21
-\BOOKMARK [2][-]{subsection.1.6.1}{Power law}{section.1.6}% 22
-\BOOKMARK [2][-]{subsection.1.6.2}{Lognormal distribution}{section.1.6}% 23
-\BOOKMARK [2][-]{subsection.1.6.3}{Poisson distribution}{section.1.6}% 24
+\BOOKMARK [2][-]{subsection.1.6.1}{Poisson distribution}{section.1.6}% 22
+\BOOKMARK [2][-]{subsection.1.6.2}{Power law}{section.1.6}% 23
+\BOOKMARK [2][-]{subsection.1.6.3}{Lognormal distribution}{section.1.6}% 24
 \BOOKMARK [2][-]{subsection.1.6.4}{Power law with exponential cutoff}{section.1.6}% 25
 \BOOKMARK [2][-]{subsection.1.6.5}{Streched exponential}{section.1.6}% 26
-\BOOKMARK [1][-]{section.1.7}{Multifractality of the signals}{chapter.1}% 27
-\BOOKMARK [1][-]{section.1.8}{Dynamical reputation model}{chapter.1}% 28
+\BOOKMARK [2][-]{subsection.1.6.6}{Plotting the fat-tailed distributions}{section.1.6}% 27
+\BOOKMARK [2][-]{subsection.1.6.7}{The goodness-of-fit}{section.1.6}% 28
