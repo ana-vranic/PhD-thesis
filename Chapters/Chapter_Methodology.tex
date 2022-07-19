@@ -745,12 +745,49 @@ A direct calculation of the $C(s)$ is difficult due to present noise in the data
 \textbf{Hurst's rescaled-range analysis}
 The method called rescaled range analysis $R/S$ was proposed by the Hurst. It begins with spliting the time series $x_i$ into non overlaping segments $\nu$ of the size s, having $N_s = int(N/s)$ segments. Then is calculated the profile in each segment. 
 
-$Y_\nu(j) = \sum_{i=1}^{j}$
+$$Y_\nu(j) = \sum_{i=1}^{j} (x_{\nu s +i} - \langle x_{\nu s + i } \rangle _s)$$
 
+Substracting the averages, constant trends in the data are eliminated. Finally the differences between minimum and maximum value and the standardan deviation in each segment are calculated as:
 
+$$R_{\nu}(s) = max Y_\nu(j) - min Y_{\nu}(j)$$
+$$S_{\nu}(s) = \sqrt{\frac{1}{s}\sum Y^2_{\nu}(j)}$$
 
+Finally, the rescaled range is averged over all segments to obtain the fluctuation function F(s).
+
+$$F_{RS}(s) = \frac{1}{N_s}\sum \frac{R_{\nu}(s)}{S_{\nu}(s)} \sim s^H$$
+
+the H is Hurst exponent introduced in the first equation. The values of H that can be obtained by Hurst rescaled analasys are $<0H<2$. Values $H<1/2$ indicate long-term anticorrelated data, $H>1/2$ indicated long-term positively correlated data. For power-lae correlations decaying faster than $1/s$, $H=1/2$, like for uncorrelated data. 
+
+On the other hand the standard fluctuation analysis is based on the random walk theory. For time series with zero mean, we consider the global profile, the cumulative sum:
+
+$$Y(j) = \sum x_i$$, 
+and then study how fluctuations of the profile, in a given time window of size s increase with s. 
+
+We first divide each record of N elements into Ns non-overlaping segments of the size s, and another Ns non-overlaping segments starting from the end. Then we calculate the fluctuations in the each segment. In the standard FA we get the fluctuations just from the values of the profile at both endpoints of each segment. 
+
+$$ F_{FA}^2(\nu, s) = [Y(\nu s) - Y((\nu +1)s)]^2$$ 
+
+Then we can average $F^2$ over all subsequences to obtain the mean fluctuation 
+
+$$F_2(s) = [\frac{1}{2N_s} \sum F^2(\nu,s)]^{1/2}  \sim s^H$$
+
+For the relevant case of long-term correlations where $C(s)$ follows the power-law behaviour, $F_2(s)$ also increases by power-law. 
+
+The fluctuation exponent is indentical with Hurst exponent for monofractal data. 
 
 \subsection{Detrended fluctuation analysis}
+
+DFA was introduced by Peng et al. and represents an important method for describing the non-stationary time series. As before methods it is also base on random walk theory, and the FA analysis is special case with linear detrending. 
+
+Like in FA method first one calculates the global profile of the time series. DFA deaks with monotonous trends in a detrending procedure. This is done by establishing a polynomial trend within each segment by least-square fitting and subtracting this trend from the original profile, detrending. 
+
+$$Y_s(j) = Y(j) - y_{\nu ,s}^{m}(j)$$
+
+The degree of the polinomial can be varied in order to eliminate constant m=0, linear m=1, quadratic m-2, or higher order trends of the profile function. The variance of the detrended profile in each segment gives us mean-square fluctuations
+
+$$F^2(\nu  s) = \frac{1}{s} \sum Y_s^2(j)$$
+
+Finaly fluctioations over all segments are averaged, to obtain the mean fluctuations $F_2(s)$ as in eq. F2s, and as before, from the scaling of the fluctuating function we can determine the Hurst exponent. 
 
 \subsection{Multifractality of the signals}
 
@@ -769,11 +806,19 @@ Then the q-th order fluctuating function is:
 \begin{equation}
 F_q(s) = \left\{\frac{1}{2N_s}\sum_{\nu}^{2N_s}\left[F^2(\nu, s)\right]^{\frac{q}{2}}\right\}^{\frac{1}{q}},  q \neq 0 \nonumber
 \end{equation}
+
+The value of $H(0)$, which corresponds to the limit $H(q), q-0$, cannot be determined directly because of the exponent diverge. Instead logarithmic averaging procedure has to be considered. 
 \begin{equation}
 F_0(s) = \exp \left\{\frac{1}{4N_s}\sum_{\nu}^{2N_s}ln \left[F^2(\nu, s)\right]\right\}, q=0
 \end{equation}
 
-The fluctuating function scales as power-law $F_q(s) \sim s^{H(q)}$ and the analysis of log-log plots $F_q(s)$ gives us an estimate of multifractal Hurst exponent $H(q)$. Multifractal signal has different scaling properties over scales while monofractal is independent of the scale, i.e., H(q) is constant. 
+The fluctuating function scales as power-law $F_q(s) \sim s^{H(q)}$ and the analysis of log-log plots $F_q(s)$ gives us an estimate of multifractal Hurst exponent $H(q)$.
+
+For the monofractal time series, H(q) is independent of q, meaning that scaling is indentical for all segments, and averaging fluctuations gives indentical scaling for all values of q. If small and large fluctuations scale differently, there will be dependence of h(q) on q. Positive values of q, segments with large variance are dominant in the Fq(s), so positive q describes segments with large fluctuations. The negative values of q, H(q) describes the scaling of the segments with small fluctuations. 
+
+Also, large fluctuations are characterized by smaller scaling exponent. 
+
+Multifractal signal has different scaling properties over scales while monofractal is independent of the scale, i.e., H(q) is constant. 
 
 \section{Dynamical reputation model}
 
