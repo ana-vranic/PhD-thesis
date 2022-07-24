@@ -1,16 +1,17 @@
 \chapter{Methodology} % Main chapter title
 
 \section{Complex networks}
-The complex system has several properties. It consists of many components such as units or individuals who interact with each other. The properties of the complex system can not be predicted from the behaviour of one individual. In such systems, without any central force, collective behaviour can emerge. In societies, people's interactions lead to civilisation, economy, formation of social groups or even traffic on the roads. In the animal, populations are present at different levels of the organisation, as in ants and bees colonies or the school of the fishies showing flocking patterns. \cite{boccaletti2006complex}
-%latorobook 
 
-The research in complex systems focuses on the structure of the interactions between units. Knowing how branches of the system are connected, we can determine the emergence of the collective behaviour of the system. We can construct networks with neurons and synapses, representing their connections. The structure of the brain network and its properties are fundamental for brain functioning, and neurons in the same brain area are closely connected. Similarly, we can represent the communication between people. The structure of these interactions gives us insights, for example, how information propagates through the system. The presence of people with many connections can lead to faster information flow. 
+Many real systems are composed of a large number of elements interacting with each other. Due to interactions, without any central force, the system exhibits the emergence of collective behaviour on the macro level. Such a system is called a Complex System and its properties can not be predicted from the behaviour of the one individual. An example of a complex system is the human brain. The structure of the brain network and its properties are fundamental for brain functioning, while an emergent phenomenon is a human intelligence. In societies, people's interactions lead to civilization, economy, formation of social groups. Also, the animal populations show different levels of organization that emerge from the individual's interactions \cite{boccaletti2006complex}. %latorro
 
-Despite the differences between complex systems, they can be studied using complex networks; with sets of nodes and edges. Elements in the system are nodes, while interactions between them are given as edges. This approximation allows us to treat equally social (graph of actors), biological (network of proteins) or even technological systems (internet, traffic). In recent years, complex network theory has application in different fields, and the availability of big data incurs its development. \\
+The research in complex systems focuses on the structure of the interactions between units. Knowing how branches of the system are connected, we can determine the emergence of the collective behaviour of the system. For the brain network, we can construct representation with neurons and synapses, representing the brain connectivity. Neurons in the same brain area are closely connected \cite{latora2017complex}. Similarly, we can define communication between people. The structure of these interactions gives us insights, for example, how information propagates through the system. The presence of people with many connections can lead to faster information flow. 
+
+Despite the differences between complex systems, they can be studied using complex networks; with sets of nodes (vertices) and links (edges). Elements in the system are nodes, while interactions between them are given as edges. This approximation allows us to treat equally social (graph of actors), biological (network of proteins) or even technological systems (internet, traffic) \cite{costa2007characterization, costa2011analyzing}.  In recent years, complex network theory has application in different fields, and the availability of big data incurs its development.
 %Analyzing and Modeling Real-World Phenomena with Complex Networks: A Survey of Applications
 %Characterization of Complex Networks: A Survey of measurements
 
-The complex network theory originates from the graph theory in mathematics. These days, the graph and network are used as equivalent terms. The first mathematical problem solved using graph theory was $Konigsberg$ problem of seven bridges. The city $Konigsberg$ had seven bridges connecting the city's parts across the river and the island in the middle. The question was, is it possible to find a walk that crosses all seven bridges only once. Representing the problem as a graph, Euler managed to simplify the problem; the parts of the land are represented as nodes while bridges between them are links. Crossing each bridge only once is possible if each part of the land has an even number of connections. Thus, it was not possible in this case, as each piece of land had an odd number of bridge connections, see Fig. \ref{fig:Krgraph}.
+The complex network theory originates from the graph theory in mathematics. %These days, the graph and network are used as equivalent terms. 
+The first mathematical problem solved using graph theory was $Konigsberg$ problem of seven bridges. The city $Konigsberg$ had seven bridges connecting the city's parts across the river and the island in the middle. The question was, is it possible to find a walk that crosses all seven bridges only once. Representing the problem as a graph, as in figure \ref{fig:Krgraph}, Euler managed to simplify the problem; the parts of the land are represented as nodes while bridges between them are links. Crossing each bridge only once is possible if each part of the land has an even number of connections. By this it is possible to enter one part of the land from one bridge and leave it by the other. As each node has odd number of connections, in this case it is not possible, see Fig. \ref{fig:Krgraph}.
 
 \begin{figure}[h!]
 	\centering
@@ -22,157 +23,252 @@ The complex network theory originates from the graph theory in mathematics. Thes
 
 \section{Types of networks}
 
-%The seven bridges problem in Fig. \ref{fig:Krgraph} is represented with the \textbf{simple network} structure. 
-The graph or network $G$ is defined as $G=(V, E)$, where $V$ is a set of nodes (vertices), and $E$ is a set of edges. The edge is pair of nodes $e_{ij} = (i, j), $ and $i,j\in E$. The graph structure has undirected edges meaning that edges are symmetric: $(i, j)$ implies $(j, i)$. Edges are also unweighted, meaning that all edges are equally important. The specific properties of the nodes are also neglected in this representation. The \textbf{adjacency matrix} ${A} = N \times N$ has value $1$ if there is connection between two nodes, otherwise it is $0$ \cite{boccaletti2006}\\
+The graph or network $G$ is defined as $G=(\boldsymbol{V}, \boldsymbol{E})$, where $\boldsymbol{V} = \{ v_1, v_2, ... v_N\}$ is a set of $N$ nodes (vertices), and  $\boldsymbol{E} = \{e_1, .. e_L\}$ is a set of $L$ edges (links). The edge is pair of nodes $e = (v_i, v_j), $ such that $\{v_i,v_j\}\in \boldsymbol{V}$. The most basic network representation considers \textbf{unweighted and undirected} structure. The edges are unweighted, meaning that all interactions in the network are equally important.  Because network is un-directed, edges are symmetric, such that $(v_i, v_j)$ implies $(v_j, v_i)$. In \textbf{directed} networks this simmetry is broken. The interaction between two nodes $v_i$ and $v_j$, can be only in one direction. A typical example is World Wide Web, where webpages are nodes and hyperlinks are directed edges. In biological networks, gene regulation and neural activation can be described as directed network. The first column a) in Figure \ref{fig:graph_dir} shows the graphical representation of two networks with equal number of nodes; the first one is underected and the second one is directed. 
 
-For example, if we consider unweighted, undirected network, with only 3 nodes and two connections, adjacency matrix is:
-
-
+Even though, graphical representation can be useful for describing the network structure, mathematical representation allow us to characterize the statistical properties of the networks. The graph $G$, with $N$ nodes could be represented with \textbf{adjacency matrix} $|A| = N \times N$ \cite{boccaletti2006complex}. The elements of the matrix are positive if there is connection between two nodes $v_i$ and $v_j$. 
 \begin{equation}
-A = \begin{bmatrix}
-0 & 1 & 1\\
-1 & 0 & 0 \\
-1 & 0 & 0 \\
-\end{bmatrix}
+A_{ij} =
+\begin{cases}
+1 & \text{ ($v_i$, $v_j$) $\in$ $E$}\\
+0 & \text{ ($v_i$, $v_j$) $\notin$ $E$}
+\end{cases}       
 \end{equation}
 
-The self loops usually are not considered, meaning that $A_{ii}=0$. 
-%The complex system can be represented by complex network $G=(V, E)$, where the elements of system (atoms, proteins, people) map to set of $N$ nodes $V=\{1, 2, ...,N\}$. The interactions between elements map to $L$ links between nodes, $E = \{ e_1, e_2... e_L\}$. The \textbf{adjacency matrix} ${A} = N \times N$ has value $1$ if there is connection between two nodes, otherwise it is $0$ \cite{boccaletti2006}.
-
-Other equivalent way of representing graph is as edge list. Instead of having adjacency matrix, graph is described with the list of links that are in graph. The graph is then pair of $N, g$, where N is set of nodes, and $g$ is collection of links, listed as subset of $N$ of size 2. So the network is written as $g = \{ \{1,2\}, \{2,3\}\}$.
-
-Sometimes it is essential to include specific properties of the system in the network representation, which can help create more realistic models. The additional properties can be added on the edge, node or network level. \\
+The column b) on Figure \ref{fig:graph_dir} shows adjacancy matrix representation of given graphs. By convention diagonal elements $A_{ii}=0$, as self-loops are not allowed. For undirected network adjacency matrix is symmetric $A_{i,j}=A_{ji}$, but in the case of directed network matrix is not symmetric, as edges are drawn in one direction only.  
 
 \begin{figure}[h!]
-	\centering
-	\includegraphics[width=1\linewidth]{figures/methodology/graph1.png} 
-	\caption{Graph types}
-	\label{fig:gt1}
+\centering
+\includegraphics[width=0.7\linewidth]{figures/methodology/directed_graph.pdf} 
+\caption{a) Graph representation of undirected (top panel) and directed (bottom panel) network. The same networks are represented with adjacency matrices column b), and edge list representation in column c).}
+\label{fig:graph_dir}
 \end{figure}
 
-In a \textbf{directed network}, edges have broken symmetry. The interaction from node $i$ to node $j$ does not need to have the same property as the interaction from node $j$ to node $i$. A typical example is WWW, where webpages are nodes, and hyperlinks are directed edges. In biological networks, gene regulation and neural activation can be given as directed networks. \\ %clasuet networks
+The number of edges and nodes are dependent variables. Considering that each node can make $N-1$ connections, the maximum number of the edges in the network is $L_{max}=N(N-1)/2$, as each edge is counted twice. For directed network it is possible to draw $L_{max}=N(N-1)$ edges \cite{caldarelli2007scalefree}. When it comes to large networks, they are sparse, meaning that the number of links is $L<<L_{max}$. As consequence, the adjacency matrix is also sparse structure (has many zeros) that takes large portion of computer memory \cite{barabasi2016network}. 
+It is common to represent the graph as edge list. In this case, illustrated on Figure \ref{fig:graph_dir}, column c), graph is described with the list of links that are in the graph, $G = \{ \{v_i,v_j\}\}$. Still with this representation we are not able to distinguish between directed and undirected graph structures, so in the computational algorithm should be specified if the edges are considered symetric or not.  
+%To distinguish between undirected and directed structures, for undirected representation it is possible writing two edges $(v_i, v_j)$ and $(v_j, v_i)$, otherwise in the computational algorithm should be specified if the edges are considered symmetric or not.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figures/methodology/graph2.png} 
-	\caption{Graph types}
+	\includegraphics[width=0.4\linewidth]{figures/methodology/multi_graph.pdf} 
+	\caption{The complex networks may represent different characteristics of the system. The edges can be directed, weighted or multiply. Also nodes can be assigned with different weights or any relevant feature.}
+	\label{fig:multigraph}
+\end{figure}
+
+To create the more realistic models, sometimes is essential to include the specific properties of the system in the network representation. For example, to emphasis the frequent interactions between nodes, edges can be assigned with different values, such networks are \textbf{weighted}. They can be described with adjacency matrix, whose elements can take any real number $A_{ij}=w_{ij}$ and $w_{ij}>0$. In general edges may be associated with any categorical variable. Similarly additional properties can be added to nodes, or even to the whole network structure. To include the \textbf{temporal} component in the network, edges are characterized with the time when the interaction between nodes happen. Finally, if two nodes interact in different ways, the \textbf{multigraph} is appropriate configuration where multiply edges are allowed. The graphical representation of discussed network representations is given on the Figure \ref{fig:multigraph}. \\~\\
+% the network between cities, edges may be different driving paths between them. In neuron cells, multiply synapses are represented as distinct edges. \\ %\cite{barabasi2016network, latora2017complex, newman2010}
+A \textbf{bipartite network} consists of two types nodes. The nodes in the same partition are not connected, while links exist only between partitions. For many real systems, a bipartite graph is a natural representation\cite{barabasi2016network, latora2017complex}. For example, the bipartite network of people and groups has two distinct node partitions while links indicate the memberships. Another example is a system of customers and products. The link between user and item is created when the user buys an item. The bipartite networks find their application in the algorithms for recommended systems, whose goal is to recommend items that may interest the user. Actually, to find the most probable missing links in the network. 
+
+In a bipartite network, nodes in one partition are not connected. Still, we can analyse a single node type if we project the bipartite network on one partition. The primary assumption is that two nodes in one partition could be connected if they point to the same node in another partition. Consider the network of movies and actors. The one mode projection of movies is an undirected network whose links indicate that two movies share the same actors. On the other hand, another projection is a network of actors. The links exist if two actors appear in the same movie \cite{newman2010, barabasi2016network}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/methodology/bipartite_graph.pdf} 
+	\caption{Bipartite graph and two partition projections.}
 	\label{fig:gt2}
 \end{figure}
 
-The frequency of interaction between nodes is emphasised if edges are associated with different scalar values; networks are \textbf{weighted}. The edges may be signed, representing activation in the biological system or trust and distrust in the social system. In general, edges can be associated with any categorical variable. If attribute describes the time when an interaction between nodes happened; network is called \textbf{temporal}. Finally, \textbf{multigraph} allows the presence of multiply edges between two nodes. For the network between cities, edges may be different driving paths between them. In neuron cells, multiply synapses are represented as distinct edges. \\
+We should be aware that important information is lost when creating a one-mode projection. First of all, without having weighted edges in the network of actors, it is impossible to have information on how many movies two actors appear in. From the one-mode projection, we can not reconstruct the original network. Moreover, two different bipartite networks may have the same projected networks. The important consequence of the network projection is the creation of cliques; subgraphs where all nodes are connected. 
 
-A \textbf{bipartite network} has two partitions, $U$ and $V$. The nodes in the same partition are not connected while links exist only between nodes of a different kind. In general, we can define k-bipartite graph. The set of nodes $V$ has $k$ distinct classes of nodes. When $k=2$ the network is bipartite.  Bipartite networks represent the membership of people or items in groups. For example, we can define the network of actors as a bipartite graph. In one partition are actors and in other movies. There are no edges between actors or movies, but the actor is connected to the film if it plays in that movie. Another example is a recommender network, such as a network of people and items they like. 
+In general, it is possible to define the k-bipartite network. The same rules apply as before. There are $k$ distinct node partitions, while the edges exist only between different types of nodes.\\
 
-The equivalent representation of bipartite network is incidence matrix $B$. If $n$ is number of people and $g$ number of groups, this matrix is $g x n$, having elements $B_{ij}$ 1 if persoon i belongs to group j. 
 
-Even bipartite networks give realistic representation of the system, there is often need to analyze the single type of nodes.  From a bipartite network, we can generate two projections. The first one connects nodes partition $V$ if they point to node $u$. Similarly, we can project the network on U partition, connecting $u$ nodes. The one mode projection between actors and movies onto actors is undirected network of actor collaborations. Actors are connected if they appear in the same movie. We can also create one-mode projection onto movies, where two movies are connected if they share the same actor.  
 
-The projections are useful in some manner, but they also lose some important information, for example how many groups nodes share in common. This information can be propagated adding the weight to the edges, equal to the number of common groups.
+%The product $B_{ki}$ and $B_{kj}$ is 1 if $i$ and $j$ belong to the same group $k$. Thus the total number of groups to which nodes $i$ and $j$ belong is $P_{ij} = \sum_{k=1}^g B_{ki}B_{kj} = \sum_{k=1}^g B_{ik}^TB_{kj}$. The matrix $P$ is matrix of one-mode projection. The diagonal elements are non-zero, and represent the number of groups node $i$ belongs to.  To derive the weighted adjacency matrix, the diagonal elements are set to 0. The adjacency matrix of unweighted projection, each non-zero element needs to be replaced with $1$. 
 
-The product $B_{ki}$ and $B_{kj}$ is 1 if $i$ and $j$ belong to the same group $k$. Thus the total number of groups to which nodes $i$ and $j$ belong is $P_{ij} = \sum_{k=1}^g B_{ki}B_{kj} = \sum_{k=1}^g B_{ik}^TB_{kj}$. The matrix $P$ is matrix of one-mode projection. The diagonal elements are non-zero, and represent the number of groups node $i$ belongs to.  To derive the weighted adjacency matrix, the diagonal elements are set to 0. The adjacency matrix of unweighted projection, each non-zero element needs to be replaced with $1$. 
+\textbf{Temporal networks.}
+Studying the real systems as static networks can give us a lot of insight into the system properties. Still, real systems are not static; they evolve not only in the number of elements but also in the number of interactions between them. Some interactions in the system may repeat in different intervals and could be described with complex activity patterns. Including time dimension in the network representation allows us to study the properties of the system closely. The temporal information may matter a lot \cite{holme2012}. For example if interaction between nodes $(v_1, v_2)$ happened before in time than  $(v_2, v_3)$, then nodes $v_1, v_3$ would not be connected, as it is the case in the static network. 
 
-The important consequence of the one-mode projection is the construction of the cliques; subgraph in which every pair of nodes is connected. Every node that is being projected is represented as a clique of size, because all pairs of its neighbours are exactly distance two away from each other. All actors in the movie will be joined in a clique in the one-mode actor projection. %ovo preformulisati
-
-Another consequence of the one-mode projection is that one mode projection may originate from different bipartite networks. Meaning that projection is not one-to-one; no bijection. It is surjective operation, meaning hat any projected network $P$ has at least one bipartite network such that the projection of B results in P. \\ %ovo preformulisati
+The temporal network is a collection of timestamped edges. Each edge is defined as $(v_i, v_j, t, \Delta t)$, where $v_i$ and $v_j$, are nodes $t$ is time when interaction happen, and $\Delta t$ is event duration \cite{guide_temporal}. The duration of the events may vary, as in the phone-call network. Also, for many systems, the time resolution of event duration is too small. For example, this parameter may be neglected when people interact on social platforms or email each other because the event time is too short, it scales in seconds.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{figures/methodology/graph4.png} 
-	\caption{Graph types}
+	\includegraphics[width=0.7\linewidth]{figures/methodology/temporal_network.pdf} 
+	\caption{Temporal network. }
 	\label{fig:gt3}
 \end{figure}
 
-In \textbf{temporal networks} nodes and edges evolve. Many real networks are not static, networks grow over time, and edges and nodes may emerge or disappear. Also, some edges may be active at regular intervals, reflecting the circadian rhythms of the nodes. In citation networks, new nodes (paper) join the network, creating links with cited papers. 
+The temporal network can be represented as sequence of static networks that evolve in time, $G = \{ G(t_1), G(t_2), ..., G(t_{max})\}$. At each time step, we can create the network and analyze the macroscopic properties of the given network snapshot. With this, we can end up with graph snapshots with many disconnected components or empty graphs for some points \cite{holme2015modern}. Sometimes, a much better approach is to aggregate the links that over time-windows. Here, we need to specify the time window length $w$. Interactions in the time interval $0\leq t<w$ enter the first snapshot. The next snapshot takes edges $w \leq t <2w$, and so on. The time windows are not overlapping, but generally, it is possible to slide the time window for different periods $ 1 \leq \delta t \geq w$. The downside of this method is that we can not recover original data points. The larger the time window is, the more information is lost. If the time window is set to $w=t_{max}$, there is only one snapshot, and the temporal data are no more available \cite{krings2012effects, arnold2021moving}. \\
 
-Let consider the temporal network with $N$ nodes, over time interval $t_{max}$. The event representation consists in viewing the temporal networks as a collection of time-stamped edges. In this representation, each edge $(i, j)$ is defined as$(i, j, t, \Delta t)$, where $t$ is the time of the event and $\Delta t$ its duration. In a temporal network, the same link can appear multiple times, and the duration of the event may vary. An example of an event temporal network may be phone-calls networks, where a call between two persons $i$ and $j$ started at time $t$ and ended at $t + \Delta t$. 
+\textbf{Multilayer networks} were introduced for studying systems in which different types of interaction exist. This formalism allows one to investigate diverse network systems and to combine different types of data into one model \cite{porter2018multilayer}. In a multilayer or multiplex network, all nodes are present in each layer, but their interactions among layers differ. Two nodes may be connected in one layer but not in the other. Considering different online social systems may be an example of a multiplex network when users are connected on one platform but not on the other \cite{aleta2019multilayer}. Or the airline transportation network, where each layer represents the flights of different airline companies \cite{kivelamultilayer}.   
 
-A temporal network can be represented as sequence of networks $G= G(1), ... G(t_{max})$, where $t_{max}$ is number of networks. While in the event-based representation, time can be both discrete and continuous, in the snapshot representation, time is only discrete. The temporal network is seen as a structure that evolves in time, and at each timestamp, we can analyse the system's macroscopic properties. We need to specify time windows for coarse-grain event-based representation of the temporal information in the data. If we use uniformly time window of length $w$ then the events occurring in $0 \leq t < w$ enter snapshot G(1), those occurring in $w \leq t < 2w$ enter G(2) and so forth. We can not recover the original data points from the snapshot representation, and more information loss is present with a larger time window. If the time window is $w=t_{max}$, there is only one snapshot, temporal data are no more available, and the network is static. \\
+%Consequently, we can partition the set of links into intralayer links, that is, links that connect nodes set in the same layer, and interlayer or coupling links, which are those links that connect nodes set in different layers. 
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.5\linewidth]{figures/methodology/graph5.png} 
-	\caption{Graph types}
-	\label{fig:gt5}
-\end{figure}
+%A temporal network is a special kind of multiplex network, where these layers form a temporal (ordered) sequence. Crucially, there can dynamics on each vertex that govern which layer some kind of interaction occurs on, so multiplex networks are not merely a special kind of graph in which different colors or layer numbers annotate edges. %clauset preformulisati
 
-A network in which edges are marked by which "layer" they exist in is called a multiplex or multilayer network. These networks are used to represent a system in which there are multiple types of interactions, and we store the connectivity of each kind in a different "layer" of the multiplex network. A temporal network is a special kind of multiplex network, where these layers form a temporal (ordered) sequence. Crucially, there can dynamics on each vertex that govern which layer some kind of interaction occurs on, so multiplex networks are not merely a special kind of graph in which different colors or layer numbers annotate edges. %clauset preformulisati
+%\subsection{Multigraphs}
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.5\linewidth]{figures/methodology/graph5.png} 
+%	\caption{Graph types}
+%	\label{fig:gt5}
+%\end{figure}
 
-Spatial networks are a special kind of node-annotated network, in which the annotations represent the node's location in some d-dimensional space. This graph property is most common in transportation networks, e.g., as road and city networks, airport transportation networks, oil and gas distribution networks, shipping networks, etc., but can also appear in social networks. Planar graphs are a special case of spatial networks in which the nodes are embedded on a 2-dimensional surface and edges do not cross. %clauset preformulisati
+%Spatial networks are a special kind of node-annotated network, in which the annotations represent the node's location in some d-dimensional space. This graph property is most common in transportation networks, e.g., as road and city networks, airport transportation networks, oil and gas distribution networks, shipping networks, etc., but can also appear in social networks. Planar graphs are a special case of spatial networks in which the nodes are embedded on a 2-dimensional surface and edges do not cross. %clauset preformulisati
 
-Hypergraphs are another type of network, in which edges denote the interaction of more than two vertices, e.g, E in V × V × V . Scientific collaboration graphs can be represented as a hypergraph, in which each "edge" is the set of coauthors on a scientific article. However, collaboration networks are more commonly represented as bipartite graphs, in which scientists and papers form two sets of vertices, and scientist-nodes are connected to all the paper-nodes on which they are authors. %clauset to do
+%Hypergraphs are another type of network, in which edges denote the interaction of more than two vertices, e.g, E in V × V × V . Scientific collaboration graphs can be represented as a hypergraph, in which each "edge" is the set of coauthors on a scientific article. However, collaboration networks are more commonly represented as bipartite graphs, in which scientists and papers form two sets of vertices, and scientist-nodes are connected to all the paper-nodes on which they are authors. %clauset to do
 
 %The canonical network form is an undirected graph, where two nodes are either connected or not. This applies to situations where two nodes are either in a relationship with each other or not, but it cannot be that one is related to the second without the second being related to the …rst. This is generally true of many social and/or economic relationships, such as partnerships, friendships, alliances, acquaintances, etc. This sort of network will be central to most of the chapters that follow. However, there are other situations that we will examine that are better modeled as directed networks, where one node may be connected to a second without the second being connected to the …rst. For instance, a network that keeps track of which authors cite which other authors, or which web pages have links to which others would naturally take the form  of a directed graph.
 
 \section{The structure of complex networks}
 
-\subsection{Paths and cycles}
+In the network structure, the nodes interacting are directly connected with the edge. In this representation we can say that distance between them is $d_{v_i, v_j}=1$. Distance defined like this does not have any physical meaning. Its purpose is to describe how the position of nodes in the network structure influences the other distant nodes. 
 
-As network is connected structure, the nodes may be influenced also by distant nodes, and the information might spread through the links of a network. Analyzing the paths of the network is important task.   
+The \textbf{path} between two nodes, $v_i$ and $v_j$ is a sequence of edges $\{(v_1, v_2),  (v_2, v_3), ...(v_k, v_{k+1})\\,... (v_{n-1}, v_n)\}$, where $v_1=v_i$, $v_n=v_j$. In the path, the nodes are distinct. Otherwise, the sequence is called a \textbf{walk}, where each node can be visited many times. Also, it is possible to define a \textbf{cycle}, a path that starts and ends on the same node while other nodes in the cycle are distinct. The length of the path, walk or cycle is the number of links in the sequence. Using the adjacency matrix we can easily calculate the number of walks between two nodes. The $A^2$ gives us walks of length $2$, the $A^3$, number of walks of length 3, and so on. \\
 
-A path of the network between two nodes $i$ and $j$ is a sequence of links, $i_1i_2,..,i_k$ such $i_ki_{k+1} \in g$ that $i_1=i$ and $i_k=j$, each node in the sequence is distinct. 
-The path is walk, if nodes in the sequence are not distinct, so walk can visit one node more than once. The cycle is walk that starts and ends at the same node, while other nodes are distinct. 
+The network is connected if it is possible to define the path between every two nodes in the network. When it is not the case, the network is disconnected into connected components. Note that the component can be an isolated node. Also, in directed networks may happen that node $v_i$ is reachable from node $v_j$, but if we start from $v_j$ we can not find the path to the $v_i$. Such a graph is connected but is called a weakly connected component. \\
 
-Note that, if we use adjacency matrix representation where $A_{ii}=0$, then $A^2$ tells us how many walks of length 2 exist between any two nodes.
+We can define different paths between two nodes in the network, but the most important ones are the shortest ones. The distance between two nodes $d(v_i, v_j)$ is defined as the shortest path length between two nodes. 
+In the case of weighted networks, it is the path with minimal weight, and the length of such path does not have to be minimal. Distances on the network can give us insight into how similar networks are and indicate the node's relative importance in the network. 
 
-Network is connected if every two nodes in the network are connected by some path. So the network is connected id for every node $i \in N$ and node $j \in N$ exists a path between them. 
+The node's eccentricity shows how far the farthest vertex is positioned in the network. The radius is the minimum overall eccentricity values, while the diameter defines the largest distance between nodes in the network. These definitions apply to directed and undirected graphs. 
 
-A component of the network are distinct maximal connected subgraphs of a network. In the example there are 4 components. Note that in this definition of the component isolated node is also component. In directed network, set of nodes that are reachable from each other is a strongly connected component, while a set of nodes where either i is reachable from j or j is reachable from i is weakly connected component.
+If G is a connected graph with vertex set V and $\bar{d}(u)$ is the average length of the shortest paths from node u, to any other node v in network G.
 
-There are a few particular network structures that are commonly referred to.
-A tree is a connected network that has no cycles.
-A forest is a network such that each component is a tree. Thus any network that
-has no cycles is a forest, as in the example pictured in Figure 2.1.6.
-A particularly prominent forest network is a star. A star is a network such that
-there exists some node i such that every link in the network involves node i. In this
-case i is referred to as the center of the star.
-There are a few facts about trees that are easy to derive (see Exercise 2.2) and
-worth mentioning.
-A connected network is a tree if and only if it has n
-1 links.
-A tree has at least two leaves, where leaves are nodes that have exactly one link.
-In a tree, there is a unique path between any two nodes.
-The complete network is one where all possible links are present, so one where
-where g ij = 1 for all i 6 = j.
+\begin{equation}
+\bar{d}(u) = \frac{1}{|V|-1} \sum_{v\in V, v \notin u} d(u,v)  
+\end{equation}
 
-A circle (also known as a cycle-graph) is a network that has a single cycle and such
-that each node in the network has exactly two neighbors.
-In the case of directed networks, there can be many di¤erent stars involving the
-same set of nodes and having the same center, depending on which directed links are
-present between any two linked nodes. On occasion, it will be useful to distinguish
-between these.
+From there we can define the average path length as mean value over $\bar{d}(u)$.
 
-Eulerian tours and Hamiltonian cycles
+\begin{equation}
+\bar{d}(G) = \frac{1}{|V|}\sum_{u \in V} \bar{d}(u)
+\end{equation}
 
-A walk is said to be closed if it starts and ends at the same node. It is clear that in
-order to have a closed walk that involves every link of a network exactly once it must
-be that each node in the network has an even degree. 39 This follows since each time a
-node is “entered” by one link on the walk it must be “exited”by a di¤erent link, and
-each time the node is visited, it must be by a link that has not appeared previously on
-the walk. Euler’s [?] simple but remarkable theorem is that this condition is necessary
-and su¢ cient for there to exist such a closed walk.
+while the characteristic path length of G is median overall $\bar{d}(u)$.
 
-A connected network g has a closed walk that involves each link ex-
-actly once if and only if the degree of each node is even.
+%Eulerian tours and Hamiltonian cycles
+
+%A walk is said to be closed if it starts and ends at the same node. It is clear that in
+%order to have a closed walk that involves every link of a network exactly once it must
+%be that each node in the network has an even degree. 39 This follows since each time a
+%node is “entered” by one link on the walk it must be “exited”by a di¤erent link, and
+%each time the node is visited, it must be by a link that has not appeared previously on
+%the walk. Euler’s [?] simple but remarkable theorem is that this condition is necessary
+%and su¢ cient for there to exist such a closed walk.
+
+%A connected network g has a closed walk that involves each link ex-%actly once if and only if the degree of each node is even.
 
 
-One can ask a related question for nodes rather than links: when is it possible to
-…nd a closed walk that involves each node in the network exactly once? Such a closed
-walk must be a cycle, and is referred to as a Hamilton Cycle or a Hamiltonian. A
-related question is whether there exists a “Hamilton path”that hits each node exactly
-once. Clearly a network that has a Hamilton cycle has a Hamilton path, while the
-converse is not true (consider a line).
-Discovering whether or not a network has a Hamilton cycle is a much more chal-
-lenging question than whether it has a Euler tour; and this has been an active area
-of research in graph theory for some time. It has direct applications to the “traveling
-salesman problem,”where a salesman must visit each city on a trip exactly once, cities
-are nodes on a network, and the path must follow the links.
-The seminal theorem on Hamilton cycles is due to Dirac [?]. Stronger theorems
-have since been developed, as we shall shortly see, but it is worth stating on its own,
-as it has an intuitive proof that helps one see the paths to proving some of the later.
+%One can ask a related question for nodes rather than links: when is it possible to
+%…nd a closed walk that involves each node in the network exactly once? Such a closed
+%walk must be a cycle, and is referred to as a Hamilton Cycle or a Hamiltonian. A
+%related question is whether there exists a “Hamilton path”that hits each node exactly
+%once. Clearly a network that has a Hamilton cycle has a Hamilton path, while the
+%converse is not true (consider a line).
+%Discovering whether or not a network has a Hamilton cycle is a much more chal-
+%lenging question than whether it has a Euler tour; and this has been an active area
+%of research in graph theory for some time. It has direct applications to the “traveling
+%salesman problem,”where a salesman must visit each city on a trip exactly once, cities
+%are nodes on a network, and the path must follow the links.
+%The seminal theorem on Hamilton cycles is due to Dirac [?]. Stronger theorems
+%have since been developed, as we shall shortly see, but it is worth stating on its own,
+%as it has an intuitive proof that helps one see the paths to proving some of the later.
+
+
+
+
+%The diameter gives us helpful information, it may not be powerful enough to discriminate among graphs. An important metric is considering path length distribution, and the average distance between nodes is helpful for network description.
+
+
+
+
+%There are a few particular network structures that are commonly referred to.
+%A tree is a connected network that has no cycles.
+%A forest is a network such that each component is a tree. Thus any network that
+%has no cycles is a forest, as in the example pictured in Figure 2.1.6.
+%A particularly prominent forest network is a star. A star is a network such that
+%there exists some node i such that every link in the network involves node i. In this
+%case i is referred to as the center of the star.
+%There are a few facts about trees that are easy to derive (see Exercise 2.2) and
+%worth mentioning.
+%A connected network is a tree if and only if it has n
+%1 links.
+%A tree has at least two leaves, where leaves are nodes that have exactly one link.
+%In a tree, there is a unique path between any two nodes.
+%The complete network is one where all possible links are present, so one where
+%where g ij = 1 for all i 6 = j.
+
+   
+
+% 
+
+
+
+
+
+
+
+
+
+
 
 \subsection{Community structure}
 
-\subsection{Core-periphery structure} 
+Thus the ability to find groups or clusters in a network can be a useful tool for revealing structure and organization within networks at a scale larger than that of a single node or a
+few nodes. The occurrence of groups or communities is not limited to social networks.
+Clusters of nodes in a web network, for instance, might indicate groups of
+related web pages. Clusters of nodes in a metabolic network might indicate
+functional units within the network. The ability to find groups also has another practical application: it allows
+us to take a large network and break it apart into smaller subsets that can be
+studied separately. The network in Fig. 14.1 is quite small, but others may be
+much larger, millions of nodes or more, making their analysis and interpreta-
+tion challenging. Breaking such networks into their component clusters is a
+useful technique for reducing them to a manageable size. One example of this
+approach is in network visualization. A network with a million or more nodes
+can rarely be visualized in its entirety, even with the aid of good visualization
+software. Such networks are simply too big to be represented usefully on the
+screen or on paper. If the nodes of the network divide naturally into groups,
+however, then we can make a simpler but still useful picture by representing
+each group as a single node and the connections between groups as edges.
+An example is shown in Fig. 14.2. This simplified representation allows us to
+see the large-scale structure of the network without getting bogged down in
+the details of the individual nodes. If one wanted to see the individual nodes,
+one could then “zoom in” to a single group and look at its internal makeup. The problem of finding groups of nodes in networks is called community
+detection. Simple though it is to describe, community detection turns out to be
+a challenging task, but a number of methods have been developed that return
+good results in practical situations. %Networks Mark Newman
+
+
+\subsection{Core-periphery structure}
+
+Core-periphery structure describes a network whose nodes are divided into two community, densely connected core and less connected periphery. If we consider the average probabilities of edges within each group as $p_{11}$ and $p_{22}$, and between groups $p_{12}$, instead of traditionaly assortative or dissasortative structure we can define core-periphery structure $p_{11}> p_{12} > p_{22}$. In the principle core-periphery structure does not have to be limited to only two groups, and we can define layered, onion, structure. The network can have more cores, that are not directly connected to each other. 
+
+The simple method for finding core-periphery structure is to assume that nodes in core have higher degree in the core than in the periphery. Another simple method is to construct k-cores. K core is group of nodes that each has connection to at least k other members of the group. K-cores form a nested set, and become denser with higher k. The core-periphery structure can be detected optimizing the measure similar to modularity, as defined by Borgatti and Everett. Their goal is to find the division that minimizes the number of edges in the periphery. So they define the score function that is equal to number of edges in the periphery minus the expected number of such edges placed at random. $\rho = \frac{1}{2}\sum_{ij}(A_{ij}-p)g_ig_j$. They used genetic algorithm to minimize this function. 
+
+The another way to detect core-periphery structure is to use the inference method based on fits to a stochastic block model. In this method we fit observed network to a block model with two groups, such that edge-probabilities have form $p_{11}> p_{12} > p_{22}$. The only downside of this model is that method is going to find the structure that optimize likelihood, and we can not say weather it is core-periphery or community structure. 
+
+
+\subsection{Stochastic block model}
+The network or graph is the structure of nodes and edges, where each edge connects two nodes. Nodes can be organized into groups, called communities. Identifying these hidden blocks can lead to interesting insights into the network. However, the community detection problem does not give a precise definition of what a community is. As a consequence, many approaches try to recover such structural patterns in the network \cite{martin}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figures/structures.png}
+	\caption{Stochastic Block model for different networks structures. (a) assortative. (b) dissortative. (c) core-periphery. (d) Erdos Renyi random graph.}
+	\label{fig:SBM}
+\end{figure}
+
+A common definition of a community is that it is densely connected subgraph \cite{userguide}. We can find these subgraphs by optimizing an objective function, such as modularity function. It measures the difference in the number of edges between the given network and the network with the same number of nodes but randomly connected. In this approach, we try to maximize the density of connections inside a group by focusing more on assortative\footnote{Networks where nodes tend to connect with other nodes of a similar degree. Edges are more likely inside blocks than out of them.} group structures. 
+
+Another type of networks is the bipartite network that has two disjoint sets of nodes. The edges exist only between nodes from different sets. Networks of this class can appear in real-world data, such as users-movies preference, collaboration network for scientists and papers, etc. Application of density-based approach requires to first project bipartite network to one of its partitions and then find communities in that projection. With this, some information is lost. On the other hand, the method that is directly applicable to bipartite networks is Stochastic Block model, from which the models considered in this paper are derived. \\
+
+Stochastic block model (SBM) is based on connection probabilities between nodes. It is a generative model which includes existence of communities. Parameters that describe SBM for network G with N nodes are:
+
+\begin{itemize}
+	\item k: number of groups
+	\item group assignment vector, g: $g_i \in\{1,2..k\}$, gives the group index of node $i$.
+	\item SBM matrix, $p_{k \times k}$, whose elements $p_{ij}$ are the probabilities that edges between groups $g_i$ and $g_j$ exist.
+\end{itemize}
+
+Note that nodes within one group have the same connection probabilities.
+
+SBM can generate and describe different types of network structures. Figure \ref{fig:SBM} \cite{userguide} shows how the model matrix corresponds to resulting networks with two communities. First, for the assortative network (\ref{fig:SBM} a), diagonal elements of the matrix have higher probabilities. This indicates dense connections inside the group, just like in classic community structures. In disassortative structure, (\ref{fig:SBM} b), more connections exist between two partitions than inside them, i.e. off-diagonal elements have higher probabilities. Bipartite networks can be represented like this. 
+
+Figure (\ref{fig:SBM} c) shows how the model represents core-periphery networks. Nodes of one block (core) are well connected with itself and with other partition (periphery). From the last case, we can note that SBM with one group is the Erdos Renyi random graph (\ref{fig:SBM} d) because all probabilities inside and between groups are equal.
+
+The benefit of this model is that we can generate many networks with similar group structure. The model can fit real data, which results in finding network communities. For the given network $G$ and number of groups $k$, the best nodes partition $g$ is found by maximizing the likelihood function. Beside inferring communities, SBM has application in prediction of missing links. This simply formulated model has many variants, motivated by specific properties of real data. For example, for networks which are degree heterogeneous, there is degree corrected SBM. In some social networks, users can belong to more than one group, and this can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, hierarchical model, etc. Also, several algorithms for optimization of likelihood function are proposed. The overview of these versions and methods are given in \cite{comparison}. In this paper, we will focus on Single and Mixed Membership SBM applied on bipartite networks.  
+
+
 
 \section{The network analysis}
 
@@ -235,30 +331,7 @@ r = \sum_{kl}kl(e_{kl} - q_lq_k) / \sigma_q^2
 
 where $e_{kl}$ is the probability that randomly selected link connect nodes with degrees $k$ and $l$, $q_k$ is probability that randomly choosen node is connected to node $k$ and equals $q_k = kp_k / \langle k \rangle$, while $\sigma_q$ is variance of the distribution $q_k$. 
 
-\subsection{Distances}
 
-Between two nodes in the network, we can define different paths, but the most important one are the shortest paths. The distance between two nodes $d(i, j)$ is defined as the length of shortest path between two nodes. 
-In the case of weighted networks, is defined such that the path has minimal weight, and the length of such path does not have to be minimal. Distances on the network, again can give us insight how to networks are similar, and to give indication of relative importance of the node in the network. 
-
-The eccentricity of the vertex, gives us how far the farthest vertex is positioned in the network. The radius is minimum over all eccentricity values, while the diameter defines the largest distance between nodes in the network. These definitions apply to directed and undirected graphs. 
-
-The diameter gives us useful information, it may not be powerful enough to discriminate among graphs. An important metric is to consider the distribution of path lengths. The average distance between nodes is useful for network description. 
-
-If G is connected graph with vertex set V and $\bar{d}(u)$ is average length of the shortest paths from node u, to any other node v in network G.
-
-\begin{equation}
-\bar{d}(u) = \frac{1}{|V|-1} \sum_{v\in V, v \notin u} d(u,v)  
-\end{equation}
-
-From there we can define the average path length as mean value over $\bar{d}(u)$.
-
-\begin{equation}
-\bar{d}(G) = \frac{1}{|V|}\sum_{u \in V} \bar{d}(u)
-\end{equation}
-
-
-
- while the characteristic path length of G is median over all $\bar{d}(u)$.
 
 
 \subsection{D-measure}
@@ -279,6 +352,8 @@ J(P_1,.., P_N)) = \sum_{i,j}p_i(j)log(\frac{p_i(j)}{\mu_j})
 \end{equation}
 
 where  $\mu_j = (\sum_{i=1}^N p_i(j))/N$ is mean shortest path distribution. \\
+
+%TEMPORAL NETWORKS JENSEN SHANNON AND 
 
 The first term in equation \ref{eq:dmeasure} compares local differences between two networks, and Jensen-Shannon divergence between $N$ shortest path distributions $J(P_{1},...,P_{N})$ is normed with network diameter $d(G)$. The second part determines global differences, computing  ${J(\mu_{G},\mu_{G^{'}})}$ between mean shortest path distributions. 
 %We consider equally important local and global properties of the networks, and parameter $\omega$ is set to $0.5$. 
