@@ -22,45 +22,45 @@ Warning--I didn't find a database entry for "boccaletti2006"
 Warning--empty journal in latora2017complex
 Warning--empty publisher in caldarelli2007scalefree
 Warning--empty publisher in guide_temporal
-You've used 25 entries,
+You've used 26 entries,
             1791 wiz_defined-function locations,
-            611 strings with 7943 characters,
-and the built_in function-call counts, 5799 in all, are:
-= -- 497
-> -- 290
+            616 strings with 8129 characters,
+and the built_in function-call counts, 5959 in all, are:
+= -- 509
+> -- 301
 < -- 2
-+ -- 107
-- -- 82
-* -- 432
-:= -- 943
-add.period$ -- 77
-call.type$ -- 25
-change.case$ -- 21
++ -- 111
+- -- 85
+* -- 440
+:= -- 973
+add.period$ -- 80
+call.type$ -- 26
+change.case$ -- 22
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 250
-empty$ -- 553
-format.name$ -- 82
-if$ -- 1269
+cite$ -- 29
+duplicate$ -- 258
+empty$ -- 567
+format.name$ -- 85
+if$ -- 1303
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 29
-newline$ -- 129
-num.names$ -- 25
-pop$ -- 63
+int.to.str$ -- 26
+missing$ -- 30
+newline$ -- 134
+num.names$ -- 26
+pop$ -- 66
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 103
+skip$ -- 106
 stack$ -- 0
 substring$ -- 361
-swap$ -- 44
+swap$ -- 45
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 56
-width$ -- 27
-write$ -- 273
+while$ -- 57
+width$ -- 28
+write$ -- 283
 (There were 3 error messages)

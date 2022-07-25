@@ -121,7 +121,16 @@ The density of the network is average degree divided by $N-1$, where $N$ is numb
 
 In the case of regular networks, such as grids, each node has an equal degree, meaning that nodes in the network have similar roles. In the general case, the networks have more complicated structure. If degree sequence is skewed, we are able to identify nodes with high degree, hubs. Removing hubs may partition a connected network into several components. Finally, if we are able to test isomorphism between two graphs, the starting point would be to compare their degree sequences are the same. If they are not same, then graphs can not be isomorphic. \\
 
-To calculate the degree distribution we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. It is the probability , $P(k)$, that randomly chosen node has degree $k$. Similarly, we can order nodes according to their degree and plot the node degree. \\
+To calculate the degree distribution we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. It is the probability , $P(k)$, that randomly chosen node has degree $k$. Similarly, we can order nodes according to their degree and plot the node degree.
+
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.7\textwidth]{codes/test1.pdf}
+%	%figures/methodology/distributions.png}
+%	\caption{Distributions on linear and logarithmic scale.}
+%	\label{fig:dist}
+%\end{figure}
+
 %If degree distribution is present $P(k)$, and the total number of nodes is fixed to $N$. We can construct a graph with random connections. Label N vertices. To node $j$ of the graph ascribe degrees $k_j$, taken from the distribution $P(k)$. Connect at random ends of pairs of distinct quills belonging to distinct vertices. 
 
 If the nodes of the graph are statistically independent, the degree distribution completely determines the properties of a network. Here we summarize the forms of degree distributions that are mostly found in the complex network theory:
@@ -130,18 +139,13 @@ If the nodes of the graph are statistically independent, the degree distribution
 	
 	\item Exponential distribution. $P(k) = e^{-k/ \- k}$. This is degree distribution of the growing random graph. Even for infinite networks all moments of distributions are finite, and have natural scale of the order of average degree.
 	
-	\item In many real networks degree distribution follows a power law. $P(k) = k ^ {-\gamma} $, where $\gamma$ is exponent of the distribution. In this distribution there is no natural scale, so they are called scale-free networks. In infinite networks all higher moments diverge. If the average degree of scale-free networks is finite, than $\gamma$ exponent should be greater than 2. Therefore, real networks have a scale-free structure with the emergence of the hubs \cite{newman2010}. In finite size networks, fat-tailed degree distributions have natural cut-offs. 
+	\item In many real networks degree distribution follows a power law. $P(k) = k ^ {-\gamma} $, where $\gamma$ is exponent of the distribution. In this distribution there is no natural scale, so they are called scale-free networks. In infinite networks all higher moments diverge. If the average degree of scale-free networks is finite, than $\gamma$ exponent should be $\gamma>2$. Therefore, real networks have a scale-free structure with the emergence of the hubs \cite{newman2010}. 
+	%In finite size networks, fat-tailed degree distributions have natural cut-offs. 
 \end{itemize}
 
- \begin{figure}
- 	\centering
- 	\includegraphics[width=0.7\textwidth]{codes/test1.pdf}
- 		%figures/methodology/distributions.png}
- 	\caption{Distributions, ovde hocemo 3 distribucije+ linearna vs. logarithm scala, takodje pokazati kako izgleda frequency order}
- 	\label{fig:dist}
- \end{figure}
 
-When plotting the degree distribution, it is common to use scaling of the axis. We rank the nodes according their degree and plot the node degree of each k-th node. As many nodes have  low degree, like for power-law or exponential distribution it is more useful to use logarithmic scale. Now it is more easily notices that data-points follow straight line, meaning that degree distribution is some kind of exponential function. 
+
+When plotting the degree distribution, it is common to use scaling of the axis. As many nodes have  low degree, like for power-law or exponential distribution it is more useful to use logarithmic scale. Now it is more easily notices that data-points follow straight line, meaning that degree distribution is some kind of exponential function. 
 
 %On the logarithmic scale the distance between two points is proportional to the logarithm of distance between two points, meaning that distance on logarithm scale is same between points 10 and 100, and 100 and 1000.  
 
@@ -302,45 +306,189 @@ The first term in equation \ref{eq:dmeasure} compares local differences between 
 The D-measure ranges from $0$ to $1$. The lower D-measure is, networks are more similar and for D-measure $D = 0$, structures are isomorphic.
 
 %OVDE mozda neka slika d-mere da bude intuitivnije kako radi
-
-
-
-\subsection{Real-world networks}
-Real-world networks share similar properties. The mean distance between nodes is smaller than the number of nodes in the network $l << N$, called small-world phenomena. This cause the fast spread of information or even diseases in the complex systems. In small-world networks number of vertices grow exponentially with distance; thus $l$ increase as $log(n)$ or slower. Logarithmic scaling can be proved from various network models; also, it is observed in real-world complex systems. The clustering coefficient in real-world networks is usually high. Real-world networks have one important feature; power-law degree distribution; such networks are called scale-free networks.
+%\subsection{Real-world networks}
+%Real-world networks share similar properties. The mean distance between nodes is smaller than the number of nodes in the network $l << N$, called small-world phenomena. This cause the fast spread of information or even diseases in the complex systems. In small-world networks number of vertices grow exponentially with distance; thus $l$ increase as $log(n)$ or slower. Logarithmic scaling can be proved from various network models; also, it is observed in real-world complex systems. The clustering coefficient in real-world networks is usually high. Real-world networks have one important feature; power-law degree distribution; such networks are called scale-free networks.
 
 \subsection{Community structure}
 
-Thus the ability to find groups or clusters in a network can be a useful tool for revealing structure and organization within networks at a scale larger than that of a single node or a
-few nodes. The occurrence of groups or communities is not limited to social networks.
-Clusters of nodes in a web network, for instance, might indicate groups of
-related web pages. Clusters of nodes in a metabolic network might indicate
-functional units within the network. The ability to find groups also has another practical application: it allows
-us to take a large network and break it apart into smaller subsets that can be
-studied separately. The network in Fig. 14.1 is quite small, but others may be
-much larger, millions of nodes or more, making their analysis and interpreta-
-tion challenging. Breaking such networks into their component clusters is a
-useful technique for reducing them to a manageable size. One example of this
-approach is in network visualization. A network with a million or more nodes
-can rarely be visualized in its entirety, even with the aid of good visualization
-software. Such networks are simply too big to be represented usefully on the
-screen or on paper. If the nodes of the network divide naturally into groups,
-however, then we can make a simpler but still useful picture by representing
-each group as a single node and the connections between groups as edges.
-An example is shown in Fig. 14.2. This simplified representation allows us to
-see the large-scale structure of the network without getting bogged down in
-the details of the individual nodes. If one wanted to see the individual nodes,
-one could then “zoom in” to a single group and look at its internal makeup. The problem of finding groups of nodes in networks is called community
-detection. Simple though it is to describe, community detection turns out to be
-a challenging task, but a number of methods have been developed that return
-good results in practical situations. %Networks Mark Newman
+Nodes can be organized into groups, called communities. Identifying these hidden blocks can lead to interesting insights into the network. The communities are expected in social networks, as people tend to organize into different groups.  
 
-\subsection{Core-periphery structure}
+However, the community detection problem does not give a precise definition of what a community is. 
 
-Core-periphery structure describes a network whose nodes are divided into two community, densely connected core and less connected periphery. If we consider the average probabilities of edges within each group as $p_{11}$ and $p_{22}$, and between groups $p_{12}$, instead of traditionaly assortative or dissasortative structure we can define core-periphery structure $p_{11}> p_{12} > p_{22}$. In the principle core-periphery structure does not have to be limited to only two groups, and we can define layered, onion, structure. The network can have more cores, that are not directly connected to each other. 
+A common definition of a community is that it is densely connected subgraph \cite{userguide}, \cite{martin}. 
 
-The simple method for finding core-periphery structure is to assume that nodes in core have higher degree in the core than in the periphery. Another simple method is to construct k-cores. K core is group of nodes that each has connection to at least k other members of the group. K-cores form a nested set, and become denser with higher k. The core-periphery structure can be detected optimizing the measure similar to modularity, as defined by Borgatti and Everett. Their goal is to find the division that minimizes the number of edges in the periphery. So they define the score function that is equal to number of edges in the periphery minus the expected number of such edges placed at random. $\rho = \frac{1}{2}\sum_{ij}(A_{ij}-p)g_ig_j$. They used genetic algorithm to minimize this function. 
+In community detection the number of communities is not predefined. The number of possible communities in the network could be large number and we can not analyse all combinations, so we need algorithms to help us to identify potential communities in the network. 
 
-The another way to detect core-periphery structure is to use the inference method based on fits to a stochastic block model. In this method we fit observed network to a block model with two groups, such that edge-probabilities have form $p_{11}> p_{12} > p_{22}$. The only downside of this model is that method is going to find the structure that optimize likelihood, and we can not say weather it is core-periphery or community structure. 
+\textbf{Modularity}
+
+\textbf{Louvain algorithm}
+
+\textbf{Infomap algorithm}
+
+\textbf{Block Stochastic Model}
+
+\textbf{Core-periphery structure}
+
+
+
+%In a randomly wired network the connection pattern between the nodes
+%is expected to be uniform, independent of the network's degree distribu-
+%tion. Consequently these networks are not expected to display systematic
+%local density fluctuations that we could interpret as communities. This ex-
+%pectation inspired the third hypothesis of community organization:
+%This hypothesis has some actionable consequences: By comparing the
+%link density of a community with the link density obtained for the same
+%group of nodes for a randomly rewired network, we could decide if the
+%original community corresponds to a dense subgraph, or its connectivity
+%pattern emerged by chance.
+%In this section we show that systematic deviations from a random con-
+%figuration allow us to define a quantity called modularity, that measures
+%the quality of each partition. Hence modularity allows us to decide if a par-
+%ticular community partition is better than some other one. Finally, modu-
+%larity optimization offers a novel approach to community detection.
+
+%Consider a network with N nodes and L links and a partition into n c
+%communities, each community having N c nodes connected to each other
+%by L c links, where c =1,...,n c . If L c is larger than the expected number of links
+%between the N c nodes given the network’s degree sequence, then the nodes
+%of the subgraph C c could indeed be part of a true community, as expected
+%based on the Density Hypothesis H2 (Figure 9.2). We therefore measure the
+%difference between the network’s real wiring diagram (A ij ) and the expect-
+%ed number of links between i and j if the network is randomly wired (p ij ),
+
+$$M_c = \frac{1}{2L}\sum(A_{ij}-p_{ij})$$
+
+%Here p ij can be determined by randomizing the original network, while
+%keeping the expected degree of each node unchanged. Using the degree preserving null %model (7.1) we have
+
+$$p_{ij} = \frac{k_ik_j}{2L}$$
+
+%If M c is positive, then the subgraph C c has more links than expected by
+%chance, hence it represents a potential community. If Mc is zero then the connectivity between the N nodes is random, fully explained by distribution. Finally, if M c is negative, then the nodes of C c do not form acommunity.
+
+%To generalize these ideas to a full network consider the complete par-
+%tition that breaks the network into n c communities. To see if the local link
+%density of the subgraphs defined by this partition differs
+%from the expected density in a randomly wired network, we define the partition’s modularity by summing (9.11) over all n c communities [23]
+
+$$M=\sum_{c=1}^{n} [\frac{L_c}{L} - (\frac{k_c}{2L})^2]$$
+
+%Modularity has several key properties:
+%• Higher Modularity Implies Better Partition
+%• Zero and Negative Modularity
+%By taking the whole network as a single community we obtain M=0, as
+%in this case the two terms in the parenthesis of (9.12) are equal (Figure
+%9.16c). If each node belongs to a separate community, we have L c =0
+%and the sum (9.12) has n c negative terms, hence M is negative.
+
+%We can use modularity to decide which of the many partitions predicted by a hierarchical method offers the best community structure, selecting the one for which M is maximal. This is illustrated in Figure 9.12f, which shows M for each cut of the dendrogram, finding a clear maximum when the networks breaks into three communities. 
+
+%The maximum modularity hypothesis is the starting point of several community detection algorithms, each seeking the partition with the largest modularity. In principle we could identify the best partition by checking M for all possible partitions, selecting the one for which M is largest. Given, however, the exceptionally large number of partitions, this brute force approach is computationally not feasible. Next we discuss an algo- rithm that finds partitions with close to maximal M, while bypassing the need to inspect all partitions. 
+
+%Greedy Algorithm. The first modularity maximization algorithm, proposed by Newman [33], iteratively joins pairs of communities if the move increases the partition's modularity. The algorithm follows these steps: 1. Assign each node to a community of its own, starting with N communities of single nodes. 2. Inspect each community pair connected by at least one link and compute the modularity difference dM obtained if we merge them. Identify the community pair for which dM is the largest and merge them. Note that modularity is always calculated for the full network. 3. Repeat Step 2 until all nodes merge into a single community, re- cording M for each step. 4. Select the partition for which M is maximal.
+
+
+%In summary, modularity offers a first principle understanding of a network's community structure. Indeed, (9.16) incorporates in a compact form a number of essential questions, like what we mean by a community, how we choose the appropriate null model, and how we measure the goodness of a particular partition. Consequently modularity optimization plays a t the same time, modularity has several well-known limitations: First, it forces together small weakly connected communities. Second, networks lack a clear modularity maxima, developing instead a modularity plateau containing many partitions with hard to distinguish modularity. This plateau explains why numerous modularity maximization algorithms can rapidly identify a high M partition: They identify one of the numerous partitions with close to optimal M. Finally, analytical calculations and numerical simulations indicate that even random networks contain high modularity partitions, at odds with the random hypothesis H3 that motivated the concept of modularity [41-43].  Modularity optimization is a special case of a larger problem: Finding communities by optimizing some quality function Q. The greedy algorithm and the Louvain algorithm described in ADVANCED TOPICS 9.C assume that Q = M, seeking partitions with maximal modularity. In ADVANCED TOPICS 9.C we also describe the Infomap algorithm, that finds communities by min- imizing the map equation L, an entropy-based measure of the partition quality [44-46].
+
+%\textbf{Louvian}
+%The O(N 2 ) computational complexity of the greedy algorithm can be
+%prohibitive for very large networks. A modularity optimization algorithm
+%with better scalability was proposed by Blondel and collaborators [2]. The
+%Louvain algorithm consists of two steps that are repeated iteratively (Figure
+%9.37):
+
+%Start with a weighted network of N nodes, initially assigning each node to a different community. For each node i we evaluate the gain in mod- ularity if we place node i in the community of one of its neighbors j. We then move node i in the community for which the modularity gain is the largest, but only if this gain is positive. If no positive gain is found, istays in its original community. This process is applied to all nodes until no further improvement can be achieved, completing Step I.
+
+%We construct a new network whose nodes are the communities iden-
+%tified during Step I. The weight of the link between two nodes is the
+%sum of the weight of the links between the nodes in the correspond-
+%ing communities. Links between nodes of the same community lead to
+%weighted self-loops.
+%Once Step II is completed, we repeat Steps I - II, calling their combi-
+%nation a pass (Figure 9.37). The number of communities decreases with
+%each pass. The passes are repeated until there are no more changes and
+%maximum modularity is attained.
+
+%\textbf{Infomap}
+%ntroduced by Martin Rosvall and Carl T Bergstrom, Infomap exploits
+%data compression for community identification (Figure 9.38) [44-46]. It does
+%it by optimizing a quality function for community detection in directed
+%and weighted networks, called the map equation.
+%Consider a network partitioned into n c communities. We wish to encode
+%in the most efficient fashion the trajectory of a random walker on this net-
+%work. In other words, we want to describe the trojectory with the smallest
+%number of symbols. The ideal code should take advantage of the fact that
+%the random walker tends to get trapped into communities, staying there
+%for a long time (Figure 9.38c).
+%To achieve this coding we assign:
+
+%One code to each community (index codebook). For example the pur-
+%ple community in Figure 9.38c is assigned the code 111. 
+%Codewords for each node within each community. For example the
+%top left node in (c) is assigned 001. Note that the same node code can
+%be reused in different communities.
+%• Exit codes that mark when the walker leavers a community, like 0001
+%for the purple community in (c).
+%The goal, therefore, is to build a code that offers the shortest description
+%of the random walk. Once we have this code, we can identify the network's
+%community structure by reading the index codebook, which is uniquely assigned to each community
+
+%In a nutshell, the first term of (9.45) gives the average number of bits neces-
+%ary to describe the movement between communities where q is the prob-
+%nline Resource 9.3
+%Map Equation for Infomap
+%For a dynamic visualization of the mechanism
+%behind the map equation, see http://www.
+%tp.umu. se/~rosvall/livemod/mapequation/.
+%ability that the random walker switches communities during a given step.
+%The second term gives the average number of bits necessary to describe
+%movement within communities. Here H(P c ) is the entropy of within-com-
+%munity movements — including an “exit code” to capture the departure
+%from a community i.
+%The specific terms of the maps equation and their calculation in terms of
+%the probabilities capturing the movement of a random walker on a net-
+%work, is somewhat involved. They are described in detail in Ref [44-46].
+%Online Resource 9.3 offers an interactive tool to illustrate the mechanism be-
+%hind (9.45) and its use.
+%At the end L serves as a quality function, that takes up a specific value
+%for a particular partition of the network into communities. To find the best
+%partition, we must minimize L over all possible partitions. The popular im-
+%plementation of this optimization procedure follows Steps I and II of the
+%Louvain algorithm: We assign each node to a separate community, and we
+%systematically join neighboring nodes into modules if the move decreases
+%L. After each move L is updated using (9.45). The obtained communities are
+%joined into supercommunities, finishing a pass, after which the algorithm
+%is restarted on the new, reduced network.
+
+
+
+%We can find these subgraphs by optimizing an objective function, such as modularity function. It measures the difference in the number of edges between the given network and the network with the same number of nodes but randomly connected. In this approach, we try to maximize the density of connections inside a group by focusing more on assortative group structures. Networks where nodes tend to connect with other nodes of a similar degree. Edges are more likely inside blocks than out of them. 
+
+%Another type of networks is the bipartite network that has two disjoint sets of nodes. The edges exist only between nodes from different sets. Networks of this class can appear in real-world data, such as users-movies preference, collaboration network for scientists and papers, etc. Application of density-based approach requires to first project bipartite network to one of its partitions and then find communities in that projection. With this, some information is lost. On the other hand, the method that is directly applicable to bipartite networks is Stochastic Block model, from which the models considered in this paper are derived. \\
+
+\textbf{Core-periphery} structure describes a network whose nodes are divided into two community, densely connected core and less connected periphery. If we consider the average probabilities of edges within each group as $p_{11}$ and $p_{22}$, and between groups $p_{12}$, instead of traditionaly assortative or dissasortative structure we can define core-periphery structure $p_{11}> p_{12} > p_{22}$. In the principle core-periphery structure does not have to be limited to only two groups, and we can define layered, onion, structure. The network can have more cores, that are not directly connected to each other. 
+
+The simple method for finding core-periphery structure is to assume that nodes in core have higher degree in the core than in the periphery. Another simple method is to construct k-cores. K core is group of nodes that each has connection to at least k other members of the group. K-cores form a nested set, and become denser with higher k. The core-periphery structure can be detected optimizing the measure similar to modularity, as defined by Borgatti and Everett. Their goal is to find the division that minimizes the number of edges in the periphery. So they define the score function that is equal to number of edges in the periphery minus the expected number of such edges placed at random. $\rho = \frac{1}{2}\sum_{ij}(A_{ij}-p)g_ig_j$.
+
+The another way to detect core-periphery structure is to use the inference method based on fits to a stochastic block model. In this method we fit observed network to a block model with two groups, such that edge-probabilities have form $p_{11}> p_{12} > p_{22}$.
+
+\textbf{SBM} is model where each node, in given network G,  belongs to one of $B$ blocks. Vector $\theta_i = r$ indicates that node $i$ is in block $r$, while SBM matrix $\{p\}_{BxB}$, specify the probability $p_{rs}$ that nodes from group $r$ are connected to nodes in group $s$. The SBM model is looking for the most probable model that can reproduce a given network G. Probability of having model parameters $\theta, p$ given network $G$ is proportional to likelihood of generating network $G$, prior of SBM matrix and prior on block assignments:
+
+\begin{equation}
+P(\theta, p| G) = P(G | \theta , p) P(p) P(\theta) 
+\end{equation}
+
+\begin{equation}
+P(G | \theta , p) = \prod_{i<j} p_{r_is_j}^{A_{ij}}(1-p_{r_is_j})^{1-A_{ij}}  
+\end{equation}
+
+where $A_{ij}$ is number of edges between nodes $i$ and $j$. 
+
+Prior on p is modified for core-periphery model such that $P(p) = 3!I_{0<p_{22}<p_{12}<p_{11}<1}$, while prior on $\theta $ consists of three parts: probability of having $l$ blocks; given the number of layers probability $P(n|l)$ of having groups of sizes ${n_1..n_l}$ and the probability $P(\theta|n)$ of having particular assignments of nodes to blocks. 
+
+For fitting model in the work \cite{gallagher2020clarified} authors use Metropolis-within-Gibbs algorithm.
+The likelihood of SBM model increase with number of blocks and model itself does not define optimal number of communities. Inferring minimum description length
+of the model is one approach to decide which model is more likely.   
 
 
 \section{Network models}
@@ -541,19 +689,13 @@ As before, depending on model parameters network evolves to different structures
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=0.5\linewidth]{Figures/diagram.png}
+	\includegraphics[width=0.6\linewidth]{Figures/diagram.png}
 	\caption{Phase diagram of aging network model}
 	\label{fig:diagram}
 \end{figure}
 
 \subsection{Stochastic block model}
-%The network or graph is the structure of nodes and edges, where each edge connects two nodes. Nodes can be organized into groups, called communities. Identifying these hidden blocks can lead to interesting insights into the network. However, the community detection problem does not give a precise definition of what a community is. As a consequence, many approaches try to recover such structural patterns in the network \cite{martin}.
 
-
-
-%A common definition of a community is that it is densely connected subgraph \cite{userguide}. We can find these subgraphs by optimizing an objective function, such as modularity function. It measures the difference in the number of edges between the given network and the network with the same number of nodes but randomly connected. In this approach, we try to maximize the density of connections inside a group by focusing more on assortative\footnote{Networks where nodes tend to connect with other nodes of a similar degree. Edges are more likely inside blocks than out of them.} group structures. 
-
-%Another type of networks is the bipartite network that has two disjoint sets of nodes. The edges exist only between nodes from different sets. Networks of this class can appear in real-world data, such as users-movies preference, collaboration network for scientists and papers, etc. Application of density-based approach requires to first project bipartite network to one of its partitions and then find communities in that projection. With this, some information is lost. On the other hand, the method that is directly applicable to bipartite networks is Stochastic Block model, from which the models considered in this paper are derived. \\
 
 Stochastic block model (SBM) is based on connection probabilities between nodes. It is a generative model which includes existence of communities. Parameters that describe SBM for network G with N nodes are:
 
@@ -571,17 +713,14 @@ Figure (\ref{fig:SBM} c) shows how the model represents core-periphery networks.
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Figures/structures.png}
+	\includegraphics[width=0.8\textwidth]{Figures/structures.png}
 	\caption{Stochastic Block model for different networks structures. (a) assortative. (b) dissortative. (c) core-periphery. (d) Erdos Renyi random graph.}
 	\label{fig:SBM}
 \end{figure}
 
-
-
 The benefit of this model is that we can generate many networks with similar group structure. The model can fit real data, which results in finding network communities. For the given network $G$ and number of groups $k$, the best nodes partition $g$ is found by maximizing the likelihood function. Beside inferring communities, SBM has application in prediction of missing links. This simply formulated model has many variants, motivated by specific properties of real data. For example, for networks which are degree heterogeneous, there is degree corrected SBM. In some social networks, users can belong to more than one group, and this can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, hierarchical model, etc. Also, several algorithms for optimization of likelihood function are proposed. The overview of these versions and methods are given in \cite{comparison}. 
 
 
-\newpage
 \section{The properties of probability distributions}
 
 \subsection{Poisson distribution}

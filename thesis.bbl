@@ -85,11 +85,11 @@ Mikko Kivelä, Alex Arenas, Marc Barthelemy, James~P. Gleeson, Yamir Moreno,
 \newblock {Multilayer networks}.
 \newblock {\em Journal of Complex Networks}, 2(3):203--271, 07 2014.
 
-\bibitem{martin}
-Martin Rosvall, Jean{-}Charles Delvenne, Michael~T. Schaub, and Renaud
-  Lambiotte.
-\newblock Different approaches to community detection.
-\newblock {\em CoRR}, abs/1712.06468, 2017.
+\bibitem{tiago2}
+Tiago~A Schieber, Laura Carpi, Albert D{\'\i}az-Guilera, Panos~M Pardalos,
+  Cristina Masoller, and Mart{\'\i}n~G Ravetti.
+\newblock Quantification of network structural dissimilarities.
+\newblock {\em Nature communications}, 8(1):1--10, 2017.
 
 \bibitem{userguide}
 Santo Fortunato and Darko Hric.
@@ -97,22 +97,27 @@ Santo Fortunato and Darko Hric.
 \newblock {\em Physics Reports}, 659:1 -- 44, 2016.
 \newblock Community detection in networks: A user guide.
 
-\bibitem{comparison}
-Thorben Funke and Till Becker.
-\newblock Stochastic block models: A comparison of variants and inference
-  methods.
-\newblock {\em PLOS ONE}, 14(4):1--40, 04 2019.
+\bibitem{martin}
+Martin Rosvall, Jean{-}Charles Delvenne, Michael~T. Schaub, and Renaud
+  Lambiotte.
+\newblock Different approaches to community detection.
+\newblock {\em CoRR}, abs/1712.06468, 2017.
 
-\bibitem{tiago2}
-Tiago~A Schieber, Laura Carpi, Albert D{\'\i}az-Guilera, Panos~M Pardalos,
-  Cristina Masoller, and Mart{\'\i}n~G Ravetti.
-\newblock Quantification of network structural dissimilarities.
-\newblock {\em Nature communications}, 8(1):1--10, 2017.
+\bibitem{gallagher2020clarified}
+Ryan~J Gallagher, Jean-Gabriel Young, and Brooke~Foucault Welles.
+\newblock A clarified typology of core-periphery structure in networks.
+\newblock {\em arXiv preprint arXiv:2005.10191}, 2020.
 
 \bibitem{hajra2004}
 Kamalika~Basu Hajra and Parongama Sen.
 \newblock Phase transitions in an aging network.
 \newblock {\em Physical Review E}, 70(5):056103, 2004.
+
+\bibitem{comparison}
+Thorben Funke and Till Becker.
+\newblock Stochastic block models: A comparison of variants and inference
+  methods.
+\newblock {\em PLOS ONE}, 14(4):1--40, 04 2019.
 
 \bibitem{mitzenmacher2004brief}
 Michael Mitzenmacher.

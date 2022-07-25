@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.4)  25 JUL 2022 17:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.9)  25 JUL 2022 22:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -875,18 +875,18 @@ Non-PDF special ignored!
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<Figures/Konigsberg_bridges.png, id=155, 303.1325pt x 238.8925pt>
+<Figures/Konigsberg_bridges.png, id=147, 303.1325pt x 238.8925pt>
 File: Figures/Konigsberg_bridges.png Graphic file (type png)
 <use Figures/Konigsberg_bridges.png>
 Package pdftex.def Info: Figures/Konigsberg_bridges.png  used on input line 18.
 
 (pdftex.def)             Requested size: 145.11053pt x 114.36089pt.
-<Figures/Konigsberg_graph.png, id=156, 501.875pt x 401.5pt>
+<Figures/Konigsberg_graph.png, id=148, 501.875pt x 401.5pt>
 File: Figures/Konigsberg_graph.png Graphic file (type png)
 <use Figures/Konigsberg_graph.png>
 Package pdftex.def Info: Figures/Konigsberg_graph.png  used on input line 19.
 (pdftex.def)             Requested size: 145.11053pt x 116.08893pt.
-<figures/methodology/directed_graph.pdf, id=161, 597.50786pt x 421.10078pt>
+<figures/methodology/directed_graph.pdf, id=153, 597.50786pt x 421.10078pt>
 File: figures/methodology/directed_graph.pdf Graphic file (type pdf)
 <use figures/methodology/directed_graph.pdf>
 Package pdftex.def Info: figures/methodology/directed_graph.pdf  used on input 
@@ -896,7 +896,7 @@ line 41.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/methodology/multi_graph.pdf, id=165, 421.10078pt x 298.75392pt>
+<figures/methodology/multi_graph.pdf, id=157, 421.10078pt x 298.75392pt>
 File: figures/methodology/multi_graph.pdf Graphic file (type pdf)
 <use figures/methodology/multi_graph.pdf>
 Package pdftex.def Info: figures/methodology/multi_graph.pdf  used on input lin
@@ -917,7 +917,7 @@ h.pdf
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/methodology/multi_graph.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<figures/methodology/bipartite_graph.pdf, id=207, 597.50786pt x 421.10078pt>
+<figures/methodology/bipartite_graph.pdf, id=199, 597.50786pt x 421.10078pt>
 File: figures/methodology/bipartite_graph.pdf Graphic file (type pdf)
 <use figures/methodology/bipartite_graph.pdf>
 Package pdftex.def Info: figures/methodology/bipartite_graph.pdf  used on input
@@ -929,7 +929,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--73
  []
 
 [4 <./figures/methodology/bipartite_graph.pdf>]
-<figures/methodology/temporal_network.pdf, id=218, 597.50786pt x 341.43306pt>
+<figures/methodology/temporal_network.pdf, id=210, 597.50786pt x 341.43306pt>
 File: figures/methodology/temporal_network.pdf Graphic file (type pdf)
 <use figures/methodology/temporal_network.pdf>
 Package pdftex.def Info: figures/methodology/temporal_network.pdf  used on inpu
@@ -948,151 +948,165 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--126
-
- []
-
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
-29.
+38.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-<codes/test1.pdf, id=243, 845.04686pt x 597.50786pt>
-File: codes/test1.pdf Graphic file (type pdf)
-<use codes/test1.pdf>
-Package pdftex.def Info: codes/test1.pdf  used on input line 138.
-(pdftex.def)             Requested size: 338.58632pt x 239.40005pt.
- [6]
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+[6]
+
+LaTeX Warning: Citation `boccaletti2006' on page 7 undefined on input line 170.
+
+
+
+LaTeX Warning: Citation `boccaletti2006' on page 7 undefined on input line 170.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
 
-LaTeX Warning: Citation `boccaletti2006' on page 7 undefined on input line 166.
-
-
-
-LaTeX Warning: Citation `boccaletti2006' on page 7 undefined on input line 166.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
-[7 <./codes/test1.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 498--499
 
  []
 
-
-Underfull \vbox (badness 4913) has occurred while \output is active []
-
- [10]
-<figures/methodology/ERgraph.pdf, id=331, 686.565pt x 249.77315pt>
+<figures/methodology/ERgraph.pdf, id=268, 686.565pt x 249.77315pt>
 File: figures/methodology/ERgraph.pdf Graphic file (type pdf)
 <use figures/methodology/ERgraph.pdf>
-Package pdftex.def Info: figures/methodology/ERgraph.pdf  used on input line 36
-1.
+Package pdftex.def Info: figures/methodology/ERgraph.pdf  used on input line 50
+9.
 (pdftex.def)             Requested size: 435.32422pt x 158.36787pt.
 
-[11 <./figures/methodology/ERgraph.pdf>]
-<figures/methodology/ER_dist.pdf, id=357, 628.25824pt x 347.3324pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10]
+<figures/methodology/ER_dist.pdf, id=276, 628.25824pt x 347.3324pt>
 File: figures/methodology/ER_dist.pdf Graphic file (type pdf)
 <use figures/methodology/ER_dist.pdf>
-Package pdftex.def Info: figures/methodology/ER_dist.pdf  used on input line 39
-7.
+Package pdftex.def Info: figures/methodology/ER_dist.pdf  used on input line 54
+5.
 (pdftex.def)             Requested size: 435.32422pt x 240.66658pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
 
  []
 
-[12 <./figures/methodology/ER_dist.pdf>]
-<figures/methodology/ws_graph.png, id=408, 885.3075pt x 287.0725pt>
+[11 <./figures/methodology/ERgraph.pdf>]
+<figures/methodology/ws_graph.png, id=304, 885.3075pt x 287.0725pt>
 File: figures/methodology/ws_graph.png Graphic file (type png)
 <use figures/methodology/ws_graph.png>
-Package pdftex.def Info: figures/methodology/ws_graph.png  used on input line 4
-21.
+Package pdftex.def Info: figures/methodology/ws_graph.png  used on input line 5
+69.
 (pdftex.def)             Requested size: 435.32422pt x 141.16173pt.
- [13 <./figures/methodology/ws_graph.png>] [14]
-<figures/aging_nets.png, id=424, 818.30719pt x 260.47313pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12 <./figures/methodology/ER_dist.pdf>] [13 <./figures/methodology/ws_graph.pn
+g>] [14]
+<figures/aging_nets.png, id=370, 818.30719pt x 260.47313pt>
 File: figures/aging_nets.png Graphic file (type png)
 <use figures/aging_nets.png>
-Package pdftex.def Info: figures/aging_nets.png  used on input line 518.
+Package pdftex.def Info: figures/aging_nets.png  used on input line 666.
 (pdftex.def)             Requested size: 483.69687pt x 153.96794pt.
- [15]
-<Figures/diagram.png, id=436, 470.4777pt x 344.0052pt>
+<Figures/diagram.png, id=373, 470.4777pt x 344.0052pt>
 File: Figures/diagram.png Graphic file (type png)
 <use Figures/diagram.png>
-Package pdftex.def Info: Figures/diagram.png  used on input line 544.
-(pdftex.def)             Requested size: 241.84843pt x 176.83658pt.
- [16 <./figures/aging_nets.png> <./Figures/diagram.png>]
-<Figures/structures.png, id=452, 699.36281pt x 392.21532pt>
+Package pdftex.def Info: Figures/diagram.png  used on input line 692.
+(pdftex.def)             Requested size: 290.22107pt x 212.20494pt.
+ [15 <./figures/aging_nets.png>]
+<Figures/structures.png, id=390, 699.36281pt x 392.21532pt>
 File: Figures/structures.png Graphic file (type png)
 <use Figures/structures.png>
-Package pdftex.def Info: Figures/structures.png  used on input line 574.
-(pdftex.def)             Requested size: 241.84843pt x 135.6316pt.
- [17 <./Figures/structures.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 612--613
+Package pdftex.def Info: Figures/structures.png  used on input line 716.
+(pdftex.def)             Requested size: 386.95897pt x 217.01776pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16 <./Figures/diagram.png>] [17 <./Figures/structures.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 751--752
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 666--667
+Underfull \hbox (badness 10000) in paragraph at lines 805--806
 
  []
 
-[19] [20] [21] [22] [23] [24] [25pdfTeX warning (ext4): destination with the sa
-me identifier (name{equation.1.7.32}) has been already used, duplicate ignored
+[19] [20] [21] [22] [23] [24]pdfTeX warning (ext4): destination with the same i
+dentifier (name{equation.1.7.34}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1018 \begin{equation}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{equation.1.7.34}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1018 \begin{equation}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{equation.1.7.34}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1018 \begin{equation}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{equation.1.7.34}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1018 \begin{equation}
+                        [25]
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.896 
-      ] [26]
+LaTeX Warning: Reference `fig:paper_summary' on page 26 undefined on input line
+ 1063.
 
-LaTeX Warning: Reference `fig:paper_summary' on page 27 undefined on input line
- 924.
-
-) [27] (./thesis.bbl [28
-
-
-]
+) [26] (./thesis.bbl
 bibitemlist
-[29]) [30]
+[27
+
+
+]) [28]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
  (./thesis.aux (./Chapters/Chapter_Methodology.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9BD1BF29E5568671FABF50C0E6DD456A;2395.
+(rerunfilecheck)             Checksum: 649D841BD21589836E44B6A5DAB7D322;2244.
 
 
 LaTeX Warning: There were undefined references.
@@ -1103,12 +1117,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
  ) 
 Here is how much of TeX's memory you used:
- 14057 strings out of 483183
- 209578 string characters out of 5966293
- 548348 words of memory out of 5000000
- 28450 multiletter control sequences out of 15000+600000
+ 14042 strings out of 483107
+ 209369 string characters out of 5964631
+ 548369 words of memory out of 5000000
+ 28448 multiletter control sequences out of 15000+600000
  580098 words of font info for 248 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
+ 59 hyphenation exceptions out of 8191
  34i,17n,42p,2675b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
@@ -1120,10 +1134,10 @@ hpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (30 pages, 791958 bytes).
+Output written on thesis.pdf (28 pages, 740775 bytes).
 PDF statistics:
- 609 PDF objects out of 1000 (max. 8388607)
- 480 compressed objects within 5 object streams
- 136 named destinations out of 1000 (max. 500000)
- 23882 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 544 PDF objects out of 1000 (max. 8388607)
+ 435 compressed objects within 5 object streams
+ 134 named destinations out of 1000 (max. 500000)
+ 23861 words of extra memory for PDF output out of 24883 (max. 10000000)
 
