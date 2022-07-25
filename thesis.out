@@ -2,32 +2,32 @@
 \BOOKMARK [1][-]{section.1.1}{Complex networks}{chapter.1}% 2
 \BOOKMARK [1][-]{section.1.2}{Types of networks}{chapter.1}% 3
 \BOOKMARK [1][-]{section.1.3}{The structure of complex networks}{chapter.1}% 4
-\BOOKMARK [2][-]{subsection.1.3.1}{Community structure}{section.1.3}% 5
-\BOOKMARK [2][-]{subsection.1.3.2}{Core-periphery structure}{section.1.3}% 6
-\BOOKMARK [2][-]{subsection.1.3.3}{Stochastic block model}{section.1.3}% 7
-\BOOKMARK [1][-]{section.1.4}{The network analysis}{chapter.1}% 8
-\BOOKMARK [2][-]{subsection.1.4.1}{Degree distribution}{section.1.4}% 9
-\BOOKMARK [2][-]{subsection.1.4.2}{Degree correlations}{section.1.4}% 10
-\BOOKMARK [2][-]{subsection.1.4.3}{D-measure}{section.1.4}% 11
-\BOOKMARK [2][-]{subsection.1.4.4}{Clustering coefficient}{section.1.4}% 12
-\BOOKMARK [2][-]{subsection.1.4.5}{Real-world networks}{section.1.4}% 13
-\BOOKMARK [1][-]{section.1.5}{Network models}{chapter.1}% 14
-\BOOKMARK [2][-]{subsection.1.5.1}{Random network model}{section.1.5}% 15
-\BOOKMARK [2][-]{subsection.1.5.2}{Small-world networks}{section.1.5}% 16
-\BOOKMARK [2][-]{subsection.1.5.3}{Barab\341si-Albert model}{section.1.5}% 17
-\BOOKMARK [2][-]{subsection.1.5.4}{Nonlinear preferential attachment model}{section.1.5}% 18
-\BOOKMARK [2][-]{subsection.1.5.5}{Ageing model}{section.1.5}% 19
-\BOOKMARK [1][-]{section.1.6}{The properties of probability distributions}{chapter.1}% 20
-\BOOKMARK [2][-]{subsection.1.6.1}{Poisson distribution}{section.1.6}% 21
-\BOOKMARK [2][-]{subsection.1.6.2}{Power law}{section.1.6}% 22
-\BOOKMARK [2][-]{subsection.1.6.3}{Lognormal distribution}{section.1.6}% 23
-\BOOKMARK [2][-]{subsection.1.6.4}{Power law with exponential cutoff}{section.1.6}% 24
-\BOOKMARK [2][-]{subsection.1.6.5}{Streched exponential}{section.1.6}% 25
-\BOOKMARK [2][-]{subsection.1.6.6}{Plotting the fat-tailed distributions}{section.1.6}% 26
-\BOOKMARK [2][-]{subsection.1.6.7}{The goodness-of-fit}{section.1.6}% 27
-\BOOKMARK [1][-]{section.1.7}{Multiplicative processes}{chapter.1}% 28
-\BOOKMARK [1][-]{section.1.8}{Fractal analysis}{chapter.1}% 29
-\BOOKMARK [2][-]{subsection.1.8.1}{Detrended fluctuation analysis}{section.1.8}% 30
-\BOOKMARK [2][-]{subsection.1.8.2}{Multifractality of the signals}{section.1.8}% 31
-\BOOKMARK [1][-]{section.1.9}{Dynamical reputation model}{chapter.1}% 32
+\BOOKMARK [2][-]{subsection.1.3.1}{Degree distribution}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{Degree correlations}{section.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.3.3}{Clustering coefficient}{section.1.3}% 7
+\BOOKMARK [2][-]{subsection.1.3.4}{Network paths}{section.1.3}% 8
+\BOOKMARK [2][-]{subsection.1.3.5}{D-measure}{section.1.3}% 9
+\BOOKMARK [2][-]{subsection.1.3.6}{Real-world networks}{section.1.3}% 10
+\BOOKMARK [2][-]{subsection.1.3.7}{Community structure}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.8}{Core-periphery structure}{section.1.3}% 12
+\BOOKMARK [1][-]{section.1.4}{Network models}{chapter.1}% 13
+\BOOKMARK [2][-]{subsection.1.4.1}{Random network model}{section.1.4}% 14
+\BOOKMARK [2][-]{subsection.1.4.2}{Small-world networks}{section.1.4}% 15
+\BOOKMARK [2][-]{subsection.1.4.3}{Barab\341si-Albert model}{section.1.4}% 16
+\BOOKMARK [2][-]{subsection.1.4.4}{Nonlinear preferential attachment model}{section.1.4}% 17
+\BOOKMARK [2][-]{subsection.1.4.5}{Ageing model}{section.1.4}% 18
+\BOOKMARK [2][-]{subsection.1.4.6}{Stochastic block model}{section.1.4}% 19
+\BOOKMARK [1][-]{section.1.5}{The properties of probability distributions}{chapter.1}% 20
+\BOOKMARK [2][-]{subsection.1.5.1}{Poisson distribution}{section.1.5}% 21
+\BOOKMARK [2][-]{subsection.1.5.2}{Power law}{section.1.5}% 22
+\BOOKMARK [2][-]{subsection.1.5.3}{Lognormal distribution}{section.1.5}% 23
+\BOOKMARK [2][-]{subsection.1.5.4}{Power law with exponential cutoff}{section.1.5}% 24
+\BOOKMARK [2][-]{subsection.1.5.5}{Streched exponential}{section.1.5}% 25
+\BOOKMARK [2][-]{subsection.1.5.6}{Plotting the fat-tailed distributions}{section.1.5}% 26
+\BOOKMARK [2][-]{subsection.1.5.7}{The goodness-of-fit}{section.1.5}% 27
+\BOOKMARK [1][-]{section.1.6}{Multiplicative processes}{chapter.1}% 28
+\BOOKMARK [1][-]{section.1.7}{Fractal analysis}{chapter.1}% 29
+\BOOKMARK [2][-]{subsection.1.7.1}{Detrended fluctuation analysis}{section.1.7}% 30
+\BOOKMARK [2][-]{subsection.1.7.2}{Multifractality of the signals}{section.1.7}% 31
+\BOOKMARK [1][-]{section.1.8}{Dynamical reputation model}{chapter.1}% 32
 \BOOKMARK [0][-]{chapter*.1}{Bibliography}{}% 33
