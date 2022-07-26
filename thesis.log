@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.9)  25 JUL 2022 22:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  26 JUL 2022 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -345,35 +345,414 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/ot2enc.def
+File: ot2enc.def 2001/08/11 v3.3a Cyrillic encoding definition file
+Now handling font encoding OT2 ...
+... processing UTF-8 mapping file for font encoding OT2
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot2enc.dfu
+File: ot2enc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0402 (decimal 1026)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0404 (decimal 1028)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+0409 (decimal 1033)
+   defining Unicode char U+040A (decimal 1034)
+   defining Unicode char U+040B (decimal 1035)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040F (decimal 1039)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0452 (decimal 1106)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0454 (decimal 1108)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+0459 (decimal 1113)
+   defining Unicode char U+045A (decimal 1114)
+   defining Unicode char U+045B (decimal 1115)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045F (decimal 1119)
+   defining Unicode char U+0462 (decimal 1122)
+   defining Unicode char U+0463 (decimal 1123)
+   defining Unicode char U+0472 (decimal 1138)
+   defining Unicode char U+0473 (decimal 1139)
+   defining Unicode char U+0474 (decimal 1140)
+   defining Unicode char U+0475 (decimal 1141)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+2116 (decimal 8470)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2aenc.def
+File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
+Now handling font encoding T2A ...
+... processing UTF-8 mapping file for font encoding T2A
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t2aenc.dfu
+File: t2aenc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0402 (decimal 1026)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0404 (decimal 1028)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0407 (decimal 1031)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+0409 (decimal 1033)
+   defining Unicode char U+040A (decimal 1034)
+   defining Unicode char U+040B (decimal 1035)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040E (decimal 1038)
+   defining Unicode char U+040F (decimal 1039)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0452 (decimal 1106)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0454 (decimal 1108)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0457 (decimal 1111)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+0459 (decimal 1113)
+   defining Unicode char U+045A (decimal 1114)
+   defining Unicode char U+045B (decimal 1115)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045E (decimal 1118)
+   defining Unicode char U+045F (decimal 1119)
+   defining Unicode char U+0490 (decimal 1168)
+   defining Unicode char U+0491 (decimal 1169)
+   defining Unicode char U+0492 (decimal 1170)
+   defining Unicode char U+0493 (decimal 1171)
+   defining Unicode char U+0496 (decimal 1174)
+   defining Unicode char U+0497 (decimal 1175)
+   defining Unicode char U+0498 (decimal 1176)
+   defining Unicode char U+0499 (decimal 1177)
+   defining Unicode char U+049A (decimal 1178)
+   defining Unicode char U+049B (decimal 1179)
+   defining Unicode char U+049C (decimal 1180)
+   defining Unicode char U+049D (decimal 1181)
+   defining Unicode char U+04A0 (decimal 1184)
+   defining Unicode char U+04A1 (decimal 1185)
+   defining Unicode char U+04A2 (decimal 1186)
+   defining Unicode char U+04A3 (decimal 1187)
+   defining Unicode char U+04A4 (decimal 1188)
+   defining Unicode char U+04A5 (decimal 1189)
+   defining Unicode char U+04AA (decimal 1194)
+   defining Unicode char U+04AB (decimal 1195)
+   defining Unicode char U+04AE (decimal 1198)
+   defining Unicode char U+04AF (decimal 1199)
+   defining Unicode char U+04B0 (decimal 1200)
+   defining Unicode char U+04B1 (decimal 1201)
+   defining Unicode char U+04B2 (decimal 1202)
+   defining Unicode char U+04B3 (decimal 1203)
+   defining Unicode char U+04B6 (decimal 1206)
+   defining Unicode char U+04B7 (decimal 1207)
+   defining Unicode char U+04B8 (decimal 1208)
+   defining Unicode char U+04B9 (decimal 1209)
+   defining Unicode char U+04BA (decimal 1210)
+   defining Unicode char U+04BB (decimal 1211)
+   defining Unicode char U+04C0 (decimal 1216)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D4 (decimal 1236)
+   defining Unicode char U+04D5 (decimal 1237)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04D8 (decimal 1240)
+   defining Unicode char U+04D9 (decimal 1241)
+   defining Unicode char U+04DA (decimal 1242)
+   defining Unicode char U+04DB (decimal 1243)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04E8 (decimal 1256)
+   defining Unicode char U+04E9 (decimal 1257)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
+))
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
+12.
+
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count292
+\U@D=\dimen179
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read3
+\bbl@dirlevel=\count293
+)
+Package babel Info: \l@british = using hyphenrules for english
+(babel)             (\language0) on input line 82.
+Package babel Info: \l@UKenglish = using hyphenrules for english
+(babel)             (\language0) on input line 83.
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for english
+(babel)             (\language0) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for english
+(babel)             (\language0) on input line 108.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-serbian/serbian.ldf
+Language: serbian 2019/12/15 2.0a Serbian Latin support for the Babel system
+Package babel Info: Making " an active character on input line 46.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-serbianc/serbianc.ldf
+Language: serbianc 2019/12/15 3.0a Serbian Cyrillic support for the Babel syste
+m
+))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks24
 )
-\MT@toks=\toks25
-\MT@count=\count292
-LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen179
-LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
-\MT@listname@count=\count293
-
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
-
-LaTeX Info: Redefining \lsstyle on input line 914.
-LaTeX Info: Redefining \lslig on input line 914.
-\MT@outer@space=\skip191
-)
-Package microtype Info: Loading configuration file microtype.cfg.
-
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
-
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
@@ -411,13 +790,9 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathpazo.sty
-Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
-\symupright=\mathgroup4
-)
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip192
+\@mathmargin=\skip191
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -425,7 +800,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks26
+\@emptytoks=\toks25
 \ex@=\dimen182
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -455,24 +830,35 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \dotsspace@=\muskip16
 \c@parentequation=\count301
 \dspbrk@lvl=\count302
-\tag@help=\toks27
+\tag@help=\toks26
 \row@=\count303
 \column@=\count304
 \maxfields@=\count305
-\andhelp@=\toks28
+\andhelp@=\toks27
 \eqnshift@=\dimen185
 \alignsep@=\dimen186
 \tagshift@=\dimen187
 \tagwidth@=\dimen188
 \totwidth@=\dimen189
 \lineht@=\dimen190
-\@envbody=\toks29
-\multlinegap=\skip193
-\multlinetaggap=\skip194
-\mathdisplay@stack=\toks30
+\@envbody=\toks28
+\multlinegap=\skip192
+\multlinetaggap=\skip193
+\mathdisplay@stack=\toks29
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
 
@@ -601,14 +987,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip195
-)
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip196
-\multirow@cntb=\count319
-\multirow@dima=\skip197
-\bigstrutjot=\dimen195
+\Hy@SectionHShift=\skip194
 )
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -616,36 +995,43 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count320
-\Gm@cntv=\count321
-\c@Gm@tempcnt=\count322
-\Gm@bindingoffset=\dimen196
-\Gm@wd@mp=\dimen197
-\Gm@odd@mp=\dimen198
-\Gm@even@mp=\dimen256
-\Gm@layoutwidth=\dimen257
-\Gm@layoutheight=\dimen258
-\Gm@layouthoffset=\dimen259
-\Gm@layoutvoffset=\dimen260
-\Gm@dimlist=\toks31
+\Gm@cnth=\count319
+\Gm@cntv=\count320
+\c@Gm@tempcnt=\count321
+\Gm@bindingoffset=\dimen195
+\Gm@wd@mp=\dimen196
+\Gm@odd@mp=\dimen197
+\Gm@even@mp=\dimen198
+\Gm@layoutwidth=\dimen256
+\Gm@layoutheight=\dimen257
+\Gm@layouthoffset=\dimen258
+\Gm@layoutvoffset=\dimen259
+\Gm@dimlist=\toks30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip195
+\multirow@cntb=\count322
+\multirow@dima=\skip196
+\bigstrutjot=\dimen260
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box52
-\beforetitleunit=\skip198
-\aftertitleunit=\skip256
+\beforetitleunit=\skip197
+\aftertitleunit=\skip198
 \ttl@plus=\dimen261
 \ttl@minus=\dimen262
-\ttl@toksa=\toks32
+\ttl@toksa=\toks31
 \titlewidth=\dimen263
 \titlewidthlast=\dimen264
 \titlewidthfirst=\dimen265
 )
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip257
+\labelindent=\skip256
 \enit@outerparindent=\dimen266
-\enit@toks=\toks33
+\enit@toks=\toks32
 \enit@inbox=\box53
 \enit@count@id=\count323
 \enitdp@description=\count324
@@ -662,12 +1048,12 @@ Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count326
 \calc@Adimen=\dimen267
 \calc@Bdimen=\dimen268
-\calc@Askip=\skip258
-\calc@Bskip=\skip259
+\calc@Askip=\skip257
+\calc@Bskip=\skip258
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count327
-\calc@Cskip=\skip260
+\calc@Cskip=\skip259
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
@@ -679,79 +1065,114 @@ Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box54
-\AM@global@opts=\toks34
+\AM@global@opts=\toks33
 \AM@pagecnt=\count328
-\AM@toc@title=\toks35
+\AM@toc@title=\toks34
 \c@AM@survey=\count329
 \AM@templatesizebox=\box55
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
-Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
-\AP@output=\toks36
-\AP@partial=\box56
-\AP@footins=\box57
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen271
+\captionmargin@=\dimen272
+\captionwidth=\dimen273
+\caption@tempdima=\dimen274
+\caption@indent=\dimen275
+\caption@parindent=\dimen276
+\caption@hangindent=\dimen277
+Package caption Info: memoir document class detected.
+)
+\c@KVtest=\count330
+\sf@farskip=\skip260
+\sf@captopadj=\dimen278
+\sf@capskip=\skip261
+\sf@nearskip=\skip262
+\c@subfigure=\count331
+\c@subfigure@save=\count332
+\c@subtable=\count333
+\c@subtable@save=\count334
+\sf@top=\skip263
+\sf@bottom=\skip264
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count330
-\l__pdf_internal_box=\box58
+\l__kernel_color_stack_int=\count335
+\l__pdf_internal_box=\box56
 )
-(./thesis.aux (./Chapters/Chapter_Methodology.aux
+(./thesis.aux (./Chapters/Chapter_DrivingSignal.aux
 
-LaTeX Warning: Label `fig:erdist' multiply defined.
+LaTeX Warning: Label `eq:cumsum' multiply defined.
 
-))
+
+LaTeX Warning: Label `eq:var' multiply defined.
+
+) (./Chapters/Chapter_GroupsGrowth.aux) (./Chapters/Chapter_Trust1.aux)
+(./Chapters/Chapter_Trust2.aux
+
+LaTeX Warning: Label `fig:fullneighdeg' multiply defined.
+
+) (./Chapters/Chapter_Trust2-1.aux) (./Chapters/Chapter_Trust3.aux)
+(./Appendix/Appendix_sliding_window.aux
+
+LaTeX Warning: Label `fig:windows' multiply defined.
+
+
+LaTeX Warning: Label `fig:windows' multiply defined.
+
+) (./Appendix/Appendix_robust.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 72
-.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
-File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-)
-LaTeX Info: Redefining \microtypecontext on input line 72.
-Package microtype Info: Generating PDF output.
-Package microtype Info: Character protrusion enabled (level 2).
-Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 72.
-Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of interword spacing.
-Package microtype Info: No adjustment of character kerning.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 97.
+LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 9
+7.
 
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ppl.cfg
-File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/ot2cmr.fd
+File: ot2cmr.fd 2001/08/11 v3.2c Computer Modern Cyrillic font definitions
 )
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Trying to load font information for T2A+ppl on input line 9
+7.
+LaTeX Font Info:    No file T2Appl.fd. on input line 97.
+
+
+LaTeX Font Warning: Font shape `T2A/ppl/m/n' undefined
+(Font)              using `T2A/cmr/m/n' instead on input line 97.
+
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count331
-\scratchdimen=\dimen271
-\scratchbox=\box59
-\nofMPsegments=\count332
-\nofMParguments=\count333
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count334
-\MPscratchDim=\dimen272
-\MPnumerator=\count335
-\makeMPintoPDFobject=\count336
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count336
+\scratchdimen=\dimen279
+\scratchbox=\box57
+\nofMPsegments=\count337
+\nofMParguments=\count338
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count339
+\MPscratchDim=\dimen280
+\MPnumerator=\count340
+\makeMPintoPDFobject=\count341
+\everyMPtoPDFconversion=\toks36
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -761,8 +1182,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring ON on input line 72.
+\AtBeginShipoutBox=\box58
+Package hyperref Info: Link coloring ON on input line 97.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -773,14 +1194,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count337
+\c@section@level=\count342
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 72.
-LaTeX Info: Redefining \ref on input line 72.
-LaTeX Info: Redefining \pageref on input line 72.
-LaTeX Info: Redefining \nameref on input line 72.
+LaTeX Info: Redefining \nameref on input line 97.
+LaTeX Info: Redefining \ref on input line 97.
+LaTeX Info: Redefining \pageref on input line 97.
+LaTeX Info: Redefining \nameref on input line 97.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -828,9 +1249,15 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\openout2 = `Chapters/Chapter_Methodology.aux'.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 10
+4.
 
-
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
 (./Chapters/Chapter_Methodology.tex
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
 4.
@@ -862,10 +1289,18 @@ LaTeX Font Info:    Trying to load font information for OT1+zplm on input line
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `zplm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 14.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 14.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 14.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 14.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 14.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 14.
  [1
 Non-PDF special ignored!
 <special> papersize=597.50787pt,845.04684pt
@@ -873,240 +1308,820 @@ Non-PDF special ignored!
 
 
 
-
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<Figures/Konigsberg_bridges.png, id=147, 303.1325pt x 238.8925pt>
+<Figures/Konigsberg_bridges.png, id=304, 303.1325pt x 238.8925pt>
 File: Figures/Konigsberg_bridges.png Graphic file (type png)
 <use Figures/Konigsberg_bridges.png>
 Package pdftex.def Info: Figures/Konigsberg_bridges.png  used on input line 18.
 
 (pdftex.def)             Requested size: 145.11053pt x 114.36089pt.
-<Figures/Konigsberg_graph.png, id=148, 501.875pt x 401.5pt>
+<Figures/Konigsberg_graph.png, id=305, 501.875pt x 401.5pt>
 File: Figures/Konigsberg_graph.png Graphic file (type png)
 <use Figures/Konigsberg_graph.png>
 Package pdftex.def Info: Figures/Konigsberg_graph.png  used on input line 19.
 (pdftex.def)             Requested size: 145.11053pt x 116.08893pt.
-<figures/methodology/directed_graph.pdf, id=153, 597.50786pt x 421.10078pt>
+<figures/methodology/directed_graph.pdf, id=310, 597.50786pt x 421.10078pt>
 File: figures/methodology/directed_graph.pdf Graphic file (type pdf)
 <use figures/methodology/directed_graph.pdf>
 Package pdftex.def Info: figures/methodology/directed_graph.pdf  used on input 
 line 41.
 (pdftex.def)             Requested size: 338.58632pt x 238.62276pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/methodology/multi_graph.pdf, id=157, 421.10078pt x 298.75392pt>
+ [2 <./Figures/Konigsberg_bridges.png> <./Figures/Konigsberg_graph.png>]
+<figures/methodology/multi_graph.pdf, id=328, 421.10078pt x 298.75392pt>
 File: figures/methodology/multi_graph.pdf Graphic file (type pdf)
 <use figures/methodology/multi_graph.pdf>
 Package pdftex.def Info: figures/methodology/multi_graph.pdf  used on input lin
 e 52.
 (pdftex.def)             Requested size: 193.47578pt x 137.26436pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--60
-
- []
-
-[2 <./Figures/Konigsberg_bridges.png> <./Figures/Konigsberg_graph.png>]
-[3 <./figures/methodology/directed_graph.pdf> <./figures/methodology/multi_grap
-h.pdf
+ [3 <./figures/methodology/directed_graph.pdf> <./figures/methodology/multi_gra
+ph.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/methodology/multi_graph.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<figures/methodology/bipartite_graph.pdf, id=199, 597.50786pt x 421.10078pt>
+<figures/methodology/bipartite_graph.pdf, id=355, 597.50786pt x 421.10078pt>
 File: figures/methodology/bipartite_graph.pdf Graphic file (type pdf)
 <use figures/methodology/bipartite_graph.pdf>
 Package pdftex.def Info: figures/methodology/bipartite_graph.pdf  used on input
- line 65.
+ line 66.
 (pdftex.def)             Requested size: 338.58632pt x 238.62276pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
-
- []
-
-[4 <./figures/methodology/bipartite_graph.pdf>]
-<figures/methodology/temporal_network.pdf, id=210, 597.50786pt x 341.43306pt>
+ [4 <./figures/methodology/bipartite_graph.pdf>]
+<figures/methodology/temporal_network.pdf, id=366, 597.50786pt x 341.43306pt>
 File: figures/methodology/temporal_network.pdf Graphic file (type pdf)
 <use figures/methodology/temporal_network.pdf>
 Package pdftex.def Info: figures/methodology/temporal_network.pdf  used on inpu
 t line 85.
 (pdftex.def)             Requested size: 338.58632pt x 193.47789pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [5 <./figures/methodology/temporal_network.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
-
- []
-
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
-38.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+36.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
-
- []
-
-[6]
-
-LaTeX Warning: Citation `boccaletti2006' on page 7 undefined on input line 170.
-
-
-
-LaTeX Warning: Citation `boccaletti2006' on page 7 undefined on input line 170.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+) [6]
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
-
+Overfull \hbox (3.20485pt too wide) in paragraph at lines 201--202
+[]\T1/ppl/m/n/12 The \T1/ppl/b/n/12 path \T1/ppl/m/n/12 be-tween two nodes, $\O
+ML/zplm/m/it/12 v[]$ \T1/ppl/m/n/12 and $\OML/zplm/m/it/12 v[]$ \T1/ppl/m/n/12 
+is a se-quence of edges $\OMS/zplm/m/n/12 f\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 
+v[]\OT1/ppl/m/n/12 , \OML/zplm/m/it/12 v[]\OT1/zplm/m/n/12 )\OT1/ppl/m/n/12 , \
+OT1/zplm/m/n/12 (\OML/zplm/m/it/12 v[]\OT1/ppl/m/n/12 , \OML/zplm/m/it/12 v[]\O
+T1/zplm/m/n/12 )\OT1/ppl/m/n/12 , ...\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 v[]\OT
+1/ppl/m/n/12 , \OML/zplm/m/it/12 v[]\OT1/zplm/m/n/12 )[] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 498--499
-
- []
-
-<figures/methodology/ERgraph.pdf, id=268, 686.565pt x 249.77315pt>
+[8] [9] [10]
+<figures/methodology/ERgraph.pdf, id=433, 686.565pt x 249.77315pt>
 File: figures/methodology/ERgraph.pdf Graphic file (type pdf)
 <use figures/methodology/ERgraph.pdf>
-Package pdftex.def Info: figures/methodology/ERgraph.pdf  used on input line 50
-9.
+Package pdftex.def Info: figures/methodology/ERgraph.pdf  used on input line 38
+4.
 (pdftex.def)             Requested size: 435.32422pt x 158.36787pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[10]
-<figures/methodology/ER_dist.pdf, id=276, 628.25824pt x 347.3324pt>
+ [11]
+<figures/methodology/ER_dist.pdf, id=441, 628.25824pt x 347.3324pt>
 File: figures/methodology/ER_dist.pdf Graphic file (type pdf)
 <use figures/methodology/ER_dist.pdf>
-Package pdftex.def Info: figures/methodology/ER_dist.pdf  used on input line 54
-5.
+Package pdftex.def Info: figures/methodology/ER_dist.pdf  used on input line 42
+0.
 (pdftex.def)             Requested size: 435.32422pt x 240.66658pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 550--551
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 552--553
+[12 <./figures/methodology/ERgraph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
 
  []
 
-[11 <./figures/methodology/ERgraph.pdf>]
-<figures/methodology/ws_graph.png, id=304, 885.3075pt x 287.0725pt>
+[13 <./figures/methodology/ER_dist.pdf>]
+<figures/methodology/ws_graph.png, id=518, 885.3075pt x 287.0725pt>
 File: figures/methodology/ws_graph.png Graphic file (type png)
 <use figures/methodology/ws_graph.png>
-Package pdftex.def Info: figures/methodology/ws_graph.png  used on input line 5
-69.
+Package pdftex.def Info: figures/methodology/ws_graph.png  used on input line 4
+44.
 (pdftex.def)             Requested size: 435.32422pt x 141.16173pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[12 <./figures/methodology/ER_dist.pdf>] [13 <./figures/methodology/ws_graph.pn
-g>] [14]
-<figures/aging_nets.png, id=370, 818.30719pt x 260.47313pt>
+ [14 <./figures/methodology/ws_graph.png>] [15]
+<figures/aging_nets.png, id=533, 818.30719pt x 260.47313pt>
 File: figures/aging_nets.png Graphic file (type png)
 <use figures/aging_nets.png>
-Package pdftex.def Info: figures/aging_nets.png  used on input line 666.
+Package pdftex.def Info: figures/aging_nets.png  used on input line 541.
 (pdftex.def)             Requested size: 483.69687pt x 153.96794pt.
-<Figures/diagram.png, id=373, 470.4777pt x 344.0052pt>
+ [16 <./figures/aging_nets.png>]
+<Figures/diagram.png, id=545, 470.4777pt x 344.0052pt>
 File: Figures/diagram.png Graphic file (type png)
 <use Figures/diagram.png>
-Package pdftex.def Info: Figures/diagram.png  used on input line 692.
+Package pdftex.def Info: Figures/diagram.png  used on input line 567.
 (pdftex.def)             Requested size: 290.22107pt x 212.20494pt.
- [15 <./figures/aging_nets.png>]
-<Figures/structures.png, id=390, 699.36281pt x 392.21532pt>
+ [17 <./Figures/diagram.png>]
+<Figures/structures.png, id=560, 699.36281pt x 392.21532pt>
 File: Figures/structures.png Graphic file (type png)
 <use Figures/structures.png>
-Package pdftex.def Info: Figures/structures.png  used on input line 716.
+Package pdftex.def Info: Figures/structures.png  used on input line 591.
 (pdftex.def)             Requested size: 386.95897pt x 217.01776pt.
+ [18 <./Figures/structures.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 626--627
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 680--681
+
+ []
+
+[20] [21] [22] [23] [24] [25] [26] [27pdfTeX warning (ext4): destination with t
+he same identifier (name{equation.1.7.36}) has been already used, duplicate ign
+ored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.909 
+      ] [28]) [29]
+\openout2 = `Chapters/Chapter_DrivingSignal.aux'.
+
+ (./Chapters/Chapter_DrivingSignal.tex [30
+
+
+]
+<Figures/ciljevi3.png, id=650, 845.19765pt x 597.6729pt>
+File: Figures/ciljevi3.png Graphic file (type png)
+<use Figures/ciljevi3.png>
+Package pdftex.def Info: Figures/ciljevi3.png  used on input line 22.
+(pdftex.def)             Requested size: 290.22107pt x 205.22156pt.
+ [31]
+<Figures/monofractals.png, id=659, 502.2765pt x 458.1918pt>
+File: Figures/monofractals.png Graphic file (type png)
+<use Figures/monofractals.png>
+Package pdftex.def Info: Figures/monofractals.png  used on input line 45.
+(pdftex.def)             Requested size: 338.58632pt x 308.88159pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[16 <./Figures/diagram.png>] [17 <./Figures/structures.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 751--752
+[32 <./Figures/ciljevi3.png>]
+<Figures/signals.pdf, id=677, 797.15076pt x 326.22404pt>
+File: Figures/signals.pdf Graphic file (type pdf)
+<use Figures/signals.pdf>
+Package pdftex.def Info: Figures/signals.pdf  used on input line 92.
+(pdftex.def)             Requested size: 483.69687pt x 197.95105pt.
+ [33pdfTeX warning (ext4): destination with the same identifier (name{equation.
+2.1.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.96 
+      <./Figures/monofractals.png>]
+<Figures/hurst.pdf, id=684, 412.1774pt x 265.12738pt>
+File: Figures/hurst.pdf Graphic file (type pdf)
+<use Figures/hurst.pdf>
+Package pdftex.def Info: Figures/hurst.pdf  used on input line 99.
+(pdftex.def)             Requested size: 290.22107pt x 186.68826pt.
+ [34 <./Figures/signals.pdf> <./Figures/hurst.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/hurst.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>] [35]
+<Figures/Ddist_M4_w10.5_w20.5.png, id=810, 413.3844pt x 505.89pt>
+File: Figures/Ddist_M4_w10.5_w20.5.png Graphic file (type png)
+<use Figures/Ddist_M4_w10.5_w20.5.png>
+Package pdftex.def Info: Figures/Ddist_M4_w10.5_w20.5.png  used on input line 1
+72.
+(pdftex.def)             Requested size: 241.84843pt x 295.97147pt.
+ [36 <./Figures/Ddist_M4_w10.5_w20.5.png>]
+<Figures/Ddistance.pdf, id=820, 418.52371pt x 513.72365pt>
+File: Figures/Ddistance.pdf Graphic file (type pdf)
+<use Figures/Ddistance.pdf>
+Package pdftex.def Info: Figures/Ddistance.pdf  used on input line 184.
+(pdftex.def)             Requested size: 241.84843pt x 296.86249pt.
+ [37 <./Figures/Ddistance.pdf>]
+<Figures/aindex.png, id=881, 402.5439pt x 271.7352pt>
+File: Figures/aindex.png Graphic file (type png)
+<use Figures/aindex.png>
+Package pdftex.def Info: Figures/aindex.png  used on input line 203.
+(pdftex.def)             Requested size: 217.66211pt x 146.93382pt.
+<Figures/clustering.png, id=882, 393.8715pt x 271.7352pt>
+File: Figures/clustering.png Graphic file (type png)
+<use Figures/clustering.png>
+Package pdftex.def Info: Figures/clustering.png  used on input line 204.
+(pdftex.def)             Requested size: 217.66211pt x 150.16797pt.
+ [38 <./Figures/aindex.png> <./Figures/clustering.png>]
+<Figures/b1.pdf, id=891, 854.79347pt x 410.81918pt>
+File: Figures/b1.pdf Graphic file (type pdf)
+<use Figures/b1.pdf>
+Package pdftex.def Info: Figures/b1.pdf  used on input line 215.
+(pdftex.def)             Requested size: 338.58632pt x 162.72627pt.
+<Figures/b3.pdf, id=893, 854.79347pt x 410.81918pt>
+File: Figures/b3.pdf Graphic file (type pdf)
+<use Figures/b3.pdf>
+Package pdftex.def Info: Figures/b3.pdf  used on input line 224.
+(pdftex.def)             Requested size: 338.58632pt x 162.72627pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/b2.pdf, id=895, 852.33115pt x 408.87442pt>
+File: Figures/b2.pdf Graphic file (type pdf)
+<use Figures/b2.pdf>
+Package pdftex.def Info: Figures/b2.pdf  used on input line 234.
+(pdftex.def)             Requested size: 338.58632pt x 162.42386pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[39 <./Figures/b1.pdf>]
+
+LaTeX Warning: Reference `fig:properties' on page 40 undefined on input line 24
+5.
+
+[40 <./Figures/b3.pdf> <./Figures/b2.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/b2.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Reference `fig:properties' on page 41 undefined on input line 24
+7.
+
+
+LaTeX Warning: Citation `boccaletti2006' on page 41 undefined on input line 249
+.
+
+
+LaTeX Warning: Citation `boccaletti2006' on page 41 undefined on input line 249
+.
+
+
+LaTeX Warning: Citation `boccaletti2006' on page 41 undefined on input line 249
+.
+
+) [41]
+\openout2 = `Chapters/Chapter_GroupsGrowth.aux'.
+
+ (./Chapters/Chapter_GroupsGrowth.tex [42
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 805--806
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-[19] [20] [21] [22] [23] [24]pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.1.7.34}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1018 \begin{equation}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.1.7.34}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1018 \begin{equation}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.1.7.34}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1018 \begin{equation}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.1.7.34}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1018 \begin{equation}
-                        [25]
 
-LaTeX Warning: Reference `fig:paper_summary' on page 26 undefined on input line
- 1063.
+LaTeX Warning: Citation `PNAS' on page 43 undefined on input line 13.
 
-) [26] (./thesis.bbl
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+[44]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 24.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 24.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 24.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 24.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 24.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 24.
+ [45]
+<Figures/figures/Fig2.png, id=1227, 633.3261pt x 724.3863pt>
+File: Figures/figures/Fig2.png Graphic file (type png)
+<use Figures/figures/Fig2.png>
+Package pdftex.def Info: Figures/figures/Fig2.png  used on input line 56.
+(pdftex.def)             Requested size: 386.95897pt x 442.60452pt.
+ [46 <./Figures/figures/Fig2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+<Figures/figures/Fig1.png, id=1247, 628.0263pt x 445.9059pt>
+File: Figures/figures/Fig1.png Graphic file (type png)
+<use Figures/figures/Fig1.png>
+Package pdftex.def Info: Figures/figures/Fig1.png  used on input line 77.
+(pdftex.def)             Requested size: 386.95897pt x 274.751pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+[48 <./Figures/figures/Fig1.png>]
+<Figures/figures/test.png, id=1276, 599.22362pt x 393.67175pt>
+File: Figures/figures/test.png Graphic file (type png)
+<use Figures/figures/test.png>
+Package pdftex.def Info: Figures/figures/test.png  used on input line 107.
+(pdftex.def)             Requested size: 299.61107pt x 196.83539pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+[49 <./Figures/figures/test.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
+
+ []
+
+[50]
+<Figures/figures/Fig5.png, id=1297, 518.4168pt x 397.2441pt>
+File: Figures/figures/Fig5.png Graphic file (type png)
+<use Figures/figures/Fig5.png>
+Package pdftex.def Info: Figures/figures/Fig5.png  used on input line 146.
+(pdftex.def)             Requested size: 414.73398pt x 317.7957pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--154
+
+ []
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+ []
+
+<Figures/figures/Fig3.png, id=1308, 637.4214pt x 560.3334pt>
+File: Figures/figures/Fig3.png Graphic file (type png)
+<use Figures/figures/Fig3.png>
+Package pdftex.def Info: Figures/figures/Fig3.png  used on input line 162.
+(pdftex.def)             Requested size: 386.95897pt x 340.16127pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `jsdivergence' on page 52 undefined on input line 168.
+
+[52 <./Figures/figures/Fig5.png>] [53 <./Figures/figures/Fig3.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 175.
+
+<Figures/figures/Fig4.png, id=1328, 630.6762pt x 452.4102pt>
+File: Figures/figures/Fig4.png Graphic file (type png)
+<use Figures/figures/Fig4.png>
+Package pdftex.def Info: Figures/figures/Fig4.png  used on input line 200.
+(pdftex.def)             Requested size: 386.95897pt x 277.58516pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `' on page 54 undefined on input line 208.
+
+
+LaTeX Warning: Citation `bettencourt2007growth' on page 54 undefined on input l
+ine 208.
+
+[54] [55 <./Figures/figures/Fig4.png>]) [56]
+\openout2 = `Chapters/Chapter_Trust1.aux'.
+
+ (./Chapters/Chapter_Trust1.tex
+Underfull \hbox (badness 1275) in paragraph at lines 5--7
+\T1/ppl/m/n/12 Information and com-mu-ni-ca-tions tech-nolo-gies (ICTs) have en
+-abled faster and eas-ier
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+2.
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [57
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+[58]
+<figures/stackexchange/active_questions.pdf, id=1388, 1070.2673pt x 287.24126pt
+>
+File: figures/stackexchange/active_questions.pdf Graphic file (type pdf)
+<use figures/stackexchange/active_questions.pdf>
+Package pdftex.def Info: figures/stackexchange/active_questions.pdf  used on in
+put line 81.
+(pdftex.def)             Requested size: 483.69687pt x 129.814pt.
+ [59 <./figures/stackexchange/active_questions.pdf>]
+Overfull \hbox (13.66269pt too wide) in paragraph at lines 97--114
+[][] 
+ []
+
+) [60]
+\openout2 = `Chapters/Chapter_Trust2.aux'.
+
+ (./Chapters/Chapter_Trust2.tex
+<figures/stackexchange/degree_distribution_fullnet.pdf, id=1445, 1078.31299pt x
+ 289.56242pt>
+File: figures/stackexchange/degree_distribution_fullnet.pdf Graphic file (type 
+pdf)
+<use figures/stackexchange/degree_distribution_fullnet.pdf>
+Package pdftex.def Info: figures/stackexchange/degree_distribution_fullnet.pdf 
+ used on input line 9.
+(pdftex.def)             Requested size: 483.69687pt x 129.89098pt.
+<figures/stackexchange/neighdeg_fullnet.pdf, id=1446, 1071.8043pt x 289.56242pt
+>
+File: figures/stackexchange/neighdeg_fullnet.pdf Graphic file (type pdf)
+<use figures/stackexchange/neighdeg_fullnet.pdf>
+Package pdftex.def Info: figures/stackexchange/neighdeg_fullnet.pdf  used on in
+put line 16.
+(pdftex.def)             Requested size: 483.69687pt x 130.67744pt.
+<figures/stackexchange/clustering_fullnet.pdf, id=1447, 1078.31299pt x 289.5624
+2pt>
+File: figures/stackexchange/clustering_fullnet.pdf Graphic file (type pdf)
+<use figures/stackexchange/clustering_fullnet.pdf>
+Package pdftex.def Info: figures/stackexchange/clustering_fullnet.pdf  used on 
+input line 23.
+(pdftex.def)             Requested size: 483.69687pt x 129.89098pt.
+ [61
+
+
+ <./figures/stackexchange/degree_distribution_fullnet.pdf> <./figures/stackexch
+ange/neighdeg_fullnet.pdf> <./figures/stackexchange/clustering_fullnet.pdf>]
+<figures/stackexchange/clustering.pdf, id=1592, 1076.97302pt x 287.24126pt>
+File: figures/stackexchange/clustering.pdf Graphic file (type pdf)
+<use figures/stackexchange/clustering.pdf>
+Package pdftex.def Info: figures/stackexchange/clustering.pdf  used on input li
+ne 57.
+(pdftex.def)             Requested size: 483.69687pt x 129.00754pt.
+) [62] [63 <./figures/stackexchange/clustering.pdf>]
+\openout2 = `Chapters/Chapter_Trust2-1.aux'.
+
+ (./Chapters/Chapter_Trust2-1.tex [64
+
+
+]
+<figures/stackexchange/core_connectivity.pdf, id=1661, 902.71353pt x 394.84764p
+t>
+File: figures/stackexchange/core_connectivity.pdf Graphic file (type pdf)
+<use figures/stackexchange/core_connectivity.pdf>
+Package pdftex.def Info: figures/stackexchange/core_connectivity.pdf  used on i
+nput line 23.
+(pdftex.def)             Requested size: 483.69687pt x 211.56975pt.
+ [65 <./figures/stackexchange/core_connectivity.pdf>]
+<figures/stackexchange/jaccard_heatmap.pdf, id=1716, 914.59097pt x 413.43271pt>
+
+File: figures/stackexchange/jaccard_heatmap.pdf Graphic file (type pdf)
+<use figures/stackexchange/jaccard_heatmap.pdf>
+Package pdftex.def Info: figures/stackexchange/jaccard_heatmap.pdf  used on inp
+ut line 46.
+(pdftex.def)             Requested size: 483.69687pt x 218.65146pt.
+<figures/stackexchange/jaccard.pdf, id=1717, 1078.83055pt x 290.07999pt>
+File: figures/stackexchange/jaccard.pdf Graphic file (type pdf)
+<use figures/stackexchange/jaccard.pdf>
+Package pdftex.def Info: figures/stackexchange/jaccard.pdf  used on input line 
+53.
+(pdftex.def)             Requested size: 483.69687pt x 130.05675pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/stackexchange/core_users.pdf, id=1718, 914.6205pt x 394.84764pt>
+File: figures/stackexchange/core_users.pdf Graphic file (type pdf)
+<use figures/stackexchange/core_users.pdf>
+Package pdftex.def Info: figures/stackexchange/core_users.pdf  used on input li
+ne 62.
+(pdftex.def)             Requested size: 483.69687pt x 208.81638pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/stackexchange/core_per_ratio_reputation.pdf, id=1719, 1069.30374pt x 2
+87.24126pt>
+File: figures/stackexchange/core_per_ratio_reputation.pdf Graphic file (type pd
+f)
+<use figures/stackexchange/core_per_ratio_reputation.pdf>
+Package pdftex.def Info: figures/stackexchange/core_per_ratio_reputation.pdf  u
+sed on input line 69.
+(pdftex.def)             Requested size: 483.69687pt x 129.93233pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[66 <./figures/stackexchange/jaccard_heatmap.pdf>] [67 <./figures/stackexchange
+/jaccard.pdf> <./figures/stackexchange/core_users.pdf> <./figures/stackexchange
+/core_per_ratio_reputation.pdf>]
+<figures/stackexchange/popular_casual_users.pdf, id=1913, 918.4473pt x 394.8476
+4pt>
+File: figures/stackexchange/popular_casual_users.pdf Graphic file (type pdf)
+<use figures/stackexchange/popular_casual_users.pdf>
+Package pdftex.def Info: figures/stackexchange/popular_casual_users.pdf  used o
+n input line 77.
+(pdftex.def)             Requested size: 483.69687pt x 207.94276pt.
+) [68
+
+ <./figures/stackexchange/popular_casual_users.pdf>]
+\openout2 = `Chapters/Chapter_Trust3.aux'.
+
+ (./Chapters/Chapter_Trust3.tex
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 12.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 12.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 12.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 12.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 12.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 12.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 12.
+
+[69
+
+
+]
+<figures/stackexchange/reputation_decay.pdf, id=1972, 413.9418pt x 273.59653pt>
+
+File: figures/stackexchange/reputation_decay.pdf Graphic file (type pdf)
+<use figures/stackexchange/reputation_decay.pdf>
+Package pdftex.def Info: figures/stackexchange/reputation_decay.pdf  used on in
+put line 20.
+(pdftex.def)             Requested size: 241.84843pt x 159.85083pt.
+<figures/stackexchange/single_user_reputation.pdf, id=1973, 752.0742pt x 307.64
+925pt>
+File: figures/stackexchange/single_user_reputation.pdf Graphic file (type pdf)
+<use figures/stackexchange/single_user_reputation.pdf>
+Package pdftex.def Info: figures/stackexchange/single_user_reputation.pdf  used
+ on input line 28.
+(pdftex.def)             Requested size: 483.69687pt x 197.86656pt.
+ [70 <./figures/stackexchange/reputation_decay.pdf> <./figures/stackexchange/si
+ngle_user_reputation.pdf>]
+<figures/stackexchange/rmse.pdf, id=2054, 1076.11423pt x 286.70801pt>
+File: figures/stackexchange/rmse.pdf Graphic file (type pdf)
+<use figures/stackexchange/rmse.pdf>
+Package pdftex.def Info: figures/stackexchange/rmse.pdf  used on input line 42.
+
+(pdftex.def)             Requested size: 483.69687pt x 128.86865pt.
+<figures/stackexchange/active_users.pdf, id=2056, 958.24876pt x 505.49666pt>
+File: figures/stackexchange/active_users.pdf Graphic file (type pdf)
+<use figures/stackexchange/active_users.pdf>
+Package pdftex.def Info: figures/stackexchange/active_users.pdf  used on input 
+line 51.
+(pdftex.def)             Requested size: 483.69687pt x 255.16196pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/stackexchange/permanent_users.pdf, id=2058, 1070.2673pt x 287.24126pt>
+
+File: figures/stackexchange/permanent_users.pdf Graphic file (type pdf)
+<use figures/stackexchange/permanent_users.pdf>
+Package pdftex.def Info: figures/stackexchange/permanent_users.pdf  used on inp
+ut line 60.
+(pdftex.def)             Requested size: 483.69687pt x 129.814pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[71 <./figures/stackexchange/rmse.pdf>] [72 <./figures/stackexchange/active_use
+rs.pdf> <./figures/stackexchange/permanent_users.pdf>]
+<figures/stackexchange/reputation.pdf, id=2219, 902.23953pt x 394.84764pt>
+File: figures/stackexchange/reputation.pdf Graphic file (type pdf)
+<use figures/stackexchange/reputation.pdf>
+Package pdftex.def Info: figures/stackexchange/reputation.pdf  used on input li
+ne 77.
+(pdftex.def)             Requested size: 483.69687pt x 211.68422pt.
+<figures/stackexchange/core_reputation.pdf, id=2220, 1088.88005pt x 287.24126pt
+>
+File: figures/stackexchange/core_reputation.pdf Graphic file (type pdf)
+<use figures/stackexchange/core_reputation.pdf>
+Package pdftex.def Info: figures/stackexchange/core_reputation.pdf  used on inp
+ut line 85.
+(pdftex.def)             Requested size: 483.69687pt x 127.59622pt.
+ [73
+
+ <./figures/stackexchange/reputation.pdf> <./figures/stackexchange/core_reputat
+ion.pdf>]
+
+LaTeX Warning: Reference `fig:dyn_rep_coreper' on page 74 undefined on input li
+ne 99.
+
+<figures/stackexchange/gini.pdf, id=2312, 1097.49709pt x 287.24126pt>
+File: figures/stackexchange/gini.pdf Graphic file (type pdf)
+<use figures/stackexchange/gini.pdf>
+Package pdftex.def Info: figures/stackexchange/gini.pdf  used on input line 112
+.
+(pdftex.def)             Requested size: 483.69687pt x 126.59691pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[74]
+<figures/stackexchange/reputation_assortativity.pdf, id=2320, 1079.40398pt x 28
+7.24126pt>
+File: figures/stackexchange/reputation_assortativity.pdf Graphic file (type pdf
+)
+<use figures/stackexchange/reputation_assortativity.pdf>
+Package pdftex.def Info: figures/stackexchange/reputation_assortativity.pdf  us
+ed on input line 125.
+(pdftex.def)             Requested size: 483.69687pt x 128.71826pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--135
+
+ []
+
+<figures/stackexchange/correlations.pdf, id=2323, 910.38281pt x 394.84764pt>
+File: figures/stackexchange/correlations.pdf Graphic file (type pdf)
+<use figures/stackexchange/correlations.pdf>
+Package pdftex.def Info: figures/stackexchange/correlations.pdf  used on input 
+line 142.
+(pdftex.def)             Requested size: 483.69687pt x 209.78638pt.
+[75 <./figures/stackexchange/gini.pdf> <./figures/stackexchange/reputation_asso
+rtativity.pdf>]) [76 <./figures/stackexchange/correlations.pdf>]
+\openout2 = `Appendix/Appendix_sliding_window.aux'.
+
+
+(./Appendix/Appendix_sliding_window.tex
+<figures/stackexchange/sliding_window_network.pdf, id=2459, 860.90431pt x 542.6
+4653pt>
+File: figures/stackexchange/sliding_window_network.pdf Graphic file (type pdf)
+<use figures/stackexchange/sliding_window_network.pdf>
+Package pdftex.def Info: figures/stackexchange/sliding_window_network.pdf  used
+ on input line 7.
+(pdftex.def)             Requested size: 435.32422pt x 274.4028pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/stackexchange/sliding_window_core_periphery.pdf, id=2461, 860.90431pt 
+x 542.64653pt>
+File: figures/stackexchange/sliding_window_core_periphery.pdf Graphic file (typ
+e pdf)
+<use figures/stackexchange/sliding_window_core_periphery.pdf>
+Package pdftex.def Info: figures/stackexchange/sliding_window_core_periphery.pd
+f  used on input line 19.
+(pdftex.def)             Requested size: 483.69687pt x 304.89015pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[77
+
+
+
+] [78 <./figures/stackexchange/sliding_window_network.pdf> <./figures/stackexch
+ange/sliding_window_core_periphery.pdf>]
+<figures/stackexchange/sliding_window_core_reputation.pdf, id=2552, 864.7468pt 
+x 375.47215pt>
+File: figures/stackexchange/sliding_window_core_reputation.pdf Graphic file (ty
+pe pdf)
+<use figures/stackexchange/sliding_window_core_reputation.pdf>
+Package pdftex.def Info: figures/stackexchange/sliding_window_core_reputation.p
+df  used on input line 31.
+(pdftex.def)             Requested size: 483.69687pt x 210.02234pt.
+) [79 <./figures/stackexchange/sliding_window_core_reputation.pdf>]
+\openout2 = `Appendix/Appendix_robust.aux'.
+
+ (./Appendix/Appendix_robust.tex [80
+
+
+
+]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 2.
+
+
+LaTeX Warning: Citation `labatut2012accuracy' on page 81 undefined on input lin
+e 5.
+
+
+LaTeX Warning: Citation `labatut2012accuracy' on page 81 undefined on input lin
+e 25.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+LaTeX Warning: Citation `labatut2012accuracy' on page 81 undefined on input lin
+e 28.
+
+[81]
+
+LaTeX Warning: Citation `labatut2012accuracy' on page 82 undefined on input lin
+e 35.
+
+
+LaTeX Warning: Citation `danon2005comparing' on page 82 undefined on input line
+ 41.
+
+
+LaTeX Warning: Citation `santos2009use' on page 82 undefined on input line 57.
+
+
+LaTeX Warning: Citation `hubert1985comparing' on page 82 undefined on input lin
+e 57.
+
+[82]
+<figures/stackexchange/blockmodel_robust.pdf, id=2614, 727.9929pt x 503.97534pt
+>
+File: figures/stackexchange/blockmodel_robust.pdf Graphic file (type pdf)
+<use figures/stackexchange/blockmodel_robust.pdf>
+Package pdftex.def Info: figures/stackexchange/blockmodel_robust.pdf  used on i
+nput line 69.
+(pdftex.def)             Requested size: 483.69687pt x 334.86255pt.
+) [83 <./figures/stackexchange/blockmodel_robust.pdf>] (./thesis.bbl
+[84
+
+
+]
 bibitemlist
-[27
+[85] [86] [87] [88]
+Underfull \hbox (badness 1675) in paragraph at lines 440--447
+[]\T1/ppl/m/n/12 Ekaterina Yashk-ina, Ar-seny Pini-gin, JooY-oung Lee, Manuel M
+az-zara, Akin-lolu
+ []
 
-
-]) [28]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
- (./thesis.aux (./Chapters/Chapter_Methodology.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
+) [89]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
+ (./thesis.aux (./Chapters/Chapter_DrivingSignal.aux)
+(./Chapters/Chapter_GroupsGrowth.aux) (./Chapters/Chapter_Trust1.aux)
+(./Chapters/Chapter_Trust2.aux) (./Chapters/Chapter_Trust2-1.aux)
+(./Chapters/Chapter_Trust3.aux) (./Appendix/Appendix_sliding_window.aux)
+(./Appendix/Appendix_robust.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 125.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 649D841BD21589836E44B6A5DAB7D322;2244.
+(rerunfilecheck)             Checksum: 928EE5BB480FD92725EF232C84E4E645;5258.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
@@ -1114,17 +2129,18 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
  ) 
 Here is how much of TeX's memory you used:
- 14042 strings out of 483107
- 209369 string characters out of 5964631
- 548369 words of memory out of 5000000
- 28448 multiletter control sequences out of 15000+600000
- 580098 words of font info for 248 fonts, out of 8000000 for 9000
- 59 hyphenation exceptions out of 8191
- 34i,17n,42p,2675b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+ 15845 strings out of 482584
+ 239742 string characters out of 5956256
+ 560246 words of memory out of 5000000
+ 30114 multiletter control sequences out of 15000+600000
+ 588459 words of font info for 156 fonts, out of 8000000 for 9000
+ 475 hyphenation exceptions out of 8191
+ 41i,17n,42p,2673b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/anav/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600p
+k>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
@@ -1134,10 +2150,10 @@ hpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (28 pages, 740775 bytes).
+Output written on thesis.pdf (89 pages, 6579862 bytes).
 PDF statistics:
- 544 PDF objects out of 1000 (max. 8388607)
- 435 compressed objects within 5 object streams
- 134 named destinations out of 1000 (max. 500000)
- 23861 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 2829 PDF objects out of 2984 (max. 8388607)
+ 1381 compressed objects within 14 object streams
+ 348 named destinations out of 1000 (max. 500000)
+ 831 words of extra memory for PDF output out of 10000 (max. 10000000)
 

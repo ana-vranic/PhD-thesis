@@ -1,7 +1,12 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: Chapters/Chapter_Methodology.aux
+A level-1 auxiliary file: Chapters/Chapter_DrivingSignal.aux
+A level-1 auxiliary file: Chapters/Chapter_GroupsGrowth.aux
+A level-1 auxiliary file: Chapters/Chapter_Trust1.aux
+A level-1 auxiliary file: Chapters/Chapter_Trust2.aux
+A level-1 auxiliary file: Chapters/Chapter_Trust2-1.aux
+A level-1 auxiliary file: Chapters/Chapter_Trust3.aux
 The style file: unsrt.bst
 Database file #1: sample.bib
 You're missing a field name---line 1045 of file sample.bib
@@ -9,58 +14,83 @@ You're missing a field name---line 1045 of file sample.bib
  : %   title={Expressing trust with temporal frequency of user interaction in online communities},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting an "="---line 1593 of file sample.bib
- :  https://www.overleaf.com/project/615d87ed5fba9959f4dc6d45 
- :                                                            year={2012}
+Repeated entry---line 1402 of file sample.bib
+ : @article{smiljanic2017associative
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1500 of file sample.bib
+ : @article{dankulov2015dynamics
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1588 of file sample.bib
+ : @inproceedings{kairam2012life
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1597 of file sample.bib
+ : @inproceedings{backstrom2006group
+ :                                  ,
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 1686 of file sample.bib
  : 
  : @article{martin,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Repeated entry---line 1711 of file sample.bib
+ : @article{centola2007cascade
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1722 of file sample.bib
+ : @article{fortunato2010community
+ :                                ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "boccaletti2006"
+Warning--I didn't find a database entry for "PNAS"
+Warning--I didn't find a database entry for "jsdivergence"
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "bettencourt2007growth"
 Warning--empty journal in latora2017complex
 Warning--empty publisher in caldarelli2007scalefree
 Warning--empty publisher in guide_temporal
-You've used 26 entries,
+Warning--empty booktitle in yashkina2020
+You've used 74 entries,
             1791 wiz_defined-function locations,
-            616 strings with 8129 characters,
-and the built_in function-call counts, 5959 in all, are:
-= -- 509
-> -- 301
-< -- 2
-+ -- 111
-- -- 85
-* -- 440
-:= -- 973
-add.period$ -- 80
-call.type$ -- 26
-change.case$ -- 22
+            896 strings with 17925 characters,
+and the built_in function-call counts, 19411 in all, are:
+= -- 1697
+> -- 956
+< -- 14
++ -- 346
+- -- 272
+* -- 1497
+:= -- 3044
+add.period$ -- 227
+call.type$ -- 74
+change.case$ -- 69
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 258
-empty$ -- 567
-format.name$ -- 85
-if$ -- 1303
+cite$ -- 78
+duplicate$ -- 818
+empty$ -- 1828
+format.name$ -- 272
+if$ -- 4295
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 30
-newline$ -- 134
-num.names$ -- 26
-pop$ -- 66
+int.to.str$ -- 74
+missing$ -- 79
+newline$ -- 374
+num.names$ -- 74
+pop$ -- 169
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 106
+skip$ -- 393
 stack$ -- 0
-substring$ -- 361
-swap$ -- 45
-text.length$ -- 2
+substring$ -- 1461
+swap$ -- 198
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 57
-width$ -- 28
-write$ -- 283
-(There were 3 error messages)
+warning$ -- 4
+while$ -- 192
+width$ -- 76
+write$ -- 815
+(There were 8 error messages)

@@ -6,24 +6,6 @@ Core-periphery pattern means that network consists of two components: a core, de
 
 To investigate core-periphery structure of SE communities and how it evolves trough time, we analyse the core-periphery structure of every 30 days network snapshot. We use Stochastic Block Model (SBM) adapted for core-periphery inference of network structure \cite{gallagher2020clarified} to determine the core-periphery structure.  
 
-\textbf{SBM} is model where each node, in given network G,  belongs to one of $B$ blocks. Vector $\theta_i = r$ indicates that node $i$ is in block $r$, while SBM matrix $\{p\}_{BxB}$, specify the probability $p_{rs}$ that nodes from group $r$ are connected to nodes in group $s$. The SBM model is looking for the most probable model that can reproduce a given network G. Probability of having model parameters $\theta, p$ given network $G$ is proportional to likelihood of generating network $G$, prior of SBM matrix and prior on block assignments:
-
-\begin{equation}
-P(\theta, p| G) = P(G | \theta , p) P(p) P(\theta) 
-\end{equation}
-
-\begin{equation}
-P(G | \theta , p) = \prod_{i<j} p_{r_is_j}^{A_{ij}}(1-p_{r_is_j})^{1-A_{ij}}  
-\end{equation}
-
-where $A_{ij}$ is number of edges between nodes $i$ and $j$. 
-
-Prior on p is modified for core-periphery model such that $P(p) = 3!I_{0<p_{22}<p_{12}<p_{11}<1}$, while prior on $\theta $ consists of three parts: probability of having $l$ blocks; given the number of layers probability $P(n|l)$ of having groups of sizes ${n_1..n_l}$ and the probability $P(\theta|n)$ of having particular assignments of nodes to blocks. 
-
-For fitting model in the work \cite{gallagher2020clarified} authors use Metropolis-within-Gibbs algorithm.
-The likelihood of SBM model increase with number of blocks and model itself does not define optimal number of communities. Inferring minimum description length
-of the model is one approach to decide which model is more likely.  
-
 %\subsection{Core-periphery sample}
 For each 30 days snapshot network we run 50 iterations and choose the model parameters $\theta$ and $p$ according to minimum description length. MDL does not change much among inferred core-periphery structure, see Fig. A8, while looking into adjusted rand index we can notice that difference exists. Still, ARI between pair-wised compared partitions is large ($ari >0.9$) indicating stability of inferred structures.
 

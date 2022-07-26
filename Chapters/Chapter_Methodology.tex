@@ -13,7 +13,7 @@ Despite the differences between complex systems, they can be studied using compl
 The complex network theory originates from the graph theory in mathematics. %These days, the graph and network are used as equivalent terms. 
 The first mathematical problem solved using graph theory was $Konigsberg$ problem of seven bridges. The city $Konigsberg$ had seven bridges connecting the city's parts across the river and the island in the middle. The question was, is it possible to find a walk that crosses all seven bridges only once. Representing the problem as a graph, as in figure \ref{fig:Krgraph}, Euler managed to simplify the problem; the parts of the land are represented as nodes while bridges between them are links. Crossing each bridge only once is possible if each part of the land has an even number of connections. By this it is possible to enter one part of the land from one bridge and leave it by the other. As each node has odd number of connections, in this case it is not possible, see Fig. \ref{fig:Krgraph}.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.3\linewidth]{Figures/Konigsberg_bridges.png} \hspace{2cm}
 	\includegraphics[width=0.3\linewidth]{Figures/Konigsberg_graph.png}
@@ -36,7 +36,7 @@ A_{ij} =
 
 The column b) on Figure \ref{fig:graph_dir} shows adjacancy matrix representation of given graphs. By convention diagonal elements $A_{ii}=0$, as self-loops are not allowed. For undirected network adjacency matrix is symmetric $A_{i,j}=A_{ji}$, but in the case of directed network matrix is not symmetric, as edges are drawn in one direction only.  
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=0.7\linewidth]{figures/methodology/directed_graph.pdf} 
 \caption{a) Graph representation of undirected (top panel) and directed (bottom panel) network. The same networks are represented with adjacency matrices column b), and edge list representation in column c).}
@@ -47,29 +47,29 @@ The number of edges and nodes are dependent variables. Considering that each nod
 It is common to represent the graph as edge list. In this case, illustrated on Figure \ref{fig:graph_dir}, column c), graph is described with the list of links that are in the graph, $G = \{ \{v_i,v_j\}\}$. Still with this representation we are not able to distinguish between directed and undirected graph structures, so in the computational algorithm should be specified if the edges are considered symetric or not.  
 %To distinguish between undirected and directed structures, for undirected representation it is possible writing two edges $(v_i, v_j)$ and $(v_j, v_i)$, otherwise in the computational algorithm should be specified if the edges are considered symmetric or not.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.4\linewidth]{figures/methodology/multi_graph.pdf} 
 	\caption{The complex networks may represent different characteristics of the system. The edges can be directed, weighted or multiply. Also nodes can be assigned with different weights or any relevant feature.}
 	\label{fig:multigraph}
 \end{figure}
 
-To create the more realistic models, sometimes is essential to include the specific properties of the system in the network representation. For example, to emphasis the frequent interactions between nodes, edges can be assigned with different values, such networks are \textbf{weighted}. They can be described with adjacency matrix, whose elements can take any real number $A_{ij}=w_{ij}$ and $w_{ij}>0$. In general edges may be associated with any categorical variable. Similarly additional properties can be added to nodes, or even to the whole network structure. To include the \textbf{temporal} component in the network, edges are characterized with the time when the interaction between nodes happen. Finally, if two nodes interact in different ways, the \textbf{multigraph} is appropriate configuration where multiply edges are allowed. The graphical representation of discussed network representations is given on the Figure \ref{fig:multigraph}. \\~\\
+To create the more realistic models, sometimes is essential to include the specific properties of the system in the network representation. For example, to emphasis the frequent interactions between nodes, edges can be assigned with different values, such networks are \textbf{weighted}. They can be described with adjacency matrix, whose elements can take any real number $A_{ij}=w_{ij}$ and $w_{ij}>0$. In general edges may be associated with any categorical variable. Similarly additional properties can be added to nodes, or even to the whole network structure. To include the \textbf{temporal} component in the network, edges are characterized with the time when the interaction between nodes happen. Finally, if two nodes interact in different ways, the \textbf{multigraph} is appropriate configuration where multiply edges are allowed. The graphical representation of discussed network representations is given on the Figure \ref{fig:multigraph}.
+
 % the network between cities, edges may be different driving paths between them. In neuron cells, multiply synapses are represented as distinct edges. \\ %\cite{barabasi2016network, latora2017complex, newman2010}
 A \textbf{bipartite network} consists of two types nodes. The nodes in the same partition are not connected, while links exist only between partitions. For many real systems, a bipartite graph is a natural representation\cite{barabasi2016network, latora2017complex}. For example, the bipartite network of people and groups has two distinct node partitions while links indicate the memberships. Another example is a system of customers and products. The link between user and item is created when the user buys an item. The bipartite networks find their application in the algorithms for recommended systems, whose goal is to recommend items that may interest the user. Actually, to find the most probable missing links in the network. 
 
 In a bipartite network, nodes in one partition are not connected. Still, we can analyse a single node type if we project the bipartite network on one partition. The primary assumption is that two nodes in one partition could be connected if they point to the same node in another partition. Consider the network of movies and actors. The one mode projection of movies is an undirected network whose links indicate that two movies share the same actors. On the other hand, another projection is a network of actors. The links exist if two actors appear in the same movie \cite{newman2010, barabasi2016network}.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/methodology/bipartite_graph.pdf} 
 	\caption{Bipartite graph and two partition projections.}
 	\label{fig:gt2}
 \end{figure}
 
-We should be aware that important information is lost when creating a one-mode projection. First of all, without having weighted edges in the network of actors, it is impossible to have information on how many movies two actors appear in. From the one-mode projection, we can not reconstruct the original network. Moreover, two different bipartite networks may have the same projected networks. The important consequence of the network projection is the creation of cliques; subgraphs where all nodes are connected. 
-
-In general, it is possible to define the k-bipartite network. The same rules apply as before. There are $k$ distinct node partitions, while the edges exist only between different types of nodes.\\
+We should be aware that important information is lost when creating a one-mode projection. First of all, without having weighted edges in the network of actors, it is impossible to have information on how many movies two actors appear in. From the one-mode projection, we can not reconstruct the original network. Moreover, two different bipartite networks may have the same projected networks. The important consequence of the network projection is the creation of cliques; subgraphs where all nodes are connected. \\
+In general, it is possible to define the k-bipartite network. The same rules apply as before. There are $k$ distinct node partitions, while the edges exist only between different types of nodes.
 
 
 
@@ -80,14 +80,14 @@ Studying the real systems as static networks can give us a lot of insight into t
 
 The temporal network is a collection of timestamped edges. Each edge is defined as $(v_i, v_j, t, \Delta t)$, where $v_i$ and $v_j$, are nodes $t$ is time when interaction happen, and $\Delta t$ is event duration \cite{guide_temporal}. The duration of the events may vary, as in the phone-call network. Also, for many systems, the time resolution of event duration is too small. For example, this parameter may be neglected when people interact on social platforms or email each other because the event time is too short, it scales in seconds.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/methodology/temporal_network.pdf} 
 	\caption{Temporal network. }
 	\label{fig:gt3}
 \end{figure}
 
-The temporal network can be represented as sequence of static networks that evolve in time, $G = \{ G(t_1), G(t_2), ..., G(t_{max})\}$. At each time step, we can create the network and analyze the macroscopic properties of the given network snapshot. With this, we can end up with graph snapshots with many disconnected components or empty graphs for some points \cite{holme2015modern}. Sometimes, a much better approach is to aggregate the links that over time-windows. Here, we need to specify the time window length $w$. Interactions in the time interval $0\leq t<w$ enter the first snapshot. The next snapshot takes edges $w \leq t <2w$, and so on. The time windows are not overlapping, but generally, it is possible to slide the time window for different periods $ 1 \leq \delta t \geq w$. The downside of this method is that we can not recover original data points. The larger the time window is, the more information is lost. If the time window is set to $w=t_{max}$, there is only one snapshot, and the temporal data are no more available \cite{krings2012effects, arnold2021moving}. \\
+The temporal network can be represented as sequence of static networks that evolve in time, $G = \{ G(t_1), G(t_2), ..., G(t_{max})\}$. At each time step, we can create the network and analyze the macroscopic properties of the given network snapshot. With this, we can end up with graph snapshots with many disconnected components or empty graphs for some points \cite{holme2015modern}. Sometimes, a much better approach is to aggregate the links that over time-windows. Here, we need to specify the time window length $w$. Interactions in the time interval $0\leq t<w$ enter the first snapshot. The next snapshot takes edges $w \leq t <2w$, and so on. The time windows are not overlapping, but generally, it is possible to slide the time window for different periods $ 1 \leq \delta t \geq w$. The downside of this method is that we can not recover original data points. The larger the time window is, the more information is lost. If the time window is set to $w=t_{max}$, there is only one snapshot, and the temporal data are no more available \cite{krings2012effects, arnold2021moving}. 
 
 \textbf{Multilayer networks} were introduced for studying systems in which different types of interaction exist. This formalism allows one to investigate diverse network systems and to combine different types of data into one model \cite{porter2018multilayer}. In a multilayer or multiplex network, all nodes are present in each layer, but their interactions among layers differ. Two nodes may be connected in one layer but not in the other. Different online social systems may be an example of a multiplex network when users are connected on one platform but not on the other \cite{aleta2019multilayer}. Or the airline transportation network, where each layer represents the flights of different airline companies \cite{kivelamultilayer}.   
 
@@ -115,11 +115,9 @@ The temporal network can be represented as sequence of static networks that evol
 
 \subsection{Degree distribution}
 
-The simplest network measure is \textbf{node degree}, $k$. The degree of node $i$ gives the number of nodes attached to node $i$, $k_i = \sum_j A_{ij}$. 
+The simplest network measure is \textbf{node degree}, $k$. The degree of node $i$ gives the number of nodes attached to node $i$, $k_i = \sum_j A_{ij}$. The density of the network is average degree divided by $N-1$, where $N$ is number of nodes. It is relative fraction of nodes in the network. 
 
-The density of the network is average degree divided by $N-1$, where $N$ is number of nodes. It is relative fraction of nodes in the network. 
-
-In the case of regular networks, such as grids, each node has an equal degree, meaning that nodes in the network have similar roles. In the general case, the networks have more complicated structure. If degree sequence is skewed, we are able to identify nodes with high degree, hubs. Removing hubs may partition a connected network into several components. Finally, if we are able to test isomorphism between two graphs, the starting point would be to compare their degree sequences are the same. If they are not same, then graphs can not be isomorphic. \\
+In the case of regular networks, such as grids, each node has an equal degree, meaning that nodes in the network have similar roles. In the general case, the networks have more complicated structure. If degree sequence is skewed, we are able to identify nodes with high degree, hubs. Removing hubs may partition a connected network into several components. Finally, if we are able to test isomorphism between two graphs, the starting point would be to compare their degree sequences are the same. If they are not same, then graphs can not be isomorphic.
 
 To calculate the degree distribution we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. It is the probability , $P(k)$, that randomly chosen node has degree $k$. Similarly, we can order nodes according to their degree and plot the node degree.
 
@@ -143,8 +141,6 @@ If the nodes of the graph are statistically independent, the degree distribution
 	%In finite size networks, fat-tailed degree distributions have natural cut-offs. 
 \end{itemize}
 
-
-
 When plotting the degree distribution, it is common to use scaling of the axis. As many nodes have  low degree, like for power-law or exponential distribution it is more useful to use logarithmic scale. Now it is more easily notices that data-points follow straight line, meaning that degree distribution is some kind of exponential function. 
 
 %On the logarithmic scale the distance between two points is proportional to the logarithm of distance between two points, meaning that distance on logarithm scale is same between points 10 and 100, and 100 and 1000.  
@@ -167,7 +163,7 @@ r_{deg}(G) = \frac{\sum_{i=1}^{n}\sum_{i=1+1}^{n}((d_i - \bar{d}) (d_i - \bar{d}
 
 Using adjacency matrix, allow us to calculate the correlations between neighboring nodes. If two nodes are not connected $A[i,j]=0$, the degree correlation between them does not have contribution to the $r$.
 
-The \textbf{degree-degree correlations} in the network are measured by \textbf{assortativity}. If correlations are positive, networks are assortative; there is a tendency that connections exist between similar degree nodes. The negative correlations indicate that large degree nodes have preference to connect nodes with small degree; dissasortative networks. The average first neighbor degree $k_{nn}$ can be calculated as $k_{nn} = \sum_{k^{'}}k^{'}P(k^{'}|{k})$. The $P$ is conditional probability that an edge of degree $k$ points to node with degree $k$. The norm is $\sum_{k^{'}}P(k^{'}|k)=1$, and detailed balance conditions \cite{boccaletti2006},  $kP(k^{'}|k)P(k) = k^{'}P(k|k^{'})P(k^{'})$ \cite{boccaletti2006}. If the node degrees are uncorrelated, $k_{nn}$ does not depend on the degree, otherwise increasing/decreasing function indicates on positive/negative correlations in the network. \\
+The \textbf{degree-degree correlations} in the network are measured by \textbf{assortativity}. If correlations are positive, networks are assortative; there is a tendency that connections exist between similar degree nodes. The negative correlations indicate that large degree nodes have preference to connect nodes with small degree; dissasortative networks. The average first neighbor degree $k_{nn}$ can be calculated as $k_{nn} = \sum_{k^{'}}k^{'}P(k^{'}|{k})$. The $P$ is conditional probability that an edge of degree $k$ points to node with degree $k$. The norm is $\sum_{k^{'}}P(k^{'}|k)=1$, and detailed balance conditions \cite{boccaletti2006complex},  $kP(k^{'}|k)P(k) = k^{'}P(k|k^{'})P(k^{'})$ \cite{boccaletti2006complex}. If the node degrees are uncorrelated, $k_{nn}$ does not depend on the degree, otherwise increasing/decreasing function indicates on positive/negative correlations in the network. \\
 
 The Newman defined the assortativity index $r$ in slightly different way:
 
@@ -202,9 +198,9 @@ Newman proposed the alternative definition for the clustering coefficient based 
 \subsection{Network paths}
 In the network structure, the interacting nodes are directly connected with the edge. In this representation we can say that distance between them is $d_{v_i, v_j}=1$. Distance defined like this does not have any physical meaning. Its purpose is to describe how the position of nodes in the network structure influences the other distant nodes. 
 
-The \textbf{path} between two nodes, $v_i$ and $v_j$ is a sequence of edges $\{(v_1, v_2),  (v_2, v_3), ...(v_k, v_{k+1})\\,... (v_{n-1}, v_n)\}$, where $v_1=v_i$, $v_n=v_j$. In the path, the nodes are distinct. Otherwise, the sequence is called a \textbf{walk}, where each node can be visited many times. Also, it is possible to define a \textbf{cycle}, a path that starts and ends on the same node while other nodes in the cycle are distinct. The length of the path, walk or cycle is the number of links in the sequence. Using the adjacency matrix we can easily calculate the number of walks between two nodes. The $A^2$ gives us walks of length $2$, the $A^3$, number of walks of length 3, and so on. \\
+The \textbf{path} between two nodes, $v_i$ and $v_j$ is a sequence of edges $\{(v_1, v_2),  (v_2, v_3), ...(v_k, v_{k+1})\\,... (v_{n-1}, v_n)\}$, where $v_1=v_i$, $v_n=v_j$. In the path, the nodes are distinct. Otherwise, the sequence is called a \textbf{walk}, where each node can be visited many times. Also, it is possible to define a \textbf{cycle}, a path that starts and ends on the same node while other nodes in the cycle are distinct. The length of the path, walk or cycle is the number of links in the sequence. Using the adjacency matrix we can easily calculate the number of walks between two nodes. The $A^2$ gives us walks of length $2$, the $A^3$, number of walks of length 3, and so on. 
 
-The network is connected if it is possible to define the path between every two nodes in the network. When it is not the case, the network is disconnected into two or more connected components. Note that the component can be an isolated node. Also, in directed networks may happen that node $v_i$ is reachable from node $v_j$, but if we start from $v_j$ we can not find the path to the $v_i$. Such a graph is connected but is called a weakly connected component. \\
+The network is connected if it is possible to define the path between every two nodes in the network. When it is not the case, the network is disconnected into two or more connected components. Note that the component can be an isolated node. Also, in directed networks may happen that node $v_i$ is reachable from node $v_j$, but if we start from $v_j$ we can not find the path to the $v_i$. Such a graph is connected but is called a weakly connected component. 
 
 We can find different paths between two nodes in the network, but the most important one is the \textbf{shortest path}. The distance between two nodes $d(v_i, v_j)$ is defined as the shortest path length between two nodes. 
 In the case of weighted networks, it is the path with minimal weight, and the length of such path does not have to be minimal. Distances on the network can give us insight into how similar networks are and indicate the node's relative importance in the network. 
@@ -297,7 +293,7 @@ D-measure calculates Jensen-Shannon divergence between $N$ shortest path distrib
 J(P_1,.., P_N)) = \sum_{i,j}p_i(j)log(\frac{p_i(j)}{\mu_j})
 \end{equation}
 
-where  $\mu_j = (\sum_{i=1}^N p_i(j))/N$ is mean shortest path distribution. \\
+where  $\mu_j = (\sum_{i=1}^N p_i(j))/N$ is mean shortest path distribution.
 
 %TEMPORAL NETWORKS JENSEN SHANNON AND 
 
@@ -321,150 +317,28 @@ In community detection the number of communities is not predefined. The number o
 
 \textbf{Modularity}
 
-\textbf{Louvain algorithm}
+Comparing the link density of the community by the link density obtained for the same group of nodes randomly connected we could conclude if the community corresponds to the dense subgraph or the structure is created completely random. The modularity is function that measures the randomness of the each partition. With modularity we can compare the communities and decide which one is better. 
 
-\textbf{Infomap algorithm}
+For the network with $N$ nodes and $L$ links that partitions into $n_c$ communities. Each community has $N_c$ nodes and $L_c$ links. If number of links is larger than the expected number of links between $N_c$ nodes given in the expected node sequence than these nodes may form the community. We calculate the difference between real network connectivity $A_{ij}$ and the expected number of links between nodes if the network is randomly connected, $p_{ij}$. The $p_{ij}$ can be obtained by randomizing the original network, but keeping the expected degree of each node unchanged, so $p_{ij}= \frac{k_ik_j}{2L}$.
 
-\textbf{Block Stochastic Model}
+\begin{equation}
+M_c = \frac{1}{2L}\sum(A_{ij}-p_{ij})
+\end{equation}
 
-\textbf{Core-periphery structure}
+If modularity is positive, the selected nodes may be community as their connectivity is far from random. If $M_c$ is zero, then the connectivity between nodes is random, and if $M_c$ is negative the nodes do not form the community. 
 
+The same idea can be generalized to the whole network: The modularity of network partitioned into $n_c$ communities is then defined as:
+\begin{equation}
+M=\sum_{c=1}^{n} [\frac{L_c}{L} - (\frac{k_c}{2L})^2]
+\end{equation}
 
+The higher modularity indicates that nodes are partitioned in better communities. When we put all nodes into only one community $M=0$, otherwise if each node is community itself $L_c=0$ and the sum is negative. 
 
-%In a randomly wired network the connection pattern between the nodes
-%is expected to be uniform, independent of the network's degree distribu-
-%tion. Consequently these networks are not expected to display systematic
-%local density fluctuations that we could interpret as communities. This ex-
-%pectation inspired the third hypothesis of community organization:
-%This hypothesis has some actionable consequences: By comparing the
-%link density of a community with the link density obtained for the same
-%group of nodes for a randomly rewired network, we could decide if the
-%original community corresponds to a dense subgraph, or its connectivity
-%pattern emerged by chance.
-%In this section we show that systematic deviations from a random con-
-%figuration allow us to define a quantity called modularity, that measures
-%the quality of each partition. Hence modularity allows us to decide if a par-
-%ticular community partition is better than some other one. Finally, modu-
-%larity optimization offers a novel approach to community detection.
+Maximum network modularity indicates the best partions. As there are too many partitions, it is not possible to construct all possible partitions and calculate their modularity. For that we need algorithm that could identify the the best partition. 
 
-%Consider a network with N nodes and L links and a partition into n c
-%communities, each community having N c nodes connected to each other
-%by L c links, where c =1,...,n c . If L c is larger than the expected number of links
-%between the N c nodes given the network’s degree sequence, then the nodes
-%of the subgraph C c could indeed be part of a true community, as expected
-%based on the Density Hypothesis H2 (Figure 9.2). We therefore measure the
-%difference between the network’s real wiring diagram (A ij ) and the expect-
-%ed number of links between i and j if the network is randomly wired (p ij ),
+The first algorithm that was proposed for modularity optimization was greedy algorithm. First it assign each node to community, and start with N communities. Then, we try to merge each pair of communities and calculate the moddularity difference $\Delta M$. Then indentify the community pair for which the difference is largest and merge those two communities. This is repeated untill all nodes merge into single community. The best partition is one with largest $M$. 
 
-$$M_c = \frac{1}{2L}\sum(A_{ij}-p_{ij})$$
-
-%Here p ij can be determined by randomizing the original network, while
-%keeping the expected degree of each node unchanged. Using the degree preserving null %model (7.1) we have
-
-$$p_{ij} = \frac{k_ik_j}{2L}$$
-
-%If M c is positive, then the subgraph C c has more links than expected by
-%chance, hence it represents a potential community. If Mc is zero then the connectivity between the N nodes is random, fully explained by distribution. Finally, if M c is negative, then the nodes of C c do not form acommunity.
-
-%To generalize these ideas to a full network consider the complete par-
-%tition that breaks the network into n c communities. To see if the local link
-%density of the subgraphs defined by this partition differs
-%from the expected density in a randomly wired network, we define the partition’s modularity by summing (9.11) over all n c communities [23]
-
-$$M=\sum_{c=1}^{n} [\frac{L_c}{L} - (\frac{k_c}{2L})^2]$$
-
-%Modularity has several key properties:
-%• Higher Modularity Implies Better Partition
-%• Zero and Negative Modularity
-%By taking the whole network as a single community we obtain M=0, as
-%in this case the two terms in the parenthesis of (9.12) are equal (Figure
-%9.16c). If each node belongs to a separate community, we have L c =0
-%and the sum (9.12) has n c negative terms, hence M is negative.
-
-%We can use modularity to decide which of the many partitions predicted by a hierarchical method offers the best community structure, selecting the one for which M is maximal. This is illustrated in Figure 9.12f, which shows M for each cut of the dendrogram, finding a clear maximum when the networks breaks into three communities. 
-
-%The maximum modularity hypothesis is the starting point of several community detection algorithms, each seeking the partition with the largest modularity. In principle we could identify the best partition by checking M for all possible partitions, selecting the one for which M is largest. Given, however, the exceptionally large number of partitions, this brute force approach is computationally not feasible. Next we discuss an algo- rithm that finds partitions with close to maximal M, while bypassing the need to inspect all partitions. 
-
-%Greedy Algorithm. The first modularity maximization algorithm, proposed by Newman [33], iteratively joins pairs of communities if the move increases the partition's modularity. The algorithm follows these steps: 1. Assign each node to a community of its own, starting with N communities of single nodes. 2. Inspect each community pair connected by at least one link and compute the modularity difference dM obtained if we merge them. Identify the community pair for which dM is the largest and merge them. Note that modularity is always calculated for the full network. 3. Repeat Step 2 until all nodes merge into a single community, re- cording M for each step. 4. Select the partition for which M is maximal.
-
-
-%In summary, modularity offers a first principle understanding of a network's community structure. Indeed, (9.16) incorporates in a compact form a number of essential questions, like what we mean by a community, how we choose the appropriate null model, and how we measure the goodness of a particular partition. Consequently modularity optimization plays a t the same time, modularity has several well-known limitations: First, it forces together small weakly connected communities. Second, networks lack a clear modularity maxima, developing instead a modularity plateau containing many partitions with hard to distinguish modularity. This plateau explains why numerous modularity maximization algorithms can rapidly identify a high M partition: They identify one of the numerous partitions with close to optimal M. Finally, analytical calculations and numerical simulations indicate that even random networks contain high modularity partitions, at odds with the random hypothesis H3 that motivated the concept of modularity [41-43].  Modularity optimization is a special case of a larger problem: Finding communities by optimizing some quality function Q. The greedy algorithm and the Louvain algorithm described in ADVANCED TOPICS 9.C assume that Q = M, seeking partitions with maximal modularity. In ADVANCED TOPICS 9.C we also describe the Infomap algorithm, that finds communities by min- imizing the map equation L, an entropy-based measure of the partition quality [44-46].
-
-%\textbf{Louvian}
-%The O(N 2 ) computational complexity of the greedy algorithm can be
-%prohibitive for very large networks. A modularity optimization algorithm
-%with better scalability was proposed by Blondel and collaborators [2]. The
-%Louvain algorithm consists of two steps that are repeated iteratively (Figure
-%9.37):
-
-%Start with a weighted network of N nodes, initially assigning each node to a different community. For each node i we evaluate the gain in mod- ularity if we place node i in the community of one of its neighbors j. We then move node i in the community for which the modularity gain is the largest, but only if this gain is positive. If no positive gain is found, istays in its original community. This process is applied to all nodes until no further improvement can be achieved, completing Step I.
-
-%We construct a new network whose nodes are the communities iden-
-%tified during Step I. The weight of the link between two nodes is the
-%sum of the weight of the links between the nodes in the correspond-
-%ing communities. Links between nodes of the same community lead to
-%weighted self-loops.
-%Once Step II is completed, we repeat Steps I - II, calling their combi-
-%nation a pass (Figure 9.37). The number of communities decreases with
-%each pass. The passes are repeated until there are no more changes and
-%maximum modularity is attained.
-
-%\textbf{Infomap}
-%ntroduced by Martin Rosvall and Carl T Bergstrom, Infomap exploits
-%data compression for community identification (Figure 9.38) [44-46]. It does
-%it by optimizing a quality function for community detection in directed
-%and weighted networks, called the map equation.
-%Consider a network partitioned into n c communities. We wish to encode
-%in the most efficient fashion the trajectory of a random walker on this net-
-%work. In other words, we want to describe the trojectory with the smallest
-%number of symbols. The ideal code should take advantage of the fact that
-%the random walker tends to get trapped into communities, staying there
-%for a long time (Figure 9.38c).
-%To achieve this coding we assign:
-
-%One code to each community (index codebook). For example the pur-
-%ple community in Figure 9.38c is assigned the code 111. 
-%Codewords for each node within each community. For example the
-%top left node in (c) is assigned 001. Note that the same node code can
-%be reused in different communities.
-%• Exit codes that mark when the walker leavers a community, like 0001
-%for the purple community in (c).
-%The goal, therefore, is to build a code that offers the shortest description
-%of the random walk. Once we have this code, we can identify the network's
-%community structure by reading the index codebook, which is uniquely assigned to each community
-
-%In a nutshell, the first term of (9.45) gives the average number of bits neces-
-%ary to describe the movement between communities where q is the prob-
-%nline Resource 9.3
-%Map Equation for Infomap
-%For a dynamic visualization of the mechanism
-%behind the map equation, see http://www.
-%tp.umu. se/~rosvall/livemod/mapequation/.
-%ability that the random walker switches communities during a given step.
-%The second term gives the average number of bits necessary to describe
-%movement within communities. Here H(P c ) is the entropy of within-com-
-%munity movements — including an “exit code” to capture the departure
-%from a community i.
-%The specific terms of the maps equation and their calculation in terms of
-%the probabilities capturing the movement of a random walker on a net-
-%work, is somewhat involved. They are described in detail in Ref [44-46].
-%Online Resource 9.3 offers an interactive tool to illustrate the mechanism be-
-%hind (9.45) and its use.
-%At the end L serves as a quality function, that takes up a specific value
-%for a particular partition of the network into communities. To find the best
-%partition, we must minimize L over all possible partitions. The popular im-
-%plementation of this optimization procedure follows Steps I and II of the
-%Louvain algorithm: We assign each node to a separate community, and we
-%systematically join neighboring nodes into modules if the move decreases
-%L. After each move L is updated using (9.45). The obtained communities are
-%joined into supercommunities, finishing a pass, after which the algorithm
-%is restarted on the new, reduced network.
-
-
-
-%We can find these subgraphs by optimizing an objective function, such as modularity function. It measures the difference in the number of edges between the given network and the network with the same number of nodes but randomly connected. In this approach, we try to maximize the density of connections inside a group by focusing more on assortative group structures. Networks where nodes tend to connect with other nodes of a similar degree. Edges are more likely inside blocks than out of them. 
-
-%Another type of networks is the bipartite network that has two disjoint sets of nodes. The edges exist only between nodes from different sets. Networks of this class can appear in real-world data, such as users-movies preference, collaboration network for scientists and papers, etc. Application of density-based approach requires to first project bipartite network to one of its partitions and then find communities in that projection. With this, some information is lost. On the other hand, the method that is directly applicable to bipartite networks is Stochastic Block model, from which the models considered in this paper are derived. \\
+\textbf{Louvain algorithm} is optimization algorithm with better scalability than gready algorithm, so it can operate on very large networks. Initially each node is assigned to different community, and similar as before we calculate the difference in the modularity if we move the community of one of its neighbours. Then we move the node i to the community such that modularity becomes larger. This is applyed to all nodes untill no further improvement could be made. In the second step we create weighter network whose nodes are communities identified during first step. The weight of the link between communities is the sum of the weights between the links in the communities, and the number of links inside the community is given as weighted self-loop. Then the first and secound steps are repeated, until there is no more change in the modularity, otherwise until we find the maximum, optimal modularity. 
 
 \textbf{Core-periphery} structure describes a network whose nodes are divided into two community, densely connected core and less connected periphery. If we consider the average probabilities of edges within each group as $p_{11}$ and $p_{22}$, and between groups $p_{12}$, instead of traditionaly assortative or dissasortative structure we can define core-periphery structure $p_{11}> p_{12} > p_{22}$. In the principle core-periphery structure does not have to be limited to only two groups, and we can define layered, onion, structure. The network can have more cores, that are not directly connected to each other. 
 
@@ -472,7 +346,7 @@ The simple method for finding core-periphery structure is to assume that nodes i
 
 The another way to detect core-periphery structure is to use the inference method based on fits to a stochastic block model. In this method we fit observed network to a block model with two groups, such that edge-probabilities have form $p_{11}> p_{12} > p_{22}$.
 
-\textbf{SBM} is model where each node, in given network G,  belongs to one of $B$ blocks. Vector $\theta_i = r$ indicates that node $i$ is in block $r$, while SBM matrix $\{p\}_{BxB}$, specify the probability $p_{rs}$ that nodes from group $r$ are connected to nodes in group $s$. The SBM model is looking for the most probable model that can reproduce a given network G. Probability of having model parameters $\theta, p$ given network $G$ is proportional to likelihood of generating network $G$, prior of SBM matrix and prior on block assignments:
+\textbf{Stochastic Block Model} is model where each node, in given network G,  belongs to one of $B$ blocks. Vector $\theta_i = r$ indicates that node $i$ is in block $r$, while SBM matrix $\{p\}_{BxB}$, specify the probability $p_{rs}$ that nodes from group $r$ are connected to nodes in group $s$. The SBM model is looking for the most probable model that can reproduce a given network G. Probability of having model parameters $\theta, p$ given network $G$ is proportional to likelihood of generating network $G$, prior of SBM matrix and prior on block assignments:
 
 \begin{equation}
 P(\theta, p| G) = P(G | \theta , p) P(p) P(\theta) 
@@ -488,14 +362,15 @@ Prior on p is modified for core-periphery model such that $P(p) = 3!I_{0<p_{22}<
 
 For fitting model in the work \cite{gallagher2020clarified} authors use Metropolis-within-Gibbs algorithm.
 The likelihood of SBM model increase with number of blocks and model itself does not define optimal number of communities. Inferring minimum description length
-of the model is one approach to decide which model is more likely.   
+of the model is one approach to decide which model is more likely.      
 
+%Another type of networks is the bipartite network that has two disjoint sets of nodes. The edges exist only between nodes from different sets. Networks of this class can appear in real-world data, such as users-movies preference, collaboration network for scientists and papers, etc. Application of density-based approach requires to first project bipartite network to one of its partitions and then find communities in that projection. With this, some information is lost. On the other hand, the method that is directly applicable to bipartite networks is Stochastic Block model, from which the models considered in this paper are derived.  
 
 \section{Network models}
 
 \subsection{Random network model}
 
-The random graph model was introduced by mathematicians Paul Erdős and Alfred R\' {e}nyi in 1959. In this model, connections between nodes are chosen randomly, and every link has the same probability of existing. The graph is characterized only by a number of the nodes $N$ and the linking probability $p$, so Erdős-R\' {e}nyi graph is written as $G(n, p)$. \\
+The random graph model was introduced by mathematicians Paul Erdős and Alfred R\' {e}nyi in 1959. In this model, connections between nodes are chosen randomly, and every link has the same probability of existing. The graph is characterized only by a number of the nodes $N$ and the linking probability $p$, so Erdős-R\' {e}nyi graph is written as $G(n, p)$. 
 
 The creation of ER random network consists of the following steps:
 \begin{itemize}
@@ -504,7 +379,7 @@ The creation of ER random network consists of the following steps:
 \end{itemize}
 
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.9\linewidth]{figures/methodology/ERgraph}
 	\caption{ER graph with $N=100$ nodes and different linking probabilities $p$.}
@@ -540,7 +415,7 @@ The binomial distribution describes very well small networks. For larger network
 p(k) = \frac{1}{k!}e^{-\langle k \rangle}\langle k \rangle^{k}
 \end{equation}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.9\linewidth]{figures/methodology/ER_dist}
 	\caption{Degree distribution of ER graph. Degree distribution of small networks follow binominal. Larger networks are better approximated with Poison distribution, and degree distribution for fixed average degree $<k>$ becomes independent of the network size.}
@@ -564,11 +439,11 @@ Inspired by the idea that real-world networks are highly clustered and the avera
 
 The model interpolates between the regular graph when the probability is $p=0$ and the random graph with $p=1$ when all links are randomly rewired. Short distances and high clustering are present in the network for the critical probabilities.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.9\linewidth]{figures/methodology/ws_graph}
 	\caption{Watts and Strogatz graph model creation}
-	\label{fig:erdist}
+	\label{fig:wsgraph}
 \end{figure}
 
 Even though the small-world network model lacks the power-law degree distribution found in the real-world networks, it is an important model that motivated the research on random graphs. 
@@ -864,11 +739,7 @@ Here we use standard two tail hypothesis test, assuming that the null hypothesis
 
 \section{Multiplicative processes}
 
-Using the multiplicative processes we can generate the power-law but also the log-normal distribution. 
-
-The lognormal distribution is generated by processes that economist Gibrat called the law of proportionate effect. 
-
-If we start from the organism of size $S_0$. At each time step, the organism may grow or shrink,  according to random variable $\epsilon$, 
+Using the multiplicative processes we can generate the power-law but also the log-normal distribution. The lognormal distribution is generated by processes that economist Gibrat called the law of proportionate effect. If we start from the organism of size $S_0$. At each time step, the organism may grow or shrink,  according to random variable $\epsilon$, 
 
 $$S_t = \epsilon_t S_{t-1}$$   
 
@@ -1060,7 +931,7 @@ If $\Delta_{n} < 1$ is less than one the number of sequential activities $A_{n}$
 T_{n}=T_{n-1} \beta^{\Delta_{n}}+I_{n}
 \end{equation}
 
-Here, $\beta$ is the forgetting factor. In our implementation of the model, the trust is updated each day for every user irrespective of their activity status. Therefore, the decay itself is a combination of $\beta$ and $\Delta_n$: the more days pass without recorded interaction from a specific user, the more their reputation decays. Lower values of beta lead to faster decay of trust as shown on figure \ref{fig:paper_summary}.
+Here, $\beta$ is the forgetting factor. In our implementation of the model, the trust is updated each day for every user irrespective of their activity status. Therefore, the decay itself is a combination of $\beta$ and $\Delta_n$: the more days pass without recorded interaction from a specific user, the more their reputation decays. Lower values of beta lead to faster decay of trust as shown on figure. %\ref{fig:paper_summary}.
 
 
 
