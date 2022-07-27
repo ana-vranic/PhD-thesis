@@ -46,25 +46,27 @@
 \BOOKMARK [2][-]{subsection.3.5.1}{Model description}{section.3.5}% 46
 \BOOKMARK [2][-]{subsection.3.5.2}{Modeling real systems}{section.3.5}% 47
 \BOOKMARK [1][-]{section.3.6}{Discussion and conclusions }{chapter.3}% 48
-\BOOKMARK [0][-]{chapter.4}{The role of trust in knowledge based communities}{}% 49
-\BOOKMARK [1][-]{section.4.1}{The Stack Exchange}{chapter.4}% 50
-\BOOKMARK [2][-]{subsection.4.1.1}{Data}{section.4.1}% 51
-\BOOKMARK [2][-]{subsection.4.1.2}{Comparison between active and closed SE communities}{section.4.1}% 52
-\BOOKMARK [1][-]{section.4.2}{Network properties of Stack Exchange data}{chapter.4}% 53
-\BOOKMARK [2][-]{subsection.4.2.1}{Clustering}{section.4.2}% 54
-\BOOKMARK [2][-]{subsection.4.2.2}{Core-periphery structure}{section.4.2}% 55
-\BOOKMARK [2][-]{subsection.4.2.3}{core-periphery structure of knowledge-sharing networks}{section.4.2}% 56
-\BOOKMARK [2][-]{subsection.4.2.4}{Core-periphery structure of the interaction networks}{section.4.2}% 57
-\BOOKMARK [2][-]{subsection.4.2.5}{Dynamical Reputation model}{section.4.2}% 58
-\BOOKMARK [2][-]{subsection.4.2.6}{Selection of dynamical reputation model parameters}{section.4.2}% 59
-\BOOKMARK [2][-]{subsection.4.2.7}{Dynamic reputation - \040parameter}{section.4.2}% 60
-\BOOKMARK [2][-]{subsection.4.2.8}{Dynamic reputation of users within the network of interactions}{section.4.2}% 61
-\BOOKMARK [2][-]{subsection.4.2.9}{Dynamic reputation in the network of interactions}{section.4.2}% 62
-\BOOKMARK [0][-]{appendix.A}{The choice of the sliding window}{}% 63
-\BOOKMARK [0][-]{appendix.B}{Robustness of core-periphery algorithm}{}% 64
-\BOOKMARK [1][-]{subsection.B.0.1}{Precision and recall}{appendix.B}% 65
-\BOOKMARK [2][-]{subsection.B.0.2}{F1 measure}{subsection.B.0.1}% 66
-\BOOKMARK [2][-]{subsection.B.0.3}{Jaccard coefficient}{subsection.B.0.1}% 67
-\BOOKMARK [2][-]{subsection.B.0.4}{Normalized mutual information}{subsection.B.0.1}% 68
-\BOOKMARK [2][-]{subsection.B.0.5}{Adjusted rand index}{subsection.B.0.1}% 69
-\BOOKMARK [0][-]{appendix*.1}{Bibliography}{}% 70
+\BOOKMARK [1][-]{section.3.7}{Distributions fit}{chapter.3}% 49
+\BOOKMARK [1][-]{section.3.8}{The model for social groups growth}{chapter.3}% 50
+\BOOKMARK [0][-]{chapter.4}{The role of trust in knowledge based communities}{}% 51
+\BOOKMARK [1][-]{section.4.1}{The Stack Exchange}{chapter.4}% 52
+\BOOKMARK [2][-]{subsection.4.1.1}{Data}{section.4.1}% 53
+\BOOKMARK [2][-]{subsection.4.1.2}{Comparison between active and closed SE communities}{section.4.1}% 54
+\BOOKMARK [1][-]{section.4.2}{Network properties of Stack Exchange data}{chapter.4}% 55
+\BOOKMARK [2][-]{subsection.4.2.1}{Clustering}{section.4.2}% 56
+\BOOKMARK [2][-]{subsection.4.2.2}{Core-periphery structure}{section.4.2}% 57
+\BOOKMARK [2][-]{subsection.4.2.3}{core-periphery structure of knowledge-sharing networks}{section.4.2}% 58
+\BOOKMARK [2][-]{subsection.4.2.4}{Core-periphery structure of the interaction networks}{section.4.2}% 59
+\BOOKMARK [2][-]{subsection.4.2.5}{Dynamical Reputation model}{section.4.2}% 60
+\BOOKMARK [2][-]{subsection.4.2.6}{Selection of dynamical reputation model parameters}{section.4.2}% 61
+\BOOKMARK [2][-]{subsection.4.2.7}{Dynamic reputation - \040parameter}{section.4.2}% 62
+\BOOKMARK [2][-]{subsection.4.2.8}{Dynamic reputation of users within the network of interactions}{section.4.2}% 63
+\BOOKMARK [2][-]{subsection.4.2.9}{Dynamic reputation in the network of interactions}{section.4.2}% 64
+\BOOKMARK [0][-]{appendix.A}{The choice of the sliding window}{}% 65
+\BOOKMARK [0][-]{appendix.B}{Robustness of core-periphery algorithm}{}% 66
+\BOOKMARK [1][-]{subsection.B.0.1}{Precision and recall}{appendix.B}% 67
+\BOOKMARK [2][-]{subsection.B.0.2}{F1 measure}{subsection.B.0.1}% 68
+\BOOKMARK [2][-]{subsection.B.0.3}{Jaccard coefficient}{subsection.B.0.1}% 69
+\BOOKMARK [2][-]{subsection.B.0.4}{Normalized mutual information}{subsection.B.0.1}% 70
+\BOOKMARK [2][-]{subsection.B.0.5}{Adjusted rand index}{subsection.B.0.1}% 71
+\BOOKMARK [0][-]{appendix*.1}{Bibliography}{}% 72

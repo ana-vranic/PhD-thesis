@@ -219,4 +219,73 @@ Gibrat's law is the first empirical law used by researchers to describe and expl
 The results presented in this paper contribute to our knowledge of the growth and segmentation of socio-economical systems. Our rigorous analysis shows that the distribution of sizes of groups for studied systems follows a log-normal distribution. The findings of the previous research suggested the power-law behavior of this distribution. A detailed and comprehensive analysis of distributions of group sizes in social systems is needed. These and future results will help us better understand the growth and segmentation of social systems and predict their evolution and sustainability. 
 %----------------------------------------------------------------------------------------
 
+\section{Distributions fit}
+
+We compute the log-likelihood ratio $R$, and $p$-value between different distributions and log-normal fit \cite{clauset2009power} to determine the best fit for the group size distributions. Distribution with a higher likelihood is a better fit. The log-likelihood ratio R then has a positive or negative value, indicating which distribution represents a better fit. To choose between two distributions, we need to calculate p-value,  to be sure that R is sufficiently positive or negative and that it is not the result of chance fluctuation from the result that is close to zero. If the p-value is small, $p<0.1$, it is unlikely that the sign of R is the chance of fluctuations, and it is an accurate indicator of which model fits better. \\
+
+Table \ref{tab:fit-data} summarizes the findings for empirical data on group size distributions from Meetup groups in London, Meetup groups in New York and Reddit. Using the maximum likelihood method, we obtain the parameters of the distributions \cite{powerlaw}. The results indicate that log-normal distribution is the best fit for all three systems.  Figure \ref{fig:fitdata} shows the distributions of empirical data as well as log-normal fit on data. For Meetup data, we present fit on stretched exponential distribution, which very well fits a large portion of data. For subreddits, distribution is broad and, potentially, resembles power-law. Still, log-normal distribution is a more suitable fit.
+
+\begin{table}[!h]
+	\centering
+	\caption{The likelihood ratio R and p-value between different candidates and \textbf{lognormal} distribution for fitting the distribution of \textbf{groups sizes} of Meetup groups in London, New York and in Reddit. According to these statistics, the lognormal distribution represents the best fit for all communities. \\ }
+	\begin{tabular}{|c||cc||cc||cc|}
+		\hline
+		\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}distribution \end{tabular}} & \multicolumn{2}{c||}{\begin{tabular}[c]{@{}c@{}}Meetup\\ city London\end{tabular}} & \multicolumn{2}{c||}{\begin{tabular}[c]{@{}c@{}}Meetup\\ city NY\end{tabular}} & \multicolumn{2}{c|}{Reddit}                    \\ \cline{2-7} 
+		& \multicolumn{1}{c|}{R}                             & p                            & \multicolumn{1}{c|}{R}                           & p                          & \multicolumn{1}{c|}{R}         & p             \\ \hline \hline \hline
+		exponential                                                                            & \multicolumn{1}{c|}{-8.64e2
+			%-864.86
+		}                       & 8.11e-32                     & \multicolumn{1}{c|}{-8.22e2}                     & 6.63e-26                   & \multicolumn{1}{c|}{-3.85e4} & 1.54e-100     \\ \hline
+		\begin{tabular}[c]{@{}c@{}}stretched \\ exponential\end{tabular}                       & \multicolumn{1}{c|}{-3.01e2}                       & 1.00e-30                      & \multicolumn{1}{c|}{-1.47e2}                     & 7.78e-8                    & \multicolumn{1}{c|}{-7.97e1}    & 5.94e-30      \\ \hline
+		power law                                                                              & \multicolumn{1}{c|}{-4.88e3}                      & 0.00                         & \multicolumn{1}{c|}{-4.57e3}                    & 0.00                       & \multicolumn{1}{c|}{-9.39e2}   & 4.48e-149 \\ \hline
+		\begin{tabular}[c]{@{}c@{}}truncated \\ power law\end{tabular}                         & \multicolumn{1}{c|}{-2.39e3}                      & 0.00                         & \multicolumn{1}{c|}{-2.09e3}                    & 0.00                       & \multicolumn{1}{c|}{-5.51e2}   & 2.42e-56      \\ \hline
+	\end{tabular}
+	\label{tab:fit-data}
+\end{table}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=\linewidth]{figures/FigA1_data.png}
+	\caption{The comparison between log-normal and stretched exponential fit to London and NY data,  and between log-normal and power law for Subreddits. The parameters for log-normal fits are 1) for city London $\mu=-0.93$ and $\sigma = 1.38$, 2) for city NY $\mu=-0.99$ and $\sigma = 1.49$, 3) for Subreddits $\mu=-5.41$ and $\sigma = 3.07$.  }
+	\label{fig:fitdata}
+\end{figure}
+
+We use the same methods to estimate the fit for simulated group size distributions on Meetup groups in London, New York, and Subreddits. Table \ref{tab:fit_model} shows the results of the log-likelihood ratio R and $p$-value between different distributions. We conclude that log-normal distribution is most suitable for simulated group size distributions. Plotting log-normal and stretched exponential fit on data, Fig. \ref{fig:fit_model} we confirm our observations.  
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[!h]
+	\centering
+	\caption{The likelihood ratio R and p-value between different candidates and \textbf{lognormal}
+		distribution for fitting the distribution of \textbf{simulated group sizes} of Meetup groups in London, New York and Reddit. According to these statistics, the lognormal distribution
+		represents the best fit for all communities. \\}
+	\begin{tabular}{|c||cc||cc||cc|}
+		\hline
+		\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}distribution \end{tabular}} & \multicolumn{2}{c||}{\begin{tabular}[c]{@{}c@{}}Meetup\\ city London\end{tabular}} & \multicolumn{2}{c||}{\begin{tabular}[c]{@{}c@{}}Meetup\\ city NY\end{tabular}} & \multicolumn{2}{c|}{Reddit}                \\ \cline{2-7} 
+		& \multicolumn{1}{c|}{R}                              & p                           & \multicolumn{1}{c|}{R}                            & p                         & \multicolumn{1}{c|}{R}         & p         \\ \hline \hline \hline
+		exponential                                                                            & \multicolumn{1}{c|}{-6.27e4}                      & 0.00                        & \multicolumn{1}{c|}{-5.11e4}                    & 0.00                      & \multicolumn{1}{c|}{-1.26e5} & 7.31e-125 \\ \hline
+		\begin{tabular}[c]{@{}c@{}}stretched\\ exponential\end{tabular}                        & \multicolumn{1}{c|}{-1.01e4}                      & 1.96e-287                    & \multicolumn{1}{c|}{-6.69e3}                     & 1.46e-93                  & \multicolumn{1}{c|}{-1.39e4} & 0.00      \\ \hline
+		power law                                                                              & \multicolumn{1}{c|}{-2.29e5}                     & 0.00                        & \multicolumn{1}{c|}{-3.73e5}                   & 0.00                      & \multicolumn{1}{c|}{-4.38e4} & 0.00      \\ \hline
+		\begin{tabular}[c]{@{}c@{}}truncated\\ power law\end{tabular}                          & \multicolumn{1}{c|}{-9.28e4}                      & 0.00                        & \multicolumn{1}{c|}{-1.55e5}                   & 0.00                      & \multicolumn{1}{c|}{-9.12e4} & 0.00      \\ \hline
+	\end{tabular}
+	\label{tab:fit_model}
+\end{table}
+\clearpage
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figures/FigA2-model.png}
+	\caption{The comparison between lognormal and stretched exponential fit to simulated group sizes distributions. The parameters for log-normal fits are 1) for city London $\mu=-0.97$ and $\sigma = 1.43$ , 2) for city NY $\mu=-0.84$ and $\sigma = 1.38$ , 3) for Subreddits $\mu=-1.63$ and $\sigma = 1.53$. }
+	\label{fig:fit_model}
+\end{figure}
+
+
+\section{The model for social groups growth}
+In the groups growth model, at each step, new users join the network, while old users are active with probability $p_a$. Active users can create new group with probability $p_g$. Otherwise, with probability $p_{aff}$, they perform diffusion linking. With probability, $1-p_{aff}$ users join a random group. Figure \ref{fig:model_comp}, top row, shows that group sizes distributions follow log-normal distribution. The affiliation parameter $p_{aff}$ influences the width of distributions, so for larger $p_{aff}$, we find larger groups in the network.   If, instead of random linking, users with probability  $1-p_{aff}$, choose to join to larger groups, group sizes distribution change significantly. Similar to affiliation model \cite{zheleva2009co}, group sizes have power-law distribution, see bottom row on Figure \ref{fig:model_comp}.
+\clearpage
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=\linewidth]{figures/model_N30.png}
+	\caption{Groups sizes distributions for groups model, where at each time step the constant number of users arrive, $N=30$ and old users are active with probability $p_a=0.1$. Active users make new groups with probability $p_g=0.1$, while we vary affiliation parameter $p_{aff}$. With probability, $1-p_{aff}$, users choose a group randomly. The group sizes distribution (top row) is described with a log-normal distribution. With higher affiliation parameter, $p_{aff}$, distribution has larger width. The bottom row presents the case where with probability $1-p_{aff}$ users have a preference toward larger groups. For all values of parameter $p_{aff}$, we find the power-law group sizes distribution.}
+	\label{fig:model_comp}
+\end{figure}
 

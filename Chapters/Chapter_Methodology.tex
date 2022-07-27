@@ -361,7 +361,7 @@ where $A_{ij}$ is number of edges between nodes $i$ and $j$.
 Prior on p is modified for core-periphery model such that $P(p) = 3!I_{0<p_{22}<p_{12}<p_{11}<1}$, while prior on $\theta $ consists of three parts: probability of having $l$ blocks; given the number of layers probability $P(n|l)$ of having groups of sizes ${n_1..n_l}$ and the probability $P(\theta|n)$ of having particular assignments of nodes to blocks. 
 
 For fitting model in the work \cite{gallagher2020clarified} authors use Metropolis-within-Gibbs algorithm.
-The likelihood of SBM model increase with number of blocks and model itself does not define optimal number of communities. Inferring minimum description length
+The likelihood of SBM model increase with number of blocks and model itself does not define optimal number of communities. Inferring minimum description length (MDL)
 of the model is one approach to decide which model is more likely.      
 
 %Another type of networks is the bipartite network that has two disjoint sets of nodes. The edges exist only between nodes from different sets. Networks of this class can appear in real-world data, such as users-movies preference, collaboration network for scientists and papers, etc. Application of density-based approach requires to first project bipartite network to one of its partitions and then find communities in that projection. With this, some information is lost. On the other hand, the method that is directly applicable to bipartite networks is Stochastic Block model, from which the models considered in this paper are derived.  
