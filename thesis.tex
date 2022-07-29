@@ -1,4 +1,6 @@
 \documentclass[12pt,a4paper]{memoir}
+
+%define fonts
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[T1,OT2,T2A]{fontenc}
@@ -6,27 +8,17 @@
 \usepackage{times} 
 %\usepackage{mathptmx}
 %\usepackage{mathpazo} % Use the Palatino font by default
-%\usepackage{microtype}
-
 
 \usepackage[dvips]{graphicx}
 \usepackage{xcolor}
-
 \usepackage{amsmath}
 \usepackage{amssymb}
+
 \usepackage[
 breaklinks=true,colorlinks=true,
 %linkcolor=blue,urlcolor=red,citecolor=red,% PDF VIEW
 linkcolor=blue,urlcolor=red,citecolor=red,% PRINT
 bookmarks=true,bookmarksopenlevel=2]{hyperref}
-
-
-% PDF VIEW
-%\usepackage{geometry}
-%\geometry{
-%left=20mm,right=20mm,%
-%bindingoffset=0mm, top=25mm,bottom=25mm}
-% PRINT
 
 \usepackage[margin=20mm]{geometry}
 
@@ -36,26 +28,16 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 \usepackage{setspace}
 \usepackage{enumitem}
 \usepackage{pdfpages}
-%\usepackage{afterpage}
-
-%\usepackage{etoolbox}
-%\usepackage{tocbibind}
-%\usepackage{tabularx}
-
-%\usepackage{lscape}
-%\usepackage[numbers,comma,sort&compress]{natbib}
-%\usepackage{lipsum}
+\usepackage{ragged2e}
 \usepackage[caption=false,labelformat=empty]{subfig}
-%\usepackage{enumitem}
-%\usepackage{paratype}
-%\usepackage{tempora}
+\usepackage{titleps}
+\usepackage{fancyhdr}
+
 
 %\SingleSpacing
 %\OnehalfSpacing
 %\DoubleSpacing
-
 %\linespread{1.3} %1.3 is onehalf spacing 
-
 \setlength{\emergencystretch}{2.5em} %removes overfull boxes
 \setlength{\parskip}{0.5em}       % Space between paragraphs (0em is default).
 
@@ -71,7 +53,6 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 %\setsubsecheadstyle{\large\bfseries\sffamily\raggedright}
 %\setsubsubsecheadstyle{\bfseries\sffamily\raggedright}
 \setsecheadstyle{\centering\Large\bfseries}
-
 
 %%% STYLE OF PAGES NUMBERING
 %\pagestyle{companion}\nouppercaseheads 
@@ -96,31 +77,44 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 
 \begin{document}
 \title{Evolving complex networks: structure and dynamics}
+
 \frontmatter
-%\include{titlepage}
-%\include{frontmatter}
+%\include{0-FrontMatter/Title-Eng}
+%\include{0-FrontMatter/Title-Srb}
+%\include{0-FrontMatter/Committee}
+%\include{0-FrontMatter/Acknowledgements}
+%\include{0-FrontMatter/Abstract-Eng}
+%\include{0-FrontMatter/Abstract-Srb}
+%\include{0-FrontMatter/Contents}
+%\include{0-FrontMatter/Figures}
+%\include{0-FrontMatter/Tables}
 
 \mainmatter
 \selectlanguage{english}
-%\include{Chapters/Chapter_Introduction}
-%\include{Chapters/Chapter_test}
-\input{Chapters/Chapter_Methodology}
-%\include{Chapters/Chapter_Methodology_2}
-\include{Chapters/Chapter_DrivingSignal}
-\include{Chapters/Chapter_GroupsGrowth}
-\include{Chapters/Chapter_Trust1}
-%\include{Chapters/Chapter_Trust2}
-%\include{Chapters/Chapter_Trust2-1}
-%\include{Chapters/Chapter_Trust3}
+%\include{1-MainMatter/Chapters/Chapter_Introduction}
+\include{1-MainMatter/Chapters/Chapter_Methodology}
+%\include{1-MainMatter/Chapters/Chapter_DrivingSignal}
+%\include{1-MainMatter/Chapters/Chapter_GroupsGrowth}
+%\include{1-MainMatter/Chapters/Chapter_Trust1}
+%\include{1-MainMatter/Chapters/Chapter_Conclusions}
+
 \appendix
-\include{Appendix/Appendix_sliding_window}
-\include{Appendix/Appendix_robust}
+%\include{2-Appendix/Appendix_sliding_window}
+%\include{2-Appendix/Appendix_robust}
 
-%\chapter{Additional}
-%Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\backmatter
 
+%References
 \bibliographystyle{unsrt}
 \bibliography{sample}
+
+%\include{3-BackMatter/Biography}
+%\include{3-BackMatter/Autorstvo}
+%\include{3-BackMatter/Istovetnost}
+%\include{3-BackMatter/Koriscenje}
+
+
+
 
 \end{document}
 

@@ -1,12 +1,27 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: Chapters/Chapter_DrivingSignal.aux
-A level-1 auxiliary file: Chapters/Chapter_GroupsGrowth.aux
-A level-1 auxiliary file: Chapters/Chapter_Trust1.aux
-A level-1 auxiliary file: Appendix/Appendix_sliding_window.aux
-A level-1 auxiliary file: Appendix/Appendix_robust.aux
+A level-1 auxiliary file: 0-FrontMatter/Title-Eng.aux
+A level-1 auxiliary file: 0-FrontMatter/Title-Srb.aux
+A level-1 auxiliary file: 0-FrontMatter/Committee.aux
+A level-1 auxiliary file: 0-FrontMatter/Acknowledgements.aux
+A level-1 auxiliary file: 0-FrontMatter/Abstract-Eng.aux
+A level-1 auxiliary file: 0-FrontMatter/Abstract-Srb.aux
+A level-1 auxiliary file: 0-FrontMatter/Contents.aux
+A level-1 auxiliary file: 0-FrontMatter/Figures.aux
+A level-1 auxiliary file: 0-FrontMatter/Tables.aux
+A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_Introduction.aux
+A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_Methodology.aux
+A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_DrivingSignal.aux
+A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_GroupsGrowth.aux
+A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_Trust1.aux
+A level-1 auxiliary file: 2-Appendix/Appendix_sliding_window.aux
+A level-1 auxiliary file: 2-Appendix/Appendix_robust.aux
 The style file: unsrt.bst
+A level-1 auxiliary file: 3-BackMatter/Biography.aux
+A level-1 auxiliary file: 3-BackMatter/Autorstvo.aux
+A level-1 auxiliary file: 3-BackMatter/Istovetnost.aux
+A level-1 auxiliary file: 3-BackMatter/Koriscenje.aux
 Database file #1: sample.bib
 You're missing a field name---line 1045 of file sample.bib
  : 
@@ -54,7 +69,7 @@ Warning--empty publisher in guide_temporal
 Warning--empty booktitle in yashkina2020
 You've used 79 entries,
             1791 wiz_defined-function locations,
-            922 strings with 18717 characters,
+            937 strings with 19208 characters,
 and the built_in function-call counts, 20603 in all, are:
 = -- 1810
 > -- 1005
