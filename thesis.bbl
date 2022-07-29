@@ -125,6 +125,12 @@ Michael Mitzenmacher.
   distributions.
 \newblock {\em Internet mathematics}, 1(2):226--251, 2004.
 
+\bibitem{nair2022fundamentals}
+J.~Nair, A.~Wierman, and B.~Zwart.
+\newblock {\em The Fundamentals of Heavy Tails}.
+\newblock Cambridge Series in Statistical and Probabilistic Mathematics.
+  Cambridge University Press, 2022.
+
 \bibitem{kantelhardt2002}
 Jan~W Kantelhardt, Stephan~A Zschiegner, Eva Koscielny-Bunde, Shlomo Havlin,
   Armin Bunde, and H~Eugene Stanley.
@@ -444,5 +450,28 @@ Santo Fortunato.
   online communities.
 \newblock Advances in Intelligent Systems and Computing, pages 1133--1146,
   Cham, 2020. Springer International Publishing.
+
+\bibitem{labatut2012accuracy}
+Vincent Labatut and Hocine Cherifi.
+\newblock Accuracy measures for the comparison of classifiers.
+\newblock {\em arXiv preprint arXiv:1207.3790}, 2012.
+
+\bibitem{danon2005comparing}
+Leon Danon, Albert Diaz-Guilera, Jordi Duch, and Alex Arenas.
+\newblock Comparing community structure identification.
+\newblock {\em Journal of statistical mechanics: Theory and experiment},
+  2005(09):P09008, 2005.
+
+\bibitem{santos2009use}
+Jorge~M Santos and Mark Embrechts.
+\newblock On the use of the adjusted rand index as a metric for evaluating
+  supervised classification.
+\newblock In {\em International conference on artificial neural networks},
+  pages 175--184. Springer, 2009.
+
+\bibitem{hubert1985comparing}
+Lawrence Hubert and Phipps Arabie.
+\newblock Comparing partitions.
+\newblock {\em Journal of classification}, 2(1):193--218, 1985.
 
 \end{thebibliography}

@@ -416,9 +416,9 @@ p(k) = \frac{1}{k!}e^{-\langle k \rangle}\langle k \rangle^{k}
 	\label{fig:erdist}
 \end{figure}
 
-The random graph has a very small \textbf{average path length}, it is given as $\langle l \rangle = \frac{ln N}{ln(pN)}$ that is characteristic of many large networks. The clustering coefficient is proportional to linking probability, $\langle C \rangle = p$, so in large random networks, we find a small clustering coefficient, contrary to real-world networks. \\  %about small networks Barabasi chapter3, page 22
+The random graph has a very small \textbf{average path length}, it is given as $\langle l \rangle = \frac{ln N}{ln(pN)}$ that is characteristic of many large networks. The clustering coefficient is proportional to linking probability, $\langle C \rangle = p$, so in large random networks, we find a small clustering coefficient, contrary to real-world networks.  %about small networks Barabasi chapter3, page 22
 
-The figure \ref{fig:erp} shows how the network becomes more connected by increasing the linking probability $p$. When $p=0$, all nodes are disconnected. In the other limit, $p=1$, the network is fully connected. Between those two probabilities exists critical probability, where the giant component appears. The giant component is a sub-graph, which size is proportional to the network size. In other words, the network does not have disconnected components. Such change in the network is a phase transition in network connectivity and is related to percolation theory. \\
+The figure \ref{fig:erp} shows how the network becomes more connected by increasing the linking probability $p$. When $p=0$, all nodes are disconnected. In the other limit, $p=1$, the network is fully connected. Between those two probabilities exists critical probability, where the giant component appears. The giant component is a sub-graph, which size is proportional to the network size. In other words, the network does not have disconnected components. Such change in the network is a phase transition in network connectivity and is related to percolation theory. 
 
 The phase transition occurs when average degree is $ \langle k  \rangle = 1$, which gives us: $p_c = \frac{1}{N-1}$, meaning that all nodes have degree larger than 1. When the $ \langle k  \rangle < 1$, the network is in the sub-critical regime where all components are small. In the critical regime, the size of the giant component is proportional to the $N^{2/3}$. In the supercritical regime, $ \langle k  \rangle > 1$, the probability of a giant component appearing is 1.
 
@@ -480,13 +480,9 @@ P(k) = \frac{2m(m+1)}{k(k+1)(k+2)}
 
 For large $k$ it is exactly power-law. It is also independent of the time and size of the system, meaning the emergence of stationary scale-free state. Distributions do not depend on the N. If we vary $m$ the slope of distributions is the same, but they are parallel. After re-scaling $p(k)/m^2$, they fall on the same line. 
 
-
-
 %stationary degree dsitribution, does not depend on the system parameters, so different systems have similar behavior
 
-As network grows nodes with larger degree becomes bigger, so we end up with few nodes with many links, called hubs. The \textbf{network diameter}, represents the maximum distance in network, $d \sim \frac{lnN}{lnlnN}$. The diameter grows slower than $lnN$, making the distances in BA model smaller than in random graph. The difference is found for large N. Knowing that BA network has hubs, that shorten the path between less connected nodes. Also, if hubs are removed from the network, network easily partition in several components, loosing its  properties. 
-
-The \textbf{clustering coefficient} of the BA model follows $C \sim \frac{ln N^2}{N}$. It is different from clustering found in random networks, and BA networks are in general more clustered. 
+As network grows nodes with larger degree becomes bigger, so we end up with few nodes with many links, called hubs. The \textbf{network diameter}, represents the maximum distance in network, $d \sim \frac{lnN}{lnlnN}$. The diameter grows slower than $lnN$, making the distances in BA model smaller than in random graph. The difference is found for large N. Knowing that BA network has hubs, that shorten the path between less connected nodes. Also, if hubs are removed from the network, network easily partition in several components, loosing its  properties. The \textbf{clustering coefficient} of the BA model follows $C \sim \frac{ln N^2}{N}$. It is different from clustering found in random networks, and BA networks are in general more clustered. 
 
 The combination of the growth and preferential attachment linking is crucial for getting scale free networks. For example, eliminating the preferential attachment; in growing network with random linking, degree distribution is stationary, but it follows exponential. In contrast, the absence of growth leads to the non-stationary degree distribution. When number of nodes is fixed, while the network grows only in number of links, such that randomly chosen node $i$ connects to node $j$ according to probability $\Pi$. At the beginning, the degree distribution follows the power-law, same as in BA model. As more links are added to the network, the distribution changes it's shape, first the peak appears, while at the end network becomes complete graph, where all nodes have the same degree.  
 
@@ -598,9 +594,9 @@ On the other hand, heavy-tailed distributions decay slower than exponential, and
 
 This section gives an overview of relevant distributions and methods for fitting data and testing the quality of the performed fit. 
 
-\subsection{Power-law}
+\subsection{The properties of distributions}
 
-The power-law distribution is defined as 
+\textbf{Power-law} The power-law distribution is defined as 
 
 \begin{equation}
 p(k) = C k^{-\gamma}
@@ -609,13 +605,13 @@ where parameter $\gamma$ is an exponent of the power-law distribution while the 
 
 The distribution can take discrete and continuous values, and it is defined for positive values $k>0$, so there is a lower bound to the power-law function $k_{min}$. For the discrete case $C=1/\zeta(\gamma, k_{min})$, while in the continuous case $C=(\gamma-1)k_{min}^{\gamma-1}$. 
 
-The likelihood function for continuous data set is defined as 
-\begin{equation}
-l(k) = \prod p(k) = \prod \frac{\gamma - 1}{ k_{min}}(\frac{k_i}{k_{min}})^{-\gamma}
-\end{equation}
+%The likelihood function for continuous data set is defined as 
+%\begin{equation}
+%l(k) = \prod p(k) = \prod \frac{\gamma - 1}{ k_{min}}(\frac{k_i}{k_{min}})^{-\gamma}
+%\end{equation}
 
-Minimizing the loglikelihood function, exponent is calculated as $\gamma = 1+n[\sum ln \frac{k_i}{k_{min}} ]^{-1}$. 
-For discrete distribution the log-likelihood is $log(l) = ln\prod \frac{k_i^{-\gamma}}{\zeta(\gamma, k_{min})}$. The analytical solution does not exist for this equation, but it can be numerically optimized.
+%Minimizing the loglikelihood function, exponent is calculated as $\gamma = 1+n[\sum ln \frac{k_i}{k_{min}} ]^{-1}$. 
+%For discrete distribution the log-likelihood is $log(l) = ln\prod \frac{k_i^{-\gamma}}{\zeta(\gamma, k_{min})}$. The analytical solution does not exist for this equation, but it can be numerically optimized.
 
 The power-law distribution is called scale-free distribution. If we scale the value $k$ for the factor $2$ the ratio of $p(x)/p(2x)$ is constant and does not depend on the $k$. We'll find that these criteria are not satisfied by any other distribution. 
 \begin{equation}
@@ -624,10 +620,7 @@ The power-law distribution is called scale-free distribution. If we scale the va
 
 The scale-free function is defined as $p(bx) = g(b)p(x)$. The solution of this equation is $p(x)=p(1)x^{-\gamma}$, where  $\gamma=-p(1)/p^{'}(1)$ lead us to conclusion that if function is self-similar it has to be power-law.
 
-
-\subsection{Lognormal distribution}
-
-The variable $x$ has the lognormal distribution if the random variable $y=ln(x)$ is distributed as normal distribution. 
+\textbf{Lognormal distribution}. The variable $x$ has the lognormal distribution if the random variable $y=ln(x)$ is distributed as normal distribution. 
 
 \begin{equation}
 f(y) = \frac{1}{2\pi\sigma}e^{-(y-\mu)^2/2\sigma^2}
@@ -661,26 +654,25 @@ The sum of the logarithms of the $\epsilon_t$, according to the Central Limit Th
 
 The multiplicative processes generate the log-normal distribution. Introducing threshold in the multiplicative process leads to the power law. For example, in the Champernowne model, individuals are divided into classes according to their income. The minimum income is m. People between incomes m and $\gamma m$ are in the first class, in the second class are people with incomes between $\gamma m$ and $\gamma^2 m $. The individuals can change their class, so it is described as a multiplicative process, but with a threshold, as income can not be lower than m. If we fix $\gamma=2$, and consider that with probability $p_{i,i-1}=2/3$ the change is from higher to lower class. In contrast, with probability, $p_{i, i+1}=1/3$ individual goes to higher class. In this process, the distribution of incomes emerges to the power-law distribution.
 
-\subsection{Power law with exponential cut-off}
-
-The density function has following form
+\textbf{Power law with exponential cut-off}. The density function has following form
 \begin{equation}
 p(k) = C k^{-\gamma}e^{-\lambda k}
 \end{equation}
 where $k>0$ and $\gamma>0$. This function combines the power-law and exponential terms responsible for an exponentially bounded tail. Taking the logarithm $ln(p(k)) = lnC - \gamma lnk - \lambda k$, when $k<<1/\lambda$ the second term dominates, so distribution follows te power-law, with exponent $\gamma$. Otherwise, the $\lambda x$ term dominates, resulting in an exponential cutoff for high values. 
 
-\subsection{Streched exponential}
-
-The stretched exponential distribution is defined as:
+\textbf{Streched exponential} The stretched exponential distribution is defined as:
 \begin{equation}
 p(k) = c k^{\beta - 1}e^{-(\lambda k)^{\beta}}
 \end{equation}
 the parameter $\beta$ is stretching exponent determining the properties of the function $p(k)$. For $\beta=1$, the function is exponential. For $\beta<1$ it is hard to distinguish the distribution from the power law. We have a compressed exponential function for $\beta>1$, so $k$ varies in the narrow range. 
 
-\subsection{Plotting the fat-tailed distributions}
+\subsection{Plotting the distributions}
 
-When plotting the distribution of the power-law data on the double logarithmic scale we should obtain the straight line, as $ln(p(k)) = \gamma ln(k) + c$. The tail of the distribution is noisy. As the size of the bins is constant, the density of the bins for large distribution values becomes large. To avoid the fluctuations in the tail, we can use logarithmic binning. The noise is reduced by dividing the $x$ axis into $n$ bins $b_n = c^n$, so the following bin is wider than before. For the base $c$ we can choose any value $c>1$. Similarly, the binning can take the following form $b_n = k_0\exp{(cn)}$, where $k_0$ is the minimum data point, while the $c$ is the arbitrary base. All data points between values $[b_n, b_{n+1})$ are represented with one point $p(k_n) = N_n/b_n$, where $N_n$ is number of nodes found in the bin $b_n$ and $k_n = \sum_i k_i / N_n$ is average degree of the nodes in the bin $b_n$. By this, averaging over bins in the tail, which now have more sampled points, reduces the statistical errors. Figure \ref{fig:distributions} shows how different distributions look like on linear (first column) and log-log scale (second column).
-
+The first step in analysis the empirical data is to create the frequency plot, or histogram. Data are binned in the equal intervals and the number of data points within interval are plotted. When plotting heavy tailed distributions it is hard to determine if distribution is for example exponential or power law. To make the distribution visualization more appropriate it is possible to scale the data. If data are from power law distribution on the double logarithmic scale they will look linear:
+\begin{equation}
+log p(k) = \gamma log(k) + c
+\end{equation}  
+On the log-log scale we can notice that in the tail of the distribution data are noise. As the size of the bins is constant the density of the bins for large values becomes also large. To avoid the fluctuations in the tail, we can use logarithmic binning. The noise is reduced by dividing the $x$ axis into $n$ bins $b_n = c^n$, so the following bin is wider than previous one. For the base $c$ we can choose any value $c>1$. Similarly, the binning can take the following form $b_n = k_0\exp{(cn)}$, where $k_0$ is the minimum data point, while the $c$ is the arbitrary base. All data points between values $[b_n, b_{n+1})$ are represented with one point $p(k_n) = N_n/b_n$, where $N_n$ is number of nodes found in the bin $b_n$ and $k_n = \sum_i k_i / N_n$ is average degree of the nodes in the bin $b_n$. By this, averaging over bins in the tail, noise in the tail of distribution is reduced. Still, no matter how bin size is chosen the information about original data points is lost, especially in the tail of distribution where bins are larger and include more samples. Figure \ref{fig:distributions} shows how different distributions look like on linear (first column) and log-log scale (second column).
 
 \begin{figure}[]
 	\centering
@@ -689,52 +681,70 @@ When plotting the distribution of the power-law data on the double logarithmic s
 	\label{fig:distributions}
 \end{figure}
 
-Instead of plotting the probability distribution (i.e. creating a histogram), it is possible to calculate the cumulative distribution, defined as $P(k) = \int_{x}^{\infty} p(x^{'}) dx^{'}$ for cumulative function or as $P(k)=\sum_{k^{'}=1}^{k}p(k^{'})$ for the discrete function. For example the CDF function for power law is, is also power-law function but with exponent $\gamma -1$: $P(k)= k^{-(\gamma-1)}$. Note that for cumulative distribution, it is not necessary to use log-binning.
+Instead of plotting the probability distribution it is possible to calculate the cumulative distribution, defined as $P(k) = \int_{k}^{\infty} p(k^{'}) dk^{'}$ for continuous function or as $P(k)=\sum_{k^{'}=1}^{k}p(k^{'})$ for the discrete function. For example the CDF function for power law is also power-law function but with exponent $\gamma -1$: $P(k)= k^{-(\gamma-1)}$. Note that for cumulative distribution, it is not necessary to use log-binning.
 
+\subsection{Estimating the distribution parameters}
 
-\subsection{The goodness-of-fit}
-Whenever we encounter fat-tailed distributions, discussions ask which distribution offers the best fit for the data. In many systems, empirical data is not sufficient to distinguish between distributions. 
+The maximum likelihood estimation(MLE) is method where we consider that data come from the particular distribution so we want to maximize the likelihood of the data in order to find the distribution parameters. For given set of i.i.d. observations $x_1, x_2, ...x_n$, sampled from the distribution $p(x)$ we can define the likelihood function  \cite{nair2022fundamentals}. The likelihood function tells us how likely it is to have the given data, if the distribution parameters are $\theta$. 
 
-Minimizing the loglikelihood of function for given data, allow us to analitically or even numerically fit distributions and estimate fit parameters. Still, it does not tell us how good the fit is. 
+\begin{equation}
+L (\theta| x_1, ... x_n) = \prod_{i=1}^{i=n} p(x_i | \theta)
+\end{equation}
 
-The figure shows the distributions of three small datasets, drawn from power-law with $\gamma=2.5$, lognormal $\mu=0.3, \sigma=2$ and exponential with $\lambda=0.125$. The distributions look as straight line on the log-log plot, we could try to fit them to the power law distribution and obviosly, some model parameters could be estimated. It is not straightforward to say weather particular data really follows given distribution. Even if data follow powe-law, their observed distributions are not likely to exactly follow power-lawl there are some deviations because of the random nature of sampling procedure. 
+The parameter that maximize the likelihood function is $\theta_{max} \in arg max L(\theta| x_1,... x_n)$.
 
-The basic approach is to sample many synthetic data sets from a tru power-law and measure how they fluctuate from power-law form and compare results on empirical data. If empirical data are much further from power-law than syntetic one, the power-law is not plausible fit to the data. 
+We can solve the equation and derive the expression for maximum likelihood parameters. For distributions where analytical solution is not available, the parameters can be obtained with numerical optimization. In practice is much easier to work with logarithm of the likelihood, $log(L) = \sum_{i=1}^{i=N} p(\theta| x_i)$, as the product changes to summation. For the power-law distribution the exponent is calculated as  
+$\gamma = 1+n[\sum ln \frac{k_i}{k_{min}} ]^{-1}$. For discrete distribution solution may be obtained optimizing the log-likelihood function $log(L) = log\prod_{i=1}^{n} \frac{k_i^{-\gamma}}{\zeta(\gamma, k_{min})}$.
 
+We can use MLE method to fit any distribution to the data. Even if obtained distribution looks like power law, and some parameters are estimated, it does not have to be that data are truly from the power-law distribution. With MLE method alone, it is not possible to distinguish between different distributions, and we do not know how accurate the obtained results are. In order to determine the quality of the fit, we need to use different statistical method, called the \textbf{goodness-of-the-fit} test. The main idea is based on calculating distance between distributions of empirical data and the model, using Kolmogorov-Smirnov statistics. 
 
-A standard aproach to answering this kind of questions is to use goodness-of-fit test which generate the p-value that quantifies the plausibility of the hypothesis. Measuring the distance between distributions of empirical data and the model. p-value is defined to be fraction of synthetic distances that are larger than the empirical distance. 
-
-For measuring the distance between distributions we can use the Kolmogorov-Smirnov statistics, but in general other goodness of fit measures could be used.
 The Kolmogorov Smirnov statistics is the maximum distance between the CDF of the data and the fitted model.  
 \begin{equation}
 D = max |S(x) - P(x)|
 \end{equation}
 
-First we fit empirical data to get model parameters, and calculate the KS statistics of this fit. Then, large number of syntetic data sets, are generated with model optimized model parameters. Then each syntetic dataset is fitted, and KS statistics is obtained relative to its own model. Then simply we count the fraction when the KS statistics of syntetic distributions is larger than in empirical data, that represents the p-value. 
+First we fit empirical data to get model parameters, and calculate the KS statistics of this fit. Then, large number of synthetic data sets, are generated with model optimized model parameters. Then each synthetic data set is fitted, and KS statistics is obtained relative to its own model. From there we can calculate \textbf{p-value}, that is the fraction of times that KS-statistics in synthetic distributions is larger than in empirical data. 
 
-If $p<0.1$ then we reject the hypothesis that this distribution describes the empirical data, otherwise the model can not be rejected. Failing to reject the hypothesis does not mean the model is correct distribution for the data. There might be other distributions that fit the data equaly good, or even better. For having accurate p-value we need large sample. For small number of syntetic distributions it is possible to have high p-value, even if the distribution is wrong model to the data. 
 
-Using goodness of fit it is possible to calculate p-value for any distribution. For example comparing p-value of power-law fit to the p-value of trunctated power-law fit, we can conclude which one is better fit to data. If p-value for powe law is high, while for alterantive distribution it is low, we can conclude that power-law is more probable fit. 
 
-The another method called the likelihood ratio test allows us to directly compare two distributions. The distribution with higher likelihood under epmpirical data is better fit. We can calculate the likelihood ratio, or it is easier to obtain the logarithm of likelihood ratio, because its sign determine which distribution is better fit. For given two distributions $p_1(x)$and $p_2(x)$. 
 
-The likelihoods are defiend as $L_1=\prod_{i=1}^{n}p_1(x)$ and $L_2=\prod_{i=1}^{n}p_2(x)$, or the ratio of likelihoods as $R=\frac{L_1}{L_2} = \prod_{i=1}^{n} \frac{p_1(x)}{p_2(x)}$
+%The basic approach is to sample many synthetic data sets from a tru power-law and measure how they fluctuate from power-law form and compare results on empirical data. If empirical data are much further from power-law than syntetic one, the power-law is not plausible fit to the data. 
 
-Taking the logarithm, we obtain the loglikelihood ratio
+
+%A standard aproach to answering this kind of questions is to use goodness-of-fit test which generate the p-value that quantifies the plausibility of the hypothesis. Measuring the distance between distributions of empirical data and the model. p-value is defined to be fraction of synthetic distances that are larger than the empirical distance.   
+
+%Whenever we encounter fat-tailed distributions, discussions ask which distribution offers the best fit for the data. In many systems, empirical data is not sufficient to distinguish between distributions. 
+
+%Minimizing the loglikelihood of function for given data, allow us to analitically or even numerically fit distributions and estimate fit parameters. Still, it does not tell us how good the fit is. 
+
+%The likelihood function for continuous data set is defined as 
+%\begin{equation}
+%l(k) = \prod p(k) = \prod \frac{\gamma - 1}{ k_{min}}(\frac{k_i}{k_{min}})^{-\gamma}
+%\end{equation}
+%The figure shows the distributions of three small datasets, drawn from power-law with $\gamma=2.5$, lognormal $\mu=0.3, \sigma=2$ and exponential with $\lambda=0.125$. The distributions look as straight line on the log-log plot, we could try to fit them to the power law distribution and obviosly, some model parameters could be estimated. It is not straightforward to say weather particular data really follows given distribution. Even if data follow powe-law, their observed distributions are not likely to exactly follow power-lawl there are some deviations because of the random nature of sampling procedure. 
+%For measuring the distance between distributions we can use the Kolmogorov-Smirnov statistics, but in general other goodness of fit measures could be used.
+
+%Then simply we count the fraction when the KS statistics of syntetic distributions is larger than in empirical data, that represents the p-value. 
+
+If $p-value<0.1$ then we reject the hypothesis that this distribution describes the empirical data, otherwise the model can not be rejected. Failing to reject the hypothesis does not mean the model is correct distribution for the data. There might be other distributions that fit the data equaly good, or even better. For having accurate p-value we need large sample. For small number of syntetic distributions it is possible to have high p-value, even if the distribution is wrong model to the data. Finally, we need to be confident in obtained results. The same procedure can be repeated for different distributions. If p-value for powe law is high, while for alterantive distribution it is low, we can conclude that power-law is more probable fit. 
+
+%Using goodness of fit it is possible to calculate p-value for any distribution. For example comparing p-value of power-law fit to the p-value of trunctated power-law fit, we can conclude which one is better fit to data. If p-value for powe law is high, while for alterantive distribution it is low, we can conclude that power-law is more probable fit. 
+
+The another method called the \textbf{likelihood ratio test} allows us to directly compare two distributions. The distribution with higher likelihood under epmpirical data is better fit. We can calculate the likelihood ratio, or it is easier to obtain the logarithm of likelihood ratio, because its sign determine which distribution is better fit. For given two distributions $p_1(x)$and $p_2(x)$. 
+
+The likelihoods are defiend as $L_1=\prod_{i=1}^{n}p_1(x)$ and $L_2=\prod_{i=1}^{n}p_2(x)$, or the ratio of likelihoods as $R=\frac{L_1}{L_2} = \prod_{i=1}^{n} \frac{p_1(x)}{p_2(x)}$. Taking the logarithm, we obtain the log-likelihood ratio
 
 \begin{equation}
-\mathcal{R} = \sum_{i=1}^{n} \left[ln p_1(x) - ln p_2(x)\right]
+\mathcal{R} = \sum_{i=1}^{n} \left[log p_1(x_i) - log p_2(x_i)\right]
 \end{equation}
 
 As data $x_i$ are independent, by central limit theorem their sum $\mathcal{R}$ becomes normally distributed, with expected variance $\sigma^2$. We can approximate the variance as 
 
 $$\sigma^2 = \frac{1}{n}\sum_{1}^{n}[(l_i - l_i) - (<l>^{(1)}- <l>^{(2)})]$$
 
-When $R>0$ the first distribution is better fit to data and when $R<0$, the other one should be chosen. When $R=0$, it is not possible to distinguish between two distributions. 
+When $R>0$ the first distribution is better fit to data and when $R<0$, the other one should be chosen. When $R=0$, it is not possible to distinguish between two distributions. The sign of $R$ is not enough criteria to conclude which distribution is better fit. It is a random variable subject to statistical fluctuations. We need log-likelihood ratio that is sufficiently positive or negative, and to be sure that its sign is not result of fluctuations.
 
-The sign of $R$ is not enough criteria to conclude which distribution is better fit. It is a random variable subject to statistical fluctuations. We need loglikelihood ratio that is sufficently positive or negative, and to be sure that its sign is not result of fluctuations.
-
-If we are suspcted thaat the true expectation value of the loglikelihood ratio is zero, meaning that observed sign of $\mathcal{R}$ is simply product of fluctuations and an not be trusted. The probability that measured log likelihood ratio has magnitude as large or larger than observed value R is given as
+If we are suspected that the true expectation value of the log-likelihood ratio is zero, meaning that observed sign of $\mathcal{R}$ is simply product of fluctuations and an not be trusted. The probability that measured log likelihood ratio has magnitude as large or larger than observed value R is given as
 
 \begin{equation}
 p = \frac{1}{\sqrt{2\pi n \sigma^2}} \int_{-\infty}^{-|\mathcal{R}|}e^{-x^2/2n\sigma^2}dx + \int_{|\mathcal{R}|}^{\infty}e^{-x^2/2n\sigma^2}dx
@@ -742,8 +752,6 @@ p = \frac{1}{\sqrt{2\pi n \sigma^2}} \int_{-\infty}^{-|\mathcal{R}|}e^{-x^2/2n\s
 
 Here we use standard two tail hypothesis test, assuming that the null hypothesis is that $R= 0$. If p-value is larger than threshold, the sign of R is not reliable, and the test does not favor any distribution. If p is small, $p<0.1$ than it is unlikely that observed sign is obtained by chance, so we reject the null hypothesis that $R=0$. 
 
-
-\newpage
 \section{Fractal analysis}
 
 Approach to study complex systems is detecting time-series of selected variables. Some systems are characterised by periodic ot nearly periodic behaviour. In complex systems this periodic behaviour is not limited to one or two characteristic frequencies. They extend over wide spectrum and fluctuations on many time scales as well as well as broad distributions. In these cases dynamics of the system is characterized by scaling laws, which are valid over a wide range of time scales or frequencies. If dynamic of the system can be described with one scaling exponent system is monofractal, otherwise we deal with multifraactal time-series.

@@ -4,9 +4,8 @@ The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: Chapters/Chapter_DrivingSignal.aux
 A level-1 auxiliary file: Chapters/Chapter_GroupsGrowth.aux
 A level-1 auxiliary file: Chapters/Chapter_Trust1.aux
-A level-1 auxiliary file: Chapters/Chapter_Trust2.aux
-A level-1 auxiliary file: Chapters/Chapter_Trust2-1.aux
-A level-1 auxiliary file: Chapters/Chapter_Trust3.aux
+A level-1 auxiliary file: Appendix/Appendix_sliding_window.aux
+A level-1 auxiliary file: Appendix/Appendix_robust.aux
 The style file: unsrt.bst
 Database file #1: sample.bib
 You're missing a field name---line 1045 of file sample.bib
@@ -48,49 +47,50 @@ Warning--I didn't find a database entry for "PNAS"
 Warning--I didn't find a database entry for "jsdivergence"
 Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "bettencourt2007growth"
+Warning--I didn't find a database entry for "clauset2009power"
 Warning--empty journal in latora2017complex
 Warning--empty publisher in caldarelli2007scalefree
 Warning--empty publisher in guide_temporal
 Warning--empty booktitle in yashkina2020
-You've used 74 entries,
+You've used 79 entries,
             1791 wiz_defined-function locations,
-            896 strings with 17925 characters,
-and the built_in function-call counts, 19411 in all, are:
-= -- 1697
-> -- 956
-< -- 14
-+ -- 346
-- -- 272
-* -- 1497
-:= -- 3044
-add.period$ -- 227
-call.type$ -- 74
-change.case$ -- 69
+            922 strings with 18717 characters,
+and the built_in function-call counts, 20603 in all, are:
+= -- 1810
+> -- 1005
+< -- 15
++ -- 364
+- -- 285
+* -- 1570
+:= -- 3227
+add.period$ -- 244
+call.type$ -- 79
+change.case$ -- 73
 chr.to.int$ -- 0
-cite$ -- 78
-duplicate$ -- 818
-empty$ -- 1828
-format.name$ -- 272
-if$ -- 4295
+cite$ -- 83
+duplicate$ -- 875
+empty$ -- 1946
+format.name$ -- 285
+if$ -- 4571
 int.to.chr$ -- 0
-int.to.str$ -- 74
-missing$ -- 79
-newline$ -- 374
-num.names$ -- 74
-pop$ -- 169
+int.to.str$ -- 79
+missing$ -- 85
+newline$ -- 399
+num.names$ -- 79
+pop$ -- 185
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 393
+skip$ -- 421
 stack$ -- 0
-substring$ -- 1461
-swap$ -- 198
-text.length$ -- 14
+substring$ -- 1536
+swap$ -- 213
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 192
-width$ -- 76
-write$ -- 815
+while$ -- 203
+width$ -- 81
+write$ -- 870
 (There were 8 error messages)
