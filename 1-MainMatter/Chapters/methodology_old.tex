@@ -36,7 +36,7 @@ A_{ij} =
 
 The column b) on Figure \ref{fig:graph_dir} shows adjacancy matrix representation of given graphs. By convention diagonal elements $A_{ii}=0$, as self-loops are not allowed. For undirected network adjacency matrix is symmetric $A_{i,j}=A_{ji}$, but in the case of directed network matrix is not symmetric, as edges are drawn in one direction only.  
 
-\begin{figure}[H]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=0.7\linewidth]{figures/methodology/directed_graph.pdf} 
 \caption{a) Graph representation of undirected (top panel) and directed (bottom panel) network. The same networks are represented with adjacency matrices column b), and edge list representation in column c).}
@@ -47,7 +47,7 @@ The number of edges and nodes are dependent variables. Considering that each nod
 It is common to represent the graph as edge list. In this case, illustrated on Figure \ref{fig:graph_dir}, column c), graph is described with the list of links that are in the graph, $G = \{ \{v_i,v_j\}\}$. Still with this representation we are not able to distinguish between directed and undirected graph structures, so in the computational algorithm should be specified if the edges are considered symetric or not.  
 %To distinguish between undirected and directed structures, for undirected representation it is possible writing two edges $(v_i, v_j)$ and $(v_j, v_i)$, otherwise in the computational algorithm should be specified if the edges are considered symmetric or not.
 
-\begin{figure}[H]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.4\linewidth]{figures/methodology/multi_graph.pdf} 
 	\caption{The complex networks may represent different characteristics of the system. The edges can be directed, weighted or multiply. Also nodes can be assigned with different weights or any relevant feature.}
@@ -61,7 +61,7 @@ A \textbf{bipartite network} consists of two types nodes. The nodes in the same 
 
 In a bipartite network, nodes in one partition are not connected. Still, we can analyse a single node type if we project the bipartite network on one partition. The primary assumption is that two nodes in one partition could be connected if they point to the same node in another partition. Consider the network of movies and actors. The one mode projection of movies is an undirected network whose links indicate that two movies share the same actors. On the other hand, another projection is a network of actors. The links exist if two actors appear in the same movie \cite{newman2010, barabasi2016network}.
 
-\begin{figure}[H]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/methodology/bipartite_graph.pdf} 
 	\caption{Bipartite graph and two partition projections.}
@@ -80,7 +80,7 @@ Studying the real systems as static networks can give us a lot of insight into t
 
 The temporal network is a collection of timestamped edges. Each edge is defined as $(v_i, v_j, t, \Delta t)$, where $v_i$ and $v_j$, are nodes $t$ is time when interaction happen, and $\Delta t$ is event duration \cite{guide_temporal}. The duration of the events may vary, as in the phone-call network. Also, for many systems, the time resolution of event duration is too small. For example, this parameter may be neglected when people interact on social platforms or email each other because the event time is too short, it scales in seconds.
 
-\begin{figure}[H]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/methodology/temporal_network.pdf} 
 	\caption{Temporal network. }
@@ -95,6 +95,13 @@ The temporal network can be represented as sequence of static networks that evol
 
 %A temporal network is a special kind of multiplex network, where these layers form a temporal (ordered) sequence. Crucially, there can dynamics on each vertex that govern which layer some kind of interaction occurs on, so multiplex networks are not merely a special kind of graph in which different colors or layer numbers annotate edges. %clauset preformulisati
 
+%\subsection{Multigraphs}
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.5\linewidth]{figures/methodology/graph5.png} 
+%	\caption{Graph types}
+%	\label{fig:gt5}
+%\end{figure}
 
 %Spatial networks are a special kind of node-annotated network, in which the annotations represent the node's location in some d-dimensional space. This graph property is most common in transportation networks, e.g., as road and city networks, airport transportation networks, oil and gas distribution networks, shipping networks, etc., but can also appear in social networks. Planar graphs are a special case of spatial networks in which the nodes are embedded on a 2-dimensional surface and edges do not cross. %clauset preformulisati
 
@@ -146,7 +153,7 @@ Correlation is defined through a correlation coefficient r. If x and y are two s
 r(x, y) = \frac{\frac{1}{n}\sum_{i=1}^{n}((x_i - \bar{x} ) (y_i - \bar{y}) )}{\sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2} \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \bar{y})^2} }
 \end{equation}
 
-where $\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i$, is the average over variable $x$.
+where $\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i$, is the average over variable $x$. \\
 
 Taking the definition of correlation coefficient we can define it for vertex degrees. For simple graph G with vertex set $V(G) = \{v_1, ..v_n\}$, $\boldsymbol{A}[i,j] = 1$ if there is a link between nodes $v_i$ and $v_j$. If G is a simple graph with adjacency matrix $\boldsymbol{A}$ and degree sequence $\boldsymbol{d} = [d_1, ..., d_n]$
 
@@ -156,7 +163,7 @@ r_{deg}(G) = \frac{\sum_{i=1}^{n}\sum_{i=1+1}^{n}((d_i - \bar{d}) (d_i - \bar{d}
 
 Using adjacency matrix, allow us to calculate the correlations between neighboring nodes. If two nodes are not connected $A[i,j]=0$, the degree correlation between them does not have contribution to the $r$.
 
-The \textbf{degree-degree correlations} in the network are measured by \textbf{assortativity}. If correlations are positive, networks are assortative; there is a tendency that connections exist between similar degree nodes. The negative correlations indicate that large degree nodes have preference to connect nodes with small degree; dissasortative networks. The average first neighbor degree $k_{nn}$ can be calculated as $k_{nn} = \sum_{k^{'}}k^{'}P(k^{'}|{k})$. The $P$ is conditional probability that an edge of degree $k$ points to node with degree $k$. The norm is $\sum_{k^{'}}P(k^{'}|k)=1$, and detailed balance conditions \cite{boccaletti2006complex},  $kP(k^{'}|k)P(k) = k^{'}P(k|k^{'})P(k^{'})$ \cite{boccaletti2006complex}. If the node degrees are uncorrelated, $k_{nn}$ does not depend on the degree, otherwise increasing/decreasing function indicates on positive/negative correlations in the network.
+The \textbf{degree-degree correlations} in the network are measured by \textbf{assortativity}. If correlations are positive, networks are assortative; there is a tendency that connections exist between similar degree nodes. The negative correlations indicate that large degree nodes have preference to connect nodes with small degree; dissasortative networks. The average first neighbor degree $k_{nn}$ can be calculated as $k_{nn} = \sum_{k^{'}}k^{'}P(k^{'}|{k})$. The $P$ is conditional probability that an edge of degree $k$ points to node with degree $k$. The norm is $\sum_{k^{'}}P(k^{'}|k)=1$, and detailed balance conditions \cite{boccaletti2006complex},  $kP(k^{'}|k)P(k) = k^{'}P(k|k^{'})P(k^{'})$ \cite{boccaletti2006complex}. If the node degrees are uncorrelated, $k_{nn}$ does not depend on the degree, otherwise increasing/decreasing function indicates on positive/negative correlations in the network. \\
 
 The Newman defined the assortativity index $r$ in slightly different way:
 
@@ -179,7 +186,7 @@ The \textbf{clustering coefficient} is a measure describing the neighbourhood's 
 c_i=2e_i/(k_i(k_i-1))
 \end{equation}
 
-Averaging it over all network nodes, we can calculate the mean clustering coefficient. It ranges from  $\langle c \rangle = 0$ where connections between neighbouring nodes do not exist, network has the structure of three. On the other hand, $\langle c \rangle = 1$ indicates a fully connected network. 
+Averaging it over all network nodes, we can calculate the mean clustering coefficient. It ranges from  $\langle c \rangle = 0$ where connections between neighbouring nodes do not exist, network has the structure of three. On the other hand, $\langle c \rangle = 1$ indicates a fully connected network. \\
 
 Newman proposed the alternative definition for the clustering coefficient based on the number of triples and triangles in a graph. A triangle at node $v$ is complete subgraph with 3 nodes, including $v$. A triple on the node v is a subgraph of exactly three nodes and two edges, where v is incident with two edges. The network transitivity is defined as the ratio of number of triangles in the network over the number of triples. The network transitivity is seen as global clustering, as it considers the whole network.  
 
@@ -366,7 +373,7 @@ The creation of ER random network consists of the following steps:
 \end{itemize}
 
 
-\begin{figure}[H]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.9\linewidth]{figures/methodology/ERgraph}
 	\caption{ER graph with $N=100$ nodes and different linking probabilities $p$.}
@@ -402,7 +409,7 @@ The binomial distribution describes very well small networks. For larger network
 p(k) = \frac{1}{k!}e^{-\langle k \rangle}\langle k \rangle^{k}
 \end{equation}
 
-\begin{figure}[H]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.9\linewidth]{figures/methodology/ER_dist}
 	\caption{Degree distribution of ER graph. Degree distribution of small networks follow binominal. Larger networks are better approximated with Poison distribution, and degree distribution for fixed average degree $<k>$ becomes independent of the network size.}
@@ -426,7 +433,7 @@ Inspired by the idea that real-world networks are highly clustered and the avera
 
 The model interpolates between the regular graph when the probability is $p=0$ and the random graph with $p=1$ when all links are randomly rewired. Short distances and high clustering are present in the network for the critical probabilities.
 
-\begin{figure}[H]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.9\linewidth]{figures/methodology/ws_graph}
 	\caption{Watts and Strogatz graph model creation}
@@ -519,7 +526,7 @@ If $\alpha>0$ is positive, the older nodes are more likely to create connections
 
 When $\alpha$ is negative, ageing overcomes the role of preferential attachment, and scale-free properties are lost. For significant negative $\alpha$ network becomes a chain; the youngest nodes are those who get connected. 
 
-\begin{figure}[H]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{figures/aging_nets.png}
 	\caption{Aging model}
@@ -545,7 +552,7 @@ As before, depending on model parameters network evolves to different structures
 	
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.6\linewidth]{Figures/diagram.png}
 	\caption{Phase diagram of aging network model}
@@ -569,7 +576,7 @@ SBM can generate and describe different types of network structures. Figure \ref
 
 Figure (\ref{fig:SBM} c) shows how the model represents core-periphery networks. Nodes of one block (core) are well connected with itself and with other partition (periphery). From the last case, we can note that SBM with one group is the Erdos Renyi random graph (\ref{fig:SBM} d) because all probabilities inside and between groups are equal.
 
-\begin{figure}[H]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Figures/structures.png}
 	\caption{Stochastic Block model for different networks structures. (a) assortative. (b) dissortative. (c) core-periphery. (d) Erdos Renyi random graph.}
@@ -667,7 +674,7 @@ log p(k) = \gamma log(k) + c
 \end{equation}  
 On the log-log scale, we can notice that in the tail of the distribution data are noise. As the size of the bins is constant, the bins' density for large values also becomes large. To avoid the fluctuations in the tail, we can use logarithmic binning. The noise is reduced by dividing the $x$ axis into $n$ bins $b_n = c^n$, so the following bin is wider than the previous one. For the base $c$ we can choose any value $c>1$. Similarly, the binning can take the following form $b_n = k_0\exp{(cn)}$, where $k_0$ is the minimum data point, while the $c$ is the arbitrary base. All data points between values $[b_n, b_{n+1})$ are represented with one point $p(k_n) = N_n/b_n$, where $N_n$ is number of nodes found in the bin $b_n$ and $k_n = \sum_i k_i / N_n$ is average degree of the nodes in the bin $b_n$. By averaging over bins in the tail, noise in the tail of the distribution is reduced. Still, no matter how bin size is chosen, the information about original data points is lost, especially in the distribution tail where bins are larger and include more samples. Figure \ref{fig:distributions} shows how different distributions look like on linear (first column) and log-log scale (second column).
 
-\begin{figure}[!h]
+\begin{figure}[]
 	\centering
 	\includegraphics[width=0.75\textwidth]{figures/methodology/Distributions_plots.pdf}
 	\caption{Probability distributions on linear and double logarithmic scale.}
@@ -743,179 +750,151 @@ Here we use the standard two-tail hypothesis test, assuming that the null hypoth
 
 \section{Fractal analysis}
 
-Approach to study complex systems is detecting time-series of selected variables. 
-Some systems are characterised by periodic ot nearly periodic behaviour. In complex systems this periodic behaviour is not limited to one or two characteristic frequencies. They extend over wide spectrum and fluctuations on many time scales as well as well as broad distributions. In these cases dynamics of the system is characterized by scaling laws, which are valid over a wide range of time scales or frequencies. If dynamic of the system can be described with one scaling exponent system is monofractal, otherwise we deal with multifractal time-series.Rescaling of time $t$ by a factor $a$ may require rescaling of the time-series values $x(t)$ by factor $a^H$, then we have the self-similarity. The Hurst exponent, $H$ characterize the type of self-affinity. 
+Approach to study complex systems is detecting time-series of selected variables. Some systems are characterised by periodic ot nearly periodic behaviour. In complex systems this periodic behaviour is not limited to one or two characteristic frequencies. They extend over wide spectrum and fluctuations on many time scales as well as well as broad distributions. In these cases dynamics of the system is characterized by scaling laws, which are valid over a wide range of time scales or frequencies. If dynamic of the system can be described with one scaling exponent system is monofractal, otherwise we deal with multifraactal time-series.
+
+Rescaling of time t by a factor a may require rescaling of the time-series values $x(t)$ by factor $a^H$, to get the self-similaraity. In this case it is:
 $$x(t) = a^Hx(at)$$
+The Hurst exponent characterize the type of self-affinity. 
 
-\subsection{Long and Short-term correlations}
-The time-series are presistent such that a large value is usually followed by large values and small values. Considering the increments $\delta x_i = x_i - x_{i-1}$, of self-affine series $i = 1,..,N$, with N values measured equidistant in time, so $\delta x_i$ can be either persistent, independent or anti-persistent. For the random walk with $H=0.5$ the increments are independent of each other. Persistent and anti-persistent increments, where a positive increment is likely to be followed by another positive or negative increment. For stationary data with constant mean and standard deviation the auto-covariance function can determine the degree of persistence. 
+Many records do not exhibit a simple mono fractal scaling behaviour. The scaling behaviour may be more complicated , and different scaling exponents can be found for many interwoven fractal subsets of the time series. In this case the multifractal analysis must be applied. 
 
-\begin{equation}
-C(s) = \langle \Delta x_i \Delta x_{i+s} \rangle = \frac{1}{N-s} \sum_{i=1}^{N-s}\Delta x_i \Delta x_{i+s}
-\end{equation}
+Two general types of multifractality exist. The multifractality due to a broad probability distribution for values of the time series, the multifractality can not be destroyed. Multifractality due to different long-term correlations of the small and large fluctuations. In this case the probability density function of the values can be regular distribution with finite moments, and the corresponding shuffled series will exhibit non-multifractal scaling as correlations are destroyed with shuffling procedure. If both kinds of multifractality are present, the shuffled series will show weaker multifractality than the original series. Multifractal analysis will reveal higher order correlations, multifractal scaling can be observed if the scaling behaviour of small and large fluctuations is different. Extreme events might be more or less correlated than typical events.  
 
+\textbf{Long and Short-term correlations}
+The time-series are presistent such that a large value is usually followed by large values and small values. Considering the increments $\delta x_i = x_i - x_{i-1}$, of self-affine series $i = 1,..,N$, with N values measured equidistant in time, so $\delta x_i$ can be either persistent, independent or anti-persistent. For the random walk with $H=0.5$ the increments are independent of each other. Persistent and anti-persistent increments, where a positive increment is likely to be followed by another positive or negative increment. 
+
+For stationary data with constant mean and standard deviation the auto-covariance function can determine the degree of persistence. 
+
+$$C(s) = \langle \Delta x_i \Delta x_{i+s} \rangle = \frac{1}{N-s} \sum_{i=1}^{N-s}\Delta x_i \Delta x_{i+s} $$ 
 
 If the data are uncorrelated the $C(s)=0$. Short range correlations are described by $C(s)$ declining exponentially
+
 $$C(s) = exp(-s/t_c)$$
+
 such behaviour is typical for increments generated by an auto-regresive process 
+
 $$ \Delta x_i = c\Delta x_{i-1} + \epsilon_i $$
+
 with random uncorrelated offsets $\epsilon_i$ and $c = exp(-1/t_c)$.
 
 For long-range correlations $\int C(s)$ diverges in the limit for long series. In practive this means that caracteristic time can not be defined because it increaseas with N. Contrary to short-range correlations, the correlation function decline as power-law 
 $$C(s) = s^{-\gamma}$$
-This type of behavior can be modeled by Fourier filtering techniques. Long-term correlated, behavior of $\Delta x_i$ leads to self-affine scalling beahviout characterized by Hurst exponent $H=1-\gamma/2$. 
+This type of behavior can be modeled by Fourier filtering techniques. Long-term correlated, behavior of $\Delta x_i$ leads to self-affine scalling beahviout characterized by $H=1-\gamma/2$. 
 
-A direct calculation of the $C(s)$ is difficult due to present noise in the data and non-stationarity. Non-stationarities make the definition of $C(s)$ probalematic, because the its average is not well defined, also $C(s)$ fluctuates around zero on large scales s, so it is not possible to obtain the correct correlation exponent $\gamma$. Instead calculating $C(s)$ we can calculate the Hurst exponent $H$.
+A direct calculation of the $C(s)$ is difficult due to present noise in the data and nonstationarity. Non-stationarities make the definition of $C(s)$ probalematic, because the average is not well defined, also $C(s)$ fluctuates around zero on large scales s, so it is not possible to obtain the correct correlation exponent $\gamma$. 
 
-\subsection{Rescaled range analysis} 
-
-Hurst proposed method called the \textbf{rescaled range analysis} $R/S$. It begins with splitting the time series $x_i$ into non overlaping segments $\nu$ of the size s, having $N_s = int(N/s)$ segments. Then is calculated the profile in each segment. 
+\textbf{Hurst's rescaled-range analysis}
+The method called rescaled range analysis $R/S$ was proposed by the Hurst. It begins with spliting the time series $x_i$ into non overlaping segments $\nu$ of the size s, having $N_s = int(N/s)$ segments. Then is calculated the profile in each segment. 
 
 $$Y_\nu(j) = \sum_{i=1}^{j} (x_{\nu s +i} - \langle x_{\nu s + i } \rangle _s)$$
 
-Substracting the averages, constant trends in the data are eliminated. The differences between minimum and maximum value and the standardan deviation in each segment are calculated as: $R_{\nu}(s) = max Y_\nu(j) - min Y_{\nu}(j)$, $S_{\nu}(s) = \sqrt{\frac{1}{s}\sum Y^2_{\nu}(j)}$
+Substracting the averages, constant trends in the data are eliminated. Finally the differences between minimum and maximum value and the standardan deviation in each segment are calculated as:
+
+$$R_{\nu}(s) = max Y_\nu(j) - min Y_{\nu}(j)$$
+$$S_{\nu}(s) = \sqrt{\frac{1}{s}\sum Y^2_{\nu}(j)}$$
 
 Finally, the rescaled range is averged over all segments to obtain the fluctuation function F(s).
 
 $$F_{RS}(s) = \frac{1}{N_s}\sum \frac{R_{\nu}(s)}{S_{\nu}(s)} \sim s^H$$
 
-where the H is Hurst exponent. The values of H that can be obtained by Hurst rescaled analysis are $0<H<2$. Values $H<1/2$ indicate long-term anti-correlated data while $H>1/2$ long-term positively correlated data. 
+the H is Hurst exponent introduced in the first equation. The values of H that can be obtained by Hurst rescaled analasys are $<0H<2$. Values $H<1/2$ indicate long-term anticorrelated data, $H>1/2$ indicated long-term positively correlated data. For power-lae correlations decaying faster than $1/s$, $H=1/2$, like for uncorrelated data. 
 
-\subsection{Fluctuation analysis}
+On the other hand the standard fluctuation analysis is based on the random walk theory. For time series with zero mean, we consider the global profile, the cumulative sum:
 
-The \textbf{fluctuation analysis} is based on the random walk theory. For given time series $\{x_i\}$ with length N, we first define global profile in the form of cumulative sum, equation \ref{eq:cumsum}, where $\langle x\rangle $ represents average of the time series. Subtracting the mean of the time series is supposed to eliminate global trends.
+$$Y(j) = \sum x_i$$, 
+and then study how fluctuations of the profile, in a given time window of size s increase with s. 
 
-%and then study how fluctuations of the profile, in a given time window of size s increase with s. 
+We first divide each record of N elements into Ns non-overlaping segments of the size s, and another Ns non-overlaping segments starting from the end. Then we calculate the fluctuations in the each segment. In the standard FA we get the fluctuations just from the values of the profile at both endpoints of each segment. 
+
+$$ F_{FA}^2(\nu, s) = [Y(\nu s) - Y((\nu +1)s)]^2$$ 
+
+Then we can average $F^2$ over all subsequences to obtain the mean fluctuation 
+
+$$F_2(s) = [\frac{1}{2N_s} \sum F^2(\nu,s)]^{1/2}  \sim s^H$$
+
+For the relevant case of long-term correlations where $C(s)$ follows the power-law behaviour, $F_2(s)$ also increases by power-law. 
+
+The fluctuation exponent is indentical with Hurst exponent for monofractal data. 
+
+\subsection{Detrended fluctuation analysis}
+
+DFA was introduced by Peng et al. and represents an important method for describing the non-stationary time series. As before methods it is also base on random walk theory, and the FA analysis is special case with linear detrending. 
+
+Like in FA method first one calculates the global profile of the time series. DFA deaks with monotonous trends in a detrending procedure. This is done by establishing a polynomial trend within each segment by least-square fitting and subtracting this trend from the original profile, detrending. 
+
+$$Y_s(j) = Y(j) - y_{\nu ,s}^{m}(j)$$
+
+The degree of the polinomial can be varied in order to eliminate constant m=0, linear m=1, quadratic m-2, or higher order trends of the profile function. The variance of the detrended profile in each segment gives us mean-square fluctuations
+
+$$F^2(\nu  s) = \frac{1}{s} \sum Y_s^2(j)$$
+
+Finaly fluctioations over all segments are averaged, to obtain the mean fluctuations $F_2(s)$ as in eq. F2s, and as before, from the scaling of the fluctuating function we can determine the Hurst exponent. 
+
+\subsection{Multifractality of the signals}
+
+Multifractal detrended fluctuation analysis (MFDFA) \cite{kantelhardt2002, ihlen2012} to estimate multifractal Hurst exponent H(q). For given time series $\{x_i\}$ with length N, first we define global profile in the form of cumulative sum, equation \ref{eq:cumsum}, where where $\langle x\rangle $ represents average of the time series:
 \begin{equation}
 Y(j) = \sum_{i=0} ^j (x_i - \langle x\rangle), \quad j=1, ..., N
 \label{eq:cumsum}
 \end{equation}
 
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{figures/hurst_signals.pdf}
-	\caption{Multifractal, monofractal and whitenoise signals.}
-	\label{fig:hurst_signals}
-\end{figure}
-
-The profile of the signal Y is divided into $N_s = int (N/s)$ non overlapping segments of length $s$. If $N$ is not divisible with s the last segment will be shorter. This is handled by doing the same division from the opposite side of time series which gives us $2N_s$ segments. Then we calculate the fluctuations in the each segment $F^2(\nu, s)$ and finally averaging over all subsequences we obtain the mean fluctuation. From the scaling of function we can determine the Hurst exponent. 
-
+Subtracting the mean of the time series is supposed to eliminate global trends. The profile of the signal Y is divided into $N_s = int (N/s)$ non overlapping segments of length s. If $N$ is not divisible with s the last segment will be shorter. This is handled by doing the same division from the opposite side of time series which gives us $2N_s$ segments. From each segment $\nu$, local trend $p^m_{\nu, s}$ - polynomial of order m - should be eliminated, and the variance $F^2(\nu, s)$ of detrended signal is calculated as in equation \ref{eq:var}:
 \begin{equation}
-F_2(s) = [\frac{1}{2N_s} \sum F^2(\nu,s)]^{1/2}  \sim s^H
-\end{equation} 
-
-The several methods are proposed for calculating the fluctuating function $F^2(\nu, s)$:
-\begin{itemize}
-	\item The simplest way to calculate the fluctuations, is to consider difference of the values at endpoints of each segment. This is same as eliminating the linear trend from each segment.  
-	
-	$$ F^2(\nu, s) = [Y(\nu s) - Y((\nu +1)s)]^2$$ 
-	
-	\item The trends present in the time-series does not have to be linear. To deal with non-stationary time-series it is necessary to remove the polynomial trend, within each segment by least-square fitting. The method is called detrended fluctuation analysis (DFA). From each segment $\nu$, local trend $p^m_{\nu, s}$ - polynomial of order m - should be eliminated, and the variance $F^2(\nu, s)$ of detrended signal is calculated as in equation
-	
-%	The degree of the polinomial can be varied in order to eliminate constant m=0, linear m=1, quadratic m-2, or higher order trends of the profile function. The variance of the detrended profile in each segment gives us mean-square fluctuations
-	
-	\begin{equation}
-	F^2(\nu, s) = \frac{1}{s}\sum_{j=1}^s \left[Y(j) - p^m_{\nu, s}(j)\right]^2
-	\label{eq:var}
-	\end{equation}
-\end{itemize}
-
-
-
-
-
-
-%The fluctuation exponent is indentical with Hurst exponent for monofractal data. 
-
-%DFA was introduced by Peng et al. and represents an important method for describing the non-stationary time series. As before methods it is also base on random walk theory, and the FA analysis is special case with linear detrending. 
-
-%Like in FA method first one calculates the global profile of the time series. DFA deaks with monotonous trends in a detrending procedure. This is done by establishing a polynomial trend within each segment by least-square fitting and subtracting this trend from the original profile, detrending. 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{figures/hurst_detrending.pdf}
-	\caption{Detrending the signal, for the segments of length $s=1000$.}
-	\label{fig:hurst_signals}
-\end{figure}
-
-\subsection{Multifractality of the signals}
-
-Many records do not exhibit a simple mono fractal scaling behaviour. The scaling behaviour may be more complicated , and different scaling exponents can be found for many interwoven fractal subsets of the time series. In this case the multifractal analysis must be applied. Two general types of multifractality exist. The multifractality due to a broad probability distribution for values of the time series, the multifractality can not be destroyed. Multifractality due to different long-term correlations of the small and large fluctuations. In this case the probability density function of the values can be regular distribution with finite moments, and the corresponding shuffled series will exhibit non-multifractal scaling as correlations are destroyed with shuffling procedure. If both kinds of multifractality are present, the shuffled series will show weaker multifractality than the original series. Multifractal analysis will reveal higher order correlations, multifractal scaling can be observed if the scaling behaviour of small and large fluctuations is different. Extreme events might be more or less correlated than typical events.  Multifractal detrended fluctuation analysis (MFDFA) is used \cite{kantelhardt2002, ihlen2012} to estimate multifractal Hurst exponent H(q). 
-
+F^2(\nu, s) = \frac{1}{s}\sum_{j=1}^s \left[Y(j) - p^m_{\nu, s}(j)\right]^2
+\label{eq:var}
+\end{equation}
+Then the q-th order fluctuating function is: 
 \begin{equation}
 F_q(s) = \left\{\frac{1}{2N_s}\sum_{\nu}^{2N_s}\left[F^2(\nu, s)\right]^{\frac{q}{2}}\right\}^{\frac{1}{q}},  q \neq 0 \nonumber
 \end{equation}
 
-The MFDFA for $q=2$ is equivalent DFA method. The value of $H(0)$, which corresponds to the limit $H(q), q-0$, cannot be determined directly because of the exponent diverge. Instead logarithmic averaging procedure has to be considered. 
+The value of $H(0)$, which corresponds to the limit $H(q), q-0$, cannot be determined directly because of the exponent diverge. Instead logarithmic averaging procedure has to be considered. 
 \begin{equation}
 F_0(s) = \exp \left\{\frac{1}{4N_s}\sum_{\nu}^{2N_s}ln \left[F^2(\nu, s)\right]\right\}, q=0
 \end{equation}
 
 The fluctuating function scales as power-law $F_q(s) \sim s^{H(q)}$ and the analysis of log-log plots $F_q(s)$ gives us an estimate of multifractal Hurst exponent $H(q)$.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\textwidth]{figures/hurst_mfdfa.pdf}
-	\caption{Multifractal, monofractal and whitenoise signals.}
-	\label{fig:hurst_mfdfa}
-\end{figure}
-
 For the monofractal time series, H(q) is independent of q, meaning that scaling is indentical for all segments, and averaging fluctuations gives indentical scaling for all values of q. If small and large fluctuations scale differently, there will be dependence of h(q) on q. Positive values of q, segments with large variance are dominant in the Fq(s), so positive q describes segments with large fluctuations. The negative values of q, H(q) describes the scaling of the segments with small fluctuations. 
-%Also, large fluctuations are characterized by smaller scaling exponent. %Multifractal signal has different scaling properties over scales while monofractal is independent of the scale, i.e., H(q) is constant. 
+
+Also, large fluctuations are characterized by smaller scaling exponent. 
+
+Multifractal signal has different scaling properties over scales while monofractal is independent of the scale, i.e., H(q) is constant. 
 
 \section{Dynamical reputation model}
 
-%Any dynamical trust or reputation model has to take into account distinct social and psychological attributes of these phenomena in order to estimate the value of any given trust metric \cite{duma2005dynamic}. First of all, the dynamics of trust is asymmetric, meaning that trust is easier to lose than to gain. As part of asymmetric dynamics, in order to make trust easier to loose the trust metric has to be sensitive to new experiences (recent activity or the absence of the activity of the agent), while still maintaining nontrivial influence of old behavior. The impact of new experiences has to be independent of the total number of recorded or accumulated past interactions, making high levels of trust easy to lose. Finally, the trust metric has to detect and penalize both the sudden misbehavior and the possibly long term oscillatory behavior which deviates from community norms.
+Any dynamical trust or reputation model has to take into account distinct social and psychological attributes of these phenomena in order to estimate the value of any given trust metric \cite{duma2005dynamic}. First of all, the dynamics of trust is asymmetric, meaning that trust is easier to lose than to gain. As part of asymmetric dynamics, in order to make trust easier to loose the trust metric has to be sensitive to new experiences (recent activity or the absence of the activity of the agent), while still maintaining nontrivial influence of old behavior. The impact of new experiences has to be independent of
+the total number of recorded or accumulated past interactions, making high levels of trust easy to lose. 
+Finally, the trust metric has to detect and penalize both the sudden misbehavior and the possibly long term oscillatory behavior which deviates from community norms.
 
-%We estimate dynamic reputation of the Stack Exchange users using Dynamic Interaction Based Reputation Model (DIBRM) \cite{melnikovDynamicInteractionBasedReputation2018}. This model is based on the idea of dynamic reputation, which means that the reputation of users within the community changes continuously through time: it should rapidly decrease when there is no registered activity from the specific user in the community (reputation decay), and it should grow when frequent, constant interactions and contributions to the community are detected. The highest growth of user's reputation is found through bursts of activity followed by short period of inactivity. 
+We estimate dynamic reputation of the Stack Exchange users using Dynamic Interaction Based Reputation Model (DIBRM) \cite{melnikovDynamicInteractionBasedReputation2018}. This model is based on the idea of dynamic reputation, which means that the reputation of users within the community changes continuously through time: it should rapidly decrease when there is no registered activity from the specific user in the community (reputation decay), and it should grow when frequent, constant interactions
+and contributions to the community are detected. The highest growth of user's reputation is found through bursts of activity followed by short period of inactivity. 
 
-%In our implementation of the model, we do not distinguish between positive and negative interactions in the Stack Exchange communities. Therefore, we treat any interaction in the community (question, answer or comment) as potentially valuable contribution. In fact, evaluation criteria for Stack Exchange websites going through beta testing, described in SI, do not distinguish between positive and negative interactions. The percentage of negative interactions in the communities we investigated was below 5\%, see Table 1 in SI. Filtering positive interactions would also require filtering out comments because they are not rated by the community, and that would eliminate a large portion of direct interactions between the users of a community, which is essential for estimating their reputation.
+In our implementation of the model, we do not distinguish between positive and negative interactions in the Stack Exchange communities. Therefore, we treat any interaction in the community (question, answer or comment) as potentially valuable contribution. In fact, evaluation criteria for Stack Exchange websites going through beta testing, described in SI, do not distinguish between positive and negative interactions.
+The percentage of negative interactions in the communities we investigated was below 5\%, see Table 1 in SI. Filtering positive interactions would also require filtering out comments because they are not rated by the community, and that would eliminate a large portion of
+direct interactions between the users of a community, which is essential for estimating their reputation.
 
-%In DIBRM, reputation value for each user of the community is estimated combining three different factors: 1) \textit{reputation growth} - the cumulative factor which represents the importance of users' activities; 2) \textit{reputation decay} - the forgetting factor which represents the continuous decrease of reputation due to inactivity; \textit{the activity period factor} - measuring the length of the period of time in which the change of reputation happened. In case of Stack Exchange communities, the forgetting factor has a literal meaning, as we can assume that past contributions provided by a user are being forgotten by active users as their attention is captured by more recent content.
+In DIBRM, reputation value for each user of the community is estimated combining three different factors: 1) \textit{reputation growth} - the cumulative factor which represents the importance of users' activities; 2) \textit{reputation decay} - the forgetting factor which represents the continuous decrease of reputation due to inactivity; \textit{the activity period factor} - measuring the length of the period of time in which the change of reputation happened. In case of Stack Exchange communities, the forgetting factor has a literal meaning, as we can assume that past contributions provided by a user are being forgotten by active users as their attention is captured by more recent content.
 
-With Dynamic Interaction Based Reputation Model (DIBRM) we can quantify the user reputation $T_n$ using equation \ref{eq:tn}. 
-\begin{equation}\label{eq:tn}
-T_{n}=T_{n-1} \beta^{\Delta_{n}} + I_{n}
+In line with the the basic dichotomy of reputation dynamics, which revolves around the varying influence of past and recent behavior, DIBRM has two components: \textit{cumulative factor} - estimating the contribution of the most recent activities to the overall reputation of the user; \textit{forgetting factor} - estimating the weight of past behavior. Estimating the value of recent behavior starts with the definition of the parameter storing the basic value of a single interaction $I_{b_{n}}$. Cumulative factor $I_{c_{n}}$ then captures the additive effect of recent successive interactions. The reputational contribution $I_n$ of most recent interaction $n$ of any given user is estimated in the following way:
+
+\begin{equation}\label{eq:ibn}
+I_n = I_{b_{n}} + I_{c_{n}} = I_{b_{n}} (1+  \alpha  (1-\frac{1}{A_{n}+1}))
 \end{equation}
-The first part of the equation takes into account the previous reputation value $T_{n-1}$ that is weighted with coefficient $\beta^\Delta_{n}$. Depending on the frequency of the interaction controls the reputation decay. Parameter $\beta$ is forgeting factor, parameter 
+
+Here, $\alpha$ is the weight of the cumulative part and $A_{n}$ is the number of sequential activities. If there is no interaction at $t_n$, this part of interactions has a value of 0. Important property of this component of dynamic reputation is the notion of sequential activities. Two successive interactions made by a user are considered sequential if the time between those two activities is less or equal to the time parameter $t_{a}$ which represents the time window of interaction. This time window represents maximum time spent by the user to make a meaningful contribution (post a question or answer or leave a comment).
+
 \begin{equation}\label{eq:deltan}
 \Delta_{n}=\frac{t_{n}-t_{n-1}}{t_{a}}
 \end{equation}
 
-measures time between interactions $t_n$ and $t_{n-1}$, while $t_a$ is characteristic time window of interaction. While $\Delta_{n}<1$, user is frequently active and the number of sequential activities $A_n$ increases by 1. When the $\Delta_n$ is large the first part of equation gives more contribution to the first part, so the reputation decreases. 
+If $\Delta_{n} < 1$ is less than one the number of sequential activities $A_{n}$ will increase by one, which means that the user is continuing to communicate frequently. On the other hand, large values $\Delta_{n}$ greatly increase the effect of the forgetting factor. This factor plays a major role in updating the total dynamic reputation of a user in each time step (after every recorded interaction):
 
-The second part of the equation, $I_n$ is reputation gained with each interaction. The basic value of each interaction is given as $I_{bn}$ and the parameter $\alpha$ is weight of cumulative part. 
-
-\begin{equation}\label{eq:ibn}
-I_n  = I_{b_{n}}(1 +  \alpha  (1-\frac{1}{A_{n}+1}))
+\begin{equation}\label{eq:tn}
+T_{n}=T_{n-1} \beta^{\Delta_{n}}+I_{n}
 \end{equation}
 
-In our implementation of the model, the trust is updated each day for every user irrespective of their activity status. Therefore, the decay itself is a combination of $\beta$ and $\Delta_n$: the more days pass without recorded interaction from a specific user, the more their reputation decays. Lower values of beta lead to faster decay of trust as shown on figure. 
-
-
-
-
-
-%In line with the the basic dichotomy of reputation dynamics, which revolves around the varying influence of past and recent behavior, DIBRM has two components: \textit{cumulative factor} - estimating the contribution of the most recent activities to the overall reputation of the user; \textit{forgetting factor} - estimating the weight of past behavior. Estimating the value of recent behavior starts with the definition of the parameter storing the basic value of a single interaction $I_{b_{n}}$. Cumulative factor $I_{c_{n}}$ then captures the additive effect of recent successive interactions. The reputational contribution $I_n$ of most recent interaction $n$ of any given user is estimated in the following way:
-
-
-
-%Here, $\alpha$ is the weight of the cumulative part and $A_{n}$ is the number of sequential activities. If there is no interaction at $t_n$, this part of interactions has a value of 0. Important property of this component of dynamic reputation is the notion of sequential activities. Two successive interactions made by a user are considered sequential if the time between those two activities is less or equal to the time parameter $t_{a}$ which represents the time window of interaction. This time window represents maximum time spent by the user to make a meaningful contribution (post a question or answer or leave a comment).
-
-%If $\Delta_{n} < 1$ is less than one the number of sequential activities $A_{n}$ will increase by one, which means that the user is continuing to communicate frequently. On the other hand, large values $\Delta_{n}$ greatly increase the effect of the forgetting factor. This factor plays a major role in updating the total dynamic reputation of a user in each time step (after every recorded interaction):
-
-
-
-%Here, $\beta$ is the forgetting factor. 
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.5\textwidth]{figures/DIBRM.pdf}
-\caption{Multifractal, monofractal and whitenoise signals.}
-\label{fig:reputation}
-\end{figure}
-
-%\ref{fig:paper_summary}.
+Here, $\beta$ is the forgetting factor. In our implementation of the model, the trust is updated each day for every user irrespective of their activity status. Therefore, the decay itself is a combination of $\beta$ and $\Delta_n$: the more days pass without recorded interaction from a specific user, the more their reputation decays. Lower values of beta lead to faster decay of trust as shown on figure. %\ref{fig:paper_summary}.
 
 
 
