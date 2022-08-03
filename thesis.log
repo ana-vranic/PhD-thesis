@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  29 JUL 2022 22:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  3 AUG 2022 17:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1134,88 +1134,72 @@ s
 \f@nch@O@olf=\skip286
 \f@nch@O@orf=\skip287
 )
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count335
+\float@exts=\toks35
+\float@box=\box56
+\@float@everytoks=\toks36
+\@floatcapt=\box57
+)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count335
-\l__pdf_internal_box=\box56
+\l__kernel_color_stack_int=\count336
+\l__pdf_internal_box=\box58
 )
-(./thesis.aux (./0-FrontMatter/Title-Eng.aux) (./0-FrontMatter/Title-Srb.aux)
-(./0-FrontMatter/Committee.aux) (./0-FrontMatter/Acknowledgements.aux)
-(./0-FrontMatter/Abstract-Eng.aux) (./0-FrontMatter/Abstract-Srb.aux)
-(./0-FrontMatter/Contents.aux) (./0-FrontMatter/Figures.aux)
-(./0-FrontMatter/Tables.aux) (./1-MainMatter/Chapters/Chapter_Introduction.aux)
-(./1-MainMatter/Chapters/Chapter_Methodology.aux)
-(./1-MainMatter/Chapters/Chapter_DrivingSignal.aux
+(./thesis.aux (./1-MainMatter/Chapters/Chapter_Methodology.aux
 
-LaTeX Warning: Label `eq:cumsum' multiply defined.
+LaTeX Warning: Label `fig:hurst_signals' multiply defined.
 
-
-LaTeX Warning: Label `eq:var' multiply defined.
-
-) (./1-MainMatter/Chapters/Chapter_GroupsGrowth.aux)
-(./1-MainMatter/Chapters/Chapter_Trust1.aux
-
-LaTeX Warning: Label `fig:fullneighdeg' multiply defined.
-
-) (./2-Appendix/Appendix_sliding_window.aux
-
-LaTeX Warning: Label `fig:windows' multiply defined.
-
-
-LaTeX Warning: Label `fig:windows' multiply defined.
-
-) (./2-Appendix/Appendix_robust.aux) (./3-BackMatter/Biography.aux)
-(./3-BackMatter/Autorstvo.aux) (./3-BackMatter/Istovetnost.aux)
-(./3-BackMatter/Koriscenje.aux))
+))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 79.
 LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 7
-8.
-
-(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/ot2cmr.fd
+9.
+ (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/ot2cmr.fd
 File: ot2cmr.fd 2001/08/11 v3.2c Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
 LaTeX Font Info:    Trying to load font information for T2A+ptm on input line 7
-8.
-LaTeX Font Info:    No file T2Aptm.fd. on input line 78.
+9.
+LaTeX Font Info:    No file T2Aptm.fd. on input line 79.
 
 
 LaTeX Font Warning: Font shape `T2A/ptm/m/n' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 78.
+(Font)              using `T2A/cmr/m/n' instead on input line 79.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count336
+\scratchcounter=\count337
 \scratchdimen=\dimen279
-\scratchbox=\box57
-\nofMPsegments=\count337
-\nofMParguments=\count338
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count339
+\scratchbox=\box59
+\nofMPsegments=\count338
+\nofMParguments=\count339
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count340
 \MPscratchDim=\dimen280
-\MPnumerator=\count340
-\makeMPintoPDFobject=\count341
-\everyMPtoPDFconversion=\toks36
+\MPnumerator=\count341
+\makeMPintoPDFobject=\count342
+\everyMPtoPDFconversion=\toks38
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1225,8 +1209,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring ON on input line 78.
+\AtBeginShipoutBox=\box60
+Package hyperref Info: Link coloring ON on input line 79.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1237,14 +1221,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count342
+\c@section@level=\count343
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 78.
-LaTeX Info: Redefining \ref on input line 78.
-LaTeX Info: Redefining \pageref on input line 78.
-LaTeX Info: Redefining \nameref on input line 78.
+LaTeX Info: Redefining \nameref on input line 79.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -1293,11 +1277,11 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 78.
+LaTeX Info: Redefining \selectfont on input line 79.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 93
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 94
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
@@ -1327,441 +1311,285 @@ Non-PDF special ignored!
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<Figures/Konigsberg_bridges.png, id=336, 303.1325pt x 238.8925pt>
+<Figures/Konigsberg_bridges.png, id=135, 303.1325pt x 238.8925pt>
 File: Figures/Konigsberg_bridges.png Graphic file (type png)
 <use Figures/Konigsberg_bridges.png>
 Package pdftex.def Info: Figures/Konigsberg_bridges.png  used on input line 18.
 
 (pdftex.def)             Requested size: 145.11053pt x 114.36089pt.
-<Figures/Konigsberg_graph.png, id=337, 501.875pt x 401.5pt>
+<Figures/Konigsberg_graph.png, id=136, 501.875pt x 401.5pt>
 File: Figures/Konigsberg_graph.png Graphic file (type png)
 <use Figures/Konigsberg_graph.png>
 Package pdftex.def Info: Figures/Konigsberg_graph.png  used on input line 19.
 (pdftex.def)             Requested size: 145.11053pt x 116.08893pt.
-<figures/methodology/directed_graph.pdf, id=342, 597.50786pt x 421.10078pt>
+<figures/methodology/directed_graph.pdf, id=141, 597.50786pt x 421.10078pt>
 File: figures/methodology/directed_graph.pdf Graphic file (type pdf)
 <use figures/methodology/directed_graph.pdf>
 Package pdftex.def Info: figures/methodology/directed_graph.pdf  used on input 
 line 41.
 (pdftex.def)             Requested size: 338.58632pt x 238.62276pt.
-<figures/methodology/multi_graph.pdf, id=346, 421.10078pt x 298.75392pt>
+ [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.45 
+      <./Figures/Konigsberg_bridges.png> <./Figures/Konigsberg_graph.png>]
+<figures/methodology/multi_graph.pdf, id=159, 421.10078pt x 298.75392pt>
 File: figures/methodology/multi_graph.pdf Graphic file (type pdf)
 <use figures/methodology/multi_graph.pdf>
 Package pdftex.def Info: figures/methodology/multi_graph.pdf  used on input lin
 e 52.
 (pdftex.def)             Requested size: 193.47578pt x 137.26436pt.
- [2 <./Figures/Konigsberg_bridges.png> <./Figures/Konigsberg_graph.png>] [3 <./
-figures/methodology/directed_graph.pdf> <./figures/methodology/multi_graph.pdf
+
+[3pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.58 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.1
+.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.58 
+      <./figures/methodology/directed_graph.pdf> <./figures/methodology/multi_g
+raph.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/methodology/multi_graph.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<figures/methodology/bipartite_graph.pdf, id=393, 597.50786pt x 421.10078pt>
+<figures/methodology/bipartite_graph.pdf, id=187, 597.50786pt x 421.10078pt>
 File: figures/methodology/bipartite_graph.pdf Graphic file (type pdf)
 <use figures/methodology/bipartite_graph.pdf>
 Package pdftex.def Info: figures/methodology/bipartite_graph.pdf  used on input
  line 66.
 (pdftex.def)             Requested size: 338.58632pt x 238.62276pt.
-<figures/methodology/temporal_network.pdf, id=396, 597.50786pt x 341.43306pt>
+ [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.80 
+      <./figures/methodology/bipartite_graph.pdf>]
+<figures/methodology/temporal_network.pdf, id=199, 597.50786pt x 341.43306pt>
 File: figures/methodology/temporal_network.pdf Graphic file (type pdf)
 <use figures/methodology/temporal_network.pdf>
 Package pdftex.def Info: figures/methodology/temporal_network.pdf  used on inpu
 t line 85.
 (pdftex.def)             Requested size: 338.58632pt x 193.47789pt.
- [4 <./figures/methodology/bipartite_graph.pdf>] [5 <./figures/methodology/temp
-oral_network.pdf>]
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1.5
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.112 
+       <./figures/methodology/temporal_network.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-36.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+29.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
-
- []
-
-[7] [8] [9] [10]
-<figures/methodology/ERgraph.pdf, id=482, 686.565pt x 249.77315pt>
+) [6] [7] [8] [9]
+[10]
+<figures/methodology/ERgraph.pdf, id=267, 686.565pt x 249.77315pt>
 File: figures/methodology/ERgraph.pdf Graphic file (type pdf)
 <use figures/methodology/ERgraph.pdf>
 Package pdftex.def Info: figures/methodology/ERgraph.pdf  used on input line 37
-8.
+1.
 (pdftex.def)             Requested size: 435.32422pt x 158.36787pt.
- [11 <./figures/methodology/ERgraph.pdf>]
-<figures/methodology/ER_dist.pdf, id=509, 628.25824pt x 347.3324pt>
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.379 
+       <./figures/methodology/ERgraph.pdf>]
+<figures/methodology/ER_dist.pdf, id=293, 628.25824pt x 347.3324pt>
 File: figures/methodology/ER_dist.pdf Graphic file (type pdf)
 <use figures/methodology/ER_dist.pdf>
-Package pdftex.def Info: figures/methodology/ER_dist.pdf  used on input line 41
-4.
+Package pdftex.def Info: figures/methodology/ER_dist.pdf  used on input line 40
+7.
 (pdftex.def)             Requested size: 435.32422pt x 240.66658pt.
- [12 <./figures/methodology/ER_dist.pdf>]
-<figures/methodology/ws_graph.png, id=563, 885.3075pt x 287.0725pt>
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.413 
+       <./figures/methodology/ER_dist.pdf>]
+<figures/methodology/ws_graph.png, id=347, 885.3075pt x 287.0725pt>
 File: figures/methodology/ws_graph.png Graphic file (type png)
 <use figures/methodology/ws_graph.png>
 Package pdftex.def Info: figures/methodology/ws_graph.png  used on input line 4
-38.
+31.
 (pdftex.def)             Requested size: 435.32422pt x 141.16173pt.
- [13 <./figures/methodology/ws_graph.png>] [14]
-<figures/aging_nets.png, id=582, 818.30719pt x 260.47313pt>
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.441 
+       <./figures/methodology/ws_graph.png>] [14] [15]
+<figures/aging_nets.png, id=370, 818.30719pt x 260.47313pt>
 File: figures/aging_nets.png Graphic file (type png)
 <use figures/aging_nets.png>
-Package pdftex.def Info: figures/aging_nets.png  used on input line 531.
+Package pdftex.def Info: figures/aging_nets.png  used on input line 524.
 (pdftex.def)             Requested size: 483.69687pt x 153.96794pt.
- [15]
-<Figures/diagram.png, id=594, 470.4777pt x 344.0052pt>
+<Figures/diagram.png, id=373, 470.4777pt x 344.0052pt>
 File: Figures/diagram.png Graphic file (type png)
 <use Figures/diagram.png>
-Package pdftex.def Info: Figures/diagram.png  used on input line 557.
+Package pdftex.def Info: Figures/diagram.png  used on input line 550.
 (pdftex.def)             Requested size: 290.22107pt x 212.20494pt.
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+9}) has been already used, duplicate ignored
 
-[16 <./figures/aging_nets.png> <./Figures/diagram.png>]
-<Figures/structures.png, id=612, 699.36281pt x 392.21532pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.554 
+       <./figures/aging_nets.png>]
+<Figures/structures.png, id=389, 699.36281pt x 392.21532pt>
 File: Figures/structures.png Graphic file (type png)
 <use Figures/structures.png>
-Package pdftex.def Info: Figures/structures.png  used on input line 581.
+Package pdftex.def Info: Figures/structures.png  used on input line 574.
 (pdftex.def)             Requested size: 386.95897pt x 217.01776pt.
- [17 <./Figures/structures.png>] [18] [19]
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+10}) has been already used, duplicate ignored
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 677.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.578 
+       <./Figures/diagram.png>] [18pdfTeX warning (ext4): destination with the 
+same identifier (name{figure.1.11}) has been already used, duplicate ignored
 
-<figures/methodology/Distributions_plots.pdf, id=644, 642.89563pt x 1158.83562p
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.590 \subsection{The properties of distributions}
+                                                   <./Figures/structures.png>]
+[19] [20]
+<figures/methodology/Distributions_plots.pdf, id=425, 642.89563pt x 1158.83562p
 t>
 File: figures/methodology/Distributions_plots.pdf Graphic file (type pdf)
 <use figures/methodology/Distributions_plots.pdf>
 Package pdftex.def Info: figures/methodology/Distributions_plots.pdf  used on i
-nput line 679.
+nput line 672.
 (pdftex.def)             Requested size: 362.77264pt x 653.91228pt.
-[20] [21 <./figures/methodology/Distributions_plots.pdf>] [22] [23] [24]
-[25] [26pdfTeX warning (ext4): destination with the same identifier (name{equat
-ion.1.6.41}) has been already used, duplicate ignored
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[21] [22pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.1.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.869 
-      ] [27]) [28] (./thesis.bbl
+l.721 
+       <./figures/methodology/Distributions_plots.pdf>] [23] [24]
+<figures/hurst_signals.pdf, id=513, 1011.78pt x 578.16pt>
+File: figures/hurst_signals.pdf Graphic file (type pdf)
+<use figures/hurst_signals.pdf>
+Package pdftex.def Info: figures/hurst_signals.pdf  used on input line 806.
+(pdftex.def)             Requested size: 362.77264pt x 207.29935pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[25]
+<figures/hurst_detrending.pdf, id=520, 1011.78pt x 578.16pt>
+File: figures/hurst_detrending.pdf Graphic file (type pdf)
+<use figures/hurst_detrending.pdf>
+Package pdftex.def Info: figures/hurst_detrending.pdf  used on input line 847.
+(pdftex.def)             Requested size: 483.69687pt x 276.40207pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[26pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.880 \end{equation}
+                     <./figures/hurst_signals.pdf>]
+<figures/hurst_mfdfa.pdf, id=571, 717.23506pt x 469.0323pt>
+File: figures/hurst_mfdfa.pdf Graphic file (type pdf)
+<use figures/hurst_mfdfa.pdf>
+Package pdftex.def Info: figures/hurst_mfdfa.pdf  used on input line 888.
+(pdftex.def)             Requested size: 386.95897pt x 253.0518pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.898 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{equation.1.6.42}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.898 \newpage
+               <./figures/hurst_detrending.pdf>] [28pdfTeX warning (ext4): dest
+ination with the same identifier (name{figure.1.15}) has been already used, dup
+licate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.913 
+       <./figures/hurst_mfdfa.pdf>]) [29] [30
+
+
+] (./thesis.bbl
 bibitemlist
-[29
+[31
 
+]) [32]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
+ (./thesis.aux (./1-MainMatter/Chapters/Chapter_Methodology.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 120.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 120.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 51455666B0E8A2E3EC043276DA72D4FD;2032.
 
-
-] [30] [31] [32] [33]) [34]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
- (./thesis.aux
-(./1-MainMatter/Chapters/Chapter_Methodology.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
-
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: AFF5A086FF4C043A9335CE9AFF6EB8DD;5575
-(rerunfilecheck)             After:  5FDB76AF6B7A621898E644075BC0A97B;1879.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
  ) 
 Here is how much of TeX's memory you used:
- 15644 strings out of 482584
- 231840 string characters out of 5956256
- 581605 words of memory out of 5000000
- 30033 multiletter control sequences out of 15000+600000
+ 15332 strings out of 482584
+ 225822 string characters out of 5956256
+ 540045 words of memory out of 5000000
+ 29907 multiletter control sequences out of 15000+600000
  567579 words of font info for 75 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 38i,17n,45p,1919b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{equation.3.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.3.1.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.2.12} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.2.11} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.2.10} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.2.6} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.2.3.8} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.2.3} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.2.2} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.2.1} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{koriscenje.0} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{istovetnost.0} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{autorstvo.0} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix*.9} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix*.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.B.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.B.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.B.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.B.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.B.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix.B} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix.A} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.3.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.3.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.3.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.3.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.2.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.7} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.5.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.5.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.3.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.7} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.6.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.6.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.5.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.5.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.5.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.4.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.4.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.4.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.4.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.4.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.4.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.3.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.3.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.3.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.3.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.3.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.3.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.7} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.6} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.5} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.3} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.2} has been referenced but does not exist,
- replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/times/utmri8a.pfb>
-Output written on thesis.pdf (34 pages, 838633 bytes).
+ 38i,17n,45p,1635b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on thesis.pdf (32 pages, 1192709 bytes).
 PDF statistics:
- 968 PDF objects out of 1000 (max. 8388607)
- 791 compressed objects within 8 object streams
- 282 named destinations out of 1000 (max. 500000)
- 690 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 784 PDF objects out of 1000 (max. 8388607)
+ 490 compressed objects within 5 object streams
+ 148 named destinations out of 1000 (max. 500000)
+ 305 words of extra memory for PDF output out of 10000 (max. 10000000)
 

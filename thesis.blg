@@ -1,111 +1,65 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: 0-FrontMatter/Title-Eng.aux
-A level-1 auxiliary file: 0-FrontMatter/Title-Srb.aux
-A level-1 auxiliary file: 0-FrontMatter/Committee.aux
-A level-1 auxiliary file: 0-FrontMatter/Acknowledgements.aux
-A level-1 auxiliary file: 0-FrontMatter/Abstract-Eng.aux
-A level-1 auxiliary file: 0-FrontMatter/Abstract-Srb.aux
-A level-1 auxiliary file: 0-FrontMatter/Contents.aux
-A level-1 auxiliary file: 0-FrontMatter/Figures.aux
-A level-1 auxiliary file: 0-FrontMatter/Tables.aux
-A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_Introduction.aux
 A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_Methodology.aux
-A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_DrivingSignal.aux
-A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_GroupsGrowth.aux
-A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_Trust1.aux
-A level-1 auxiliary file: 2-Appendix/Appendix_sliding_window.aux
-A level-1 auxiliary file: 2-Appendix/Appendix_robust.aux
 The style file: unsrt.bst
-A level-1 auxiliary file: 3-BackMatter/Biography.aux
-A level-1 auxiliary file: 3-BackMatter/Autorstvo.aux
-A level-1 auxiliary file: 3-BackMatter/Istovetnost.aux
-A level-1 auxiliary file: 3-BackMatter/Koriscenje.aux
 Database file #1: sample.bib
 You're missing a field name---line 1045 of file sample.bib
  : 
  : %   title={Expressing trust with temporal frequency of user interaction in online communities},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 1402 of file sample.bib
- : @article{smiljanic2017associative
- :                                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1500 of file sample.bib
- : @article{dankulov2015dynamics
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1588 of file sample.bib
- : @inproceedings{kairam2012life
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1597 of file sample.bib
- : @inproceedings{backstrom2006group
- :                                  ,
+I was expecting an "="---line 1593 of file sample.bib
+ :  https://www.overleaf.com/project/615d87ed5fba9959f4dc6d45 
+ :                                                            year={2012}
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 1686 of file sample.bib
  : 
  : @article{martin,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 1711 of file sample.bib
- : @article{centola2007cascade
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1722 of file sample.bib
- : @article{fortunato2010community
- :                                ,
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "boccaletti2006"
-Warning--I didn't find a database entry for "PNAS"
-Warning--I didn't find a database entry for "jsdivergence"
-Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "bettencourt2007growth"
-Warning--I didn't find a database entry for "clauset2009power"
 Warning--empty journal in latora2017complex
 Warning--empty publisher in caldarelli2007scalefree
 Warning--empty publisher in guide_temporal
-Warning--empty booktitle in yashkina2020
-You've used 79 entries,
+You've used 27 entries,
             1791 wiz_defined-function locations,
-            937 strings with 19208 characters,
-and the built_in function-call counts, 20603 in all, are:
-= -- 1810
-> -- 1005
-< -- 15
-+ -- 364
-- -- 285
-* -- 1570
-:= -- 3227
-add.period$ -- 244
-call.type$ -- 79
-change.case$ -- 73
+            620 strings with 8282 characters,
+and the built_in function-call counts, 6148 in all, are:
+= -- 526
+> -- 312
+< -- 2
++ -- 115
+- -- 88
+* -- 449
+:= -- 1005
+add.period$ -- 84
+call.type$ -- 27
+change.case$ -- 22
 chr.to.int$ -- 0
-cite$ -- 83
-duplicate$ -- 875
-empty$ -- 1946
-format.name$ -- 285
-if$ -- 4571
+cite$ -- 30
+duplicate$ -- 268
+empty$ -- 586
+format.name$ -- 88
+if$ -- 1348
 int.to.chr$ -- 0
-int.to.str$ -- 79
-missing$ -- 85
-newline$ -- 399
-num.names$ -- 79
-pop$ -- 185
+int.to.str$ -- 27
+missing$ -- 32
+newline$ -- 139
+num.names$ -- 27
+pop$ -- 71
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 421
+skip$ -- 108
 stack$ -- 0
-substring$ -- 1536
-swap$ -- 213
-text.length$ -- 15
+substring$ -- 361
+swap$ -- 46
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 203
-width$ -- 81
-write$ -- 870
-(There were 8 error messages)
+warning$ -- 3
+while$ -- 58
+width$ -- 29
+write$ -- 294
+(There were 3 error messages)
