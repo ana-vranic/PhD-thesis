@@ -794,7 +794,7 @@ Y(j) = \sum_{i=0} ^j (x_i - \langle x\rangle), \quad j=1, ..., N
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth]{figures/hurst_signals.pdf}
+	\includegraphics[width=0.7\textwidth]{figures/hurst_signals.pdf}
 	\caption{Multifractal, monofractal and whitenoise signals.}
 	\label{fig:hurst_signals}
 \end{figure}
@@ -833,7 +833,7 @@ The several methods are proposed for calculating the fluctuating function $F^2(\
 %Like in FA method first one calculates the global profile of the time series. DFA deaks with monotonous trends in a detrending procedure. This is done by establishing a polynomial trend within each segment by least-square fitting and subtracting this trend from the original profile, detrending. 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth]{figures/hurst_detrending.pdf}
+	\includegraphics[width=0.7\textwidth]{figures/hurst_detrending.pdf}
 	\caption{Detrending the signal, for the segments of length $s=1000$.}
 	\label{fig:hurst_signals}
 \end{figure}
@@ -855,7 +855,7 @@ The fluctuating function scales as power-law $F_q(s) \sim s^{H(q)}$ and the anal
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/hurst_mfdfa.pdf}
+	\includegraphics[width=0.7\textwidth]{figures/hurst_mfdfa.pdf}
 	\caption{Multifractal, monofractal and whitenoise signals.}
 	\label{fig:hurst_mfdfa}
 \end{figure}
@@ -865,57 +865,55 @@ For the monofractal time series, H(q) is independent of q, meaning that scaling 
 
 \section{Dynamical reputation model}
 
-%Any dynamical trust or reputation model has to take into account distinct social and psychological attributes of these phenomena in order to estimate the value of any given trust metric \cite{duma2005dynamic}. First of all, the dynamics of trust is asymmetric, meaning that trust is easier to lose than to gain. As part of asymmetric dynamics, in order to make trust easier to loose the trust metric has to be sensitive to new experiences (recent activity or the absence of the activity of the agent), while still maintaining nontrivial influence of old behavior. The impact of new experiences has to be independent of the total number of recorded or accumulated past interactions, making high levels of trust easy to lose. Finally, the trust metric has to detect and penalize both the sudden misbehavior and the possibly long term oscillatory behavior which deviates from community norms.
 
-%We estimate dynamic reputation of the Stack Exchange users using Dynamic Interaction Based Reputation Model (DIBRM) \cite{melnikovDynamicInteractionBasedReputation2018}. This model is based on the idea of dynamic reputation, which means that the reputation of users within the community changes continuously through time: it should rapidly decrease when there is no registered activity from the specific user in the community (reputation decay), and it should grow when frequent, constant interactions and contributions to the community are detected. The highest growth of user's reputation is found through bursts of activity followed by short period of inactivity. 
+Consider a system where each component has activity pattern that could be mapped to the discrete signal, representing the moments when the event happen, such as activity pattern when users are sending email or communicate, share opinions and information within community. Behavior of users directly influence their position in the community, which is measured through the reputation. The trust among users depends on the amount of interaction between them. This means that the trust changes over time. The computational model needs to capture the dynamical property of the trust. Furthermore, the important property of the trust is that is easier lost than gained, the frequency of interaction also matters, the trust between users who interact frequently should increase faster than between users who interacts rarely. 
 
-%In our implementation of the model, we do not distinguish between positive and negative interactions in the Stack Exchange communities. Therefore, we treat any interaction in the community (question, answer or comment) as potentially valuable contribution. In fact, evaluation criteria for Stack Exchange websites going through beta testing, described in SI, do not distinguish between positive and negative interactions. The percentage of negative interactions in the communities we investigated was below 5\%, see Table 1 in SI. Filtering positive interactions would also require filtering out comments because they are not rated by the community, and that would eliminate a large portion of direct interactions between the users of a community, which is essential for estimating their reputation.
-
-%In DIBRM, reputation value for each user of the community is estimated combining three different factors: 1) \textit{reputation growth} - the cumulative factor which represents the importance of users' activities; 2) \textit{reputation decay} - the forgetting factor which represents the continuous decrease of reputation due to inactivity; \textit{the activity period factor} - measuring the length of the period of time in which the change of reputation happened. In case of Stack Exchange communities, the forgetting factor has a literal meaning, as we can assume that past contributions provided by a user are being forgotten by active users as their attention is captured by more recent content.
-
-With Dynamic Interaction Based Reputation Model (DIBRM) we can quantify the user reputation $T_n$ using equation \ref{eq:tn}. 
+With Dynamic Interaction Based Reputation Model (DIBRM) \cite{melnikovDynamicInteractionBasedReputation2018} we can quantify the user reputation $R_n$ after each interaction using equation \ref{eq:tn}, where n is number of interaction $n\in{1, N}$.
 \begin{equation}\label{eq:tn}
-T_{n}=T_{n-1} \beta^{\Delta_{n}} + I_{n}
+R_{n}=R_{n-1} \beta^{\Delta_{n}} + I_{n}
 \end{equation}
-The first part of the equation takes into account the previous reputation value $T_{n-1}$ that is weighted with coefficient $\beta^\Delta_{n}$. Depending on the frequency of the interaction controls the reputation decay. Parameter $\beta$ is forgeting factor, parameter 
+
+The first part of the equation takes into account the reputation value after previous interaction $R_{n-1}$ that is weighted with coefficient $\beta^\Delta_{n}$. Depending on the frequency of the interaction reputation will rise or decay. Parameter $\beta$ ranges from $0<\beta < 1$ is forgetting factor. The $\Delta_n$ measures time between two interactions $t_n$ and $t_{n-1}$: 
 \begin{equation}\label{eq:deltan}
 \Delta_{n}=\frac{t_{n}-t_{n-1}}{t_{a}}
 \end{equation}
-
-measures time between interactions $t_n$ and $t_{n-1}$, while $t_a$ is characteristic time window of interaction. While $\Delta_{n}<1$, user is frequently active and the number of sequential activities $A_n$ increases by 1. When the $\Delta_n$ is large the first part of equation gives more contribution to the first part, so the reputation decreases. 
-
-The second part of the equation, $I_n$ is reputation gained with each interaction. The basic value of each interaction is given as $I_{bn}$ and the parameter $\alpha$ is weight of cumulative part. 
-
+where $t_a$ is characteristic time window of interaction. The second part of the equation, $I_n$ is reputation gained within each interaction. The basic value of each interaction is given as $I_{bn}$ and the parameter $\alpha$ is weight of cumulative part. 
 \begin{equation}\label{eq:ibn}
-I_n  = I_{b_{n}}(1 +  \alpha  (1-\frac{1}{A_{n}+1}))
+I_n  = I_{b_{n}}(1 +  \alpha  (1-\frac{1}{A_n+1}))
 \end{equation}
 
-In our implementation of the model, the trust is updated each day for every user irrespective of their activity status. Therefore, the decay itself is a combination of $\beta$ and $\Delta_n$: the more days pass without recorded interaction from a specific user, the more their reputation decays. Lower values of beta lead to faster decay of trust as shown on figure. 
+When $\Delta_{n}<1$, user is frequently active, meaning that time between two interactions is less than characteristic time window. The number of sequential activities $A_n$ increases by 1. On the other hand, when $\Delta_n>1$ is large the reputation decays, while the number of activities reset to $A_n=1$. 
+
+If user is frequently active we are able to record the reputation after each day. On the other hand, if $t_n-t_{n-1}>1 \text{day}$ we need to interpolate the reputation values for each day between two interactions, $t_{n-1}<t_d<t_{n}$. To do that we consider that due to inactivity reputation will only decay, so it could be calculated as $R_d = R_{n-1}\beta^{\Delta_d}$, where $\Delta_d=(t_{d}-t_{n-1})/t_a$. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/DIBRM.pdf}
+	\caption{User reputation.}
+	\label{fig:reputation}
+\end{figure}  
+
+For example if we set the characteristic window size and basic value of interaction to $t_a=1 day$, $I_{bn}=1$, we can analyze the influence of the parameters $\alpha$ and $\beta$ on the user reputation. Lower values of beta and alpha lead to faster decline of the reputation as shown on figure \ref{fig:reputation}. With lower $\beta$ the reputation may quickly drop close to the reputation threshold, under we don't consider user as active, while with larger values of $\beta$ reputation stays high even if user is not active for larger period of time. The most important influence of the parameter $\alpha$ is on burst behavior, where larger $\alpha$ leads to higher reputation values. 
 
 
 
-
-
-%In line with the the basic dichotomy of reputation dynamics, which revolves around the varying influence of past and recent behavior, DIBRM has two components: \textit{cumulative factor} - estimating the contribution of the most recent activities to the overall reputation of the user; \textit{forgetting factor} - estimating the weight of past behavior. Estimating the value of recent behavior starts with the definition of the parameter storing the basic value of a single interaction $I_{b_{n}}$. Cumulative factor $I_{c_{n}}$ then captures the additive effect of recent successive interactions. The reputational contribution $I_n$ of most recent interaction $n$ of any given user is estimated in the following way:
-
-
-
-%Here, $\alpha$ is the weight of the cumulative part and $A_{n}$ is the number of sequential activities. If there is no interaction at $t_n$, this part of interactions has a value of 0. Important property of this component of dynamic reputation is the notion of sequential activities. Two successive interactions made by a user are considered sequential if the time between those two activities is less or equal to the time parameter $t_{a}$ which represents the time window of interaction. This time window represents maximum time spent by the user to make a meaningful contribution (post a question or answer or leave a comment).
-
-%If $\Delta_{n} < 1$ is less than one the number of sequential activities $A_{n}$ will increase by one, which means that the user is continuing to communicate frequently. On the other hand, large values $\Delta_{n}$ greatly increase the effect of the forgetting factor. This factor plays a major role in updating the total dynamic reputation of a user in each time step (after every recorded interaction):
-
-
-
-%Here, $\beta$ is the forgetting factor. 
+When user becomes inactive its reputation starts to decline and when it drops below the reputation threshold user does not influence the community. We can aproximate the dependence of parameter $\beta$ and time $\delta t$ needed for reputation to reach this level as $\beta = (\frac{R_0}{R_i})^{\frac{t_a}{\delta t}}$. In the examples on figure, parameter $t_a=1\text{day}$, while we vary different starting reputation levels $R_n$.   
+For $\beta$ values below 0.96, the decay is fast, and within two to four months of inactivity, even high reputation values are
+reduced below the threshold. On the other hand, with values of $\beta$, the decay process is more differentiated, and the high
+reputation becomes harder to lose, surviving up to a year of inactivity. For $\beta$ equal to 0.96, it takes a month for the reputation
+based on 5 interactions to decay and around 5 months for the high reputation based on 500 or 1000 interactions to decay below
+the threshold.
 
 \begin{figure}[h]
-\centering
-\includegraphics[width=0.5\textwidth]{figures/DIBRM.pdf}
-\caption{Multifractal, monofractal and whitenoise signals.}
-\label{fig:reputation}
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/FigA3.pdf}
+	\caption{Reputation decay}
+	\label{fig:reputationdecay}
 \end{figure}
 
-%\ref{fig:paper_summary}.
+
+
+In this model reputation of user changes continuously through time, it decreases when user is inactive,  and it grows with frequent and constant user contribution. The highest growth of user's reputation is found through bursts of activity followed by short period of inactivity. With model parameters $I_{bn}, t_a, \alpha, \beta$ the dynamic of user reputation may be controlled and the adapted to different communities. If the community has its own reputation model, we can also fit the model parameters in order to mimic true reputation dynamic. In this thesis the DIBRM model is used to analyze the reputation of users in StackExchange communities, and in the chapter 4 is given in details how the model parameters can be chosen. 
 
 
 

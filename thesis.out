@@ -1,28 +1,80 @@
-\BOOKMARK [0][-]{chapter.1}{Methodology}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Complex networks}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Types of networks}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{The structure of complex networks}{chapter.1}% 4
-\BOOKMARK [2][-]{subsection.1.3.1}{Degree distribution}{section.1.3}% 5
-\BOOKMARK [2][-]{subsection.1.3.2}{Degree correlations}{section.1.3}% 6
-\BOOKMARK [2][-]{subsection.1.3.3}{Clustering coefficient}{section.1.3}% 7
-\BOOKMARK [2][-]{subsection.1.3.4}{Network paths}{section.1.3}% 8
-\BOOKMARK [2][-]{subsection.1.3.5}{D-measure}{section.1.3}% 9
-\BOOKMARK [2][-]{subsection.1.3.6}{Community structure}{section.1.3}% 10
-\BOOKMARK [1][-]{section.1.4}{Network models}{chapter.1}% 11
-\BOOKMARK [2][-]{subsection.1.4.1}{Random network model}{section.1.4}% 12
-\BOOKMARK [2][-]{subsection.1.4.2}{Small-world networks}{section.1.4}% 13
-\BOOKMARK [2][-]{subsection.1.4.3}{Barab\341si-Albert model}{section.1.4}% 14
-\BOOKMARK [2][-]{subsection.1.4.4}{Nonlinear preferential attachment model}{section.1.4}% 15
-\BOOKMARK [2][-]{subsection.1.4.5}{Ageing model}{section.1.4}% 16
-\BOOKMARK [2][-]{subsection.1.4.6}{Stochastic block model}{section.1.4}% 17
-\BOOKMARK [1][-]{section.1.5}{The probability distributions}{chapter.1}% 18
-\BOOKMARK [2][-]{subsection.1.5.1}{The properties of distributions}{section.1.5}% 19
-\BOOKMARK [2][-]{subsection.1.5.2}{Plotting the distributions}{section.1.5}% 20
-\BOOKMARK [2][-]{subsection.1.5.3}{Estimating the distribution parameters}{section.1.5}% 21
-\BOOKMARK [1][-]{section.1.6}{Fractal analysis}{chapter.1}% 22
-\BOOKMARK [2][-]{subsection.1.6.1}{Long and Short-term correlations}{section.1.6}% 23
-\BOOKMARK [2][-]{subsection.1.6.2}{Rescaled range analysis}{section.1.6}% 24
-\BOOKMARK [2][-]{subsection.1.6.3}{Fluctuation analysis}{section.1.6}% 25
-\BOOKMARK [2][-]{subsection.1.6.4}{Multifractality of the signals}{section.1.6}% 26
-\BOOKMARK [1][-]{section.1.7}{Dynamical reputation model}{chapter.1}% 27
-\BOOKMARK [0][-]{appendix*.1}{Bibliography}{}% 28
+\BOOKMARK [0][-]{chapter*.2}{Acknowledgements}{}% 1
+\BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 2
+\BOOKMARK [0][-]{section*.5}{Contents}{}% 3
+\BOOKMARK [0][-]{section*.6}{List of figures}{}% 4
+\BOOKMARK [0][-]{section*.7}{List of Tables}{}% 5
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 6
+\BOOKMARK [1][-]{section.1.1}{In This Thesis}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Methodology}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Complex networks}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Types of networks}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{The structure of complex networks}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.3.1}{Degree distribution}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.2}{Degree correlations}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.3}{Clustering coefficient}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.4}{Network paths}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.5}{D-measure}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.6}{Community structure}{section.2.3}% 17
+\BOOKMARK [1][-]{section.2.4}{Network models}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.4.1}{Random network model}{section.2.4}% 19
+\BOOKMARK [2][-]{subsection.2.4.2}{Small-world networks}{section.2.4}% 20
+\BOOKMARK [2][-]{subsection.2.4.3}{Barab\341si-Albert model}{section.2.4}% 21
+\BOOKMARK [2][-]{subsection.2.4.4}{Nonlinear preferential attachment model}{section.2.4}% 22
+\BOOKMARK [2][-]{subsection.2.4.5}{Ageing model}{section.2.4}% 23
+\BOOKMARK [2][-]{subsection.2.4.6}{Stochastic block model}{section.2.4}% 24
+\BOOKMARK [1][-]{section.2.5}{The probability distributions}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.5.1}{The properties of distributions}{section.2.5}% 26
+\BOOKMARK [2][-]{subsection.2.5.2}{Plotting the distributions}{section.2.5}% 27
+\BOOKMARK [2][-]{subsection.2.5.3}{Estimating the distribution parameters}{section.2.5}% 28
+\BOOKMARK [1][-]{section.2.6}{Fractal analysis}{chapter.2}% 29
+\BOOKMARK [2][-]{subsection.2.6.1}{Long and Short-term correlations}{section.2.6}% 30
+\BOOKMARK [2][-]{subsection.2.6.2}{Rescaled range analysis}{section.2.6}% 31
+\BOOKMARK [2][-]{subsection.2.6.3}{Fluctuation analysis}{section.2.6}% 32
+\BOOKMARK [2][-]{subsection.2.6.4}{Multifractality of the signals}{section.2.6}% 33
+\BOOKMARK [1][-]{section.2.7}{Dynamical reputation model}{chapter.2}% 34
+\BOOKMARK [0][-]{chapter.3}{Driving signals}{}% 35
+\BOOKMARK [1][-]{section.3.1}{Growing signals}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.1.1}{Long range correlated signals}{section.3.1}% 37
+\BOOKMARK [2][-]{subsection.3.1.2}{Multifractal analysis}{section.3.1}% 38
+\BOOKMARK [2][-]{subsection.3.1.3}{Real signals}{section.3.1}% 39
+\BOOKMARK [1][-]{section.3.2}{Growing network model with aging nodes}{chapter.3}% 40
+\BOOKMARK [1][-]{section.3.3}{Structural differences between networks }{chapter.3}% 41
+\BOOKMARK [2][-]{subsection.3.3.1}{The assortativity and clustering}{section.3.3}% 42
+\BOOKMARK [1][-]{section.3.4}{Conclusions}{chapter.3}% 43
+\BOOKMARK [0][-]{chapter.4}{Groups growth model}{}% 44
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.2}{Data }{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.3}{Empirical analysis of social group growth }{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.4}{Model }{chapter.4}% 48
+\BOOKMARK [1][-]{section.4.5}{Results }{chapter.4}% 49
+\BOOKMARK [2][-]{subsection.4.5.1}{Model description}{section.4.5}% 50
+\BOOKMARK [2][-]{subsection.4.5.2}{Modeling real systems}{section.4.5}% 51
+\BOOKMARK [1][-]{section.4.6}{Discussion and conclusions }{chapter.4}% 52
+\BOOKMARK [1][-]{section.4.7}{Distributions fit}{chapter.4}% 53
+\BOOKMARK [1][-]{section.4.8}{The model for social groups growth}{chapter.4}% 54
+\BOOKMARK [0][-]{chapter.5}{The role of trust in knowledge based communities}{}% 55
+\BOOKMARK [1][-]{section.5.1}{The Stack Exchange}{chapter.5}% 56
+\BOOKMARK [2][-]{subsection.5.1.1}{Data}{section.5.1}% 57
+\BOOKMARK [2][-]{subsection.5.1.2}{Comparison between active and closed SE communities}{section.5.1}% 58
+\BOOKMARK [1][-]{section.5.2}{Network properties of Stack Exchange data}{chapter.5}% 59
+\BOOKMARK [2][-]{subsection.5.2.1}{Clustering}{section.5.2}% 60
+\BOOKMARK [2][-]{subsection.5.2.2}{Core-periphery structure}{section.5.2}% 61
+\BOOKMARK [2][-]{subsection.5.2.3}{core-periphery structure of knowledge-sharing networks}{section.5.2}% 62
+\BOOKMARK [2][-]{subsection.5.2.4}{Core-periphery structure of the interaction networks}{section.5.2}% 63
+\BOOKMARK [1][-]{section.5.3}{Dynamical Reputation model}{chapter.5}% 64
+\BOOKMARK [2][-]{subsection.5.3.1}{Selection of dynamical reputation model parameters}{section.5.3}% 65
+\BOOKMARK [2][-]{subsection.5.3.2}{Dynamic reputation - \040parameter}{section.5.3}% 66
+\BOOKMARK [2][-]{subsection.5.3.3}{Dynamic reputation of users within the network of interactions}{section.5.3}% 67
+\BOOKMARK [2][-]{subsection.5.3.4}{Dynamic reputation in the network of interactions}{section.5.3}% 68
+\BOOKMARK [0][-]{appendix.A}{The choice of the sliding window}{}% 69
+\BOOKMARK [0][-]{appendix.B}{Robustness of core-periphery algorithm}{}% 70
+\BOOKMARK [1][-]{section.B.1}{Precision and recall}{appendix.B}% 71
+\BOOKMARK [1][-]{section.B.2}{F1 measure}{appendix.B}% 72
+\BOOKMARK [1][-]{section.B.3}{Jaccard coefficient}{appendix.B}% 73
+\BOOKMARK [1][-]{section.B.4}{Normalized mutual information}{appendix.B}% 74
+\BOOKMARK [1][-]{section.B.5}{Adjusted rand index}{appendix.B}% 75
+\BOOKMARK [0][-]{appendix*.8}{Bibliography}{}% 76
+\BOOKMARK [0][-]{appendix*.9}{Biography of the author}{}% 77
+\BOOKMARK [0][-]{autorstvo.0}{Izjava o autorstvu}{}% 78
+\BOOKMARK [0][-]{istovetnost.0}{Izjava o istovetnosti}{}% 79
+\BOOKMARK [0][-]{koriscenje.0}{Izjava o kori\235cenju}{}% 80
