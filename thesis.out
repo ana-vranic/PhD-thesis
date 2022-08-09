@@ -1,36 +1,6 @@
-\BOOKMARK [0][-]{chapter.1}{Methodology}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Complex networks}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Types of networks}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{The structure of complex networks}{chapter.1}% 4
-\BOOKMARK [2][-]{subsection.1.3.1}{Degree distribution}{section.1.3}% 5
-\BOOKMARK [2][-]{subsection.1.3.2}{Degree correlations}{section.1.3}% 6
-\BOOKMARK [2][-]{subsection.1.3.3}{Clustering coefficient}{section.1.3}% 7
-\BOOKMARK [2][-]{subsection.1.3.4}{Network paths}{section.1.3}% 8
-\BOOKMARK [2][-]{subsection.1.3.5}{D-measure}{section.1.3}% 9
-\BOOKMARK [2][-]{subsection.1.3.6}{Community structure}{section.1.3}% 10
-\BOOKMARK [1][-]{section.1.4}{Network models}{chapter.1}% 11
-\BOOKMARK [2][-]{subsection.1.4.1}{Random network model}{section.1.4}% 12
-\BOOKMARK [2][-]{subsection.1.4.2}{Small-world networks}{section.1.4}% 13
-\BOOKMARK [2][-]{subsection.1.4.3}{Barab\341si-Albert model}{section.1.4}% 14
-\BOOKMARK [2][-]{subsection.1.4.4}{Nonlinear preferential attachment model}{section.1.4}% 15
-\BOOKMARK [2][-]{subsection.1.4.5}{Ageing model}{section.1.4}% 16
-\BOOKMARK [2][-]{subsection.1.4.6}{Stochastic block model}{section.1.4}% 17
-\BOOKMARK [1][-]{section.1.5}{The probability distributions}{chapter.1}% 18
-\BOOKMARK [2][-]{subsection.1.5.1}{The properties of distributions}{section.1.5}% 19
-\BOOKMARK [2][-]{subsection.1.5.2}{Plotting the distributions}{section.1.5}% 20
-\BOOKMARK [2][-]{subsection.1.5.3}{Estimating the distribution parameters}{section.1.5}% 21
-\BOOKMARK [1][-]{section.1.6}{Fractal analysis}{chapter.1}% 22
-\BOOKMARK [2][-]{subsection.1.6.1}{Long and Short-term correlations}{section.1.6}% 23
-\BOOKMARK [2][-]{subsection.1.6.2}{Rescaled range analysis}{section.1.6}% 24
-\BOOKMARK [2][-]{subsection.1.6.3}{Fluctuation analysis}{section.1.6}% 25
-\BOOKMARK [2][-]{subsection.1.6.4}{Multifractality of the signals}{section.1.6}% 26
-\BOOKMARK [1][-]{section.1.7}{Dynamical reputation model}{chapter.1}% 27
-\BOOKMARK [0][-]{chapter.2}{Driving signals}{}% 28
-\BOOKMARK [1][-]{section.2.1}{Growing signals}{chapter.2}% 29
-\BOOKMARK [2][-]{subsection.2.1.1}{Long range correlated signals}{section.2.1}% 30
-\BOOKMARK [2][-]{subsection.2.1.2}{Real signals}{section.2.1}% 31
-\BOOKMARK [1][-]{section.2.2}{Growing network model with aging nodes}{chapter.2}% 32
-\BOOKMARK [1][-]{section.2.3}{Structural differences between networks }{chapter.2}% 33
-\BOOKMARK [2][-]{subsection.2.3.1}{The assortativity and clustering}{section.2.3}% 34
-\BOOKMARK [1][-]{section.2.4}{Conclusions}{chapter.2}% 35
-\BOOKMARK [0][-]{appendix*.1}{Bibliography}{}% 36
+\BOOKMARK [0][-]{chapter.1}{Driving signals}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Growing network model with aging nodes}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Real signals}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Long range correlated signals}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Conclusions}{chapter.1}% 5
+\BOOKMARK [0][-]{appendix*.1}{Bibliography}{}% 6

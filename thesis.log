@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  5 AUG 2022 12:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  9 AUG 2022 16:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1147,46 +1147,42 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count336
 \l__pdf_internal_box=\box58
 )
-(./thesis.aux (./1-MainMatter/Chapter_Methodology.aux
-
-LaTeX Warning: Label `fig:hurst_signals' multiply defined.
-
-) (./1-MainMatter/Chapter_DrivingSignal.aux))
+(./thesis.aux (./1-MainMatter/Chapter_DrivingSignal.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 79.
-LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 7
-9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 81.
+LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 8
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/ot2cmr.fd
 File: ot2cmr.fd 2001/08/11 v3.2c Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Trying to load font information for T2A+ptm on input line 7
-9.
-LaTeX Font Info:    No file T2Aptm.fd. on input line 79.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Trying to load font information for T2A+ptm on input line 8
+1.
+LaTeX Font Info:    No file T2Aptm.fd. on input line 81.
 
 
 LaTeX Font Warning: Font shape `T2A/ptm/m/n' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 79.
+(Font)              using `T2A/cmr/m/n' instead on input line 81.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1211,7 +1207,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring ON on input line 79.
+Package hyperref Info: Link coloring ON on input line 81.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1226,10 +1222,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 79.
-LaTeX Info: Redefining \ref on input line 79.
-LaTeX Info: Redefining \pageref on input line 79.
-LaTeX Info: Redefining \nameref on input line 79.
+LaTeX Info: Redefining \nameref on input line 81.
+LaTeX Info: Redefining \ref on input line 81.
+LaTeX Info: Redefining \pageref on input line 81.
+LaTeX Info: Redefining \nameref on input line 81.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -1278,27 +1274,32 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 79.
+LaTeX Info: Redefining \selectfont on input line 81.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 94
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 96
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-\openout2 = `1-MainMatter/Chapter_Methodology.aux'.
+\openout2 = `1-MainMatter/Chapter_DrivingSignal.aux'.
 
 
-(./1-MainMatter/Chapter_Methodology.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+(./1-MainMatter/Chapter_DrivingSignal.tex
+<figs/ciljevi.pdf, id=29, 845.04686pt x 597.50786pt>
+File: figs/ciljevi.pdf Graphic file (type pdf)
+<use figs/ciljevi.pdf>
+Package pdftex.def Info: figs/ciljevi.pdf  used on input line 14.
+(pdftex.def)             Requested size: 386.95897pt x 273.60788pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1311,444 +1312,212 @@ Non-PDF special ignored!
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<Figures/Konigsberg_bridges.png, id=167, 303.1325pt x 238.8925pt>
-File: Figures/Konigsberg_bridges.png Graphic file (type png)
-<use Figures/Konigsberg_bridges.png>
-Package pdftex.def Info: Figures/Konigsberg_bridges.png  used on input line 18.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2pdfTeX warning (ext4): d
+estination with the same identifier (name{figure.1.1}) has been already used, d
+uplicate ignored
 
-(pdftex.def)             Requested size: 145.11053pt x 114.36089pt.
-<Figures/Konigsberg_graph.png, id=168, 501.875pt x 401.5pt>
-File: Figures/Konigsberg_graph.png Graphic file (type png)
-<use Figures/Konigsberg_graph.png>
-Package pdftex.def Info: Figures/Konigsberg_graph.png  used on input line 19.
-(pdftex.def)             Requested size: 145.11053pt x 116.08893pt.
-<figures/methodology/directed_graph.pdf, id=173, 597.50786pt x 421.10078pt>
-File: figures/methodology/directed_graph.pdf Graphic file (type pdf)
-<use figures/methodology/directed_graph.pdf>
-Package pdftex.def Info: figures/methodology/directed_graph.pdf  used on input 
-line 41.
-(pdftex.def)             Requested size: 338.58632pt x 238.62276pt.
- [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.45 R
+      eal growth signals have long-range correlations, trends and cycles [37...
+ <./figs/ciljevi.pdf>]
+<figs/signal1.pdf, id=62, 388.88727pt x 158.90115pt>
+File: figs/signal1.pdf Graphic file (type pdf)
+<use figs/signal1.pdf>
+Package pdftex.def Info: figs/signal1.pdf  used on input line 60.
+(pdftex.def)             Requested size: 217.66211pt x 88.93796pt.
+<figs/signal2.pdf, id=63, 388.88727pt x 158.90115pt>
+File: figs/signal2.pdf Graphic file (type pdf)
+<use figs/signal2.pdf>
+Package pdftex.def Info: figs/signal2.pdf  used on input line 61.
+(pdftex.def)             Requested size: 217.66211pt x 88.93796pt.
+<figs/signal4.pdf, id=64, 388.88727pt x 158.90115pt>
+File: figs/signal4.pdf Graphic file (type pdf)
+<use figs/signal4.pdf>
+Package pdftex.def Info: figs/signal4.pdf  used on input line 63.
+(pdftex.def)             Requested size: 217.66211pt x 88.93796pt.
+<figs/signal5.pdf, id=65, 388.88727pt x 158.90115pt>
+File: figs/signal5.pdf Graphic file (type pdf)
+<use figs/signal5.pdf>
+Package pdftex.def Info: figs/signal5.pdf  used on input line 64.
+(pdftex.def)             Requested size: 217.66211pt x 88.93796pt.
+<figs/signal3.pdf, id=66, 388.88727pt x 158.90115pt>
+File: figs/signal3.pdf Graphic file (type pdf)
+<use figs/signal3.pdf>
+Package pdftex.def Info: figs/signal3.pdf  used on input line 67.
+(pdftex.def)             Requested size: 217.66211pt x 88.93796pt.
+<figs/hurst.pdf, id=67, 412.1774pt x 265.12738pt>
+File: figs/hurst.pdf Graphic file (type pdf)
+<use figs/hurst.pdf>
+Package pdftex.def Info: figs/hurst.pdf  used on input line 75.
+(pdftex.def)             Requested size: 290.22107pt x 186.68826pt.
+ [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.45 
-      <./Figures/Konigsberg_bridges.png> <./Figures/Konigsberg_graph.png>]
-<figures/methodology/multi_graph.pdf, id=191, 421.10078pt x 298.75392pt>
-File: figures/methodology/multi_graph.pdf Graphic file (type pdf)
-<use figures/methodology/multi_graph.pdf>
-Package pdftex.def Info: figures/methodology/multi_graph.pdf  used on input lin
-e 52.
-(pdftex.def)             Requested size: 193.47578pt x 137.26436pt.
+l.79 
+      <./figs/signal1.pdf> <./figs/signal2.pdf> <./figs/signal4.pdf> <./figs/si
+gnal5.pdf> <./figs/signal3.pdf>]
+<figs/b1.pdf, id=215, 854.79347pt x 410.81918pt>
+File: figs/b1.pdf Graphic file (type pdf)
+<use figs/b1.pdf>
+Package pdftex.def Info: figs/b1.pdf  used on input line 89.
+(pdftex.def)             Requested size: 483.69687pt x 232.46431pt.
 
-[3pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figs/b3.pdf, id=217, 854.79347pt x 410.81918pt>
+File: figs/b3.pdf Graphic file (type pdf)
+<use figs/b3.pdf>
+Package pdftex.def Info: figs/b3.pdf  used on input line 98.
+(pdftex.def)             Requested size: 483.69687pt x 232.46431pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figs/b2.pdf, id=219, 852.33115pt x 408.87442pt>
+File: figs/b2.pdf Graphic file (type pdf)
+<use figs/b2.pdf>
+Package pdftex.def Info: figs/b2.pdf  used on input line 108.
+(pdftex.def)             Requested size: 483.69687pt x 232.03764pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figs/Ddistance.pdf, id=221, 418.52371pt x 513.72365pt>
+File: figs/Ddistance.pdf Graphic file (type pdf)
+<use figs/Ddistance.pdf>
+Package pdftex.def Info: figs/Ddistance.pdf  used on input line 121.
+(pdftex.def)             Requested size: 386.95897pt x 474.9988pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.58 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-.3}) has been already used, duplicate ignored
+l.127 
+       <./figs/hurst.pdf>] [5pdfTeX warning (ext4): destination with the same i
+dentifier (name{figure.1.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.58 
-      <./figures/methodology/directed_graph.pdf> <./figures/methodology/multi_g
-raph.pdf
+l.129 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+1.5}) has been already used, duplicate ignored
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/methodology/multi_graph.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.129 
+       <./figs/b1.pdf> <./figs/b3.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figs/b3.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
 >]
-<figures/methodology/bipartite_graph.pdf, id=220, 597.50786pt x 421.10078pt>
-File: figures/methodology/bipartite_graph.pdf Graphic file (type pdf)
-<use figures/methodology/bipartite_graph.pdf>
-Package pdftex.def Info: figures/methodology/bipartite_graph.pdf  used on input
- line 66.
-(pdftex.def)             Requested size: 338.58632pt x 238.62276pt.
- [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.80 
-      <./figures/methodology/bipartite_graph.pdf>]
-<figures/methodology/temporal_network.pdf, id=231, 597.50786pt x 341.43306pt>
-File: figures/methodology/temporal_network.pdf Graphic file (type pdf)
-<use figures/methodology/temporal_network.pdf>
-Package pdftex.def Info: figures/methodology/temporal_network.pdf  used on inpu
-t line 85.
-(pdftex.def)             Requested size: 338.58632pt x 193.47789pt.
- [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1.5
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.112 
-       <./figures/methodology/temporal_network.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-29.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+39.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [6] [7] [8] [9]
-[10]
-<figures/methodology/ERgraph.pdf, id=299, 686.565pt x 249.77315pt>
-File: figures/methodology/ERgraph.pdf Graphic file (type pdf)
-<use figures/methodology/ERgraph.pdf>
-Package pdftex.def Info: figures/methodology/ERgraph.pdf  used on input line 37
-1.
-(pdftex.def)             Requested size: 435.32422pt x 158.36787pt.
- [11pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.379 
-       <./figures/methodology/ERgraph.pdf>]
-<figures/methodology/ER_dist.pdf, id=325, 628.25824pt x 347.3324pt>
-File: figures/methodology/ER_dist.pdf Graphic file (type pdf)
-<use figures/methodology/ER_dist.pdf>
-Package pdftex.def Info: figures/methodology/ER_dist.pdf  used on input line 40
-7.
-(pdftex.def)             Requested size: 435.32422pt x 240.66658pt.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.413 
-       <./figures/methodology/ER_dist.pdf>]
-<figures/methodology/ws_graph.png, id=380, 885.3075pt x 287.0725pt>
-File: figures/methodology/ws_graph.png Graphic file (type png)
-<use figures/methodology/ws_graph.png>
-Package pdftex.def Info: figures/methodology/ws_graph.png  used on input line 4
-31.
-(pdftex.def)             Requested size: 435.32422pt x 141.16173pt.
- [13pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-8}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.441 
-       <./figures/methodology/ws_graph.png>] [14] [15]
-<figures/aging_nets.png, id=402, 818.30719pt x 260.47313pt>
-File: figures/aging_nets.png Graphic file (type png)
-<use figures/aging_nets.png>
-Package pdftex.def Info: figures/aging_nets.png  used on input line 524.
-(pdftex.def)             Requested size: 483.69687pt x 153.96794pt.
-<Figures/diagram.png, id=405, 470.4777pt x 344.0052pt>
-File: Figures/diagram.png Graphic file (type png)
-<use Figures/diagram.png>
-Package pdftex.def Info: Figures/diagram.png  used on input line 550.
-(pdftex.def)             Requested size: 290.22107pt x 212.20494pt.
- [16pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-9}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.554 
-       <./figures/aging_nets.png>]
-<Figures/structures.png, id=421, 699.36281pt x 392.21532pt>
-File: Figures/structures.png Graphic file (type png)
-<use Figures/structures.png>
-Package pdftex.def Info: Figures/structures.png  used on input line 574.
-(pdftex.def)             Requested size: 386.95897pt x 217.01776pt.
- [17pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-10}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.578 
-       <./Figures/diagram.png>] [18pdfTeX warning (ext4): destination with the 
-same identifier (name{figure.1.11}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.589 \subsection{The properties of distributions}
-                                                   <./Figures/structures.png>]
-[19] [20]
-<figures/methodology/Distributions_plots.pdf, id=457, 642.89563pt x 1158.83562p
-t>
-File: figures/methodology/Distributions_plots.pdf Graphic file (type pdf)
-<use figures/methodology/Distributions_plots.pdf>
-Package pdftex.def Info: figures/methodology/Distributions_plots.pdf  used on i
-nput line 660.
-(pdftex.def)             Requested size: 362.77264pt x 653.91228pt.
+)
+<figs/monofractals.png, id=435, 502.2765pt x 458.1918pt>
+File: figs/monofractals.png Graphic file (type png)
+<use figs/monofractals.png>
+Package pdftex.def Info: figs/monofractals.png  used on input line 147.
+(pdftex.def)             Requested size: 290.22107pt x 264.75865pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21] [22pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.1.12}) has been already used, duplicate ignored
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.1.6}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.688 
-       <./figures/methodology/Distributions_plots.pdf>] [23] [24]
-<figures/hurst_signals.pdf, id=547, 1011.78pt x 578.16pt>
-File: figures/hurst_signals.pdf Graphic file (type pdf)
-<use figures/hurst_signals.pdf>
-Package pdftex.def Info: figures/hurst_signals.pdf  used on input line 763.
-(pdftex.def)             Requested size: 338.58632pt x 193.47527pt.
- [25pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-13}) has been already used, duplicate ignored
+l.157 
+       <./figs/b2.pdf>] [7pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.1.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.781 	
-        <./figures/hurst_signals.pdf>]
-<figures/hurst_detrending.pdf, id=593, 1011.78pt x 578.16pt>
-File: figures/hurst_detrending.pdf Graphic file (type pdf)
-<use figures/hurst_detrending.pdf>
-Package pdftex.def Info: figures/hurst_detrending.pdf  used on input line 789.
-(pdftex.def)             Requested size: 338.58632pt x 193.47527pt.
- [26pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-14}) has been already used, duplicate ignored
+l.161 
+       <./figs/Ddistance.pdf>]
+<figs/aindex.png, id=573, 402.5439pt x 271.7352pt>
+File: figs/aindex.png Graphic file (type png)
+<use figs/aindex.png>
+Package pdftex.def Info: figs/aindex.png  used on input line 164.
+(pdftex.def)             Requested size: 217.66211pt x 146.93382pt.
+<figs/clustering.png, id=574, 393.8715pt x 271.7352pt>
+File: figs/clustering.png Graphic file (type png)
+<use figs/clustering.png>
+Package pdftex.def Info: figs/clustering.png  used on input line 165.
+(pdftex.def)             Requested size: 217.66211pt x 150.16797pt.
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.1.8
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.807 \end{equation}
-                     <./figures/hurst_detrending.pdf>]
-<figures/hurst_mfdfa.pdf, id=655, 717.23506pt x 469.0323pt>
-File: figures/hurst_mfdfa.pdf Graphic file (type pdf)
-<use figures/hurst_mfdfa.pdf>
-Package pdftex.def Info: figures/hurst_mfdfa.pdf  used on input line 813.
-(pdftex.def)             Requested size: 338.58632pt x 221.41853pt.
- [27pdfTeX warning (ext4): destination with the same identifier (name{equation.
-1.6.43}) has been already used, duplicate ignored
+l.171 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+1.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.832 \begin{equation}
-                      \label{eq:deltan}pdfTeX warning (ext4): destination with 
-the same identifier (name{figure.1.15}) has been already used, duplicate ignore
-d
+l.171 
+       <./figs/monofractals.png> <./figs/aindex.png> <./figs/clustering.png>]
+<figs/Ddist_M4_w10.5_w20.5.png, id=582, 413.3844pt x 505.89pt>
+File: figs/Ddist_M4_w10.5_w20.5.png Graphic file (type png)
+<use figs/Ddist_M4_w10.5_w20.5.png>
+Package pdftex.def Info: figs/Ddist_M4_w10.5_w20.5.png  used on input line 174.
+
+(pdftex.def)             Requested size: 386.95897pt x 473.56052pt.
+
+Underfull \hbox (badness 1308) in paragraph at lines 179--180
+[]\T1/ptm/m/n/12 First, we ex-plore how monofrac-tal sig-nals, see Fig-ure [][]
+1.8[][] shape the struc-ture of com-
+ []
+
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.1.10
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.832 \begin{equation}
-                      \label{eq:deltan} <./figures/hurst_mfdfa.pdf>]
-<figures/DIBRM.pdf, id=712, 401.9909pt x 307.64925pt>
-File: figures/DIBRM.pdf Graphic file (type pdf)
-<use figures/DIBRM.pdf>
-Package pdftex.def Info: figures/DIBRM.pdf  used on input line 846.
-(pdftex.def)             Requested size: 241.84843pt x 185.08856pt.
- [28pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-16}) has been already used, duplicate ignored
+l.187 
+       <./figs/Ddist_M4_w10.5_w20.5.png>]
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.861 
-       <./figures/DIBRM.pdf>]
-<figures/FigA3.pdf, id=761, 413.9418pt x 273.59653pt>
-File: figures/FigA3.pdf Graphic file (type pdf)
-<use figures/FigA3.pdf>
-Package pdftex.def Info: figures/FigA3.pdf  used on input line 864.
-(pdftex.def)             Requested size: 241.84843pt x 159.85083pt.
-) [29pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-.17}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.96 \include{1-MainMatter/Chapter_Methodology}
-                                                <./figures/FigA3.pdf>]
-\openout2 = `1-MainMatter/Chapter_DrivingSignal.aux'.
+LaTeX Warning: Reference `fig:properties' on page 10 undefined on input line 18
+8.
 
 
-(./1-MainMatter/Chapter_DrivingSignal.tex [30
+LaTeX Warning: Reference `fig:properties' on page 10 undefined on input line 19
+0.
+
+
+LaTeX Warning: Citation `boccaletti2006' on page 10 undefined on input line 192
+.
+
+
+LaTeX Warning: Citation `boccaletti2006' on page 10 undefined on input line 192
+.
+
+
+LaTeX Warning: Citation `boccaletti2006' on page 10 undefined on input line 192
+.
+
+) [10] (./thesis.bbl
+bibitemlist
+) [11
 
 
 
 ]
-<Figures/ciljevi3.png, id=806, 845.19765pt x 597.6729pt>
-File: Figures/ciljevi3.png Graphic file (type png)
-<use Figures/ciljevi3.png>
-Package pdftex.def Info: Figures/ciljevi3.png  used on input line 22.
-(pdftex.def)             Requested size: 290.22107pt x 205.22156pt.
- [31]
-<Figures/monofractals.png, id=814, 502.2765pt x 458.1918pt>
-File: Figures/monofractals.png Graphic file (type png)
-<use Figures/monofractals.png>
-Package pdftex.def Info: Figures/monofractals.png  used on input line 45.
-(pdftex.def)             Requested size: 338.58632pt x 308.88159pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/signals.pdf, id=819, 797.15076pt x 326.22404pt>
-File: Figures/signals.pdf Graphic file (type pdf)
-<use Figures/signals.pdf>
-Package pdftex.def Info: Figures/signals.pdf  used on input line 71.
-(pdftex.def)             Requested size: 483.69687pt x 197.95105pt.
-<Figures/hurst.pdf, id=820, 412.1774pt x 265.12738pt>
-File: Figures/hurst.pdf Graphic file (type pdf)
-<use Figures/hurst.pdf>
-Package pdftex.def Info: Figures/hurst.pdf  used on input line 78.
-(pdftex.def)             Requested size: 290.22107pt x 186.68826pt.
-[32pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.91 
-      <./Figures/ciljevi3.png>] [33pdfTeX warning (ext4): destination with the 
-same identifier (name{figure.2.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.93 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.2
-.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.93 
-      <./Figures/monofractals.png> <./Figures/signals.pdf>] [34pdfTeX warning (
-ext4): destination with the same identifier (name{figure.2.4}) has been already
- used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.110 
-       <./Figures/hurst.pdf>]
-<Figures/Ddist_M4_w10.5_w20.5.png, id=956, 413.3844pt x 505.89pt>
-File: Figures/Ddist_M4_w10.5_w20.5.png Graphic file (type png)
-<use Figures/Ddist_M4_w10.5_w20.5.png>
-Package pdftex.def Info: Figures/Ddist_M4_w10.5_w20.5.png  used on input line 1
-22.
-(pdftex.def)             Requested size: 241.84843pt x 295.97147pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 1308) in paragraph at lines 127--128
-[]\T1/ptm/m/n/12 First, we ex-plore how monofrac-tal sig-nals, see Fig-ure [][]
-2.2[][] shape the struc-ture of com-
- []
-
-<Figures/Ddistance.pdf, id=960, 418.52371pt x 513.72365pt>
-File: Figures/Ddistance.pdf Graphic file (type pdf)
-<use Figures/Ddistance.pdf>
-Package pdftex.def Info: Figures/Ddistance.pdf  used on input line 134.
-(pdftex.def)             Requested size: 241.84843pt x 296.86249pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[35] [36pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.2.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150 
-       <./Figures/Ddist_M4_w10.5_w20.5.png>]
-<Figures/aindex.png, id=981, 402.5439pt x 271.7352pt>
-File: Figures/aindex.png Graphic file (type png)
-<use Figures/aindex.png>
-Package pdftex.def Info: Figures/aindex.png  used on input line 153.
-(pdftex.def)             Requested size: 217.66211pt x 146.93382pt.
-<Figures/clustering.png, id=982, 393.8715pt x 271.7352pt>
-File: Figures/clustering.png Graphic file (type png)
-<use Figures/clustering.png>
-Package pdftex.def Info: Figures/clustering.png  used on input line 154.
-(pdftex.def)             Requested size: 217.66211pt x 150.16797pt.
- [37pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.160 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.160 
-       <./Figures/Ddistance.pdf> <./Figures/aindex.png> <./Figures/clustering.p
-ng>]
-<Figures/b1.pdf, id=1037, 854.79347pt x 410.81918pt>
-File: Figures/b1.pdf Graphic file (type pdf)
-<use Figures/b1.pdf>
-Package pdftex.def Info: Figures/b1.pdf  used on input line 165.
-(pdftex.def)             Requested size: 338.58632pt x 162.72627pt.
-<Figures/b3.pdf, id=1039, 854.79347pt x 410.81918pt>
-File: Figures/b3.pdf Graphic file (type pdf)
-<use Figures/b3.pdf>
-Package pdftex.def Info: Figures/b3.pdf  used on input line 174.
-(pdftex.def)             Requested size: 338.58632pt x 162.72627pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/b2.pdf, id=1041, 852.33115pt x 408.87442pt>
-File: Figures/b2.pdf Graphic file (type pdf)
-<use Figures/b2.pdf>
-Package pdftex.def Info: Figures/b2.pdf  used on input line 184.
-(pdftex.def)             Requested size: 338.58632pt x 162.42386pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[38pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.189 \newpage
-               <./Figures/b1.pdf>]
-
-LaTeX Warning: Reference `fig:properties' on page 39 undefined on input line 19
-4.
-
-[39pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.195 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.10}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.195 
-       <./Figures/b3.pdf> <./Figures/b2.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/b2.pdf): PDF inclusion: multi
-ple pdfs with page group included in a single page
->]
-
-LaTeX Warning: Reference `fig:properties' on page 40 undefined on input line 19
-6.
-
-
-LaTeX Warning: Citation `boccaletti2006' on page 40 undefined on input line 198
-.
-
-
-LaTeX Warning: Citation `boccaletti2006' on page 40 undefined on input line 198
-.
-
-
-LaTeX Warning: Citation `boccaletti2006' on page 40 undefined on input line 198
-.
-
-) [40] (./thesis.bbl
-bibitemlist
-[41
-
-
-
-] [42] [43] [44]) [45]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
- (./thesis.aux (./1-MainMatter/Chapter_Methodology.aux) (./1-MainMatter/Chapter
-_DrivingSignal.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 120.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 120.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
+ (./thesis.aux (./1-MainMatter/Chapter_DrivingSignal.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8F5840FC8CD2CB01C62F7F286DD1FB97;2610.
+(rerunfilecheck)             Checksum: 51A38DC9AF1EB65C9F07BDC261CC8603;373.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1756,37 +1525,30 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
  ) 
 Here is how much of TeX's memory you used:
- 15575 strings out of 482584
- 230652 string characters out of 5956256
- 548200 words of memory out of 5000000
- 30048 multiletter control sequences out of 15000+600000
- 567579 words of font info for 75 fonts, out of 8000000 for 9000
+ 15127 strings out of 482584
+ 221374 string characters out of 5956256
+ 540300 words of memory out of 5000000
+ 29827 multiletter control sequences out of 15000+600000
+ 556430 words of font info for 58 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 38i,17n,45p,1626b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,45p,1342b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/times/utmri8a.pfb>
-Output written on thesis.pdf (45 pages, 1840067 bytes).
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (11 pages, 711573 bytes).
 PDF statistics:
- 1460 PDF objects out of 1728 (max. 8388607)
- 788 compressed objects within 8 object streams
- 230 named destinations out of 1000 (max. 500000)
- 434 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 664 PDF objects out of 1000 (max. 8388607)
+ 256 compressed objects within 3 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 124 words of extra memory for PDF output out of 10000 (max. 10000000)
 

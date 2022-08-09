@@ -15,8 +15,8 @@ The first mathematical problem solved using graph theory was $Konigsberg$ proble
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=0.3\linewidth]{Figures/Konigsberg_bridges.png} \hspace{2cm}
-	\includegraphics[width=0.3\linewidth]{Figures/Konigsberg_graph.png}
+	\includegraphics[width=0.3\linewidth]{Konigsberg_bridges.png} \hspace{2cm}
+	\includegraphics[width=0.3\linewidth]{Konigsberg_graph.png}
 	\caption{The Kronigsber problem of seven bridges.}
 	\label{fig:Krgraph}
 \end{figure}
@@ -38,7 +38,7 @@ The column b) on Figure \ref{fig:graph_dir} shows adjacancy matrix representatio
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\linewidth]{figures/methodology/directed_graph.pdf} 
+\includegraphics[width=0.7\linewidth]{directed_graph.pdf} 
 \caption{a) Graph representation of undirected (top panel) and directed (bottom panel) network. The same networks are represented with adjacency matrices column b), and edge list representation in column c).}
 \label{fig:graph_dir}
 \end{figure}
@@ -49,7 +49,7 @@ It is common to represent the graph as edge list. In this case, illustrated on F
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.4\linewidth]{figures/methodology/multi_graph.pdf} 
+	\includegraphics[width=0.4\linewidth]{multi_graph.pdf} 
 	\caption{The complex networks may represent different characteristics of the system. The edges can be directed, weighted or multiply. Also nodes can be assigned with different weights or any relevant feature.}
 	\label{fig:multigraph}
 \end{figure}
@@ -63,7 +63,7 @@ In a bipartite network, nodes in one partition are not connected. Still, we can 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{figures/methodology/bipartite_graph.pdf} 
+	\includegraphics[width=0.7\linewidth]{bipartite_graph.pdf} 
 	\caption{Bipartite graph and two partition projections.}
 	\label{fig:gt2}
 \end{figure}
@@ -82,7 +82,7 @@ The temporal network is a collection of timestamped edges. Each edge is defined 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{figures/methodology/temporal_network.pdf} 
+	\includegraphics[width=0.7\linewidth]{temporal_network.pdf} 
 	\caption{Temporal network. }
 	\label{fig:gt3}
 \end{figure}
@@ -368,7 +368,7 @@ The creation of ER random network consists of the following steps:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/methodology/ERgraph}
+	\includegraphics[width=0.9\linewidth]{ERgraph.pdf}
 	\caption{ER graph with $N=100$ nodes and different linking probabilities $p$.}
 	\label{fig:erp}
 \end{figure}
@@ -404,7 +404,7 @@ p(k) = \frac{1}{k!}e^{-\langle k \rangle}\langle k \rangle^{k}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/methodology/ER_dist}
+	\includegraphics[width=0.9\linewidth]{ER_dist.pdf}
 	\caption{Degree distribution of ER graph. Degree distribution of small networks follow binominal. Larger networks are better approximated with Poison distribution, and degree distribution for fixed average degree $<k>$ becomes independent of the network size.}
 	\label{fig:erdist}
 \end{figure}
@@ -428,7 +428,7 @@ The model interpolates between the regular graph when the probability is $p=0$ a
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/methodology/ws_graph}
+	\includegraphics[width=0.9\linewidth]{ws_graph.png}
 	\caption{Watts and Strogatz graph model creation}
 	\label{fig:wsgraph}
 \end{figure}
@@ -521,7 +521,7 @@ When $\alpha$ is negative, ageing overcomes the role of preferential attachment,
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\linewidth]{figures/aging_nets.png}
+	\includegraphics[width=1\linewidth]{aging_nets.png}
 	\caption{Aging model}
 	\label{fig:aging}
 \end{figure}
@@ -547,7 +547,7 @@ As before, depending on model parameters network evolves to different structures
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Figures/diagram.png}
+	\includegraphics[width=0.6\linewidth]{diagram.png}
 	\caption{Phase diagram of aging network model}
 	\label{fig:diagram}
 \end{figure}
@@ -657,7 +657,7 @@ On the log-log scale, we can notice that in the tail of the distribution data ar
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.75\textwidth]{figures/methodology/Distributions_plots.pdf}
+	\includegraphics[width=0.75\textwidth]{Distributions_plots.pdf}
 	\caption{Probability distributions on a linear and double logarithmic scale.}
 	\label{fig:distributions}
 \end{figure}
@@ -760,7 +760,7 @@ Y(j) = \sum_{i=0} ^j (x_i - \langle x\rangle), \quad j=1, ..., N
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/hurst_signals.pdf}
+	\includegraphics[width=0.7\textwidth]{hurst_signals.pdf}
 	\caption{Multifractal, monofractal and whitenoise signals.}
 	\label{fig:hurst_signals}
 \end{figure}
@@ -786,7 +786,7 @@ Several methods are proposed for calculating the fluctuating function $F^2(\nu, 
 \end{itemize}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/hurst_detrending.pdf}
+	\includegraphics[width=0.7\textwidth]{hurst_detrending.pdf}
 	\caption{Detrending the signal, for the segments of length $s=1000$.}
 	\label{fig:hurst_signals}
 \end{figure}
@@ -810,7 +810,7 @@ The fluctuating function scales as power-law $F_q(s) \sim s^{H(q)}$ and the anal
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/hurst_mfdfa.pdf}
+	\includegraphics[width=0.7\textwidth]{hurst_mfdfa.pdf}
 	\caption{Multifractal, monofractal and whitenoise signals.}
 	\label{fig:hurst_mfdfa}
 \end{figure}
@@ -843,7 +843,7 @@ If a user is frequently active, we can record the reputation after each day. On 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{figures/DIBRM.pdf}
+	\includegraphics[width=0.5\textwidth]{DIBRM.pdf}
 	\caption{User reputation.}
 	\label{fig:reputation}
 \end{figure}  
@@ -861,7 +861,7 @@ the threshold.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{figures/FigA3.pdf}
+	\includegraphics[width=0.5\textwidth]{DIBRM_decay.pdf}
 	\caption{Reputation decay}
 	\label{fig:reputationdecay}
 \end{figure}

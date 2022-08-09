@@ -1,11 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_Methodology.aux
-A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_DrivingSignal.aux
-A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_GroupsGrowth.aux
-A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_Trust1.aux
-A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_Conclusions.aux
+A level-1 auxiliary file: 1-MainMatter/Chapter_DrivingSignal.aux
 The style file: unsrt.bst
 Database file #1: sample.bib
 You're missing a field name---line 1045 of file sample.bib
@@ -13,84 +9,55 @@ You're missing a field name---line 1045 of file sample.bib
  : %   title={Expressing trust with temporal frequency of user interaction in online communities},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 1402 of file sample.bib
- : @article{smiljanic2017associative
- :                                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1500 of file sample.bib
- : @article{dankulov2015dynamics
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1588 of file sample.bib
- : @inproceedings{kairam2012life
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1597 of file sample.bib
- : @inproceedings{backstrom2006group
- :                                  ,
+I was expecting an "="---line 1593 of file sample.bib
+ :  https://www.overleaf.com/project/615d87ed5fba9959f4dc6d45 
+ :                                                            year={2012}
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 1686 of file sample.bib
  : 
  : @article{martin,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 1711 of file sample.bib
- : @article{centola2007cascade
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1722 of file sample.bib
- : @article{fortunato2010community
- :                                ,
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "boccaletti2006"
-Warning--I didn't find a database entry for "PNAS"
-Warning--I didn't find a database entry for "jsdivergence"
-Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "bettencourt2007growth"
-Warning--I didn't find a database entry for "clauset2009power"
-Warning--empty journal in latora2017complex
-Warning--empty publisher in caldarelli2007scalefree
-Warning--empty publisher in guide_temporal
-Warning--empty booktitle in yashkina2020
-You've used 74 entries,
+You've used 9 entries,
             1791 wiz_defined-function locations,
-            896 strings with 17936 characters,
-and the built_in function-call counts, 19215 in all, are:
-= -- 1673
-> -- 956
-< -- 13
-+ -- 346
-- -- 272
-* -- 1485
-:= -- 3027
-add.period$ -- 227
-call.type$ -- 74
-change.case$ -- 68
+            510 strings with 5100 characters,
+and the built_in function-call counts, 2218 in all, are:
+= -- 198
+> -- 95
+< -- 2
++ -- 35
+- -- 26
+* -- 172
+:= -- 357
+add.period$ -- 28
+call.type$ -- 9
+change.case$ -- 9
 chr.to.int$ -- 0
-cite$ -- 78
-duplicate$ -- 807
-empty$ -- 1809
-format.name$ -- 272
-if$ -- 4243
+cite$ -- 9
+duplicate$ -- 94
+empty$ -- 215
+format.name$ -- 26
+if$ -- 487
 int.to.chr$ -- 0
-int.to.str$ -- 74
-missing$ -- 80
-newline$ -- 374
-num.names$ -- 74
-pop$ -- 168
+int.to.str$ -- 9
+missing$ -- 9
+newline$ -- 48
+num.names$ -- 9
+pop$ -- 13
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 381
+skip$ -- 43
 stack$ -- 0
-substring$ -- 1429
-swap$ -- 188
-text.length$ -- 13
+substring$ -- 167
+swap$ -- 19
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 189
-width$ -- 76
-write$ -- 814
-(There were 8 error messages)
+warning$ -- 0
+while$ -- 23
+width$ -- 10
+write$ -- 103
+(There were 3 error messages)
