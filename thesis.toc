@@ -1,72 +1,12 @@
 \babel@toc {english}{}
+\contentsline {chapter}{Contents}{i}{section*.1}%
 \babel@toc {serbianc}{}
-\babel@toc {serbianc}{}
+\contentsline {chapter}{\chapternumberline {1}Driving signals}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Growing network model with growing signal}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Time-series from real systems}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}D-measure}{4}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}The structure of networks}{4}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Long range correlated signals}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Conclusions}{9}{section.1.3}%
 \babel@toc {english}{}
-\babel@toc {english}{}
-\contentsline {chapter}{Acknowledgements}{vii}{chapter*.2}%
-\babel@toc {english}{}
-\contentsline {chapter}{Abstract}{ix}{chapter*.3}%
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {english}{}
-\contentsline {chapter}{Contents}{xii}{section*.5}%
-\babel@toc {english}{}
-\contentsline {chapter}{List of figures}{xv}{section*.6}%
-\babel@toc {english}{}
-\contentsline {chapter}{List of Tables}{xix}{section*.7}%
-\contentsline {chapter}{\chapternumberline {1}Methodology}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Complex networks}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Types of networks}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}The structure of complex networks}{6}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Degree distribution}{6}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Degree correlations}{6}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Clustering coefficient}{7}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.3.4}Network paths}{8}{subsection.1.3.4}%
-\contentsline {subsection}{\numberline {1.3.5}D-measure}{8}{subsection.1.3.5}%
-\contentsline {subsection}{\numberline {1.3.6}Community structure}{9}{subsection.1.3.6}%
-\contentsline {section}{\numberline {1.4}Network models}{11}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Random network model}{11}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Small-world networks}{13}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Barab\' {a}si-Albert model}{14}{subsection.1.4.3}%
-\contentsline {subsection}{\numberline {1.4.4}Nonlinear preferential attachment model}{15}{subsection.1.4.4}%
-\contentsline {subsection}{\numberline {1.4.5}Ageing model}{15}{subsection.1.4.5}%
-\contentsline {subsection}{\numberline {1.4.6}Stochastic block model}{17}{subsection.1.4.6}%
-\contentsline {section}{\numberline {1.5}The probability distributions}{18}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}The properties of distributions}{19}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Plotting the distributions}{20}{subsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.5.3}Estimating the distribution parameters}{21}{subsection.1.5.3}%
-\contentsline {section}{\numberline {1.6}Fractal analysis}{23}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}Long and Short-term correlations}{24}{subsection.1.6.1}%
-\contentsline {subsection}{\numberline {1.6.2}Rescaled range analysis}{24}{subsection.1.6.2}%
-\contentsline {subsection}{\numberline {1.6.3}Fluctuation analysis}{25}{subsection.1.6.3}%
-\contentsline {subsection}{\numberline {1.6.4}Multifractality of the signals}{26}{subsection.1.6.4}%
-\contentsline {section}{\numberline {1.7}Dynamical reputation model}{27}{section.1.7}%
-\babel@toc {english}{}
-\contentsline {chapter}{\chapternumberline {2}Driving signals}{31}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Growing signals}{31}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Long range correlated signals}{31}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Multifractal analysis}{32}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Real signals}{33}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Growing network model with aging nodes}{35}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Structural differences between networks }{35}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}The assortativity and clustering}{37}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Conclusions}{40}{section.2.4}%
-\contentsline {appendix}{\chapternumberline {A}The choice of the sliding window}{43}{appendix.A}%
-\contentsline {appendix}{\chapternumberline {B}Robustness of core-periphery algorithm}{47}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Precision and recall}{47}{section.B.1}%
-\contentsline {section}{\numberline {B.2}F1 measure}{48}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Jaccard coefficient}{48}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Normalized mutual information}{48}{section.B.4}%
-\contentsline {section}{\numberline {B.5}Adjusted rand index}{48}{section.B.5}%
-\contentsline {chapter}{Bibliography}{51}{appendix*.8}%
-\babel@toc {english}{}
-\contentsline {chapter}{Biography of the author}{57}{appendix*.9}%
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {serbianc}{}
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {serbianc}{}
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {serbianc}{}
+\contentsline {chapter}{Bibliography}{13}{chapter*.2}%
