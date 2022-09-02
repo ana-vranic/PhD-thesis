@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{dorogovtsev2001b}
 Sergey~N Dorogovtsev and Jos{\'e}~FF Mendes.
@@ -29,26 +29,35 @@ Hern{\'a}n~A Makse, Shlomo Havlin, Moshe Schwartz, and H~Eugene Stanley.
 \newblock Method for generating long-range correlations for large systems.
 \newblock {\em Physical Review E}, 53(5):5445, 1996.
 
-\bibitem{mitrovic2012}
-Marija Mitrovi{\'{c}} and Bosiljka Tadi{\'{c}}.
-\newblock Emergence and structure of cybercommunities.
-\newblock In {\em Springer Optimization and Its Applications}, volume~57, pages
-  209--227. Springer International Publishing, 2012.
+\bibitem{mitzenmacher2004brief}
+Michael Mitzenmacher.
+\newblock A brief history of generative models for power law and lognormal
+  distributions.
+\newblock {\em Internet mathematics}, 1(2):226--251, 2004.
 
-\bibitem{mitrovic2015}
-Marija~Mitrovi{\'c} Dankulov, Roderick Melnik, and Bosiljka Tadi{\'c}.
-\newblock The dynamics of meaningful social interactions and the emergence of
-  collective knowledge.
-\newblock {\em Scientific reports}, 5(1):1--10, 2015.
+\bibitem{mondani2014fat}
+Hernan Mondani, Petter Holme, and Fredrik Liljeros.
+\newblock Fat-tailed fluctuations in the size of organizations: the role of
+  social influence.
+\newblock {\em PLoS One}, 9(7):e100527, 2014.
 
-\bibitem{hajra2004}
-Kamalika~Basu Hajra and Parongama Sen.
-\newblock Phase transitions in an aging network.
-\newblock {\em Physical Review E}, 70(5):056103, 2004.
+\bibitem{fu2005growth}
+Dongfeng Fu, Fabio Pammolli, Sergey~V Buldyrev, Massimo Riccaboni, Kaushik
+  Matia, Kazuko Yamasaki, and H~Eugene Stanley.
+\newblock The growth of business firms: Theoretical framework and empirical
+  evidence.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  102(52):18801--18806, 2005.
 
-\bibitem{holme2012}
-Petter Holme and Jari {\"a}ki.
-\newblock Temporal networks.
-\newblock {\em Physics reports}, 519(3):97--125, 2012.
+\bibitem{frasco2014spatially}
+Gerald~F Frasco, Jie Sun, Hern{\'a}n~D Rozenfeld, and Daniel Ben-Avraham.
+\newblock Spatially distributed social complex networks.
+\newblock {\em Physical Review X}, 4(1):011008, 2014.
+
+\bibitem{qian2014origin}
+Jiang-Hai Qian, Qu~Chen, Ding-Ding Han, Yu-Gang Ma, and Wen-Qing Shen.
+\newblock Origin of gibrat law in internet: Asymmetric distribution of the
+  correlation.
+\newblock {\em Physical Review E}, 89(6):062808, 2014.
 
 \end{thebibliography}

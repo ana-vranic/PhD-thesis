@@ -15,7 +15,9 @@
 \babel@toc {english}{}
 \addvspace {10pt}
 \addvspace {10pt}
-\addvspace {10pt}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Jensen Shannon divergence between group sizes distributions from model (in model we vary affiliation parameter paff) and data.}}{51}{table.3.1}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces The likelihood ratio R and p-value between different candidates and \textbf {lognormal} distribution for fitting the distribution of \textbf {groups sizes} of Meetup groups in London, New York and in Reddit. According to these statistics, the lognormal distribution represents the best fit for all communities. \\ }}{54}{table.3.2}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces The likelihood ratio R and p-value between different candidates and \textbf {lognormal} distribution for fitting the distribution of \textbf {simulated group sizes} of Meetup groups in London, New York and Reddit. According to these statistics, the lognormal distribution represents the best fit for all communities. \\}}{55}{table.3.3}%
 \babel@toc {english}{}
 \addvspace {10pt}
 \babel@toc {serbianc}{}

@@ -16,7 +16,7 @@ In this chapter, we explain the properties of growth signals, both real and comp
 	\label{fig:ciljevi}
 \end{figure}
 
-\section{Growing network model with growing signal}
+\section{Aging network model with growth signal}
 
 To enable nonlinear network growth in the number of nodes, we need to adapt the existing models such that at each time step, we can add $M\geq1$ new nodes that make $L\geq1$ links with existing nodes in the network. The master equation $N_k$, $k$ degree nodes can be written as: 
 
@@ -80,7 +80,7 @@ Obtained results for D-measure are presented on the figure \ref{fig:dmeasure}. W
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Ddistance.pdf}
+	\includegraphics[width=0.6\linewidth]{Ddistance.pdf}
 	\caption{The comparison of networks grown with growth signals shown in figures \ref{fig:tech_signals} and \ref{fig:myspace_signals} versus ones grown with constant signal $M=1$, for value of parameter $\alpha\in[-3,-1]$ and $\beta\in[1,3]$. $M(t)$ is the number of new nodes, and $L$ is the number of links added to the network in each time step. The compared networks are of the same size.}
 	\label{fig:dmeasure}
 \end{figure}
@@ -110,9 +110,9 @@ The properties of the time-varying signal do not influence the topological prope
 
 \section{Long range correlated signals}
 
-The previous section showed that the growth signal of real systems has complex dynamics. Besides long-range correlations, we also find multifractal properties, and it is hard to isolate individual effects and analyse their influence separately from each other. When this is the case, synthetic signals with specific characteristics help verify our findings in real systems. The long-range correlated properties can be included into time series using Fourier filtering transform method \cite{makse1996method}. 
+The previous section showed that the growth signal of real systems has complex dynamics. Besides long-range correlations, we also find multifractal properties, and it is hard to isolate individual effects and analyse their influence separately from each other. When this is the case, synthetic signals with specific characteristics can help to verify our findings in real systems. The long-range correlated properties can be included into time series using Fourier filtering transform method \cite{makse1996method}. 
 
-The data have power-law correlations $C(s)= <x_i x_{i+s}> = s ^ {-\gamma}$ characterized with coefficient $\gamma$. Hurst exponent depends on $\gamma$ as  $H = 1- \frac{\gamma}{2}$. The Fourier transform, gives us the power spectrum of the time series $S(f)$, that is function of the frequency $f$. For the long-range correlated data it depends on coefficient $\beta = 1-\gamma$ and has form:
+The long range correlated data have power-law correlations $C(s)= <x_i x_{i+s}> = s ^ {-\gamma}$ characterized with coefficient $\gamma$. Hurst exponent depends on $\gamma$ as  $H = 1- \frac{\gamma}{2}$. The Fourier transform, gives us the power spectrum of the time series $S(f)$, that is function of the frequency $f$. For the long-range correlated data it depends on coefficient $\beta = 1-\gamma$ and has form:
 \begin{equation}
 S(f) \sim f^{-\beta}
 \end{equation}
@@ -126,7 +126,7 @@ We can generate the data using Fourier filtering with $\beta = 2H - 1$, as follo
 	 
 \end{itemize}     
 
-The Fourier filtering method gives the Gaussian distributed data, so data are without broad distributions, nonlinear or multifractal properties. Using this method we generated the signals for differet values of the Hurst exponent, see figure \ref{fig:monofractals}. The obtained signals are round to integers and mean values of signals are close to $4$.
+The Fourier filtering method generates the Gaussian distributed data, so data are without broad distributions, nonlinear or multifractal properties. Using this method we generated the signals for differet values of the Hurst exponent, see figure \ref{fig:monofractals}. The obtained signals are round to integers and mean values of signals are close to $4$.
 
 
 
@@ -136,12 +136,13 @@ The Fourier filtering method gives the Gaussian distributed data, so data are wi
 
 As before, we focus on the region of model phase diagram with negative $\alpha$ and positive $\beta$ as there is found the transition line from stretched-exponential across scale-free to the small world- gel networks. We take range of parameters  $-3\leq\alpha\leq-0.5$ and $1\leq\beta\leq3$ with steps $0.5$ and we also vary the the number of links each new node can create $L\in{1, 2, 3}$. For each combination of $(\alpha, \beta, L)$ we generate the sample of $100$ networks, and compare the structure of network grown with fluctuating signals with different Hurst exponent $H \in \{0.5, 0.6, 0.7, 0.8, 0.9, 1.0\}$ and constant signal $M=4$. The results represented by D-measure, shown in the figure \ref{fig:Ddist_m}  are obtained averaging the D-measure between all possible pairs of generated networks.   
 
-The higher values of D-measure are found in the region of critical line $\beta(\alpha^{*})$. The most considerable influence is on networks with scale-free distribution. Comparing D-distance in only one point of  phase diagram, for example $L=1, \alpha = -2.5, \beta = 2.5$, we find correlations in the signal (Hurst exponent is larger), make bigger impact on the network structure. D-measure between networks grown with signal with Hurst exponent $H=1.0$ and constant signal is $D(H=1.0, M=4) = 0.405$, while between networks grown with signal with $H=0.8$ and constant signal is $D(H=0.8, M=4) = 0.316$. For $\alpha>\alpha^{*}$ networks have similar structural properties and D-measure is close to 0. In the region of networks with stretched exponential degree distribution $\alpha<\alpha^{*}$  differences are small. 
+The higher values of D-measure are found in the region of critical line $\beta(\alpha^{*})$. The most considerable influence is on networks with scale-free distribution. Comparing D-distance in only one point of  phase diagram, for example $L=1, \alpha = -2.5, \beta = 2.5$, we find that when Hurst exponent is larger, correlations in the signal make bigger impact on the network structure. D-measure between networks grown with signal with Hurst exponent $H=1.0$ and constant signal is $D(H=1.0, M=4) = 0.405$, while between networks grown with signal with $H=0.8$ and constant signal is $D(H=0.8, M=4) = 0.316$. For $\alpha>\alpha^{*}$ networks have similar structural properties and D-measure is close to 0. In the region of networks with stretched exponential degree distribution $\alpha<\alpha^{*}$  differences are small. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{monofractals.pdf}
-	\caption{Monofractal signals}\label{fig:monofractals}
+	\caption{Monofractal signals generated with Fourier filtering method for different Hurst exponents}
+	\label{fig:monofractals}
 \end{figure}
 
 \begin{figure}[H]
@@ -152,26 +153,19 @@ The higher values of D-measure are found in the region of critical line $\beta(\
 \end{figure}
 
 
-We further explore the assortativity index and clustering coefficient of generated networks. We show results for several ageing model parameters to show the difference between networks this model can produce, \ref{fig:aindex}. All networks are disassortative, with a negative degree-degree correlation index. For the values of parameters below critical line, $\alpha=-2.5, \beta=1.5$ $r$ does not depend on the Hurst exponent. Above the critical line are small-world networks. They are disassortative. The minimum value of the assortativity index is $r =-1$, for $L=1$, indicating the presence of hubs connecting many nodes. The assortativity index slightly grows with link density. 
+We further explore the assortativity index and clustering coefficient of generated networks. On figure \ref{fig:aindex} are results for several ageing model parameters that show the difference between networks this model can produce. All networks are disassortative, with a negative degree-degree correlation index. For the values of parameters below critical line, $\alpha=-2.5, \beta=1.5$ $r$ does not depend on the Hurst exponent. Above the critical line are small-world networks. They are disassortative. The minimum value of the assortativity index is $r =-1$, for $L=1$, indicating the presence of hubs connecting many nodes. The assortativity index slightly grows with link density. 
 
 In the region of critical parameters, the assortativity index depends on the value of the Hurst exponent. The larger influence on the assortativity index have correlated signals, with Hurst exponent $H>0.8$, so networks become more disassortative, see line for parameters $L=1, \alpha=-2.5, \beta=2.5$ in Figure \ref{fig:aindex}. The long-range correlations have a stronger effect on the evolution of networks with lower density. 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.55\textwidth]{aindex.pdf}
+	\includegraphics[width=0.45\textwidth]{aindex.pdf}
+	\includegraphics[width=0.45\textwidth]{clustering.pdf}
 	\caption{Mean assortativity index for networks generated with different with different model parameters $\alpha, \beta, L$ and different long-range correlated signals with Hurst exponent $H$.}
 	\label{fig:aindex}
 \end{figure} 
 
 Figure \ref{fig:aindex} shows the mean clustering coefficient. For $L=1$, networks are uncorrelated trees, with clustering coefficient $0$. For network density $L>1$, nodes are organized into clusters. Under the critical line, for parameter  $L=3, \alpha=-2.5, \beta=1.5 $, clustering coefficient is constant and low. Similar values are obtained for clustering coefficient for critical parameters $L=3, \alpha=-1.5, \beta=2.0$, but for Hurst exponent $H>0.8$ clustering coefficient increase. Small world networks,  $L=3, \alpha=-1.5, \beta=2.5$ are clustered, the value of $<c>$ is high.  The value of clustering for networks created with the constant signal is 0.8. Networks grown with white noise signal and signal with H=0.6 have higher clustering values, while networks grown with signals with a Hurst exponent larger than 0.6 have the same clustering value, below 0.8. 
-
-\begin{figure}[h]
-	\centering
-
-	\includegraphics[width=0.55\textwidth]{clustering.pdf}
-	\caption{Clustering coefficient}
-	\label{fig:clustering}
-\end{figure} 
 
 \section{Conclusions}
 
