@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  1 SEP 2022 22:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  5 SEP 2022 16:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1332,63 +1332,65 @@ Non-PDF special ignored!
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<figs/Figures/figures/Fig2.png, id=51, 633.3261pt x 724.3863pt>
+<figs/Figures/figures/Fig2.png, id=45, 633.3261pt x 724.3863pt>
 File: figs/Figures/figures/Fig2.png Graphic file (type png)
 <use figs/Figures/figures/Fig2.png>
-Package pdftex.def Info: figs/Figures/figures/Fig2.png  used on input line 29.
+Package pdftex.def Info: figs/Figures/figures/Fig2.png  used on input line 18.
 (pdftex.def)             Requested size: 386.95897pt x 442.60452pt.
  [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.35 
-      <./figs/Figures/figures/Fig2.png>]
-<figs/Figures/figures/Fig1.png, id=67, 628.0263pt x 445.9059pt>
+l.31 T
+      he simplest model that generates the lognormal distribution is multipl...
+ <./figs/Figures/figures/Fig2.png>]
+<figs/Figures/figures/Fig1.png, id=69, 628.0263pt x 445.9059pt>
 File: figs/Figures/figures/Fig1.png Graphic file (type png)
 <use figs/Figures/figures/Fig1.png>
-Package pdftex.def Info: figs/Figures/figures/Fig1.png  used on input line 52.
+Package pdftex.def Info: figs/Figures/figures/Fig1.png  used on input line 40.
 (pdftex.def)             Requested size: 386.95897pt x 274.751pt.
-<figs/Figures/figures/test.png, id=68, 599.22362pt x 393.67175pt>
-File: figs/Figures/figures/test.png Graphic file (type png)
-<use figs/Figures/figures/test.png>
-Package pdftex.def Info: figs/Figures/figures/test.png  used on input line 63.
-(pdftex.def)             Requested size: 299.61107pt x 196.83539pt.
  [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.67 
+l.48 
       <./figs/Figures/figures/Fig1.png>]
-<figs/figures/model_N30.png, id=82, 692.1057pt x 504.6855pt>
+<figs/Figures/figures/test.png, id=88, 599.22362pt x 393.67175pt>
+File: figs/Figures/figures/test.png Graphic file (type png)
+<use figs/Figures/figures/test.png>
+Package pdftex.def Info: figs/Figures/figures/test.png  used on input line 85.
+(pdftex.def)             Requested size: 299.61107pt x 196.83539pt.
+<figs/figures/model_N30.png, id=89, 692.1057pt x 504.6855pt>
 File: figs/figures/model_N30.png Graphic file (type png)
 <use figs/figures/model_N30.png>
-Package pdftex.def Info: figs/figures/model_N30.png  used on input line 70.
+Package pdftex.def Info: figs/figures/model_N30.png  used on input line 92.
 (pdftex.def)             Requested size: 386.95897pt x 282.1753pt.
  [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.74 
+l.96 
       <./figs/Figures/figures/test.png>] [5pdfTeX warning (ext4): destination w
 ith the same identifier (name{figure.1.4}) has been already used, duplicate ign
 ored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.76 \clearpage
+l.98 \clearpage
                 <./figs/figures/model_N30.png>]
-<figs/Figures/figures/Fig3.png, id=95, 637.4214pt x 560.3334pt>
+<figs/Figures/figures/Fig3.png, id=107, 637.4214pt x 560.3334pt>
 File: figs/Figures/figures/Fig3.png Graphic file (type png)
 <use figs/Figures/figures/Fig3.png>
-Package pdftex.def Info: figs/Figures/figures/Fig3.png  used on input line 81.
+Package pdftex.def Info: figs/Figures/figures/Fig3.png  used on input line 103.
+
 (pdftex.def)             Requested size: 386.95897pt x 340.16127pt.
-<figs/Figures/figures/Fig4.png, id=96, 630.6762pt x 452.4102pt>
+<figs/Figures/figures/Fig4.png, id=108, 630.6762pt x 452.4102pt>
 File: figs/Figures/figures/Fig4.png Graphic file (type png)
 <use figs/Figures/figures/Fig4.png>
-Package pdftex.def Info: figs/Figures/figures/Fig4.png  used on input line 259.
+Package pdftex.def Info: figs/Figures/figures/Fig4.png  used on input line 249.
 
 (pdftex.def)             Requested size: 386.95897pt x 277.58516pt.
 
@@ -1396,33 +1398,33 @@ Package pdftex.def Info: figs/Figures/figures/Fig4.png  used on input line 259.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--291
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figs/figures/FigA1_data.png, id=97, 686.565pt x 288.3573pt>
+<figs/figures/FigA1_data.png, id=109, 686.565pt x 288.3573pt>
 File: figs/figures/FigA1_data.png Graphic file (type png)
 <use figs/figures/FigA1_data.png>
-Package pdftex.def Info: figs/figures/FigA1_data.png  used on input line 308.
+Package pdftex.def Info: figs/figures/FigA1_data.png  used on input line 298.
 (pdftex.def)             Requested size: 435.32422pt x 182.83205pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--320
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/figures/FigA2-model.png, id=98, 689.4558pt x 288.3573pt>
+<figs/figures/FigA2-model.png, id=110, 689.4558pt x 288.3573pt>
 File: figs/figures/FigA2-model.png Graphic file (type png)
 <use figs/figures/FigA2-model.png>
-Package pdftex.def Info: figs/figures/FigA2-model.png  used on input line 336.
+Package pdftex.def Info: figs/figures/FigA2-model.png  used on input line 326.
 (pdftex.def)             Requested size: 435.32422pt x 182.07085pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1480,18 +1482,18 @@ l.104 \include{1-MainMatter/Chapter_GroupsGrowth}
                                                   <./figs/figures/FigA1_data.pn
 g> <./figs/figures/FigA2-model.png>] (./thesis.bbl
 bibitemlist
-) [9
+[9
 
 
 
-]
+]) [10]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
  (./thesis.aux (./1-MainMatter/Chapter_GroupsGrowth.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: AA9C87F6A8B389A080FFEE84FC455C6D;447.
+(rerunfilecheck)             Checksum: 84615482B34CBE45D3BC54D26CBF3524;433.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1499,13 +1501,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
  ) 
 Here is how much of TeX's memory you used:
- 15219 strings out of 482584
- 223135 string characters out of 5956256
- 552553 words of memory out of 5000000
- 29910 multiletter control sequences out of 15000+600000
+ 15224 strings out of 482584
+ 223270 string characters out of 5956256
+ 553652 words of memory out of 5000000
+ 29912 multiletter control sequences out of 15000+600000
  570428 words of font info for 74 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 38i,16n,45p,1909b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,16n,45p,1909b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1524,10 +1526,10 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (9 pages, 2057834 bytes).
+Output written on thesis.pdf (10 pages, 2061928 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

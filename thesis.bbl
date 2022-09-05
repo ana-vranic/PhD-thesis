@@ -1,34 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{dorogovtsev2001b}
-Sergey~N Dorogovtsev and Jos{\'e}~FF Mendes.
-\newblock Scaling properties of scale-free evolving networks: Continuous
-  approach.
-\newblock {\em Physical Review E}, 63(5):056125, 2001.
-
-\bibitem{smiljanic2017associative}
-Jelena Smiljani{\'c} and Marija Mitrovi{\'c}~Dankulov.
-\newblock Associative nature of event participation dynamics: A network theory
-  approach.
-\newblock {\em PloS one}, 12(2):e0171565, 2017.
-
-\bibitem{suvakov2013}
-Milovan Suvakov, Marija Mitrovic, Vladimir Gligorijevic, and Bosiljka Tadic.
-\newblock How the online social networks are used: dialogues-based structure of
-  myspace.
-\newblock {\em Journal of The Royal Society Interface}, 10(79):20120819, 2013.
-
-\bibitem{tiago2}
-Tiago~A Schieber, Laura Carpi, Albert D{\'\i}az-Guilera, Panos~M Pardalos,
-  Cristina Masoller, and Mart{\'\i}n~G Ravetti.
-\newblock Quantification of network structural dissimilarities.
-\newblock {\em Nature communications}, 8(1):1--10, 2017.
-
-\bibitem{makse1996method}
-Hern{\'a}n~A Makse, Shlomo Havlin, Moshe Schwartz, and H~Eugene Stanley.
-\newblock Method for generating long-range correlations for large systems.
-\newblock {\em Physical Review E}, 53(5):5445, 1996.
-
 \bibitem{mitzenmacher2004brief}
 Michael Mitzenmacher.
 \newblock A brief history of generative models for power law and lognormal
@@ -59,5 +30,50 @@ Jiang-Hai Qian, Qu~Chen, Ding-Ding Han, Yu-Gang Ma, and Wen-Qing Shen.
 \newblock Origin of gibrat law in internet: Asymmetric distribution of the
   correlation.
 \newblock {\em Physical Review E}, 89(6):062808, 2014.
+
+\bibitem{kairam2012life}
+Sanjay~Ram Kairam, Dan~J Wang, and Jure Leskovec.
+\newblock The life and death of online groups: Predicting group growth and
+  longevity.
+\newblock In {\em Proceedings of the fifth ACM international conference on Web
+  search and data mining}, pages 673--682, 2012.
+
+\bibitem{zheleva2009co}
+Elena Zheleva, Hossam Sharara, and Lise Getoor.
+\newblock Co-evolution of social and affiliation networks.
+\newblock In {\em Proceedings of the 15th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 1007--1016, 2009.
+
+\bibitem{mitrovic2011quantitative}
+Marija Mitrovi{\'c}, Georgios Paltoglou, and Bosiljka Tadi{\'c}.
+\newblock Quantitative analysis of bloggers’ collective behavior powered by
+  emotions.
+\newblock {\em Journal of Statistical Mechanics: Theory and Experiment},
+  2011(02):P02005, 2011.
+
+\bibitem{dankulov2015dynamics}
+Marija~Mitrovi{\'c} Dankulov, Roderick Melnik, and Bosiljka Tadi{\'c}.
+\newblock The dynamics of meaningful social interactions and the emergence of
+  collective knowledge.
+\newblock {\em Scientific reports}, 5(1):1--10, 2015.
+
+\bibitem{vranic2021growth}
+Ana Vrani{\'c} and Marija~Mitrovi{\'c} Dankulov.
+\newblock Growth signals determine the topology of evolving networks.
+\newblock {\em Journal of Statistical Mechanics: Theory and Experiment},
+  2021(1):013405, 2021.
+
+\bibitem{smiljanic2017associative}
+Jelena Smiljani{\'c} and Marija Mitrovi{\'c}~Dankulov.
+\newblock Associative nature of event participation dynamics: A network theory
+  approach.
+\newblock {\em PloS one}, 12(2):e0171565, 2017.
+
+\bibitem{backstrom2006group}
+Lars Backstrom, Dan Huttenlocher, Jon Kleinberg, and Xiangyang Lan.
+\newblock Group formation in large social networks: membership, growth, and
+  evolution.
+\newblock In {\em Proceedings of the 12th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 44--54, 2006.
 
 \end{thebibliography}
