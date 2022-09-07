@@ -1,7 +1,15 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: 1-MainMatter/Chapter_Introduction.aux
+A level-1 auxiliary file: 1-MainMatter/Chapter_Methodology.aux
+A level-1 auxiliary file: 1-MainMatter/Chapter_DrivingSignal.aux
 A level-1 auxiliary file: 1-MainMatter/Chapter_GroupsGrowth.aux
+A level-1 auxiliary file: 1-MainMatter/Chapter_Trust1.aux
+A level-1 auxiliary file: 1-MainMatter/Chapters/Chapter_Conclusions.aux
+A level-1 auxiliary file: 2-Appendix/Appendix_SEdata.aux
+A level-1 auxiliary file: 2-Appendix/Appendix_sliding_window.aux
+A level-1 auxiliary file: 2-Appendix/Appendix_robust.aux
 The style file: unsrt.bst
 Database file #1: sample.bib
 You're missing a field name---line 1045 of file sample.bib
@@ -29,6 +37,14 @@ I was expecting a `,' or a `}'---line 1686 of file sample.bib
  : 
  : @article{martin,
 (Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 1711 of file sample.bib
+ : @article{centola2007cascade
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1722 of file sample.bib
+ : @article{fortunato2010community
+ :                                ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 1908 of file sample.bib
  : @article{mitzenmacher2004brief
@@ -62,6 +78,10 @@ Repeated entry---line 2108 of file sample.bib
  : @inproceedings{kairam2012life
  :                              ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 2212 of file sample.bib
+ : @article{powerlaw
+ :                  ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 2228 of file sample.bib
  : @article{vranic2021growth
  :                          ,
@@ -78,45 +98,49 @@ Repeated entry---line 2300 of file sample.bib
  : @inproceedings{backstrom2006group
  :                                  ,
 I'm skipping whatever remains of this entry
-You've used 12 entries,
+Warning--empty journal in latora2017complex
+Warning--empty publisher in caldarelli2007scalefree
+Warning--empty publisher in guide_temporal
+Warning--empty booktitle in yashkina2020
+You've used 58 entries,
             1791 wiz_defined-function locations,
-            532 strings with 6199 characters,
-and the built_in function-call counts, 3363 in all, are:
-= -- 297
-> -- 143
-< -- 3
-+ -- 52
-- -- 40
-* -- 257
-:= -- 513
-add.period$ -- 36
-call.type$ -- 12
-change.case$ -- 12
+            804 strings with 14720 characters,
+and the built_in function-call counts, 14844 in all, are:
+= -- 1305
+> -- 706
+< -- 11
++ -- 257
+- -- 199
+* -- 1097
+:= -- 2319
+add.period$ -- 179
+call.type$ -- 58
+change.case$ -- 53
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 144
-empty$ -- 329
-format.name$ -- 40
-if$ -- 753
+cite$ -- 62
+duplicate$ -- 648
+empty$ -- 1414
+format.name$ -- 199
+if$ -- 3311
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 12
-newline$ -- 63
-num.names$ -- 12
-pop$ -- 27
+int.to.str$ -- 58
+missing$ -- 63
+newline$ -- 294
+num.names$ -- 58
+pop$ -- 144
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 76
+skip$ -- 320
 stack$ -- 0
-substring$ -- 291
-swap$ -- 42
-text.length$ -- 3
+substring$ -- 1069
+swap$ -- 162
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 33
-width$ -- 14
-write$ -- 134
-(There were 18 error messages)
+warning$ -- 4
+while$ -- 145
+width$ -- 60
+write$ -- 637
+(There were 21 error messages)

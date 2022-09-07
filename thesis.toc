@@ -13,55 +13,76 @@
 \babel@toc {english}{}
 \contentsline {chapter}{List of figures}{xiv}{section*.6}%
 \babel@toc {english}{}
-\contentsline {chapter}{List of Tables}{xvii}{section*.7}%
-\contentsline {chapter}{\chapternumberline {1}Methodology}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Complex networks}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Types of networks}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}The structure of complex networks}{6}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Degree distribution}{6}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Degree correlations}{6}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Clustering coefficient}{7}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.3.4}Network paths}{8}{subsection.1.3.4}%
-\contentsline {subsection}{\numberline {1.3.5}D-measure}{8}{subsection.1.3.5}%
-\contentsline {subsection}{\numberline {1.3.6}Community structure}{9}{subsection.1.3.6}%
-\contentsline {section}{\numberline {1.4}Network models}{11}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Random network model}{11}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Small-world networks}{13}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Barab\' {a}si-Albert model}{14}{subsection.1.4.3}%
-\contentsline {subsection}{\numberline {1.4.4}Nonlinear preferential attachment model}{15}{subsection.1.4.4}%
-\contentsline {subsection}{\numberline {1.4.5}Ageing model}{15}{subsection.1.4.5}%
-\contentsline {subsection}{\numberline {1.4.6}Stochastic block model}{17}{subsection.1.4.6}%
-\contentsline {section}{\numberline {1.5}The probability distributions}{18}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}The properties of distributions}{19}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Plotting the distributions}{20}{subsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.5.3}Estimating the distribution parameters}{21}{subsection.1.5.3}%
-\contentsline {section}{\numberline {1.6}Fractal analysis}{23}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}Long and Short-term correlations}{24}{subsection.1.6.1}%
-\contentsline {subsection}{\numberline {1.6.2}Rescaled range analysis}{24}{subsection.1.6.2}%
-\contentsline {subsection}{\numberline {1.6.3}Fluctuation analysis}{25}{subsection.1.6.3}%
-\contentsline {subsection}{\numberline {1.6.4}Multifractality of the signals}{26}{subsection.1.6.4}%
-\contentsline {section}{\numberline {1.7}Dynamical reputation model}{27}{section.1.7}%
+\contentsline {chapter}{List of Tables}{xviii}{section*.7}%
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}In This Thesis}{1}{section.1.1}%
 \babel@toc {english}{}
-\contentsline {chapter}{\chapternumberline {2}Driving signals}{31}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Growing network model with growing signal}{31}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Time-series from real systems}{32}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}D-measure}{34}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}The structure of networks}{34}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Long range correlated signals}{37}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Conclusions}{39}{section.2.3}%
-\contentsline {chapter}{\chapternumberline {3}Groups growth model}{41}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Data }{42}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Empirical analysis of social group growth }{43}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Model }{46}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Results }{48}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Model description}{48}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Modeling real systems}{49}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Discussion and conclusions }{51}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Distributions fit}{53}{section.3.6}%
-\contentsline {section}{\numberline {3.7}The model for social groups growth}{53}{section.3.7}%
-\contentsline {chapter}{Bibliography}{57}{chapter*.8}%
+\contentsline {chapter}{\chapternumberline {2}Methodology}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Complex networks}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Types of networks}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}The structure of complex networks}{8}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Degree distribution}{8}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Degree correlations}{8}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Clustering coefficient}{9}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Network paths}{10}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}D-measure}{10}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Community structure}{11}{subsection.2.3.6}%
+\contentsline {section}{\numberline {2.4}Network models}{13}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Random network model}{13}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Small-world networks}{15}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Barab\' {a}si-Albert model}{16}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Nonlinear preferential attachment model}{17}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Ageing model}{17}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Stochastic block model}{19}{subsection.2.4.6}%
+\contentsline {section}{\numberline {2.5}The probability distributions}{20}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}The properties of distributions}{21}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Plotting the distributions}{22}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Estimating the distribution parameters}{23}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Fractal analysis}{25}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Long and Short-term correlations}{26}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Rescaled range analysis}{26}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Fluctuation analysis}{27}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Multifractality of the signals}{28}{subsection.2.6.4}%
+\contentsline {section}{\numberline {2.7}Dynamical reputation model}{29}{section.2.7}%
+\contentsline {chapter}{\chapternumberline {3}Driving signals}{33}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Aging network model with growth signal}{33}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Time-series from real systems}{34}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}D-measure}{36}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}The structure of networks}{36}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Long range correlated signals}{39}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Conclusions}{41}{section.3.3}%
+\contentsline {chapter}{\chapternumberline {4}The growth of social groups}{43}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Social groups}{43}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}The empirical analysis of social groups}{43}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}The model}{45}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Groups growth model}{46}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Dependence of the group size distribution on model parameters}{48}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Results}{49}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Distributions fit}{51}{section.4.4}%
+\contentsline {chapter}{\chapternumberline {5}The role of trust in knowledge based communities}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Network properties of Stack Exchange data}{56}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Clustering}{57}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Core-periphery structure}{57}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}core-periphery structure of knowledge-sharing networks}{58}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Core-periphery structure of the interaction networks}{59}{subsection.5.1.4}%
+\contentsline {section}{\numberline {5.2}Dynamical Reputation model}{62}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Dynamic reputation of users within the network of interactions}{62}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Dynamic reputation in the network of interactions}{64}{subsection.5.2.2}%
+\contentsline {appendix}{\chapternumberline {A}Stack Exchange}{67}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Comparison between active and closed SE communities}{68}{section.A.1}%
+\contentsline {appendix}{\chapternumberline {B}Choice of model parameters}{71}{appendix.B}%
+\contentsline {subsection}{\numberline {B.0.1}Selection of dynamical reputation model parameters}{71}{subsection.B.0.1}%
+\contentsline {subsection}{\numberline {B.0.2}Dynamic reputation - $\beta $ parameter}{72}{subsection.B.0.2}%
+\contentsline {appendix}{\chapternumberline {C}The choice of the sliding window}{75}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {D}Robustness of core-periphery algorithm}{79}{appendix.D}%
+\contentsline {section}{\numberline {D.1}Precision and recall}{79}{section.D.1}%
+\contentsline {section}{\numberline {D.2}F1 measure}{80}{section.D.2}%
+\contentsline {section}{\numberline {D.3}Jaccard coefficient}{80}{section.D.3}%
+\contentsline {section}{\numberline {D.4}Normalized mutual information}{80}{section.D.4}%
+\contentsline {section}{\numberline {D.5}Adjusted rand index}{80}{section.D.5}%
+\contentsline {chapter}{Bibliography}{83}{appendix*.8}%
 \babel@toc {english}{}
-\contentsline {chapter}{Biography of the author}{63}{chapter*.9}%
+\contentsline {chapter}{Biography of the author}{87}{appendix*.9}%
 \babel@toc {serbianc}{}
 \babel@toc {english}{}
 \babel@toc {serbianc}{}
