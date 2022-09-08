@@ -25,14 +25,15 @@ P(S)=\frac{1}{S\sigma\sqrt{2\pi}}exp(-\frac{(\ln(S)-\mu)^{2}}{2\sigma^{2}})
 \label{eq:log}
 \end{equation}
 where $S$ is the group size and $\mu$, and $\sigma$ are parameters of the distribution.
-The group sizes distribution of Subreddits is a broad log-normal distribution that resembles the power law. Still, we used the loglikelihood ratio method and showed that log-normal distribution is better than the power-law. More details are given in the result section. 
+
+The distributions for Meetup group sizes in London and New York follow similar log-normal distribution, with parameters $\mu= -0.93$, $\sigma = 1.38$ for London and $\mu=-0.99$ and $\sigma=1.49$ for New York. The group sizes distribution of Subreddits is a broad log-normal distribution that resembles the power law, it has parameters $\mu= -5.41$ and $\sigma = 3.07$.   Still, we used the log-likelihood ratio method and showed that log-normal distribution is better fit for these data then the power-law. In the Result section is given detailed analysis that support this findings.   
 
 The simplest model that generates the lognormal distribution is multiplicative process \cite{mitzenmacher2004brief}. Gibrat used this model to explain the growth of firms. The main assumption of this model is that growth rates  $R = log\frac{S_t}{S_{t-\Delta t}}$ do not depend on the size $S$ and that they are uncorrelated. Further, this imply the lognormal distribution of the sizes, while the distribution of growth rates appears to be normal distribution,  \cite{mondani2014fat}, \cite{fu2005growth}. Figure \ref{fig:scale} shows distribution of the logrates, that follow lognormal distribution, contrary to the Gibrat law. Furthermore, logrates depend on the group size \ref{fig:scale}. For these reasons the Gibrat law can not explain the growth of online social groups \cite{frasco2014spatially, qian2014origin}.    
 
 The growth of online social groups has universal behavior. It is independent on the size of the group. If we aggregate the groups created in the same year $y$, and each group size normalize with average size $<S^y>$, $s^{y}_{i}=S^{y}_{i}/<S^{y}>$ we will find that group sizes distributions for the same dataset and different years fall on the same line, figure \ref{fig:scale}. The same characteristics are observed for the distribution of the normalized logrates \ref{fig:scale}. The growth is universal in time, and the group sizes distribution do not change from year to year.
 
 
-%We used package \cite{powerlaw} to fit Eq. \ref{eq:log} to Reddit and Meetup data and found that distribution of groups sizes for Meetup groups in London and New York follow similar distributions with the values of parameters $\mu= -0.93$, $\sigma = 1.38$ and $\mu=-0.99$ and $\sigma=1.49$ for London and New York respectively. The distribution of sizes of subreddits also has the log-normal shape with parameters $\mu= -5.41$ and $\sigma = 3.07$. Even though these distributions are from the same class, for subreddits we find broader distribution that may resemble power-law distribution. Our analysis shown in Supportive Information (SI) confirms that the distribution exhibits a log-normal behavior, see SI-Table 1 and SI-Fig. 1. 
+
 
 \begin{figure}[h]
 	\centering
@@ -117,7 +118,6 @@ Finally, we compare how group size distribution depends on different rules in ra
 %The differences between our and co-evolution model, described in previous sections, at first glance may appear small. However, they lead to huge differences in the distribution of the size of social groups. The distribution of group sizes in co-evolution model is a power-law. Our model adds flexibility to produce groups with log-normal size distribution. This expands classes of social systems that can be modeled. 
 %Our model is more flexible and can produce groups with log-normal size distribution that better describes diverse social systems, including, ones described in the Section \ref{sec:emp}.\\
 
-
 \section{Results}
 
 The social systems do not grow at constant rate. In Ref. \cite{vranic2021growth} authors have shown that features of growth signal influence the  structure of social networks. For these reasons we use the real growth signal from Meetup groups located in London and New York, and Reddit community to simulate the growth of the social groups in these systems. Figure \ref{fig:fig5} top panel shows the time series of the number of new members that join each of the three systems each month. All three systems have relatively low growth at the beginning, and than the growth accelerates as the system becomes more popular.
@@ -171,7 +171,7 @@ The bottom row of Fig. \ref{fig:fig6} shows the distribution of logarithmic valu
 	\label{fig:fig6}
 \end{figure}
 
-\section{Distributions fit}
+\subsection{Distributions fit}
 
 We compute the log-likelihood ratio $R$, and $p$-value between different distributions and log-normal fit \cite{clauset2009power} to determine the best fit for the group size distributions. Distribution with a higher likelihood is a better fit. The log-likelihood ratio R then has a positive or negative value, indicating which distribution represents a better fit. To choose between two distributions, we need to calculate p-value,  to be sure that R is sufficiently positive or negative and that it is not the result of chance fluctuation from the result that is close to zero. If the p-value is small, $p<0.1$, it is unlikely that the sign of R is the chance of fluctuations, and it is an accurate indicator of which model fits better. \\
 
