@@ -1,7 +1,14 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: 1-MainMatter/Chapter_Methodology.aux
+A level-1 auxiliary file: 1-MainMatter/Chapter_DrivingSignal.aux
+A level-1 auxiliary file: 1-MainMatter/Chapter_GroupsGrowth.aux
 A level-1 auxiliary file: 1-MainMatter/Chapter_Trust1.aux
+A level-1 auxiliary file: 2-Appendix/Appendix_SEdata.aux
+A level-1 auxiliary file: 2-Appendix/Appendix_SEparameters.aux
+A level-1 auxiliary file: 2-Appendix/Appendix_sliding_window.aux
+A level-1 auxiliary file: 2-Appendix/Appendix_robust.aux
 The style file: unsrt.bst
 Database file #1: sample.bib
 You're missing a field name---line 1045 of file sample.bib
@@ -9,13 +16,17 @@ You're missing a field name---line 1045 of file sample.bib
  : %   title={Expressing trust with temporal frequency of user interaction in online communities},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Repeated entry---line 1402 of file sample.bib
+ : @article{smiljanic2017associative
+ :                                  ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 1500 of file sample.bib
  : @article{dankulov2015dynamics
  :                              ,
 I'm skipping whatever remains of this entry
-I was expecting an "="---line 1593 of file sample.bib
- :  https://www.overleaf.com/project/615d87ed5fba9959f4dc6d45 
- :                                                            year={2012}
+Repeated entry---line 1588 of file sample.bib
+ : @inproceedings{kairam2012life
+ :                              ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 1597 of file sample.bib
  : @inproceedings{backstrom2006group
@@ -34,6 +45,50 @@ Repeated entry---line 1722 of file sample.bib
  : @article{fortunato2010community
  :                                ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 1908 of file sample.bib
+ : @article{mitzenmacher2004brief
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1919 of file sample.bib
+ : @article{qian2014origin
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1930 of file sample.bib
+ : @article{mondani2014fat
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1941 of file sample.bib
+ : @article{frasco2014spatially
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1952 of file sample.bib
+ : @article{fu2005growth
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1969 of file sample.bib
+ : @inproceedings{zheleva2009co
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2041 of file sample.bib
+ : @article{smiljanic2017associative
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2108 of file sample.bib
+ : @inproceedings{kairam2012life
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2212 of file sample.bib
+ : @article{powerlaw
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2228 of file sample.bib
+ : @article{vranic2021growth
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2240 of file sample.bib
+ : @article{mitrovic2011quantitative
+ :                                  ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 2251 of file sample.bib
  : @article{dankulov2015dynamics
  :                              ,
@@ -42,45 +97,49 @@ Repeated entry---line 2300 of file sample.bib
  : @inproceedings{backstrom2006group
  :                                  ,
 I'm skipping whatever remains of this entry
-You've used 13 entries,
+Warning--empty journal in latora2017complex
+Warning--empty publisher in caldarelli2007scalefree
+Warning--empty publisher in guide_temporal
+Warning--empty booktitle in yashkina2020
+You've used 58 entries,
             1791 wiz_defined-function locations,
-            527 strings with 6235 characters,
-and the built_in function-call counts, 3881 in all, are:
-= -- 352
-> -- 181
-< -- 6
-+ -- 65
-- -- 52
-* -- 269
-:= -- 581
-add.period$ -- 40
-call.type$ -- 13
-change.case$ -- 13
+            803 strings with 14674 characters,
+and the built_in function-call counts, 14844 in all, are:
+= -- 1305
+> -- 706
+< -- 11
++ -- 257
+- -- 199
+* -- 1097
+:= -- 2319
+add.period$ -- 179
+call.type$ -- 58
+change.case$ -- 53
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 179
-empty$ -- 360
-format.name$ -- 52
-if$ -- 883
+cite$ -- 62
+duplicate$ -- 648
+empty$ -- 1414
+format.name$ -- 199
+if$ -- 3311
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 13
-newline$ -- 68
-num.names$ -- 13
-pop$ -- 42
+int.to.str$ -- 58
+missing$ -- 63
+newline$ -- 294
+num.names$ -- 58
+pop$ -- 144
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 106
+skip$ -- 320
 stack$ -- 0
-substring$ -- 291
-swap$ -- 66
-text.length$ -- 6
+substring$ -- 1069
+swap$ -- 162
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 43
-width$ -- 15
-write$ -- 145
-(There were 9 error messages)
+warning$ -- 4
+while$ -- 145
+width$ -- 60
+write$ -- 637
+(There were 21 error messages)

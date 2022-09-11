@@ -1,10 +1,258 @@
 \begin{thebibliography}{10}
 
+\bibitem{boccaletti2006complex}
+Stefano Boccaletti, Vito Latora, Yamir Moreno, Martin Chavez, and D-U Hwang.
+\newblock Complex networks: Structure and dynamics.
+\newblock {\em Physics reports}, 424(4-5):175--308, 2006.
+
+\bibitem{latora2017complex}
+V.~Latora, V.~Nicosia, and G.~Russo.
+\newblock Complex networks: Principles, methods and applications.
+\newblock 2017.
+
+\bibitem{costa2007characterization}
+L~da~F Costa, Francisco~A Rodrigues, Gonzalo Travieso, and Paulino~Ribeiro
+  Villas~Boas.
+\newblock Characterization of complex networks: A survey of measurements.
+\newblock {\em Advances in physics}, 56(1):167--242, 2007.
+
+\bibitem{costa2011analyzing}
+Luciano da~Fontoura Costa, Osvaldo~N Oliveira~Jr, Gonzalo Travieso,
+  Francisco~Aparecido Rodrigues, Paulino~Ribeiro Villas~Boas, Lucas Antiqueira,
+  Matheus~Palhares Viana, and Luis~Enrique Correa~Rocha.
+\newblock Analyzing and modeling real-world phenomena with complex networks: a
+  survey of applications.
+\newblock {\em Advances in Physics}, 60(3):329--412, 2011.
+
+\bibitem{caldarelli2007scalefree}
+Guido Caldarelli.
+\newblock {\em Scale-Free Networks: Complex Webs in Nature and Technology}.
+\newblock 05 2007.
+
+\bibitem{barabasi2016network}
+Albert-László Barabási and Márton Pósfai.
+\newblock {\em Network science}.
+\newblock Cambridge University Press, Cambridge, 2016.
+
+\bibitem{newman2010}
+M.~E.~J. Newman.
+\newblock {\em Networks: An Introduction}.
+\newblock Oxford University Press, 2010.
+
+\bibitem{holme2012}
+Petter Holme and Jari {\"a}ki.
+\newblock Temporal networks.
+\newblock {\em Physics reports}, 519(3):97--125, 2012.
+
+\bibitem{guide_temporal}
+Naoki Masuda and Renaud Lambiotte.
+\newblock {\em A Guide to Temporal Networks}.
+\newblock 10 2016.
+
+\bibitem{holme2015modern}
+Petter Holme.
+\newblock Modern temporal network theory: a colloquium.
+\newblock {\em The European Physical Journal B}, 88(9):1--30, 2015.
+
+\bibitem{krings2012effects}
+Gautier Krings, M{\'a}rton Karsai, Sebastian Bernhardsson, Vincent~D Blondel,
+  and Jari Saram{\"a}ki.
+\newblock Effects of time window size and placement on the structure of an
+  aggregated communication network.
+\newblock {\em EPJ Data Science}, 1(1):1--16, 2012.
+
+\bibitem{arnold2021moving}
+Naomi~A Arnold, Benjamin Steer, Imane Hafnaoui, Hugo~A Parada~G, Raul~J
+  Mondragon, F{\'e}lix Cuadrado, and Richard~G Clegg.
+\newblock Moving with the times: Investigating the alt-right network gab with
+  temporal interaction graphs.
+\newblock {\em Proceedings of the ACM on Human-Computer Interaction},
+  5(CSCW2):1--17, 2021.
+
+\bibitem{porter2018multilayer}
+Mason~A Porter.
+\newblock What is... a multilayer network.
+\newblock {\em Notices of the AMS}, 65(11), 2018.
+
+\bibitem{aleta2019multilayer}
+Alberto Aleta and Yamir Moreno.
+\newblock Multilayer networks in a nutshell.
+\newblock {\em Annual Review of Condensed Matter Physics}, 10(1):45--62, 2019.
+
+\bibitem{kivelamultilayer}
+Mikko Kivelä, Alex Arenas, Marc Barthelemy, James~P. Gleeson, Yamir Moreno,
+  and Mason~A. Porter.
+\newblock {Multilayer networks}.
+\newblock {\em Journal of Complex Networks}, 2(3):203--271, 07 2014.
+
+\bibitem{tiago2}
+Tiago~A Schieber, Laura Carpi, Albert D{\'\i}az-Guilera, Panos~M Pardalos,
+  Cristina Masoller, and Mart{\'\i}n~G Ravetti.
+\newblock Quantification of network structural dissimilarities.
+\newblock {\em Nature communications}, 8(1):1--10, 2017.
+
+\bibitem{userguide}
+Santo Fortunato and Darko Hric.
+\newblock Community detection in networks: A user guide.
+\newblock {\em Physics Reports}, 659:1 -- 44, 2016.
+\newblock Community detection in networks: A user guide.
+
+\bibitem{martin}
+Martin Rosvall, Jean{-}Charles Delvenne, Michael~T. Schaub, and Renaud
+  Lambiotte.
+\newblock Different approaches to community detection.
+\newblock {\em CoRR}, abs/1712.06468, 2017.
+
+\bibitem{gallagher2020clarified}
+Ryan~J Gallagher, Jean-Gabriel Young, and Brooke~Foucault Welles.
+\newblock A clarified typology of core-periphery structure in networks.
+\newblock {\em arXiv preprint arXiv:2005.10191}, 2020.
+
+\bibitem{hajra2004}
+Kamalika~Basu Hajra and Parongama Sen.
+\newblock Phase transitions in an aging network.
+\newblock {\em Physical Review E}, 70(5):056103, 2004.
+
+\bibitem{comparison}
+Thorben Funke and Till Becker.
+\newblock Stochastic block models: A comparison of variants and inference
+  methods.
+\newblock {\em PLOS ONE}, 14(4):1--40, 04 2019.
+
+\bibitem{mitzenmacher2004brief}
+Michael Mitzenmacher.
+\newblock A brief history of generative models for power law and lognormal
+  distributions.
+\newblock {\em Internet mathematics}, 1(2):226--251, 2004.
+
+\bibitem{nair2022fundamentals}
+J.~Nair, A.~Wierman, and B.~Zwart.
+\newblock {\em The Fundamentals of Heavy Tails}.
+\newblock Cambridge Series in Statistical and Probabilistic Mathematics.
+  Cambridge University Press, 2022.
+
+\bibitem{kantelhardt2002}
+Jan~W Kantelhardt, Stephan~A Zschiegner, Eva Koscielny-Bunde, Shlomo Havlin,
+  Armin Bunde, and H~Eugene Stanley.
+\newblock Multifractal detrended fluctuation analysis of nonstationary time
+  series.
+\newblock {\em Physica A: Statistical Mechanics and its Applications},
+  316(1-4):87--114, 2002.
+
+\bibitem{ihlen2012}
+Espen Alexander F{\"u}rst~EAFI Ihlen.
+\newblock Introduction to multifractal detrended fluctuation analysis in
+  matlab.
+\newblock {\em Frontiers in physiology}, 3:141, 2012.
+
+\bibitem{melnikovDynamicInteractionBasedReputation2018}
+A.~{Melnikov}, J.~{Lee}, V.~{Rivera}, M.~{Mazzara}, and L.~{Longo}.
+\newblock Towards dynamic interaction-based reputation models.
+\newblock In {\em 2018 IEEE 32nd International Conference on Advanced
+  Information Networking and Applications (AINA)}, pages 422--428, 2018.
+
+\bibitem{dorogovtsev2001b}
+Sergey~N Dorogovtsev and Jos{\'e}~FF Mendes.
+\newblock Scaling properties of scale-free evolving networks: Continuous
+  approach.
+\newblock {\em Physical Review E}, 63(5):056125, 2001.
+
+\bibitem{smiljanic2017associative}
+Jelena Smiljani{\'c} and Marija Mitrovi{\'c}~Dankulov.
+\newblock Associative nature of event participation dynamics: A network theory
+  approach.
+\newblock {\em PloS one}, 12(2):e0171565, 2017.
+
+\bibitem{suvakov2013}
+Milovan Suvakov, Marija Mitrovic, Vladimir Gligorijevic, and Bosiljka Tadic.
+\newblock How the online social networks are used: dialogues-based structure of
+  myspace.
+\newblock {\em Journal of The Royal Society Interface}, 10(79):20120819, 2013.
+
+\bibitem{makse1996method}
+Hern{\'a}n~A Makse, Shlomo Havlin, Moshe Schwartz, and H~Eugene Stanley.
+\newblock Method for generating long-range correlations for large systems.
+\newblock {\em Physical Review E}, 53(5):5445, 1996.
+
+\bibitem{mondani2014fat}
+Hernan Mondani, Petter Holme, and Fredrik Liljeros.
+\newblock Fat-tailed fluctuations in the size of organizations: the role of
+  social influence.
+\newblock {\em PLoS One}, 9(7):e100527, 2014.
+
+\bibitem{fu2005growth}
+Dongfeng Fu, Fabio Pammolli, Sergey~V Buldyrev, Massimo Riccaboni, Kaushik
+  Matia, Kazuko Yamasaki, and H~Eugene Stanley.
+\newblock The growth of business firms: Theoretical framework and empirical
+  evidence.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  102(52):18801--18806, 2005.
+
+\bibitem{frasco2014spatially}
+Gerald~F Frasco, Jie Sun, Hern{\'a}n~D Rozenfeld, and Daniel Ben-Avraham.
+\newblock Spatially distributed social complex networks.
+\newblock {\em Physical Review X}, 4(1):011008, 2014.
+
+\bibitem{qian2014origin}
+Jiang-Hai Qian, Qu~Chen, Ding-Ding Han, Yu-Gang Ma, and Wen-Qing Shen.
+\newblock Origin of gibrat law in internet: Asymmetric distribution of the
+  correlation.
+\newblock {\em Physical Review E}, 89(6):062808, 2014.
+
+\bibitem{kairam2012life}
+Sanjay~Ram Kairam, Dan~J Wang, and Jure Leskovec.
+\newblock The life and death of online groups: Predicting group growth and
+  longevity.
+\newblock In {\em Proceedings of the fifth ACM international conference on Web
+  search and data mining}, pages 673--682, 2012.
+
+\bibitem{zheleva2009co}
+Elena Zheleva, Hossam Sharara, and Lise Getoor.
+\newblock Co-evolution of social and affiliation networks.
+\newblock In {\em Proceedings of the 15th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 1007--1016, 2009.
+
+\bibitem{mitrovic2011quantitative}
+Marija Mitrovi{\'c}, Georgios Paltoglou, and Bosiljka Tadi{\'c}.
+\newblock Quantitative analysis of bloggers’ collective behavior powered by
+  emotions.
+\newblock {\em Journal of Statistical Mechanics: Theory and Experiment},
+  2011(02):P02005, 2011.
+
 \bibitem{dankulov2015dynamics}
 Marija~Mitrovi{\'c} Dankulov, Roderick Melnik, and Bosiljka Tadi{\'c}.
 \newblock The dynamics of meaningful social interactions and the emergence of
   collective knowledge.
 \newblock {\em Scientific reports}, 5(1):1--10, 2015.
+
+\bibitem{vranic2021growth}
+Ana Vrani{\'c} and Marija~Mitrovi{\'c} Dankulov.
+\newblock Growth signals determine the topology of evolving networks.
+\newblock {\em Journal of Statistical Mechanics: Theory and Experiment},
+  2021(1):013405, 2021.
+
+\bibitem{backstrom2006group}
+Lars Backstrom, Dan Huttenlocher, Jon Kleinberg, and Xiangyang Lan.
+\newblock Group formation in large social networks: membership, growth, and
+  evolution.
+\newblock In {\em Proceedings of the 12th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 44--54, 2006.
+
+\bibitem{jsdivergence}
+Jop Bri\"et and Peter Harremo\"es.
+\newblock Properties of classical and quantum jensen-shannon divergence.
+\newblock {\em Phys. Rev. A}, 79:052311, May 2009.
+
+\bibitem{clauset2009power}
+Aaron Clauset, Cosma~Rohilla Shalizi, and Mark~EJ Newman.
+\newblock Power-law distributions in empirical data.
+\newblock {\em SIAM review}, 51(4):661--703, 2009.
+
+\bibitem{powerlaw}
+Jeff Alstott, Ed~Bullmore, and Dietmar Plenz.
+\newblock powerlaw: A python package for analysis of heavy-tailed
+  distributions.
+\newblock {\em PLOS ONE}, 9(1):1--11, 01 2014.
 
 \bibitem{saxena2021users}
 Akrati Saxena and Harita Reddy.
@@ -43,24 +291,12 @@ Tiago Santos, Simon Walk, Roman Kern, Markus Strohmaier, and Denis Helic.
   communities.
 \newblock In {\em The World Wide Web Conference}, pages 1634--1645, 2019.
 
-\bibitem{boccaletti2006complex}
-Stefano Boccaletti, Vito Latora, Yamir Moreno, Martin Chavez, and D-U Hwang.
-\newblock Complex networks: Structure and dynamics.
-\newblock {\em Physics reports}, 424(4-5):175--308, 2006.
-
 \bibitem{orsini2015quantifying}
 Chiara Orsini, Marija~M Dankulov, Pol Colomer-de Sim{\'o}n, Almerima Jamakovic,
   Priya Mahadevan, Amin Vahdat, Kevin~E Bassler, Zolt{\'a}n Toroczkai,
   Mari{\'a}n Bogun{\'a}, Guido Caldarelli, et~al.
 \newblock Quantifying randomness in real networks.
 \newblock {\em Nature communications}, 6(1):1--10, 2015.
-
-\bibitem{backstrom2006group}
-Lars Backstrom, Dan Huttenlocher, Jon Kleinberg, and Xiangyang Lan.
-\newblock Group formation in large social networks: membership, growth, and
-  evolution.
-\newblock In {\em Proceedings of the 12th ACM SIGKDD international conference
-  on Knowledge discovery and data mining}, pages 44--54, 2006.
 
 \bibitem{centola2007cascade}
 Damon Centola, V{\'\i}ctor~M Egu{\'\i}luz, and Michael~W Macy.
@@ -73,9 +309,42 @@ Santo Fortunato.
 \newblock Community detection in graphs.
 \newblock {\em Physics reports}, 486(3-5):75--174, 2010.
 
-\bibitem{gallagher2020clarified}
-Ryan~J Gallagher, Jean-Gabriel Young, and Brooke~Foucault Welles.
-\newblock A clarified typology of core-periphery structure in networks.
-\newblock {\em arXiv preprint arXiv:2005.10191}, 2020.
+\bibitem{dover2020sustainable}
+Yaniv Dover, Jacob Goldenberg, and Daniel Shapira.
+\newblock Sustainable online communities exhibit distinct hierarchical
+  structures across scales of size.
+\newblock {\em Proceedings of the Royal Society A}, 476(2239):20190730, 2020.
+
+\bibitem{yashkina2020}
+{Ekaterina} {Yashkina}, {Arseny} {Pinigin}, {JooYoung} {Lee}, {Manuel}
+  {Mazzara}, {Akinlolu Solomon} {Adekotujo}, {Adam} {Zubair}, and {Luca}
+  {Longo}.
+\newblock Expressing trust with temporal frequency of user interaction in
+  online communities.
+\newblock Advances in Intelligent Systems and Computing, pages 1133--1146,
+  Cham, 2020. Springer International Publishing.
+
+\bibitem{labatut2012accuracy}
+Vincent Labatut and Hocine Cherifi.
+\newblock Accuracy measures for the comparison of classifiers.
+\newblock {\em arXiv preprint arXiv:1207.3790}, 2012.
+
+\bibitem{danon2005comparing}
+Leon Danon, Albert Diaz-Guilera, Jordi Duch, and Alex Arenas.
+\newblock Comparing community structure identification.
+\newblock {\em Journal of statistical mechanics: Theory and experiment},
+  2005(09):P09008, 2005.
+
+\bibitem{santos2009use}
+Jorge~M Santos and Mark Embrechts.
+\newblock On the use of the adjusted rand index as a metric for evaluating
+  supervised classification.
+\newblock In {\em International conference on artificial neural networks},
+  pages 175--184. Springer, 2009.
+
+\bibitem{hubert1985comparing}
+Lawrence Hubert and Phipps Arabie.
+\newblock Comparing partitions.
+\newblock {\em Journal of classification}, 2(1):193--218, 1985.
 
 \end{thebibliography}
