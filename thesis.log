@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  9 SEP 2022 21:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  12 SEP 2022 17:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2066,121 +2066,97 @@ exchange/jaccard.pdf>]
 File: figs/figures/stackexchange/reputation.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/reputation.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/reputation.pdf  used on inp
-ut line 140.
+ut line 131.
 (pdftex.def)             Requested size: 483.69687pt x 211.68422pt.
-<figs/figures/stackexchange/core_reputation.pdf, id=2175, 1088.88005pt x 287.24
+ [59pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.139 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.139 
+       <./figs/figures/stackexchange/core_connectivity.pdf> <./figs/figures/sta
+ckexchange/reputation.pdf>]
+<figs/figures/stackexchange/core_reputation.pdf, id=2267, 1088.88005pt x 287.24
 126pt>
 File: figs/figures/stackexchange/core_reputation.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/core_reputation.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/core_reputation.pdf  used o
-n input line 148.
+n input line 146.
 (pdftex.def)             Requested size: 483.69687pt x 127.59622pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figs/figures/stackexchange/gini.pdf, id=2176, 1097.49709pt x 287.24126pt>
-File: figs/figures/stackexchange/gini.pdf Graphic file (type pdf)
-<use figs/figures/stackexchange/gini.pdf>
-Package pdftex.def Info: figs/figures/stackexchange/gini.pdf  used on input lin
-e 166.
-(pdftex.def)             Requested size: 483.69687pt x 126.59691pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figs/figures/stackexchange/reputation_assortativity.pdf, id=2177, 1079.40398pt
- x 287.24126pt>
-File: figs/figures/stackexchange/reputation_assortativity.pdf Graphic file (typ
-e pdf)
-<use figs/figures/stackexchange/reputation_assortativity.pdf>
-Package pdftex.def Info: figs/figures/stackexchange/reputation_assortativity.pd
-f  used on input line 177.
-(pdftex.def)             Requested size: 483.69687pt x 128.71826pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figs/figures/stackexchange/correlations.pdf, id=2178, 910.38281pt x 394.84764p
-t>
-File: figs/figures/stackexchange/correlations.pdf Graphic file (type pdf)
-<use figs/figures/stackexchange/correlations.pdf>
-Package pdftex.def Info: figs/figures/stackexchange/correlations.pdf  used on i
-nput line 189.
-(pdftex.def)             Requested size: 483.69687pt x 209.78638pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figs/figures/stackexchange/core_per_ratio_reputation.pdf, id=2179, 1069.30374p
+<figs/figures/stackexchange/core_per_ratio_reputation.pdf, id=2268, 1069.30374p
 t x 287.24126pt>
 File: figs/figures/stackexchange/core_per_ratio_reputation.pdf Graphic file (ty
 pe pdf)
 <use figs/figures/stackexchange/core_per_ratio_reputation.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/core_per_ratio_reputation.p
-df  used on input line 196.
+df  used on input line 155.
 (pdftex.def)             Requested size: 483.69687pt x 129.93233pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [59pdfTeX warning (ext4): destination with the same identifier (name{figure.4
-.9}) has been already used, duplicate ignored
+ [60pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.105 \include{1-MainMatter/Chapter_Trust1}
-                                           pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.4.10}) has been already used, duplicate ig
-nored
+l.161 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.105 \include{1-MainMatter/Chapter_Trust1}
-                                            <./figs/figures/stackexchange/core_
-connectivity.pdf> <./figs/figures/stackexchange/reputation.pdf>] [60pdfTeX warn
-ing (ext4): destination with the same identifier (name{figure.4.11}) has been a
-lready used, duplicate ignored
+l.161 
+       <./figs/figures/stackexchange/core_reputation.pdf> <./figs/figures/stack
+exchange/core_per_ratio_reputation.pdf>]
+<figs/figures/stackexchange/gini.pdf, id=2356, 1097.49709pt x 287.24126pt>
+File: figs/figures/stackexchange/gini.pdf Graphic file (type pdf)
+<use figs/figures/stackexchange/gini.pdf>
+Package pdftex.def Info: figs/figures/stackexchange/gini.pdf  used on input lin
+e 164.
+(pdftex.def)             Requested size: 483.69687pt x 126.59691pt.
+<figs/figures/stackexchange/reputation_assortativity.pdf, id=2358, 1079.40398pt
+ x 287.24126pt>
+File: figs/figures/stackexchange/reputation_assortativity.pdf Graphic file (typ
+e pdf)
+<use figs/figures/stackexchange/reputation_assortativity.pdf>
+Package pdftex.def Info: figs/figures/stackexchange/reputation_assortativity.pd
+f  used on input line 173.
+(pdftex.def)             Requested size: 483.69687pt x 128.71826pt.
+ [61pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.105 \include{1-MainMatter/Chapter_Trust1}
-                                           pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.4.12}) has been already used, duplicate ig
-nored
+l.181 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.105 \include{1-MainMatter/Chapter_Trust1}
-                                           pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.4.13}) has been already used, duplicate ig
-nored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.105 \include{1-MainMatter/Chapter_Trust1}
-                                            <./figs/figures/stackexchange/core_
-reputation.pdf> <./figs/figures/stackexchange/gini.pdf> <./figs/figures/stackex
-change/reputation_assortativity.pdf>] [61pdfTeX warning (ext4): destination wit
-h the same identifier (name{figure.4.14}) has been already used, duplicate igno
-red
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.105 \include{1-MainMatter/Chapter_Trust1}
-                                           pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.4.15}) has been already used, duplicate ig
-nored
+l.181 
+       <./figs/figures/stackexchange/gini.pdf> <./figs/figures/stackexchange/re
+putation_assortativity.pdf>]
+<figs/figures/stackexchange/correlations.pdf, id=2449, 910.38281pt x 394.84764p
+t>
+File: figs/figures/stackexchange/correlations.pdf Graphic file (type pdf)
+<use figs/figures/stackexchange/correlations.pdf>
+Package pdftex.def Info: figs/figures/stackexchange/correlations.pdf  used on i
+nput line 187.
+(pdftex.def)             Requested size: 483.69687pt x 209.78638pt.
+) [62pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+.15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.105 \include{1-MainMatter/Chapter_Trust1}
                                             <./figs/figures/stackexchange/corre
-lations.pdf> <./figs/figures/stackexchange/core_per_ratio_reputation.pdf>]
+lations.pdf>]
 \openout2 = `2-Appendix/Appendix_SEdata.aux'.
 
-
-(./2-Appendix/Appendix_SEdata.tex [62
-
-
-
-]
+ (./2-Appendix/Appendix_SEdata.tex
 Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
@@ -2190,14 +2166,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-[63pdfTeX warning (ext4): destination with the same identifier (name{table.A.1}
-) has been already used, duplicate ignored
+[63
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.A.1}) h
+as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.40 
      ]
-<figs/figures/stackexchange/active_questions.pdf, id=2501, 1070.2673pt x 287.24
+<figs/figures/stackexchange/active_questions.pdf, id=2508, 1070.2673pt x 287.24
 126pt>
 File: figs/figures/stackexchange/active_questions.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/active_questions.pdf>
@@ -2250,7 +2230,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 LaTeX Warning: Reference `fig:betadelta' on page 68 undefined on input line 18.
 
 
-<figs/figures/stackexchange/single_user_reputation.pdf, id=2573, 752.0742pt x 3
+<figs/figures/stackexchange/single_user_reputation.pdf, id=2580, 752.0742pt x 3
 07.64925pt>
 File: figs/figures/stackexchange/single_user_reputation.pdf Graphic file (type 
 pdf)
@@ -2258,7 +2238,7 @@ pdf)
 Package pdftex.def Info: figs/figures/stackexchange/single_user_reputation.pdf 
  used on input line 30.
 (pdftex.def)             Requested size: 386.95897pt x 158.29324pt.
-<figs/figures/stackexchange/rmse.pdf, id=2575, 1076.11423pt x 286.70801pt>
+<figs/figures/stackexchange/rmse.pdf, id=2582, 1076.11423pt x 286.70801pt>
 File: figs/figures/stackexchange/rmse.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/rmse.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/rmse.pdf  used on input lin
@@ -2274,14 +2254,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
                                                   \fi \fi 
 l.50 
       <./figs/figures/stackexchange/single_user_reputation.pdf>]
-<figs/figures/stackexchange/active_users.pdf, id=2623, 958.24876pt x 505.49666p
+<figs/figures/stackexchange/active_users.pdf, id=2630, 958.24876pt x 505.49666p
 t>
 File: figs/figures/stackexchange/active_users.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/active_users.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/active_users.pdf  used on i
 nput line 53.
 (pdftex.def)             Requested size: 483.69687pt x 255.16196pt.
-<figs/figures/stackexchange/permanent_users.pdf, id=2625, 1070.2673pt x 287.241
+<figs/figures/stackexchange/permanent_users.pdf, id=2632, 1070.2673pt x 287.241
 26pt>
 File: figs/figures/stackexchange/permanent_users.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/permanent_users.pdf>
@@ -2316,7 +2296,7 @@ l.66 \clearpage
 
 
 (./2-Appendix/Appendix_sliding_window.tex
-<figs/figures/stackexchange/sliding_window_network.pdf, id=2786, 860.90431pt x 
+<figs/figures/stackexchange/sliding_window_network.pdf, id=2793, 860.90431pt x 
 542.64653pt>
 File: figs/figures/stackexchange/sliding_window_network.pdf Graphic file (type 
 pdf)
@@ -2328,7 +2308,7 @@ Package pdftex.def Info: figs/figures/stackexchange/sliding_window_network.pdf
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figs/figures/stackexchange/sliding_window_core_periphery.pdf, id=2788, 860.904
+<figs/figures/stackexchange/sliding_window_core_periphery.pdf, id=2795, 860.904
 31pt x 542.64653pt>
 File: figs/figures/stackexchange/sliding_window_core_periphery.pdf Graphic file
  (type pdf)
@@ -2339,7 +2319,7 @@ ry.pdf  used on input line 19.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figs/figures/stackexchange/sliding_window_core_reputation.pdf, id=2789, 864.74
+<figs/figures/stackexchange/sliding_window_core_reputation.pdf, id=2796, 864.74
 68pt x 375.47215pt>
 File: figs/figures/stackexchange/sliding_window_core_reputation.pdf Graphic fil
 e (type pdf)
@@ -2396,7 +2376,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
  []
 
 [75] [76]
-<figs/figures/stackexchange/blockmodel_robust.pdf, id=2953, 727.9929pt x 503.97
+<figs/figures/stackexchange/blockmodel_robust.pdf, id=2960, 727.9929pt x 503.97
 534pt>
 File: figs/figures/stackexchange/blockmodel_robust.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/blockmodel_robust.pdf>
@@ -2442,10 +2422,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 16213 strings out of 482584
- 245961 string characters out of 5956256
- 576835 words of memory out of 5000000
- 30486 multiletter control sequences out of 15000+600000
+ 16214 strings out of 482584
+ 245976 string characters out of 5956256
+ 576906 words of memory out of 5000000
+ 30487 multiletter control sequences out of 15000+600000
  577322 words of font info for 93 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
  38i,17n,45p,2188b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2482,10 +2462,10 @@ live/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on thesis.pdf (82 pages, 7560360 bytes).
+Output written on thesis.pdf (82 pages, 7564866 bytes).
 PDF statistics:
- 3150 PDF objects out of 3580 (max. 8388607)
- 1329 compressed objects within 14 object streams
+ 3157 PDF objects out of 3580 (max. 8388607)
+ 1336 compressed objects within 14 object streams
  327 named destinations out of 1000 (max. 500000)
  808 words of extra memory for PDF output out of 10000 (max. 10000000)
 
