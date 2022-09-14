@@ -40,20 +40,22 @@
 \BOOKMARK [2][-]{subsection.3.2.2}{Dependence of the group size distribution on model parameters}{section.3.2}% 40
 \BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 41
 \BOOKMARK [2][-]{subsection.3.3.1}{Distributions fit}{section.3.3}% 42
-\BOOKMARK [0][-]{chapter.4}{The role of trust in knowledge based communities}{}% 43
-\BOOKMARK [1][-]{section.4.1}{Network properties of Stack Exchange data}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.2}{Core-periphery structure}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.3}{Dynamical Reputation model}{chapter.4}% 46
-\BOOKMARK [0][-]{appendix.A}{Stack Exchange}{}% 47
-\BOOKMARK [1][-]{section.A.1}{Comparison between active and closed SE communities}{appendix.A}% 48
-\BOOKMARK [0][-]{appendix.B}{Choice of model parameters}{}% 49
-\BOOKMARK [1][-]{section.B.1}{Selection of dynamical reputation model parameters}{appendix.B}% 50
-\BOOKMARK [1][-]{section.B.2}{Dynamic reputation - \040parameter}{appendix.B}% 51
-\BOOKMARK [0][-]{appendix.C}{The choice of the sliding window}{}% 52
-\BOOKMARK [0][-]{appendix.D}{Robustness of core-periphery algorithm}{}% 53
-\BOOKMARK [1][-]{section.D.1}{Precision and recall}{appendix.D}% 54
-\BOOKMARK [1][-]{section.D.2}{F1 measure}{appendix.D}% 55
-\BOOKMARK [1][-]{section.D.3}{Jaccard coefficient}{appendix.D}% 56
-\BOOKMARK [1][-]{section.D.4}{Normalized mutual information}{appendix.D}% 57
-\BOOKMARK [1][-]{section.D.5}{Adjusted rand index}{appendix.D}% 58
-\BOOKMARK [0][-]{appendix*.1}{Bibliography}{}% 59
+\BOOKMARK [1][-]{section.3.4}{Conclusions}{chapter.3}% 43
+\BOOKMARK [0][-]{chapter.4}{The role of trust in knowledge based communities}{}% 44
+\BOOKMARK [1][-]{section.4.1}{Network properties of Stack Exchange data}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.2}{Core-periphery structure}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.3}{Dynamical Reputation on Stack Exchange communities}{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.4}{Conclusions}{chapter.4}% 48
+\BOOKMARK [0][-]{appendix.A}{Stack Exchange}{}% 49
+\BOOKMARK [1][-]{section.A.1}{Comparison between active and closed SE communities}{appendix.A}% 50
+\BOOKMARK [0][-]{appendix.B}{Choice of model parameters}{}% 51
+\BOOKMARK [1][-]{section.B.1}{Selection of dynamical reputation model parameters}{appendix.B}% 52
+\BOOKMARK [1][-]{section.B.2}{Dynamic reputation - \040parameter}{appendix.B}% 53
+\BOOKMARK [0][-]{appendix.C}{The choice of the sliding window}{}% 54
+\BOOKMARK [0][-]{appendix.D}{Robustness of core-periphery algorithm}{}% 55
+\BOOKMARK [1][-]{section.D.1}{Precision and recall}{appendix.D}% 56
+\BOOKMARK [1][-]{section.D.2}{F1 measure}{appendix.D}% 57
+\BOOKMARK [1][-]{section.D.3}{Jaccard coefficient}{appendix.D}% 58
+\BOOKMARK [1][-]{section.D.4}{Normalized mutual information}{appendix.D}% 59
+\BOOKMARK [1][-]{section.D.5}{Adjusted rand index}{appendix.D}% 60
+\BOOKMARK [0][-]{appendix*.1}{Bibliography}{}% 61

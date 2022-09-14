@@ -2,8 +2,8 @@
 \chapter{The role of trust in knowledge based communities} % Main chapter title
 \label{ChapterTrust}
 
-Information and communications technologies (ICTs) have enabled faster and easier creation and sharing of knowledge. Furthermore, they have provided access to a large amount of data which enabled a detailed study of their emergence and evolution \cite{dankulov2015dynamics}, as well as user's roles \cite{saxena2021users}, patterns of their activity \cite{santos2019activity, slag2015one, chhabra2020activity}. 
-However, relatively small attention was given to sustainability of SE communities. Most of the research was focused on the activity and factors that influence the increase of the users’ activity in these communities. Factors such as need for experts and the quality of their contributions have been thoroughly investigated \cite{dev2018size}. It was shown that growth of communities and mechanisms that drive it may depend on the topic around which the community was created \cite{santos2019self}.
+%Information and communications technologies (ICTs) have enabled faster and easier creation and sharing of knowledge. Furthermore, they have provided access to a large amount of data which enabled a detailed study of their emergence and evolution \cite{dankulov2015dynamics}, as well as user's roles \cite{saxena2021users}, patterns of their activity \cite{santos2019activity, slag2015one, chhabra2020activity}. 
+%However, relatively small attention was given to sustainability of SE communities. Most of the research was focused on the activity and factors that influence the increase of the users’ activity in these communities. Factors such as need for experts and the quality of their contributions have been thoroughly investigated \cite{dev2018size}. It was shown that growth of communities and mechanisms that drive it may depend on the topic around which the community was created \cite{santos2019self}.
 
 The \textbf{Stack Exchange} is a network of question-answer websites on diverse topics. In the beginning, the focus was on computer programming questions with StackOverflow \footnote{
 	More information about StackOverlflow is available at: \url{https://stackoverflow.co/} and broad introduction to StackExchange network is available at: \url{https://stackexchange.com/tour}. 
@@ -122,7 +122,7 @@ Finally, we examine how the connectivity of the users in the core and between co
 	\label{fig:links_per_node}
 \end{figure}
 
-\section{Dynamical Reputation model}
+\section{Dynamical Reputation on Stack Exchange communities}
 
 We further explore the difference between active and closed communities through the dynamical reputation model. With this model we calculate the reputation of each user in the community. The reputation is directly connected with the collective trust in the network. 
 
@@ -135,7 +135,7 @@ We further explore the difference between active and closed communities through 
 
 
 
-Dynamical reputation model, introduced in section \ref{sec:met_dibrm} has three parameters. We explored different parameter combination, to find the set of parameters the most suitable for given system of Stack Exchange communities. First of all, the basic reputation is set to $I_{bn}=1$. The cumulative factor is $\alpha=2$, as we want to emphasize the frequent interactions. The parameter $\beta$ controls the reputation decay due to user inactivity. After last activity, for some period user has positive reputation still making impact on the other users. We optimized the the number of users with reputation larger than $1$ according to the number of users in the 30 days network, so parameter $\beta=0.96$. The discussion about the parameters choice is in appendix. 
+Dynamical reputation model, introduced in section \ref{sec:met_dibrm} has three parameters. We explored different parameter combination, to find the set of parameters the most suitable for given system of Stack Exchange communities. First of all, the basic reputation is set to $I_{bn}=1$. The cumulative factor is $\alpha=2$, as we want to emphasize the frequent interactions. The parameter $\beta$ controls the reputation decay due to user inactivity. After last activity, for some period user has positive reputation still making impact on the other users. We optimized the the number of users with reputation larger than $1$ according to the number of users in the 30 days network, and concluded that parameter $\beta=0.96$. The more detailed discussion about the parameters choice is given in appendix. 
 
 With selected model parameters, we calculated the the reputation of each user. If user has the reputation larger than $1$, it is considered as active, but when the reputation drops below this threshold means that user has not be active long enough and it is not give valuable contribution for the community. The number of active users and their mean reputation for different SE sites are shown in figure \ref{fig:dr6panel}. 
 
@@ -166,7 +166,7 @@ The distribution of the dynamical reputation of SE communities are skewed. To be
 	\label{fig:dynrep-gini}
 \end{figure} 
 
-Further, we investigate how properties of user interaction network are correlated with the reputation of user. For example we can use measure the assortativity coefficient among connected users in the network. For each 30 days user interaction network, we calculate the reputation assortativity, using reputation value observed in the last day of the time window in which the network is constructed. With this measure we quantify weather users tend to connect with users with similar reputation or not. Figure \ref{fig:dyn_rep_assort} shows results where for each SE community we compare the active and closed site. In all communities reputation assortativity has small values, not larger than $|0.3|$. In active communities this is mostly negative measure showing expected user behavior, popular users, who often have the high dynamical reputation interact with users with low dynamical reputation. Astronomy is outlier again, during first 100 days active community had positive reputation assortativity and after this period, it started to behave similar as other active communities. 
+Further, we investigate how properties of user interaction network are correlated with the reputation of user. For example we can use measure the assortativity coefficient among connected users in the network. For each 30 days user interaction network, we calculate the reputation assortativity, using reputation value observed in the last day of the time window in which the network is constructed. With this measure we quantify weather users tend to connect with users with similar reputation or not. Figure \ref{fig:dyn_rep_assort} shows results where for each SE community we compare the active and closed site. In all communities reputation assortativity has small values, not larger than $|0.3|$. In active communities this is mostly negative measure showing expected user behavior: popular users, who often have the high dynamical reputation interact with users with low dynamical reputation. Astronomy is outlier again, during first 100 days active community had positive reputation assortativity and after this period, it started to behave similar as other active communities. 
 
 \begin{figure}[h]
 	\centering
@@ -175,19 +175,16 @@ Further, we investigate how properties of user interaction network are correlate
 	\label{fig:dyn_rep_assort}
 \end{figure}
 
-We continue to investigate whether the user's reputation correlates with typical network centrality measures calculated at user's node in the interaction network. As previously, we compare node's centrality in the 30 day network with the node's dynamic reputation on the last day of the period, repeat the process every day for the first six months. 
+Finally, we are interested how dynamical reputation correlates with network measures. We compare the node's centrality in the 30 day network and the node's reputation at the last day of the 30 days sliding window. The correlation coefficient between dynamic reputation and node degree is very high, see top panel on \ref{fig:dyn_rep_centrality}. The bottom panel shows correlations between dynamic reputation and betweeness centrality in the network. These correlations are also high. We find that correlations are mostly higher in active communities, only for astronomy they take similar values during the observed time period. 
 
-Correlation coefficient between dynamic reputation and degree in the network is very high, as expected, as most of the interactions that contributed to user's reputation are also present as links in the network. We show these results in Fig.~\ref{fig:dyn_rep_centrality}(top). However, we again see the distinction between active and closed communities where this correlation is higher in active communities, except in the first month of sliding windows. Astronomy is an exception here as well as we see that the correlations were similar in both closed and still active sites throughout observed period. 
-
-
-In the bottom panels of Fig.~\ref{fig:dyn_rep_centrality} we present correlation coefficients of dynamic reputation and user's betweenness centrality in the interaction network. These corrlations are also high and most of the time higher in the later networks of active than closed communities. This is particularly interesting due to global nature of betweenness centrality measure and less obvious relation of it to user's dynamic reputation.
-
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{figures/stackexchange/correlations.pdf}
 	\caption{Coefficient of correlation between users' Dynamic Reputation and users' network degree (top) and users's betweenness centrality (bottom). Solid lines - active sites; dashed lines - closed sites.}
 	\label{fig:dyn_rep_centrality}
 \end{figure}
+
+\section{Conclusions}
 
 
 
