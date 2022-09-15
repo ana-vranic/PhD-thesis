@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  15 SEP 2022 12:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  15 SEP 2022 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2290,16 +2290,16 @@ l.66 \clearpage
 
 
 (./2-Appendix/Appendix_sliding_window.tex
-<figs/figures/stackexchange/sliding_window.pdf, id=2787, 864.7468pt x 1378.5183
+<figs/figures/stackexchange/sliding_window.pdf, id=2789, 864.7468pt x 1378.5183
 pt>
 File: figs/figures/stackexchange/sliding_window.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/sliding_window.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/sliding_window.pdf  used on
- input line 17.
+ input line 11.
 (pdftex.def)             Requested size: 435.32422pt x 693.9692pt.
 
 
-LaTeX Warning: Float too large for page by 8.83125pt on input line 20.
+LaTeX Warning: Float too large for page by 8.83125pt on input line 14.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2334,7 +2334,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
 
 ] [74]
-<figs/figures/stackexchange/blockmodel_robust.pdf, id=2868, 727.9929pt x 503.97
+<figs/figures/stackexchange/blockmodel_robust.pdf, id=2870, 727.9929pt x 503.97
 534pt>
 File: figs/figures/stackexchange/blockmodel_robust.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/blockmodel_robust.pdf>
@@ -2382,7 +2382,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
 Here is how much of TeX's memory you used:
  16202 strings out of 482584
  245194 string characters out of 5956256
- 576907 words of memory out of 5000000
+ 576906 words of memory out of 5000000
  30479 multiletter control sequences out of 15000+600000
  577322 words of font info for 93 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
@@ -2420,10 +2420,10 @@ live/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on thesis.pdf (80 pages, 7539575 bytes).
+Output written on thesis.pdf (80 pages, 7541377 bytes).
 PDF statistics:
- 3069 PDF objects out of 3580 (max. 8388607)
- 1315 compressed objects within 14 object streams
+ 3071 PDF objects out of 3580 (max. 8388607)
+ 1317 compressed objects within 14 object streams
  325 named destinations out of 1000 (max. 500000)
  814 words of extra memory for PDF output out of 10000 (max. 10000000)
 
