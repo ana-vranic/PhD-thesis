@@ -850,8 +850,6 @@ If a user is frequently active, we can record the reputation after each day. On 
 
 For example, if we set the characteristic window size and basic value of interaction to $t_a=1 day$, $I_{bn}=1$, we can analyze the influence of the parameters $\alpha$ and $\beta$ on the user reputation. Lower beta and alpha values lead to faster reputation decline as shown in figure \ref{fig:reputation}. With lower $\beta$ the reputation may quickly drop close to the reputation threshold, under which we don't consider the user as active. In contrast, with larger values of $\beta$, reputation stays high even if a user is not active for a larger period. The parameter $\alpha$ is the most important influence on burst behaviour, where larger $\alpha$ leads to higher reputation values. 
 
-
-
 When a user becomes inactive, its reputation starts to decline, and when it drops below the reputation threshold user does not have any influence on the community. We can approximate the dependence of parameter $\beta$ and time $\delta t$ needed for reputation to reach this level as $\beta = (\frac{R_0}{R_i})^{\frac{t_a}{\delta t}}$. In the examples on figure, parameter $t_a=1\text{day}$, while we vary different starting reputation levels $R_n$.   
 For $\beta$ values below 0.96, the decay is fast, and within two to four months of inactivity, even high reputation values are
 reduced below the threshold. On the other hand, with values of $\beta$, the decay process is more differentiated, and the high
