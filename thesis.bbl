@@ -1,14 +1,74 @@
 \begin{thebibliography}{10}
 
-\bibitem{boccaletti2006complex}
-Stefano Boccaletti, Vito Latora, Yamir Moreno, Martin Chavez, and D-U Hwang.
-\newblock Complex networks: Structure and dynamics.
-\newblock {\em Physics reports}, 424(4-5):175--308, 2006.
+\bibitem{kwapien2012}
+J.~Kwapie{\'n} and S.~Dro{\.z}d{\.z}.
+\newblock {Physical approach to complex systems}.
+\newblock {\em Phys. Rep}, 515:115--226, 2012.
+
+\bibitem{thurner2018}
+Stefan Thurner, Rudolf Hanel, and Peter Klimekl.
+\newblock {93Scaling}.
+\newblock In {\em {Introduction to the Theory of Complex Systems}}. Oxford
+  University Press, 09 2018.
+
+\bibitem{binney1992}
+J.~J. Binney, N.~J. Dowrick, A.~J. Fisher, and M.~E.~J. Newman.
+\newblock {\em {The theory of critical phenomena: an introduction to the
+  renormalization group}}.
+\newblock Oxford University Press, 1992.
+
+\bibitem{chatterjee2013}
+A.~Chatterjee, M.~Mitrovi{\'c}, and S.~Fortunato.
+\newblock {Universality in voting behavior: an empirical analysis}.
+\newblock {\em Sci. Rep}, 3:1--9, 2013.
+
+\bibitem{radicchi2008}
+F.~Radicchi, S.~Fortunato, and C.~Castellano.
+\newblock {Universality of citation distributions: Toward an objective measure
+  of scientific impact}.
+\newblock {\em Proc. Natl. Acad. Sci. U. S. A.}, 105:17268--17272, 2008.
+
+\bibitem{barthelemy2019}
+M.~Barthelemy.
+\newblock {The statistical physics of cities}.
+\newblock {\em Nat. Rev. Phys}, 1:406--415, 2019.
+
+\bibitem{verbavatz2020}
+V.~Verbavatz and M.~Barthelemy.
+\newblock {The growth equation of cities}.
+\newblock {\em Nature}, 587:397--401, 2020.
+
+\bibitem{ladyman2013}
+James Ladyman, James Lambert, and Karoline Wiesner.
+\newblock What is a complex system?
+\newblock {\em European Journal for Philosophy of Science}, 3(1):33--67, 2013.
 
 \bibitem{latora2017complex}
 V.~Latora, V.~Nicosia, and G.~Russo.
 \newblock Complex networks: Principles, methods and applications.
 \newblock 2017.
+
+\bibitem{myers2014}
+Seth~A Myers and Jure Leskovec.
+\newblock The bursty dynamics of the twitter information network.
+\newblock In {\em Proceedings of the 23rd international conference on World
+  wide web}, pages 913--924, 2014.
+
+\bibitem{sarigol2014}
+Emre Sarig{\"o}l, Ren{\'e} Pfitzner, Ingo Scholtes, Antonios Garas, and Frank
+  Schweitzer.
+\newblock Predicting scientific success based on coauthorship networks.
+\newblock {\em EPJ Data Science}, 3(1):9, 2014.
+
+\bibitem{fraiman2009ising}
+D.~Fraiman, P.~Balenzuela, J.~Foss, and D.~R. Chialvo.
+\newblock {Ising-like dynamics in large-scale functional brain networks}.
+\newblock {\em Phys. Rev. E}, 79:061922, 2009.
+
+\bibitem{schneider2011modeling}
+C.~M. Schneider, L.~de~Arcangelis, and H.~J. Herrmann.
+\newblock {Modeling the topology of protein interaction networks}.
+\newblock {\em Phys. Rev. E}, 84:016112, 2011.
 
 \bibitem{costa2007characterization}
 L~da~F Costa, Francisco~A Rodrigues, Gonzalo Travieso, and Paulino~Ribeiro
@@ -23,6 +83,31 @@ Luciano da~Fontoura Costa, Osvaldo~N Oliveira~Jr, Gonzalo Travieso,
 \newblock Analyzing and modeling real-world phenomena with complex networks: a
   survey of applications.
 \newblock {\em Advances in Physics}, 60(3):329--412, 2011.
+
+\bibitem{newman2003structure}
+M.~E.~J. Newman.
+\newblock {The structure and function of complex networks}.
+\newblock {\em SIAM review}, 45:167--256, 2003.
+
+\bibitem{boccaletti2006complex}
+Stefano Boccaletti, Vito Latora, Yamir Moreno, Martin Chavez, and D-U Hwang.
+\newblock Complex networks: Structure and dynamics.
+\newblock {\em Physics reports}, 424(4-5):175--308, 2006.
+
+\bibitem{dorogovtsev2010complex}
+S.~Dorogovtsev.
+\newblock {\em {Complex networks}}.
+\newblock Oxford: Oxford University Press, 2010.
+
+\bibitem{watts1998collective}
+D.~J. Watts and S.~H. Strogatz.
+\newblock {Collective dynamics of ‘small-world’networks}.
+\newblock {\em Nature}, 393:440--442, 1998.
+
+\bibitem{barabasi1999}
+Albert-L{\'a}szl{\'o} Barab{\'a}si and R{\'e}ka Albert.
+\newblock Emergence of scaling in random networks.
+\newblock {\em science}, 286(5439):509--512, 1999.
 
 \bibitem{caldarelli2007scalefree}
 Guido Caldarelli.
@@ -85,13 +170,52 @@ Mikko Kivelä, Alex Arenas, Marc Barthelemy, James~P. Gleeson, Yamir Moreno,
 \newblock {Multilayer networks}.
 \newblock {\em Journal of Complex Networks}, 2(3):203--271, 07 2014.
 
+\bibitem{hajra2004}
+Kamalika~Basu Hajra and Parongama Sen.
+\newblock Phase transitions in an aging network.
+\newblock {\em Physical Review E}, 70(5):056103, 2004.
+
+\bibitem{vranic2021growth}
+Ana Vrani{\'c} and Marija~Mitrovi{\'c} Dankulov.
+\newblock Growth signals determine the topology of evolving networks.
+\newblock {\em Journal of Statistical Mechanics: Theory and Experiment},
+  2021(1):013405, 2021.
+
+\bibitem{vranic2022universal}
+Ana Vrani{\'c}, Jelena Smiljani{\'c}, and Marija~Mitrovi{\'c} Dankulov.
+\newblock Universal growth of social groups: empirical analysis and modeling.
+\newblock {\em arXiv preprint arXiv:2206.06732}, 2022.
+
+\bibitem{vranic2022sustainability}
+Ana Vrani{\'c}, Aleksandar Toma{\v{s}}evi{\'c}, Aleksandra Alori{\'c}, and
+  Marija~Mitrovi{\'c} Dankulov.
+\newblock Sustainability of stack exchange q$\backslash$\&a communities: the
+  role of trust.
+\newblock {\em arXiv preprint arXiv:2205.07745}, 2022.
+
+\bibitem{gallagher2020clarified}
+Ryan~J Gallagher, Jean-Gabriel Young, and Brooke~Foucault Welles.
+\newblock A clarified typology of core-periphery structure in networks.
+\newblock {\em arXiv preprint arXiv:2005.10191}, 2020.
+
+\bibitem{melnikov2018toward}
+A.~{Melnikov}, J.~{Lee}, V.~{Rivera}, M.~{Mazzara}, and L.~{Longo}.
+\newblock Towards dynamic interaction-based reputation models.
+\newblock In {\em 2018 IEEE 32nd International Conference on Advanced
+  Information Networking and Applications (AINA)}, pages 422--428, 2018.
+
+\bibitem{boccaletti2006}
+S.~Boccaletti, V.~Latora, Y.~Moreno, M.~Chavez, and D.-U. Hwang.
+\newblock {Complex networks: Structure and dynamics}.
+\newblock {\em Phys. Rep}, 424:175--308, 2006.
+
 \bibitem{tiago2}
 Tiago~A Schieber, Laura Carpi, Albert D{\'\i}az-Guilera, Panos~M Pardalos,
   Cristina Masoller, and Mart{\'\i}n~G Ravetti.
 \newblock Quantification of network structural dissimilarities.
 \newblock {\em Nature communications}, 8(1):1--10, 2017.
 
-\bibitem{userguide}
+\bibitem{furnato2016}
 Santo Fortunato and Darko Hric.
 \newblock Community detection in networks: A user guide.
 \newblock {\em Physics Reports}, 659:1 -- 44, 2016.
@@ -102,22 +226,6 @@ Martin Rosvall, Jean{-}Charles Delvenne, Michael~T. Schaub, and Renaud
   Lambiotte.
 \newblock Different approaches to community detection.
 \newblock {\em CoRR}, abs/1712.06468, 2017.
-
-\bibitem{gallagher2020clarified}
-Ryan~J Gallagher, Jean-Gabriel Young, and Brooke~Foucault Welles.
-\newblock A clarified typology of core-periphery structure in networks.
-\newblock {\em arXiv preprint arXiv:2005.10191}, 2020.
-
-\bibitem{hajra2004}
-Kamalika~Basu Hajra and Parongama Sen.
-\newblock Phase transitions in an aging network.
-\newblock {\em Physical Review E}, 70(5):056103, 2004.
-
-\bibitem{comparison}
-Thorben Funke and Till Becker.
-\newblock Stochastic block models: A comparison of variants and inference
-  methods.
-\newblock {\em PLOS ONE}, 14(4):1--40, 04 2019.
 
 \bibitem{mitzenmacher2004brief}
 Michael Mitzenmacher.
@@ -144,12 +252,6 @@ Espen Alexander F{\"u}rst~EAFI Ihlen.
 \newblock Introduction to multifractal detrended fluctuation analysis in
   matlab.
 \newblock {\em Frontiers in physiology}, 3:141, 2012.
-
-\bibitem{melnikovDynamicInteractionBasedReputation2018}
-A.~{Melnikov}, J.~{Lee}, V.~{Rivera}, M.~{Mazzara}, and L.~{Longo}.
-\newblock Towards dynamic interaction-based reputation models.
-\newblock In {\em 2018 IEEE 32nd International Conference on Advanced
-  Information Networking and Applications (AINA)}, pages 422--428, 2018.
 
 \bibitem{dorogovtsev2001b}
 Sergey~N Dorogovtsev and Jos{\'e}~FF Mendes.
@@ -225,12 +327,6 @@ Marija~Mitrovi{\'c} Dankulov, Roderick Melnik, and Bosiljka Tadi{\'c}.
   collective knowledge.
 \newblock {\em Scientific reports}, 5(1):1--10, 2015.
 
-\bibitem{vranic2021growth}
-Ana Vrani{\'c} and Marija~Mitrovi{\'c} Dankulov.
-\newblock Growth signals determine the topology of evolving networks.
-\newblock {\em Journal of Statistical Mechanics: Theory and Experiment},
-  2021(1):013405, 2021.
-
 \bibitem{backstrom2006group}
 Lars Backstrom, Dan Huttenlocher, Jon Kleinberg, and Xiangyang Lan.
 \newblock Group formation in large social networks: membership, growth, and
@@ -254,43 +350,6 @@ Jeff Alstott, Ed~Bullmore, and Dietmar Plenz.
   distributions.
 \newblock {\em PLOS ONE}, 9(1):1--11, 01 2014.
 
-\bibitem{saxena2021users}
-Akrati Saxena and Harita Reddy.
-\newblock Users roles identification on online crowdsourced q\&a platforms and
-  encyclopedias: a survey.
-\newblock {\em Journal of Computational Social Science}, pages 1--33, 2021.
-
-\bibitem{santos2019activity}
-Tiago Santos, Simon Walk, Roman Kern, Markus Strohmaier, and Denis Helic.
-\newblock Activity archetypes in question-and-answer (q8a) websites—a study
-  of 50 stack exchange instances.
-\newblock {\em ACM Transactions on Social Computing}, 2(1):1--23, 2019.
-
-\bibitem{slag2015one}
-Rogier Slag, Mike de~Waard, and Alberto Bacchelli.
-\newblock One-day flies on stackoverflow-why the vast majority of stackoverflow
-  users only posts once.
-\newblock In {\em 2015 IEEE/ACM 12th Working Conference on Mining Software
-  Repositories}, pages 458--461. IEEE, 2015.
-
-\bibitem{chhabra2020activity}
-Anamika Chhabra and S~RS~Iyengar.
-\newblock Activity-selection behavior of users in stackexchange websites.
-\newblock In {\em Companion Proceedings of the Web Conference 2020}, pages
-  105--106, 2020.
-
-\bibitem{dev2018size}
-Himel Dev, Chase Geigle, Qingtao Hu, Jiahui Zheng, and Hari Sundaram.
-\newblock The size conundrum: Why online knowledge markets can fail at scale.
-\newblock In {\em Proceedings of the 2018 World Wide Web Conference}, pages
-  65--75, 2018.
-
-\bibitem{santos2019self}
-Tiago Santos, Simon Walk, Roman Kern, Markus Strohmaier, and Denis Helic.
-\newblock Self-and cross-excitation in stack exchange question \& answer
-  communities.
-\newblock In {\em The World Wide Web Conference}, pages 1634--1645, 2019.
-
 \bibitem{orsini2015quantifying}
 Chiara Orsini, Marija~M Dankulov, Pol Colomer-de Sim{\'o}n, Almerima Jamakovic,
   Priya Mahadevan, Amin Vahdat, Kevin~E Bassler, Zolt{\'a}n Toroczkai,
@@ -304,10 +363,34 @@ Damon Centola, V{\'\i}ctor~M Egu{\'\i}luz, and Michael~W Macy.
 \newblock {\em Physica A: Statistical Mechanics and its Applications},
   374(1):449--456, 2007.
 
+\bibitem{santos2019activity}
+Tiago Santos, Simon Walk, Roman Kern, Markus Strohmaier, and Denis Helic.
+\newblock Activity archetypes in question-and-answer (q8a) websites—a study
+  of 50 stack exchange instances.
+\newblock {\em ACM Transactions on Social Computing}, 2(1):1--23, 2019.
+
+\bibitem{santos2019self}
+Tiago Santos, Simon Walk, Roman Kern, Markus Strohmaier, and Denis Helic.
+\newblock Self-and cross-excitation in stack exchange question \& answer
+  communities.
+\newblock In {\em The World Wide Web Conference}, pages 1634--1645, 2019.
+
 \bibitem{fortunato2010community}
 Santo Fortunato.
 \newblock Community detection in graphs.
 \newblock {\em Physics reports}, 486(3-5):75--174, 2010.
+
+\bibitem{gabaix1999}
+X.~Gabaix.
+\newblock {Zipf's Law and the Growth of Cities}.
+\newblock {\em Am. Econ. Rev.}, 89:129--132, 1999.
+
+\bibitem{radicchi2008universality}
+Filippo Radicchi, Santo Fortunato, and Claudio Castellano.
+\newblock Universality of citation distributions: Toward an objective measure
+  of scientific impact.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  105(45):17268--17272, 2008.
 
 \bibitem{dover2020sustainable}
 Yaniv Dover, Jacob Goldenberg, and Daniel Shapira.

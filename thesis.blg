@@ -1,145 +1,186 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: 1-MainMatter/Chapter_Introduction.aux
 A level-1 auxiliary file: 1-MainMatter/Chapter_Methodology.aux
 A level-1 auxiliary file: 1-MainMatter/Chapter_DrivingSignal.aux
 A level-1 auxiliary file: 1-MainMatter/Chapter_GroupsGrowth.aux
 A level-1 auxiliary file: 1-MainMatter/Chapter_Trust1.aux
+A level-1 auxiliary file: 1-MainMatter/Chapter_Conclusions.aux
 A level-1 auxiliary file: 2-Appendix/Appendix_SEdata.aux
 A level-1 auxiliary file: 2-Appendix/Appendix_SEparameters.aux
 A level-1 auxiliary file: 2-Appendix/Appendix_sliding_window.aux
 A level-1 auxiliary file: 2-Appendix/Appendix_robust.aux
 The style file: unsrt.bst
 Database file #1: sample.bib
-You're missing a field name---line 1045 of file sample.bib
- : 
- : %   title={Expressing trust with temporal frequency of user interaction in online communities},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 1402 of file sample.bib
+Repeated entry---line 1347 of file sample.bib
  : @article{smiljanic2017associative
  :                                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1500 of file sample.bib
+Repeated entry---line 1443 of file sample.bib
  : @article{dankulov2015dynamics
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1588 of file sample.bib
+Repeated entry---line 1528 of file sample.bib
  : @inproceedings{kairam2012life
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1597 of file sample.bib
+Repeated entry---line 1537 of file sample.bib
  : @inproceedings{backstrom2006group
  :                                  ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1686 of file sample.bib
- : 
- : @article{martin,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 1711 of file sample.bib
+Repeated entry---line 1648 of file sample.bib
  : @article{centola2007cascade
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1722 of file sample.bib
+Repeated entry---line 1659 of file sample.bib
  : @article{fortunato2010community
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1908 of file sample.bib
+Repeated entry---line 1845 of file sample.bib
  : @article{mitzenmacher2004brief
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1919 of file sample.bib
+Repeated entry---line 1856 of file sample.bib
  : @article{qian2014origin
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1930 of file sample.bib
+Repeated entry---line 1867 of file sample.bib
  : @article{mondani2014fat
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1941 of file sample.bib
+Repeated entry---line 1878 of file sample.bib
  : @article{frasco2014spatially
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1952 of file sample.bib
+Repeated entry---line 1889 of file sample.bib
  : @article{fu2005growth
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1969 of file sample.bib
+Repeated entry---line 1906 of file sample.bib
  : @inproceedings{zheleva2009co
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2041 of file sample.bib
+Repeated entry---line 1956 of file sample.bib
+ : @article{radicchi2008universality
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1978 of file sample.bib
  : @article{smiljanic2017associative
  :                                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2108 of file sample.bib
+Repeated entry---line 2045 of file sample.bib
  : @inproceedings{kairam2012life
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2212 of file sample.bib
+Repeated entry---line 2149 of file sample.bib
  : @article{powerlaw
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2228 of file sample.bib
+Repeated entry---line 2165 of file sample.bib
  : @article{vranic2021growth
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2240 of file sample.bib
+Repeated entry---line 2177 of file sample.bib
  : @article{mitrovic2011quantitative
  :                                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2251 of file sample.bib
+Repeated entry---line 2188 of file sample.bib
  : @article{dankulov2015dynamics
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2300 of file sample.bib
+Repeated entry---line 2237 of file sample.bib
  : @inproceedings{backstrom2006group
  :                                  ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 2313 of file sample.bib
+ : @article{ladyman2013
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2343 of file sample.bib
+ : @article{barabasi1999
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2387 of file sample.bib
+ : @book{newman2010
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2464 of file sample.bib
+ : @article{dorogovtsev2001b
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2481 of file sample.bib
+ : @article{hajra2004
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2521 of file sample.bib
+ : @article{tiago2
+ :                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2531 of file sample.bib
+ : @article{ihlen2012
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2551 of file sample.bib
+ : @article{kantelhardt2002
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2587 of file sample.bib
+ : @article{suvakov2013
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2596 of file sample.bib
+ : @inproceedings{myers2014
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2681 of file sample.bib
+ : @article{sarigol2014
+ :                     ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "comparison"
 Warning--empty journal in latora2017complex
 Warning--empty publisher in caldarelli2007scalefree
 Warning--empty publisher in guide_temporal
 Warning--empty booktitle in yashkina2020
-You've used 58 entries,
+You've used 74 entries,
             1791 wiz_defined-function locations,
-            803 strings with 14674 characters,
-and the built_in function-call counts, 14844 in all, are:
-= -- 1305
-> -- 706
-< -- 11
-+ -- 257
-- -- 199
-* -- 1097
-:= -- 2319
-add.period$ -- 179
-call.type$ -- 58
-change.case$ -- 53
+            881 strings with 16740 characters,
+and the built_in function-call counts, 18076 in all, are:
+= -- 1593
+> -- 863
+< -- 8
++ -- 316
+- -- 242
+* -- 1338
+:= -- 2878
+add.period$ -- 227
+call.type$ -- 74
+change.case$ -- 67
 chr.to.int$ -- 0
-cite$ -- 62
-duplicate$ -- 648
-empty$ -- 1414
-format.name$ -- 199
-if$ -- 3311
+cite$ -- 78
+duplicate$ -- 769
+empty$ -- 1730
+format.name$ -- 242
+if$ -- 3982
 int.to.chr$ -- 0
-int.to.str$ -- 58
-missing$ -- 63
-newline$ -- 294
-num.names$ -- 58
-pop$ -- 144
+int.to.str$ -- 74
+missing$ -- 81
+newline$ -- 374
+num.names$ -- 74
+pop$ -- 170
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 320
+skip$ -- 339
 stack$ -- 0
-substring$ -- 1069
-swap$ -- 162
-text.length$ -- 11
+substring$ -- 1327
+swap$ -- 155
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 145
-width$ -- 60
-write$ -- 637
-(There were 21 error messages)
+while$ -- 178
+width$ -- 76
+write$ -- 808
+(There were 31 error messages)

@@ -1,4 +1,5 @@
 \chapter{The choice of the sliding window} % Main chapter title
+\label{App:sliding}
 
 To study of the evolution of Stack Exchange communities, we chose to at each time step $t$ analyze the structure of interaction networks created in the period $[t, t+\tau)$. By this, we have better insight into how network properties evolve. However, it is not defined what value the sliding window should take. The previous studies showed that the value of a sliding window determines how much information is saved. If $\tau$ is small, sub-networks are sparse, while for a large sliding window, important changes in the measures may not be detected \cite{krings2012effects, arnold2021moving}. We analyze how network properties and dynamic reputation depend on the window size. For example, we use Astronomy and compare the active and closed communities. Similar conclusions can be observed for other pairs of communities. The time window of 30 days approximates the one month.  
 
@@ -10,6 +11,6 @@ As before, we study the structure of created sub-networks through the lens of co
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{figures/stackexchange/sliding_window.pdf}
-	\caption{Results for different sliding windows. Example is for astronomy, blue solid lines- active, orange dashed lines - closed site. }
+	\caption[Stack Exchange properties for different sliding window.]{Results for different sliding windows. Example is for astronomy, blue solid lines- active, orange dashed lines - closed site. }
 	\label{fig:windows}
 \end{figure}

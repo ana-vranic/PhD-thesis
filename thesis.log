@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  16 SEP 2022 16:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  29 SEP 2022 15:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -344,157 +344,7 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
-)
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 
-(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/ot2enc.def
-File: ot2enc.def 2001/08/11 v3.3a Cyrillic encoding definition file
-Now handling font encoding OT2 ...
-... processing UTF-8 mapping file for font encoding OT2
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ot2enc.dfu
-File: ot2enc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
-   defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00BB (decimal 187)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0237 (decimal 567)
-   defining Unicode char U+0400 (decimal 1024)
-   defining Unicode char U+0401 (decimal 1025)
-   defining Unicode char U+0402 (decimal 1026)
-   defining Unicode char U+0403 (decimal 1027)
-   defining Unicode char U+0404 (decimal 1028)
-   defining Unicode char U+0405 (decimal 1029)
-   defining Unicode char U+0406 (decimal 1030)
-   defining Unicode char U+0408 (decimal 1032)
-   defining Unicode char U+0409 (decimal 1033)
-   defining Unicode char U+040A (decimal 1034)
-   defining Unicode char U+040B (decimal 1035)
-   defining Unicode char U+040C (decimal 1036)
-   defining Unicode char U+040D (decimal 1037)
-   defining Unicode char U+040F (decimal 1039)
-   defining Unicode char U+0410 (decimal 1040)
-   defining Unicode char U+0411 (decimal 1041)
-   defining Unicode char U+0412 (decimal 1042)
-   defining Unicode char U+0413 (decimal 1043)
-   defining Unicode char U+0414 (decimal 1044)
-   defining Unicode char U+0415 (decimal 1045)
-   defining Unicode char U+0416 (decimal 1046)
-   defining Unicode char U+0417 (decimal 1047)
-   defining Unicode char U+0418 (decimal 1048)
-   defining Unicode char U+0419 (decimal 1049)
-   defining Unicode char U+041A (decimal 1050)
-   defining Unicode char U+041B (decimal 1051)
-   defining Unicode char U+041C (decimal 1052)
-   defining Unicode char U+041D (decimal 1053)
-   defining Unicode char U+041E (decimal 1054)
-   defining Unicode char U+041F (decimal 1055)
-   defining Unicode char U+0420 (decimal 1056)
-   defining Unicode char U+0421 (decimal 1057)
-   defining Unicode char U+0422 (decimal 1058)
-   defining Unicode char U+0423 (decimal 1059)
-   defining Unicode char U+0424 (decimal 1060)
-   defining Unicode char U+0425 (decimal 1061)
-   defining Unicode char U+0426 (decimal 1062)
-   defining Unicode char U+0427 (decimal 1063)
-   defining Unicode char U+0428 (decimal 1064)
-   defining Unicode char U+0429 (decimal 1065)
-   defining Unicode char U+042A (decimal 1066)
-   defining Unicode char U+042B (decimal 1067)
-   defining Unicode char U+042C (decimal 1068)
-   defining Unicode char U+042D (decimal 1069)
-   defining Unicode char U+042E (decimal 1070)
-   defining Unicode char U+042F (decimal 1071)
-   defining Unicode char U+0430 (decimal 1072)
-   defining Unicode char U+0431 (decimal 1073)
-   defining Unicode char U+0432 (decimal 1074)
-   defining Unicode char U+0433 (decimal 1075)
-   defining Unicode char U+0434 (decimal 1076)
-   defining Unicode char U+0435 (decimal 1077)
-   defining Unicode char U+0436 (decimal 1078)
-   defining Unicode char U+0437 (decimal 1079)
-   defining Unicode char U+0438 (decimal 1080)
-   defining Unicode char U+0439 (decimal 1081)
-   defining Unicode char U+043A (decimal 1082)
-   defining Unicode char U+043B (decimal 1083)
-   defining Unicode char U+043C (decimal 1084)
-   defining Unicode char U+043D (decimal 1085)
-   defining Unicode char U+043E (decimal 1086)
-   defining Unicode char U+043F (decimal 1087)
-   defining Unicode char U+0440 (decimal 1088)
-   defining Unicode char U+0441 (decimal 1089)
-   defining Unicode char U+0442 (decimal 1090)
-   defining Unicode char U+0443 (decimal 1091)
-   defining Unicode char U+0444 (decimal 1092)
-   defining Unicode char U+0445 (decimal 1093)
-   defining Unicode char U+0446 (decimal 1094)
-   defining Unicode char U+0447 (decimal 1095)
-   defining Unicode char U+0448 (decimal 1096)
-   defining Unicode char U+0449 (decimal 1097)
-   defining Unicode char U+044A (decimal 1098)
-   defining Unicode char U+044B (decimal 1099)
-   defining Unicode char U+044C (decimal 1100)
-   defining Unicode char U+044D (decimal 1101)
-   defining Unicode char U+044E (decimal 1102)
-   defining Unicode char U+044F (decimal 1103)
-   defining Unicode char U+0450 (decimal 1104)
-   defining Unicode char U+0451 (decimal 1105)
-   defining Unicode char U+0452 (decimal 1106)
-   defining Unicode char U+0453 (decimal 1107)
-   defining Unicode char U+0454 (decimal 1108)
-   defining Unicode char U+0455 (decimal 1109)
-   defining Unicode char U+0456 (decimal 1110)
-   defining Unicode char U+0458 (decimal 1112)
-   defining Unicode char U+0459 (decimal 1113)
-   defining Unicode char U+045A (decimal 1114)
-   defining Unicode char U+045B (decimal 1115)
-   defining Unicode char U+045C (decimal 1116)
-   defining Unicode char U+045D (decimal 1117)
-   defining Unicode char U+045F (decimal 1119)
-   defining Unicode char U+0462 (decimal 1122)
-   defining Unicode char U+0463 (decimal 1123)
-   defining Unicode char U+0472 (decimal 1138)
-   defining Unicode char U+0473 (decimal 1139)
-   defining Unicode char U+0474 (decimal 1140)
-   defining Unicode char U+0475 (decimal 1141)
-   defining Unicode char U+04C1 (decimal 1217)
-   defining Unicode char U+04C2 (decimal 1218)
-   defining Unicode char U+04D0 (decimal 1232)
-   defining Unicode char U+04D1 (decimal 1233)
-   defining Unicode char U+04D2 (decimal 1234)
-   defining Unicode char U+04D3 (decimal 1235)
-   defining Unicode char U+04D6 (decimal 1238)
-   defining Unicode char U+04D7 (decimal 1239)
-   defining Unicode char U+04DC (decimal 1244)
-   defining Unicode char U+04DD (decimal 1245)
-   defining Unicode char U+04DE (decimal 1246)
-   defining Unicode char U+04DF (decimal 1247)
-   defining Unicode char U+04E2 (decimal 1250)
-   defining Unicode char U+04E3 (decimal 1251)
-   defining Unicode char U+04E4 (decimal 1252)
-   defining Unicode char U+04E5 (decimal 1253)
-   defining Unicode char U+04E6 (decimal 1254)
-   defining Unicode char U+04E7 (decimal 1255)
-   defining Unicode char U+04EC (decimal 1260)
-   defining Unicode char U+04ED (decimal 1261)
-   defining Unicode char U+04EE (decimal 1262)
-   defining Unicode char U+04EF (decimal 1263)
-   defining Unicode char U+04F0 (decimal 1264)
-   defining Unicode char U+04F1 (decimal 1265)
-   defining Unicode char U+04F2 (decimal 1266)
-   defining Unicode char U+04F3 (decimal 1267)
-   defining Unicode char U+04F4 (decimal 1268)
-   defining Unicode char U+04F5 (decimal 1269)
-   defining Unicode char U+04F8 (decimal 1272)
-   defining Unicode char U+04F9 (decimal 1273)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-   defining Unicode char U+2116 (decimal 8470)
-))
 (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2aenc.def
 File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
 Now handling font encoding T2A ...
@@ -699,12 +549,153 @@ File: t2aenc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
    defining Unicode char U+FB05 (decimal 64261)
    defining Unicode char U+FB06 (decimal 64262)
 ))
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
-12.
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/ot2enc.def
+File: ot2enc.def 2001/08/11 v3.3a Cyrillic encoding definition file
+Now handling font encoding OT2 ...
+... processing UTF-8 mapping file for font encoding OT2
 
-(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
-File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-))
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot2enc.dfu
+File: ot2enc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0402 (decimal 1026)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0404 (decimal 1028)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+0409 (decimal 1033)
+   defining Unicode char U+040A (decimal 1034)
+   defining Unicode char U+040B (decimal 1035)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040F (decimal 1039)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0452 (decimal 1106)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0454 (decimal 1108)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+0459 (decimal 1113)
+   defining Unicode char U+045A (decimal 1114)
+   defining Unicode char U+045B (decimal 1115)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045F (decimal 1119)
+   defining Unicode char U+0462 (decimal 1122)
+   defining Unicode char U+0463 (decimal 1123)
+   defining Unicode char U+0472 (decimal 1138)
+   defining Unicode char U+0473 (decimal 1139)
+   defining Unicode char U+0474 (decimal 1140)
+   defining Unicode char U+0475 (decimal 1141)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+2116 (decimal 8470)
+)))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2020/02/14 3.40 The Babel package
 
@@ -741,17 +732,805 @@ Package babel Info: Making " an active character on input line 46.
 (/usr/share/texlive/texmf-dist/tex/generic/babel-serbianc/serbianc.ldf
 Language: serbianc 2019/12/15 3.0a Serbian Cyrillic support for the Babel syste
 m
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
+Language: russian 2017/08/12 1.3j Russian support for the Babel system
+LaTeX Info: Redefining \cyrillictext on input line 79.
+LaTeX Info: Redefining \textcyrillic on input line 95.
+Package babel Info: Default for \cyrdash is provided on input line 157.
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/tempora/tempora.sty
+Package: tempora 2016/02/02 (msharpe) Style file for Tempora.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2cenc.def
+File: t2cenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
+Now handling font encoding T2C ...
+... processing UTF-8 mapping file for font encoding T2C
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t2cenc.dfu
+File: t2cenc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040F (decimal 1039)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045F (decimal 1119)
+   defining Unicode char U+048C (decimal 1164)
+   defining Unicode char U+048D (decimal 1165)
+   defining Unicode char U+048E (decimal 1166)
+   defining Unicode char U+048F (decimal 1167)
+   defining Unicode char U+0494 (decimal 1172)
+   defining Unicode char U+0495 (decimal 1173)
+   defining Unicode char U+049A (decimal 1178)
+   defining Unicode char U+049B (decimal 1179)
+   defining Unicode char U+049E (decimal 1182)
+   defining Unicode char U+049F (decimal 1183)
+   defining Unicode char U+04A2 (decimal 1186)
+   defining Unicode char U+04A3 (decimal 1187)
+   defining Unicode char U+04A6 (decimal 1190)
+   defining Unicode char U+04A7 (decimal 1191)
+   defining Unicode char U+04A8 (decimal 1192)
+   defining Unicode char U+04A9 (decimal 1193)
+   defining Unicode char U+04AC (decimal 1196)
+   defining Unicode char U+04AD (decimal 1197)
+   defining Unicode char U+04B2 (decimal 1202)
+   defining Unicode char U+04B3 (decimal 1203)
+   defining Unicode char U+04B4 (decimal 1204)
+   defining Unicode char U+04B5 (decimal 1205)
+   defining Unicode char U+04B6 (decimal 1206)
+   defining Unicode char U+04B7 (decimal 1207)
+   defining Unicode char U+04BA (decimal 1210)
+   defining Unicode char U+04BB (decimal 1211)
+   defining Unicode char U+04BC (decimal 1212)
+   defining Unicode char U+04BD (decimal 1213)
+   defining Unicode char U+04BE (decimal 1214)
+   defining Unicode char U+04BF (decimal 1215)
+   defining Unicode char U+04C0 (decimal 1216)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04C5 (decimal 1221)
+   defining Unicode char U+04C6 (decimal 1222)
+   defining Unicode char U+04C7 (decimal 1223)
+   defining Unicode char U+04C8 (decimal 1224)
+   defining Unicode char U+04CD (decimal 1229)
+   defining Unicode char U+04CE (decimal 1230)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04D8 (decimal 1240)
+   defining Unicode char U+04D9 (decimal 1241)
+   defining Unicode char U+04DA (decimal 1242)
+   defining Unicode char U+04DB (decimal 1243)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E0 (decimal 1248)
+   defining Unicode char U+04E1 (decimal 1249)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04E8 (decimal 1256)
+   defining Unicode char U+04E9 (decimal 1257)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2benc.def
+File: t2benc.def 2005/09/27 v1.0i Cyrillic encoding definition file
+Now handling font encoding T2B ...
+... processing UTF-8 mapping file for font encoding T2B
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t2benc.dfu
+File: t2benc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+0409 (decimal 1033)
+   defining Unicode char U+040A (decimal 1034)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040E (decimal 1038)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+0459 (decimal 1113)
+   defining Unicode char U+045A (decimal 1114)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045E (decimal 1118)
+   defining Unicode char U+0492 (decimal 1170)
+   defining Unicode char U+0493 (decimal 1171)
+   defining Unicode char U+0494 (decimal 1172)
+   defining Unicode char U+0495 (decimal 1173)
+   defining Unicode char U+0496 (decimal 1174)
+   defining Unicode char U+0497 (decimal 1175)
+   defining Unicode char U+049A (decimal 1178)
+   defining Unicode char U+049B (decimal 1179)
+   defining Unicode char U+04A2 (decimal 1186)
+   defining Unicode char U+04A3 (decimal 1187)
+   defining Unicode char U+04A4 (decimal 1188)
+   defining Unicode char U+04A5 (decimal 1189)
+   defining Unicode char U+04AE (decimal 1198)
+   defining Unicode char U+04AF (decimal 1199)
+   defining Unicode char U+04B2 (decimal 1202)
+   defining Unicode char U+04B3 (decimal 1203)
+   defining Unicode char U+04B6 (decimal 1206)
+   defining Unicode char U+04B7 (decimal 1207)
+   defining Unicode char U+04BA (decimal 1210)
+   defining Unicode char U+04BB (decimal 1211)
+   defining Unicode char U+04C0 (decimal 1216)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04C3 (decimal 1219)
+   defining Unicode char U+04C4 (decimal 1220)
+   defining Unicode char U+04C5 (decimal 1221)
+   defining Unicode char U+04C6 (decimal 1222)
+   defining Unicode char U+04C7 (decimal 1223)
+   defining Unicode char U+04C8 (decimal 1224)
+   defining Unicode char U+04CB (decimal 1227)
+   defining Unicode char U+04CC (decimal 1228)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04D8 (decimal 1240)
+   defining Unicode char U+04D9 (decimal 1241)
+   defining Unicode char U+04DA (decimal 1242)
+   defining Unicode char U+04DB (decimal 1243)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E0 (decimal 1248)
+   defining Unicode char U+04E1 (decimal 1249)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04E8 (decimal 1256)
+   defining Unicode char U+04E9 (decimal 1257)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F6 (decimal 1270)
+   defining Unicode char U+04F7 (decimal 1271)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+04FA (decimal 1274)
+   defining Unicode char U+04FB (decimal 1275)
+   defining Unicode char U+04FC (decimal 1276)
+   defining Unicode char U+04FD (decimal 1277)
+   defining Unicode char U+04FE (decimal 1278)
+   defining Unicode char U+04FF (decimal 1279)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/greek-fontenc/lgrenc.def
+File: lgrenc.def 2019/07/09 v0.13.3 LGR Greek font encoding definitions
+Now handling font encoding LGR ...
+... processing UTF-8 mapping file for font encoding LGR
+
+(/usr/share/texlive/texmf-dist/tex/latex/greek-inputenc/lgrenc.dfu
+File: lgrenc.dfu 2019/07/11 1.7 UTF-8 support for Greek
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0259 (decimal 601)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+0374 (decimal 884)
+   defining Unicode char U+0375 (decimal 885)
+   defining Unicode char U+037A (decimal 890)
+   defining Unicode char U+037E (decimal 894)
+   defining Unicode char U+0384 (decimal 900)
+   defining Unicode char U+0385 (decimal 901)
+   defining Unicode char U+0386 (decimal 902)
+   defining Unicode char U+0387 (decimal 903)
+   defining Unicode char U+0388 (decimal 904)
+   defining Unicode char U+0389 (decimal 905)
+   defining Unicode char U+038A (decimal 906)
+   defining Unicode char U+038C (decimal 908)
+   defining Unicode char U+038E (decimal 910)
+   defining Unicode char U+038F (decimal 911)
+   defining Unicode char U+0390 (decimal 912)
+   defining Unicode char U+0391 (decimal 913)
+   defining Unicode char U+0392 (decimal 914)
+   defining Unicode char U+0393 (decimal 915)
+   defining Unicode char U+0394 (decimal 916)
+   defining Unicode char U+0395 (decimal 917)
+   defining Unicode char U+0396 (decimal 918)
+   defining Unicode char U+0397 (decimal 919)
+   defining Unicode char U+0398 (decimal 920)
+   defining Unicode char U+0399 (decimal 921)
+   defining Unicode char U+039A (decimal 922)
+   defining Unicode char U+039B (decimal 923)
+   defining Unicode char U+039C (decimal 924)
+   defining Unicode char U+039D (decimal 925)
+   defining Unicode char U+039E (decimal 926)
+   defining Unicode char U+039F (decimal 927)
+   defining Unicode char U+03A0 (decimal 928)
+   defining Unicode char U+03A1 (decimal 929)
+   defining Unicode char U+03A3 (decimal 931)
+   defining Unicode char U+03A4 (decimal 932)
+   defining Unicode char U+03A5 (decimal 933)
+   defining Unicode char U+03A6 (decimal 934)
+   defining Unicode char U+03A7 (decimal 935)
+   defining Unicode char U+03A8 (decimal 936)
+   defining Unicode char U+03A9 (decimal 937)
+   defining Unicode char U+03AA (decimal 938)
+   defining Unicode char U+03AB (decimal 939)
+   defining Unicode char U+03AC (decimal 940)
+   defining Unicode char U+03AD (decimal 941)
+   defining Unicode char U+03AE (decimal 942)
+   defining Unicode char U+03AF (decimal 943)
+   defining Unicode char U+03B0 (decimal 944)
+   defining Unicode char U+03B1 (decimal 945)
+   defining Unicode char U+03B2 (decimal 946)
+   defining Unicode char U+03B3 (decimal 947)
+   defining Unicode char U+03B4 (decimal 948)
+   defining Unicode char U+03B5 (decimal 949)
+   defining Unicode char U+03B6 (decimal 950)
+   defining Unicode char U+03B7 (decimal 951)
+   defining Unicode char U+03B8 (decimal 952)
+   defining Unicode char U+03B9 (decimal 953)
+   defining Unicode char U+03BA (decimal 954)
+   defining Unicode char U+03BB (decimal 955)
+   defining Unicode char U+03BC (decimal 956)
+   defining Unicode char U+03BD (decimal 957)
+   defining Unicode char U+03BE (decimal 958)
+   defining Unicode char U+03BF (decimal 959)
+   defining Unicode char U+03C0 (decimal 960)
+   defining Unicode char U+03C1 (decimal 961)
+   defining Unicode char U+03C2 (decimal 962)
+   defining Unicode char U+03C3 (decimal 963)
+   defining Unicode char U+03C4 (decimal 964)
+   defining Unicode char U+03C5 (decimal 965)
+   defining Unicode char U+03C6 (decimal 966)
+   defining Unicode char U+03C7 (decimal 967)
+   defining Unicode char U+03C8 (decimal 968)
+   defining Unicode char U+03C9 (decimal 969)
+   defining Unicode char U+03CA (decimal 970)
+   defining Unicode char U+03CB (decimal 971)
+   defining Unicode char U+03CC (decimal 972)
+   defining Unicode char U+03CD (decimal 973)
+   defining Unicode char U+03CE (decimal 974)
+   defining Unicode char U+03D0 (decimal 976)
+   defining Unicode char U+03D1 (decimal 977)
+   defining Unicode char U+03D5 (decimal 981)
+   defining Unicode char U+03D6 (decimal 982)
+   defining Unicode char U+03D8 (decimal 984)
+   defining Unicode char U+03D9 (decimal 985)
+   defining Unicode char U+03DA (decimal 986)
+   defining Unicode char U+03DB (decimal 987)
+   defining Unicode char U+03DC (decimal 988)
+   defining Unicode char U+03DD (decimal 989)
+   defining Unicode char U+03DF (decimal 991)
+   defining Unicode char U+03E0 (decimal 992)
+   defining Unicode char U+03E1 (decimal 993)
+   defining Unicode char U+03F0 (decimal 1008)
+   defining Unicode char U+03F1 (decimal 1009)
+   defining Unicode char U+03F4 (decimal 1012)
+   defining Unicode char U+03F5 (decimal 1013)
+   defining Unicode char U+1F00 (decimal 7936)
+   defining Unicode char U+1F01 (decimal 7937)
+   defining Unicode char U+1F02 (decimal 7938)
+   defining Unicode char U+1F03 (decimal 7939)
+   defining Unicode char U+1F04 (decimal 7940)
+   defining Unicode char U+1F05 (decimal 7941)
+   defining Unicode char U+1F06 (decimal 7942)
+   defining Unicode char U+1F07 (decimal 7943)
+   defining Unicode char U+1F08 (decimal 7944)
+   defining Unicode char U+1F09 (decimal 7945)
+   defining Unicode char U+1F0A (decimal 7946)
+   defining Unicode char U+1F0B (decimal 7947)
+   defining Unicode char U+1F0C (decimal 7948)
+   defining Unicode char U+1F0D (decimal 7949)
+   defining Unicode char U+1F0E (decimal 7950)
+   defining Unicode char U+1F0F (decimal 7951)
+   defining Unicode char U+1F10 (decimal 7952)
+   defining Unicode char U+1F11 (decimal 7953)
+   defining Unicode char U+1F12 (decimal 7954)
+   defining Unicode char U+1F13 (decimal 7955)
+   defining Unicode char U+1F14 (decimal 7956)
+   defining Unicode char U+1F15 (decimal 7957)
+   defining Unicode char U+1F18 (decimal 7960)
+   defining Unicode char U+1F19 (decimal 7961)
+   defining Unicode char U+1F1A (decimal 7962)
+   defining Unicode char U+1F1B (decimal 7963)
+   defining Unicode char U+1F1C (decimal 7964)
+   defining Unicode char U+1F1D (decimal 7965)
+   defining Unicode char U+1F20 (decimal 7968)
+   defining Unicode char U+1F21 (decimal 7969)
+   defining Unicode char U+1F22 (decimal 7970)
+   defining Unicode char U+1F23 (decimal 7971)
+   defining Unicode char U+1F24 (decimal 7972)
+   defining Unicode char U+1F25 (decimal 7973)
+   defining Unicode char U+1F26 (decimal 7974)
+   defining Unicode char U+1F27 (decimal 7975)
+   defining Unicode char U+1F28 (decimal 7976)
+   defining Unicode char U+1F29 (decimal 7977)
+   defining Unicode char U+1F2A (decimal 7978)
+   defining Unicode char U+1F2B (decimal 7979)
+   defining Unicode char U+1F2C (decimal 7980)
+   defining Unicode char U+1F2D (decimal 7981)
+   defining Unicode char U+1F2E (decimal 7982)
+   defining Unicode char U+1F2F (decimal 7983)
+   defining Unicode char U+1F30 (decimal 7984)
+   defining Unicode char U+1F31 (decimal 7985)
+   defining Unicode char U+1F32 (decimal 7986)
+   defining Unicode char U+1F33 (decimal 7987)
+   defining Unicode char U+1F34 (decimal 7988)
+   defining Unicode char U+1F35 (decimal 7989)
+   defining Unicode char U+1F36 (decimal 7990)
+   defining Unicode char U+1F37 (decimal 7991)
+   defining Unicode char U+1F38 (decimal 7992)
+   defining Unicode char U+1F39 (decimal 7993)
+   defining Unicode char U+1F3A (decimal 7994)
+   defining Unicode char U+1F3B (decimal 7995)
+   defining Unicode char U+1F3C (decimal 7996)
+   defining Unicode char U+1F3D (decimal 7997)
+   defining Unicode char U+1F3E (decimal 7998)
+   defining Unicode char U+1F3F (decimal 7999)
+   defining Unicode char U+1F40 (decimal 8000)
+   defining Unicode char U+1F41 (decimal 8001)
+   defining Unicode char U+1F42 (decimal 8002)
+   defining Unicode char U+1F43 (decimal 8003)
+   defining Unicode char U+1F44 (decimal 8004)
+   defining Unicode char U+1F45 (decimal 8005)
+   defining Unicode char U+1F48 (decimal 8008)
+   defining Unicode char U+1F49 (decimal 8009)
+   defining Unicode char U+1F4A (decimal 8010)
+   defining Unicode char U+1F4B (decimal 8011)
+   defining Unicode char U+1F4C (decimal 8012)
+   defining Unicode char U+1F4D (decimal 8013)
+   defining Unicode char U+1F50 (decimal 8016)
+   defining Unicode char U+1F51 (decimal 8017)
+   defining Unicode char U+1F52 (decimal 8018)
+   defining Unicode char U+1F53 (decimal 8019)
+   defining Unicode char U+1F54 (decimal 8020)
+   defining Unicode char U+1F55 (decimal 8021)
+   defining Unicode char U+1F56 (decimal 8022)
+   defining Unicode char U+1F57 (decimal 8023)
+   defining Unicode char U+1F59 (decimal 8025)
+   defining Unicode char U+1F5B (decimal 8027)
+   defining Unicode char U+1F5D (decimal 8029)
+   defining Unicode char U+1F5F (decimal 8031)
+   defining Unicode char U+1F60 (decimal 8032)
+   defining Unicode char U+1F61 (decimal 8033)
+   defining Unicode char U+1F62 (decimal 8034)
+   defining Unicode char U+1F63 (decimal 8035)
+   defining Unicode char U+1F64 (decimal 8036)
+   defining Unicode char U+1F65 (decimal 8037)
+   defining Unicode char U+1F66 (decimal 8038)
+   defining Unicode char U+1F67 (decimal 8039)
+   defining Unicode char U+1F68 (decimal 8040)
+   defining Unicode char U+1F69 (decimal 8041)
+   defining Unicode char U+1F6A (decimal 8042)
+   defining Unicode char U+1F6B (decimal 8043)
+   defining Unicode char U+1F6C (decimal 8044)
+   defining Unicode char U+1F6D (decimal 8045)
+   defining Unicode char U+1F6E (decimal 8046)
+   defining Unicode char U+1F6F (decimal 8047)
+   defining Unicode char U+1F70 (decimal 8048)
+   defining Unicode char U+1F71 (decimal 8049)
+   defining Unicode char U+1F72 (decimal 8050)
+   defining Unicode char U+1F73 (decimal 8051)
+   defining Unicode char U+1F74 (decimal 8052)
+   defining Unicode char U+1F75 (decimal 8053)
+   defining Unicode char U+1F76 (decimal 8054)
+   defining Unicode char U+1F77 (decimal 8055)
+   defining Unicode char U+1F78 (decimal 8056)
+   defining Unicode char U+1F79 (decimal 8057)
+   defining Unicode char U+1F7A (decimal 8058)
+   defining Unicode char U+1F7B (decimal 8059)
+   defining Unicode char U+1F7C (decimal 8060)
+   defining Unicode char U+1F7D (decimal 8061)
+   defining Unicode char U+1F80 (decimal 8064)
+   defining Unicode char U+1F81 (decimal 8065)
+   defining Unicode char U+1F82 (decimal 8066)
+   defining Unicode char U+1F83 (decimal 8067)
+   defining Unicode char U+1F84 (decimal 8068)
+   defining Unicode char U+1F85 (decimal 8069)
+   defining Unicode char U+1F86 (decimal 8070)
+   defining Unicode char U+1F87 (decimal 8071)
+   defining Unicode char U+1F88 (decimal 8072)
+   defining Unicode char U+1F89 (decimal 8073)
+   defining Unicode char U+1F8A (decimal 8074)
+   defining Unicode char U+1F8B (decimal 8075)
+   defining Unicode char U+1F8C (decimal 8076)
+   defining Unicode char U+1F8D (decimal 8077)
+   defining Unicode char U+1F8E (decimal 8078)
+   defining Unicode char U+1F8F (decimal 8079)
+   defining Unicode char U+1F90 (decimal 8080)
+   defining Unicode char U+1F91 (decimal 8081)
+   defining Unicode char U+1F92 (decimal 8082)
+   defining Unicode char U+1F93 (decimal 8083)
+   defining Unicode char U+1F94 (decimal 8084)
+   defining Unicode char U+1F95 (decimal 8085)
+   defining Unicode char U+1F96 (decimal 8086)
+   defining Unicode char U+1F97 (decimal 8087)
+   defining Unicode char U+1F98 (decimal 8088)
+   defining Unicode char U+1F99 (decimal 8089)
+   defining Unicode char U+1F9A (decimal 8090)
+   defining Unicode char U+1F9B (decimal 8091)
+   defining Unicode char U+1F9C (decimal 8092)
+   defining Unicode char U+1F9D (decimal 8093)
+   defining Unicode char U+1F9E (decimal 8094)
+   defining Unicode char U+1F9F (decimal 8095)
+   defining Unicode char U+1FA0 (decimal 8096)
+   defining Unicode char U+1FA1 (decimal 8097)
+   defining Unicode char U+1FA2 (decimal 8098)
+   defining Unicode char U+1FA3 (decimal 8099)
+   defining Unicode char U+1FA4 (decimal 8100)
+   defining Unicode char U+1FA5 (decimal 8101)
+   defining Unicode char U+1FA6 (decimal 8102)
+   defining Unicode char U+1FA7 (decimal 8103)
+   defining Unicode char U+1FA8 (decimal 8104)
+   defining Unicode char U+1FA9 (decimal 8105)
+   defining Unicode char U+1FAA (decimal 8106)
+   defining Unicode char U+1FAB (decimal 8107)
+   defining Unicode char U+1FAC (decimal 8108)
+   defining Unicode char U+1FAD (decimal 8109)
+   defining Unicode char U+1FAE (decimal 8110)
+   defining Unicode char U+1FAF (decimal 8111)
+   defining Unicode char U+1FB0 (decimal 8112)
+   defining Unicode char U+1FB1 (decimal 8113)
+   defining Unicode char U+1FB2 (decimal 8114)
+   defining Unicode char U+1FB3 (decimal 8115)
+   defining Unicode char U+1FB4 (decimal 8116)
+   defining Unicode char U+1FB6 (decimal 8118)
+   defining Unicode char U+1FB7 (decimal 8119)
+   defining Unicode char U+1FB8 (decimal 8120)
+   defining Unicode char U+1FB9 (decimal 8121)
+   defining Unicode char U+1FBA (decimal 8122)
+   defining Unicode char U+1FBB (decimal 8123)
+   defining Unicode char U+1FBC (decimal 8124)
+   defining Unicode char U+1FBD (decimal 8125)
+   defining Unicode char U+1FBE (decimal 8126)
+   defining Unicode char U+1FBF (decimal 8127)
+   defining Unicode char U+1FC0 (decimal 8128)
+   defining Unicode char U+1FC1 (decimal 8129)
+   defining Unicode char U+1FC2 (decimal 8130)
+   defining Unicode char U+1FC3 (decimal 8131)
+   defining Unicode char U+1FC4 (decimal 8132)
+   defining Unicode char U+1FC6 (decimal 8134)
+   defining Unicode char U+1FC7 (decimal 8135)
+   defining Unicode char U+1FC8 (decimal 8136)
+   defining Unicode char U+1FC9 (decimal 8137)
+   defining Unicode char U+1FCA (decimal 8138)
+   defining Unicode char U+1FCB (decimal 8139)
+   defining Unicode char U+1FCC (decimal 8140)
+   defining Unicode char U+1FCD (decimal 8141)
+   defining Unicode char U+1FCE (decimal 8142)
+   defining Unicode char U+1FCF (decimal 8143)
+   defining Unicode char U+1FD0 (decimal 8144)
+   defining Unicode char U+1FD1 (decimal 8145)
+   defining Unicode char U+1FD2 (decimal 8146)
+   defining Unicode char U+1FD3 (decimal 8147)
+   defining Unicode char U+1FD6 (decimal 8150)
+   defining Unicode char U+1FD7 (decimal 8151)
+   defining Unicode char U+1FD8 (decimal 8152)
+   defining Unicode char U+1FD9 (decimal 8153)
+   defining Unicode char U+1FDA (decimal 8154)
+   defining Unicode char U+1FDB (decimal 8155)
+   defining Unicode char U+1FDD (decimal 8157)
+   defining Unicode char U+1FDE (decimal 8158)
+   defining Unicode char U+1FDF (decimal 8159)
+   defining Unicode char U+1FE0 (decimal 8160)
+   defining Unicode char U+1FE1 (decimal 8161)
+   defining Unicode char U+1FE2 (decimal 8162)
+   defining Unicode char U+1FE3 (decimal 8163)
+   defining Unicode char U+1FE4 (decimal 8164)
+   defining Unicode char U+1FE5 (decimal 8165)
+   defining Unicode char U+1FE6 (decimal 8166)
+   defining Unicode char U+1FE7 (decimal 8167)
+   defining Unicode char U+1FE8 (decimal 8168)
+   defining Unicode char U+1FE9 (decimal 8169)
+   defining Unicode char U+1FEA (decimal 8170)
+   defining Unicode char U+1FEB (decimal 8171)
+   defining Unicode char U+1FEC (decimal 8172)
+   defining Unicode char U+1FED (decimal 8173)
+   defining Unicode char U+1FEE (decimal 8174)
+   defining Unicode char U+1FEF (decimal 8175)
+   defining Unicode char U+1FF2 (decimal 8178)
+   defining Unicode char U+1FF3 (decimal 8179)
+   defining Unicode char U+1FF4 (decimal 8180)
+   defining Unicode char U+1FF6 (decimal 8182)
+   defining Unicode char U+1FF7 (decimal 8183)
+   defining Unicode char U+1FF8 (decimal 8184)
+   defining Unicode char U+1FF9 (decimal 8185)
+   defining Unicode char U+1FFA (decimal 8186)
+   defining Unicode char U+1FFB (decimal 8187)
+   defining Unicode char U+1FFC (decimal 8188)
+   defining Unicode char U+1FFD (decimal 8189)
+   defining Unicode char U+1FFE (decimal 8190)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+10144 (decimal 65860)
+   defining Unicode char U+10145 (decimal 65861)
+   defining Unicode char U+10146 (decimal 65862)
+   defining Unicode char U+10147 (decimal 65863)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
+File: greek-fontenc.def 2015/08/04 v0.13.4 Common Greek font encoding definitio
+ns
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2014/03/23 v1.0d Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count294
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)))
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks24
-)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
@@ -799,7 +1578,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks25
+\@emptytoks=\toks26
 \ex@=\dimen182
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -809,13 +1588,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count294
+\inf@bad=\count295
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count295
-\leftroot@=\count296
+\uproot@=\count296
+\leftroot@=\count297
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count297
-\DOTSCASE@=\count298
+\classnum@=\count298
+\DOTSCASE@=\count299
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -824,26 +1603,26 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen184
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count299
-\c@MaxMatrixCols=\count300
+\macc@depth=\count300
+\c@MaxMatrixCols=\count301
 \dotsspace@=\muskip16
-\c@parentequation=\count301
-\dspbrk@lvl=\count302
-\tag@help=\toks26
-\row@=\count303
-\column@=\count304
-\maxfields@=\count305
-\andhelp@=\toks27
+\c@parentequation=\count302
+\dspbrk@lvl=\count303
+\tag@help=\toks27
+\row@=\count304
+\column@=\count305
+\maxfields@=\count306
+\andhelp@=\toks28
 \eqnshift@=\dimen185
 \alignsep@=\dimen186
 \tagshift@=\dimen187
 \tagwidth@=\dimen188
 \totwidth@=\dimen189
 \lineht@=\dimen190
-\@envbody=\toks28
+\@envbody=\toks29
 \multlinegap=\skip192
 \multlinetaggap=\skip193
-\mathdisplay@stack=\toks29
+\mathdisplay@stack=\toks30
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
@@ -897,8 +1676,8 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
 \@linkdim=\dimen191
-\Hy@linkcounter=\count306
-\Hy@pagecounter=\count307
+\Hy@linkcounter=\count307
+\Hy@pagecounter=\count308
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -911,8 +1690,15 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count308
-\pdfmajorversion=\count309
+\Hy@SavedSpaceFactor=\count309
+\pdfmajorversion=\count310
+Package hyperref Info: Option `unicode' set `true' on input line 3502.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2020/01/14 v7.00d Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
 Package hyperref Info: Option `breaklinks' set `true' on input line 4421.
 Package hyperref Info: Option `colorlinks' set `true' on input line 4421.
 Package hyperref Info: Option `bookmarks' set `true' on input line 4421.
@@ -923,7 +1709,7 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count310
+\c@Hy@tempcnt=\count311
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -939,7 +1725,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count311
+\Fld@menulength=\count312
 \Field@Width=\dimen193
 \Fld@charsize=\dimen194
 Package hyperref Info: Hyper figures OFF on input line 6430.
@@ -955,15 +1741,15 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count312
-\c@Item=\count313
-\c@Hfootnote=\count314
+\Hy@abspage=\count313
+\c@Item=\count314
+\c@Hfootnote=\count315
 )
 (/usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
 Package: memhfixc 2019/10/24 v1.18 nameref/hyperref package fixes for memoir cl
 ass
-\c@memhycontfloat=\count315
-\c@Hpagenote=\count316
+\c@memhycontfloat=\count316
+\c@Hpagenote=\count317
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -974,8 +1760,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count317
-\c@bookmark@seq@number=\count318
+\Fld@listcount=\count318
+\c@bookmark@seq@number=\count319
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -994,9 +1780,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count319
-\Gm@cntv=\count320
-\c@Gm@tempcnt=\count321
+\Gm@cnth=\count320
+\Gm@cntv=\count321
+\c@Gm@tempcnt=\count322
 \Gm@bindingoffset=\dimen195
 \Gm@wd@mp=\dimen196
 \Gm@odd@mp=\dimen197
@@ -1005,12 +1791,12 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen257
 \Gm@layouthoffset=\dimen258
 \Gm@layoutvoffset=\dimen259
-\Gm@dimlist=\toks30
+\Gm@dimlist=\toks31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip195
-\multirow@cntb=\count322
+\multirow@cntb=\count323
 \multirow@dima=\skip196
 \bigstrutjot=\dimen260
 )
@@ -1021,54 +1807,20 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \aftertitleunit=\skip198
 \ttl@plus=\dimen261
 \ttl@minus=\dimen262
-\ttl@toksa=\toks31
+\ttl@toksa=\toks32
 \titlewidth=\dimen263
 \titlewidthlast=\dimen264
 \titlewidthfirst=\dimen265
 )
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
+\enitkv@toks@=\toks33
 \labelindent=\skip256
 \enit@outerparindent=\dimen266
-\enit@toks=\toks32
+\enit@toks=\toks34
 \enit@inbox=\box53
-\enit@count@id=\count323
-\enitdp@description=\count324
-)
-(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count325
-\calc@Bcount=\count326
-\calc@Adimen=\dimen267
-\calc@Bdimen=\dimen268
-\calc@Askip=\skip257
-\calc@Bskip=\skip258
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count327
-\calc@Cskip=\skip259
-)
-(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
-)
-\AM@pagewidth=\dimen269
-\AM@pageheight=\dimen270
-
-(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
-)
-\AM@pagebox=\box54
-\AM@global@opts=\toks33
-\AM@pagecnt=\count328
-\AM@toc@title=\toks34
-\c@AM@survey=\count329
-\AM@templatesizebox=\box55
+\enit@count@id=\count324
+\enitdp@description=\count325
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
@@ -1076,20 +1828,20 @@ Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
-\CenteringLeftskip=\skip260
-\RaggedLeftLeftskip=\skip261
-\RaggedRightLeftskip=\skip262
-\CenteringRightskip=\skip263
-\RaggedLeftRightskip=\skip264
-\RaggedRightRightskip=\skip265
-\CenteringParfillskip=\skip266
-\RaggedLeftParfillskip=\skip267
-\RaggedRightParfillskip=\skip268
-\JustifyingParfillskip=\skip269
-\CenteringParindent=\skip270
-\RaggedLeftParindent=\skip271
-\RaggedRightParindent=\skip272
-\JustifyingParindent=\skip273
+\CenteringLeftskip=\skip257
+\RaggedLeftLeftskip=\skip258
+\RaggedRightLeftskip=\skip259
+\CenteringRightskip=\skip260
+\RaggedLeftRightskip=\skip261
+\RaggedRightRightskip=\skip262
+\CenteringParfillskip=\skip263
+\RaggedLeftParfillskip=\skip264
+\RaggedRightParfillskip=\skip265
+\JustifyingParfillskip=\skip266
+\CenteringParindent=\skip267
+\RaggedLeftParindent=\skip268
+\RaggedRightParindent=\skip269
+\JustifyingParindent=\skip270
 )
 (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
@@ -1097,26 +1849,26 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen271
-\captionmargin@=\dimen272
-\captionwidth=\dimen273
-\caption@tempdima=\dimen274
-\caption@indent=\dimen275
-\caption@parindent=\dimen276
-\caption@hangindent=\dimen277
+\captionmargin=\dimen267
+\captionmargin@=\dimen268
+\captionwidth=\dimen269
+\caption@tempdima=\dimen270
+\caption@indent=\dimen271
+\caption@parindent=\dimen272
+\caption@hangindent=\dimen273
 Package caption Info: memoir document class detected.
 )
-\c@KVtest=\count330
-\sf@farskip=\skip274
-\sf@captopadj=\dimen278
-\sf@capskip=\skip275
-\sf@nearskip=\skip276
-\c@subfigure=\count331
-\c@subfigure@save=\count332
-\c@subtable=\count333
-\c@subtable@save=\count334
-\sf@top=\skip277
-\sf@bottom=\skip278
+\c@KVtest=\count326
+\sf@farskip=\skip271
+\sf@captopadj=\dimen274
+\sf@capskip=\skip272
+\sf@nearskip=\skip273
+\c@subfigure=\count327
+\c@subfigure@save=\count328
+\c@subtable=\count329
+\c@subtable@save=\count330
+\sf@top=\skip274
+\sf@bottom=\skip275
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titleps.sty
 Package: titleps 2019/10/16 v2.13 Page styles
@@ -1124,34 +1876,34 @@ Package: titleps 2019/10/16 v2.13 Page styles
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip279
-\f@nch@O@elh=\skip280
-\f@nch@O@erh=\skip281
-\f@nch@O@olh=\skip282
-\f@nch@O@orh=\skip283
-\f@nch@O@elf=\skip284
-\f@nch@O@erf=\skip285
-\f@nch@O@olf=\skip286
-\f@nch@O@orf=\skip287
+\f@nch@headwidth=\skip276
+\f@nch@O@elh=\skip277
+\f@nch@O@erh=\skip278
+\f@nch@O@olh=\skip279
+\f@nch@O@orh=\skip280
+\f@nch@O@elf=\skip281
+\f@nch@O@erf=\skip282
+\f@nch@O@olf=\skip283
+\f@nch@O@orf=\skip284
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count335
+\c@float@type=\count331
 \float@exts=\toks35
-\float@box=\box56
+\float@box=\box54
 \@float@everytoks=\toks36
-\@floatcapt=\box57
+\@floatcapt=\box55
 )
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks37
-\footnotemargin=\dimen279
+\footnotemargin=\dimen275
 
 
 LaTeX Warning: Command \@makecol  has changed.
                Check if current package is valid.
 
-\c@pp@next@reset=\count336
+\c@pp@next@reset=\count332
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -1162,65 +1914,104 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count337
-\l__pdf_internal_box=\box58
+\l__kernel_color_stack_int=\count333
+\l__pdf_internal_box=\box56
 )
-(./thesis.aux (./1-MainMatter/Chapter_Methodology.aux
-
-LaTeX Warning: Label `fig:hurst_signals' multiply defined.
-
-) (./1-MainMatter/Chapter_DrivingSignal.aux)
-(./1-MainMatter/Chapter_GroupsGrowth.aux) (./1-MainMatter/Chapter_Trust1.aux)
-(./2-Appendix/Appendix_SEdata.aux) (./2-Appendix/Appendix_SEparameters.aux)
-(./2-Appendix/Appendix_sliding_window.aux) (./2-Appendix/Appendix_robust.aux))
-\openout1 = `thesis.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 85.
-LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 8
-5.
+(./thesis.aux (./1-MainMatter/Chapter_Introduction.aux)
+LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 2
+3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/ot2cmr.fd
 File: ot2cmr.fd 2001/08/11 v3.2c Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Trying to load font information for T2A+ptm on input line 8
-5.
-LaTeX Font Info:    No file T2Aptm.fd. on input line 85.
+(./1-MainMatter/Chapter_Methodology.aux)
+(./1-MainMatter/Chapter_DrivingSignal.aux)
+(./1-MainMatter/Chapter_GroupsGrowth.aux) (./1-MainMatter/Chapter_Trust1.aux)
+(./1-MainMatter/Chapter_Conclusions.aux) (./2-Appendix/Appendix_SEdata.aux)
+(./2-Appendix/Appendix_SEparameters.aux)
+(./2-Appendix/Appendix_sliding_window.aux) (./2-Appendix/Appendix_robust.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 89.
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 8
+9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T2C/cmr/m/n on input line 89.
+LaTeX Font Info:    Trying to load font information for T2C+cmr on input line 8
+9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2ccmr.fd
+File: t2ccmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T2B/cmr/m/n on input line 89.
+LaTeX Font Info:    Trying to load font information for T2B+cmr on input line 8
+9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2bcmr.fd
+File: t2bcmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 89.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 8
+9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
+File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
+)
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 89
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+LaTeX Font Info:    Trying to load font information for OT2+ptm on input line 8
+9.
+LaTeX Font Info:    No file OT2ptm.fd. on input line 89.
 
 
-LaTeX Font Warning: Font shape `T2A/ptm/m/n' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 85.
+LaTeX Font Warning: Font shape `OT2/ptm/m/n' undefined
+(Font)              using `OT2/cmr/m/n' instead on input line 89.
 
+\c@mv@tabular=\count334
+\c@mv@boldtabular=\count335
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count338
-\scratchdimen=\dimen280
-\scratchbox=\box59
-\nofMPsegments=\count339
-\nofMParguments=\count340
+\scratchcounter=\count336
+\scratchdimen=\dimen276
+\scratchbox=\box57
+\nofMPsegments=\count337
+\nofMParguments=\count338
 \everyMPshowfont=\toks38
-\MPscratchCnt=\count341
-\MPscratchDim=\dimen281
-\MPnumerator=\count342
-\makeMPintoPDFobject=\count343
+\MPscratchCnt=\count339
+\MPscratchDim=\dimen277
+\MPnumerator=\count340
+\makeMPintoPDFobject=\count341
 \everyMPtoPDFconversion=\toks39
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1239,8 +2030,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring ON on input line 85.
+\AtBeginShipoutBox=\box58
+Package hyperref Info: Link coloring ON on input line 89.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1251,14 +2042,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count344
+\c@section@level=\count342
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 85.
-LaTeX Info: Redefining \ref on input line 85.
-LaTeX Info: Redefining \pageref on input line 85.
-LaTeX Info: Redefining \nameref on input line 85.
+LaTeX Info: Redefining \nameref on input line 89.
+LaTeX Info: Redefining \ref on input line 89.
+LaTeX Info: Redefining \pageref on input line 89.
+LaTeX Info: Redefining \nameref on input line 89.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -1298,36 +2089,22 @@ LaTeX Info: Redefining \nameref on input line 85.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-)
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 85.
+LaTeX Info: Redefining \selectfont on input line 89.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 10
-0.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
-File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-\openout2 = `1-MainMatter/Chapter_Methodology.aux'.
+\openout2 = `1-MainMatter/Chapter_Introduction.aux'.
 
 
-(./1-MainMatter/Chapter_Methodology.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+(./1-MainMatter/Chapter_Introduction.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1341,298 +2118,323 @@ Non-PDF special ignored!
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<figs/Konigsberg_bridges.png, id=240, 303.1325pt x 238.8925pt>
+<figs/Konigsberg_bridges.png, id=167, 303.1325pt x 238.8925pt>
 File: figs/Konigsberg_bridges.png Graphic file (type png)
 <use figs/Konigsberg_bridges.png>
-Package pdftex.def Info: figs/Konigsberg_bridges.png  used on input line 18.
+Package pdftex.def Info: figs/Konigsberg_bridges.png  used on input line 20.
 (pdftex.def)             Requested size: 145.11053pt x 114.36089pt.
-<figs/Konigsberg_graph.png, id=241, 501.875pt x 401.5pt>
+<figs/Konigsberg_graph.png, id=168, 501.875pt x 401.5pt>
 File: figs/Konigsberg_graph.png Graphic file (type png)
 <use figs/Konigsberg_graph.png>
-Package pdftex.def Info: figs/Konigsberg_graph.png  used on input line 19.
+Package pdftex.def Info: figs/Konigsberg_graph.png  used on input line 21.
 (pdftex.def)             Requested size: 145.11053pt x 116.08893pt.
-<figs/directed_graph.pdf, id=246, 597.50786pt x 421.10078pt>
-File: figs/directed_graph.pdf Graphic file (type pdf)
-<use figs/directed_graph.pdf>
-Package pdftex.def Info: figs/directed_graph.pdf  used on input line 41.
-(pdftex.def)             Requested size: 338.58632pt x 238.62276pt.
  [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.45 
-      <./figs/Konigsberg_bridges.png> <./figs/Konigsberg_graph.png>]
-<figs/multi_graph.pdf, id=264, 421.10078pt x 298.75392pt>
+l.95 E
+      ven though, graphical representation can be useful for describing the ...
+ <./figs/Konigsberg_bridges.png> <./figs/Konigsberg_graph.png>]
+<figs/directed_graph.pdf, id=194, 597.50786pt x 421.10078pt>
+File: figs/directed_graph.pdf Graphic file (type pdf)
+<use figs/directed_graph.pdf>
+Package pdftex.def Info: figs/directed_graph.pdf  used on input line 108.
+(pdftex.def)             Requested size: 338.58632pt x 238.62276pt.
+<figs/multi_graph.pdf, id=198, 421.10078pt x 298.75392pt>
 File: figs/multi_graph.pdf Graphic file (type pdf)
 <use figs/multi_graph.pdf>
-Package pdftex.def Info: figs/multi_graph.pdf  used on input line 52.
+Package pdftex.def Info: figs/multi_graph.pdf  used on input line 119.
 (pdftex.def)             Requested size: 193.47578pt x 137.26436pt.
- [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2
-}) has been already used, duplicate ignored
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.58 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.58 
-      <./figs/directed_graph.pdf> <./figs/multi_graph.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figs/multi_graph.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
->]
-<figs/bipartite_graph.pdf, id=292, 597.50786pt x 421.10078pt>
+l.125 
+       <./figs/directed_graph.pdf>]
+<figs/bipartite_graph.pdf, id=222, 597.50786pt x 421.10078pt>
 File: figs/bipartite_graph.pdf Graphic file (type pdf)
 <use figs/bipartite_graph.pdf>
-Package pdftex.def Info: figs/bipartite_graph.pdf  used on input line 66.
+Package pdftex.def Info: figs/bipartite_graph.pdf  used on input line 132.
 (pdftex.def)             Requested size: 338.58632pt x 238.62276pt.
- [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4
-}) has been already used, duplicate ignored
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.80 
-      <./figs/bipartite_graph.pdf>]
-<figs/temporal_network.pdf, id=303, 597.50786pt x 341.43306pt>
+l.144 
+       <./figs/multi_graph.pdf>]
+<figs/temporal_network.pdf, id=240, 597.50786pt x 341.43306pt>
 File: figs/temporal_network.pdf Graphic file (type pdf)
 <use figs/temporal_network.pdf>
-Package pdftex.def Info: figs/temporal_network.pdf  used on input line 85.
+Package pdftex.def Info: figs/temporal_network.pdf  used on input line 147.
 (pdftex.def)             Requested size: 338.58632pt x 193.47789pt.
- [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1.5
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.112 
-       <./figs/temporal_network.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-29.
+l.153 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+1.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.153 
+       <./figs/bipartite_graph.pdf> <./figs/temporal_network.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figs/temporal_network.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
+>] [6]) [7]
+\openout2 = `1-MainMatter/Chapter_Methodology.aux'.
+
+ (./1-MainMatter/Chapter_Methodology.tex [8
+
+
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [6] [7] [8] [9]
-[10]
-<figs/ERgraph.pdf, id=372, 686.565pt x 249.77315pt>
+) [9] [10] [11]
+[12] [13]
+<figs/ERgraph.pdf, id=351, 686.565pt x 249.77315pt>
 File: figs/ERgraph.pdf Graphic file (type pdf)
 <use figs/ERgraph.pdf>
-Package pdftex.def Info: figs/ERgraph.pdf  used on input line 371.
+Package pdftex.def Info: figs/ERgraph.pdf  used on input line 228.
 (pdftex.def)             Requested size: 435.32422pt x 158.36787pt.
- [11pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.379 
-       <./figs/ERgraph.pdf>]
-<figs/ER_dist.pdf, id=398, 628.25824pt x 347.3324pt>
+ [14]
+<figs/ER_dist.pdf, id=360, 628.25824pt x 347.3324pt>
 File: figs/ER_dist.pdf Graphic file (type pdf)
 <use figs/ER_dist.pdf>
-Package pdftex.def Info: figs/ER_dist.pdf  used on input line 407.
+Package pdftex.def Info: figs/ER_dist.pdf  used on input line 264.
 (pdftex.def)             Requested size: 435.32422pt x 240.66658pt.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-7}) has been already used, duplicate ignored
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.413 
+l.268 
+       <./figs/ERgraph.pdf>] [16pdfTeX warning (ext4): destination with the sam
+e identifier (name{figure.2.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.285 
        <./figs/ER_dist.pdf>]
-<figs/ws_graph.png, id=452, 885.3075pt x 287.0725pt>
+<figs/ws_graph.png, id=437, 885.3075pt x 287.0725pt>
 File: figs/ws_graph.png Graphic file (type png)
 <use figs/ws_graph.png>
-Package pdftex.def Info: figs/ws_graph.png  used on input line 431.
+Package pdftex.def Info: figs/ws_graph.png  used on input line 288.
 (pdftex.def)             Requested size: 435.32422pt x 141.16173pt.
- [13pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-8}) has been already used, duplicate ignored
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.441 
-       <./figs/ws_graph.png>] [14] [15]
-<figs/aging_nets.png, id=474, 818.30719pt x 260.47313pt>
+l.317 \end{equation}
+                     <./figs/ws_graph.png>] [18]
+<figs/aging_nets.png, id=455, 818.30719pt x 260.47313pt>
 File: figs/aging_nets.png Graphic file (type png)
 <use figs/aging_nets.png>
-Package pdftex.def Info: figs/aging_nets.png  used on input line 524.
+Package pdftex.def Info: figs/aging_nets.png  used on input line 381.
 (pdftex.def)             Requested size: 483.69687pt x 153.96794pt.
-<figs/diagram.png, id=477, 470.4777pt x 344.0052pt>
+ [19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.395 	\item F
+              or example if we fix $\beta=1$ and $\alpha=0$ generated networ...
+ <./figs/aging_nets.png>]
+<figs/diagram.png, id=468, 470.4777pt x 344.0052pt>
 File: figs/diagram.png Graphic file (type png)
 <use figs/diagram.png>
-Package pdftex.def Info: figs/diagram.png  used on input line 550.
+Package pdftex.def Info: figs/diagram.png  used on input line 407.
 (pdftex.def)             Requested size: 290.22107pt x 212.20494pt.
- [16pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-9}) has been already used, duplicate ignored
+ [20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.554 
-       <./figs/aging_nets.png>]
-<figs/Figures/structures.png, id=493, 699.36281pt x 392.21532pt>
+l.427 F
+       igure (\ref{fig:SBM} c) shows how the model represents core-periphery...
+ <./figs/diagram.png>]
+<figs/Figures/structures.png, id=483, 699.36281pt x 392.21532pt>
 File: figs/Figures/structures.png Graphic file (type png)
 <use figs/Figures/structures.png>
-Package pdftex.def Info: figs/Figures/structures.png  used on input line 574.
+Package pdftex.def Info: figs/Figures/structures.png  used on input line 431.
 (pdftex.def)             Requested size: 386.95897pt x 217.01776pt.
- [17pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-10}) has been already used, duplicate ignored
+
+
+LaTeX Warning: Citation `comparison' on page 21 undefined on input line 436.
+
+[21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.578 
-       <./figs/diagram.png>] [18pdfTeX warning (ext4): destination with the sam
-e identifier (name{figure.1.11}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.589 \subsection{The properties of distributions}
-                                                   <./figs/Figures/structures.p
-ng>] [19] [20]
-<figs/Distributions_plots.pdf, id=530, 642.89563pt x 1158.83562pt>
+l.443 
+       <./figs/Figures/structures.png>] [22] [23]
+<figs/Distributions_plots.pdf, id=512, 642.89563pt x 1158.83562pt>
 File: figs/Distributions_plots.pdf Graphic file (type pdf)
 <use figs/Distributions_plots.pdf>
-Package pdftex.def Info: figs/Distributions_plots.pdf  used on input line 660.
+Package pdftex.def Info: figs/Distributions_plots.pdf  used on input line 517.
 (pdftex.def)             Requested size: 362.77264pt x 653.91228pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21] [22pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.1.12}) has been already used, duplicate ignored
+[24]
+Overfull \vbox (1.77434pt too high) has occurred while \output is active []
+
+
+[25pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.688 
-       <./figs/Distributions_plots.pdf>] [23] [24]
-<figs/hurst_signals.pdf, id=619, 1011.78pt x 578.16pt>
+l.540 \end{equation}
+                     <./figs/Distributions_plots.pdf>] [26] [27]
+<figs/hurst_signals.pdf, id=606, 851.75085pt x 486.28426pt>
 File: figs/hurst_signals.pdf Graphic file (type pdf)
 <use figs/hurst_signals.pdf>
-Package pdftex.def Info: figs/hurst_signals.pdf  used on input line 763.
-(pdftex.def)             Requested size: 338.58632pt x 193.47527pt.
- [25pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-13}) has been already used, duplicate ignored
+Package pdftex.def Info: figs/hurst_signals.pdf  used on input line 620.
+(pdftex.def)             Requested size: 386.95897pt x 220.92578pt.
+ [28pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.781 	
-        <./figs/hurst_signals.pdf>]
-<figs/hurst_detrending.pdf, id=665, 1011.78pt x 578.16pt>
+l.629 \end{equation}
+                     <./figs/hurst_signals.pdf>]
+<figs/hurst_detrending.pdf, id=648, 851.75085pt x 489.65208pt>
 File: figs/hurst_detrending.pdf Graphic file (type pdf)
 <use figs/hurst_detrending.pdf>
-Package pdftex.def Info: figs/hurst_detrending.pdf  used on input line 789.
-(pdftex.def)             Requested size: 338.58632pt x 193.47527pt.
- [26pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-14}) has been already used, duplicate ignored
+Package pdftex.def Info: figs/hurst_detrending.pdf  used on input line 646.
+(pdftex.def)             Requested size: 386.95897pt x 222.45583pt.
+ [29pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.807 \end{equation}
-                     <./figs/hurst_detrending.pdf>]
-<figs/hurst_mfdfa.pdf, id=727, 717.23506pt x 469.0323pt>
+l.656 
+       <./figs/hurst_detrending.pdf>]
+<figs/hurst_mfdfa.pdf, id=708, 735.82013pt x 487.61736pt>
 File: figs/hurst_mfdfa.pdf Graphic file (type pdf)
 <use figs/hurst_mfdfa.pdf>
-Package pdftex.def Info: figs/hurst_mfdfa.pdf  used on input line 813.
-(pdftex.def)             Requested size: 338.58632pt x 221.41853pt.
- [27pdfTeX warning (ext4): destination with the same identifier (name{equation.
-1.6.43}) has been already used, duplicate ignored
+Package pdftex.def Info: figs/hurst_mfdfa.pdf  used on input line 670.
+(pdftex.def)             Requested size: 386.95897pt x 256.42703pt.
+ [30pdfTeX warning (ext4): destination with the same identifier (name{equation.
+2.4.42}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.832 \begin{equation}
-                      \label{eq:deltan}pdfTeX warning (ext4): destination with 
-the same identifier (name{figure.1.15}) has been already used, duplicate ignore
-d
+l.682 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+2.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.832 \begin{equation}
-                      \label{eq:deltan} <./figs/hurst_mfdfa.pdf>]
-<figs/DIBRM.pdf, id=784, 401.9909pt x 307.64925pt>
+l.682 
+       <./figs/hurst_mfdfa.pdf>]
+<figs/DIBRM.pdf, id=772, 401.9909pt x 307.64925pt>
 File: figs/DIBRM.pdf Graphic file (type pdf)
 <use figs/DIBRM.pdf>
-Package pdftex.def Info: figs/DIBRM.pdf  used on input line 846.
+Package pdftex.def Info: figs/DIBRM.pdf  used on input line 703.
 (pdftex.def)             Requested size: 241.84843pt x 185.08856pt.
- [28pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-16}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.861 
-       <./figs/DIBRM.pdf>]
-<figs/DIBRM_decay.pdf, id=834, 413.9418pt x 273.59653pt>
+ [31]
+<figs/DIBRM_decay.pdf, id=782, 413.9418pt x 273.59653pt>
 File: figs/DIBRM_decay.pdf Graphic file (type pdf)
 <use figs/DIBRM_decay.pdf>
-Package pdftex.def Info: figs/DIBRM_decay.pdf  used on input line 864.
+Package pdftex.def Info: figs/DIBRM_decay.pdf  used on input line 719.
 (pdftex.def)             Requested size: 241.84843pt x 159.85083pt.
-) [29pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-.17}) has been already used, duplicate ignored
+ [32pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.102 \include{1-MainMatter/Chapter_Methodology}
-                                                 <./figs/DIBRM_decay.pdf>]
+l.727 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+2.12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.727 
+       <./figs/DIBRM.pdf> <./figs/DIBRM_decay.pdf>]) [33]
 \openout2 = `1-MainMatter/Chapter_DrivingSignal.aux'.
 
 
-(./1-MainMatter/Chapter_DrivingSignal.tex [30
+(./1-MainMatter/Chapter_DrivingSignal.tex [34
 
 
 
 ]
-<figs/ciljevi.pdf, id=879, 845.04686pt x 597.50786pt>
+<figs/ciljevi.pdf, id=873, 845.04686pt x 597.50786pt>
 File: figs/ciljevi.pdf Graphic file (type pdf)
 <use figs/ciljevi.pdf>
 Package pdftex.def Info: figs/ciljevi.pdf  used on input line 14.
 (pdftex.def)             Requested size: 338.58632pt x 239.40005pt.
- [31] [32pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.2.1}) has been already used, duplicate ignored
+ [35] [36pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.36 
       <./figs/ciljevi.pdf>]
-<figs/signal4.pdf, id=902, 388.88727pt x 158.90115pt>
+<figs/signal4.pdf, id=896, 388.88727pt x 158.90115pt>
 File: figs/signal4.pdf Graphic file (type pdf)
 <use figs/signal4.pdf>
 Package pdftex.def Info: figs/signal4.pdf  used on input line 42.
 (pdftex.def)             Requested size: 193.47578pt x 79.05516pt.
-<figs/signal5.pdf, id=903, 388.88727pt x 158.90115pt>
+<figs/signal5.pdf, id=897, 388.88727pt x 158.90115pt>
 File: figs/signal5.pdf Graphic file (type pdf)
 <use figs/signal5.pdf>
 Package pdftex.def Info: figs/signal5.pdf  used on input line 43.
 (pdftex.def)             Requested size: 193.47578pt x 79.05516pt.
-<figs/hurst_myspace.pdf, id=904, 412.1774pt x 265.12738pt>
+<figs/hurst_myspace.pdf, id=898, 412.1774pt x 265.12738pt>
 File: figs/hurst_myspace.pdf Graphic file (type pdf)
 <use figs/hurst_myspace.pdf>
 Package pdftex.def Info: figs/hurst_myspace.pdf  used on input line 47.
 (pdftex.def)             Requested size: 217.66211pt x 140.0071pt.
-<figs/signal1.pdf, id=905, 388.88727pt x 158.90115pt>
+<figs/signal1.pdf, id=899, 388.88727pt x 158.90115pt>
 File: figs/signal1.pdf Graphic file (type pdf)
 <use figs/signal1.pdf>
 Package pdftex.def Info: figs/signal1.pdf  used on input line 58.
 (pdftex.def)             Requested size: 193.47578pt x 79.05516pt.
-<figs/signal2.pdf, id=906, 388.88727pt x 158.90115pt>
+<figs/signal2.pdf, id=900, 388.88727pt x 158.90115pt>
 File: figs/signal2.pdf Graphic file (type pdf)
 <use figs/signal2.pdf>
 Package pdftex.def Info: figs/signal2.pdf  used on input line 59.
 (pdftex.def)             Requested size: 193.47578pt x 79.05516pt.
-<figs/signal3.pdf, id=907, 388.88727pt x 158.90115pt>
+<figs/signal3.pdf, id=901, 388.88727pt x 158.90115pt>
 File: figs/signal3.pdf Graphic file (type pdf)
 <use figs/signal3.pdf>
 Package pdftex.def Info: figs/signal3.pdf  used on input line 60.
 (pdftex.def)             Requested size: 193.47578pt x 79.05516pt.
-<figs/hurst_tech_1.pdf, id=908, 412.1774pt x 265.12738pt>
+<figs/hurst_tech_1.pdf, id=902, 412.1774pt x 265.12738pt>
 File: figs/hurst_tech_1.pdf Graphic file (type pdf)
 <use figs/hurst_tech_1.pdf>
 Package pdftex.def Info: figs/hurst_tech_1.pdf  used on input line 65.
 (pdftex.def)             Requested size: 217.66211pt x 140.0071pt.
- [33pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [37pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.73 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.2
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.3
 .3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1641,7 +2443,7 @@ l.73
       <./figs/signal4.pdf> <./figs/signal5.pdf> <./figs/hurst_myspace.pdf> <./f
 igs/signal1.pdf> <./figs/signal2.pdf> <./figs/signal3.pdf> <./figs/hurst_tech_1
 .pdf>]
-<figs/Ddistance.pdf, id=1127, 418.52371pt x 513.72365pt>
+<figs/Ddistance.pdf, id=1122, 418.52371pt x 513.72365pt>
 File: figs/Ddistance.pdf Graphic file (type pdf)
 <use figs/Ddistance.pdf>
 Package pdftex.def Info: figs/Ddistance.pdf  used on input line 83.
@@ -1650,23 +2452,23 @@ Package pdftex.def Info: figs/Ddistance.pdf  used on input line 83.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34]
-<figs/b1.pdf, id=1142, 854.79347pt x 410.81918pt>
+[38]
+<figs/b1.pdf, id=1139, 854.79347pt x 410.81918pt>
 File: figs/b1.pdf Graphic file (type pdf)
 <use figs/b1.pdf>
 Package pdftex.def Info: figs/b1.pdf  used on input line 104.
 (pdftex.def)             Requested size: 435.32422pt x 209.22038pt.
-<figs/b3.pdf, id=1143, 854.79347pt x 410.81918pt>
+<figs/b3.pdf, id=1140, 854.79347pt x 410.81918pt>
 File: figs/b3.pdf Graphic file (type pdf)
 <use figs/b3.pdf>
 Package pdftex.def Info: figs/b3.pdf  used on input line 105.
 (pdftex.def)             Requested size: 435.32422pt x 209.22038pt.
-<figs/b2.pdf, id=1144, 852.33115pt x 408.87442pt>
+<figs/b2.pdf, id=1141, 852.33115pt x 408.87442pt>
 File: figs/b2.pdf Graphic file (type pdf)
 <use figs/b2.pdf>
 Package pdftex.def Info: figs/b2.pdf  used on input line 106.
 (pdftex.def)             Requested size: 435.32422pt x 208.82889pt.
- [35pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [39pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1676,7 +2478,7 @@ l.110
 Overfull \vbox (2.13171pt too high) has occurred while \output is active []
 
 
-[36pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5
+[40pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1691,139 +2493,139 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figs/b3.pdf): PDF inclusion: multiple
 pdfTeX warning: /usr/bin/pdflatex (file ./figs/b2.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-<figs/monofractals.pdf, id=1424, 499.93336pt x 458.02995pt>
+<figs/monofractals.pdf, id=1421, 499.93336pt x 458.02995pt>
 File: figs/monofractals.pdf Graphic file (type pdf)
 <use figs/monofractals.pdf>
 Package pdftex.def Info: figs/monofractals.pdf  used on input line 143.
 (pdftex.def)             Requested size: 290.22107pt x 265.90216pt.
- [37]
-<figs/Ddist_M4_w10.5_w20.5.png, id=1434, 413.3844pt x 505.89pt>
+ [41]
+<figs/Ddist_M4_w10.5_w20.5.png, id=1430, 413.3844pt x 505.89pt>
 File: figs/Ddist_M4_w10.5_w20.5.png Graphic file (type png)
 <use figs/Ddist_M4_w10.5_w20.5.png>
 Package pdftex.def Info: figs/Ddist_M4_w10.5_w20.5.png  used on input line 150.
 
 (pdftex.def)             Requested size: 290.22107pt x 355.1704pt.
- [38pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [42pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.157 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.7}) has been already used, duplicate ignored
+3.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.157 
        <./figs/monofractals.pdf> <./figs/Ddist_M4_w10.5_w20.5.png>]
-<figs/aindex.pdf, id=1467, 404.25774pt x 270.8519pt>
+<figs/aindex.pdf, id=1463, 404.25774pt x 270.8519pt>
 File: figs/aindex.pdf Graphic file (type pdf)
 <use figs/aindex.pdf>
 Package pdftex.def Info: figs/aindex.pdf  used on input line 162.
 (pdftex.def)             Requested size: 217.66211pt x 145.83215pt.
-<figs/clustering.pdf, id=1468, 395.85133pt x 270.8519pt>
+<figs/clustering.pdf, id=1464, 395.85133pt x 270.8519pt>
 File: figs/clustering.pdf Graphic file (type pdf)
 <use figs/clustering.pdf>
 Package pdftex.def Info: figs/clustering.pdf  used on input line 163.
 (pdftex.def)             Requested size: 217.66211pt x 148.9318pt.
-) [39pdfTeX warning (ext4): destination with the same identifier (name{figure.2
-.8}) has been already used, duplicate ignored
+ [43pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.103 \include{1-MainMatter/Chapter_DrivingSignal}
-                                                   <./figs/aindex.pdf> <./figs/
-clustering.pdf>]
+l.175 
+       <./figs/aindex.pdf> <./figs/clustering.pdf>]) [44]
 \openout2 = `1-MainMatter/Chapter_GroupsGrowth.aux'.
 
- (./1-MainMatter/Chapter_GroupsGrowth.tex [40
+
+(./1-MainMatter/Chapter_GroupsGrowth.tex [45
 
 
 
-] [41]
-<figs/Figures/figures/Fig2.png, id=1578, 633.3261pt x 724.3863pt>
+]
+<figs/Figures/figures/Fig2.png, id=1577, 633.3261pt x 724.3863pt>
 File: figs/Figures/figures/Fig2.png Graphic file (type png)
 <use figs/Figures/figures/Fig2.png>
-Package pdftex.def Info: figs/Figures/figures/Fig2.png  used on input line 17.
+Package pdftex.def Info: figs/Figures/figures/Fig2.png  used on input line 18.
 (pdftex.def)             Requested size: 386.95897pt x 442.60452pt.
- [42pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [46pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.30 
+l.31 
       <./figs/Figures/figures/Fig2.png>]
-<figs/Figures/figures/Fig1.png, id=1596, 628.0263pt x 445.9059pt>
+<figs/Figures/figures/Fig1.png, id=1595, 628.0263pt x 445.9059pt>
 File: figs/Figures/figures/Fig1.png Graphic file (type png)
 <use figs/Figures/figures/Fig1.png>
-Package pdftex.def Info: figs/Figures/figures/Fig1.png  used on input line 40.
+Package pdftex.def Info: figs/Figures/figures/Fig1.png  used on input line 41.
 (pdftex.def)             Requested size: 386.95897pt x 274.751pt.
- [43pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [47pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.49 T
+l.50 T
       he complex network models allow us to simulate the growth of these sys...
  <./figs/Figures/figures/Fig1.png>]
-<figs/Figures/figures/test.png, id=1617, 599.22362pt x 393.67175pt>
+<figs/Figures/figures/test.png, id=1615, 599.22362pt x 393.67175pt>
 File: figs/Figures/figures/test.png Graphic file (type png)
 <use figs/Figures/figures/test.png>
-Package pdftex.def Info: figs/Figures/figures/test.png  used on input line 70.
+Package pdftex.def Info: figs/Figures/figures/test.png  used on input line 71.
 (pdftex.def)             Requested size: 299.61107pt x 196.83539pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[44] [45pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.3.3}) has been already used, duplicate ignored
+[48] [49pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.4.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.87 
+l.88 
       <./figs/Figures/figures/test.png>]
-<figs/Figures/figures/Fig5_a.png, id=1640, 463.4916pt x 382.5492pt>
+<figs/Figures/figures/Fig5_a.png, id=1639, 463.4916pt x 382.5492pt>
 File: figs/Figures/figures/Fig5_a.png Graphic file (type png)
 <use figs/Figures/figures/Fig5_a.png>
-Package pdftex.def Info: figs/Figures/figures/Fig5_a.png  used on input line 98
+Package pdftex.def Info: figs/Figures/figures/Fig5_a.png  used on input line 99
 .
 (pdftex.def)             Requested size: 338.58632pt x 279.46872pt.
- [46pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [50pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.105 
+l.106 
        <./figs/Figures/figures/Fig5_a.png>]
 <figs/figures/model_N30.png, id=1650, 692.1057pt x 504.6855pt>
 File: figs/figures/model_N30.png Graphic file (type png)
 <use figs/figures/model_N30.png>
-Package pdftex.def Info: figs/figures/model_N30.png  used on input line 108.
+Package pdftex.def Info: figs/figures/model_N30.png  used on input line 109.
 (pdftex.def)             Requested size: 338.58632pt x 246.89761pt.
- [47pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [51pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.126 
+l.127 
        <./figs/figures/model_N30.png>]
 <figs/Figures/figures/Fig3.png, id=1664, 637.4214pt x 560.3334pt>
 File: figs/Figures/figures/Fig3.png Graphic file (type png)
 <use figs/Figures/figures/Fig3.png>
-Package pdftex.def Info: figs/Figures/figures/Fig3.png  used on input line 131.
+Package pdftex.def Info: figs/Figures/figures/Fig3.png  used on input line 132.
 
 (pdftex.def)             Requested size: 386.95897pt x 340.16127pt.
- [48pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [52pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.137 \begin{equation}
+l.138 \begin{equation}
                        <./figs/Figures/figures/Fig3.png>]
 <figs/Figures/figures/Fig4.png, id=1674, 630.6762pt x 452.4102pt>
 File: figs/Figures/figures/Fig4.png Graphic file (type png)
 <use figs/Figures/figures/Fig4.png>
-Package pdftex.def Info: figs/Figures/figures/Fig4.png  used on input line 168.
+Package pdftex.def Info: figs/Figures/figures/Fig4.png  used on input line 169.
 
 (pdftex.def)             Requested size: 386.95897pt x 277.58516pt.
 
@@ -1831,31 +2633,31 @@ Package pdftex.def Info: figs/Figures/figures/Fig4.png  used on input line 168.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
-[49pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}
+[53pdfTeX warning (ext4): destination with the same identifier (name{table.4.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.178 
+l.179 
       ]
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
 
  []
 
 <figs/figures/FigA1_data.png, id=1691, 686.565pt x 288.3573pt>
 File: figs/figures/FigA1_data.png Graphic file (type png)
 <use figs/figures/FigA1_data.png>
-Package pdftex.def Info: figs/figures/FigA1_data.png  used on input line 198.
-(pdftex.def)             Requested size: 435.32422pt x 182.83205pt.
+Package pdftex.def Info: figs/figures/FigA1_data.png  used on input line 199.
+(pdftex.def)             Requested size: 386.95897pt x 162.52177pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
 
  []
 
@@ -1865,47 +2667,46 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <figs/figures/FigA2-model.png, id=1694, 689.4558pt x 288.3573pt>
 File: figs/figures/FigA2-model.png Graphic file (type png)
 <use figs/figures/FigA2-model.png>
-Package pdftex.def Info: figs/figures/FigA2-model.png  used on input line 226.
-(pdftex.def)             Requested size: 435.32422pt x 182.07085pt.
+Package pdftex.def Info: figs/figures/FigA2-model.png  used on input line 227.
+(pdftex.def)             Requested size: 386.95897pt x 161.84418pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [50pdfTeX warning (ext4): destination with the same identifier (name{figure.3
-.7}) has been already used, duplicate ignored
+[54pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.104 \include{1-MainMatter/Chapter_GroupsGrowth}
-                                                 pdfTeX warning (ext4): destina
-tion with the same identifier (name{table.3.2}) has been already used, duplicat
-e ignored
+l.232 \clearpage
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{table.4.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.104 \include{1-MainMatter/Chapter_GroupsGrowth}
-                                                  <./figs/Figures/figures/Fig4.
-png>] [51pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.3.8}) has been already used, duplicate ignored
+l.232 \clearpage
+                 <./figs/Figures/figures/Fig4.png>] [55pdfTeX warning (ext4): d
+estination with the same identifier (name{figure.4.8}) has been already used, d
+uplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.104 \include{1-MainMatter/Chapter_GroupsGrowth}
-                                                 pdfTeX warning (ext4): destina
-tion with the same identifier (name{table.3.3}) has been already used, duplicat
-e ignored
+l.232 \clearpage
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{table.4.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.104 \include{1-MainMatter/Chapter_GroupsGrowth}
-                                                  <./figs/figures/FigA1_data.pn
-g>] [52pdfTeX warning (ext4): destination with the same identifier (name{figure
-.3.9}) has been already used, duplicate ignored
+l.232 \clearpage
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{figure.4.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.104 \include{1-MainMatter/Chapter_GroupsGrowth}
-                                                  <./figs/figures/FigA2-model.p
-ng>]
+l.232 \clearpage
+                 <./figs/figures/FigA1_data.png> <./figs/figures/FigA2-model.pn
+g>]) [56
+
+]
 \openout2 = `1-MainMatter/Chapter_Trust1.aux'.
 
  (./1-MainMatter/Chapter_Trust1.tex
@@ -1914,12 +2715,12 @@ LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [53
+) [57
 
 
 
 ]
-<figs/figures/stackexchange/degree_distribution_fullnet.pdf, id=1731, 1078.3129
+<figs/figures/stackexchange/degree_distribution_fullnet.pdf, id=1735, 1078.3129
 9pt x 289.56242pt>
 File: figs/figures/stackexchange/degree_distribution_fullnet.pdf Graphic file (
 type pdf)
@@ -1927,20 +2728,20 @@ type pdf)
 Package pdftex.def Info: figs/figures/stackexchange/degree_distribution_fullnet
 .pdf  used on input line 30.
 (pdftex.def)             Requested size: 483.69687pt x 129.89098pt.
-<figs/figures/stackexchange/neighdeg_fullnet.pdf, id=1733, 1071.8043pt x 289.56
+<figs/figures/stackexchange/neighdeg_fullnet.pdf, id=1737, 1071.8043pt x 289.56
 242pt>
 File: figs/figures/stackexchange/neighdeg_fullnet.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/neighdeg_fullnet.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/neighdeg_fullnet.pdf  used 
 on input line 39.
 (pdftex.def)             Requested size: 483.69687pt x 130.67744pt.
- [54pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [58pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.50 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.5
 .2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1948,7 +2749,7 @@ l.50
 l.50 
       <./figs/figures/stackexchange/degree_distribution_fullnet.pdf> <./figs/fi
 gures/stackexchange/neighdeg_fullnet.pdf>]
-<figs/figures/stackexchange/clustering_fullnet.pdf, id=1834, 1078.31299pt x 289
+<figs/figures/stackexchange/clustering_fullnet.pdf, id=1838, 1078.31299pt x 289
 .56242pt>
 File: figs/figures/stackexchange/clustering_fullnet.pdf Graphic file (type pdf)
 
@@ -1956,21 +2757,21 @@ File: figs/figures/stackexchange/clustering_fullnet.pdf Graphic file (type pdf)
 Package pdftex.def Info: figs/figures/stackexchange/clustering_fullnet.pdf  use
 d on input line 53.
 (pdftex.def)             Requested size: 483.69687pt x 129.89098pt.
-<figs/figures/stackexchange/clustering.pdf, id=1836, 1076.97302pt x 287.24126pt
+<figs/figures/stackexchange/clustering.pdf, id=1840, 1076.97302pt x 287.24126pt
 >
 File: figs/figures/stackexchange/clustering.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/clustering.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/clustering.pdf  used on inp
 ut line 66.
 (pdftex.def)             Requested size: 483.69687pt x 129.00754pt.
- [55pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [59pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.74 
       <./figs/figures/stackexchange/clustering_fullnet.pdf>]
-<figs/figures/stackexchange/popular_casual_users.pdf, id=1891, 918.4473pt x 394
+<figs/figures/stackexchange/popular_casual_users.pdf, id=1894, 918.4473pt x 394
 .84764pt>
 File: figs/figures/stackexchange/popular_casual_users.pdf Graphic file (type pd
 f)
@@ -1978,13 +2779,13 @@ f)
 Package pdftex.def Info: figs/figures/stackexchange/popular_casual_users.pdf  u
 sed on input line 79.
 (pdftex.def)             Requested size: 483.69687pt x 207.94276pt.
- [56pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [60pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.87 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.5
 .5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1992,13 +2793,13 @@ l.87
 l.87 
       <./figs/figures/stackexchange/clustering.pdf> <./figs/figures/stackexchan
 ge/popular_casual_users.pdf>]
-<figs/figures/stackexchange/core_users.pdf, id=1986, 914.6205pt x 394.84764pt>
+<figs/figures/stackexchange/core_users.pdf, id=1989, 914.6205pt x 394.84764pt>
 File: figs/figures/stackexchange/core_users.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/core_users.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/core_users.pdf  used on inp
 ut line 92.
 (pdftex.def)             Requested size: 483.69687pt x 208.81638pt.
-<figs/figures/stackexchange/jaccard_heatmap.pdf, id=1988, 914.59097pt x 413.432
+<figs/figures/stackexchange/jaccard_heatmap.pdf, id=1991, 914.59097pt x 413.432
 71pt>
 File: figs/figures/stackexchange/jaccard_heatmap.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/jaccard_heatmap.pdf>
@@ -2009,7 +2810,7 @@ n input line 102.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figs/figures/stackexchange/jaccard.pdf, id=1990, 1078.83055pt x 290.07999pt>
+<figs/figures/stackexchange/jaccard.pdf, id=1993, 1078.83055pt x 290.07999pt>
 File: figs/figures/stackexchange/jaccard.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/jaccard.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/jaccard.pdf  used on input 
@@ -2018,14 +2819,14 @@ line 111.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[57pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6
+[61pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.118 
        <./figs/figures/stackexchange/core_users.pdf>]
-<figs/figures/stackexchange/core_connectivity.pdf, id=2040, 902.71353pt x 394.8
+<figs/figures/stackexchange/core_connectivity.pdf, id=2045, 902.71353pt x 394.8
 4764pt>
 File: figs/figures/stackexchange/core_connectivity.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/core_connectivity.pdf>
@@ -2036,7 +2837,7 @@ Package pdftex.def Info: figs/figures/stackexchange/core_connectivity.pdf  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/figures/stackexchange/reputation.pdf, id=2041, 902.23953pt x 394.84764pt>
+<figs/figures/stackexchange/reputation.pdf, id=2046, 902.23953pt x 394.84764pt>
 
 File: figs/figures/stackexchange/reputation.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/reputation.pdf>
@@ -2046,41 +2847,41 @@ ut line 132.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[58pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7
+[62pdfTeX warning (ext4): destination with the same identifier (name{figure.5.7
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.138 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-4.8}) has been already used, duplicate ignored
+5.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.138 
        <./figs/figures/stackexchange/jaccard_heatmap.pdf> <./figs/figures/stack
-exchange/jaccard.pdf>] [59pdfTeX warning (ext4): destination with the same iden
-tifier (name{figure.4.9}) has been already used, duplicate ignored
+exchange/jaccard.pdf>] [63pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.5.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.142 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-4.10}) has been already used, duplicate ignored
+5.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.142 
        <./figs/figures/stackexchange/core_connectivity.pdf> <./figs/figures/sta
 ckexchange/reputation.pdf>]
-<figs/figures/stackexchange/core_reputation.pdf, id=2237, 1088.88005pt x 287.24
+<figs/figures/stackexchange/core_reputation.pdf, id=2241, 1088.88005pt x 287.24
 126pt>
 File: figs/figures/stackexchange/core_reputation.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/core_reputation.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/core_reputation.pdf  used o
 n input line 145.
 (pdftex.def)             Requested size: 483.69687pt x 127.59622pt.
-<figs/figures/stackexchange/core_per_ratio_reputation.pdf, id=2238, 1069.30374p
+<figs/figures/stackexchange/core_per_ratio_reputation.pdf, id=2242, 1069.30374p
 t x 287.24126pt>
 File: figs/figures/stackexchange/core_per_ratio_reputation.pdf Graphic file (ty
 pe pdf)
@@ -2088,7 +2889,7 @@ pe pdf)
 Package pdftex.def Info: figs/figures/stackexchange/core_per_ratio_reputation.p
 df  used on input line 154.
 (pdftex.def)             Requested size: 483.69687pt x 129.93233pt.
-<figs/figures/stackexchange/gini.pdf, id=2240, 1097.49709pt x 287.24126pt>
+<figs/figures/stackexchange/gini.pdf, id=2244, 1097.49709pt x 287.24126pt>
 File: figs/figures/stackexchange/gini.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/gini.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/gini.pdf  used on input lin
@@ -2098,21 +2899,21 @@ e 163.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[60pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+[64pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.169 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-4.12}) has been already used, duplicate ignored
+5.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.169 
        <./figs/figures/stackexchange/core_reputation.pdf> <./figs/figures/stack
 exchange/core_per_ratio_reputation.pdf>]
-<figs/figures/stackexchange/reputation_assortativity.pdf, id=2329, 1079.40398pt
+<figs/figures/stackexchange/reputation_assortativity.pdf, id=2333, 1079.40398pt
  x 287.24126pt>
 File: figs/figures/stackexchange/reputation_assortativity.pdf Graphic file (typ
 e pdf)
@@ -2120,47 +2921,83 @@ e pdf)
 Package pdftex.def Info: figs/figures/stackexchange/reputation_assortativity.pd
 f  used on input line 172.
 (pdftex.def)             Requested size: 483.69687pt x 128.71826pt.
-<figs/figures/stackexchange/correlations.pdf, id=2331, 910.38281pt x 394.84764p
+<figs/figures/stackexchange/correlations.pdf, id=2335, 910.38281pt x 394.84764p
 t>
 File: figs/figures/stackexchange/correlations.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/correlations.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/correlations.pdf  used on i
 nput line 181.
 (pdftex.def)             Requested size: 483.69687pt x 209.78638pt.
- [61pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [65pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.185 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-4.14}) has been already used, duplicate ignored
+5.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.185 
        <./figs/figures/stackexchange/gini.pdf> <./figs/figures/stackexchange/re
-putation_assortativity.pdf>]) [62pdfTeX warning (ext4): destination with the sa
-me identifier (name{figure.4.15}) has been already used, duplicate ignored
+putation_assortativity.pdf>] [66pdfTeX warning (ext4): destination with the sam
+e identifier (name{figure.5.15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.105 \include{1-MainMatter/Chapter_Trust1}
-                                            <./figs/figures/stackexchange/corre
-lations.pdf>]
+l.196 
+       <./figs/figures/stackexchange/correlations.pdf>]) [67]
+\openout2 = `1-MainMatter/Chapter_Conclusions.aux'.
+
+
+(./1-MainMatter/Chapter_Conclusions.tex [68
+
+
+
+] [69]
+LaTeX Font Info:    Trying to load font information for OT2+Tempora-TLF on inpu
+t line 20.
+
+(/usr/share/texlive/texmf-dist/tex/latex/tempora/ot2tempora-tlf.fd
+File: ot2tempora-tlf.fd 2016/01/11 Font definitions for OT2/Tempora-TLF.
+)
+LaTeX Font Info:    Font shape `OT2/Tempora-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 20.
+LaTeX Font Info:    Trying to load font information for T1+Tempora-TLF on input
+ line 22.
+
+(/usr/share/texlive/texmf-dist/tex/latex/tempora/T1Tempora-TLF.fd
+File: T1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for T1/Tempora-TL
+F.
+)
+LaTeX Font Info:    Font shape `T1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 22.
+) [70]
 \openout2 = `2-Appendix/Appendix_SEdata.aux'.
 
- (./2-Appendix/Appendix_SEdata.tex
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+(./2-Appendix/Appendix_SEdata.tex
+LaTeX Font Info:    Trying to load font information for TS1+Tempora-TLF on inpu
+t line 7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/tempora/TS1Tempora-TLF.fd
+File: TS1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for TS1/Tempora-
+TLF.
+)
+LaTeX Font Info:    Font shape `TS1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
-[63
+[71
 
 
 
@@ -2169,220 +3006,227 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.40 
+l.41 
      ]
-<figs/figures/stackexchange/active_questions.pdf, id=2475, 1070.2673pt x 287.24
+<figs/figures/stackexchange/active_questions.pdf, id=2509, 1070.2673pt x 287.24
 126pt>
 File: figs/figures/stackexchange/active_questions.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/active_questions.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/active_questions.pdf  used 
-on input line 64.
+on input line 65.
 (pdftex.def)             Requested size: 483.69687pt x 129.814pt.
- [64pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
+LaTeX Font Info:    Font shape `T1/Tempora-TLF/m/it' will be
+(Font)              scaled to size 12.0pt on input line 70.
+ [72pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.71 W
+l.72 W
       e calculated Stack Exchange statistics for astronomy, economics, liter...
 pdfTeX warning (ext4): destination with the same identifier (name{table.A.2}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.71 W
+l.72 W
       e calculated Stack Exchange statistics for astronomy, economics, liter...
- <./figs/figures/stackexchange/active_questions.pdf>]) [65pdfTeX warning (ext4)
+ <./figs/figures/stackexchange/active_questions.pdf>]) [73pdfTeX warning (ext4)
 : destination with the same identifier (name{table.A.3}) has been already used,
  duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.111 \include{2-Appendix/Appendix_SEdata}
+l.114 \include{2-Appendix/Appendix_SEdata}
                                           ]
 \openout2 = `2-Appendix/Appendix_SEparameters.aux'.
 
 
-(./2-Appendix/Appendix_SEparameters.tex [66
+(./2-Appendix/Appendix_SEparameters.tex [74
 
 
 
 ]
-<figs/figures/stackexchange/single_user_reputation.pdf, id=2542, 752.0742pt x 3
+LaTeX Font Info:    Font shape `T1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 6.
+<figs/figures/stackexchange/single_user_reputation.pdf, id=2576, 752.0742pt x 3
 07.64925pt>
 File: figs/figures/stackexchange/single_user_reputation.pdf Graphic file (type 
 pdf)
 <use figs/figures/stackexchange/single_user_reputation.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/single_user_reputation.pdf 
- used on input line 11.
+ used on input line 12.
 (pdftex.def)             Requested size: 386.95897pt x 158.29324pt.
- [67pdfTeX warning (ext4): destination with the same identifier (name{figure.B.
+ [75pdfTeX warning (ext4): destination with the same identifier (name{figure.B.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.17 
+l.18 
       <./figs/figures/stackexchange/single_user_reputation.pdf>]
-<figs/figures/stackexchange/rmse.pdf, id=2592, 1076.11423pt x 286.70801pt>
+<figs/figures/stackexchange/rmse.pdf, id=2626, 1076.11423pt x 286.70801pt>
 File: figs/figures/stackexchange/rmse.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/rmse.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/rmse.pdf  used on input lin
-e 26.
+e 25.
 (pdftex.def)             Requested size: 483.69687pt x 128.86865pt.
-<figs/figures/stackexchange/active_users.pdf, id=2594, 958.24876pt x 505.49666p
+<figs/figures/stackexchange/active_users.pdf, id=2628, 958.24876pt x 505.49666p
 t>
 File: figs/figures/stackexchange/active_users.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/active_users.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/active_users.pdf  used on i
-nput line 35.
+nput line 34.
 (pdftex.def)             Requested size: 483.69687pt x 255.16196pt.
- [68pdfTeX warning (ext4): destination with the same identifier (name{figure.B.
+ [76pdfTeX warning (ext4): destination with the same identifier (name{figure.B.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.39 
+l.38 
       <./figs/figures/stackexchange/rmse.pdf>]
-<figs/figures/stackexchange/permanent_users.pdf, id=2646, 1070.2673pt x 287.241
+<figs/figures/stackexchange/permanent_users.pdf, id=2680, 1070.2673pt x 287.241
 26pt>
 File: figs/figures/stackexchange/permanent_users.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/permanent_users.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/permanent_users.pdf  used o
-n input line 44.
+n input line 43.
 (pdftex.def)             Requested size: 483.69687pt x 129.814pt.
- [69pdfTeX warning (ext4): destination with the same identifier (name{figure.B.
+ [77pdfTeX warning (ext4): destination with the same identifier (name{figure.B.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.77 \clearpage
+l.48 \clearpage
                pdfTeX warning (ext4): destination with the same identifier (nam
 e{figure.B.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.77 \clearpage
+l.48 \clearpage
                 <./figs/figures/stackexchange/active_users.pdf> <./figs/figures
 /stackexchange/permanent_users.pdf>])
 \openout2 = `2-Appendix/Appendix_sliding_window.aux'.
 
- (./2-Appendix/Appendix_sliding_window.tex [70
+ (./2-Appendix/Appendix_sliding_window.tex [78
 
 
 
 
 ]
-<figs/figures/stackexchange/sliding_window.pdf, id=2763, 864.7468pt x 1378.5183
+<figs/figures/stackexchange/sliding_window.pdf, id=2798, 864.7468pt x 1378.5183
 pt>
 File: figs/figures/stackexchange/sliding_window.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/sliding_window.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/sliding_window.pdf  used on
- input line 12.
+ input line 13.
 (pdftex.def)             Requested size: 435.32422pt x 693.9692pt.
 
 
-LaTeX Warning: Float too large for page by 8.83125pt on input line 15.
+LaTeX Warning: Float too large for page by 8.83125pt on input line 16.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [71] [72pdfTeX warning (ext4): destination with the same identifier (name{fig
+) [79] [80pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.C.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.113 \include{2-Appendix/Appendix_sliding_window}
+l.116 \include{2-Appendix/Appendix_sliding_window}
                                                    <./figs/figures/stackexchang
 e/sliding_window.pdf>]
 \openout2 = `2-Appendix/Appendix_robust.aux'.
 
  (./2-Appendix/Appendix_robust.tex
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
+Underfull \hbox (badness 10000) in paragraph at lines 31--33
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
+Underfull \hbox (badness 10000) in paragraph at lines 31--33
 
  []
 
-[73
+[81
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 36--39
+Underfull \hbox (badness 10000) in paragraph at lines 37--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--53
+Underfull \hbox (badness 10000) in paragraph at lines 51--54
 
  []
 
-[74]
-<figs/figures/stackexchange/blockmodel_robust.pdf, id=2846, 727.9929pt x 503.97
+[82]
+<figs/figures/stackexchange/blockmodel_robust.pdf, id=2880, 727.9929pt x 503.97
 534pt>
 File: figs/figures/stackexchange/blockmodel_robust.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/blockmodel_robust.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/blockmodel_robust.pdf  used
- on input line 64.
+ on input line 65.
 (pdftex.def)             Requested size: 386.95897pt x 267.89003pt.
-) [75
+) [83
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.D.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.114 \include{2-Appendix/Appendix_robust}
+l.117 \include{2-Appendix/Appendix_robust}
                                            <./figs/figures/stackexchange/blockm
-odel_robust.pdf>] [76
+odel_robust.pdf>] [84
 
 
 ] (./thesis.bbl
 bibitemlist
-[77
+[85
 
-] [78] [79]) [80]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
- (./thesis.aux (./1-MainMatter/Chapter_Methodology.aux)
+] [86] [87] [88]) [89]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 131.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
+ (./thesis.aux
+(./1-MainMatter/Chapter_Introduction.aux)
+(./1-MainMatter/Chapter_Methodology.aux)
 (./1-MainMatter/Chapter_DrivingSignal.aux)
 (./1-MainMatter/Chapter_GroupsGrowth.aux) (./1-MainMatter/Chapter_Trust1.aux)
-(./2-Appendix/Appendix_SEdata.aux) (./2-Appendix/Appendix_SEparameters.aux)
+(./1-MainMatter/Chapter_Conclusions.aux) (./2-Appendix/Appendix_SEdata.aux)
+(./2-Appendix/Appendix_SEparameters.aux)
 (./2-Appendix/Appendix_sliding_window.aux) (./2-Appendix/Appendix_robust.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 131.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 131.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 583B552D0F9D6771B3AD787FD38008F6;3949.
+(rerunfilecheck)             Checksum: DF311F7C7B7A4F0D91174503BEFD549A;5308.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
  ) 
 Here is how much of TeX's memory you used:
- 16179 strings out of 482584
- 244890 string characters out of 5956256
- 576794 words of memory out of 5000000
- 30464 multiletter control sequences out of 15000+600000
- 575776 words of font info for 87 fonts, out of 8000000 for 9000
+ 20716 strings out of 482584
+ 310030 string characters out of 5956256
+ 588192 words of memory out of 5000000
+ 34908 multiletter control sequences out of 15000+600000
+ 587663 words of font info for 94 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 38i,17n,45p,2188b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,96p,1833b,508s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -2401,25 +3245,29 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri
-8a.pfb>
-Output written on thesis.pdf (80 pages, 7536699 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/tempora/tmp_jglahm.enc}{/usr/sha
+re/texlive/texmf-dist/fonts/enc/dvips/tempora/tmp_aq2g6w.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/tempora/tmp_ac5xuc.enc}{/usr/share/texlive/texmf-d
+ist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/tempora/Tempora-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/t
+empora/Tempora-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tem
+pora/Tempora-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/co
+urier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on thesis.pdf (89 pages, 7627729 bytes).
 PDF statistics:
- 3041 PDF objects out of 3580 (max. 8388607)
- 1288 compressed objects within 13 object streams
- 318 named destinations out of 1000 (max. 500000)
- 758 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3092 PDF objects out of 3580 (max. 8388607)
+ 1326 compressed objects within 14 object streams
+ 345 named destinations out of 1000 (max. 500000)
+ 566 words of extra memory for PDF output out of 10000 (max. 10000000)
 

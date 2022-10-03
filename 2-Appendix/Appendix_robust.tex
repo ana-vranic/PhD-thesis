@@ -1,4 +1,5 @@
 \chapter{Robustness of core-periphery algorithm} % Main chapter title
+\label{App:robust}
 \textbf{Precision and recall}
 
 Consider the network $G(V, L)$, with a set of nodes $V$ and a set of links between them $L$. The stochastic community detection algorithms may converge to different configurations. To quantify the similarity between the obtained structures and robustness of the algorithm, we run 50 iterations and calculate several similarity measures between pairwise partitions $C$ and $C^{'}$.
@@ -62,6 +63,6 @@ As example we show analysis of inferred sample of  core-periphery structures for
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\linewidth]{figures/stackexchange/blockmodel_robust.pdf}
-	\caption{Minimum description length, number of nodes in core, normalized mutual information, adjusted rand index, F1 measure and Jaccard index, among 50 samples for 30-days sub-networks. Results are given for closed astronomy. }
+	\caption[Stability of the core-periphery structures.]{Minimum description length, number of nodes in core, normalized mutual information, adjusted rand index, F1 measure and Jaccard index, among 50 samples for 30-days sub-networks. Results are given for closed astronomy. }
 	\label{fig:sample}
 \end{figure}

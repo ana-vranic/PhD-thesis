@@ -1,6 +1,7 @@
 \chapter{Selection of Dynamical Reputation Model parameters}
+\label{App:parameters}
 
-The Dynamical Reputation Model(DIBRM) has several tuning parameters. In previous studies the model \cite{melnikovDynamicInteractionBasedReputation2018,yashkina2020} was used to approximate real reputation on Stack Exchange sites \cite{yashkina2020}, so model parameters were $t_a =2, \beta = 1, \alpha = 1.4$, while the basic reputation value $I_{bn}$ was +2 or +4. As $\beta=1$, the forgetting factor is not considered. Our goal was to describe how reputation influences the sustainability of the community. Further, we wanted to resemble the concept of trust. Our tuning procedure differs than in previous studies on Stack Exchange sites, and we ended up with different model parameters. 
+The Dynamical Reputation Model(DIBRM) has several tuning parameters. In previous studies the model \cite{melnikov2018toward,yashkina2020} was used to approximate real reputation on Stack Exchange sites \cite{yashkina2020}, so model parameters were $t_a =2, \beta = 1, \alpha = 1.4$, while the basic reputation value $I_{bn}$ was +2 or +4. As $\beta=1$, the forgetting factor is not considered. Our goal was to describe how reputation influences the sustainability of the community. Further, we wanted to resemble the concept of trust. Our tuning procedure differs than in previous studies on Stack Exchange sites, and we ended up with different model parameters. 
 
 For \textbf{basic reputation} contribution we selected $I_{bn}=1$. With this values each interaction has initial contribution $+1$. 
 
@@ -9,13 +10,11 @@ For \textbf{characteristic time} $t_a$ we choose $t_a=1$. The median/average tim
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\linewidth]{figures/stackexchange/single_user_reputation.pdf}
-	\caption{Single users reputations }
+	\caption[Single users reputations.]{Single users reputations }
 	\label{fig:singleuser}
 \end{figure} 
 
 The {parameter $\alpha$} represents the \textbf{cumulative factor}. The burst in activity and recent interactions lead to higher reputation values with larger parameter $\alpha$. The figure \ref{fig:singleuser} represents reputations of two selected users from SE. The first one is sporadically active, while the second one makes frequent interactions. We calculate the reputation of these two users for different parameters $(\alpha, \beta)$. We selected $\alpha=2$.  
-
-
 
 The reputation decay determines the \textbf{forgetting factor $\beta$}. We set parameter on $\beta=0.96$. The reputation should reflect properties of the trust. This means that we do not expect to $\beta$ be high, as then inactive users keep larger reputation values. In figure \ref{fig:singleuser} for $\beta=0.99$ even for little active user reputation stays higher during observed period. With lower $\beta$ it may drop to the reputation threshold and indicate that user stoped to be active.  
 
@@ -24,7 +23,7 @@ We compared the number of users with estimated reputation higher than 1 for diff
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\linewidth]{figures/stackexchange/rmse.pdf}
-	\caption{RMSE between number of active users in sliding window of 30 days and number of users with reputation $>1$ for  $0.94< \beta <0.97$ with step $0.001$. }
+	\caption[RMSE between number of users in 30 days sliding window and positive reputation.]{RMSE between number of active users in sliding window of 30 days and number of users with reputation $>1$ for  $0.94< \beta <0.97$ with step $0.001$. }
 	\label{fig:rmse}
 \end{figure}
 
@@ -33,7 +32,7 @@ Figure \ref{fig:nusers} shows comparison between number of users in 30 days slid
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{figures/stackexchange/active_users.pdf}
-	\caption{Number of active users in a sliding window of 30 days and number of users with dynamic reputation higher than 1 for $\beta=0.954$ and $\beta=0.96 $ which provide the best fit to the number of users in 30 days sub-networks for each community}
+	\caption[Number of users in 30 days sliding window and positive reputation.]{Number of active users in a sliding window of 30 days and number of users with dynamic reputation higher than 1 for $\beta=0.954$ and $\beta=0.96 $ which provide the best fit to the number of users in 30 days sub-networks for each community}
 	\label{fig:nusers}
 \end{figure}
 
@@ -42,36 +41,8 @@ Finally, it's imporant that our dynamic reptuation captures the trend of long-te
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{figures/stackexchange/permanent_users.pdf}
-	\caption{Solid lines represent number of users with dynamic reputation higher than 1 for $\beta=0.96$ while dashed lines are number of users within 30 days sliding window who were active and remained to be active. Blue lines are beta, while red lines are area51 communities.}
+	\caption[Number of users in Stack Exchange community who remain to be active]{Solid lines represent number of users with dynamic reputation higher than 1 for $\beta=0.96$ while dashed lines are number of users within 30 days sliding window who were active and remained to be active. Blue lines are beta, while red lines are area51 communities.}
 	\label{fig:active-users}
 \end{figure}
-
-%Figure A2 in SI shows the difference between the number of users that had at least one activity in the window of 30 days and number of users with reputation higher than $1$ during the same period for different values of parameter $\beta$. The minimal difference between these two variables is observed for the values of $\beta$ between $0.94$ and $0.96$ for both live and closed communities. Since we want to compare communities, we select $\beta = 0.96$ after verifying that this level of reputational decay does not reduce the number of active users (based on their dynamic reputation) below the actual number of users who have been active (interacted with the community) in the time window of 30 days. 
-
-
-
-
-
-
-
-
-
-
-%Our implementation of dynamic reputation model was based on $\beta = 0.96$. There are several reasons for selecting this value.
-
-%In Dynamic reputation model, the $\beta$ parameter controls the strength of the forgetting fator of the model.  The value of this parameter should reflect the core feature of the reputational systems and make reputation easier to loose. Due to user's inactivity, any level of reputation will eventually decay to below 1. Dependence of time needed for reputation to drop below this level and the $\beta$ parameter, as well as reputation before inactivity is shown on Figure~\ref{fig:betadelta}. Here $I_n$ is equal to the raw number of interactions in the community without forgetting or cumulative factor at work.
-
-%For $\beta$ values below 0.96, the decay is fast and within two to four months of inactivity even high values of reputation are reduced below the threshold. On the other hand, with $\beta$ values the decay proces is more differentiated and high reputation becomes harder to loose, surviving up to a year of inactivity. For $\beta$ equal to 0.96, it takes a month for reputation based on 5 interactions to decay and around five months for high reputation based on 500 or 1000 interactions to decay below the threshold.
-
-
-
-
-%We should notice that taking different time period, for example, the first 90 days, we can get different optimal values of betta, but they'll probably take values between 0.95 and 0.96 (I can test it). 
-
-
-
-
-
-
 
 \clearpage

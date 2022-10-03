@@ -1,4 +1,5 @@
 \chapter{Stack Exchange}
+\label{App:SE}
 Stack Exchange data are public and regularly released. As closed communities were active between 180 and 210 days, we extracted only first 180 days of data. Given that first few months can be crucial for further development of the community \cite{dover2020sustainable}, we are interested in early evolution of Stack Exchange sites. 
 
 Detailed information about questions, answers, and comments are available for each SE community. Each post is labelled with a unique ID, the user's ID who made the post, and creation time. On Stack Exchange, users interact on several layers: Those interactions are considered positive.
@@ -41,7 +42,7 @@ Table \ref{tab:site-info} compares the first 180 days between closed and active 
 
 \begin{table}[h]
 	\centering
-	\caption{Community overview for first 180 days, Number of users $n_u$, number of questions $n_q$, number of answers $n_a$, number of comments $n_c$}
+	\caption[Community overview for first 180 days.]{Community overview for first 180 days, Number of users $n_u$, number of questions $n_q$, number of answers $n_a$, number of comments $n_c$}
 	\label{tab:site-info}
 	\begin{tabular}{llccccc}
 		\toprule
@@ -62,7 +63,7 @@ Table \ref{tab:site-info} compares the first 180 days between closed and active 
 \begin{figure}
 	\centering
 	\includegraphics[width=\linewidth]{figures/stackexchange/active_questions.pdf}
-	\caption{Number of active questions within 7 days sliding windows. Solid line - active sites; dashed lines - closed sites.}
+	\caption[Number of active questions within 7 days sliding windows]{Number of active questions within 7 days sliding windows. Solid line - active sites; dashed lines - closed sites.}
 	\label{fig:active_questions}
 \end{figure}
 

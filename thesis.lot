@@ -1,40 +1,29 @@
 \babel@toc {english}{}
-\babel@toc {serbianc}{}
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {english}{}
 \addvspace {10pt}
-\babel@toc {english}{}
-\addvspace {10pt}
-\babel@toc {serbianc}{}
+\babel@toc {russian}{}
 \babel@toc {english}{}
 \babel@toc {english}{}
 \babel@toc {english}{}
 \babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
 \addvspace {10pt}
+\babel@toc {english}{}
 \babel@toc {english}{}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Jensen Shannon divergence between group sizes distributions from model (in model we vary affiliation parameter paff) and data.}}{51}{table.4.1}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces The likelihood ratio R and p-value between different candidates and \textbf {lognormal} distribution for fitting the distribution of \textbf {groups sizes} of Meetup groups in London, New York and in Reddit. According to these statistics, the lognormal distribution represents the best fit for all communities. \\ }}{52}{table.4.2}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces The likelihood ratio R and p-value between different candidates and \textbf {lognormal} distribution for fitting the distribution of \textbf {simulated group sizes} of Meetup groups in London, New York and Reddit. According to these statistics, the lognormal distribution represents the best fit for all communities. \\}}{53}{table.4.3}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Jensen Shannon divergence between group sizes distributions from model and data.}}{51}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces The likelihood ratio R and p-value for fitting empirical data}}{52}{table.4.2}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces The likelihood ratio R and p-value for fitting simulated data}}{53}{table.4.3}%
 \addvspace {10pt}
-\addvspace {10pt}
-\contentsline {table}{\numberline {A.1}{\ignorespaces Percentage of negatively voted interactions}}{67}{table.A.1}%
-\contentsline {table}{\numberline {A.2}{\ignorespaces Community overview for first 180 days, Number of users $n_u$, number of questions $n_q$, number of answers $n_a$, number of comments $n_c$}}{68}{table.A.2}%
-\contentsline {table}{\numberline {A.3}{\ignorespaces Community overview for first 180 days according to SE criteria }}{69}{table.A.3}%
-\addvspace {10pt}
-\addvspace {10pt}
-\addvspace {10pt}
-\babel@toc {english}{}
 \addvspace {10pt}
 \babel@toc {serbianc}{}
 \babel@toc {english}{}
-\babel@toc {serbianc}{}
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {serbianc}{}
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {serbianc}{}
+\addvspace {10pt}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Percentage of negatively voted interactions}}{69}{table.A.1}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Community overview for first 180 days.}}{70}{table.A.2}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Community overview for first 180 days according to SE criteria }}{71}{table.A.3}%
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}

@@ -1,37 +1,3 @@
-@Article{Einstein,
-  author =       "Albert Einstein",
-  title =        "{Zur Elektrodynamik bewegter K{\"o}rper}. ({German})
-                 [{On} the electrodynamics of moving bodies]",
-  journal =      "Annalen der Physik",
-  volume =       "322",
-  number =       "10",
-  pages =        "891--921",
-  year =         "1905",
-  DOI =          "http://dx.doi.org/10.1002/andp.19053221004"
-} 
-
-@Book{Lamport1986,
-  author =	 {Leslie Lamport},
-  title =	 {LaTeX: A Document Preparation System},
-  publisher =	 {Addison-Wesley},
-  year =	 1986,
-  address =	 {Reading, Mass.}}
-
-
-@Book{Knuth1986,
-  author = 	 {Donald E. Knuth},
-  title = 	 {The TeXbook},
-  publisher = 	 {Addison-Wesley},
-  year = 	 1986,
-  address = 	 {Boston}}
-
-@booklet{Wilson2016,
-  author =	 {Peter Wilson},
-  title =	 {The Memoir Class for Configurable Typesetting},
-  url =		 {https://ctan.org/pkg/memoir?lang=en},
-  year =	 2016
-}
-
 @article{barabasi1999,
 	title={Emergence of scaling in random networks},
 	author={Barab{\'a}si, Albert-L{\'a}szl{\'o} and Albert, R{\'e}ka},
@@ -706,8 +672,8 @@
   year={2014},
   publisher={ACM New York, NY, USA}
 }
-%ovaj rad je isto slican ali se ovde fokusiraju na distribuciju korisnika a ne grupa
-@article{ZHANG20136100,
+
+@article{zhang2013evolving,
 title = {An evolving model of online bipartite networks},
 journal = {Physica A: Statistical Mechanics and its Applications},
 volume = {392},
@@ -719,7 +685,6 @@ doi = {https://doi.org/10.1016/j.physa.2013.07.027},
 url = {https://www.sciencedirect.com/science/article/pii/S0378437113006377},
 author = {Chu-Xu Zhang and Zi-Ke Zhang and Chuang Liu},
 keywords = {Bipartite networks, Evolving model, Network dynamics},
-abstract = {Understanding the structure and evolution of online bipartite networks is a significant task since they play a crucial role in various e-commerce services nowadays. Recently, various attempts have been tried to propose different models, resulting in either power-law or exponential degree distributions. However, many empirical results show that the user degree distribution actually follows a shifted power-law distribution, the so-called Mandelbrot’s law, which cannot be fully described by previous models. In this paper, we propose an evolving model, considering two different user behaviors: random and preferential attachment. Extensive empirical results on two real bipartite networks, Delicious and CiteULike, show that the theoretical model can well characterize the structure of real networks for both user and object degree distributions. In addition, we introduce a structural parameter p, to demonstrate that the hybrid user behavior leads to the shifted power-law degree distribution, and the region of power-law tail will increase with the increment of p. The proposed model might shed some lights in understanding the underlying laws governing the structure of real online bipartite networks.}
 }
 
 @inproceedings{backstrom2006group,
@@ -956,9 +921,7 @@ abstract = {Understanding the structure and evolution of online bipartite networ
     volume = {9},
     url = {https://doi.org/10.1371/journal.pone.0085777},
     pages = {1-11},
-    abstract = {Power laws are theoretically interesting probability distributions that are also frequently used to describe empirical data. In recent years, effective statistical methods for fitting power laws have been developed, but appropriate use of these techniques requires significant programming and statistical insight. In order to greatly decrease the barriers to using good statistical methods for fitting power law distributions, we developed the powerlaw Python package. This software package provides easy commands for basic fitting and statistical analysis of distributions. Notably, it also seeks to support a variety of user needs by being exhaustive in the options available to the user. The source code is publicly available and easily extensible.},
     number = {1},
-
 }
 
 
@@ -1041,16 +1004,7 @@ abstract = {Understanding the structure and evolution of online bipartite networ
   year={2019}
 }
 
-% @inproceedings{yashkina2019expressing,
-%   title={Expressing trust with temporal frequency of user interaction in online communities},
-%   author={Yashkina, Ekaterina and Pinigin, Arseny and Lee, JooYoung and Mazzara, Manuel and Adekotujo, Akinlolu Solomon and Zubair, Adam and Longo, Luca},
-%   booktitle={International Conference on Advanced Information Networking and Applications},
-%   pages={1133--1146},
-%   year={2019},
-%   organization={Springer}
-% }
-
-@inproceedings{melnikovDynamicInteractionBasedReputation2018,
+@inproceedings{melnikov2018toward,
     author={A. {Melnikov} and J. {Lee} and V. {Rivera} and M. {Mazzara} and L. {Longo}},
 	booktitle={2018 IEEE 32nd International Conference on Advanced Information Networking and Applications (AINA)},
     title={Towards Dynamic Interaction-Based Reputation Models}, 
@@ -1113,7 +1067,6 @@ abstract = {Understanding the structure and evolution of online bipartite networ
 }
 
 
-% variety of SE papers is below, I separate them just to be sure where the mess starts as we might not want to use/address all
 @article{saxena2021users,
   title={Users roles identification on online crowdsourced Q\&A platforms and encyclopedias: a survey},
   author={Saxena, Akrati and Reddy, Harita},
@@ -1271,10 +1224,6 @@ abstract = {Understanding the structure and evolution of online bipartite networ
 }
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%this is agent-based model, but they define some sort of reputation and also look into core-periphery structure of the network and point importance of having strong core for network;s survival
 @article{schweitzer2020modeling,
   title={Modeling user reputation in online social networks: the role of costs, benefits, and reciprocity},
   author={Schweitzer, Frank and Mavrodiev, Pavlin and Seufert, Adrian M and Garcia, David},
@@ -1295,7 +1244,7 @@ abstract = {Understanding the structure and evolution of online bipartite networ
   year={2008}
 }
 
-%%%%%%%%%
+
 @article{dunningTrustZeroAcquaintance2014,
   title = {Trust at Zero Acquaintance: More a Matter of Respect than Expectation of Reward.},
   shorttitle = {Trust at Zero Acquaintance},
@@ -1310,7 +1259,6 @@ abstract = {Understanding the structure and evolution of online bipartite networ
   doi = {10.1037/a0036673},
   url = {http://doi.apa.org/getdoi.cfm?doi=10.1037/a0036673},
   urldate = {2021-10-04},
-  abstract = {Trust is essential for a secure and flourishing social life, but many economic and philosophical approaches argue that rational people should never extend it, in particular to strangers they will never encounter again. Emerging data on the trust game, a laboratory economic exchange, suggests that people trust strangers excessively (i.e., far more than their tolerance for risk and cynical views of their peers should allow). What produces this puzzling “excess” of trust? We argue that people trust due to a norm mandating that they show respect for the other person’s character, presuming the other person has sufficient integrity and goodwill even if they do not believe it privately. Six studies provided converging evidence that decisions to trust follow the logic of norms. Trusting others is what people think they should do, and the emotions associated with fulfilling a social duty or responsibility (e.g., guilt, anxiety) account for at least a significant proportion of the excessive trust observed. Regarding the specific norm in play, trust rates collapse when respect for the other person’s character is eliminated as an issue.},
   langid = {english}
 }
 
@@ -1325,7 +1273,6 @@ abstract = {Understanding the structure and evolution of online bipartite networ
   pages = {annurev-soc-082120-082850},
   issn = {0360-0572, 1545-2115},
   doi = {10.1146/annurev-soc-082120-082850},
-  abstract = {Trust is key to understanding the dynamics of social relations, to the extent that it is often viewed as the glue that holds society together. We review the mounting sociological literature to help answer what trust is and where it comes from. To this end, we identify two research streams—on particularized trust and generalized trust—and propose an integrative framework that bridges these lines of research while also enhancing conceptual precision. This framework provides the springboard for identifying several important avenues for future research, including new investigations into the radius of trust, the intermediate form of categorical trust, and the interrelationships between different forms of trust. This article also calls for more sociological scholarship focusing on the consequences (rather than antecedents) of trust, addressing more fully the trustee side of the relation, and employing new empirical methods. Such novel approaches will ensure that the sociology of trust will continue to provide important insights into the functioning of modern society in the years to come.},
   langid = {english}
 }
 
@@ -1341,7 +1288,6 @@ abstract = {Understanding the structure and evolution of online bipartite networ
   pages = {366--371},
   publisher = {{SAGE Publications Inc}},
   doi = {10.1177/0963721419838255},
-  abstract = {Interpersonal trust is essential for a productive and rewarding social life, yet it presents many theoretical puzzles, particularly among strangers, because its existence violates the rational-actor model. Here, we focus on two mysteries. One is cognitive, focusing on why people cynically underestimate how trustworthy their peers are. The second is behavioral, focusing on why so many people trust others, including complete strangers, given their social cynicism and aversion to taking risks. Regarding the behavioral mystery, we adopt a normative approach, proposing that people trust at unexpectedly high rates because they feel a social obligation to do so. This approach implies that trust may be more about the behavior itself than about downstream consequences, that people are not “giving” so much as “giving in” to social pressures, and that their choices may have more to do with emotion than calculation.},
   langid = {english}
 }
 
@@ -1352,7 +1298,6 @@ abstract = {Understanding the structure and evolution of online bipartite networ
   editor = {Gillespie, Nicole and Fulmer, Ashley and Lewicki, Roy},
   date = {2021},
   publisher = {{Taylor \& Francis}},
-  abstract = {In this chapter we aim to move beyond the extensive focus on relational trust in the organizational literature by broadening the conceptualization of trust to include its inherent generalizability across a network. Specifically, we introduce the concept of network trust. Central to our conceptualization is the idea that apart from forming as a result of direct interaction, trust also flows through the indirect connections linking individuals to one another and emerges from the inherent design features of the network itself. We further conceptualize network trust as comprised of two forms: second-hand trust and prototrust. Secondhand trust refers to the partial spillover of relational trust to socially proximate, indirectly connected actors.  Prototrust refers to the latent potential for confident positive expectations to emerge between two actors who are neither directly nor indirectly connected. Drawing on network theory, we articulate the logics (in terms of mechanisms, indicators, and contingencies) by which secondhand trust and prototrust operate. We conclude with a call to treat network trust as a novel form and with an agenda for considering the unique understandings that network trust permits.},
   langid = {english}
 }
 
@@ -1462,8 +1407,6 @@ abstract = {Understanding the structure and evolution of online bipartite networ
   publisher={National Acad Sciences}
 }
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 @article{krings2012effects,
   title={Effects of time window size and placement on the structure of an aggregated communication network},
   author={Krings, Gautier and Karsai, M{\'a}rton and Bernhardsson, Sebastian and Blondel, Vincent D and Saram{\"a}ki, Jari},
@@ -1530,7 +1473,6 @@ abstract = {Understanding the structure and evolution of online bipartite networ
   pages = {415--427},
   issn = {1071-5819},
   doi = {10.1016/j.ijhcs.2011.02.004},
-  abstract = {A major challenge in knowledge management involves motivating people to share knowledge with others. The objective of this study is to deepen our understanding of how to influence an individual's tendency to engage in knowledge sharing behavior in a team setting. Specifically, we investigate the effects of intrinsic motivation (altruism) and extrinsic motivation (economic reward, reputation feedback and reciprocity) on knowledge sharing (number of ideas generated, idea usefulness, idea creativity and meeting satisfaction) in a group meeting. Results of our experiment show that a knowledge management system with built-in reputation feedback is crucial to support successful knowledge sharing.},
   langid = {english},
   keywords = {Experimental study,Extrinsic motivation,Intrinsic motivation,Knowledge management systems,Knowledge sharing},
 }
@@ -1566,7 +1508,6 @@ abstract = {Understanding the structure and evolution of online bipartite networ
   pages = {152--165},
   issn = {1466-4437},
   doi = {10.1057/jit.2016.8},
-  abstract = {In order to foster knowledge-sharing among employees, an increasing number of companies has recently begun implementing social network-based enterprise social media platforms (ESMPs). Although employees are expected to adopt these platforms quickly and use them as actively as they use public and free social media, patterns of private and corporate usage differ. While some research on the determinants of using public and free social media like Facebook has been conducted, empirical studies on the factors determining active participation in ESMPs is scarce. Based on research derived from a survey of 492 respondents carried out in a large knowledge-intensive firm, this paper addresses this gap. The results of our empirical quantitative study reveal that extrinsic motivation in particular \textendash{} that is, anticipated gains in reputation and reciprocal benefits \textendash{} drives employees to share knowledge in ESMPs. Knowledge-sharing self-efficacy also facilitates participation, while the enjoyment in helping others does not. The study contributes to information systems and knowledge management research, as it reveals motivational factors that drive the individual adoption in terms of active use of ESMPs. Managerial implications are derived from these results.},
   langid = {english}
 }
 
@@ -1582,7 +1523,6 @@ abstract = {Understanding the structure and evolution of online bipartite networ
   publisher = {{Management Information Systems Research Center, University of Minnesota}},
   issn = {0276-7783},
   doi = {10.2307/25148667},
-  abstract = {Electronic networks of practice are computer-mediated discussion forums focused on problems of practice that enable individuals to exchange advice and ideas with others based on common interests. However, why individuals help strangers in these electronic networks is not well understood: there is no immediate benefit to the contributor, and free-riders are able to acquire the same knowledge as everyone else. To understand this paradox, we apply theories of collective action to examine how individual motivations and social capital influence knowledge contribution in electronic networks. This study reports on the activities of one electronic network supporting a professional legal association. Using archival, network, survey, and content analysis data, we empirically test a model of knowledge contribution. We find that people contribute their knowledge when they perceive that it enhances their professional reputations, when they have the experience to share, and when they are structurally embedded in the network. Surprisingly, contributions occur without regard to expectations of reciprocity from others or high levels of commitment to the network.}
 }
 
 @inproceedings{kairam2012life,
@@ -1647,14 +1587,13 @@ abstract = {Understanding the structure and evolution of online bipartite networ
 	year = {2016},
 	doi = {10.1073/pnas.1606316113},
 	publisher = {National Academy of Sciences},
-	abstract = {Recommendation systems are designed to predict users{\textquoteright} preferences and provide them with recommendations for items such as books or movies that suit their needs. Recent developments show that some probabilistic models for user preferences yield better predictions than latent feature models such as matrix factorization. However, it has not been possible to use them in real-world datasets because they are not computationally efficient. We have developed a rigorous probabilistic model that outperforms leading approaches for recommendation and whose parameters can be fitted efficiently with an algorithm whose running time scales linearly with the size of the dataset. This model and inference algorithm open the door to more approaches to recommendation and to other problems where matrix factorization is currently used.With increasing amounts of information available, modeling and predicting user preferences{\textemdash}for books or articles, for example{\textemdash}are becoming more important. We present a collaborative filtering model, with an associated scalable algorithm, that makes accurate predictions of users{\textquoteright} ratings. Like previous approaches, we assume that there are groups of users and of items and that the rating a user gives an item is determined by their respective group memberships. However, we allow each user and each item to belong simultaneously to mixtures of different groups and, unlike many popular approaches such as matrix factorization, we do not assume that users in each group prefer a single group of items. In particular, we do not assume that ratings depend linearly on a measure of similarity, but allow probability distributions of ratings to depend freely on the user{\textquoteright}s and item{\textquoteright}s groups. The resulting overlapping groups and predicted ratings can be inferred with an expectation-maximization algorithm whose running time scales linearly with the number of observed ratings. Our approach enables us to predict user preferences in large datasets and is considerably more accurate than the current algorithms for such large datasets.},
 	issn = {0027-8424},
 	URL = {https://www.pnas.org/content/113/50/14207},
 	eprint = {https://www.pnas.org/content/113/50/14207.full.pdf},
 	journal = {Proceedings of the National Academy of Sciences}
 }
 
-@article{userguide,
+@article{furnato2016,
 title = "Community detection in networks: A user guide",
 journal = "Physics Reports",
 volume = "659",
@@ -1666,10 +1605,9 @@ doi = "https://doi.org/10.1016/j.physrep.2016.09.002",
 url = "http://www.sciencedirect.com/science/article/pii/S0370157316302964",
 author = "Santo Fortunato and Darko Hric",
 keywords = "Networks, Communities, Clustering",
-abstract = "Community detection in networks is one of the most popular topics of modern network science. Communities, or clusters, are usually groups of vertices having higher probability of being connected to each other than to members of other groups, though other patterns are possible. Identifying communities is an ill-defined problem. There are no universal protocols on the fundamental ingredients, like the definition of community itself, nor on other crucial issues, like the validation of algorithms and the comparison of their performances. This has generated a number of confusions and misconceptions, which undermine the progress in the field. We offer a guided tour through the main aspects of the problem. We also point out strengths and weaknesses of popular methods, and give directions to their use."
 }
 
-@article{comparison,
+@article{funke2019,
     author = {Funke, Thorben AND Becker, Till},
     journal = {PLOS ONE},
     publisher = {Public Library of Science},
@@ -1679,9 +1617,8 @@ abstract = "Community detection in networks is one of the most popular topics of
     volume = {14},
     url = {https://doi.org/10.1371/journal.pone.0215296},
     pages = {1-40},
-    abstract = {Finding communities in complex networks is a challenging task and one promising approach is the Stochastic Block Model (SBM). But the influences from various fields led to a diversity of variants and inference methods. Therefore, a comparison of the existing techniques and an independent analysis of their capabilities and weaknesses is needed. As a first step, we review the development of different SBM variants such as the degree-corrected SBM of Karrer and Newman or Peixoto’s hierarchical SBM. Beside stating all these variants in a uniform notation, we show the reasons for their development. Knowing the variants, we discuss a variety of approaches to infer the optimal partition like the Metropolis-Hastings algorithm. We perform our analysis based on our extension of the Girvan-Newman test and the Lancichinetti-Fortunato-Radicchi benchmark as well as a selection of some real world networks. Using these results, we give some guidance to the challenging task of selecting an inference method and SBM variant. In addition, we give a simple heuristic to determine the number of steps for the Metropolis-Hastings algorithms that lack a usual stop criterion. With our comparison, we hope to guide researches in the field of SBM and highlight the problem of existing techniques to focus future research. Finally, by making our code freely available, we want to promote a faster development, integration and exchange of new ideas.},
     number = {4},
-    doi = {10.1371/journal.pone.0215296}
+    doi = {10.1371/journal.pone.0215296}}
     
 @article{martin,
   author    = {Martin Rosvall and
@@ -2359,6 +2296,431 @@ year={2019},
 publisher={Nature Publishing Group}
 }
 
+@article{vranic2022universal,
+	title={Universal growth of social groups: empirical analysis and modeling},
+	author={Vrani{\'c}, Ana and Smiljani{\'c}, Jelena and Dankulov, Marija Mitrovi{\'c}},
+	journal={arXiv preprint arXiv:2206.06732},
+	year={2022}
+}
+
+@article{vranic2022sustainability,
+	title={Sustainability of Stack Exchange Q$\backslash$\&A communities: the role of trust},
+	author={Vrani{\'c}, Ana and Toma{\v{s}}evi{\'c}, Aleksandar and Alori{\'c}, Aleksandra and Dankulov, Marija Mitrovi{\'c}},
+	journal={arXiv preprint arXiv:2205.07745},
+	year={2022}
+}
+
+@article{ladyman2013,
+	title="{What is a complex system?}",
+	author={Ladyman, J. and Lambert, J. and Wiesner, K.},
+	journal={ Eur. J. Philos. Sci.},
+	volume={3},
+	pages={33--67},
+	year={2013},
+	publisher={Springer}
+}
+
+@article{kwapien2012,
+	title="{Physical approach to complex systems}",
+	author={Kwapie{\'n}, J. and Dro{\.z}d{\.z}, S.},
+	journal={Phys. Rep},
+	volume={515},
+	pages={115--226},
+	year={2012},
+	publisher={Elsevier}
+}
+
+@article{watts1998collective,
+	title="{Collective dynamics of ‘small-world’networks}",
+	author={Watts, D. J. and Strogatz, S. H.},
+	journal={Nature},
+	volume={393},
+	pages={440--442},
+	year={1998},
+	publisher={Nature Publishing Group}
+}
+
+@article{barabasi1999,
+	title="{Emergence of scaling in random networks}",
+	author={Barab{\'a}si, A.-L. and Albert, R.},
+	journal={Science},
+	volume={286},
+	pages={509--512},
+	year={1999},
+	publisher={American Association for the Advancement of Science}
+}
+@article{barabasi2014network,
+	title="{Network science book}",
+	author={Barab{\'a}si, A.-L.},
+	journal={Network Science},
+	volume={625},
+	year={2014}
+}
+@article{barabasi2009,
+	title="{Scale-free networks: a decade and beyond}",
+	author={Barab{\'a}si, A.-L.},
+	journal={Science},
+	volume={325},
+	pages={412--413},
+	year={2009},
+	publisher={American Association for the Advancement of Science}
+}
+
+
+@article{newman2003structure,
+	title="{The structure and function of complex networks}",
+	author={Newman, M. E. J.},
+	journal={SIAM review},
+	volume={45},
+	pages={167--256},
+	year={2003},
+	publisher={SIAM}
+}
+
+@book{newman2006,
+	title="{The structure and dynamics of networks}",
+	author={Newman, M. E. J. and Barab{\'a}si, A.-L. and Watts, D. J.},
+	year={2006},
+	publisher={Princeton university press}
+}
+
+@book{newman2010,
+	title="{Networks: An Introduction}",
+	author={Newman, M. E. J.},
+	year={2010},
+	publisher={Oxford University Press}
+}
+
+@article{boccaletti2006,
+	title="{Complex networks: Structure and dynamics}",
+	author={Boccaletti, S. and Latora, V. and Moreno, Y. and Chavez, M. and Hwang, D.-U.},
+	journal={Phys. Rep},
+	volume={424},
+	pages={175--308},
+	year={2006},
+	publisher={Elsevier}
+}
+
+@book{barrat2008, 
+	place={Cambridge}, 
+	title={Dynamical Processes on Complex Networks}, 
+	DOI={10.1017/CBO9780511791383}, 
+	publisher={Cambridge University Press}, 
+	author={Barrat, A. and Barthélemy, M. and Vespignani, A.}, 
+	year={2008}
+}
+
+
+@article{castellano2009,
+	title="{Statistical physics of social dynamics}",
+	author={Castellano, C. and Fortunato, S. and Loreto, V.},
+	journal={Rev. Mod. Phys},
+	volume={81},
+	pages={591},
+	year={2009},
+	publisher={APS}
+}
+
+@article{furtanato,
+	title = "{Community detection in graphs}",
+	journal = {Phys. Rep},
+	volume = {486},
+	pages = {75 - 174},
+	year = {2010},
+	issn = {0370-1573},
+	author = { Fortunato, S.},
+}
+
+
+@article{dorogovtsev2000b,
+	title="{Evolution of networks with aging of sites}",
+	author={Dorogovtsev, S. N. and Mendes, J. F. F.},
+	journal={Phy. Rev. E},
+	volume={62},
+	pages={1842},
+	year={2000},
+	publisher={APS}
+}
+
+@article{dorogovtsev2000,
+	title="{Structure of growing networks with preferential linking}",
+	author={Dorogovtsev, S. N. and Mendes, J. F. F. and Samukhin, Alexander N},
+	journal={Phys. Rev. Lett.},
+	volume={85},
+	pages={4633},
+	year={2000},
+	publisher={APS}
+}
+@article{dorogovtsev2001,
+	title="{Effect of the accelerating growth of communications networks on their structure}",
+	author={Dorogovtsev, S. N. and Mendes, J. F. F.},
+	journal={Phys. Rev. E},
+	volume={63},
+	pages={025101},
+	year={2001},
+	publisher={APS}
+}
+
+@article{dorogovtsev2001b,
+	title="{Scaling properties of scale-free evolving networks: Continuous approach}",
+	author={Dorogovtsev, S. N. and Mendes, J. F. F.},
+	journal={Phys. Rev. E},
+	volume={63},
+	pages={056125},
+	year={2001},
+	publisher={APS}
+}
+
+@book{dorogovtsev2010complex,
+	title="{Complex networks}",
+	author={Dorogovtsev, S.},
+	year={2010},
+	publisher={Oxford: Oxford University Press}
+}
+
+@article{hajra2004,
+	title="{Phase transitions in an aging network}",
+	author={Hajra, K. B. and Sen, P.},
+	journal={Phys. Rev. E},
+	volume={70},
+	pages={056103},
+	year={2004},
+	publisher={APS}
+}
+
+@article{hajra2006,
+	author = {Hajra, K. B. and Sen, P.},
+	title = "{Modelling aging characteristics in citation networks}",
+	journal = {Physica A},
+	volume = {368},
+	pages = {575--582},
+	year = {2006},
+	publisher = {North-Holland},
+}
+
+@article{pham2016,
+	title="{Joint estimation of preferential attachment and node fitness in growing complex networks}",
+	author={Pham, T. and Sheridan, P. and Shimodaira, H.},
+	journal={Sci. Rep},
+	volume={6},
+	pages={32558},
+	year={2016},
+	publisher={Nature Publishing Group}
+}
+
+@article{sen2004,
+	title="{Accelerated growth in outgoing links in evolving networks: Deterministic versus stochastic picture}",
+	author={Sen, P.},
+	journal={Phys. Rev. E},
+	volume={69},
+	pages={046107},
+	year={2004},
+	publisher={APS}
+}
+
+@article{tiago2,
+	title="{Quantification of network structural dissimilarities}",
+	author={Schieber, T. A. and Carpi, L. and D{\'\i}az-Guilera, A. and Pardalos, P. M. and Masoller, C. and Ravetti, M. G.},
+	journal={Nat. Commun},
+	volume={8},
+	pages={1--10},
+	year={2017},
+	publisher={Nature Publishing Group}
+}
+
+@article{ihlen2012,
+	title="{Introduction to multifractal detrended fluctuation analysis in Matlab}",
+	author={Ihlen, E. Alexander F. E.A.F.I.},
+	journal={Front. Psychol.},
+	volume={3},
+	pages={141},
+	year={2012},
+	publisher={Frontiers}
+}
+
+@article{kantelhardt2001,
+	title="{Detecting long-range correlations with detrended fluctuation analysis}",
+	author={Kantelhardt, J. W. and Koscielny-Bunde, E. and Rego, H. H. A. and Havlin, S. and Bunde, A.},
+	journal={Physica A},
+	volume={295},
+	pages={441--454},
+	year={2001},
+	publisher={Elsevier}
+}
+
+@article{kantelhardt2002,
+	title="{Multifractal detrended fluctuation analysis of nonstationary time series}",
+	author={Kantelhardt, J. W and Zschiegner, S. A. and Koscielny-Bunde, E. and Havlin, S. and Bunde, A. and Stanley, H. E.},
+	journal={Physica A},
+	volume={316},
+	pages={87--114},
+	year={2002},
+	publisher={Elsevier}
+}
+
+@article{gabaix1999,
+	title="{Zipf's Law and the Growth of Cities}",
+	author={Gabaix, X.},
+	journal={Am. Econ. Rev.},
+	volume={89},
+	pages={129--132},
+	year={1999}
+}
+
+@book{sethna2021statistical,
+	title="{Statistical mechanics: entropy, order parameters, and complexity}",
+	author={Sethna, J.},
+	volume={14},
+	year={2021},
+	publisher={Oxford University Press, USA}
+}
+
+@article{orsini2015,
+	title="{Quantifying randomness in real networks}",
+	author={Orsini, C. and Mitrovi\'c Dankulov, M. and Colomer-de-Sim{\'o}n, P. and Jamakovic, A. and Mahadevan, P. and Vahdat, A. and Bassler, K. E. and Toroczkai, Z. and Bogu{\~n}{\'a}, M. and Caldarelli, G. and Fortunato, S. and Kriukov D.},
+	journal={Nat. Commun},
+	volume={6},
+	pages={8627},
+	year={2015},
+	publisher={Nature Publishing Group}}
+
+@article{suvakov2013,
+	author = {\v{S}uvakov, M.  and Mitrovi\'{c}, M.  and Gligorijevi\'{c}, V. and Tadi\'{c}, B. },
+	title = "{How the online social networks are used: dialogues-based structure of MySpace}",
+	journal = {Journal of The Royal Society Interface},
+	volume = {10},
+	pages = {20120819},
+	year = {2013},
+}
+
+@inproceedings{myers2014,
+	title="{The bursty dynamics of the twitter information network}",
+	author={Myers, S. A. and Leskovec, J.},
+	booktitle={Proceedings of the 23rd international conference on World wide web},
+	pages={913--924},
+	year={2014}
+}
+
+@article{huberman1999,
+	title="{Growth dynamics of the world-wide web}",
+	author={Huberman, B. A. and Adamic, L. A.},
+	journal={Nature},
+	volume={401},
+	pages={131--131},
+	year={1999},
+	publisher={Nature Publishing Group}
+}
+
+@book{wever2013,
+	title="{The circadian system of man: results of experiments under temporal isolation}",
+	author={Wever, R. A.},
+	year={2013},
+	publisher={Springer Science \& Business Media}
+}
+
+@article{vranic2021,
+	doi = {10.1088/1742-5468/abd30b},
+	url = {https://doi.org/10.1088/1742-5468/abd30b},
+	year = {2021},
+	publisher = {{IOP} Publishing},
+	volume = {2021},
+	pages = {013405},
+	author = { Vrani{\'{c}}, A. and Mitrovi{\'{c}} Dankulov, M.},
+	title = "{Growth signals determine the topology of evolving networks}",
+	journal = {J. Stat. Mech.: Theory Exp},
+}
+
+@book{binney1992,
+	title="{The theory of critical phenomena: an introduction to the renormalization group}",
+	author={Binney, J. J. and Dowrick, N. J. and Fisher, A. J. and Newman, M. E. J.},
+	year={1992},
+	publisher={Oxford University Press}
+}
+
+
+@article{chatterjee2013,
+	title="{Universality in voting behavior: an empirical analysis}",
+	author={Chatterjee, A. and Mitrovi{\'c}, M. and Fortunato, S.},
+	journal={Sci. Rep},
+	volume={3},
+	pages={1--9},
+	year={2013},
+	publisher={Nature Publishing Group}
+}
+
+@article{radicchi2008,
+	title="{Universality of citation distributions: Toward an objective measure of scientific impact}",
+	author={Radicchi, F. and Fortunato, S. and Castellano, C.},
+	journal={Proc. Natl. Acad. Sci. U. S. A.},
+	volume={105},
+	pages={17268--17272},
+	year={2008},
+	publisher={National Acad Sciences}
+}
+
+@article{barthelemy2019,
+	title="{The statistical physics of cities}",
+	author={Barthelemy, M.},
+	journal={ Nat. Rev. Phys },
+	volume={1},
+	pages={406--415},
+	year={2019},
+	publisher={Nature Publishing Group}
+}
+
+@article{verbavatz2020,
+	title="{The growth equation of cities}",
+	author={Verbavatz, V. and Barthelemy, M.},
+	journal={Nature},
+	volume={587},
+	pages={397--401},
+	year={2020},
+	publisher={Nature Publishing Group}
+}
+
+@article{sarigol2014,
+	title="{Predicting scientific success based on coauthorship networks}",
+	author={Sarig{\"o}l, E. and Pfitzner, R. and Scholtes, I. and Garas, A. and Schweitzer, F.},
+	journal={EPJ Data Science},
+	volume={3},
+	pages={9},
+	year={2014},
+	publisher={Springer}
+}
+
+@article{schneider2011modeling,
+	title="{Modeling the topology of protein interaction networks}",
+	author={Schneider, C. M. and de Arcangelis, L. and Herrmann, H. J.},
+	journal={Phys. Rev. E},
+	volume={84},
+	pages={016112},
+	year={2011},
+	publisher={APS}
+}
+
+@article{fraiman2009ising,
+	title="{Ising-like dynamics in large-scale functional brain networks}",
+	author={Fraiman, D. and Balenzuela, P. and Foss, J. and Chialvo, D. R.},
+	journal={Phys. Rev. E},
+	volume={79},
+	pages={061922},
+	year={2009},
+	publisher={APS}
+}
+
+@incollection{thurner2018,
+	author = {Thurner, Stefan and Hanel, Rudolf and Klimekl, Peter},
+	isbn = {9780198821939},
+	title = "{93Scaling}",
+	booktitle = "{Introduction to the Theory of Complex Systems}",
+	publisher = {Oxford University Press},
+	year = {2018},
+	month = {09},
+	abstract = "{Scaling appears practically everywhere in science; it basically quantifies how the properties or shapes of an object change with the scale of the object. Scaling laws are always associated with power laws. The scaling object can be a function, a structure, a physical law, or a distribution function that describes the statistics of a system or a temporal process. We focus on scaling laws that appear in the statistical description of stochastic complex systems, where scaling appears in the distribution functions of observable quantities of dynamical systems or processes. The distribution functions exhibit power laws, approximate power laws, or fat-tailed distributions. Understanding their origin and how power law exponents can be related to the particular nature of a system, is one of the aims of the book.We comment on fitting power laws.}",
+	doi = {10.1093/oso/9780198821939.003.0003},
+	url = {https://doi.org/10.1093/oso/9780198821939.003.0003},
+	eprint = {https://academic.oup.com/book/0/chapter/192732750/chapter-ag-pdf/44628547/book\_25504\_section\_192732750.ag.pdf},
+}
 
 
 

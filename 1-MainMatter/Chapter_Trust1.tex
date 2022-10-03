@@ -1,6 +1,6 @@
 
 \chapter{The role of trust in knowledge based communities} % Main chapter title
-\label{ChapterTrust}
+\label{Ch:Trust}
 
 %Information and communications technologies (ICTs) have enabled faster and easier creation and sharing of knowledge. Furthermore, they have provided access to a large amount of data which enabled a detailed study of their emergence and evolution \cite{dankulov2015dynamics}, as well as user's roles \cite{saxena2021users}, patterns of their activity \cite{santos2019activity, slag2015one, chhabra2020activity}. 
 %However, relatively small attention was given to sustainability of SE communities. Most of the research was focused on the activity and factors that influence the increase of the users’ activity in these communities. Factors such as need for experts and the quality of their contributions have been thoroughly investigated \cite{dev2018size}. It was shown that growth of communities and mechanisms that drive it may depend on the topic around which the community was created \cite{santos2019self}.
@@ -77,7 +77,7 @@ We tested this theory on all eight communities. We focused on 30 days sub-networ
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\linewidth]{figures/stackexchange/popular_casual_users.pdf}
-	\caption{Links per node among popular users (top 10\% of users) and between popular and casual users (everyone but popular users).}
+	\caption[Number of links per node]{Links per node among popular users (top 10\% of users) and between popular and casual users (everyone but popular users).}
 	\label{fig:pop_cas_users}
 \end{figure} 
 
@@ -90,7 +90,7 @@ The number of users in the core of active communities is higher than in closed c
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\linewidth]{figures/stackexchange/core_users.pdf}
-	\caption{Just for reference size of the core (top) and fraction of users in core (bottom). Solid lines - active sites; dashed lines - closed sites.}
+	\caption[The size of the core]{The size of the core (top) and fraction of users in core (bottom). Solid lines - active sites; dashed lines - closed sites.}
 	\label{fig:core_size}
 \end{figure}
 
@@ -100,7 +100,7 @@ The highest values are found around diagonal elements where we compare networks 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\linewidth]{figures/stackexchange/jaccard_heatmap.pdf}
-	\caption{Jaccard index between core users in  sub-networks at time points $t1$ and $t2$}
+	\caption[Mean Jaccard index between core users.]{Jaccard index between core users in  sub-networks at time points $t1$ and $t2$.}
 	\label{fig:jaccard_hm}
 \end{figure}  
 
@@ -109,7 +109,7 @@ The average Jaccard index between cores in networks separated by time interval $
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\linewidth]{figures/stackexchange/jaccard.pdf}
-	\caption{Jaccard index between core users in 30days sub-networks for all possible pairs of 30 days sub-networks separated by time interval $|t_i - t_j|$}
+	\caption[Mean Jaccard index between core users.]{Jaccard index between core users in 30days sub-networks for all possible pairs of 30 days sub-networks separated by time interval $|t_i - t_j|$.}
 	\label{fig:jaccard_mean}
 \end{figure}
 
@@ -130,7 +130,7 @@ We further explore the difference between active and closed communities through 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{figures/stackexchange/reputation.pdf}
-	\caption{Dynamic Reputation on the four pairs of Stack Exchange websites: Astronomy, Literature, Economics,  Physics and Theoretical Physics.}
+	\caption[Dynamic Reputation of Stack Exchange websites.]{Dynamic Reputation on the four pairs of Stack Exchange websites: Astronomy, Literature, Economics,  Physics and Theoretical Physics.}
 	\label{fig:dr6panel}
 \end{figure}
 
@@ -152,7 +152,7 @@ In the core of the network are very active users, and we expect a higher dynamic
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\linewidth]{figures/stackexchange/core_per_ratio_reputation.pdf}
-	\caption{Ratio between the total reputation within network core and periphery. Solid lines active communities, dashed lines closed communities.}
+	\caption[Ratio between the total reputation within network core and periphery.]{Ratio between the total reputation within network core and periphery. Solid lines active communities, dashed lines closed communities.}
 	\label{fig:dr_core_per}
 \end{figure}
 
@@ -161,7 +161,7 @@ The distribution of the dynamic reputation of SE communities are skewed. We calc
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{figures/stackexchange/gini.pdf}
-	\caption{Gini index of dynamic reputation within population}
+	\caption[Gini index of dynamic reputation]{Gini index of dynamic reputation within population.}
 	\label{fig:dynrep-gini}
 \end{figure} 
 
@@ -170,7 +170,7 @@ Further, we investigate how the properties of user interaction networks correlat
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{figures/stackexchange/reputation_assortativity.pdf}
-	\caption{Dynamic Reputation assortativity in the network of interactions (questions, answers, comments, unweighted, undirected network). Solid lines - active sites; dashed lines - closed sites.}
+	\caption[Dynamic Reputation assortativity]{Dynamic Reputation assortativity in the network of interactions (questions, answers, comments, unweighted, undirected network). Solid lines - active sites; dashed lines - closed sites.}
 	\label{fig:dyn_rep_assort}
 \end{figure}
 
@@ -179,12 +179,20 @@ Finally, we are interested in how dynamical reputation correlates with network m
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{figures/stackexchange/correlations.pdf}
-	\caption{Coefficient of correlation between users' Dynamic Reputation and users' network degree (top) and users's betweenness centrality (bottom). Solid lines - active sites; dashed lines - closed sites.}
+	\caption[Coefficient correlation between ]{Coefficient of correlation between users' Dynamic Reputation and users' network degree (top) and users's betweenness centrality (bottom). Solid lines - active sites; dashed lines - closed sites.}
 	\label{fig:dyn_rep_centrality}
 \end{figure}
 
 \section{Conclusions}
 
+The Stack Exchange sites bring together users interested in knowledge sharing. They create different topic communities, where each member can post topic-related questions and get the correct answer from other users. The SE developed in one sense the trust among users, as many people see the SE as a valuable source of knowledge and seek their answers directly in these communities. Not all SE sites were launched, and some were closed because they did not fulfil the Stack Exchange criteria of the successful community. These criteria rely on basic measures such as the number of active users, posted questions, and answers, so we were interested in investigating the structure and dynamics of SE communities to understand how trustworthy and self-sustainable community emerges. 
 
+This chapter presented results on four pairs of SE communities: Astronomy, Literature, Economics and Physics. The first time each of them failed to create a sustainable network, but later the same topic was proposed communities are still active. While this sample may be small, we wanted to focus only on communities on the same topic, so our comparison between closed and active communities is not topic related. Also, we chose two communities from STEM and two from humanities which allowed us to remove field-related biases. 
 
+We studied how network properties evolve during the first 180 days. To closely examine the structure, we constructed the sub-networks within a 30days window. Sliding window by day, we continuously measure the structure of the network. The clustering coefficient is higher in active communities. The previous study suggested two groups of users in Q-A communities, popular and casual users \cite{santos2019self}. This observation motivated us to analyze the network segmentation in the core-periphery structure closely. Based on Bayesian Stochastic modelling, we identify each 30-day network core user.
+Furthermore, using DIBRM model\cite{melnikov2018toward}, we quantify the reputation of each user. This reputation is our proxy of trust, and its dynamics reflect some of the essential properties of trust. When a user is frequently active, the reputation increases; when inactivity declines the user becomes less important.   
+
+Used methods have several parameters which need to be tuned according to specific systems properties. First of all, we showed that the choice of the sliding window does not influence our conclusions, as observed system properties follow similar patterns for different values of sliding windows. Tuning the DIBRM parameters was more changeling. Our primary assumption was that number of users with a positive reputation should resemble the number of users in 30-day window.
+
+Our results suggest that core members are important for the sustainability of the community. The core members have a high reputation and contribute to the community's survival. The core is more connected in active communities, and larger connectivity is found between the core and periphery in active communities. The most noticeable difference between closed and active communities is in Physics. Physics is the only community that graduated after 90 days, while other active communities stayed in the beta phase for a couple of years; recently, their status changed to beta. On the other hand, closed Astronomy showed larger network properties than an active one, but as time progressed, this changed in favour of the active community. The larger mean reputation and its dynamics among core users in active networks is an important indicator of a thriving community.
 

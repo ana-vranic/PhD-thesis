@@ -1,12 +1,17 @@
 \documentclass[12pt,a4paper]{memoir}
 
-%define fonts
+
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[T1,OT2,T2A]{fontenc}
-\usepackage[english,serbian,serbianc]{babel}
-\usepackage{times} 
-%\usepackage{mathptmx}
+
+\usepackage[T2A, OT2, T1]{fontenc}
+\usepackage[english,serbian,serbianc,russian]{babel}
+\usepackage{tempora}
+%\usepackage{substitutefont}
+%\substitutefont{T2A}{\rmdefault}{Tempora-TLF} % after loading text font package
+
+\usepackage{times} %use times font
+
+%\usepackage{mathptmx} %use math pthm font
 %\usepackage{mathpazo} % Use the Palatino font by default
 
 \usepackage[dvips]{graphicx}
@@ -29,7 +34,7 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 \usepackage[explicit]{titlesec}
 \usepackage{setspace}
 \usepackage{enumitem}
-\usepackage{pdfpages}
+%\usepackage{pdfpages}
 \usepackage{ragged2e}
 \usepackage[caption=false,labelformat=empty]{subfig}
 \usepackage{titleps}
@@ -39,7 +44,7 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 
 
 
-%\SingleSpacing
+%\SingleSpacing %single spacing by default
 %\OnehalfSpacing
 %\DoubleSpacing
 %\linespread{1.3} %1.3 is onehalf spacing 
@@ -74,12 +79,11 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 
 
 \maxsecnumdepth{subsection} % chapters, sections, and subsections are numbered
-\maxtocdepth{subsection} % chapters, sections, and subsections are in the Table of Contents
+\maxtocdepth{section} % chapters, sections, and subsections are in the Table of Contents
 %\settocdepth{section}
 %\setsecnumdepth{section}
 %\setcounter{secnumdepth}{1}
 %%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
-
 
 \graphicspath{{figs/}}
 \begin{document}
@@ -93,19 +97,18 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 %\include{0-FrontMatter/Abstract-Eng}
 %\include{0-FrontMatter/Abstract-Srb}
 %\include{0-FrontMatter/Contents}
+\selectlanguage{english}
 %\include{0-FrontMatter/Figures}
 %\include{0-FrontMatter/Tables}
 
 \mainmatter
 \selectlanguage{english}
-%\include{1-MainMatter/Chapter_Introduction}
+\include{1-MainMatter/Chapter_Introduction}
 \include{1-MainMatter/Chapter_Methodology}
 \include{1-MainMatter/Chapter_DrivingSignal}
 \include{1-MainMatter/Chapter_GroupsGrowth}
 \include{1-MainMatter/Chapter_Trust1}
-%\include{1-MainMatter/Chapter_Trust2}
-%\include{1-MainMatter/Chapter_Trust3}
-%\include{1-MainMatter/Chapters/Chapter_Conclusions}
+\include{1-MainMatter/Chapter_Conclusions}
 
 \appendix
 \include{2-Appendix/Appendix_SEdata}
