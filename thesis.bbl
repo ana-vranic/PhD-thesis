@@ -18,15 +18,16 @@ J.~J. Binney, N.~J. Dowrick, A.~J. Fisher, and M.~E.~J. Newman.
 \newblock Oxford University Press, 1992.
 
 \bibitem{chatterjee2013}
-A.~Chatterjee, M.~Mitrovi{\'c}, and S.~Fortunato.
-\newblock {Universality in voting behavior: an empirical analysis}.
-\newblock {\em Sci. Rep}, 3:1--9, 2013.
+Arnab Chatterjee, Marija Mitrovi{\'c}, and Santo Fortunato.
+\newblock Universality in voting behavior: an empirical analysis.
+\newblock {\em Scientific reports}, 3(1):1--9, 2013.
 
 \bibitem{radicchi2008}
-F.~Radicchi, S.~Fortunato, and C.~Castellano.
-\newblock {Universality of citation distributions: Toward an objective measure
-  of scientific impact}.
-\newblock {\em Proc. Natl. Acad. Sci. U. S. A.}, 105:17268--17272, 2008.
+Filippo Radicchi, Santo Fortunato, and Claudio Castellano.
+\newblock Universality of citation distributions: Toward an objective measure
+  of scientific impact.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  105(45):17268--17272, 2008.
 
 \bibitem{barthelemy2019}
 M.~Barthelemy.
@@ -49,16 +50,15 @@ V.~Latora, V.~Nicosia, and G.~Russo.
 \newblock 2017.
 
 \bibitem{myers2014}
-Seth~A Myers and Jure Leskovec.
-\newblock The bursty dynamics of the twitter information network.
+S.~A. Myers and J.~Leskovec.
+\newblock {The bursty dynamics of the twitter information network}.
 \newblock In {\em Proceedings of the 23rd international conference on World
   wide web}, pages 913--924, 2014.
 
 \bibitem{sarigol2014}
-Emre Sarig{\"o}l, Ren{\'e} Pfitzner, Ingo Scholtes, Antonios Garas, and Frank
-  Schweitzer.
-\newblock Predicting scientific success based on coauthorship networks.
-\newblock {\em EPJ Data Science}, 3(1):9, 2014.
+E.~Sarig{\"o}l, R.~Pfitzner, I.~Scholtes, A.~Garas, and F.~Schweitzer.
+\newblock {Predicting scientific success based on coauthorship networks}.
+\newblock {\em EPJ Data Science}, 3:9, 2014.
 
 \bibitem{fraiman2009ising}
 D.~Fraiman, P.~Balenzuela, J.~Foss, and D.~R. Chialvo.
@@ -105,9 +105,61 @@ D.~J. Watts and S.~H. Strogatz.
 \newblock {\em Nature}, 393:440--442, 1998.
 
 \bibitem{barabasi1999}
-Albert-L{\'a}szl{\'o} Barab{\'a}si and R{\'e}ka Albert.
-\newblock Emergence of scaling in random networks.
-\newblock {\em science}, 286(5439):509--512, 1999.
+A.-L. Barab{\'a}si and R.~Albert.
+\newblock {Emergence of scaling in random networks}.
+\newblock {\em Science}, 286:509--512, 1999.
+
+\bibitem{dorogovtsev2000b}
+S.~N. Dorogovtsev and J.~F.~F. Mendes.
+\newblock {Evolution of networks with aging of sites}.
+\newblock {\em Phy. Rev. E}, 62:1842, 2000.
+
+\bibitem{dorogovtsev2001b}
+Sergey~N Dorogovtsev and Jos{\'e}~FF Mendes.
+\newblock Scaling properties of scale-free evolving networks: Continuous
+  approach.
+\newblock {\em Physical Review E}, 63(5):056125, 2001.
+
+\bibitem{pham2016}
+T.~Pham, P.~Sheridan, and H.~Shimodaira.
+\newblock {Joint estimation of preferential attachment and node fitness in
+  growing complex networks}.
+\newblock {\em Sci. Rep}, 6:32558, 2016.
+
+\bibitem{sen2004}
+Parongama Sen.
+\newblock Accelerated growth in outgoing links in evolving networks:
+  Deterministic versus stochastic picture.
+\newblock {\em Physical Review E}, 69(4):046107, 2004.
+
+\bibitem{liu2019}
+Jin Liu, Jian Li, Yadang Chen, Xianyi Chen, Zhili Zhou, Zejun Yang, and
+  Cheng-Jun Zhang.
+\newblock Modeling complex networks with accelerating growth and aging effect.
+\newblock {\em Physics Letters A}, 383(13):1396--1400, 2019.
+
+\bibitem{mitrovic2010a}
+M.~Mitrovi{\'{c}} and B.~Tadi{\'{c}}.
+\newblock Bloggers behavior and emergent communities in blog space.
+\newblock {\em The European Physical Journal B 2009 73:2}, 73(2):293--301,
+  2009.
+
+\bibitem{mitrovic2012}
+Marija Mitrovi{\'{c}} and Bosiljka Tadi{\'{c}}.
+\newblock Emergence and structure of cybercommunities.
+\newblock In {\em Springer Optimization and Its Applications}, volume~57, pages
+  209--227. Springer International Publishing, 2012.
+
+\bibitem{mitrovic2015}
+Marija~Mitrovi{\'c} Dankulov, Roderick Melnik, and Bosiljka Tadi{\'c}.
+\newblock The dynamics of meaningful social interactions and the emergence of
+  collective knowledge.
+\newblock {\em Scientific reports}, 5(1):1--10, 2015.
+
+\bibitem{schweitzer2018sociophysics}
+Frank Schweitzer.
+\newblock Sociophysics.
+\newblock {\em Phys. Today}, 71(2):40, 2018.
 
 \bibitem{caldarelli2007scalefree}
 Guido Caldarelli.
@@ -204,28 +256,28 @@ A.~{Melnikov}, J.~{Lee}, V.~{Rivera}, M.~{Mazzara}, and L.~{Longo}.
 \newblock In {\em 2018 IEEE 32nd International Conference on Advanced
   Information Networking and Applications (AINA)}, pages 422--428, 2018.
 
-\bibitem{boccaletti2006}
-S.~Boccaletti, V.~Latora, Y.~Moreno, M.~Chavez, and D.-U. Hwang.
-\newblock {Complex networks: Structure and dynamics}.
-\newblock {\em Phys. Rep}, 424:175--308, 2006.
-
 \bibitem{tiago2}
 Tiago~A Schieber, Laura Carpi, Albert D{\'\i}az-Guilera, Panos~M Pardalos,
   Cristina Masoller, and Mart{\'\i}n~G Ravetti.
 \newblock Quantification of network structural dissimilarities.
 \newblock {\em Nature communications}, 8(1):1--10, 2017.
 
-\bibitem{furnato2016}
-Santo Fortunato and Darko Hric.
-\newblock Community detection in networks: A user guide.
-\newblock {\em Physics Reports}, 659:1 -- 44, 2016.
-\newblock Community detection in networks: A user guide.
+\bibitem{fortunato2010community}
+Santo Fortunato.
+\newblock Community detection in graphs.
+\newblock {\em Physics reports}, 486(3-5):75--174, 2010.
 
 \bibitem{martin}
 Martin Rosvall, Jean{-}Charles Delvenne, Michael~T. Schaub, and Renaud
   Lambiotte.
 \newblock Different approaches to community detection.
 \newblock {\em CoRR}, abs/1712.06468, 2017.
+
+\bibitem{funke2019}
+Thorben Funke and Till Becker.
+\newblock Stochastic block models: A comparison of variants and inference
+  methods.
+\newblock {\em PLOS ONE}, 14(4):1--40, 04 2019.
 
 \bibitem{mitzenmacher2004brief}
 Michael Mitzenmacher.
@@ -248,16 +300,10 @@ Jan~W Kantelhardt, Stephan~A Zschiegner, Eva Koscielny-Bunde, Shlomo Havlin,
   316(1-4):87--114, 2002.
 
 \bibitem{ihlen2012}
-Espen Alexander F{\"u}rst~EAFI Ihlen.
-\newblock Introduction to multifractal detrended fluctuation analysis in
-  matlab.
-\newblock {\em Frontiers in physiology}, 3:141, 2012.
-
-\bibitem{dorogovtsev2001b}
-Sergey~N Dorogovtsev and Jos{\'e}~FF Mendes.
-\newblock Scaling properties of scale-free evolving networks: Continuous
-  approach.
-\newblock {\em Physical Review E}, 63(5):056125, 2001.
+E.~Alexander F.~E.A.F.I. Ihlen.
+\newblock {Introduction to multifractal detrended fluctuation analysis in
+  Matlab}.
+\newblock {\em Front. Psychol.}, 3:141, 2012.
 
 \bibitem{smiljanic2017associative}
 Jelena Smiljani{\'c} and Marija Mitrovi{\'c}~Dankulov.
@@ -266,10 +312,10 @@ Jelena Smiljani{\'c} and Marija Mitrovi{\'c}~Dankulov.
 \newblock {\em PloS one}, 12(2):e0171565, 2017.
 
 \bibitem{suvakov2013}
-Milovan Suvakov, Marija Mitrovic, Vladimir Gligorijevic, and Bosiljka Tadic.
-\newblock How the online social networks are used: dialogues-based structure of
-  myspace.
-\newblock {\em Journal of The Royal Society Interface}, 10(79):20120819, 2013.
+M.~\v{S}uvakov, M.~Mitrovi\'{c}, V.~Gligorijevi\'{c}, and B.~Tadi\'{c}.
+\newblock {How the online social networks are used: dialogues-based structure
+  of MySpace}.
+\newblock {\em Journal of The Royal Society Interface}, 10:20120819, 2013.
 
 \bibitem{makse1996method}
 Hern{\'a}n~A Makse, Shlomo Havlin, Moshe Schwartz, and H~Eugene Stanley.
@@ -351,11 +397,11 @@ Jeff Alstott, Ed~Bullmore, and Dietmar Plenz.
 \newblock {\em PLOS ONE}, 9(1):1--11, 01 2014.
 
 \bibitem{orsini2015quantifying}
-Chiara Orsini, Marija~M Dankulov, Pol Colomer-de Sim{\'o}n, Almerima Jamakovic,
-  Priya Mahadevan, Amin Vahdat, Kevin~E Bassler, Zolt{\'a}n Toroczkai,
-  Mari{\'a}n Bogun{\'a}, Guido Caldarelli, et~al.
-\newblock Quantifying randomness in real networks.
-\newblock {\em Nature communications}, 6(1):1--10, 2015.
+C.~Orsini, M.~Mitrovi\'c~Dankulov, P.~Colomer-de Sim{\'o}n, A.~Jamakovic,
+  P.~Mahadevan, A.~Vahdat, K.~E. Bassler, Z.~Toroczkai, M.~Bogu{\~n}{\'a},
+  G.~Caldarelli, S.~Fortunato, and Kriukov D.
+\newblock {Quantifying randomness in real networks}.
+\newblock {\em Nat. Commun}, 6:8627, 2015.
 
 \bibitem{centola2007cascade}
 Damon Centola, V{\'\i}ctor~M Egu{\'\i}luz, and Michael~W Macy.
@@ -375,22 +421,10 @@ Tiago Santos, Simon Walk, Roman Kern, Markus Strohmaier, and Denis Helic.
   communities.
 \newblock In {\em The World Wide Web Conference}, pages 1634--1645, 2019.
 
-\bibitem{fortunato2010community}
-Santo Fortunato.
-\newblock Community detection in graphs.
-\newblock {\em Physics reports}, 486(3-5):75--174, 2010.
-
 \bibitem{gabaix1999}
 X.~Gabaix.
 \newblock {Zipf's Law and the Growth of Cities}.
 \newblock {\em Am. Econ. Rev.}, 89:129--132, 1999.
-
-\bibitem{radicchi2008universality}
-Filippo Radicchi, Santo Fortunato, and Claudio Castellano.
-\newblock Universality of citation distributions: Toward an objective measure
-  of scientific impact.
-\newblock {\em Proceedings of the National Academy of Sciences},
-  105(45):17268--17272, 2008.
 
 \bibitem{dover2020sustainable}
 Yaniv Dover, Jacob Goldenberg, and Daniel Shapira.

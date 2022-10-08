@@ -25,7 +25,7 @@ First approach is to aggregate all interactions in the first 180 days, and study
  
 We calculate the \textbf{degree distribution}, figure \ref{fig:fullnetdeg}, and compare the distributions of active and closed communities of the same topic. Degree distributions between active and closed communities follow similar lines. 
  
- \begin{figure}[h]
+ \begin{figure}[ht]
  	\centering
  	\includegraphics[width=\linewidth]{figures/stackexchange/degree_distribution_fullnet.pdf}
  	\caption{Degree distribution.}
@@ -34,7 +34,7 @@ We calculate the \textbf{degree distribution}, figure \ref{fig:fullnetdeg}, and 
  
 If we take look into \textbf{neighbor degree} dependece on the node degree $k_{nn}(k)$, figure \ref{fig:fullneighdeg} we find that there are structural differences between networks formed in the active and closed communities. On average $k$-degree users in active communities have neighbors with larger degree than it is case in closed communities. The results are consistent for Physics, Economics and Literature. For Astronomy we find different behavior, where the $k_{nn}(k)$ distributions of closed communities are on the top of distributions of the active one. 
 
-\begin{figure}[h]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=\linewidth]{figures/stackexchange/neighdeg_fullnet.pdf}
 	\caption{Neighbour degree.}

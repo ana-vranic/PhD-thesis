@@ -7,6 +7,8 @@ Many real systems, such as brain network, social organizations, cities or even b
 
 An important property of the complex systems is called universality \cite{binney1992}. The empirical analysis showed that universality is characteristic of many collective social phenomena  \cite{chatterjee2013, radicchi2008}. Even the growth of social groups, such as cities, follow universal patterns. The probability distribution of the city sizes in one country follows the same laws, with a similar exponent for all countries \cite{barthelemy2019}. Understanding how universalities in the system emerge is the focus of statistical physics of complex systems \cite{verbavatz2020}. 
 
+%Emergent collective behavior is an indispensable property of complex systems \cite{ladyman2013}. It occurs as a consequence of interactions between a large number of units that compose a complex system, and it cannot be easily predicted from the knowledge about the behavior of these units. The previous research offers a definite proof that the structure of the interaction network is inextricably associated with dynamic and function of the complex system \cite{barrat2008, pascual2006, castellano2009, gosak2018, arenas2008, boccaletti2016, chen2018, kuga2018}. The structure of complex networks is essential for understanding the evolution and function of various complex systems \cite{boccaletti2006,newman2010, holme2012, boccaletti2014}. 
+
 The research in complex systems focuses on the interactions between its units. The interactions are not homogeneous; as the system evolves, we also find that interactions become specific and nonlinear \cite{thurner2018}. Knowing how units of the system are connected, we can determine the emergence of the collective behaviour of the system \cite{ladyman2013}. For the brain network, we can construct representation with neurons and synapses, representing the brain connectivity. Neurons in the same brain area are closely connected \cite{latora2017complex}.
 Similarly, we can define communication between people. The structure of these interactions gives us insights, for example, how information propagates through the system. The presence of people with many connections can lead to faster information flow. 
 
@@ -23,25 +25,38 @@ The first mathematical problem solved using graph theory was $Konigsberg$ proble
 
 	\label{fig:Krgraph}
 \end{figure}
+%TODO review network models
+The analysis of different real networks showed that they share common properties \cite{boccaletti2006complex}: small-world behaviour, large clustering and scale-free structure. Small-world property means that the distance between any two nodes is small and scales as logarithmic with the degree of the node. Real systems show high clustering, and the most prominent feature is scale-free property, where the degree distribution follows the power law. In the random network model (Erdős-Rényi) each node has an equal connecting probability, \cite{dorogovtsev2010complex}. This model produces Poisson degree distribution, contrary to those properties observed from data, so it could not describe real systems. Two seminal papers from 1999. by Watts and Strogatz \cite{watts1998collective}, and the Barabási-Albert model \cite{barabasi1999} inspired further research in this field. Watts and Strogatz  \cite{watts1998collective} proposed a new model that could generate networks with small-world properties, while the Barabasi-Albert model generates scale-free networks. 
 
-The analysis of different real networks showed that they share common properties \cite{boccaletti2006complex}: small-world behaviour, large clustering and scale-free structure. Small-world property means that the distance between any two nodes is small and scales as logarithmic with the degree of the node. Real systems show high clustering, and the most prominent feature is scale-free property, where the degree distribution follows the power law. Two decades before, the most used complex network model was the random network model (Erdős-Rényi), where each node has an equal connecting probability, \cite{dorogovtsev2010complex}. This model produces Poisson degree distribution, contrary to those properties observed from data, so it could not describe real systems. Two seminal papers from 1999. by Watts and Strogatz \cite{watts1998collective}, and the Barabási-Albert model \cite{barabasi1999} inspired further research in this field. Watts and Strogatz  \cite{watts1998collective} proposed a new model that could generate networks with small-world properties, while the Barabasi-Albert model generates scale-free structures. 
+The combination of network growth and linking rules- new nodes prefer high degree nodes- lead to scale-free degree distribution. Since then, different complex networks models were proposed in order to better describe the dynamics of social and technological systems. As linking probability in the BA model is linear with node degree, first generalization was to introduce nonlinear dependence. Further, the linking probability may depend on the node age \cite{dorogovtsev2000b, dorogovtsev2001b}, or any other feature; fitness. Some models considered that nodes become inactive, or even that network grows through nonlinear number of links \cite{pham2016}. On the other hands were considered models with accelarated growth in the number of nodes \cite{sen2004}, in order to simulated exponential expansion of the online social systems. The empirical analysis of various online social systems show that their growth is time dependent and often accelerated \cite{liu2019}. The number of new nodes joining in time has trends and reflect the typical human behavior \cite{mitrovic2010a, mitrovic2012, mitrovic2015 }. 
 
-The studies about the dynamics and structure of complex networks are necessary for understanding underlying mechanisms that shape complex systems. Real networks are much more heterogeneous than networks obtained in simple models. Links may be directed or undirected, they may have temporal dependencies, or we can simply deal with different types of interaction in one system. Different network representations deal with these specific features. On the other hand we also need proper network models to describe the real systems. 
 
-%Network growth, in combination with linking rules, shapes the network topology \cite{vazquez2003}. While various rules have been proposed to explain the topology of real networks \cite{boccaletti2006}, most models assume a constant rate of network growth, i.e., the addition of a fixed number of nodes at each time step \cite{barabasi1999, klemm2002, serrano2005}. However, the results of empirical analysis of numerous technological and social systems show that their growth is time-dependent \cite{huberman1999, mitrovic2010a, mitrovic2015, liu2019}. The accelerated growth in complex networks is the cause of the high heterogeneity in the distribution of webpages among websites \cite{huberman1999} and the emergence of highly cited authors in citation networks \cite{liu2019}. The growth of real systems is not always accelerated. The number of new nodes joining the system varies in time, has trends, and exhibits circadian cycles typical for human behavior \cite{mitrovic2010a, mitrovic2012, mitrovic2015}. These signals are multifractal and have long-range correlations \cite{kantelhardt2002}. Some preliminary evidence shows that the time-varying growth influences the structure and dynamics of the social system and, consequently, the structure of interaction networks in social systems \cite{mitrovic2012,mitrovic2011,mitrovic2015,tadic2017,tadic2013}. Still, which properties of the real growth signal have the largest influence, how different properties influence the topology of the generated networks and to what extent is an open question.
+%The idea of small world property dates from Milgram, he showed that average path length between individuals is small. This was tested on online social networks by Ugander et al., they showed that users on Facebook were within six degrees of separation. 
 
-%On the other hand, we also need proper network models to describe the real systems.  
+
+
+
+
+
+
+
+%TODO: review sociophysics
+\cite{schweitzer2018sociophysics}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%Emergent collective behavior is an indispensable property of complex systems \cite{ladyman2013}. It occurs as a consequence of interactions between a large number of units that compose a complex system, and it cannot be easily predicted from the knowledge about the behavior of these units. The previous research offers a definite proof that the structure of the interaction network is inextricably associated with dynamic and function of the complex system \cite{barrat2008, pascual2006, castellano2009, gosak2018, arenas2008, boccaletti2016, chen2018, kuga2018}. The structure of complex networks is essential for understanding the evolution and function of various complex systems \cite{boccaletti2006,newman2010, holme2012, boccaletti2014}.  
+ 
 
 %The structure and dynamics of real complex systems are studied using complex network theory \cite{boccaletti2006,newman2010, ladyman2013}. It was shown that real networks have similar topological properties regardless of their origins \cite{barabasi2009}. They have broad degree distribution, degree-degree correlations, and power-law scaling of clustering coefficient \cite{barabasi2009,newman2010}. Understanding how these properties emerge in complex networks leads to the factors that drive their evolution and shape their structure \cite{barrat2008}.
 
 %The complex network models substantially contribute to our understanding of the connection between the network topology and system dynamics and uncover underlying mechanisms that lead to the emergence of distinctive properties in real complex networks \cite{barabasi1999, tadic2001, mitrovic2009}. For instance, the famous Barabasi-Albert model \cite{barabasi1999} finds the emergence of broad degree distribution to be a consequence of preferential attachment and network growth. Degree-degree anti-correlations of the Internet can be explained, at least to a certain extent, by single edge constrain \cite{maslov2004, park2003}. Detailed analysis of emergence of clustered networks shows that clustering is either the result of finite memory of the nodes \cite{klemm2002} or occurs due to triadic closure \cite{serrano2005}. 
 
 %Network growth, in combination with linking rules, shapes the network topology \cite{vazquez2003}. While various rules have been proposed to explain the topology of real networks \cite{boccaletti2006}, most models assume a constant rate of network growth, i.e., the addition of a fixed number of nodes at each time step \cite{barabasi1999, klemm2002, serrano2005}. However, the results of empirical analysis of numerous technological and social systems show that their growth is time-dependent \cite{huberman1999, mitrovic2010a, mitrovic2015, liu2019}. The accelerated growth in complex networks is the cause of the high heterogeneity in the distribution of webpages among websites \cite{huberman1999} and the emergence of highly cited authors in citation networks \cite{liu2019}. The growth of real systems is not always accelerated. The number of new nodes joining the system varies in time, has trends, and exhibits circadian cycles typical for human behavior \cite{mitrovic2010a, mitrovic2012, mitrovic2015}. These signals are multifractal and have long-range correlations \cite{kantelhardt2002}. Some preliminary evidence shows that the time-varying growth influences the structure and dynamics of the social system and, consequently, the structure of interaction networks in social systems \cite{mitrovic2012,mitrovic2011,mitrovic2015,tadic2017,tadic2013}. Still, which properties of the real growth signal have the largest influence, how different properties influence the topology of the generated networks and to what extent is an open question.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 %The development of a knowledge-based society is one of the critical processes in the modern world \cite{leydesdorff2001sociological,leydesdorff2012triple}. In a knowledge-based society, knowledge is generated, shared, and made available to all members. It is a vital resource. Sharing this resource between individuals and organizations is a necessary process, and knowledge-sharing communities are one of the fundamental elements of a knowledge society.
 
@@ -52,6 +67,21 @@ The studies about the dynamics and structure of complex networks are necessary f
 
 
 
+
+
+
+
+
+
+
+  
+
+%TODO: uvodni deo o drugom radu
+%TODO: uvodni deo o trecem radu
+
+
+%TODO: ovde o agent based modelima i dinamici na mrezama
+%Beside empirical analysis and modeling complex networks, in order to characterize their strucure and dynamics, the important research direction is agent based modeling on the network topology. Progress in the science of complex systems would be impossible without understanding of dynamics how elements interact, and it is possible with massive computational effort and the availability of big data. 
 %The advances in understanding large complex networks have generated
 %increased attention towards the potential implications of their structure for the
 %most important questions concerning the various physical and dynamical processes
@@ -73,18 +103,7 @@ The studies about the dynamics and structure of complex networks are necessary f
 %impact of the various network characteristics on the basic features of equilibrium
 %and non-equilibrium dynamical processes.  
 
-
-
-%The combination of network growth and linking rules- new nodes prefer high degree nodes- lead to scale-free degree distribution. Since then, different complex networks models were proposed in order to better describe the dynamics of social and technological systems. As linking probability in the B-A model is linear with node degree, first generalization was to introduce nonlinear dependence. Further, the linking probability may depend on the node age \cite{dorogovtsev2000b, dorogovtsev2001b}, or any other feature; fitness. Some models considered that nodes become inactive, or even that network grows through nonlinear number of links \cite{pham2016}. Models with accelerated growth \cite{sen2004} or in our paper we considered nonlinear growth in number of nodes. 
-
-
-
-%Beside empirical analysis and modeling complex networks, in order to characterize their strucure and dynamics, the important research direction is agent based modeling on the network topology. Progress in the science of complex systems would be impossible without understanding of dynamics how elements interact, and it is possible with massive computational effort and the availability of big data.   
-
-%TODO: uvodni deo o drugom radu
-%TODO: uvodni deo o trecem radu
-
-
+%The studies about the dynamics and structure of complex networks are necessary for understanding underlying mechanisms that shape complex systems. Real networks are much more heterogeneous than networks obtained in simple models. Links may be directed or undirected, they may have temporal dependencies, or we can simply deal with different types of interaction in one system. Different network representations deal with these specific features.
 
 \selectlanguage{english}
 
@@ -121,7 +140,7 @@ It is common to represent the graph as edge list. In this case, illustrated on F
 	\label{fig:multigraph}
 \end{figure}
 
-To create the more realistic models, sometimes is essential to include the specific properties of the system in the network representation. For example, to emphasis the frequent interactions between nodes, edges can be assigned with different values, such networks are \textbf{weighted}. They can be described with adjacency matrix, whose elements can take any real number $A_{ij}=w_{ij}$ and $w_{ij}>0$. In general edges may be associated with any categorical variable. Similarly additional properties can be added to nodes, or even to the whole network structure. To include the \textbf{temporal} component in the network, edges are characterized with the time when the interaction between nodes happen. Finally, if two nodes interact in different ways, the \textbf{multigraph} is appropriate configuration where multiply edges are allowed. The graphical representation of discussed network representations is given on the Figure \ref{fig:multigraph}.
+Sometimes is essential to include the specific properties of the system in the network representation. For example, to emphasis the frequent interactions between nodes, edges can be assigned with different values, such networks are \textbf{weighted}. They can be described with adjacency matrix, whose elements can take any real number $A_{ij}=w_{ij}$ and $w_{ij}>0$. In general edges may be associated with any categorical variable. Similarly additional properties can be added to nodes, or even to the whole network structure. To include the \textbf{temporal} component in the network, edges are characterized with the time when the interaction between nodes happen. Finally, if two nodes interact in different ways, the \textbf{multigraph} is appropriate configuration where multiply edges are allowed. The graphical representation of discussed network representations is given on the Figure \ref{fig:multigraph}.
 
 A \textbf{bipartite network} consists of two types nodes. The nodes in the same partition are not connected, while links exist only between partitions. For many real systems, a bipartite graph is a natural representation\cite{barabasi2016network, latora2017complex}. For example, the bipartite network of people and groups has two distinct node partitions while links indicate the memberships. Another example is a system of customers and products. The link between user and item is created when the user buys an item. The bipartite networks find their application in the algorithms for recommended systems, whose goal is to recommend items that may interest the user. Actually, to find the most probable missing links in the network. 
 
