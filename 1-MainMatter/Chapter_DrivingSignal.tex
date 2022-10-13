@@ -128,22 +128,17 @@ We can generate the data using Fourier filtering with $\beta = 2H - 1$, as follo
 
 The Fourier filtering method generates the Gaussian distributed data, so data are without broad distributions, nonlinear or multifractal properties. Using this method we generated the signals for differet values of the Hurst exponent, see figure \ref{fig:monofractals}. The obtained signals are round to integers and mean values of signals are close to $4$.
 
-
-
-
-%We focus on the region of model phase diagram with negative $\alpha$ and positive $\beta$ as there is found the transition line from stretched-exponential across scale-free to the small world- gel networks. We take range of parameters  $-3\leq\alpha\leq-0.5$ and $1\leq\beta\leq3$ with steps $0.5$ and we also vary the the number of links each new node can create $L\in{1, 2, 3}$. For each combination of $(\alpha, \beta, L)$ we generate the sample of $100$ networks, and compare the structure of network grown with fluctuating and the constant signal. The results represented by D-measure are obtained averaging the D-measure between all possible pairs of generated networks.     
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{monofractals.pdf}
+	\caption[Long range correlated monofractal signals]{Monofractal signals generated with Fourier filtering method for different Hurst exponents}
+	\label{fig:monofractals}
+\end{figure}  
 
 
 As before, we focus on the region of model phase diagram with negative $\alpha$ and positive $\beta$ as there is found the transition line from stretched-exponential across scale-free to the small world- gel networks. We take range of parameters  $-3\leq\alpha\leq-0.5$ and $1\leq\beta\leq3$ with steps $0.5$ and we also vary the the number of links each new node can create $L\in{1, 2, 3}$. For each combination of $(\alpha, \beta, L)$ we generate the sample of $100$ networks, and compare the structure of network grown with fluctuating signals with different Hurst exponent $H \in \{0.5, 0.6, 0.7, 0.8, 0.9, 1.0\}$ and constant signal $M=4$. The results represented by D-measure, shown in the figure \ref{fig:Ddist_m}  are obtained averaging the D-measure between all possible pairs of generated networks.   
 
 The higher values of D-measure are found in the region of critical line $\beta(\alpha^{*})$. The most considerable influence is on networks with scale-free distribution. Comparing D-distance in only one point of  phase diagram, for example $L=1, \alpha = -2.5, \beta = 2.5$, we find that when Hurst exponent is larger, correlations in the signal make bigger impact on the network structure. D-measure between networks grown with signal with Hurst exponent $H=1.0$ and constant signal is $D(H=1.0, M=4) = 0.405$, while between networks grown with signal with $H=0.8$ and constant signal is $D(H=0.8, M=4) = 0.316$. For $\alpha>\alpha^{*}$ networks have similar structural properties and D-measure is close to 0. In the region of networks with stretched exponential degree distribution $\alpha<\alpha^{*}$  differences are small. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\linewidth]{monofractals.pdf}
-	\caption[Long range correlated monofractal signals]{Monofractal signals generated with Fourier filtering method for different Hurst exponents}
-	\label{fig:monofractals}
-\end{figure}
 
 \begin{figure}[H]
 	\centering
@@ -157,7 +152,7 @@ We further explore the assortativity index and clustering coefficient of generat
 
 In the region of critical parameters, the assortativity index depends on the value of the Hurst exponent. The larger influence on the assortativity index have correlated signals, with Hurst exponent $H>0.8$, so networks become more disassortative, see line for parameters $L=1, \alpha=-2.5, \beta=2.5$ in Figure \ref{fig:aindex}. The long-range correlations have a stronger effect on the evolution of networks with lower density. 
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.45\textwidth]{aindex.pdf}
 	\includegraphics[width=0.45\textwidth]{clustering.pdf}

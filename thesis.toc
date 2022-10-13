@@ -1,19 +1,25 @@
 \babel@toc {english}{}
-\contentsline {chapter}{Abstract}{i}{chapter*.1}%
 \babel@toc {russian}{}
-\babel@toc {english}{}
-\contentsline {chapter}{Contents}{ii}{section*.2}%
-\babel@toc {english}{}
-\contentsline {chapter}{List of figures}{iv}{section*.3}%
+\babel@toc {serbianc}{}
 \babel@toc {english}{}
 \babel@toc {english}{}
-\contentsline {chapter}{List of Tables}{v}{section*.4}%
+\contentsline {chapter}{Acknowledgements}{vii}{chapter*.2}%
 \babel@toc {english}{}
+\contentsline {chapter}{Abstract}{ix}{chapter*.3}%
+\babel@toc {serbianc}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\contentsline {chapter}{Contents}{xii}{section*.5}%
+\babel@toc {english}{}
+\contentsline {chapter}{List of figures}{xiv}{section*.6}%
+\babel@toc {english}{}
+\babel@toc {english}{}
+\contentsline {chapter}{List of Tables}{xv}{section*.7}%
 \babel@toc {english}{}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The complex networks}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}In this thesis}{7}{section.1.2}%
 \babel@toc {english}{}
-\contentsline {section}{\numberline {1.1}The complex networks}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}In this thesis}{6}{section.1.2}%
 \babel@toc {english}{}
 \contentsline {chapter}{\chapternumberline {2}Methodology}{9}{chapter.2}%
 \contentsline {section}{\numberline {2.1}The measures of complex networks}{9}{section.2.1}%
@@ -23,20 +29,20 @@
 \contentsline {subsection}{\numberline {2.1.4}Network paths}{11}{subsection.2.1.4}%
 \contentsline {subsection}{\numberline {2.1.5}D-measure}{12}{subsection.2.1.5}%
 \contentsline {subsection}{\numberline {2.1.6}Community structure}{12}{subsection.2.1.6}%
-\contentsline {section}{\numberline {2.2}Network models}{14}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Random network model}{14}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Small-world networks}{16}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.2}Network models}{15}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Random network model}{15}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Small-world networks}{17}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Barab\' {a}si-Albert model}{17}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Nonlinear preferential attachment model}{18}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.4}Nonlinear preferential attachment model}{19}{subsection.2.2.4}%
 \contentsline {subsection}{\numberline {2.2.5}Ageing model}{19}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}Stochastic block model}{20}{subsection.2.2.6}%
-\contentsline {section}{\numberline {2.3}The probability distributions}{21}{section.2.3}%
+\contentsline {subsection}{\numberline {2.2.6}Stochastic block model}{21}{subsection.2.2.6}%
+\contentsline {section}{\numberline {2.3}The probability distributions}{22}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}The properties of distributions}{22}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Plotting the distributions}{23}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Plotting the distributions}{24}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Estimating the distribution parameters}{24}{subsection.2.3.3}%
 \contentsline {section}{\numberline {2.4}Fractal analysis}{27}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Long and Short-term correlations}{27}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Rescaled range analysis}{27}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.2}Rescaled range analysis}{28}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Fluctuation analysis}{28}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}Multifractality of the signals}{29}{subsection.2.4.4}%
 \contentsline {section}{\numberline {2.5}Dynamical reputation model}{30}{section.2.5}%
@@ -56,17 +62,28 @@
 \contentsline {section}{\numberline {4.3}Results}{49}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Distributions fit}{51}{subsection.4.3.1}%
 \contentsline {section}{\numberline {4.4}Conclusions}{54}{section.4.4}%
-\contentsline {chapter}{\chapternumberline {5}The role of trust in knowledge based communities}{55}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Network properties of Stack Exchange data}{55}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Core-periphery structure}{57}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Dynamical Reputation on Stack Exchange communities}{60}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Conclusions}{64}{section.5.4}%
-\contentsline {chapter}{\chapternumberline {6}Conclusions}{67}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {5}The role of trust in knowledge based communities}{57}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Network properties of Stack Exchange data}{57}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Core-periphery structure}{59}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Dynamical Reputation on Stack Exchange communities}{62}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Conclusions}{66}{section.5.4}%
+\contentsline {chapter}{\chapternumberline {6}Conclusions}{69}{chapter.6}%
 \babel@toc {serbianc}{}
 \babel@toc {english}{}
-\contentsline {appendix}{\chapternumberline {A}Stack Exchange}{69}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Comparison between active and closed SE communities}{70}{section.A.1}%
-\contentsline {appendix}{\chapternumberline {B}Selection of Dynamical Reputation Model parameters}{73}{appendix.B}%
-\contentsline {appendix}{\chapternumberline {C}The choice of the sliding window}{77}{appendix.C}%
-\contentsline {appendix}{\chapternumberline {D}Robustness of core-periphery algorithm}{79}{appendix.D}%
-\contentsline {chapter}{Bibliography}{83}{appendix*.5}%
+\contentsline {appendix}{\chapternumberline {A}Stack Exchange}{71}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Comparison between active and closed SE communities}{72}{section.A.1}%
+\contentsline {appendix}{\chapternumberline {B}Selection of Dynamical Reputation Model parameters}{75}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {C}The choice of the sliding window}{79}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {D}Robustness of core-periphery algorithm}{81}{appendix.D}%
+\contentsline {chapter}{Bibliography}{85}{appendix*.8}%
+\babel@toc {english}{}
+\contentsline {chapter}{Biography of the author}{91}{appendix*.9}%
+\babel@toc {serbianc}{}
+\babel@toc {english}{}
+\babel@toc {serbianc}{}
+\babel@toc {serbianc}{}
+\babel@toc {english}{}
+\babel@toc {serbianc}{}
+\babel@toc {serbianc}{}
+\babel@toc {english}{}
+\babel@toc {serbianc}{}

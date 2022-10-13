@@ -17,45 +17,45 @@ Warning--empty journal in latora2017complex
 Warning--empty publisher in caldarelli2007scalefree
 Warning--empty publisher in guide_temporal
 Warning--empty booktitle in yashkina2020
-You've used 87 entries,
+You've used 90 entries,
             1791 wiz_defined-function locations,
-            957 strings with 18696 characters,
-and the built_in function-call counts, 21196 in all, are:
-= -- 1867
-> -- 1012
+            976 strings with 19184 characters,
+and the built_in function-call counts, 21993 in all, are:
+= -- 1945
+> -- 1042
 < -- 10
-+ -- 371
-- -- 284
-* -- 1588
-:= -- 3383
-add.period$ -- 266
-call.type$ -- 87
-change.case$ -- 80
++ -- 382
+- -- 292
+* -- 1655
+:= -- 3506
+add.period$ -- 275
+call.type$ -- 90
+change.case$ -- 83
 chr.to.int$ -- 0
-cite$ -- 91
-duplicate$ -- 899
-empty$ -- 2027
-format.name$ -- 284
-if$ -- 4659
+cite$ -- 94
+duplicate$ -- 926
+empty$ -- 2104
+format.name$ -- 292
+if$ -- 4830
 int.to.chr$ -- 0
-int.to.str$ -- 87
-missing$ -- 94
-newline$ -- 438
-num.names$ -- 87
-pop$ -- 188
+int.to.str$ -- 90
+missing$ -- 97
+newline$ -- 453
+num.names$ -- 90
+pop$ -- 191
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 395
+skip$ -- 406
 stack$ -- 0
-substring$ -- 1554
-swap$ -- 178
+substring$ -- 1647
+swap$ -- 181
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 212
-width$ -- 89
-write$ -- 951
+while$ -- 221
+width$ -- 92
+write$ -- 984
 (There were 4 warnings)
