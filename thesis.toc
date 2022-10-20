@@ -3,8 +3,10 @@
 \babel@toc {serbianc}{}
 \babel@toc {english}{}
 \babel@toc {english}{}
+\babel@toc {english}{}
 \contentsline {chapter}{Acknowledgements}{vii}{chapter*.2}%
 \babel@toc {english}{}
+\contentsline {chapter}{Abstract}{ix}{chapter*.3}%
 \babel@toc {serbianc}{}
 \babel@toc {english}{}
 \babel@toc {english}{}
