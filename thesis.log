@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  20 OCT 2022 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  27 OCT 2022 16:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3113,7 +3113,7 @@ as been already used, duplicate ignored
                                                   \fi \fi 
 l.41 
      ]
-<figs/figures/stackexchange/active_questions.pdf, id=2759, 1070.2673pt x 287.24
+<figs/figures/stackexchange/active_questions.pdf, id=2760, 1070.2673pt x 287.24
 126pt>
 File: figs/figures/stackexchange/active_questions.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/active_questions.pdf>
@@ -3154,7 +3154,7 @@ l.113 \include{2-Appendix/Appendix_SEdata}
 
 
 ]
-<figs/figures/stackexchange/single_user_reputation.pdf, id=2822, 752.0742pt x 3
+<figs/figures/stackexchange/single_user_reputation.pdf, id=2823, 752.0742pt x 3
 07.64925pt>
 File: figs/figures/stackexchange/single_user_reputation.pdf Graphic file (type 
 pdf)
@@ -3169,13 +3169,13 @@ Package pdftex.def Info: figs/figures/stackexchange/single_user_reputation.pdf
                                                   \fi \fi 
 l.18 
       <./figs/figures/stackexchange/single_user_reputation.pdf>]
-<figs/figures/stackexchange/rmse.pdf, id=2871, 1076.11423pt x 286.70801pt>
+<figs/figures/stackexchange/rmse.pdf, id=2872, 1076.11423pt x 286.70801pt>
 File: figs/figures/stackexchange/rmse.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/rmse.pdf>
 Package pdftex.def Info: figs/figures/stackexchange/rmse.pdf  used on input lin
 e 25.
 (pdftex.def)             Requested size: 483.69687pt x 128.86865pt.
-<figs/figures/stackexchange/active_users.pdf, id=2873, 958.24876pt x 505.49666p
+<figs/figures/stackexchange/active_users.pdf, id=2874, 958.24876pt x 505.49666p
 t>
 File: figs/figures/stackexchange/active_users.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/active_users.pdf>
@@ -3189,7 +3189,7 @@ nput line 34.
                                                   \fi \fi 
 l.38 
       <./figs/figures/stackexchange/rmse.pdf>]
-<figs/figures/stackexchange/permanent_users.pdf, id=2923, 1070.2673pt x 287.241
+<figs/figures/stackexchange/permanent_users.pdf, id=2924, 1070.2673pt x 287.241
 26pt>
 File: figs/figures/stackexchange/permanent_users.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/permanent_users.pdf>
@@ -3218,7 +3218,7 @@ l.48 \clearpage
 
 
 ]
-<figs/figures/stackexchange/sliding_window.pdf, id=3039, 864.7468pt x 1378.5183
+<figs/figures/stackexchange/sliding_window.pdf, id=3040, 864.7468pt x 1378.5183
 pt>
 File: figs/figures/stackexchange/sliding_window.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/sliding_window.pdf>
@@ -3244,7 +3244,7 @@ e/sliding_window.pdf>]
 
 
 ] [82]
-<figs/figures/stackexchange/blockmodel_robust.pdf, id=3121, 727.9929pt x 503.97
+<figs/figures/stackexchange/blockmodel_robust.pdf, id=3122, 727.9929pt x 503.97
 534pt>
 File: figs/figures/stackexchange/blockmodel_robust.pdf Graphic file (type pdf)
 <use figs/figures/stackexchange/blockmodel_robust.pdf>
@@ -3364,7 +3364,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
 Here is how much of TeX's memory you used:
  21179 strings out of 482584
  319189 string characters out of 5956256
- 607633 words of memory out of 5000000
+ 608633 words of memory out of 5000000
  35181 multiletter control sequences out of 15000+600000
  617444 words of font info for 162 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
@@ -3406,10 +3406,10 @@ onts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
 no/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (114 pages, 7640496 bytes).
+Output written on thesis.pdf (114 pages, 7641998 bytes).
 PDF statistics:
- 3424 PDF objects out of 3580 (max. 8388607)
- 1606 compressed objects within 17 object streams
+ 3425 PDF objects out of 3580 (max. 8388607)
+ 1607 compressed objects within 17 object streams
  408 named destinations out of 1000 (max. 500000)
  638 words of extra memory for PDF output out of 10000 (max. 10000000)
 
