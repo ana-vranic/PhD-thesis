@@ -1,6 +1,14 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: 0-FrontMatter/Title-Eng.aux
+A level-1 auxiliary file: 0-FrontMatter/Title-Srb.aux
+A level-1 auxiliary file: 0-FrontMatter/Committee.aux
+A level-1 auxiliary file: 0-FrontMatter/Acknowledgements.aux
+A level-1 auxiliary file: 0-FrontMatter/Abstract-Eng.aux
+A level-1 auxiliary file: 0-FrontMatter/Abstract-Srb.aux
+A level-1 auxiliary file: 0-FrontMatter/Contents.aux
+A level-1 auxiliary file: 0-FrontMatter/Figures.aux
 A level-1 auxiliary file: 1-MainMatter/Chapter_Introduction.aux
 A level-1 auxiliary file: 1-MainMatter/Chapter_Methodology.aux
 A level-1 auxiliary file: 1-MainMatter/Chapter_DrivingSignal.aux
@@ -12,50 +20,54 @@ A level-1 auxiliary file: 2-Appendix/Appendix_SEparameters.aux
 A level-1 auxiliary file: 2-Appendix/Appendix_sliding_window.aux
 A level-1 auxiliary file: 2-Appendix/Appendix_robust.aux
 The style file: unsrt.bst
+A level-1 auxiliary file: 3-BackMatter/Biography.aux
+A level-1 auxiliary file: 3-BackMatter/Autorstvo.aux
+A level-1 auxiliary file: 3-BackMatter/Istovetnost.aux
+A level-1 auxiliary file: 3-BackMatter/Koriscenje.aux
 Database file #1: sample_sort.bib
 Warning--empty journal in latora2017complex
 Warning--empty publisher in caldarelli2007scalefree
 Warning--empty publisher in guide_temporal
 Warning--empty booktitle in yashkina2020
-You've used 90 entries,
+You've used 96 entries,
             1791 wiz_defined-function locations,
-            976 strings with 19184 characters,
-and the built_in function-call counts, 21993 in all, are:
-= -- 1945
-> -- 1042
+            1016 strings with 20267 characters,
+and the built_in function-call counts, 23314 in all, are:
+= -- 2057
+> -- 1094
 < -- 10
-+ -- 382
-- -- 292
-* -- 1655
-:= -- 3506
-add.period$ -- 275
-call.type$ -- 90
-change.case$ -- 83
++ -- 402
+- -- 306
+* -- 1763
+:= -- 3722
+add.period$ -- 293
+call.type$ -- 96
+change.case$ -- 89
 chr.to.int$ -- 0
-cite$ -- 94
-duplicate$ -- 926
-empty$ -- 2104
-format.name$ -- 292
-if$ -- 4830
+cite$ -- 100
+duplicate$ -- 980
+empty$ -- 2241
+format.name$ -- 306
+if$ -- 5117
 int.to.chr$ -- 0
-int.to.str$ -- 90
-missing$ -- 97
-newline$ -- 453
-num.names$ -- 90
-pop$ -- 191
+int.to.str$ -- 96
+missing$ -- 103
+newline$ -- 483
+num.names$ -- 96
+pop$ -- 197
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 406
+skip$ -- 425
 stack$ -- 0
-substring$ -- 1647
-swap$ -- 181
+substring$ -- 1755
+swap$ -- 187
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 221
-width$ -- 92
-write$ -- 984
+while$ -- 233
+width$ -- 98
+write$ -- 1050
 (There were 4 warnings)

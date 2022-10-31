@@ -195,6 +195,11 @@ Marija~Mitrovi{\'c} Dankulov, Roderick Melnik, and Bosiljka Tadi{\'c}.
   collective knowledge.
 \newblock {\em Scientific reports}, 5(1):1--10, 2015.
 
+\bibitem{cohen2000resilience}
+Reuven Cohen, Keren Erez, Daniel ben Avraham, and Shlomo Havlin.
+\newblock Resilience of the internet to random breakdowns.
+\newblock {\em Phys. Rev. Lett.}, 85:4626--4628, Nov 2000.
+
 \bibitem{tadic2001}
 Bosiljka Tadi{\'{c}}.
 \newblock Dynamics of directed graphs: The world-wide web.
@@ -212,45 +217,6 @@ Marija Mitrovi{\'{c}} and Bosiljka Tadi{\'{c}}.
 Gourab Ghoshal, Liping Chi, and Albert-L{\'a}szl{\'o} Barab{\'a}si.
 \newblock Uncovering the role of elementary processes in network evolution.
 \newblock {\em Scientific reports}, 3(1):1--8, 2013.
-
-\bibitem{cohen2000resilience}
-Reuven Cohen, Keren Erez, Daniel ben Avraham, and Shlomo Havlin.
-\newblock Resilience of the internet to random breakdowns.
-\newblock {\em Phys. Rev. Lett.}, 85:4626--4628, Nov 2000.
-
-\bibitem{hajra2004}
-Kamalika~Basu Hajra and Parongama Sen.
-\newblock Phase transitions in an aging network.
-\newblock {\em Physical Review E}, 70(5):056103, 2004.
-
-\bibitem{vranic2021growth}
-Ana Vrani{\'c} and Marija~Mitrovi{\'c} Dankulov.
-\newblock Growth signals determine the topology of evolving networks.
-\newblock {\em Journal of Statistical Mechanics: Theory and Experiment},
-  2021(1):013405, 2021.
-
-\bibitem{vranic2022universal}
-Ana Vrani{\'c}, Jelena Smiljani{\'c}, and Marija~Mitrovi{\'c} Dankulov.
-\newblock Universal growth of social groups: empirical analysis and modeling.
-\newblock {\em arXiv preprint arXiv:2206.06732}, 2022.
-
-\bibitem{vranic2022sustainability}
-Ana Vrani{\'c}, Aleksandar Toma{\v{s}}evi{\'c}, Aleksandra Alori{\'c}, and
-  Marija~Mitrovi{\'c} Dankulov.
-\newblock Sustainability of stack exchange q$\backslash$\&a communities: the
-  role of trust.
-\newblock {\em arXiv preprint arXiv:2205.07745}, 2022.
-
-\bibitem{gallagher2020clarified}
-Ryan~J Gallagher, Jean-Gabriel Young, and Brooke~Foucault Welles.
-\newblock A clarified typology of core-periphery structure in networks.
-\newblock {\em arXiv preprint arXiv:2005.10191}, 2020.
-
-\bibitem{melnikov2018toward}
-A.~{Melnikov}, J.~{Lee}, V.~{Rivera}, M.~{Mazzara}, and L.~{Longo}.
-\newblock Towards dynamic interaction-based reputation models.
-\newblock In {\em 2018 IEEE 32nd International Conference on Advanced
-  Information Networking and Applications (AINA)}, pages 422--428, 2018.
 
 \bibitem{boccaletti2006complex}
 Stefano Boccaletti, Vito Latora, Yamir Moreno, Martin Chavez, and D-U Hwang.
@@ -313,6 +279,50 @@ Mikko Kivelä, Alex Arenas, Marc Barthelemy, James~P. Gleeson, Yamir Moreno,
 \newblock {Multilayer networks}.
 \newblock {\em Journal of Complex Networks}, 2(3):203--271, 07 2014.
 
+\bibitem{hajra2004}
+Kamalika~Basu Hajra and Parongama Sen.
+\newblock Phase transitions in an aging network.
+\newblock {\em Physical Review E}, 70(5):056103, 2004.
+
+\bibitem{vranic2021growth}
+Ana Vrani{\'c} and Marija~Mitrovi{\'c} Dankulov.
+\newblock Growth signals determine the topology of evolving networks.
+\newblock {\em Journal of Statistical Mechanics: Theory and Experiment},
+  2021(1):013405, 2021.
+
+\bibitem{vranic2022universal}
+Ana Vrani{\'c}, Jelena Smiljani{\'c}, and Marija~Mitrovi{\'c} Dankulov.
+\newblock Universal growth of social groups: empirical analysis and modeling.
+\newblock {\em arXiv preprint arXiv:2206.06732}, 2022.
+
+\bibitem{vranic2022sustainability}
+Ana Vrani{\'c}, Aleksandar Toma{\v{s}}evi{\'c}, Aleksandra Alori{\'c}, and
+  Marija~Mitrovi{\'c} Dankulov.
+\newblock Sustainability of stack exchange q$\backslash$\&a communities: the
+  role of trust.
+\newblock {\em arXiv preprint arXiv:2205.07745}, 2022.
+
+\bibitem{gallagher2020clarified}
+Ryan~J Gallagher, Jean-Gabriel Young, and Brooke~Foucault Welles.
+\newblock A clarified typology of core-periphery structure in networks.
+\newblock {\em arXiv preprint arXiv:2005.10191}, 2020.
+
+\bibitem{melnikov2018toward}
+A.~{Melnikov}, J.~{Lee}, V.~{Rivera}, M.~{Mazzara}, and L.~{Longo}.
+\newblock Towards dynamic interaction-based reputation models.
+\newblock In {\em 2018 IEEE 32nd International Conference on Advanced
+  Information Networking and Applications (AINA)}, pages 422--428, 2018.
+
+\bibitem{newman2002assortative}
+Mark~EJ Newman.
+\newblock Assortative mixing in networks.
+\newblock {\em Physical review letters}, 89(20):208701, 2002.
+
+\bibitem{newman2009random}
+Mark~EJ Newman.
+\newblock Random graphs with clustering.
+\newblock {\em Physical review letters}, 103(5):058701, 2009.
+
 \bibitem{tiago2}
 Tiago~A Schieber, Laura Carpi, Albert D{\'\i}az-Guilera, Panos~M Pardalos,
   Cristina Masoller, and Mart{\'\i}n~G Ravetti.
@@ -329,6 +339,27 @@ Martin Rosvall, Jean{-}Charles Delvenne, Michael~T. Schaub, and Renaud
   Lambiotte.
 \newblock Different approaches to community detection.
 \newblock {\em CoRR}, abs/1712.06468, 2017.
+
+\bibitem{guimera2004modularity}
+Roger Guimera, Marta Sales-Pardo, and Lu{\'\i}s A~Nunes Amaral.
+\newblock Modularity from fluctuations in random graphs and complex networks.
+\newblock {\em Physical Review E}, 70(2):025101, 2004.
+
+\bibitem{good2010performance}
+Benjamin~H. Good, Yves-Alexandre de~Montjoye, and Aaron Clauset.
+\newblock Performance of modularity maximization in practical contexts.
+\newblock {\em Phys. Rev. E}, 81:046106, Apr 2010.
+
+\bibitem{blondel2008fast}
+Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
+\newblock Fast unfolding of communities in large networks.
+\newblock {\em Journal of statistical mechanics: theory and experiment},
+  2008(10):P10008, 2008.
+
+\bibitem{krapivsky2001}
+Paul~L Krapivsky and Sidney Redner.
+\newblock Organization of growing random networks.
+\newblock {\em Physical Review E}, 63(6):066123, 2001.
 
 \bibitem{funke2019}
 Thorben Funke and Till Becker.

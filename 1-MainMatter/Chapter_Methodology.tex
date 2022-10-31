@@ -25,7 +25,7 @@
 
 \section{The measures of complex networks}
 
-The complex system can be represented by complex network $G=(V, E)$, where the elements of system (atoms, proteins, people) map to set of $N$ nodes $V=\{1, 2, ...,N\}$. The interactions between elements map to $L$ links between nodes, $E = \{ e_1, e_2... e_L\}$. The \textbf{adjacency matrix} ${A} = N \times N$ has value $1$ if there is connection between two nodes, otherwise it is $0$ \cite{boccaletti2006complex}. There are a lot of measures to quantify the structure of the network. In this section we list the most important measures such as degree distributio, correlations, shortest paths measures and discuss different structures found in the network, such as core-periphery or communities structures.  
+The complex system can be represented by complex network $G=(V, E)$, where the elements of system (atoms, proteins, people) map to set of $N$ nodes $V=\{1, 2, ...,N\}$. The interactions between elements map to $L$ links between nodes, $E = \{ e_1, e_2... e_L\}$. The \textbf{adjacency matrix} ${A} = N \times N$ has value $1$ if there is connection between two nodes, otherwise it is $0$ \cite{boccaletti2006complex}. There are a lot of measures to quantify the structure of the network. In this section we list the most important measures such as degree distribution, correlations, shortest paths measures and discuss different structures found in the network, such as core-periphery or communities structures.  
 
 \subsection{Degree distribution}
 
@@ -45,7 +45,7 @@ If the nodes of the graph are statistically independent, the degree distribution
 	%In finite size networks, fat-tailed degree distributions have natural cut-offs. 
 \end{itemize}
 
-When plotting the degree distribution, it is common to use scaling of the axis. As many nodes have  low degree, like for power-law or exponential distribution it is more useful to use logarithmic scale. Now it is more easily notices that data-points follow straight line, meaning that degree distribution is some kind of exponential function. 
+When plotting the degree distribution, it is common to use scaling of the axis. As many nodes have  low degree, like for power-law or exponential distribution it is more useful to use logarithmic scale. Now it is more easily to notice that data-points follow straight line, meaning that degree distribution is some kind of exponential function. 
 
 %On the logarithmic scale the distance between two points is proportional to the logarithm of distance between two points, meaning that distance on logarithm scale is same between points 10 and 100, and 100 and 1000.  
 
@@ -69,7 +69,7 @@ Using adjacency matrix, allow us to calculate the correlations between neighbori
 
 The \textbf{degree-degree correlations} in the network are measured by \textbf{assortativity}. If correlations are positive, networks are assortative; there is a tendency that connections exist between similar degree nodes. The negative correlations indicate that large degree nodes have preference to connect nodes with small degree; dissasortative networks. The average first neighbor degree $k_{nn}$ can be calculated as $k_{nn} = \sum_{k^{'}}k^{'}P(k^{'}|{k})$. The $P$ is conditional probability that an edge of degree $k$ points to node with degree $k$. The norm is $\sum_{k^{'}}P(k^{'}|k)=1$, and detailed balance conditions \cite{boccaletti2006complex},  $kP(k^{'}|k)P(k) = k^{'}P(k|k^{'})P(k^{'})$ \cite{boccaletti2006complex}. If the node degrees are uncorrelated, $k_{nn}$ does not depend on the degree, otherwise increasing/decreasing function indicates on positive/negative correlations in the network.
 
-The Newman defined the assortativity index $r$ in slightly different way:
+The Newman defined the assortativity \cite{newman2002assortative} index $r$ in slightly different way:
 
 \begin{equation}
 r = \sum_{kl}kl(e_{kl} - q_lq_k) / \sigma_q^2
@@ -92,7 +92,7 @@ c_i=2e_i/(k_i(k_i-1))
 
 Averaging it over all network nodes, we can calculate the mean clustering coefficient. It ranges from  $\langle c \rangle = 0$ where connections between neighbouring nodes do not exist, network has the structure of three. On the other hand, $\langle c \rangle = 1$ indicates a fully connected network. 
 
-Newman proposed the alternative definition for the clustering coefficient based on the number of triples and triangles in a graph. A triangle at node $v$ is complete subgraph with 3 nodes, including $v$. A triple on the node v is a subgraph of exactly three nodes and two edges, where v is incident with two edges. The network transitivity is defined as the ratio of number of triangles in the network over the number of triples. The network transitivity is seen as global clustering, as it considers the whole network.  
+Newman proposed the alternative definition for the clustering coefficient based on the number of triples and triangles in a graph \cite{newman2009random}. A triangle at node $v$ is complete subgraph with 3 nodes, including $v$. A triple on the node v is a subgraph of exactly three nodes and two edges, where v is incident with two edges. The network transitivity is defined as the ratio of number of triangles in the network over the number of triples. The network transitivity is seen as global clustering, as it considers the whole network.  
 
 
 %n the network literature we ocassionally encounter the global cluster- ing coefficient, which measures the total number of closed triangles in a network. Indeed, L i in (2.15) is the number of triangles that node i partic-ipates in, as each link between two neighbors of node i closes a triangle (Figure 2.17). Hence the degree of a network’s global clustering can be also captured by the global clustering coefficient, deﬁned as 
@@ -160,7 +160,7 @@ Nodes can be organized into groups, called communities. Identifying these hidden
 
 However, the community detection problem does not give a precise definition of what a community is. A common definition of a community is that it is densely connected subgraph \cite{fortunato2010community}, \cite{martin}.  In community detection the number of communities is not predefined. The number of possible communities in the network could be large number and we can not analyse all combinations, so we need algorithms to help us to identify potential communities in the network. 
 
-\textbf{Modularity}. Comparing the link density of the community by the link density obtained for the same group of nodes randomly connected we could conclude if the community corresponds to the dense subgraph or the structure is created completely random. The modularity is function that measures the randomness of the each partition. With modularity we can compare the communities and decide which one is better. 
+\textbf{Modularity}. Comparing the link density of the community by the link density obtained for the same group of nodes randomly connected we could conclude if the community corresponds to the dense subgraph or the structure is created completely random. The modularity \cite{guimera2004modularity, good2010performance} is function that measures the randomness of the each partition. With modularity we can compare the communities and decide which one is better. 
 
 For the network with $N$ nodes and $L$ links that partitions into $n_c$ communities. Each community has $N_c$ nodes and $L_c$ links. If number of links is larger than the expected number of links between $N_c$ nodes given in the expected node sequence than these nodes may form the community. We calculate the difference between real network connectivity $A_{ij}$ and the expected number of links between nodes if the network is randomly connected, $p_{ij}$. The $p_{ij}$ can be obtained by randomizing the original network, but keeping the expected degree of each node unchanged, so $p_{ij}= \frac{k_ik_j}{2L}$.
 
@@ -181,7 +181,7 @@ Maximum network modularity indicates the best partions. As there are too many pa
 
 The first algorithm that was proposed for modularity optimization was greedy algorithm. First it assign each node to community, and start with N communities. Then, we try to merge each pair of communities and calculate the moddularity difference $\Delta M$. Then indentify the community pair for which the difference is largest and merge those two communities. This is repeated untill all nodes merge into single community. The best partition is one with largest $M$. 
 
-\textbf{Louvain algorithm} is optimization algorithm with better scalability than gready algorithm, so it can operate on very large networks. Initially each node is assigned to different community, and similar as before we calculate the difference in the modularity if we move the community of one of its neighbours. Then we move the node i to the community such that modularity becomes larger. This is applyed to all nodes untill no further improvement could be made. In the second step we create weighter network whose nodes are communities identified during first step. The weight of the link between communities is the sum of the weights between the links in the communities, and the number of links inside the community is given as weighted self-loop. Then the first and secound steps are repeated, until there is no more change in the modularity, otherwise until we find the maximum, optimal modularity. 
+\textbf{Louvain algorithm} \cite{blondel2008fast} is optimization algorithm with better scalability than gready algorithm, so it can operate on very large networks. Initially each node is assigned to different community, and similar as before we calculate the difference in the modularity if we move the community of one of its neighbours. Then we move the node i to the community such that modularity becomes larger. This is applyed to all nodes untill no further improvement could be made. In the second step we create weighter network whose nodes are communities identified during first step. The weight of the link between communities is the sum of the weights between the links in the communities, and the number of links inside the community is given as weighted self-loop. Then the first and secound steps are repeated, until there is no more change in the modularity, otherwise until we find the maximum, optimal modularity. 
 
 \textbf{Core-periphery} structure describes a network whose nodes are divided into two community, densely connected core and less connected periphery. If we consider the average probabilities of edges within each group as $p_{11}$ and $p_{22}$, and between groups $p_{12}$, instead of traditionaly assortative or dissasortative structure we can define core-periphery structure $p_{11}> p_{12} > p_{22}$. In the principle core-periphery structure does not have to be limited to only two groups, and we can define layered, onion, structure. The network can have more cores, that are not directly connected to each other. 
 
@@ -273,7 +273,7 @@ The phase transition occurs when average degree is $ \langle k  \rangle = 1$, wh
 
 \subsection{Small-world networks}
 
-Inspired by the idea that real-world networks are highly clustered and the average distance is small, Watts and Strogatz proposed the "small-world" model. The model starts from the regular lattice, and with rewiring links, the network starts to resemble small-world property. The procedure is the following:
+Inspired by the idea that real-world networks are highly clustered and the average distance is small, Watts and Strogatz \cite{watts1998collective} proposed the "small-world" model. The model starts from the regular lattice, and with rewiring links, the network starts to resemble small-world property. The procedure is the following:
 
 \begin{itemize}
 	\item At the beginning, nodes are placed on the ring lattice, and each node is connected to $k/2$ first neighbours on the left and the right side. Initially, the clustering coefficient is high, $c=3/4$. 
@@ -293,7 +293,7 @@ Even though the small-world network model lacks the power-law degree distributio
 
 \subsection{Barab\' {a}si-Albert model}
 
-The ER random graph model and WS small-world model are static models, where the number of nodes is fixed. It is one of the reasons why they can not fully explain the properties of real systems. The size of real systems does not remain constant; real networks grow. For the network, the growth means that at each time step, new nodes are added to the network. The simplest model that produces the scale-free networks is Barabasi-Albert model.
+The ER random graph model and WS small-world model are static models, where the number of nodes is fixed. It is one of the reasons why they can not fully explain the properties of real systems. The size of real systems does not remain constant; real networks grow. For the network, the growth means that at each time step, new nodes are added to the network. The simplest model that produces the scale-free networks is Barabasi-Albert model \cite{barabasi1999}.
 
 \begin{itemize}
 	\item The model starts from the small number, $n_0$ randomly connected nodes, with $m_0$ links.
@@ -354,7 +354,7 @@ In the nonlinear preferential attachment model linking probability also depends 
 
 The probability that newly added node attaches to node $i$ depends on the existing i-th node degree $k_i$, and the parameter $\beta$. When $\beta=1$, the model is BA model, where degree distribution follows the power-law. When $\beta=0$, linking probability becomes uniform; i.e. it corresponds to random network model, and degree distribution is Poisson; there is exponential decay. 
 
-For $\beta>1$, the effects of preferential attachment are increased, leading to emergence of super-hubs. The hub-and-spoke network appear in this regime, where almost all nodes are connected to few high-degree nodes. %OVDE CITIRATI kRAPIVSKY REDNER RADOVE
+For $\beta>1$, the effects of preferential attachment are increased, leading to emergence of super-hubs. The hub-and-spoke network appear in this regime, where almost all nodes are connected to few high-degree nodes \cite{krapivsky2001}. %OVDE CITIRATI kRAPIVSKY REDNER RADOVE
 
 On the other hand, if $\beta<1$, the model is in so called sub-linear preferential attachment regime. The linking probability is not random so degree distribution does not follow Poisson; but also the preference toward high degree nodes is too week for having the pure power-law. Instead degree distribution converge to stretched exponential.
 
@@ -363,7 +363,7 @@ On the other hand, if $\beta<1$, the model is in so called sub-linear preferenti
 
 \subsection{Ageing model}
 
-To understand how aging can impact the network structure we look into probability dependent on two parameters, nodes degree $k$ and age of node $i$ at the time point $t$ $\tau_i=(t-t_i)$, where $t_i$ is the time when node $i$ is added to the network. 
+To understand how aging can impact the network structure we look into probability dependent on two parameters, nodes degree $k$ and age of node $i$ at the time point $t$ $\tau_i=(t-t_i)$, where $t_i$ is the time when node $i$ is added to the network \cite{dorogovtsev2000b}. 
 \begin{equation}
 \Pi_{i}(t)\sim k_{i}\tau_{i}^{\alpha} 
 \label{eq:aging}
