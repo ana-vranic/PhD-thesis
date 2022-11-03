@@ -30,20 +30,20 @@
 \contentsline {subsection}{\numberline {2.1.4}Network paths}{11}{subsection.2.1.4}%
 \contentsline {subsection}{\numberline {2.1.5}D-measure}{12}{subsection.2.1.5}%
 \contentsline {subsection}{\numberline {2.1.6}Community structure}{12}{subsection.2.1.6}%
-\contentsline {section}{\numberline {2.2}Network models}{15}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Random network model}{15}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Small-world networks}{17}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.2}Network models}{14}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Random network model}{14}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Small-world networks}{16}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Barab\' {a}si-Albert model}{17}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Nonlinear preferential attachment model}{19}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.4}Nonlinear preferential attachment model}{18}{subsection.2.2.4}%
 \contentsline {subsection}{\numberline {2.2.5}Ageing model}{19}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}Stochastic block model}{21}{subsection.2.2.6}%
-\contentsline {section}{\numberline {2.3}The probability distributions}{22}{section.2.3}%
+\contentsline {subsection}{\numberline {2.2.6}Stochastic block model}{20}{subsection.2.2.6}%
+\contentsline {section}{\numberline {2.3}The probability distributions}{21}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}The properties of distributions}{22}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Plotting the distributions}{24}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Plotting the distributions}{23}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Estimating the distribution parameters}{24}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Fractal analysis}{27}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Fractal analysis}{26}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Long and Short-term correlations}{27}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Rescaled range analysis}{28}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.2}Rescaled range analysis}{27}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Fluctuation analysis}{28}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}Multifractality of the signals}{29}{subsection.2.4.4}%
 \contentsline {section}{\numberline {2.5}Dynamical reputation model}{30}{section.2.5}%

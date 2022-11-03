@@ -29,9 +29,7 @@ The complex system can be represented by complex network $G=(V, E)$, where the e
 
 \subsection{Degree distribution}
 
-The simplest network measure is \textbf{node degree}, $k$. The degree of node $i$ gives the number of nodes attached to node $i$, $k_i = \sum_j A_{ij}$. The density of the network is average degree divided by $N-1$, where $N$ is number of nodes. It is relative fraction of nodes in the network. 
-
-In the case of regular networks, such as grids, each node has an equal degree, meaning that nodes in the network have similar roles. In the general case, the networks have more complicated structure. If degree sequence is skewed, we are able to identify nodes with high degree, hubs. Removing hubs may partition a connected network into several components. Finally, if we are able to test isomorphism between two graphs, the starting point would be to compare their degree sequences are the same. If they are not same, then graphs can not be isomorphic.
+The simplest network measure is \textbf{node degree}, $k$. The degree of node $i$ gives the number of nodes attached to node $i$, $k_i = \sum_j A_{ij}$. The density of the network is average degree divided by $N-1$, where $N$ is number of nodes. It is relative fraction of nodes in the network. In the case of regular networks, such as grids, each node has an equal degree, meaning that nodes in the network have similar roles. In the general case, the networks have more complicated structure. If degree sequence is skewed, we are able to identify nodes with high degree, hubs. Removing hubs may partition a connected network into several components. %Finally, if we are able to test isomorphism between two graphs, the starting point would be to test if their degree sequences are the same. If they are not same, then graphs can not be isomorphic.
 
 To calculate the degree distribution we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. It is the probability , $P(k)$, that randomly chosen node has degree $k$. Similarly, we can order nodes according to their degree and plot the node degree.
 
@@ -59,7 +57,7 @@ r(x, y) = \frac{\frac{1}{n}\sum_{i=1}^{n}((x_i - \bar{x} ) (y_i - \bar{y}) )}{\s
 
 where $\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i$, is the average over variable $x$.
 
-Taking the definition of correlation coefficient we can define it for vertex degrees. For simple graph G with vertex set $V(G) = \{v_1, ..v_n\}$, $\boldsymbol{A}[i,j] = 1$ if there is a link between nodes $v_i$ and $v_j$. If G is a simple graph with adjacency matrix $\boldsymbol{A}$ and degree sequence $\boldsymbol{d} = [d_1, ..., d_n]$
+Taking the definition of correlation coefficient we can define correlations for vertex degrees. For simple graph G with vertex set $V(G) = \{v_1, ..v_n\}$, $\boldsymbol{A}[i,j] = 1$ if there is a link between nodes $v_i$ and $v_j$. If G is a simple graph with adjacency matrix $\boldsymbol{A}$ and degree sequence $\boldsymbol{d} = [d_1, ..., d_n]$
 
 \begin{equation}
 r_{deg}(G) = \frac{\sum_{i=1}^{n}\sum_{i=1+1}^{n}((d_i - \bar{d}) (d_i - \bar{d}) \boldsymbol{A}[i,j] )}{\sum_{i=1}^{n}(d_i - \bar{d})^2}
@@ -79,12 +77,6 @@ where $e_{kl}$ is the probability that randomly selected link connect nodes with
 
 \subsection{Clustering coefficient}
 
-
-
-%A common way toward spreading information is simply having a node update its neighbors. In turn, neighbors can inform their neighbors, and so on. There are many variations to this model, such as having a node select only one or a few of its neighbors, or deciding to stop spreading updates when it notices that a selected neighbor already has the information. Informally, this type of dissemination is often described in the form of gossiping models, also known as epidemic dissemination [Eugster et al., 2004]. The model is very general: instead of information we can also consider spreading of diseases, but also viruses over the Internet. Another example is that of forming of opinions, which often depends on what the majority of your community thinks. We shall return to these issues in more detail when discussing peer- to-peer networks in Chapter 8.
-
-%When considering real-world networks, we often see that they are organized as a collection of interconnected groups. In terms of social networks, this means that we can often clearly distinguish communities of nodes with many links between its members, yet relatively few links between nodes that belong to different communities. Actually indicating which nodes belong to which communities may not be easy at all. Also, nodes generally belong to more than one community. However, we can express the existence of communities by means of a clustering coefficient. As shown by Xu and Liu [2008], it turns out that there is a clear relationship between the speed by which information is disseminated in social networks and the clustering coefficient: the higher the degree of clustering, the slower the dissemination. To a certain extent, this result may seem quite obvious, but from a formal (i.e., mathematical) point of view, it turns out to be not so trivial. What this means is that if we want to design a dissemination protocol, we may need to take special measures in highly clustered networks in order to guarantee a certain performance regarding the dissemination speed. This alone has been enough reason for researchers to define and measure the clustering coefficient of a network. Besides this reason, measuring the clustering coefficient obviously alows us to simply compare different networks, without necessarily wanting to make use of the actual values of the respective coefficients. In this sense, clustering coefficients can help in classifying networks.
-
 The \textbf{clustering coefficient} is a measure describing the neighbourhood's structure. In networks exist tendency to form triangles or clusters. This is common in friendship networks where two friends of one person have a high probability of being friends. The clustering can be measured by computing the number of links between neighbours of one node,
 \begin{equation}
 c_i=2e_i/(k_i(k_i-1))
@@ -93,11 +85,6 @@ c_i=2e_i/(k_i(k_i-1))
 Averaging it over all network nodes, we can calculate the mean clustering coefficient. It ranges from  $\langle c \rangle = 0$ where connections between neighbouring nodes do not exist, network has the structure of three. On the other hand, $\langle c \rangle = 1$ indicates a fully connected network. 
 
 Newman proposed the alternative definition for the clustering coefficient based on the number of triples and triangles in a graph \cite{newman2009random}. A triangle at node $v$ is complete subgraph with 3 nodes, including $v$. A triple on the node v is a subgraph of exactly three nodes and two edges, where v is incident with two edges. The network transitivity is defined as the ratio of number of triangles in the network over the number of triples. The network transitivity is seen as global clustering, as it considers the whole network.  
-
-
-%n the network literature we ocassionally encounter the global cluster- ing coefficient, which measures the total number of closed triangles in a network. Indeed, L i in (2.15) is the number of triangles that node i partic-ipates in, as each link between two neighbors of node i closes a triangle (Figure 2.17). Hence the degree of a network’s global clustering can be also captured by the global clustering coefficient, deﬁned as 
-
-%where a connected triplet is an ordered set of three nodes ABC such that A connects to B and B connects to C. For example, an A, B, C triangle is made of three triplets, ABC, BCA and CAB. In contrast a chain of connected nodes A, B, C, in which B connects to A and C, but A does not link to C, forms a single open triplet ABC. The factor three in the numerator of (2.17) is due to the fact that each triangle is counted three times in the triplet count. The roots of the global clustering coefficient go back to the social network literature of the 1940s [17, 18], where C Δ is often called the ratio of transitive triplets.
 
 \subsection{Network paths}
 In the network structure, the interacting nodes are directly connected with the edge. In this representation we can say that distance between them is $d_{v_i, v_j}=1$. Distance defined like this does not have any physical meaning. Its purpose is to describe how the position of nodes in the network structure influences the other distant nodes. 
@@ -156,8 +143,7 @@ The D-measure ranges from $0$ to $1$. The lower D-measure is, networks are more 
 
 \subsection{Community structure}
 
-Nodes can be organized into groups, called communities. Identifying these hidden blocks can lead to interesting insights into the network. The communities are expected in social networks, as people tend to organize into different groups.  
-
+Nodes can be organized into groups, called communities. Identifying these hidden blocks can lead to interesting insights into the network. %The communities are expected in social networks, as people tend to organize into different groups. 
 However, the community detection problem does not give a precise definition of what a community is. A common definition of a community is that it is densely connected subgraph \cite{fortunato2010community}, \cite{martin}.  In community detection the number of communities is not predefined. The number of possible communities in the network could be large number and we can not analyse all combinations, so we need algorithms to help us to identify potential communities in the network. 
 
 \textbf{Modularity}. Comparing the link density of the community by the link density obtained for the same group of nodes randomly connected we could conclude if the community corresponds to the dense subgraph or the structure is created completely random. The modularity \cite{guimera2004modularity, good2010performance} is function that measures the randomness of the each partition. With modularity we can compare the communities and decide which one is better. 
@@ -432,7 +418,7 @@ Figure (\ref{fig:SBM} c) shows how the model represents core-periphery networks.
 	\label{fig:SBM}
 \end{figure}
 
-The benefit of this model is that we can generate many networks with similar group structure. The model can fit real data, which results in finding network communities. For the given network $G$ and number of groups $k$, the best nodes partition $g$ is found by maximizing the likelihood function. Beside inferring communities, SBM has application in prediction of missing links. This simply formulated model has many variants, motivated by specific properties of real data. For example, for networks which are degree heterogeneous, there is degree corrected SBM. In some social networks, users can belong to more than one group, and this can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, hierarchical model, etc. Also, several algorithms for optimization of likelihood function are proposed. The overview of these versions and methods are given in \cite{funke2019}. 
+The benefit of this model is that we can generate many networks with similar group structure. The model can fit real data, which results in finding network communities. For the given network $G$ and number of groups $k$, the best nodes partition $g$ is found by maximizing the likelihood function. Beside inferring communities, SBM has application in prediction of missing links. This simply formulated model has many variants, motivated by specific properties of real data. For example, for networks which are degree heterogeneous, there is degree corrected SBM. In some social networks, users can belong to more than one group, and this can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, hierarchical model, etc. Also, several algorithms for optimization of likelihood function are proposed \cite{funke2019}.
 
 \section{The probability distributions}
 
@@ -566,12 +552,12 @@ Here we use the standard two-tail hypothesis test, assuming that the null hypoth
 
 \section{Fractal analysis}
 
-The approach to studying complex systems is detecting the time series of selected variables. In complex systems, the periodic behaviour of time series is not limited to one or two characteristic frequencies. They extend over a wide spectrum and fluctuations on many time scales and broad distributions. In these cases, the system's dynamics is characterised by scaling laws, which are valid over a wide range of time scales or frequencies. When only one scaling exponent describes the system dynamics, the time series is monofractal.
+The on of approaches in studying complex systems is detecting the time series of selected variables. In complex systems, the periodic behaviour of time series is not limited to one or two characteristic frequencies. They extend over a wide spectrum and fluctuations on many time scales and broad distributions. In these cases, the system's dynamics is characterised by scaling laws, which are valid over a wide range of time scales or frequencies. When only one scaling exponent describes the system dynamics, the time series is monofractal.
 On the other hand, we deal with multifractal time series. Rescaling time $t$ by a factor $a$ may require rescaling the time-series values $x(t)$ by a factor $a^H$; then, we have the self-similarity. The Hurst exponent, $H$ characterise the type of self-affinity. 
 $$x(t) = a^Hx(at)$$
 
 \subsection{Long and Short-term correlations}
-The time series are persistent; large values usually follow a large value. Considering the increments $\delta x_i = x_i - x_{i-1}$, of self-affine series $i = 1,..,N$, with N values measured equidistant in time, so $\delta x_i$ can be either persistent, independent or anti-persistent. For the random walk with $H=0.5$ the increments are independent. For stationary data with constant mean and standard deviation, the auto-covariance function can determine the degree of persistence. 
+The time series are persistent meaning that large values usually follow a large value. Considering the increments $\delta x_i = x_i - x_{i-1}$, of self-affine series $i = 1,..,N$, with N values measured equidistant in time, so $\delta x_i$ can be either persistent, independent or anti-persistent. For the random walk with $H=0.5$ the increments are independent. For stationary data with constant mean and standard deviation, the auto-covariance function can determine the degree of persistence. 
 
 \begin{equation}
 C(s) = \langle \Delta x_i \Delta x_{i+s} \rangle = \frac{1}{N-s} \sum_{i=1}^{N-s}\Delta x_i \Delta x_{i+s}
