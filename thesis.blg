@@ -26,48 +26,47 @@ A level-1 auxiliary file: 3-BackMatter/Istovetnost.aux
 A level-1 auxiliary file: 3-BackMatter/Koriscenje.aux
 Database file #1: sample_sort.bib
 Warning--empty journal in latora2017complex
-Warning--empty publisher in caldarelli2007scalefree
 Warning--empty publisher in guide_temporal
 Warning--empty booktitle in yashkina2020
-You've used 96 entries,
+You've used 105 entries,
             1791 wiz_defined-function locations,
-            1016 strings with 20267 characters,
-and the built_in function-call counts, 23314 in all, are:
-= -- 2057
-> -- 1094
+            1063 strings with 21485 characters,
+and the built_in function-call counts, 25164 in all, are:
+= -- 2224
+> -- 1174
 < -- 10
-+ -- 402
-- -- 306
-* -- 1763
-:= -- 3722
-add.period$ -- 293
-call.type$ -- 96
-change.case$ -- 89
++ -- 433
+- -- 328
+* -- 1894
+:= -- 4035
+add.period$ -- 320
+call.type$ -- 105
+change.case$ -- 98
 chr.to.int$ -- 0
-cite$ -- 100
-duplicate$ -- 980
-empty$ -- 2241
-format.name$ -- 306
-if$ -- 5117
+cite$ -- 108
+duplicate$ -- 1057
+empty$ -- 2421
+format.name$ -- 328
+if$ -- 5514
 int.to.chr$ -- 0
-int.to.str$ -- 96
-missing$ -- 103
-newline$ -- 483
-num.names$ -- 96
-pop$ -- 197
+int.to.str$ -- 105
+missing$ -- 112
+newline$ -- 528
+num.names$ -- 105
+pop$ -- 207
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 425
+skip$ -- 455
 stack$ -- 0
-substring$ -- 1755
-swap$ -- 187
+substring$ -- 1885
+swap$ -- 196
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 233
-width$ -- 98
-write$ -- 1050
-(There were 4 warnings)
+warning$ -- 3
+while$ -- 251
+width$ -- 108
+write$ -- 1149
+(There were 3 warnings)

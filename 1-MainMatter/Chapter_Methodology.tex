@@ -31,9 +31,9 @@ The complex system can be represented by complex network $G=(V, E)$, where the e
 
 The simplest network measure is \textbf{node degree}, $k$. The degree of node $i$ gives the number of nodes attached to node $i$, $k_i = \sum_j A_{ij}$. The density of the network is average degree divided by $N-1$, where $N$ is number of nodes. It is relative fraction of nodes in the network. In the case of regular networks, such as grids, each node has an equal degree, meaning that nodes in the network have similar roles. In the general case, the networks have more complicated structure. If degree sequence is skewed, we are able to identify nodes with high degree, hubs. Removing hubs may partition a connected network into several components. %Finally, if we are able to test isomorphism between two graphs, the starting point would be to test if their degree sequences are the same. If they are not same, then graphs can not be isomorphic.
 
-To calculate the degree distribution we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. It is the probability , $P(k)$, that randomly chosen node has degree $k$. Similarly, we can order nodes according to their degree and plot the node degree.
+To calculate the degree distribution we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. It is the probability, $P(k)$, that randomly chosen node has degree $k$. Similarly, we can order nodes according to their degree and plot the node degree.
 
-If the nodes of the graph are statistically independent, the degree distribution completely determines the properties of a network. Here we summarize the forms of degree distributions that are mostly found in the complex network theory:
+If the nodes of the graph are statistically independent, the degree distribution completely determines the properties of a network \cite{dorogovtsev2002evolution}. Here we summarize the forms of degree distributions that are mostly found in the complex network theory:
 \begin{itemize}
 	\item The Poisson distribution. The degree distribution in random network, where all nodes have the same connecting probability, follows Poisson distribution $P(k)= \frac{(Np)^ke^{-Np}}{k!}$, where $k$ is the mean degree distribution. 
 	
@@ -49,7 +49,7 @@ When plotting the degree distribution, it is common to use scaling of the axis. 
 
 \subsection{Degree correlations}
 
-Correlation is defined through a correlation coefficient r. If x and y are two stochastic variables, for which we have a series of observation pairs $(x_1, y_1), (x_2, y_2), ... (x_n, y_n)$. The correlation coefficient $r(x, y)$ between $x$ and $y$ is defined as:
+Correlation is defined through a correlation coefficient r. If x and y are two stochastic variables, for which we have a series of observation pairs $(x_1, y_1), (x_2, y_2), ... (x_n, y_n)$. The correlation coefficient $r(x, y)$ between $x$ and $y$ is defined as \cite{van2010graph}:
 
 \begin{equation}
 r(x, y) = \frac{\frac{1}{n}\sum_{i=1}^{n}((x_i - \bar{x} ) (y_i - \bar{y}) )}{\sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2} \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \bar{y})^2} }
@@ -194,7 +194,7 @@ The likelihood of SBM model increase with number of blocks and model itself does
 of the model is one approach to decide which model is more likely.      
 
 %Another type of networks is the bipartite network that has two disjoint sets of nodes. The edges exist only between nodes from different sets. Networks of this class can appear in real-world data, such as users-movies preference, collaboration network for scientists and papers, etc. Application of density-based approach requires to first project bipartite network to one of its partitions and then find communities in that projection. With this, some information is lost. On the other hand, the method that is directly applicable to bipartite networks is Stochastic Block model, from which the models considered in this paper are derived.  
-
+\newpage
 \section{Network models}
 
 \subsection{Random network model}
@@ -361,7 +361,7 @@ If $\alpha>0$ is positive, the older nodes are more likely to create connections
 
 When $\alpha$ is negative, ageing overcomes the role of preferential attachment, and scale-free properties are lost. For significant negative $\alpha$ network becomes a chain; the youngest nodes are those who get connected. 
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{aging_nets.png}
 	\caption[Aging model]{Aging model}
@@ -387,7 +387,7 @@ As before, depending on model parameters network evolves to different structures
 	
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\linewidth]{diagram.png}
 	\caption[Phase diagram of aging network model]{Phase diagram of aging network model}
@@ -419,6 +419,8 @@ Figure (\ref{fig:SBM} c) shows how the model represents core-periphery networks.
 \end{figure}
 
 The benefit of this model is that we can generate many networks with similar group structure. The model can fit real data, which results in finding network communities. For the given network $G$ and number of groups $k$, the best nodes partition $g$ is found by maximizing the likelihood function. Beside inferring communities, SBM has application in prediction of missing links. This simply formulated model has many variants, motivated by specific properties of real data. For example, for networks which are degree heterogeneous, there is degree corrected SBM. In some social networks, users can belong to more than one group, and this can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, hierarchical model, etc. Also, several algorithms for optimization of likelihood function are proposed \cite{funke2019}.
+
+\newpage
 
 \section{The probability distributions}
 
@@ -475,7 +477,7 @@ ln(S_t) = ln(S_0) + \sum_{i=0}^{t} ln(\epsilon_i)
 
 The sum of the logarithms of the $\epsilon_t$, according to the Central Limit Theorem (CLT), follows the normal distribution. The CLT states that the sum of identically distributed random variables with finite variance converges to the normal distribution. If $ln(S_t)$ is normally distributed, then $S_t$ follows the log-normal distribution.   
 
-The multiplicative processes generate the log-normal distribution. Introducing threshold in the multiplicative process leads to the power law. For example, in the Champernowne model, individuals are divided into classes according to their income. The minimum income is m. People between incomes m and $\gamma m$ are in the first class, and the second class are people with incomes between $\gamma m$ and $\gamma^2 m $. The individuals can change their class, so it is described as a multiplicative process, but with a threshold, as income can not be lower than m. If we fix $\gamma=2$, and consider that with probability $p_{i,i-1}=2/3$ the change is from higher to lower class. In contrast, with probability, $p_{i, i+1}=1/3$ individual goes to higher class. In this process, the distribution of incomes emerges to the power-law distribution.
+The multiplicative processes generate the log-normal distribution. Introducing threshold in the multiplicative process leads to the power law. For example, in the Champernowne model \cite{caldarelli2007scalefree}, individuals are divided into classes according to their income. The minimum income is m. People between incomes m and $\gamma m$ are in the first class, and the second class are people with incomes between $\gamma m$ and $\gamma^2 m $. The individuals can change their class, so it is described as a multiplicative process, but with a threshold, as income can not be lower than m. If we fix $\gamma=2$, and consider that with probability $p_{i,i-1}=2/3$ the change is from higher to lower class. In contrast, with probability, $p_{i, i+1}=1/3$ individual goes to higher class. In this process, the distribution of incomes emerges to the power-law distribution.
 
 \textbf{Power law with exponential cutoff}. The density function has the following form
 \begin{equation}
@@ -495,7 +497,7 @@ The first step in analysing the empirical data is to create the frequency plot o
 \begin{equation}
 log p(k) = \gamma log(k) + c
 \end{equation}  
-On the log-log scale, we can notice that in the tail of the distribution data are noise. As the size of the bins is constant, the bins' density for large values also becomes large. To avoid the fluctuations in the tail, we can use logarithmic binning. The noise is reduced by dividing the $x$ axis into $n$ bins $b_n = c^n$, so the following bin is wider than the previous one. For the base $c$ we can choose any value $c>1$. Similarly, the binning can take the following form $b_n = k_0\exp{(cn)}$, where $k_0$ is the minimum data point, while the $c$ is the arbitrary base. All data points between values $[b_n, b_{n+1})$ are represented with one point $p(k_n) = N_n/b_n$, where $N_n$ is number of nodes found in the bin $b_n$ and $k_n = \sum_i k_i / N_n$ is average degree of the nodes in the bin $b_n$. By averaging over bins in the tail, noise in the tail of the distribution is reduced. Still, no matter how bin size is chosen, the information about original data points is lost, especially in the distribution tail where bins are larger and include more samples. Figure \ref{fig:distributions} shows how different distributions look like on linear (first column) and log-log scale (second column).
+On the log-log scale, we can notice that in the tail of the distribution data are noise. As the size of the bins is constant, the bins' density for large values also becomes large. To avoid the fluctuations in the tail, we can use logarithmic binning \cite{barabasi2014network}. The noise is reduced by dividing the $x$ axis into $n$ bins $b_n = c^n$, so the following bin is wider than the previous one. For the base $c$ we can choose any value $c>1$. Similarly, the binning can take the following form $b_n = k_0\exp{(cn)}$, where $k_0$ is the minimum data point, while the $c$ is the arbitrary base. All data points between values $[b_n, b_{n+1})$ are represented with one point $p(k_n) = N_n/b_n$, where $N_n$ is number of nodes found in the bin $b_n$ and $k_n = \sum_i k_i / N_n$ is average degree of the nodes in the bin $b_n$. By averaging over bins in the tail, noise in the tail of the distribution is reduced. Still, no matter how bin size is chosen, the information about original data points is lost, especially in the distribution tail where bins are larger and include more samples. Figure \ref{fig:distributions} shows how different distributions look like on linear (first column) and log-log scale (second column).
 
 \begin{figure}[!h]
 	\centering
@@ -519,14 +521,9 @@ The parameter that maximize the likelihood function is $\theta_{max} \in arg max
 We can solve the equation and derive the expression for maximum likelihood parameters. The parameters can be obtained with numerical optimisation for distributions where an analytical solution is unavailable. In practice is much easier to work with logarithm of the likelihood, $log(L) = \sum_{i=1}^{i=N} p(\theta| x_i)$, as the product changes to summation. For the power-law distribution, the exponent is calculated as  
 $\gamma = 1+n[\sum ln \frac{k_i}{k_{min}} ]^{-1}$. For discrete distribution solution may be obtained optimizing the log-likelihood function $log(L) = log\prod_{i=1}^{n} \frac{k_i^{-\gamma}}{\zeta(\gamma, k_{min})}$.
 
-We can use the MLE method to fit any distribution to the data. Even if obtained distribution looks like a power law, and some parameters are estimated, it does not have to be that data are truly from the power-law distribution. With the MLE method alone, it is impossible to distinguish between different distributions, and we do not know how accurate the obtained results are. To determine the quality of the fit, we need to use another statistical method called the \textbf{goodness-of-the-fit} test. The main idea is based on calculating the distance between distributions of empirical data and the model using Kolmogorov-Smirnov statistics. The Kolmogorov Smirnov statistics is the maximum distance between the CDF of the data and the fitted model.  
-\begin{equation}
-D = max |S(x) - P(x)|
-\end{equation}
+We can use the MLE method to fit any distribution to the data. Even if obtained distribution looks like a power law, and some parameters are estimated, it does not have to be that data are truly from the power-law distribution. With the MLE method alone, it is impossible to distinguish between different distributions, and we do not know how accurate the obtained results are. To determine the quality of the fit, we need to use another statistical method called the \textbf{goodness-of-the-fit} test. The main idea is based on calculating the distance between distributions of empirical data and the model using Kolmogorov-Smirnov statistics. The Kolmogorov Smirnov statistics is the maximum distance between the CDF of the data and the fitted model, $D = max |S(x) - P(x)|$.
 
-First, we fit empirical data to get model parameters and calculate the KS statistics of this fit. Then, many synthetic data sets are generated with model optimised model parameters. Then each synthetic data set is fitted, and KS statistics are obtained relative to its model. From there, we can calculate \textbf{p-value}, the fraction of times that KS-statistics in synthetic distributions is larger than in empirical data.  
-
-If $p-value<0.1$, we reject the hypothesis that this distribution describes the empirical data. Otherwise, the model can not be rejected. Failing to reject the hypothesis does not mean the model is a correct distribution for the data. Other distributions might fit the data equally good or even better. To have an accurate p-value, we need a large sample. For a small number of synthetic distributions, it is possible to have a high p-value, even if the distribution is the wrong model for the data. Finally, we need to be confident in obtained results. The same procedure can be repeated for different distributions. If the p-value for the power law is high, while for alternative distribution, it is low, we can conclude that the power law is a more probable fit. 
+First, we fit empirical data to get model parameters and calculate the KS statistics of this fit. Then, many synthetic data sets are generated with model optimised model parameters. Then each synthetic data set is fitted, and KS statistics are obtained relative to its model. From there, we can calculate \textbf{p-value}, the fraction of times that KS-statistics in synthetic distributions is larger than in empirical data.  If $p-value<0.1$, we reject the hypothesis that this distribution describes the empirical data. Otherwise, the model can not be rejected. Failing to reject the hypothesis does not mean the model is a correct distribution for the data. Other distributions might fit the data equally good or even better. To have an accurate p-value, we need a large sample. For a small number of synthetic distributions, it is possible to have a high p-value, even if the distribution is the wrong model for the data. Finally, we need to be confident in obtained results. The same procedure can be repeated for different distributions. If the p-value for the power law is high, while for alternative distribution, it is low, we can conclude that the power law is a more probable fit. 
 
 Another method, the \textbf{likelihood ratio test}, allows us to compare two distributions directly. The distribution with a higher likelihood under empirical data is a better fit. We can calculate the likelihood ratio, or it is easier to obtain the likelihood ratio's logarithm because its sign determines which distribution is a better fit. For given two distributions $p_1(x)$and $p_2(x)$. 
 
@@ -552,12 +549,12 @@ Here we use the standard two-tail hypothesis test, assuming that the null hypoth
 
 \section{Fractal analysis}
 
-The on of approaches in studying complex systems is detecting the time series of selected variables. In complex systems, the periodic behaviour of time series is not limited to one or two characteristic frequencies. They extend over a wide spectrum and fluctuations on many time scales and broad distributions. In these cases, the system's dynamics is characterised by scaling laws, which are valid over a wide range of time scales or frequencies. When only one scaling exponent describes the system dynamics, the time series is monofractal.
+The one of approaches in studying complex systems is detecting the time series of selected variables \cite{kantelhardt2008fractal}. In complex systems, the periodic behaviour of time series is not limited to one or two characteristic frequencies. They extend over a wide spectrum and fluctuations on many time scales and broad distributions \cite{fan2012fractal, sidorov2018fractality}. In these cases, the system's dynamics is characterised by scaling laws, which are valid over a wide range of time scales or frequencies. When only one scaling exponent describes the system dynamics, the time series is monofractal.
 On the other hand, we deal with multifractal time series. Rescaling time $t$ by a factor $a$ may require rescaling the time-series values $x(t)$ by a factor $a^H$; then, we have the self-similarity. The Hurst exponent, $H$ characterise the type of self-affinity. 
-$$x(t) = a^Hx(at)$$
+$$x(t) = a^Hx(at)$$. 
 
 \subsection{Long and Short-term correlations}
-The time series are persistent meaning that large values usually follow a large value. Considering the increments $\delta x_i = x_i - x_{i-1}$, of self-affine series $i = 1,..,N$, with N values measured equidistant in time, so $\delta x_i$ can be either persistent, independent or anti-persistent. For the random walk with $H=0.5$ the increments are independent. For stationary data with constant mean and standard deviation, the auto-covariance function can determine the degree of persistence. 
+The time series are persistent meaning that large values usually follow a large value \cite{kantelhardt2008fractal}. Considering the increments $\delta x_i = x_i - x_{i-1}$, of self-affine series $i = 1,..,N$, with N values measured equidistant in time, so $\delta x_i$ can be either persistent, independent or anti-persistent. For the random walk with $H=0.5$ the increments are independent. For stationary data with constant mean and standard deviation, the auto-covariance function can determine the degree of persistence. 
 
 \begin{equation}
 C(s) = \langle \Delta x_i \Delta x_{i+s} \rangle = \frac{1}{N-s} \sum_{i=1}^{N-s}\Delta x_i \Delta x_{i+s}
@@ -578,7 +575,7 @@ A direct calculation of the $C(s)$ is difficult due to present noise in the data
 
 \subsection{Rescaled range analysis} 
 
-Hurst proposed method called the \textbf{rescaled range analysis} $R/S$. It begins with splitting the time series $x_i$ into non overlapping segments $\nu$ of the size s, having $N_s = int(N/s)$ segments. Then is calculated the profile in each segment is. 
+Hurst proposed method called the \textbf{rescaled range analysis} $R/S$, \cite{hurst1951long}. It begins with splitting the time series $x_i$ into non overlapping segments $\nu$ of the size s, having $N_s = int(N/s)$ segments. Then is calculated the profile in each segment is. 
 
 $$Y_\nu(j) = \sum_{i=1}^{j} (x_{\nu s +i} - \langle x_{\nu s + i } \rangle _s)$$
 
@@ -588,11 +585,11 @@ Finally, the rescaled range is averaged over all segments to obtain the fluctuat
 
 $$F_{RS}(s) = \frac{1}{N_s}\sum \frac{R_{\nu}(s)}{S_{\nu}(s)} \sim s^H$$
 
-, where the H is the Hurst exponent. Values $H<1/2$ indicate long-term anti-correlated data while $H>1/2$ long-term positively correlated data. 
+, where the H is the Hurst exponent. Values $H<1/2$ indicate long-term anti-correlated data while $H>1/2$ long-term positively correlated data \cite{kantelhardt2008fractal}. 
 
 \subsection{Fluctuation analysis}
 
-The \textbf{fluctuation analysis} is based on the random walk theory. For given time series $\{x_i\}$ with length N, we first define the global profile in the form of cumulative sum, equation \ref{eq:cumsum}, where $\langle x\rangle $ represents the average of the time series.
+The \textbf{fluctuation analysis} is based on the random walk theory \cite{kantelhardt2008fractal}. For given time series $\{x_i\}$ with length N, we first define the global profile in the form of cumulative sum, equation \ref{eq:cumsum}, where $\langle x\rangle $ represents the average of the time series. 
 
 \begin{equation}
 Y(j) = \sum_{i=0} ^j (x_i - \langle x\rangle), \quad j=1, ..., N
@@ -619,7 +616,7 @@ Several methods are proposed for calculating the fluctuating function $F^2(\nu, 
 	
 	$$ F^2(\nu, s) = [Y(\nu s) - Y((\nu +1)s)]^2$$ 
 	
-	\item The trends present in the time series does not have to be linear. When dealing with non-stationary time series, removing the polynomial trend within each segment is necessary by least-square fitting. The method is called detrended fluctuation analysis (DFA). From each segment $\nu$, local trend $p^m_{\nu, s}$ - polynomial of order m - should be eliminated, and the variance $F^2(\nu, s)$ of a detrended signal is calculated as in equation
+	\item The trends present in the time series does not have to be linear \cite{hu2001effect}. When dealing with non-stationary time series, removing the polynomial trend within each segment is necessary by least-square fitting. The method is called detrended fluctuation analysis (DFA) \cite{kantelhardt2001detecting}. From each segment $\nu$, local trend $p^m_{\nu, s}$ - polynomial of order m - should be eliminated, and the variance $F^2(\nu, s)$ of a detrended signal is calculated as in equation
 	
 	\begin{equation}
 	F^2(\nu, s) = \frac{1}{s}\sum_{j=1}^s \left[Y(j) - p^m_{\nu, s}(j)\right]^2
@@ -683,7 +680,7 @@ When $\Delta_{n}<1$, a user is frequently active, meaning that the time between 
 
 If a user is frequently active, we can record the reputation after each day. On the other hand, if $t_n-t_{n-1}>1 \text{day}$ we need to interpolate the reputation values for each day between two interactions, $t_{n-1}<t_d<t_{n}$. To do that we consider that due to inactivity reputation will only decay, so it could be calculated as $R_d = R_{n-1}\beta^{\Delta_d}$, where $\Delta_d=(t_{d}-t_{n-1})/t_a$. 
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.45\textwidth]{DIBRM.pdf}
 	\includegraphics[width=0.45\textwidth]{DIBRM_decay.pdf}
@@ -707,9 +704,7 @@ the threshold.
 %	\label{fig:reputationdecay}
 %\end{figure}
 
-
-
-In this model, the user's reputation changes continuously through time, decreases when the user is inactive and grows with frequent and constant user contribution. The highest growth of a user's reputation is found through bursts of activity followed by a short period of inactivity. With model parameters, $I_{bn}, t_a, \alpha, \beta$, the dynamic of user reputation may be controlled and adapted to different communities. If the community has its reputation model, we can also fit the model parameters to mimic the actual reputation dynamic. In this thesis, the DIBRM model is used to analyze the reputation of users in StackExchange communities. Chapter 5 gives details about model parameters choice.
+In this model, the user's reputation changes continuously through time, decreases when the user is inactive and grows with frequent and constant user contribution. The highest growth of a user's reputation is found through bursts of activity followed by a short period of inactivity. With model parameters, $I_{bn}, t_a, \alpha, \beta$, the dynamic of user reputation may be controlled and adapted to different communities. If the community has its reputation system, we can also fit the model parameters to mimic the actual reputation dynamic. In this thesis, the DIBRM model is used to analyze the reputation of users in StackExchange communities. Chapter 5 gives details about model parameters choice.
 
 
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{kwapien2012}
 J.~Kwapie{\'n} and S.~Dro{\.z}d{\.z}.
@@ -225,8 +225,8 @@ Stefano Boccaletti, Vito Latora, Yamir Moreno, Martin Chavez, and D-U Hwang.
 
 \bibitem{caldarelli2007scalefree}
 Guido Caldarelli.
-\newblock {\em Scale-Free Networks: Complex Webs in Nature and Technology}.
-\newblock 05 2007.
+\newblock {\em Scale-free networks: complex webs in nature and technology}.
+\newblock Oxford University Press, 2007.
 
 \bibitem{barabasi2016network}
 Albert-László Barabási and Márton Pósfai.
@@ -313,6 +313,16 @@ A.~{Melnikov}, J.~{Lee}, V.~{Rivera}, M.~{Mazzara}, and L.~{Longo}.
 \newblock In {\em 2018 IEEE 32nd International Conference on Advanced
   Information Networking and Applications (AINA)}, pages 422--428, 2018.
 
+\bibitem{dorogovtsev2002evolution}
+Sergey~N Dorogovtsev and Jose~FF Mendes.
+\newblock Evolution of networks.
+\newblock {\em Advances in physics}, 51(4):1079--1187, 2002.
+
+\bibitem{van2010graph}
+Maarten Van~Steen.
+\newblock Graph theory and complex networks.
+\newblock {\em An introduction}, 144, 2010.
+
 \bibitem{newman2002assortative}
 Mark~EJ Newman.
 \newblock Assortative mixing in networks.
@@ -373,11 +383,53 @@ Michael Mitzenmacher.
   distributions.
 \newblock {\em Internet mathematics}, 1(2):226--251, 2004.
 
+\bibitem{barabasi2014network}
+A.-L. Barab{\'a}si.
+\newblock {Network science book}.
+\newblock {\em Network Science}, 625, 2014.
+
 \bibitem{nair2022fundamentals}
 J.~Nair, A.~Wierman, and B.~Zwart.
 \newblock {\em The Fundamentals of Heavy Tails}.
 \newblock Cambridge Series in Statistical and Probabilistic Mathematics.
   Cambridge University Press, 2022.
+
+\bibitem{kantelhardt2008fractal}
+Jan~W Kantelhardt.
+\newblock Fractal and multifractal time series.
+\newblock {\em arXiv preprint arXiv:0804.0747}, 2008.
+
+\bibitem{fan2012fractal}
+Chao Fan, Jin-Li Guo, and Yi-Long Zha.
+\newblock Fractal analysis on human dynamics of library loans.
+\newblock {\em Physica A: Statistical Mechanics and its Applications},
+  391(24):6617--6625, 2012.
+
+\bibitem{sidorov2018fractality}
+Sergei Sidorov, Alexey Faizliev, and Vladimir Balash.
+\newblock Fractality and multifractality analysis of news sentiments time
+  series.
+\newblock {\em IAENG International Journal of Applied Mathematics}, 48(1),
+  2018.
+
+\bibitem{hurst1951long}
+Harold~Edwin Hurst.
+\newblock Long-term storage capacity of reservoirs.
+\newblock {\em Transactions of the American society of civil engineers},
+  116(1):770--799, 1951.
+
+\bibitem{hu2001effect}
+Kun Hu, Plamen~Ch Ivanov, Zhi Chen, Pedro Carpena, and H~Eugene Stanley.
+\newblock Effect of trends on detrended fluctuation analysis.
+\newblock {\em Physical Review E}, 64(1):011114, 2001.
+
+\bibitem{kantelhardt2001detecting}
+Jan~W Kantelhardt, Eva Koscielny-Bunde, Henio~HA Rego, Shlomo Havlin, and Armin
+  Bunde.
+\newblock Detecting long-range correlations with detrended fluctuation
+  analysis.
+\newblock {\em Physica A: Statistical Mechanics and its Applications},
+  295(3-4):441--454, 2001.
 
 \bibitem{kantelhardt2002}
 Jan~W Kantelhardt, Stephan~A Zschiegner, Eva Koscielny-Bunde, Shlomo Havlin,
