@@ -3,7 +3,7 @@
 
 The Dynamical Reputation Model(DIBRM) has several tuning parameters. In previous studies the model \cite{melnikov2018toward,yashkina2020} was used to approximate real reputation on Stack Exchange sites \cite{yashkina2020}, so model parameters were $t_a =2, \beta = 1, \alpha = 1.4$, while the basic reputation value $I_{bn}$ was +2 or +4. As $\beta=1$, the forgetting factor is not considered. Our goal was to describe how reputation influences the sustainability of the community. Further, we wanted to resemble the concept of trust. Our tuning procedure differs than in previous studies on Stack Exchange sites, and we ended up with different model parameters. 
 
-For \textbf{basic reputation} contribution we selected $I_{bn}=1$. With this values each interaction has initial contribution $+1$. 
+For \textbf{basic reputation contribution} we selected $I_{bn}=1$. With this values each interaction has initial contribution $+1$. 
 
 For \textbf{characteristic time} $t_a$ we choose $t_a=1$. The median/average time between subsequent interactions is $1 day$. If time window between two interactions is less than $1 day$ they reputation will rise, otherwise, the reputation decays.
 

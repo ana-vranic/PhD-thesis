@@ -39,7 +39,7 @@ The growth of online social groups has universal behavior. It is independent on 
 	\caption[Universality in the Meetup and Reddit groups]{The figure shows the groups' sizes distributions and log-rates distributions. Each distribution collects groups founded in the same year and is normalized with its mean value. The group sizes are at the end of 2017 for meetups and 2011 for subreddits.}
 	\label{fig:scale}
 \end{figure}
-
+\newpage
 \section{The model}
 
 Meetup and Reddit engage members in different activities. Still, there are some underlying processes same in both systems. Each member can create new groups and join existing ones. Both systems grow in the number of groups and users, and each user can belong to arbitrary number of groups. In the previous section, we identified the universal patterns in the growth of social groups, but it appears that the growth can not be modelled with Gibrat law. 
@@ -65,7 +65,7 @@ The active users can create a new group with probability $p_g$. By this, group n
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{Figures/figures/test.png}
+	\includegraphics[scale=0.45]{Figures/figures/test.png}
 	\caption[Bipartite groups growth model]{The top panel shows bipartite (member-group) and social (member-member) network. Filled nodes are active members, while thick lines are new links in this time step. In the social network dashed lines show that members are friends but still do not share same groups. The lower panel shows model schema, where $p_g$ is probability that user create new group, while $p_{aff}$ is probability that group choice depends on the social connections. \textbf{Example:} member $u_6$ is a new member. First it will make random link  with node $u_4$, and then with probability $p_g$ makes new group $g_5$. With probability $p_a$ member $u_3$ is active, while others stay inactive for this time step. Member $u_3$ will with probability $1-p_g$ choose to join one of old groups and with probability $p_{aff}$ linking is chosen to be social. As its friend $u_2$ is member of group $g_1$, member $u_3$ will also join group $g_1$. Joining group $g_1$, member $u_3$ will make more social connections, in this case it is member $u_1$.}
 	\label{fig:schema}
 \end{figure}
@@ -87,13 +87,11 @@ The model parameters $p_a$ and $p_g$ are important for controlling the number of
 
 Before applying the group growth model on Meetup and Reddit, we consider the system where at each time step, a constant number of users is added $N(t)=30$. We also fix the probability that user is active to $p_a=0.1$, so we can in more details explore the influence of parameters $p_g$ and $p_{aff}$. We plot the group size distribution after $60$ steps of simulation. The values of $p_g$ and the $p_a$ influence the number of groups, their maximum size, and the shape of group size distribution. With probability $p_g=0.1$, users create large number of groups, over $10^4$, while with $p_g=0.5$ they are on the order of magnitude $10^5$. 
 
-Figure \ref{fig:n30} show the obtained group size distributions with power-law and log-normal fits. For lower value of parameter $p_g=0.1$ and $p_{aff}=0$, users join randomly chosen groups. Group size distributions are approximated with log-normal. When the affiliation parameter is larger, $p_{aff}=0.5$, the log-normal distribution becomes broader, and so on, we find the larger maximum group size. 
+Figure \ref{fig:n30} show the obtained group size distributions with power-law and log-normal fits. For lower value of parameter $p_g=0.1$ and $p_{aff}=0$, users join randomly chosen groups. Group size distributions are approximated with log-normal. When the affiliation parameter is larger, $p_{aff}=0.5$, the log-normal distribution becomes broader, and so on, we find the larger maximum group size. If we increase the parameter $p_g=0.5$, every second active user will create a group. At this group creation rate, the group size distribution deviates from log-normal, but it is not explained with power-law either, right column on figure \ref{fig:n30}.
 
-If we increase the parameter $p_g=0.5$, every second active user will create a group. At this group creation rate, the group size distribution deviates from log-normal, but it is not explained with power-law either, right column on figure \ref{fig:n30}.
-
-\begin{figure}[!ht]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Figures/figures/Fig5_a.png}
+	\includegraphics[width=0.6\linewidth]{Figures/figures/Fig5_a.png}
 	%\includegraphics[width=0.8\linewidth]{figures/model_N30.png}
 	\caption[Group size distribution for different model parameters]{The distribution of sizes for different values of $p_{g}$ and $p_{aff}$ and constant $p_{a}$ and growth of the system. The combination of the values of parameters of $p_{g}$ and $p_{aff}$ determine the shape and the width of the distribution of group sizes. }
 	\label{fig:n30}
@@ -115,21 +113,23 @@ Finally, we compare how group size distribution depends on different rules in ra
 
 %The differences between our and co-evolution model, described in previous sections, at first glance may appear small. However, they lead to huge differences in the distribution of the size of social groups. The distribution of group sizes in co-evolution model is a power-law. Our model adds flexibility to produce groups with log-normal size distribution. This expands classes of social systems that can be modeled. 
 %Our model is more flexible and can produce groups with log-normal size distribution that better describes diverse social systems, including, ones described in the Section \ref{sec:emp}.\\
-
+\newpage
 \section{Results}
 
 The social systems do not grow at constant rate. In Ref. \cite{vranic2021growth} authors have shown that features of growth signal influence the  structure of social networks. For these reasons we use the real growth signal from Meetup groups located in London and New York, and Reddit community to simulate the growth of the social groups in these systems. Figure \ref{fig:fig5} top panel shows the time series of the number of new members that join each of the three systems each month. All three systems have relatively low growth at the beginning, and than the growth accelerates as the system becomes more popular.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Figures/figures/Fig3.png}
+	\caption[The estimation of the model parameters for groups growth model.]{The time series of number of new members (top panel), ratio between old members and total members in the system (middle panel), and ratio between new groups and active members(bottom panel) for Meetup groups in London,  Meetup groups in New York, and subreddits. }
+	\label{fig:fig5}
+\end{figure}
 
 We also use empirical data to estimate $p_{a}$, $p_{g}$ and $p_{aff}$. Probabilities that old members are active $p_a$ and that new groups are created $p_g$ can be approximated directly from the data. Activity parameter $p_{a}$ is the ratio between the number of old members that were active in month $t$ and the total number of members in the system at time $t$. Figure \ref{fig:fig5} middle row shows the variation of parameter $p_{a}$ during the considered time interval for each system. The values of this parameter fluctuates between $0$ and $0.2$ for London and New York based Meetup groups, while its value is between $0$ and $0.15$ for Reddit. To simplify our simulations we assume that $p_{a}$ is constant in time, and estimate its value as its median value during the $170$ months for Meetup systems, and $80$ months of Reddit system. For Meetup groups based in London and New York $p_{a}=0.05$, while Reddit members are more active on average and $p_{a}=0.11$ for this system.
 
 Figure \ref{fig:fig5} bottom row shows the evolution of parameter $p_{g}$ for the three considered systems. The $p_{g}$ in month $t$ is estimated as the ratio between the groups created in month $t$ $Ng_{new}(t)$ and the total number of groups that month $Ng_{new}(t)+Ng_{old}(t)$, i.e., $p_{g}(t)=\frac{Ng_{new}(t)}{N_{new}(t)+N_{old}(t)}$. We see from Fig. \ref{fig:fig5} that $p_{g}(t)$ has relatively high values at the beginning of the system's existence. This is not surprising. At the beginning these systems have relatively small number of groups and often cannot meet the needs for content of all their members. As the time passes, the number of groups grows, as well as content offerings within the system, and members no longer have a high need to create new groups. Figure \ref{fig:fig5} shows that $p_{g}$ fluctuates less after the first few months, and thus we again assume that $p_{g}$ is constant in time and set its value to median value during 170 months for Meetup and 80 months for Reddit. For all three systems $p_{g}$ has the value of $0.003$.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\linewidth]{Figures/figures/Fig3.png}
-	\caption[The estimation of the model parameters for groups growth model.]{The time series of number of new members (top panel), ratio between old members and total members in the system (middle panel), and ratio between new groups and active members(bottom panel) for Meetup groups in London,  Meetup groups in New York, and subreddits. }
-	\label{fig:fig5}
-\end{figure}
+
 
 The affiliation parameter $p_{aff}$ is not possible to estimate directly from the empirical data. For these reasons, we simulate the growth of social groups each of the three systems with the time series of new members obtained from the real data and estimated values of parameters $p_a$ and $p_g$, while we vary the value of $p_{aff}$. For each of the three systems, we compare the distribution of group sizes obtained from simulations for different values of $p_{aff}$ with ones obtained from empirical analysis using Jensen Shannon (JS) divergence. The JS divergence \cite{jsdivergence} between two distributions $P$ and $Q$ is defined as 
 \begin{equation}
@@ -158,23 +158,24 @@ where $H(p)$ is Shannon entropy $H(p)=\sum_x p(x)log(p(x)$. The JS divergence is
 	\label{tab:table}
 \end{table}
 
-
 Figure \ref{fig:fig6} shows the comparison between the empirical and simulation distribution of group sizes for three considered systems. We see that empirical distributions for Meetup groups based in London and New York are perfectly reproduced by the model and chosen values of parameters. In the case of Reddit, the distribution is very broad, and the tail of distribution is well reproduced by the model.
 The bottom row of Fig. \ref{fig:fig6} shows the distribution of logarithmic values of growth rates of groups obtained from empirical and simulated data. We see that the tails of empirical distributions for all three systems are well emulated by the ones obtained from the model. However, there are deviations which are the most likely consequence of using median values of parameters $p_{a}$, $p_{g}$, and $p_{aff}$.
-\begin{figure}[h!]
+
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{Figures/figures/Fig4.png}
 	\caption[The comparison between empirical and simulated data.]{The comparison between empirical and simulation distribution for group sizes (top panel) and logrates (bottom panel).}
 	\label{fig:fig6}
 \end{figure}
 
+
 \subsection{Distributions fit}
 
-We compute the log-likelihood ratio $R$, and $p$-value between different distributions and log-normal fit \cite{clauset2009power} to determine the best fit for the group size distributions. Distribution with a higher likelihood is a better fit. The log-likelihood ratio R then has a positive or negative value, indicating which distribution represents a better fit. To choose between two distributions, we need to calculate p-value,  to be sure that R is sufficiently positive or negative and that it is not the result of chance fluctuation from the result that is close to zero. If the p-value is small, $p<0.1$, it is unlikely that the sign of R is the chance of fluctuations, and it is an accurate indicator of which model fits better. \\
+We compute the log-likelihood ratio $R$, and $p$-value between different distributions and log-normal fit \cite{clauset2009power} to determine the best fit for the group size distributions. Distribution with a higher likelihood is a better fit. The log-likelihood ratio R then has a positive or negative value, indicating which distribution represents a better fit. To choose between two distributions, we need to calculate p-value,  to be sure that R is sufficiently positive or negative and that it is not the result of chance fluctuation from the result that is close to zero. If the p-value is small, $p<0.1$, it is unlikely that the sign of R is the chance of fluctuations, and it is an accurate indicator of which model fits better.
 
 Table \ref{tab:fit-data} summarizes the findings for empirical data on group size distributions from Meetup groups in London, Meetup groups in New York and Reddit. Using the maximum likelihood method, we obtain the parameters of the distributions \cite{powerlaw}. The results indicate that log-normal distribution is the best fit for all three systems.  Figure \ref{fig:fitdata} shows the distributions of empirical data as well as log-normal fit on data. For Meetup data, we present fit on stretched exponential distribution, which very well fits a large portion of data. For subreddits, distribution is broad and, potentially, resembles power-law. Still, log-normal distribution is a more suitable fit.
 
-\begin{table}[!ht]
+\begin{table}[h]
 	\centering
 	\caption[The likelihood ratio R and p-value for fitting empirical data]{The likelihood ratio R and p-value between different candidates and \textbf{lognormal} distribution for fitting the distribution of \textbf{groups sizes} of Meetup groups in London, New York and in Reddit. According to these statistics, the lognormal distribution represents the best fit for all communities. \\ }
 	\begin{tabular}{|c||cc||cc||cc|}
@@ -217,8 +218,9 @@ We use the same methods to estimate the fit for simulated group size distributio
 	\end{tabular}
 	\label{tab:fit_model}
 \end{table}
-
 \clearpage
+\newpage
+%\clearpage
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{figures/FigA2-model.png}
@@ -227,6 +229,19 @@ We use the same methods to estimate the fit for simulated group size distributio
 \end{figure}
 
 
+\subsection{Users partition in bipartite network - degree distribution}
+
+So far, the group growth model has focused on the degree distribution of groups and under what rules the universalities in the system reflected in the log-normal distribution of group sizes emerge. The model parameter $p_a$ controls the users' activity level; otherwise, it shapes the degree distribution of users in the bipartite network. As this probability is constant and uniform among all users, we do not expect rich properties of users' degree distribution. The expected distribution is exponential for growing random graph \cite{barabasi1999mean}, and the groups' growth model produces the same property. In figure \ref{fig:users_degree}, blue dots show degree distributions of modelled Meetup and Reddit systems. This distribution is very well fitted with exponential form.
+Furthermore, in empirical data, these distributions are long-tailed, green dots in figure \ref{fig:users_degree}, so the model can not reproduce the degree distribution of the users. In real systems, the probability that the user is active does not have to be uniform and constant. The previous work proposed that each user has a specific lifetime \cite{leskovec2008microscopic}, but different linking rules could play an important role in shaping users' degree distribution. For example, $p_a$ could be preferential toward high-degree users or even be time-dependent.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{groups/users_degree_expfit.pdf}
+	\caption[Users degree distribution]{Users degree distribution}
+	\label{fig:users_degree}
+\end{figure}
+
+\newpage
 \section{Conclusions}
 
 We apply complex network theory and statistical physics methods to describe the evolution of online social groups, Meetups in London and NewYork and Reddits. Instead of studying user interaction networks in a single group, which is a common approach, we are interested in quantifying how users interact with the system of multiple groups and determining which processes drive the growth of groups. Similar systems have been analysed before. For example, it was found that the distribution of the cities or firms follows the log-normal and stays stable, showing universal behaviour. Contrary, the previous work on online social groups indicated that group size distributions of LiveJournal and Youtube follow power-law \cite{zheleva2009co}. On the other hand, for Meetup and Reddit we find the emergence of  log-normal distribution of groups sizes. The distribution of Reddit is much broader. Furthermore these systems grow exponentially in the number of groups and new users. 

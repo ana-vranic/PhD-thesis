@@ -23,66 +23,66 @@
 \babel@toc {english}{}
 \babel@toc {english}{}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Erdős-R\' {e}nyi}}{15}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Degree distribution of Erdős-R\' {e}nyi graph.}}{16}{figure.2.2}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Watts and Strogatz graph model creation}}{17}{figure.2.3}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Aging model}}{20}{figure.2.4}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Phase diagram of aging network model}}{20}{figure.2.5}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Stochastic Block Model}}{21}{figure.2.6}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Probability distributions on a linear and double logarithmic scale.}}{25}{figure.2.7}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Multifractal, monofractal and whitenoise signals.}}{28}{figure.2.8}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Detrending the signal, for the segments of length $s=1000$.}}{29}{figure.2.9}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Multifractal, monofractal and whitenoise signals.}}{30}{figure.2.10}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Stochastic Block Model}}{13}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Erdős-R\' {e}nyi}}{17}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Degree distribution of Erdős-R\' {e}nyi graph.}}{18}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Watts and Strogatz graph model creation}}{19}{figure.2.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Aging model}}{22}{figure.2.5}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Phase diagram of aging network model}}{22}{figure.2.6}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Probability distributions on a linear and double logarithmic scale.}}{26}{figure.2.7}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Multifractal, monofractal and whitenoise signals.}}{29}{figure.2.8}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Detrending the signal, for the segments of length $s=1000$.}}{30}{figure.2.9}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Multifractal, monofractal and whitenoise signals.}}{31}{figure.2.10}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces User reputation.}}{32}{figure.2.11}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Nonlinear growth of network.}}{34}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Properties of MySpace signal.}}{35}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Properties of the TECH and Poisson signals.}}{35}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces D-measure for networks generated with real signals.}}{37}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Structural properties of networks.}}{38}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Long range correlated monofractal signals}}{40}{figure.3.6}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces D-distance for networks generated with monofractal signals. }}{40}{figure.3.7}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Assortativity index and mean clustering coefficient.}}{41}{figure.3.8}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Nonlinear growth of network.}}{36}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Properties of MySpace signal.}}{37}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Properties of the TECH and Poisson signals.}}{37}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces D-measure for networks generated with real signals.}}{39}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Structural properties of networks.}}{40}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Long range correlated monofractal signals}}{42}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces D-distance for networks generated with monofractal signals. }}{42}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Assortativity index and mean clustering coefficient.}}{43}{figure.3.8}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Properties of Meetup and Subreddit groups}}{44}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Universality in the Meetup and Reddit groups}}{45}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Bipartite groups growth model}}{47}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Group size distribution for different model parameters}}{48}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison between preferential and random linking in groups growth model.}}{49}{figure.4.5}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces The estimation of the model parameters for groups growth model.}}{50}{figure.4.6}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces The comparison between empirical and simulated data.}}{52}{figure.4.7}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces The fitting of empirical group size distributions.}}{53}{figure.4.8}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces The fitting of simulated group size distributions.}}{54}{figure.4.9}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Properties of Meetup and Subreddit groups}}{46}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Universality in the Meetup and Reddit groups}}{47}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Bipartite groups growth model}}{49}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Group size distribution for different model parameters}}{50}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison between preferential and random linking in groups growth model.}}{51}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The estimation of the model parameters for groups growth model.}}{52}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces The comparison between empirical and simulated data.}}{54}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces The fitting of empirical group size distributions.}}{55}{figure.4.8}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces The fitting of simulated group size distributions.}}{56}{figure.4.9}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Users degree distribution}}{56}{figure.4.10}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Degree distribution.}}{58}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Neighbour degree.}}{58}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Clustering coefficient.}}{59}{figure.5.3}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Mean clustering coefficient.}}{60}{figure.5.4}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Number of links per node}}{60}{figure.5.5}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces The size of the core}}{61}{figure.5.6}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Mean Jaccard index between core users.}}{62}{figure.5.7}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Mean Jaccard index between core users.}}{62}{figure.5.8}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Links per node in core and links per node between core and periphery.}}{63}{figure.5.9}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Dynamic Reputation of Stack Exchange websites.}}{63}{figure.5.10}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Dynamical reputation within core.}}{64}{figure.5.11}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Ratio between the total reputation within network core and periphery.}}{64}{figure.5.12}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Gini index of dynamic reputation}}{65}{figure.5.13}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Dynamic Reputation assortativity}}{65}{figure.5.14}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Coefficient correlation between }}{66}{figure.5.15}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Degree distribution.}}{60}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Neighbour degree.}}{61}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Clustering coefficient.}}{61}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Mean clustering coefficient.}}{62}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Number of links per node}}{62}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces The size of the core}}{63}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Mean Jaccard index between core users.}}{64}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Mean Jaccard index between core users.}}{64}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Links per node in core and links per node between core and periphery.}}{65}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Dynamic Reputation of Stack Exchange websites.}}{65}{figure.5.10}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Dynamical reputation within core.}}{66}{figure.5.11}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Ratio between the total reputation within network core and periphery.}}{66}{figure.5.12}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Gini index of dynamic reputation}}{67}{figure.5.13}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Dynamic Reputation assortativity}}{67}{figure.5.14}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Coefficient correlation between }}{68}{figure.5.15}%
 \addvspace {10pt}
-\babel@toc {serbianc}{}
 \babel@toc {english}{}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Number of active questions within 7 days sliding windows}}{72}{figure.A.1}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Number of active questions within 7 days sliding windows}}{74}{figure.A.1}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Single users reputations.}}{75}{figure.B.1}%
-\contentsline {figure}{\numberline {B.2}{\ignorespaces RMSE between number of users in 30 days sliding window and positive reputation.}}{76}{figure.B.2}%
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Number of users in 30 days sliding window and positive reputation.}}{77}{figure.B.3}%
-\contentsline {figure}{\numberline {B.4}{\ignorespaces Number of users in Stack Exchange community who remain to be active}}{77}{figure.B.4}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Single users reputations.}}{77}{figure.B.1}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces RMSE between number of users in 30 days sliding window and positive reputation.}}{78}{figure.B.2}%
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Number of users in 30 days sliding window and positive reputation.}}{79}{figure.B.3}%
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Number of users in Stack Exchange community who remain to be active}}{79}{figure.B.4}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Stack Exchange properties for different sliding window.}}{80}{figure.C.1}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Stack Exchange properties for different sliding window.}}{82}{figure.C.1}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Stability of the core-periphery structures.}}{83}{figure.D.1}%
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Stability of the core-periphery structures.}}{85}{figure.D.1}%
 \babel@toc {english}{}
 \addvspace {10pt}
 \babel@toc {serbianc}{}

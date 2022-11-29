@@ -305,7 +305,7 @@ Ana Vrani{\'c}, Aleksandar Toma{\v{s}}evi{\'c}, Aleksandra Alori{\'c}, and
 \bibitem{gallagher2020clarified}
 Ryan~J Gallagher, Jean-Gabriel Young, and Brooke~Foucault Welles.
 \newblock A clarified typology of core-periphery structure in networks.
-\newblock {\em arXiv preprint arXiv:2005.10191}, 2020.
+\newblock {\em Science advances}, 7(12):eabc9800, 2021.
 
 \bibitem{melnikov2018toward}
 A.~{Melnikov}, J.~{Lee}, V.~{Rivera}, M.~{Mazzara}, and L.~{Longo}.
@@ -323,6 +323,11 @@ Maarten Van~Steen.
 \newblock Graph theory and complex networks.
 \newblock {\em An introduction}, 144, 2010.
 
+\bibitem{park2003}
+Juyong Park and Mark~EJ Newman.
+\newblock Origin of degree correlations in the internet and other networks.
+\newblock {\em Physical Review E}, 68(2):026112, 2003.
+
 \bibitem{newman2002assortative}
 Mark~EJ Newman.
 \newblock Assortative mixing in networks.
@@ -332,6 +337,11 @@ Mark~EJ Newman.
 Mark~EJ Newman.
 \newblock Random graphs with clustering.
 \newblock {\em Physical review letters}, 103(5):058701, 2009.
+
+\bibitem{jackson2010social}
+Matthew~O Jackson.
+\newblock {\em Social and economic networks}.
+\newblock Princeton university press, 2010.
 
 \bibitem{tiago2}
 Tiago~A Schieber, Laura Carpi, Albert D{\'\i}az-Guilera, Panos~M Pardalos,
@@ -366,10 +376,60 @@ Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
 \newblock {\em Journal of statistical mechanics: theory and experiment},
   2008(10):P10008, 2008.
 
+\bibitem{csermely2013structure}
+Peter Csermely, Andr{\'a}s London, Ling-Yun Wu, and Brian Uzzi.
+\newblock Structure and dynamics of core/periphery networks.
+\newblock {\em Journal of Complex Networks}, 1(2):93--123, 2013.
+
+\bibitem{malliaros2020core}
+Fragkiskos~D Malliaros, Christos Giatsidis, Apostolos~N Papadopoulos, and
+  Michalis Vazirgiannis.
+\newblock The core decomposition of networks: Theory, algorithms and
+  applications.
+\newblock {\em The VLDB Journal}, 29(1):61--92, 2020.
+
+\bibitem{borgatti2000models}
+Stephen~P Borgatti and Martin~G Everett.
+\newblock Models of core/periphery structures.
+\newblock {\em Social networks}, 21(4):375--395, 2000.
+
+\bibitem{zhang2015identification}
+Xiao Zhang, Travis Martin, and Mark~EJ Newman.
+\newblock Identification of core-periphery structure in networks.
+\newblock {\em Physical Review E}, 91(3):032803, 2015.
+
+\bibitem{karrer2011stochastic}
+Brian Karrer and Mark~EJ Newman.
+\newblock Stochastic blockmodels and community structure in networks.
+\newblock {\em Physical review E}, 83(1):016107, 2011.
+
+\bibitem{bollobas2003mathematical}
+B{\'e}la Bollob{\'a}s and Oliver~M Riordan.
+\newblock Mathematical results on scale-free random graphs.
+\newblock {\em Handbook of graphs and networks: from the genome to the
+  internet}, pages 1--34, 2003.
+
+\bibitem{krapivsky2010kinetic}
+Pavel~L Krapivsky, Sidney Redner, and Eli Ben-Naim.
+\newblock {\em A kinetic view of statistical physics}.
+\newblock Cambridge University Press, 2010.
+
 \bibitem{krapivsky2001}
 Paul~L Krapivsky and Sidney Redner.
 \newblock Organization of growing random networks.
 \newblock {\em Physical Review E}, 63(6):066123, 2001.
+
+\bibitem{lee2019review}
+Clement Lee and Darren~J Wilkinson.
+\newblock A review of stochastic block models and extensions for graph
+  clustering.
+\newblock {\em Applied Network Science}, 4(1):1--50, 2019.
+
+\bibitem{rosvall2019different}
+Martin Rosvall, Jean-Charles Delvenne, Michael~T Schaub, and Renaud Lambiotte.
+\newblock Different approaches to community detection.
+\newblock {\em Advances in network clustering and blockmodeling}, pages
+  105--119, 2019.
 
 \bibitem{funke2019}
 Thorben Funke and Till Becker.
@@ -383,6 +443,20 @@ Michael Mitzenmacher.
   distributions.
 \newblock {\em Internet mathematics}, 1(2):226--251, 2004.
 
+\bibitem{newman2005power}
+Mark~EJ Newman.
+\newblock Power laws, pareto distributions and zipf's law.
+\newblock {\em Contemporary physics}, 46(5):323--351, 2005.
+
+\bibitem{limpert2001log}
+Eckhard Limpert, Werner~A Stahel, and Markus Abbt.
+\newblock Log-normal distributions across the sciences: keys and clues: on the
+  charms of statistics, and how mechanical models resembling gambling machines
+  offer a link to a handy way to characterize log-normal distributions, which
+  can provide deeper insight into variability and probability—normal or
+  log-normal: that is the question.
+\newblock {\em BioScience}, 51(5):341--352, 2001.
+
 \bibitem{barabasi2014network}
 A.-L. Barab{\'a}si.
 \newblock {Network science book}.
@@ -393,6 +467,11 @@ J.~Nair, A.~Wierman, and B.~Zwart.
 \newblock {\em The Fundamentals of Heavy Tails}.
 \newblock Cambridge Series in Statistical and Probabilistic Mathematics.
   Cambridge University Press, 2022.
+
+\bibitem{clauset2009power}
+Aaron Clauset, Cosma~Rohilla Shalizi, and Mark~EJ Newman.
+\newblock Power-law distributions in empirical data.
+\newblock {\em SIAM review}, 51(4):661--703, 2009.
 
 \bibitem{kantelhardt2008fractal}
 Jan~W Kantelhardt.
@@ -525,16 +604,23 @@ Jop Bri\"et and Peter Harremo\"es.
 \newblock Properties of classical and quantum jensen-shannon divergence.
 \newblock {\em Phys. Rev. A}, 79:052311, May 2009.
 
-\bibitem{clauset2009power}
-Aaron Clauset, Cosma~Rohilla Shalizi, and Mark~EJ Newman.
-\newblock Power-law distributions in empirical data.
-\newblock {\em SIAM review}, 51(4):661--703, 2009.
-
 \bibitem{powerlaw}
 Jeff Alstott, Ed~Bullmore, and Dietmar Plenz.
 \newblock powerlaw: A python package for analysis of heavy-tailed
   distributions.
 \newblock {\em PLOS ONE}, 9(1):1--11, 01 2014.
+
+\bibitem{barabasi1999mean}
+Albert-L{\'a}szl{\'o} Barab{\'a}si, R{\'e}ka Albert, and Hawoong Jeong.
+\newblock Mean-field theory for scale-free random networks.
+\newblock {\em Physica A: Statistical Mechanics and its Applications},
+  272(1-2):173--187, 1999.
+
+\bibitem{leskovec2008microscopic}
+Jure Leskovec, Lars Backstrom, Ravi Kumar, and Andrew Tomkins.
+\newblock Microscopic evolution of social networks.
+\newblock In {\em Proceedings of the 14th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 462--470, 2008.
 
 \bibitem{orsini2015quantifying}
 C.~Orsini, M.~Mitrovi\'c~Dankulov, P.~Colomer-de Sim{\'o}n, A.~Jamakovic,
