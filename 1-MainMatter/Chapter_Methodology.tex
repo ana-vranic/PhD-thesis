@@ -179,6 +179,7 @@ The higher modularity indicates that nodes are partitioned in better communities
 The first algorithm that was proposed for modularity optimization was \textbf{greedy algorithm}. First, it assigns each node to a community and starts with N communities. Then, we should merge each pair of communities and calculate the modularity difference $\Delta M$. We can join those two communities by identifying the pair for which the difference is the largest. This is repeated until all nodes merge into a single community. The best partition is one with the largest $M$. 
 
 \textbf{Louvain algorithm} \cite{blondel2008fast} is optimization algorithm with better scalability than gready algorithm, so it can operate on very large networks. Initially each node is assigned to different community, and similar as before we calculate the difference in the modularity if we move the community of one of its neighbours. Then we move the node i to the community such that modularity becomes larger. This is applyed to all nodes untill no further improvement could be made. In the second step we create weighter network whose nodes are communities identified during first step. The weight of the link between communities is the sum of the weights between the links in the communities, and the number of links inside the community is given as weighted self-loop. Then the first and second steps are repeated, until there is no more change in the modularity, otherwise until we find the maximum, optimal modularity. 
+\clearpage
 
 \subsection{Stochastic block model}
 
@@ -192,13 +193,38 @@ Another approach for studying the community structure of complex networks, Stoch
 
 The benefit of this model is that we can generate many networks with similar network structure \cite{rosvall2019different}. When model parameters are initialized, the network could be easily generated. For each pair of nodes $i$ and $j$ in network $G$ we draw link if random number $r_{ij}<p_{g_i, g_j}$. 
 
-The model can fit real data, which results in finding network communities. For the given network $G$ and number of groups $k$, the best nodes partition $g$ is found by maximizing the likelihood function. Beside inferring communities, SBM has application in prediction of missing links. This simply formulated model has many variants, motivated by specific properties of real data. For example, for networks which are degree heterogeneous, there is degree corrected SBM. In some social networks, users can belong to more than one group, and this can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, hierarchical model \cite{funke2019}. % etc. Also, several algorithms for optimization of likelihood function are proposed .
+The model can fit real data, which results in finding network communities. For the given network $G$ and number of groups $k$, the best nodes partition $g$ is found by maximizing the likelihood function. Beside inferring communities, SBM has application in prediction of missing links.  % etc. Also, several algorithms for optimization of likelihood function are proposed .
 
-\subsection{Core-periphery structure}
+For given network $G$, and specified the number of communities $k$ we can use the SBM model to infer the nodes assigments into groups, so we need to choose vector $g$ and SBM matrix $p$ such that the likelihood for generating network $G$ is maximized. Likelihood of generating network G, for given model parameters is:
+\begin{equation}
+P(G|p, g) = \prod_{i,j} Pr(i \rightarrow j| p, g) = \prod_{(i,j)\in E} Pr(i \rightarrow j| p, g)\prod_{(i,j)\notin E} ( 1 - Pr(i \rightarrow j| p, g))
+\end{equation}
+
+\begin{equation}
+P(G|p, g) = \prod_{(i,j)\in E} p_{g_ig_j}\prod_{(i,j)\notin E} ( 1 - p_{g_ig_j})
+\end{equation}
+
+In the likelihood equation we iterate over all pairs of nodes, so we separate the product over edges we observe in the network G, and edges that are not present. If we define the number of possible edges between two groups is $n_{rs}$, while $e_{rs}$ is number of observed edges between two groups. As all nodes are considered as independent we can switch the product over nodes with product over groups such that
+\begin{equation}
+P(G|p, g) = \prod_{(r,s)} p_{g_rg_s}^{E_{rs}}(1-p_{g_rg_s})^{N_{rs}-E_{rs}}
+\end{equation}
+
+As it is easier to work with logarithm of likelihood function, after taking logarithm of likelihood function we get following expression that needs to be maximized:
+
+$L = log(P(G|g, p)) = \sum_{r,s} E_{r,s} ln\frac{E_{rs}}{N_{rs}} + (N_{rs}-E_{rs})ln(\frac{N_{rs}-E_{rs}}{N_{rs}})$
+
+Finally, we have to maximize log-likelihood function over group membership vector $g$. It can be done numerically.
+
+This simply formulated model has many variants, motivated by specific properties of real data. For example, for networks which are degree heterogeneous, there is degree corrected SBM \cite{karrer2011stochastic}. In some social networks, users can belong to more than one group, and this can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, hierarchical model \cite{funke2019}.
+
+Many community detection algorithms define the community as assortative structure. With SBM model, such limitations do not exist and it is possible to directly use the statistical inference for discovering core-periphery structure or even on bipartite networks. 
+
+%One attractive feature of other community detection algorithms is that many automatically choose the number of groups c. The formulation of the SBM and DC-SBM above do not include a way to do this, but there are many ways to add such a behavior to the model. The key step to doing so is to control, somehow, for the additional model flexibility that comes with increasing c—having an extra group significantly in increases the model’s ability to fit the observed network because the The standard solution is regularization, which penal- izes a model’s fit to the data in a way that grows with the model’s flexibility. Hence, more flexible models have to fit the data much better than less flexible models, in order to be worth it. But, just as there are many different ways to detect communities, there are many different ways to regularize a model. 19
+
+%The process of choosing one out many models is called model selection or model comparison. (Not to be confused with a goodness-of-fit test, which asks whether a single model is a good fit to the data.) There are many approaches, each of which comes with a set of philosophical assumptions about what makes a better model. The most common is a kind of penalized likelihood function, in which we add to the log-likelihood a penalty function that grows with the “size” of the model. The AIC and BIC are examples of this idea, and MDL is a less well-known example. Another approach is to consider likelihood ratios between smaller and larger models, which can allow one to say that neither model is a better fit than the other; or to integrate the Bayesian posterior distribution over all choices of c. Etc. Which approach a scientist favors often comes down to the scientific culture and history of their field.
 
 \textbf{Core-periphery} structure describes a network whose nodes are divided into two community, densely connected core and less connected periphery \cite{csermely2013structure}. If we consider the average probabilities of edges within each group as $p_{11}$ and $p_{22}$, and between groups $p_{12}$, instead of traditionaly assortative or dissasortative structure we can define core-periphery structure $p_{11}> p_{12} > p_{22}$. %In the principle core-periphery structure does not have to be limited to only two groups,  the network can have more cores. 
 %and we can define layered, onion, structure. The network can have more cores, that are not directly connected to each other. 
-
 The simple method for finding core-periphery structure is to assume that nodes in core have higher degree in the core than in the periphery. Another simple method is to construct k-cores \cite{malliaros2020core}. K core is group of nodes that each has connection to at least k other members of the group. K-cores form a nested set, and become denser with higher k. The core-periphery structure can be detected optimizing the measure similar to modularity, as defined by Borgatti and Everett \cite{borgatti2000models}. Their goal is to find the division that minimizes the number of edges in the periphery. So they define the score function that is equal to number of edges in the periphery minus the expected number of such edges placed at random. $\rho = \frac{1}{2}\sum_{ij}(A_{ij}-p)g_ig_j$.
 
 The another way to detect core-periphery structure is to use the inference method based on fits to a Stochastic Block Model (SBM) \cite{zhang2015identification, karrer2011stochastic}. In this method we fit observed network to a block model with two groups, such that edge-probabilities have form $p_{11}> p_{12} > p_{22}$. Vector $\theta_i = r$ indicates that node $i$ is in block $r$, while SBM matrix $\{p\}_{2x2}$, specify the probability $p_{rs}$ that nodes from group $r$ are connected to nodes in group $s$. The SBM model is looking for the most probable model that can reproduce a given network G \cite{gallagher2020clarified}. Probability of having model parameters $\theta, p$ given network $G$ is proportional to likelihood of generating network $G$, prior of SBM matrix and prior on block assignments:

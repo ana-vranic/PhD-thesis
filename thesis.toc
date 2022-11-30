@@ -31,8 +31,7 @@
 \contentsline {subsection}{\numberline {2.1.5}D-measure}{12}{subsection.2.1.5}%
 \contentsline {section}{\numberline {2.2}Community structure}{13}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Louvain algorithm}{14}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Stochastic block model}{14}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Core-periphery structure}{15}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.2}Stochastic block model}{15}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Network models}{17}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Random network model}{17}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Small-world networks}{19}{subsection.2.3.2}%
