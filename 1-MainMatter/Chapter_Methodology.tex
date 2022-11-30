@@ -183,7 +183,9 @@ The first algorithm that was proposed for modularity optimization was \textbf{gr
 
 \subsection{Stochastic block model}
 
-Another approach for studying the community structure of complex networks, Stochastic block model (SBM), is based on connection probabilities between nodes. It is a generative model which includes existence of communities \cite{lee2019review}. Parameters that describe SBM for network G with N nodes are:
+Another approach for studying the community structure of complex networks, Stochastic block model (SBM), is based on connection probabilities between nodes.
+%The basic idea of the standard SBM modelis that neighbourhood relations of each node only depend on the probabilities given by the group memberships. The nodes are clustered in the way, so that the neighbours of nodes in a group have a similar patttern as well. First we explain the generative SBM model, and after that give theory for reverse process, the inference of community structure. 
+It is a generative model which includes existence of communities \cite{lee2019review}. Parameters that describe SBM for network G with N nodes are:
 
 \begin{itemize}
 	\item k: number of groups
@@ -204,9 +206,10 @@ P(G|p, g) = \prod_{i,j} Pr(i \rightarrow j| p, g) = \prod_{(i,j)\in E} Pr(i \rig
 P(G|p, g) = \prod_{(i,j)\in E} p_{g_ig_j}\prod_{(i,j)\notin E} ( 1 - p_{g_ig_j})
 \end{equation}
 
-In the likelihood equation we iterate over all pairs of nodes, so we separate the product over edges we observe in the network G, and edges that are not present. If we define the number of possible edges between two groups is $n_{rs}$, while $e_{rs}$ is number of observed edges between two groups. As all nodes are considered as independent we can switch the product over nodes with product over groups such that
+In the likelihood equation we iterate over all pairs of nodes, so we separate the product over edges we observe in the network G, and edges that are not present. If we define the number of possible edges between  groups $r$ and $s$ is 
+$n_{rs} = n_rn_s$ if $ r\neq s$, while when $r=s$, $n_{rs} = n_r(n_r+1)/2$  while $e_{rs}=\frac{1}{1+\delta_rs}\sum A_{ij}$ is number of observed edges between two groups. Here $A=A_{ij}$ is adjacency matrix As all nodes are considered as independent we can switch the product over nodes with product over groups such that
 \begin{equation}
-P(G|p, g) = \prod_{(r,s)} p_{g_rg_s}^{E_{rs}}(1-p_{g_rg_s})^{N_{rs}-E_{rs}}
+P(G|p, g) = \prod_{(r,s)} p_{g_rg_s}^{e_{rs}}(1-p_{g_rg_s})^{n_{rs}-e_{rs}}
 \end{equation}
 
 As it is easier to work with logarithm of likelihood function, after taking logarithm of likelihood function we get following expression that needs to be maximized:
@@ -215,7 +218,7 @@ $L = log(P(G|g, p)) = \sum_{r,s} E_{r,s} ln\frac{E_{rs}}{N_{rs}} + (N_{rs}-E_{rs
 
 Finally, we have to maximize log-likelihood function over group membership vector $g$. It can be done numerically.
 
-This simply formulated model has many variants, motivated by specific properties of real data. For example, for networks which are degree heterogeneous, there is degree corrected SBM \cite{karrer2011stochastic}. In some social networks, users can belong to more than one group, and this can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, hierarchical model \cite{funke2019}.
+This simply formulated model has many variants, motivated by specific properties of real data. For example, for networks which are degree heterogeneous, there is degree corrected SBM \cite{karrer2011stochastic}. In some social networks, users can belong to more than one group, and this can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, hierarchical model \cite{funke2019}
 
 Many community detection algorithms define the community as assortative structure. With SBM model, such limitations do not exist and it is possible to directly use the statistical inference for discovering core-periphery structure or even on bipartite networks. 
 
