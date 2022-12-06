@@ -213,28 +213,24 @@ As it is easier to work with logarithm of likelihood function, after taking loga
 L = log(P(G|g, p)) = \sum_{r,s} e_{r,s} ln\frac{e_{rs}}{n_{rs}} + (n_{rs}-e_{rs})ln(\frac{e_{rs}-e_{rs}}{n_{rs}})
 \end{equation}
 
-The model can fit real data, which results in finding network communities. For the given network $G$ and number of groups $k$, the best nodes partition $g$ is found by maximizing the likelihood function. Beside inferring communities, SBM has application in prediction of missing links.  % etc. Also, several algorithms for optimization of likelihood function are proposed .
+%The model can fit real data, which results in finding network communities. For the given network $G$ and number of groups $k$, the best nodes partition $g$ is found by maximizing the likelihood function. Beside inferring communities, SBM has application in prediction of missing links.  % etc. Also, several algorithms for optimization of likelihood function are proposed .
 
-For given network $G$, and specified the number of communities $k$ we can use the SBM model to infer the nodes assigments into groups, so we need to choose vector $g$ and SBM matrix $p$ such that the likelihood for generating network $G$ is maximized.
+For given network $G$, and specified the number of communities $k$ we can use the SBM model to infer the nodes assigments into groups, so we need to choose vector $g$ and SBM matrix $p$ such that the likelihood for generating network $G$ is maximized. 
 
-%check
-%Instead of generating networks, our task is to find out wich partition b, generated observed network A, assuming that it is done with SBM model. We need probability P(b|A), that partition b is created from network A. $P(b|A)=\frac{P(A|b)P(b)P(b)}{P(A)}$
+Instead of generating networks, opposite task is to find the nodes assigments in partitions for given network, so we need to infer the probability $P(g|G)$, that partition $g$ is created from network $G$.
 
-%MDL
-%If descrete variable occurs with probability P(x) the ammount of information necessary to describe it is $-log_2P(x)$. So we may write the numerator of poserior probability as $P(A|b)P(b)=P(A|e, b)P(e,b)=2^{-\Sigma}$, where $\Sigma$ is called description lenght of data. It corresponds to the amount of information necesary to encode the data A together with model parameters e and b. So if we find the network partition that maxiize the posterior distribution, we are finding the one that minimize the description length. As the size of the model increase, with larger number of groups, the ammount of information necessary to describe it will decrease. The ammount of information necessary to describe the model itself will increase as model becomes more complex. So the latter function is penalty, so optimal choice of parameters will lead to balance between these two terms. $\sigma = -log2P(A, e, b)= -log2(p(A|e,b))-log2P(e,b)$
+\begin{equation}
+P(g|G)=\frac{P(G|g)P(g)}{P(G)}
+\end{equation}
 
-Finally, we have to maximize log-likelihood function over group membership vector $g$. It can be done numerically.
+Finally, we have to maximize log-likelihood function over group membership vector $g$. It can be done numerically. We should notice that the formulation of SBM model does not consider the way to infer the optimal number of groups. Optimizing the likelihood function for different numbers of groups would result in the increase of likelihood, while each node is not assigned to different group. In practice, our found community structures for fixed number of groups, and then likelihood function could be penalized by the number of model parameters. One approach is calculating the Minimum description length (MDL). 
 
-%test
-%A challenge of any variant of SBM model is the requirment of the a priori knowledge about he actual number of groups. Simply minimizing the one likelihood function would result in the assigning each node to different community. Most aproaches to this problem consider first to find the optimal community structure for different number of groups and then penalize the calculated likelihood function based on the number of model parameters. 
+\textbf{MDL.} For the variable that occurs with probability P(x), the necessary ammount of information to describe it is $-log_2P(x)$. The numerator of posterior probability $P(G|g)P(g) = P(A|p, g)P(p, g)=2^{-\Sigma}$, where $\Sigma$ is description length (DL) of the data. It means that if we find the network partition that maximize the posterior distribution, we are also finding the minimum description length (MDL). The MDL consists of two terms: $\Sigma = -log2(p(A|p,g))-log2P(p,g)$. In first part of equation the ammount of information necessary to describe the model decrease with number of groups. The second contribution comes only from the model, and as model becomes more complex, with larger number of groups, this part increases. The optimal solution represents the balance between these two terms in MDL equation.  
 
+%Markov chain Monte Carlo methods are a class of algotithms used to sample from probability distribution. The widely used variant of this algorithm is Metropolis algorithm. The algorithm suggests the random moves  and accepts any move that improves the function F, and accepts all other moves with probability $exp(-\beta \delta F)$
 
-This simply formulated model has many variants, motivated by specific properties of real data. For example, for networks which are degree heterogeneous, there is degree corrected SBM \cite{karrer2011stochastic}. In some social networks, users can belong to more than one group, and this can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, hierarchical model \cite{funke2019}
+This SBM model has many variants, motivated by specific properties of real data. For example, for networks which are degree heterogeneous, there is degree corrected SBM \cite{karrer2011stochastic}. In some social networks, users can belong to more than one group, and this can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, hierarchical model \cite{funke2019}. Many community detection algorithms define the community as assortative structure. With SBM model, such limitations do not exist and it is possible to directly use the statistical inference for discovering core-periphery structure or even on bipartite networks. 
 
-Many community detection algorithms define the community as assortative structure. With SBM model, such limitations do not exist and it is possible to directly use the statistical inference for discovering core-periphery structure or even on bipartite networks. 
-
-%test
-%One attractive feature of other community detection algorithms is that many automatically choose the number of groups c. The formulation of the SBM and DC-SBM above do not include a way to do this, but there are many ways to add such a behavior to the model. The key step to doing so is to control, somehow, for the additional model flexibility that comes with increasing c—having an extra group significantly in increases the model’s ability to fit the observed network because the The standard solution is regularization, which penal- izes a model’s fit to the data in a way that grows with the model’s flexibility. Hence, more flexible models have to fit the data much better than less flexible models, in order to be worth it. But, just as there are many different ways to detect communities, there are many different ways to regularize a model. 19 The process of choosing one out many models is called model selection or model comparison. (Not to be confused with a goodness-of-fit test, which asks whether a single model is a good fit to the data.) There are many approaches, each of which comes with a set of philosophical assumptions about what makes a better model. The most common is a kind of penalized likelihood function, in which we add to the log-likelihood a penalty function that grows with the “size” of the model. The AIC and BIC are examples of this idea, and MDL is a less well-known example. Another approach is to consider likelihood ratios between smaller and larger models, which can allow one to say that neither model is a better fit than the other; or to integrate the Bayesian posterior distribution over all choices of c. Etc. Which approach a scientist favors often comes down to the scientific culture and history of their field. Inference methods the SBM variants and the corresponding likelihood funtions we need methods to approximate optimal community structure of the selected model. The task of inference algorithm is simply to retrive a good approximation of the greatest element. Markov chain Monte Carlo methods are a class of algotithms used to sample from probability distribution. The widely used variant of this algorithm is Metropolis algorithm. The algorithm suggests the random moves  and accepts any move that improves the function F, and accepts all other moves with probability $exp(-\beta \delta F)$
 
 \textbf{Core-periphery} structure describes a network whose nodes are divided into two community, densely connected core and less connected periphery \cite{csermely2013structure}. If we consider the average probabilities of edges within each group as $p_{11}$ and $p_{22}$, and between groups $p_{12}$, instead of traditionaly assortative or dissasortative structure we can define core-periphery structure $p_{11}> p_{12} > p_{22}$. The simple method for finding core-periphery structure is to assume that nodes in core have higher degree in the core than in the periphery. Another simple method is to construct k-cores \cite{malliaros2020core}. K core is group of nodes that each has connection to at least k other members of the group. K-cores form a nested set, and become denser with higher k. The core-periphery structure can be detected optimizing the measure similar to modularity, as defined by Borgatti and Everett \cite{borgatti2000models}. Their goal is to find the division that minimizes the number of edges in the periphery. So they define the score function that is equal to number of edges in the periphery minus the expected number of such edges placed at random. $\rho = \frac{1}{2}\sum_{ij}(A_{ij}-p)g_ig_j$.
 
@@ -273,7 +269,7 @@ The likelihood of SBM model increase with number of blocks and model itself does
 %}
 %MDL for definition of the model
 
-\newpage
+%\newpage
 \section{Network models}
 
 \subsection{Random network model}
@@ -599,7 +595,7 @@ p = \frac{1}{\sqrt{2\pi n \sigma^2}} \int_{-\infty}^{-|\mathcal{R}|}e^{-x^2/2n\s
 \end{equation}
 
 Here we use the standard two-tail hypothesis test \cite{clauset2009power}, assuming that the null hypothesis is  $R= 0$. If the p-value is larger than a threshold, the R sign is unreliable, and the test does not favour any distribution. If p is small, $p<0.1$ then it is unlikely that the observed sign is obtained by chance, so we reject the null hypothesis that $R=0$. 
-\newpage
+%\newpage
 
 \section{Fractal analysis}
 
