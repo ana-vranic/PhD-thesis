@@ -183,70 +183,112 @@ The first algorithm that was proposed for modularity optimization was \textbf{gr
 
 \subsection{Stochastic block model}
 
-Another approach for studying the community structure of complex networks, Stochastic block model (SBM), assume that nodes are clustered in the groups, and the relations between nodes depends on the probabilities for groups memberships \cite{lee2019review}. In one group, nodes have similar connectivity patterns. To describe the network G with SBM model, we need to define:
+%SBM were first formalized in the social sciences [105, 46, 70, 102], the goal of this
+%approach is to order the diversity of actor behaviors, each actor being a node in a social
+%network. It identifies actors that are structurally equivalent, i.e. actors that have the
+%same relationships to all other actors, and group them together into the same block ac-
+%tors. The notion of structurally equivalent actors is slightly relaxed into stochastically
+%equivalent in the sense that all members from a group do not need to have exactly the
+%same relationships but instead the same probability of connection; two stochastically
+%equivalent actors are exchangeable without modifying the topology of the network sig-
+%nificantly. This actor behavior diversity can be translated into pattern connection di-
+%versity, thus the same notion of stochastic block models can be generalized outside the
+%social science field and applied to any type of network to order the patterns of connec-
+%tion heterogeneity into blocks holding homogeneous patterns.
+%A SBM is totally determined by: (i) a partition P which distributes N nodes into
+%blocks; (ii) the matrix Q, whose elements qαβ indicate the probability of connection
+%between blocks α and β
+
+Another approach for studying the community structure of complex networks, Stochastic block model (SBM), assumes that nodes are clustered in the groups, and the relations between nodes depends on the probabilities for groups memberships \cite{lee2019review}. In one group, nodes have similar connectivity patterns. To describe the network G with SBM model, we need to define:
 
 \begin{itemize}
 	\item k: number of groups
 	\item group assignment vector, g: $g_i \in\{1,2..k\}$, gives the group index of node $i$.
-	\item SBM matrix, $p_{k \times k}$, whose elements $p_{ij}$ are the probabilities that edges between groups $g_i$ and $g_j$ exist. Note that nodes within one group have the same connection probabilities. 
+	\item SBM matrix, $p_{k \times k}$, whose elements $p_{rs}$ are the probabilities that edges between groups $r$ and $s$ exist. Note that nodes within one group have the same connection probabilities. 
 \end{itemize}
 
-The benefit of this model is that we can generate many networks with similar network structure \cite{rosvall2019different}. When model parameters are initialized, the network could be easily generated. For each pair of nodes $i$ and $j$ in network $G$ we draw link if random number $r_{ij}<p_{g_i, g_j}$. 
+The number of possible nodes between two groups $r$ and $s$:
+\begin{equation}
+n_{rs} = \begin{cases}
+n_r(n_{r}+1)/2 &\text{if  } r=s \\
+n_rn_s &\text{if  } r=s\\
+\end{cases}
+\end{equation}
+
+;while the number of possible edges depends on the adjacency matrix $A_{ij}$:
+\begin{equation}
+e_{rs}=\frac{1}{1+\delta_{rs}}\sum_{i \in r, j\in s} A_{ij}
+\end{equation}
+
+
+
+The benefit of this model is that we can \textbf{generate} many networks with similar network structure \cite{rosvall2019different}. When model parameters are initialized, the network could be easily generated. For each pair of nodes $i$ and $j$ in network $G$ we draw link if random number $r_{ij}<p_{r, s}$. 
 
 Likelihood of generating network G, for given model parameters is:
 \begin{equation}
 P(G|p, g) = \prod_{i,j} Pr(i \rightarrow j| p, g) = \prod_{(i,j)\in E} Pr(i \rightarrow j| p, g)\prod_{(i,j)\notin E} ( 1 - Pr(i \rightarrow j| p, g))
 \end{equation}
 
+in the processes where connection between two nodes is described with Bernoulli distribution, the likelihood takes form:
 \begin{equation}
 P(G|p, g) = \prod_{(i,j)\in E} p_{g_ig_j}\prod_{(i,j)\notin E} ( 1 - p_{g_ig_j})
 \end{equation}
 
-In the likelihood equation we iterate over all pairs of nodes, so we separate the product over edges we observe in the network G, and edges that are not present. If we define the number of possible edges between  groups $r$ and $s$ is 
-$n_{rs} = n_rn_s$ if $ r\neq s$, while when $r=s$, $n_{rs} = n_r(n_r+1)/2$,\\ while $e_{rs}=\frac{1}{1+\delta_{rs}}\sum_{i \in r, j\in s} A_{ij}$ is number of observed edges between two groups. Here $A=A_{ij}$ is adjacency matrix. As all nodes are considered as independent we can switch the product over nodes with product over groups such that
+In the likelihood equation we iterate over all pairs of nodes, so we separate the product over edges we observe in the network G, and edges that are not present. 
+As all nodes are considered as independent we can switch the product over nodes with product over groups such that
 \begin{equation}
-P(G|p, g) = \prod_{(r,s)} p_{g_rg_s}^{e_{rs}}(1-p_{g_rg_s})^{n_{rs}-e_{rs}}
+P(G|p, g) = \prod_{(r,s)} p_{rs}^{e_{rs}}(1-p_{rs})^{n_{rs}-e_{rs}}
 \end{equation}
-
-As it is easier to work with logarithm of likelihood function, after taking logarithm of likelihood function we get following expression that needs to be maximized:
+As it is easier to work with logarithm of likelihood function, after taking logarithm of likelihood function we get following expression:
 \begin{equation}
 L = log(P(G|g, p)) = \sum_{r,s} e_{r,s} ln\frac{e_{rs}}{n_{rs}} + (n_{rs}-e_{rs})ln(\frac{e_{rs}-e_{rs}}{n_{rs}})
 \end{equation}
 
 %The model can fit real data, which results in finding network communities. For the given network $G$ and number of groups $k$, the best nodes partition $g$ is found by maximizing the likelihood function. Beside inferring communities, SBM has application in prediction of missing links.  % etc. Also, several algorithms for optimization of likelihood function are proposed .
 
-For given network $G$, and specified the number of communities $k$ we can use the SBM model to infer the nodes assigments into groups, so we need to choose vector $g$ and SBM matrix $p$ such that the likelihood for generating network $G$ is maximized. 
+Instead of generating networks, opposite task is network \textbf{inference}. For given network $G$, and specified the number of communities $k$ we can use the SBM model to infer the nodes assigments into groups, so we need to choose vector $g$ and SBM matrix $p$ such that the likelihood for generating network $G$ is maximized. 
 
-Instead of generating networks, opposite task is to find the nodes assigments in partitions for given network, so we need to infer the probability $P(g|G)$, that partition $g$ is created from network $G$.
+%The probability that partition $g$ is created from network $G$ is called posterior of the model. We need to infer the probability $P(g|G)$, that partition $g$ is created from network $G$.
+%\begin{equation}
+%P(g, p|G)=\frac{P(G|g)P(g)}{P(G)}
+%\end{equation}
 
+%Finally, we have to maximize log-likelihood function over group membership vector $g$. It can be done numerically. 
+
+%The Markov chain Monte Carlo (MCMC) methods are class of algorithms used to sampe from probability distributions. This methods generate draws from probability distribution over model parameters $\theta$ in order to estimate it. Starting with an initinal state, MCMC simulates transitions of Markov chain to explore the parameter space and finally obtaining estimation of the equation. 
+%$I = \frac{1}{S}\sum F(\theta^{i})$. 
+%In the Metropolis-Hasting algorithm, at each time step from given state $\theta$ is nerated new proposal and if the acceptence probability $min(1, \frac{\sum_t p_t^ip(s\rightarrow r|t)}{ \sum_t p_t^ip(r \rightarrow s|t) })$, where $p_t^i$ is fraction is likelihood to move the node $r$ to $s$. 
+
+%In each step algorithm chooses the random node and proposes a move to different move. Then the change of likelihood function is calculated. If the likelihood function increases under the proposed move is accepted with probability $exp(-\Delta L)$. he Metropolist algorithm is the easiest version of MCMC. The algorithm requires the function F that is proportional to the likelihood and the number of steps. At each time step are suggested the random moves, and accepted if improve the function F. 
+
+%Bayesian approaches are a more reliable alternative to test the model on real world
+%networks, its performance at inferring some particular property of the network is not
+%based in any assumed ground truth but probability theory, for instance the prediction of
+%missing/spurious links of the network that will be explained further in the introduction.
+
+%Often, large parameters space makes unfeasible to analitically compute Eq. 1.4,
+%therefore several methodologies have been developed to approximate this integral.
+%Some of them are based on statistical mechanics that is shortly explained in the fol-
+%lowing section.
+
+We should notice that the formulation of SBM model does not consider the way to infer the optimal number of groups. Optimizing the likelihood function for different numbers of groups would result in the increase of likelihood, while each node is not assigned to different group. In practice, our found community structures for fixed number of groups, and then likelihood function could be penalized by the number of model parameters. One approach is calculating the \textbf{Minimum description length (MDL)}. For the variable that occurs with probability P(x), the necessary ammount of information to describe it is $-log_2P(x)$. The numerator of posterior probability could be written as
 \begin{equation}
-P(g|G)=\frac{P(G|g)P(g)}{P(G)}
+P(G|g)P(g) = P(G|p, g)P(p, g)=2^{-\Sigma}
 \end{equation}
-
-Finally, we have to maximize log-likelihood function over group membership vector $g$. It can be done numerically. We should notice that the formulation of SBM model does not consider the way to infer the optimal number of groups. Optimizing the likelihood function for different numbers of groups would result in the increase of likelihood, while each node is not assigned to different group. In practice, our found community structures for fixed number of groups, and then likelihood function could be penalized by the number of model parameters. One approach is calculating the Minimum description length (MDL). 
-
-\textbf{MDL.} For the variable that occurs with probability P(x), the necessary ammount of information to describe it is $-log_2P(x)$. The numerator of posterior probability $P(G|g)P(g) = P(A|p, g)P(p, g)=2^{-\Sigma}$, where $\Sigma$ is description length (DL) of the data. It means that if we find the network partition that maximize the posterior distribution, we are also finding the minimum description length (MDL). The MDL consists of two terms: $\Sigma = -log2(p(A|p,g))-log2P(p,g)$. In first part of equation the ammount of information necessary to describe the model decrease with number of groups. The second contribution comes only from the model, and as model becomes more complex, with larger number of groups, this part increases. The optimal solution represents the balance between these two terms in MDL equation.  
+ where $\Sigma$ is description length (DL) of the data. It means that if we find the network partition that maximize the posterior distribution, we are also finding the MDL. The MDL consists of two terms: $\Sigma = -log2(p(G|p,g))-log2P(p,g)$. In first part of equation the ammount of information necessary to describe the model decrease with number of groups. The second contribution comes only from the model, and as model becomes more complex, with larger number of groups, this part increases. The optimal solution represents the balance between these two terms in MDL equation.  
 
 %Markov chain Monte Carlo methods are a class of algotithms used to sample from probability distribution. The widely used variant of this algorithm is Metropolis algorithm. The algorithm suggests the random moves  and accepts any move that improves the function F, and accepts all other moves with probability $exp(-\beta \delta F)$
 
-This SBM model has many variants, motivated by specific properties of real data. For example, for networks which are degree heterogeneous, there is degree corrected SBM \cite{karrer2011stochastic}. In some social networks, users can belong to more than one group, and this can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, hierarchical model \cite{funke2019}. Many community detection algorithms define the community as assortative structure. With SBM model, such limitations do not exist and it is possible to directly use the statistical inference for discovering core-periphery structure or even on bipartite networks. 
+This SBM model has many variants, motivated by specific properties of real data. For example, for networks which are degree heterogeneous, there is degree corrected SBM \cite{karrer2011stochastic}. In some social networks, users can belong to more than one group, and this can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, hierarchical model \cite{funke2019}. Many community detection algorithms define the community as assortative structure. With SBM model, such limitations do not exist and it is possible to directly use the statistical inference for discovering core-periphery structure or even networks with bipartite structure.  
+
+\subsection{Core-periphery structure}
 
 
-\textbf{Core-periphery} structure describes a network whose nodes are divided into two community, densely connected core and less connected periphery \cite{csermely2013structure}. If we consider the average probabilities of edges within each group as $p_{11}$ and $p_{22}$, and between groups $p_{12}$, instead of traditionaly assortative or dissasortative structure we can define core-periphery structure $p_{11}> p_{12} > p_{22}$. The simple method for finding core-periphery structure is to assume that nodes in core have higher degree in the core than in the periphery. Another simple method is to construct k-cores \cite{malliaros2020core}. K core is group of nodes that each has connection to at least k other members of the group. K-cores form a nested set, and become denser with higher k. The core-periphery structure can be detected optimizing the measure similar to modularity, as defined by Borgatti and Everett \cite{borgatti2000models}. Their goal is to find the division that minimizes the number of edges in the periphery. So they define the score function that is equal to number of edges in the periphery minus the expected number of such edges placed at random. $\rho = \frac{1}{2}\sum_{ij}(A_{ij}-p)g_ig_j$.
+Core-periphery structure describes a network whose nodes are divided into two community, densely connected core and less connected periphery \cite{csermely2013structure}. If we consider the average probabilities of edges within each group as $p_{11}$ and $p_{22}$, and between groups $p_{12}$, instead of traditionaly assortative or dissasortative structure we can define core-periphery structure $p_{11}> p_{12} > p_{22}$. The simple method for finding core-periphery structure is to assume that nodes in core have higher degree in the core than in the periphery. Another simple method is to construct k-cores \cite{malliaros2020core}. K core is group of nodes that each has connection to at least k other members of the group. K-cores form a nested set, and become denser with higher k. The core-periphery structure can be detected optimizing the measure similar to modularity, as defined by Borgatti and Everett \cite{borgatti2000models}. Their goal is to find the division that minimizes the number of edges in the periphery. So they define the score function that is equal to number of edges in the periphery minus the expected number of such edges placed at random. $\rho = \frac{1}{2}\sum_{ij}(A_{ij}-p)g_ig_j$.
 
-The another way to detect core-periphery structure is to use the inference method based on fits to a Stochastic Block Model (SBM) \cite{zhang2015identification, karrer2011stochastic}. In this method we fit observed network to a block model with two groups, such that edge-probabilities have form $p_{11}> p_{12} > p_{22}$. Vector $\theta_i = r$ indicates that node $i$ is in block $r$, while SBM matrix $\{p\}_{2x2}$, specify the probability $p_{rs}$ that nodes from group $r$ are connected to nodes in group $s$. The SBM model is looking for the most probable model that can reproduce a given network G \cite{gallagher2020clarified}. Probability of having model parameters $\theta, p$ given network $G$ is proportional to likelihood of generating network $G$, prior of SBM matrix and prior on block assignments:
-
-\begin{equation}
-P(\theta, p| G) = P(G | \theta , p) P(p) P(\theta) 
-\end{equation}
-
-\begin{equation}
-P(G | \theta , p) = \prod_{i<j} p_{r_is_j}^{A_{ij}}(1-p_{r_is_j})^{1-A_{ij}}  
-\end{equation}
-
-where $A_{ij}$ is number of edges between nodes $i$ and $j$. Prior on p is modified for core-periphery model such that $P(p)  \sim I_{0<p_{22}<p_{12}<p_{11}<1}$, while prior on $\theta $ consists of three parts: probability of having $2$ blocks; given the number of layers probability $P(n|2)$ of having groups of sizes ${n_1, n_2}$ and the probability $P(\theta|n)$ of having particular assignments of nodes to blocks. 
-For fitting model in the work \cite{gallagher2020clarified} authors use Metropolis-within-Gibbs algorithm.
-The likelihood of SBM model increase with number of blocks and model itself does not define optimal number of communities. Inferring minimum description length (MDL) \cite{gallagher2020clarified} of the model is one approach to decide which model is more likely.
+The another way to detect core-periphery structure is to use the inference method based on fits to a Stochastic Block Model (SBM) \cite{zhang2015identification, karrer2011stochastic}. In this method we fit observed network to a block model with two groups, such that edge-probabilities have form $p_{11}> p_{12} > p_{22}$. Vector $\theta_i = r$ indicates that node $i$ is in block $r$, while SBM matrix $\{p\}_{2x2}$, specify the probability $p_{rs}$ that nodes from group $r$ are connected to nodes in group $s$. The SBM model is looking for the most probable model that can reproduce a given network G \cite{gallagher2020clarified}. Probability of having model parameters $\theta, p$ given network $G$ is proportional to likelihood of generating network $G$, prior of SBM matrix $P(p)$ and prior on block assignments $P(\theta)$: $P(\theta, p| G) = P(G | \theta , p) P(p) P(\theta)$, while the likelihood function takes following form: $P(G | \theta , p) = \prod_{i<j} p_{r_is_j}^{A_{ij}}(1-p_{r_is_j})^{1-A_{ij}}$, where $A_{ij}$ is number of edges between nodes $i$ and $j$. To ensure the core periphery structure, prior $P(p)$ is modified for core-periphery model such that $P(p)  \sim I_{0<p_{22}<p_{12}<p_{11}<1}$, while prior  $P(\theta) $ consists of three parts: probability of having $2$ blocks; given the number of layers probability $P(n|2)$ of having groups of sizes ${n_1, n_2}$ and the probability $P(\theta|n)$ of having particular assignments of nodes to blocks. 
+%For fitting model in the work \cite{gallagher2020clarified} authors use Metropolis-within-Gibbs algorithm.
+%The likelihood of SBM model increase with number of blocks and model itself does not define optimal number of communities. Inferring minimum description length (MDL) \cite{gallagher2020clarified} of the model is one approach to decide which model is more likely.
 
 %@article{peixoto2019bayesian,
 %	title={Bayesian stochastic blockmodeling},
