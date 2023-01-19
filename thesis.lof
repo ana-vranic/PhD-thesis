@@ -30,12 +30,12 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Aging model}}{22}{figure.2.5}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Phase diagram of aging network model}}{22}{figure.2.6}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Probability distributions on a linear and double logarithmic scale.}}{26}{figure.2.7}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Multifractal, monofractal and whitenoise signals.}}{29}{figure.2.8}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Detrending the signal, for the segments of length $s=1000$.}}{30}{figure.2.9}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Multifractal, monofractal and whitenoise signals.}}{31}{figure.2.10}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Multifractal, monofractal and white noise signals.}}{29}{figure.2.8}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Detrending the signal for the segments of length $s=1000$.}}{30}{figure.2.9}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Multifractal, monofractal and white noise signals.}}{31}{figure.2.10}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces User reputation.}}{32}{figure.2.11}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Nonlinear growth of network.}}{36}{figure.3.1}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Nonlinear growth of the network.}}{36}{figure.3.1}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Properties of MySpace signal.}}{37}{figure.3.2}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Properties of the TECH and Poisson signals.}}{37}{figure.3.3}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces D-measure for networks generated with real signals.}}{39}{figure.3.4}%
@@ -48,8 +48,8 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Universality in the Meetup and Reddit groups}}{47}{figure.4.2}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Bipartite groups growth model}}{49}{figure.4.3}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Group size distribution for different model parameters}}{50}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison between preferential and random linking in groups growth model.}}{51}{figure.4.5}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces The estimation of the model parameters for groups growth model.}}{52}{figure.4.6}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison between preferential and random linking in the groups' growth model.}}{51}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The estimation of the model parameters for a groups growth model.}}{52}{figure.4.6}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces The comparison between empirical and simulated data.}}{54}{figure.4.7}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces The fitting of empirical group size distributions.}}{55}{figure.4.8}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces The fitting of simulated group size distributions.}}{56}{figure.4.9}%
@@ -65,7 +65,7 @@
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Mean Jaccard index between core users.}}{64}{figure.5.8}%
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Links per node in core and links per node between core and periphery.}}{65}{figure.5.9}%
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Dynamic Reputation of Stack Exchange websites.}}{65}{figure.5.10}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Dynamical reputation within core.}}{66}{figure.5.11}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Dynamical reputation within the core.}}{66}{figure.5.11}%
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Ratio between the total reputation within network core and periphery.}}{66}{figure.5.12}%
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Gini index of dynamic reputation}}{67}{figure.5.13}%
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Dynamic Reputation assortativity}}{67}{figure.5.14}%

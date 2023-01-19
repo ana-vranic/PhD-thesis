@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {2.3.2}Small-world networks}{19}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Barab\' {a}si-Albert model}{19}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Nonlinear preferential attachment model}{21}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Ageing model}{21}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.5}Aging model}{21}{subsection.2.3.5}%
 \contentsline {section}{\numberline {2.4}The probability distributions}{23}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}The properties of distributions}{23}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Plotting the distributions}{25}{subsection.2.4.2}%
@@ -66,7 +66,7 @@
 \contentsline {subsection}{\numberline {4.3.1}Distributions fit}{54}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Users partition in bipartite network - degree distribution}{56}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}Conclusions}{57}{section.4.4}%
-\contentsline {chapter}{\chapternumberline {5}The role of trust in knowledge based communities}{59}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}The role of trust in knowledge-based communities}{59}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Network properties of Stack Exchange data}{60}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Core-periphery structure}{62}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Dynamical Reputation on Stack Exchange communities}{65}{section.5.3}%
