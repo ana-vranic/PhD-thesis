@@ -179,7 +179,7 @@ The higher modularity indicates that nodes are partitioned in better communities
 The first algorithm that was proposed for modularity optimization was \textbf{greedy algorithm}. First, it assigns each node to a community and starts with N communities. Then, we should merge each pair of communities and calculate the modularity difference $\Delta M$. We can join those two communities by identifying the pair for which the difference is the largest. This is repeated until all nodes merge into a single community. The best partition is one with the largest $M$. 
 
 \textbf{Louvain algorithm} \cite{blondel2008fast} is optimization algorithm with better scalability than gready algorithm, so it can operate on very large networks. Initially each node is assigned to different community, and similar as before we calculate the difference in the modularity if we move the community of one of its neighbours. Then we move the node i to the community such that modularity becomes larger. This is applyed to all nodes untill no further improvement could be made. In the second step we create weighter network whose nodes are communities identified during first step. The weight of the link between communities is the sum of the weights between the links in the communities, and the number of links inside the community is given as weighted self-loop. Then the first and second steps are repeated, until there is no more change in the modularity, otherwise until we find the maximum, optimal modularity. 
-\clearpage
+
 
 \subsection{Stochastic block model}
 
@@ -311,7 +311,7 @@ The another way to detect core-periphery structure is to use the inference metho
 %}
 %MDL for definition of the model
 
-%\newpage
+\newpage
 \section{Network models}
 
 \subsection{Random network model}

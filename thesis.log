@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  10 DEC 2022 00:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  19 JAN 2023 12:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2336,10 +2336,8 @@ Package pdftex.def Info: figs/Figures/structures.png  used on input line 153.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.165 
-       <./figs/Figures/structures.png>] [14] [15
-
-] [16]
-<figs/ERgraph.pdf, id=730, 686.565pt x 249.77315pt>
+       <./figs/Figures/structures.png>] [14] [15] [16]
+<figs/ERgraph.pdf, id=731, 686.565pt x 249.77315pt>
 File: figs/ERgraph.pdf Graphic file (type pdf)
 <use figs/ERgraph.pdf>
 Package pdftex.def Info: figs/ERgraph.pdf  used on input line 330.
@@ -2349,9 +2347,9 @@ Package pdftex.def Info: figs/ERgraph.pdf  used on input line 330.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.352 \begin{equation}
-                       <./figs/ERgraph.pdf>]
-<figs/ER_dist.pdf, id=757, 628.25824pt x 347.3324pt>
+l.357 
+       <./figs/ERgraph.pdf>]
+<figs/ER_dist.pdf, id=758, 628.25824pt x 347.3324pt>
 File: figs/ER_dist.pdf Graphic file (type pdf)
 <use figs/ER_dist.pdf>
 Package pdftex.def Info: figs/ER_dist.pdf  used on input line 366.
@@ -2361,9 +2359,9 @@ Package pdftex.def Info: figs/ER_dist.pdf  used on input line 366.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.376 
+l.380 
        <./figs/ER_dist.pdf>]
-<figs/ws_graph.png, id=812, 885.3075pt x 287.0725pt>
+<figs/ws_graph.png, id=813, 885.3075pt x 287.0725pt>
 File: figs/ws_graph.png Graphic file (type png)
 <use figs/ws_graph.png>
 Package pdftex.def Info: figs/ws_graph.png  used on input line 390.
@@ -2373,9 +2371,10 @@ Package pdftex.def Info: figs/ws_graph.png  used on input line 390.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.407 
-       <./figs/ws_graph.png>] [20]
-<figs/aging_nets.png, id=839, 818.30719pt x 260.47313pt>
+l.408 T
+       he simplest formulation of the preferential attachment model is that ...
+ <./figs/ws_graph.png>] [20]
+<figs/aging_nets.png, id=840, 818.30719pt x 260.47313pt>
 File: figs/aging_nets.png Graphic file (type png)
 <use figs/aging_nets.png>
 Package pdftex.def Info: figs/aging_nets.png  used on input line 483.
@@ -2385,7 +2384,7 @@ Package pdftex.def Info: figs/aging_nets.png  used on input line 483.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [21]
-<figs/diagram.png, id=852, 470.4777pt x 344.0052pt>
+<figs/diagram.png, id=853, 470.4777pt x 344.0052pt>
 File: figs/diagram.png Graphic file (type png)
 <use figs/diagram.png>
 Package pdftex.def Info: figs/diagram.png  used on input line 509.
@@ -3354,7 +3353,7 @@ s/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (118 pages, 7724380 bytes).
+Output written on thesis.pdf (118 pages, 7724113 bytes).
 PDF statistics:
  3600 PDF objects out of 4296 (max. 8388607)
  1752 compressed objects within 18 object streams
