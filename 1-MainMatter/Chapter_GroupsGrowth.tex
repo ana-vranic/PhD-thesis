@@ -20,7 +20,7 @@ We have information about when the user attended the group event for each Meetup
 	\label{fig:data1}
 \end{figure}   
 
-Even though Meetup and Reddit are different online platforms, we find some common properties of these systems; see figure \ref{fig:data1}. The number of groups and the number of new users grow exponentially. Still, subreddits are larger groups than Meetups. The distribution of groups sizes follows the lognormal distribution:
+Even though Meetup and Reddit are different online platforms, we find some common properties of these systems; see Figure \ref{fig:data1}. The number of groups and the number of new users grow exponentially. Still, subreddits are larger groups than Meetups. The distribution of groups sizes follows the lognormal distribution:
 \begin{equation}
 P(S)=\frac{1}{S\sigma\sqrt{2\pi}}exp(-\frac{(\ln(S)-\mu)^{2}}{2\sigma^{2}})
 \label{eq:log}
@@ -31,7 +31,7 @@ The distributions for Meetup group sizes in London and New York follow a similar
 
 The simplest model that generates the lognormal distribution is the multiplicative process \cite{mitzenmacher2004brief}. Gibrat used this model to explain the growth of firms. The main assumption of this model is that growth rates  $R = log\frac{S_t}{S_{t-\Delta t}}$ do not depend on the size $S$ and that they are uncorrelated. Further, this implies the lognormal distribution of the sizes, while the distribution of growth rates appears to be a normal distribution,  \cite{mondani2014fat}, \cite{fu2005growth}. Figure \ref{fig:scale} shows the distribution of the logrates that follow a lognormal distribution, contrary to the Gibrat law. Furthermore, logrates depend on the group size \ref{fig:scale}. For these reasons, the Gibrat law can not explain the growth of online social groups. Similar conclusions are shown in recent studies about cities or the growth of the internet \cite{frasco2014spatially, qian2014origin}.   
 
-The growth of online social groups has universal behavior independent of the group's size. If we aggregate the groups created in the same year $y$, and each group size normalizes with average size $<S^y>$, $s^{y}_{i}=S^{y}_{i}/<S^{y}>$ we will find that group sizes distributions for the same dataset and different years fall on the same line, figure \ref{fig:scale}. The same characteristics are observed for the distribution of the normalized logrates \ref{fig:scale}. The growth is universal over time, and the group sizes distribution does not change from year to year.
+The growth of online social groups has universal behavior independent of the group's size. If we aggregate the groups created in the same year $y$, and each group size normalizes with average size $<S^y>$, $s^{y}_{i}=S^{y}_{i}/<S^{y}>$ we will find that group sizes distributions for the same dataset and different years fall on the same line, Figure \ref{fig:scale}. The same characteristics are observed for the distribution of the normalized logrates \ref{fig:scale}. The growth is universal over time, and the group sizes distribution does not change from year to year.
 
 \begin{figure}[h]
 	\centering
@@ -53,7 +53,7 @@ We propose a model that is based on the co-evolution model. The main difference 
 
 \subsection{Groups growth model}
 
-The representation of the model is given in figure \ref{fig:schema}. The model consists of two networks:
+The representation of the model is given in Figure \ref{fig:schema}. The model consists of two networks:
 \begin{itemize}
 	\item bipartite network $\mathcal{B}(V_{U}, V_{G}, E_{UG})$, where $V_U$ is set of users, $V_G$ set of groups and $E_{UG}$ set of links between users and groups, where link $e(u,g)$ indicates that user $u$ is member of group $g$.
 	\item social network $\mathcal{G}(V_{U},E_{UU})$ describes the social connections $e(u, v)$ between users $u$ and $v$, and  $V(U)$ is set of users same as in bipartite network. 
@@ -61,7 +61,7 @@ The representation of the model is given in figure \ref{fig:schema}. The model c
 
 The bipartite and social networks evolve. New users $N_U(t)$ are added to the network at each step. It is how the set of users $V_U$ in the bipartite and social network can grow. At arrival, each new member connects to a randomly selected user in the social network $G$. This allows new members to choose a group based on social contacts \cite{kairam2012life}. The activity of old members is a stochastic process; old members are activated with probability $p_a$. The set of active users $\mathcal{A}_{U}$ has new members $N_U(t)$ and old members who decided to be active in that time step.
 
-The active users can create a new group with probability $p_g$. By this, group node $g$ is added to the set of group nodes $V_G$ in bipartite network $B$. If an active user does not create a new group, it will join the existing one with probability $1-p_g$, see lower panel on figure \ref{fig:schema}. When the user creates a new group or joins an existing one, the link $e(u,g)$ is made in the bipartite network $B$.
+The active users can create a new group with probability $p_g$. By this, group node $g$ is added to the set of group nodes $V_G$ in bipartite network $B$. If an active user does not create a new group, it will join the existing one with probability $1-p_g$, see lower panel on Figure \ref{fig:schema}. When the user creates a new group or joins an existing one, the link $e(u,g)$ is made in the bipartite network $B$.
 
 \begin{figure}[h]
 	\centering
@@ -87,7 +87,7 @@ The model parameters $p_a$ and $p_g$ are important for controlling the number of
 
 Before applying the group growth model on Meetup and Reddit, we consider the system where at each time step, a constant number of users is added $N(t)=30$. We also fix the probability that the user is active to $p_a=0.1$, so we can, in more detail, explore the influence of parameters $p_g$ and $p_{aff}$. We plot the group size distribution after the $60$ steps of simulation. The values of $p_g$ and the $p_a$ influence the number of groups, their maximum size, and the shape of group size distribution. With probability $p_g=0.1$, users create a large number of groups, over $10^4$, while with $p_g=0.5$, they are on the order of magnitude $10^5$. 
 
-Figure \ref{fig:n30} show the obtained group size distributions with power-law and lognormal fits. Users join randomly chosen groups for a lower value of parameter $p_g=0.1$ and $p_{aff}=0$. Group size distributions are approximated with lognormal. When the affiliation parameter is larger, $p_{aff}=0.5$, the lognormal distribution becomes broader, and so on, we find the larger maximum group size. If we increase the parameter $p_g=0.5$, every second active user will create a group. At this group creation rate, the group size distribution deviates from lognormal, but it is not explained with power-law either, right column on figure \ref{fig:n30}.
+Figure \ref{fig:n30} show the obtained group size distributions with power-law and lognormal fits. Users join randomly chosen groups for a lower parameter value $p_g=0.1$ and $p_{aff}=0$. Group size distributions are approximated with lognormal. When the affiliation parameter is larger, $p_{aff}=0.5$, the lognormal distribution becomes broader, and so on, we find the larger maximum group size. If we increase the parameter $p_g=0.5$, every second active user will create a group. At this group creation rate, the group size distribution deviates from lognormal, but it is not explained with power-law either, right column on Figure \ref{fig:n30}.
 
 \begin{figure}[H]
 	\centering
@@ -97,7 +97,7 @@ Figure \ref{fig:n30} show the obtained group size distributions with power-law a
 	\label{fig:n30}
 \end{figure}
 
-Finally, we compare how group size distribution depends on different rules in random linking. In our model, the probability that the user chooses a random group is uniform. In contrast, in the co-evolution model \cite{zheleva2009co}, probability depends on the group size, as in the preferential attachment model. Instead of random linking, if we incorporate preferential linking, users with probability $1-p_{aff}$ tend to choose larger groups, and group size distribution changes significantly. Similar to the co-evolution model, we find the power-law distribution. Figure \ref{fig:model_comp} shows the results from a model where we add a constant number of new users at each time step. The probabilities $p_a$ and $p_g$ are fixed, and the affiliation parameter takes values $0$, $0.5$ and $0.8$. If we consider random linking, a top panel on figure \ref{fig:model_comp}, the distribution becomes broader with larger $p_{aff}$. On the other hand, with preferential linking, group size distribution is a power law, and the $p_{aff}$ parameter does not have a large impact on the distribution shape.    
+Finally, we compare how group size distribution depends on different rules in random linking. In our model, the probability that the user chooses a random group is uniform. In contrast, in the co-evolution model \cite{zheleva2009co}, probability depends on the group size, as in the preferential attachment model. Instead of random linking, if we incorporate preferential linking, users with probability $1-p_{aff}$ tend to choose larger groups, and group size distribution changes significantly. Similar to the co-evolution model, we find the power-law distribution. Figure \ref{fig:model_comp} shows the results from a model where we add a constant number of new users at each time step. The probabilities $p_a$ and $p_g$ are fixed, and the affiliation parameter takes values $0$, $0.5$ and $0.8$. If we consider random linking, a top panel on Figure \ref{fig:model_comp}, the distribution becomes broader with larger $p_{aff}$. On the other hand, with preferential linking, group size distribution is a power law, and the $p_{aff}$ parameter does not have a large impact on the distribution shape.    
 
 \begin{figure}[h]
 	\centering
@@ -106,13 +106,6 @@ Finally, we compare how group size distribution depends on different rules in ra
 	\label{fig:model_comp}
 \end{figure}
 
-
-%How members are distributed in these groups depends on the parameter $p_{aff}$ value. When $p_{aff}=0$, social connections are irrelevant to the group's choice, and members choose groups randomly. The obtained distribution slightly deviates from lognormal, especially for large group sizes. In this case, large group sizes become more probable than in the case of the lognormal distribution. The non-zero parameter $p_{aff}$ means that the group's choice becomes dependent on social connections. 
-
-%When a member chooses a group according to her social connections, larger groups have a higher probability of being affiliated with the social connections of active members, and thus this choice resembles preferential attachment. For these reasons, the obtained size distribution has more broad tail than the lognormal distribution and begins to resemble power-law distribution.
-
-%The differences between our and the co-evolution model, described in previous sections, at first glance, may appear small. However, they lead to huge differences in the distribution of the size of social groups. The distribution of group sizes in the co-evolution model is a power law. Our model adds flexibility to produce groups with a lognormal size distribution, expanding classes of social systems that can be modelled. 
-%Our model is more flexible and can produce groups with lognormal size distribution that better describes diverse social systems, including ones described in Section \ref{sec:emp}.\\
 \newpage
 \section{Results}
 
@@ -128,7 +121,7 @@ The social systems do not grow at a constant rate. In Ref. \cite{vranic2021growt
 We also use empirical data to estimate $p_{a}$, $p_{g}$ and $p_{aff}$. Probabilities that old members are active $p_a$ and that new groups are created $p_g$ can be approximated directly from the data. Activity parameter $p_{a}$ is the ratio between the number of old members active in month $t$ and the total number of members in the system at time $t$. Figure \ref{fig:fig5} middle row shows the variation of parameter $p_{a}$ during the considered time interval for each system. The values of this parameter fluctuate between $0$ and $0.2$ for London, and New York-based Meetup groups, while for Reddit, it ranges between $0$ and $0.15$.
 To simplify our simulations, we assume that $p_{a}$ is constant in time and estimate its value as its median value during the $170$ months for Meetup systems and $80$ months of the Reddit system. For Meetup groups based in London and New York, $p_{a}=0.05$, while Reddit members are more active on average, and $p_{a}=0.11$ for this system.
 
-Figure \ref{fig:fig5} bottom row shows the evolution of parameter $p_{g}$ for the three considered systems. The $p_{g}$ in month $t$ is estimated as the ratio between the groups created in month $t$ $Ng_{new}(t)$ and the total number of groups that month $Ng_{new}(t)+Ng_{old}(t)$, i.e., $p_{g}(t)=\frac{Ng_{new}(t)}{N_{new}(t)+N_{old}(t)}$. We see from Fig. \ref{fig:fig5} that $p_{g}(t)$ has relatively high values at the beginning of the system's existence. In the beginning, these systems have a relatively small number of groups and often cannot meet the needs for the content of all their members. As time passes, the number of groups and content offerings within the system grows, and members no longer have a high need to create new groups. Figure \ref{fig:fig5} shows that $p_{g}$ fluctuates less after the first few months, and thus we again assume that $p_{g}$ is constant in time and set its value to median value during 170 months for Meetup and 80 months for Reddit. For all three systems, $p_{g}$ has the value of $0.003$.
+Figure \ref{fig:fig5} bottom row shows the evolution of parameter $p_{g}$ for the three considered systems. The $p_{g}$ in month $t$ is estimated as the ratio between the groups created in month $t$ $Ng_{new}(t)$ and the total number of groups that month $Ng_{new}(t)+Ng_{old}(t)$, i.e., $p_{g}(t)=\frac{Ng_{new}(t)}{N_{new}(t)+N_{old}(t)}$. We see from Figure \ref{fig:fig5} that $p_{g}(t)$ has relatively high values at the beginning of the system's existence. In the beginning, these systems have a relatively small number of groups and often cannot meet the needs for the content of all their members. As time passes, the number of groups and content offerings within the system grows, and members no longer have a high need to create new groups. Figure \ref{fig:fig5} shows that $p_{g}$ fluctuates less after the first few months, and thus we again assume that $p_{g}$ is constant in time and set its value to median value during 170 months for Meetup and 80 months for Reddit. For all three systems, $p_{g}$ has the value of $0.003$.
 
 
 
@@ -160,7 +153,7 @@ where $H(p)$ is Shannon entropy $H(p)=\sum_x p(x)log(p(x)$. The JS divergence is
 \end{table}
 
 Figure \ref{fig:fig6} compares the empirical and simulation distribution of group sizes for three considered systems. We see that empirical distributions for Meetup groups based in London and New York are perfectly reproduced by the model and chosen values of parameters. In the case of Reddit, the distribution is very broad, and the model well reproduces the tail of the distribution.
-The bottom row of Fig. \ref{fig:fig6} shows the distribution of logarithmic values of growth rates of groups obtained from empirical and simulated data. We see that the tails of empirical distributions for all three systems are well emulated by the ones obtained from the model. However, there are deviations which are the most likely consequence of using median values of parameters $p_{a}$, $p_{g}$, and $p_{aff}$.
+The bottom row of Figure \ref{fig:fig6} shows the distribution of logarithmic values of growth rates of groups obtained from empirical and simulated data. We see that the tails of empirical distributions for all three systems are well emulated by the ones obtained from the model. However, there are deviations which are the most likely consequence of using median values of parameters $p_{a}$, $p_{g}$, and $p_{aff}$.
 
 \begin{figure}[H]
 	\centering
@@ -200,7 +193,7 @@ Table \ref{tab:fit-data} summarizes the findings for empirical data on group siz
 	\label{fig:fitdata}
 \end{figure}
 
-We use the same methods to estimate the fit for simulated group size distributions on Meetup groups in London, New York, and Subreddits. Table \ref{tab:fit_model} shows the results of the log-likelihood ratio R and $p$-value between different distributions. We conclude that lognormal distribution is most suitable for simulated group size distributions. We confirm our observations by plotting lognormal and stretched exponential fit on data, Fig. \ref{fig:fit_model}.  
+We use the same methods to estimate the fit for simulated group size distributions on Meetup groups in London, New York, and Subreddits. Table \ref{tab:fit_model} shows the results of the log-likelihood ratio R and $p$-value between different distributions. We conclude that lognormal distribution is most suitable for simulated group size distributions. We confirm our observations by plotting lognormal and stretched exponential fit on data, Figure \ref{fig:fit_model}.  
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
 \begin{table}[!ht]
@@ -232,8 +225,8 @@ We use the same methods to estimate the fit for simulated group size distributio
 
 \subsection{Users partition in bipartite network - degree distribution}
 
-So far, the group growth model has focused on the degree distribution of groups and under what rules the universalities in the system reflected in the lognormal distribution of group sizes emerge. The model parameter $p_a$ controls the users' activity level; otherwise, it shapes the degree distribution of users in the bipartite network. As this probability is constant and uniform among all users, we do not expect rich properties of users' degree distribution. The expected distribution is exponential for growing random graph \cite{barabasi1999mean}, and the groups' growth model produces the same property. In figure \ref{fig:users_degree}, blue dots show degree distributions of modelled Meetup and Reddit systems. This distribution is very well fitted with exponential form.
-Furthermore, in empirical data, these distributions are long-tailed, green dots in figure \ref{fig:users_degree}, so the model can not reproduce the degree distribution of the users. In real systems, the probability that the user is active does not have to be uniform and constant. The previous work proposed that each user has a specific lifetime \cite{leskovec2008microscopic}, but different linking rules could play an important role in shaping users' degree distribution. For example, $p_a$ could be preferential toward high-degree users or even be time-dependent.
+So far, the group growth model has focused on the degree distribution of groups and under what rules the universalities in the system reflected in the lognormal distribution of group sizes emerge. The model parameter $p_a$ controls the users' activity level; otherwise, it shapes the degree distribution of users in the bipartite network. As this probability is constant and uniform among all users, we do not expect rich properties of users' degree distribution. The expected distribution is exponential for growing random graph \cite{barabasi1999mean}, and the groups' growth model produces the same property. In Figure \ref{fig:users_degree}, blue dots show degree distributions of modelled Meetup and Reddit systems. This distribution is very well fitted with exponential form.
+Furthermore, in empirical data, these distributions are long-tailed, green dots in Figure \ref{fig:users_degree}, so the model can not reproduce the degree distribution of the users. In real systems, the probability that the user is active does not have to be uniform and constant. The previous work proposed that each user has a specific lifetime \cite{leskovec2008microscopic}, but different linking rules could play an important role in shaping users' degree distribution. For example, $p_a$ could be preferential toward high-degree users or even be time-dependent.
 
 \begin{figure}[h]
 	\centering

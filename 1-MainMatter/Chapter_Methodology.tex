@@ -1,35 +1,13 @@
 \chapter{Methodology} % Main chapter title
 \label{Ch:Method}
 
-
-%\section{Complex networks}
-
-%Many real systems are composed of a large number of elements interacting with each other. Due to interactions, without any central force, the system exhibits the emergence of collective behaviour on the macro level. Such a system is called a Complex System and its properties can not be predicted from the behaviour of the one individual. An example of a complex system is the human brain. The structure of the brain network and its properties are fundamental for brain functioning, while an emergent phenomenon is a human intelligence. In societies, people's interactions lead to civilization, economy, formation of social groups. Also, the animal populations show different levels of organization that emerge from the individual's interactions \cite{boccaletti2006complex}. %latorro
-
-%The research in complex systems focuses on the structure of the interactions between units. Knowing how branches of the system are connected, we can determine the emergence of the collective behaviour of the system. For the brain network, we can construct representation with neurons and synapses, representing the brain connectivity. Neurons in the same brain area are closely connected \cite{latora2017complex}. Similarly, we can define communication between people. The structure of these interactions gives us insights, for example, how information propagates through the system. The presence of people with many connections can lead to faster information flow. 
-
-%Despite the differences between complex systems, they can be studied using complex networks; with sets of nodes (vertices) and links (edges). Elements in the system are nodes, while interactions between them are given as edges. This approximation allows us to treat equally social (graph of actors), biological (network of proteins) or even technological systems (internet, traffic) \cite{costa2007characterization, costa2011analyzing}.  In recent years, complex network theory has application in different fields, and the availability of big data incurs its development.
-%%%Analyzing and Modeling Real-World Phenomena with Complex Networks: A Survey of Applications
-%%%Characterization of Complex Networks: A Survey of measurements
-
-%The complex network theory originates from the graph theory in mathematics. %These days, the graph and network are used as equivalent terms. 
-%The first mathematical problem solved using graph theory was $Konigsberg$ problem of seven bridges. The city $Konigsberg$ had seven bridges connecting the city's parts across the river and the island in the middle. The question was, is it possible to find a walk that crosses all seven bridges only once. Representing the problem as a graph, as in figure \ref{fig:Krgraph}, Euler managed to simplify the problem; the parts of the land are represented as nodes while bridges between them are links. Crossing each bridge only once is possible if each part of the land has an even number of connections. By this it is possible to enter one part of the land from one bridge and leave it by the other. As each node has odd number of connections, in this case it is not possible, see Fig. \ref{fig:Krgraph}.
-
-%\begin{figure}[!ht]
-%	\centering
-%	\includegraphics[width=0.3\linewidth]{Konigsberg_bridges.png} \hspace{2cm}
-%	\includegraphics[width=0.3\linewidth]{Konigsberg_graph.png}
-%	\caption{The Kronigsber problem of seven bridges.}
-%	\label{fig:Krgraph}
-%\end{figure}
-
 \section{The measures of complex networks}
 
 The complex system can be represented by a complex network $G=(V, E)$, where the elements of a system (atoms, proteins, people) map to a set of $N$ nodes $V=\{1, 2, ..., N\}$. The interactions between elements map to $L$ links between nodes, $E = \{ e_1, e_2... e_L\}$. The \textbf{adjacency matrix} ${A} = N \times N$ has value $1$ if there is a connection between two nodes; otherwise, it is $0$ \cite{boccaletti2006complex}. There are a lot of measures to quantify the structure of the network. This section lists the most important measures, such as degree distribution, correlations, and shortest path measures. We also discuss different structures found in the network, such as core-periphery or community structures.  
 
 \subsection{Degree distribution}
 
-The simplest network measure is \textbf{node degree}, $k$. The degree of node $i$ gives the number of nodes attached to node $i$, $k_i = \sum_j A_{ij}$. The network density is the average degree divided by $N-1$, where $N$ is the number of nodes. It is a relative fraction of nodes in the network. In the case of regular networks, such as grids, each node has an equal degree, meaning that nodes in the network have similar roles. In the general case, the networks have a more complicated structure. If the degree sequence is skewed, we can identify nodes with high-degree (hubs). Removing hubs may partition a connected network into several components. %Finally, if we can test isomorphism between two graphs, the starting point is to try if their degree sequences are the same. If they are not the same, then graphs can not be isomorphic.
+The simplest network measure is \textbf{node degree}, $k$. The degree of node $i$ gives the number of nodes attached to node $i$, $k_i = \sum_j A_{ij}$. The network density is the average degree divided by $N-1$, where $N$ is the number of nodes. It is a relative fraction of nodes in the network. In the case of regular networks, such as grids, each node has an equal degree, meaning that nodes in the network have similar roles. In the general case, the networks have a more complicated structure. If the degree sequence is skewed, we can identify nodes with high-degree (hubs). Removing hubs may partition a connected network into several components. 
 
 To calculate the degree distribution, we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. It is the probability, $P(k)$, that a randomly chosen node has degree $k$. Similarly, we can order nodes according to their degree and plot the node degree.
 
@@ -44,8 +22,6 @@ If the graph nodes are statistically independent, the degree distribution comple
 \end{itemize}
 
 When plotting the degree distribution, it is common to use scaling of the axis. As many nodes have a low degree, like for power-law or exponential distribution, it is more useful to use a logarithmic scale. Now it is easier to notice that data points follow a straight line, meaning that degree distribution is some exponential function. 
-
-%On the logarithmic scale, the distance between two points is proportional to the logarithm of the distance between two points, meaning that distance on the logarithm scale is the same between points 10 and 100 and 100 and 1000.  
 
 \subsection{Degree correlations}
 
@@ -131,15 +107,7 @@ J(P_1,.., P_N)) = \sum_{i,j}p_i(j)log(\frac{p_i(j)}{\mu_j})
 
 where  $\mu_j = (\sum_{i=1}^N p_i(j))/N$ is mean shortest path distribution.
 
-%TEMPORAL NETWORKS JENSEN SHANNON AND 
-
-The first term in equation \ref{eq:dmeasure} compares local differences between two networks, and Jensen-Shannon divergence between $N$ shortest path distributions $J(P_{1},..., P_{N})$ is normed with network diameter $d(G)$. The second part determines global differences, computing  ${J(\mu_{G},\mu_{G^{'}})}$ between mean shortest path distributions. 
-%We consider equally important local and global properties of the networks, and parameter $\omega$ is set to $0.5$. 
-The D-measure ranges from $0$ to $1$. The lower D-measure is, the more similar networks are, and structures are isomorphic for D-measure $D = 0$.
-
-%OVDE mozda neka slika d-mere da bude intuitivnije kako radi
-%\subsection{Real-world networks}
-%Real-world networks share similar properties. The mean distance between nodes is smaller than the number of nodes in the network $l << N$, called small-world phenomena. This cause the fast spread of information or even diseases in complex systems. In small-world networks, the number of vertices grows exponentially with distance; thus, $l$ increases as $log(n)$ or slower. Logarithmic scaling can be proved from various network models; also, it is observed in real-world complex systems. The clustering coefficient in real-world networks is usually high. Real-world networks have one important feature; power-law degree distribution; such networks are called scale-free networks.
+The first term in equation \ref{eq:dmeasure} compares local differences between two networks, and Jensen-Shannon divergence between $N$ shortest path distributions $J(P_{1},..., P_{N})$ is normed with network diameter $d(G)$. The second part determines global differences, computing  ${J(\mu_{G},\mu_{G^{'}})}$ between mean shortest path distributions. The D-measure ranges from $0$ to $1$. The lower D-measure is, the more similar networks are, and structures are isomorphic for D-measure $D = 0$.
 
 \newpage
 \section{Community structure}
@@ -156,8 +124,6 @@ The network with $k$ communities could be represented using $k \times k$ matrix 
 \end{figure}
 
 Different algorithms are used for detecting the community structure in the underlying network, optimizing different objective functions of the network partition. Still, if the ground-truth communities are unknown, there are no guarantees that we will infer the actual number of communities and entirely correct node assignments. Even though community detection algorithms are widely used in complex network analysis as they can give us a better understanding of network structure. In this section are explained two community detection models, the first one based on optimizing the modularity function, and the other based on the statistical inference of the Stochastic Block Model (SBM) where is optimized the likelihood function. 
-
-%In community detection, the number of communities is not predefined. The number of possible communities in the network could be large. We can not analyze all combinations, so we need algorithms to help identify potential communities in the network. 
 
 \subsection{Louvain algorithm}
 
@@ -227,31 +193,13 @@ As it is easier to work with the logarithm of the likelihood function, after tak
 L = log(P(G|g, p)) = \sum_{r,s} e_{r,s} ln\frac{e_{rs}}{n_{rs}} + (n_{rs}-e_{rs})ln(\frac{e_{rs}-e_{rs}}{n_{rs}})
 \end{equation}
 
-%The model can fit actual data, which results in finding network communities. For the given network $G$ and the number of groups $k$, the best nodes partition $g$ is found by maximizing the likelihood function. Besides inferring communities, SBM has applications in the prediction of missing links.  % etc. Also, several algorithms for the optimization of the likelihood function are proposed.
-
 Instead of generating networks, the opposite task is network \textbf{inference}. For a given network $G$, and specified the number of communities $k$, we can use the SBM model to infer the nodes' assignments into groups, so we need to choose vector $g$ and SBM matrix $p$ such that the likelihood for generating network $G$ is maximized. 
-
-%The probability that partition $g$ is created from network $G$ is called the model's posterior. We need to infer the probability $P(g|G)$ that partition $g$ is created from network $G$.
-%\begin{equation}
-%P(g, p|G)=\frac{P(G|g)P(g)}{P(G)}
-%\end{equation}
-
-%Finally, we have to maximize the log-likelihood function over group membership vector $g$. It can be done numerically. 
-
-%The Markov chain Monte Carlo (MCMC) methods are a class of algorithms used to sample from probability distributions. These methods generate from a probability distribution over model parameters $\theta$ to estimate it. Starting with an initial state, MCMC simulates transitions of the Markov chain to explore the parameter space and obtain the equation's estimation.  %$I = \frac{1}{S}\sum F(\theta^{i})$.  In the Metropolis-Hasting algorithm, at each time step from given state $\theta$ is generated new proposal and if the acceptance probability $min(1, \frac{\sum_t p_t^ip(s\rightarrow r|t)}{ \sum_t p_t^ip(r \rightarrow s|t) })$, where $p_t^i$ is fraction is a likelihood to move the node $r$ to $s$. 
-
-%In each step algorithm chooses the random node and proposes a move to a different move. Then the change of likelihood function is calculated. If the likelihood function increases under the proposed move is accepted with probability $exp(-\Delta L)$. the Metropolist algorithm is the easiest version of MCMC. The algorithm requires the function F, which is proportional to the likelihood and the number of steps. At each time step, suggested the random moves and accepted if improved the function F. 
-
-
-
 
 The formulation of the SBM model does not consider how to infer the optimal number of groups. Optimizing the likelihood function for different numbers of groups would increase likelihood while each node is not assigned to a different group. In practice, our found community structures for a fixed number of groups, and then the likelihood function could be penalized by the number of model parameters. One approach is calculating the \textbf{Minimum description length (MDL)}. For the variable that occurs with probability P(x), the necessary amount of information to describe it is $-log_2P(x)$. The numerator of posterior probability could be written as
 \begin{equation}
 P(G|g)P(g) = P(G|p, g)P(p, g)=2^{-\Sigma}
 \end{equation}
 where $\Sigma$ is the data's description length (DL). It means that if we find the network partition that maximizes the posterior distribution, we also find the MDL. The MDL consists of two terms: $\Sigma = -log2(p(G|p,g))-log2P(p,g)$. In the first part of the equation, the amount of information necessary to describe the model decrease with the number of groups. The second contribution comes only from the model, and as the model becomes more complex, with a larger number of groups, this part increases. The optimal solution represents the balance between these two terms in the MDL equation.  
-
-%Markov chain Monte Carlo methods are a class of algorithms used to sample from the probability distribution. The widely used variant of this algorithm is the Metropolis algorithm. The algorithm suggests the random moves  and accepts any move that improves the function F, and accepts all other moves with probability $exp(-\beta \delta F)$
 
 This SBM model has many variants motivated by specific properties of real data. For example, for degree heterogeneous networks, there is degree corrected SBM \cite{karrer2011stochastic}. In some social networks, users can belong to more than one group, which can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, and hierarchical model \cite{funke2019}. Many community detection algorithms define the community as an assortative structure. With the SBM model, such limitations do not exist, and it is possible to directly use statistical inference for discovering core-periphery structures or even networks with bipartite structures.  
 
@@ -262,29 +210,7 @@ Core-periphery structure describes a network whose nodes are divided into two co
 
 Another way to detect core-periphery structure is to use the inference method based on fits to a Stochastic Block Model (SBM) \cite{zhang2015identification, karrer2011stochastic}. In this method, we fit the observed network to a block model with two groups, such that edge probabilities have the form $p_{11}> p_{12} > p_{22}$. Vector $\theta_i = r$ indicates that node $i$ is in block $r$, while SBM matrix $\{p\}_{2x2}$, specify the probability $p_{rs}$ that nodes from group $r$ are connected to nodes in group $s$. The SBM model is looking for the most probable model that can reproduce a given network G \cite{gallagher2020clarified}. 
 Probability of having model parameters $\theta, p$ given network $G$ is proportional to the likelihood of generating network $G$, prior of SBM matrix $P(p)$ and prior on block assignments $P(\theta)$: $P(\theta, p| G) = P(G | \theta , p) P(p) P(\theta)$, while the likelihood function takes following form: $P(G | \theta , p) = \prod_{i<j} p_{r_is_j}^{A_{ij}}(1-p_{r_is_j})^{1-A_{ij}}$, where $A_{ij}$ is a number of edges between nodes $i$ and $j$. The prior $P(p)$ is modified for core-periphery model such that $P(p)  \sim I_{0<p_{22}<p_{12}<p_{11}<1}$, while prior  $P(\theta) $ consists of three parts: probability of having $2$ blocks; given the number of layers probability $P(n|2)$ of having groups of sizes ${n_1, n_2}$ and the probability $P(\theta|n)$ of having particular assignments of nodes to blocks. 
-%For fitting model in the work \cite{gallagher2020clarified} authors use Metropolis-within-Gibbs algorithm.
-%The likelihood of the SBM model increase with the number of blocks, and the model itself does not define the optimal number of communities. Inferring minimum description length (MDL) \cite{gallagher2020clarified} of the model is one approach to decide which model is more likely.
 
-%@article{peixoto2019bayesian,
-%	title={Bayesian stochastic blockmodeling},
-%	author={Peixoto, Tiago P},
-%	journal={Advances in network clustering and blockmodeling},
-%	pages={289--332},
-%	year={2019},
-%	publisher={Wiley Online Library}
-%}
-
-%@article{peixoto2017nonparametric,
-%	title={Nonparametric Bayesian inference of the microcanonical stochastic block model},
-%	author={Peixoto, Tiago P},
-%	journal={Physical Review E},
-%	volume={95},
-%	number={1},
-%	pages={012317},
-%	year={2017},
-%	publisher={APS}
-%}
-%MDL for definition of the model
 
 \newpage
 \section{Network models}
@@ -412,15 +338,6 @@ For large $k$, it is exactly the power law. It is also independent of the time a
 As the network grows, nodes with larger degrees become bigger, so we end up with few nodes with many links, called hubs. The \textbf{network diameter}, represents the maximum distance in network, $d \sim \frac{lnN}{lnlnN}$ \cite{bollobas2003mathematical}. The diameter grows slower than $lnN$, making the distances in the BA model smaller than in the random graph. The difference is found for large N. It is known that the BA network has hubs that shorten the path between less connected nodes. Also, if hubs are removed from the network, the network easily partitions into several components, losing its properties. The \textbf{clustering coefficient} of the BA model follows $C \sim \frac{ln N^2}{N}$ \cite{bollobas2003mathematical}. It differs from clustering found in random networks, and BA networks are generally more clustered. 
 
 The combination of the growth and preferential attachment linking is crucial for getting scale-free networks \cite{barabasi1999}. For example, eliminating the preferential attachment; in a growing network with random linking, degree distribution is stationary but follows exponential. In contrast, the absence of growth leads to the non-stationary degree distribution. When a number of nodes is fixed, the network grows only in the number of links, such that randomly chosen node $i$ connects to node $j$ according to probability $\Pi$. In the beginning, the degree distribution follows the power law, the same as in the BA model. As more links are added to the network, the distribution changes its shape; first, the peak appears, while at the end network becomes a complete graph, where all nodes have the same degree.  
-
-%Absence of the preference or growth
-%In summary, the absence of preferential attachment leads to a growing network with a stationary but exponential degree distribution. In contrast, the lack of growth leads to the loss of stationarity, forcing the network to converge to a complete graph. This failure of Models A and B to reproduce the empirically observed scale-free distribution indicates that growth and preferential attachment are simultaneously needed for the emergence of the scale-free property.
-
-%The BA model postulates the presence of preferential attachment. Yet, we can build models that generate scale-free networks without preferential attachment. The link selection model offers the most straightforward mechanism that produces a scale-free network. At each time step, we add new nodes to the network, select the link randomly, and connect the new node to one of the two nodes at the end. With a higher node degree, it is more probable that the node is located at the end of the chosen link. The more k-degree nodes there are, the more likely the $k$ node is at the end of the selected link. The probability that the node at the end of the randomly chosen link has degree k is $q_k = Ckp_k$. The fact that bias is linear with k indicates that the link selection model builds scale-free networks. 
-%Copying model can also generate scale-free networks. In each time step, a new node is added to the network. To decide where it connects, we randomly select node u. Then with probability, $p$ new node links to $u$; otherwise, with chance $1-p$, we randomly choose an outgoing link of node $u$ and link the new node to its target. The likelihood that a new node connects to the degree-k node is $P(k)=\frac{p}{N} + \frac{1-p}{2L}k$, the second part is equivalent in selecting a node to randomly selected link. The popularity of the copying model lies in its relevance in natural systems. It is common in social networks, citation networks or even protein interactions.  in optimization when new nodes balance conflicting criteria as they decide where to connect
-
-%TODO \subsubsection{degree distribution derivation}
-% u realnim mrezama koeficijent varira od 2 do 3
 
 \subsection{Nonlinear preferential attachment model}
 
@@ -713,12 +630,12 @@ The MFDFA for $q=2$ is equivalent to the DFA method. The value of $H(0)$, which 
 F_0(s) = \exp \left\{\frac{1}{4N_s}\sum_{\nu}^{2N_s}ln \left[F^2(\nu, s)\right]\right\}, q=0
 \end{equation}
 
-The fluctuating function scales as power-law $F_q(s) \sim s^{H(q)}$ and the analysis of log-log plots $F_q(s)$ gives us an estimate of multifractal Hurst exponent $H(q)$, see figure \ref{fig:hurst_mfdfa}
+The fluctuating function scales as power-law $F_q(s) \sim s^{H(q)}$ and the analysis of log-log plots $F_q(s)$ gives us an estimate of multifractal Hurst exponent $H(q)$, see Figure \ref{fig:hurst_mfdfa}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{hurst_mfdfa.pdf}
-	\caption{Multifractal, monofractal and white noise signals.}
+	\caption{Fluctuating function and Hurst exponent.}{Dependence of the fluctuating functions on the scale for monofractal, multifractal and white noise signals, and the dependence of the Hurst exponent $H$ on the scale 1 $q$ for different types of signal (bottom right).  }
 	\label{fig:hurst_mfdfa}
 \end{figure}
 
@@ -756,16 +673,16 @@ When $\Delta_{n}<1$, a user is frequently active, meaning that the time between 
 	\label{fig:reputation}
 \end{figure}  
 
-For example, if we set the characteristic window size and basic value of interaction to $t_a=1 day$, $I_{bn}=1$, we can analyze the influence of the parameters $\alpha$ and $\beta$ on the user reputation. Lower $\alpha$ and $\beta$ values lead to faster reputation decline, as shown in figure \ref{fig:reputation} - left panel. With lower $\beta$, the reputation may quickly drop close to the reputation threshold, under which we don't consider the user as active. In contrast, with larger values of $\beta$, reputation stays high even if a user is inactive for a larger period. The parameter $\alpha$ is the most important influence on burst behaviour, where larger $\alpha$ leads to higher reputation values. 
+For example, if we set the characteristic window size and basic value of interaction to $t_a=1 day$, $I_{bn}=1$, we can analyze the influence of the parameters $\alpha$ and $\beta$ on the user reputation. Lower $\alpha$ and $\beta$ values lead to faster reputation decline, as shown in Figure \ref{fig:reputation} - left panel. With lower $\beta$, the reputation may quickly drop close to the reputation threshold, under which we don't consider the user as active. In contrast, with larger values of $\beta$, reputation stays high even if a user is inactive for a larger period. The parameter $\alpha$ is the most important influence on burst behaviour, where larger $\alpha$ leads to higher reputation values. 
 
 If a user is frequently active, we can record the reputation after each day. On the other hand, if $t_n-t_{n-1}>1 \text{day}$ we need to interpolate the reputation values for each day between two interactions, $t_{n-1}<t_d<t_{n}$. To do that, we consider that due to inactivity, reputation will only decay, so it could be calculated as $R_d = R_{n-1}\beta^{\Delta_d}$, where $\Delta_d=(t_{d}-t_{n-1})/t_a$. 
 
-When a user becomes inactive, its reputation starts to decline, and when it drops below the reputation threshold user does not have any influence on the community. We can approximate the dependence of parameter $\beta$ and time $\delta t$ needed for reputation to reach this level as $\beta = (\frac{R_0}{R_i})^{\frac{t_a}{\delta t}}$. In the examples in figure \ref{fig:reputation}, - right panel, the parameter $t_a=1\text{day}$, while we vary different starting reputation levels $I_n$.   
+When a user becomes inactive, its reputation starts to decline, and when it drops below the reputation threshold user does not have any influence on the community. We can approximate the dependence of parameter $\beta$ and time $\delta t$ needed for reputation to reach this level as $\beta = (\frac{R_0}{R_i})^{\frac{t_a}{\delta t}}$. In the examples in Figure \ref{fig:reputation}, - right panel, the parameter $t_a=1\text{day}$, while we vary different starting reputation levels $I_n$.   
 For $\beta$ values below $0.96$, the decay is fast, and within two to four months of inactivity, even high reputation values are
 reduced below the threshold. On the other hand, with values of $\beta$, the decay process is more differentiated, and the high
 reputation becomes harder to lose, surviving up to a year of inactivity. For $\beta$ equal to $0.96$, reputation with starting value $5$ needs around one month to decay below the threshold. For higher reputations, $500$ or $1000$, the decay period is around $5$ months. 
 
-In this model, the user's reputation changes continuously through time, decreases when the user is inactive and grows with frequent and constant user contribution. The highest growth of a user's reputation is found through bursts of activity followed by a short period of inactivity. With model parameters, $I_{bn}, t_a, \alpha, \beta$, the dynamic of user reputation may be controlled and adapted to different communities. If the community has its reputation system, we can also fit the model parameters to mimic the actual reputation dynamic. %In this thesis, the DIBRM model is used to analyze the reputation of users in StackExchange communities.  
+In this model, the user's reputation changes continuously through time, decreases when the user is inactive and grows with frequent and constant user contribution. The highest growth of a user's reputation is found through bursts of activity followed by a short period of inactivity. With model parameters, $I_{bn}, t_a, \alpha, \beta$, the dynamic of user reputation may be controlled and adapted to different communities. If the community has its reputation system, we can also fit the model parameters to mimic the actual reputation dynamic. 
 
 
 

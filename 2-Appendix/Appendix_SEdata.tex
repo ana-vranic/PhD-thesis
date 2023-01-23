@@ -1,15 +1,15 @@
 \chapter{Stack Exchange}
 \label{App:SE}
-Stack Exchange data are public and regularly released. As closed communities were active between 180 and 210 days, we extracted only first 180 days of data. Given that first few months can be crucial for further development of the community \cite{dover2020sustainable}, we are interested in early evolution of Stack Exchange sites. 
+Stack Exchange data are public and regularly released. As closed communities were active between 180 and 210 days, we extracted only the first 180 days of data. Given that the first few months can be crucial for the further development of the community \cite{dover2020sustainable}, we are interested in the early evolution of Stack Exchange sites. 
 
-Detailed information about questions, answers, and comments are available for each SE community. Each post is labelled with a unique ID, the user's ID who made the post, and creation time. On Stack Exchange, users interact on several layers: Those interactions are considered positive.
+Detailed information about questions, answers, and comments is available for each SE community. Each post is labelled with a unique ID, the user's ID who made the post, and the creation time. On Stack Exchange, users interact on several layers: Those interactions are considered positive.
 \begin{itemize}
-	\item posting an answer on the question; for every question, we extract IDs of its answers
-	\item posting a comment on the question or answer; for every question and answer, we selected IDs of its comments
+	\item posting an answer to the question; for every question, we extract the IDs of its answers
+	\item posting a comment on the question or answer; for every question and answer, we selected the IDs of its comments
 	\item accepting answer; for each question, we selected the accepted answer ID
 \end{itemize}
 
-Even though posts can be voted and downvoted, information about a user who voted is absent, so we do not consider these interactions between users. Comments can not be downvoted, while we find only around 3\% negatively voted answers and questions, Table \ref{tab:negint}.
+Even though posts can be voted on and downvoted, information about a user who voted is absent, so we do not consider these interactions between users. Comments can not be downvoted, while we find only around 3\% negatively voted answers and questions, Table \ref{tab:negint}.
 
 \begin{table}[hbt!]
 	\centering
@@ -32,12 +32,12 @@ Even though posts can be voted and downvoted, information about a user who voted
 \end{table}
 
 
-%The data contains information about the official StackExchange reputation of each user but only as a single value measuring the final reputation of the user on a day when data archive was released. Because of this significant shortcoming, we do not include this information in our analysis. In SE users can give positive or negative votes to questions and answers, and mark questions as favor, however the data is again provided as a final score recorded at the moment of the realise of the database. Since this does not allows us to analyse the evolution of scores, we omit this data from our analysis.\\
+%The data contains information about the official StackExchange reputation of each user but only as a single value measuring the final reputation of the user on the day when the data archive was released. Because of this significant shortcoming, we do not include this information in our analysis. In SE, users can give positive or negative votes to questions and answers and mark questions as a favour; however, the data is again provided as a final score recorded at the moment of the realise of the database. Since this does not allows us to analyze the evolution of scores, we omit this data from our analysis.\\
 
 
 \section{Comparison between active and closed SE communities}
 
-Table \ref{tab:site-info} compares the first 180 days between closed and active communities. When it comes to basic statistics, active communities had larger number of users, questions, answers and comments. Another simple indicator if community is going to graduate or decline can be time series of active questions for period of 7 days in Figure \ref{fig:active_questions}. The question is active if had at least one activity, posted answer ot comment during previous seven days. We find that live communities have larger number of active questions after first three months. Still, this difference is smaller for literature and astronomy. For astronomy we observe that closed community had higher number of active questions in the early period of community life.
+Table \ref{tab:site-info} compares the first 180 days between closed and active communities. Regarding basic statistics, active communities had a larger number of users, questions, answers and comments. Another simple indicator if the community will graduate or decline can be time series of active questions for seven days in Figure \ref{fig:active_questions}. The question is active if it had at least one activity, posted answer, or comment during the previous seven days. We find that live communities have more active questions after the first three months. Still, this difference is smaller for literature and astronomy. For astronomy, we observe that closed communities had more active questions in the early period of community life.
 
 
 \begin{table}[h]
@@ -63,15 +63,15 @@ Table \ref{tab:site-info} compares the first 180 days between closed and active 
 \begin{figure}
 	\centering
 	\includegraphics[width=\linewidth]{figures/stackexchange/active_questions.pdf}
-	\caption[Number of active questions within 7 days sliding windows]{Number of active questions within 7 days sliding windows. Solid line - active sites; dashed lines - closed sites.}
+	\caption[Number of active questions within seven days sliding windows]{Number of active questions within seven days sliding windows. Solid lines - active sites; dashed lines - closed sites.}
 	\label{fig:active_questions}
 \end{figure}
 
-Similarly, the official Stack Exchange community evaluation process considers simple metrics \footnote{\href{https://stackoverflow.blog/2011/07/27/does-this-site-have-a-chance-of-succeeding/}{https://stackoverflow.blog/2011/07/27/does-this-site-have-a-chance-of-succeeding/}}. To determine the the success of sites  they measure how many questions are answered, how many questions are posted per day, and how many answers are posted per question.  There are two measures: the number of avid users and the number of visits that are not easily interpreted from the data. The site is \textit{healthy} if it has 10 questions per day, 2.5 answers per question and more than $90\%$ of answered questions. For less than $80\%$ of answered questions, 5 questions per day and 1 question per answer site \textit{needs some work}. 
+Similarly, the official Stack Exchange community evaluation process considers simple metrics \footnote{\href{https://stackoverflow.blog/2011/07/27/does-this-site-have-a-chance-of-succeeding/}{https://stackoverflow.blog/2011/07/27/does-this-site-have-a-chance-of-succeeding/}}. To determine the success of sites they measure how many questions are answered, how many questions are posted per day, and how many answers are posted per question. There are two measures: the number of avid users and the number of visits that are not easily interpreted from the data. The site is \textit{healthy} if it has ten questions per day, 2.5 answers per question and more than $90\%$ of answered questions. For less than $80\%$ of answered questions, five questions per day and 1 question per answer site \textit{needs some work}. 
 
-We calculated Stack Exchange statistics for astronomy, economics, literature and physics and results are presented in the Table \ref{tab:se_c}. After observed period of 180 days only live physics is healthy site while other live communities are at least in two criteria labeled as \textit{okay}. Closed sites mostly \textit{need some work}, the exception is closed astronomy. For example it has \textit{excellent} percent of answered questions and \textit{okay} answer ratio.  
+We calculated Stack Exchange statistics for astronomy, economics, literature and physics and results are presented in Table \ref{tab:se_c}. After 180 days, only live physics is a healthy site while other live communities are at least in two criteria labelled as \textit{okay}. Closed sites mostly \textit{need some work}; the exception is closed astronomy. For example, it has \textit{excellent} percent of answered questions and \textit{okay} answer ratio.  
 
-%While Physics community was clearly more successful than Theoretical Physics and other considered communities, we see that these differences are not as clear if we compare three other pairs of communities. For instance, some of the parameters for closed Astronomy community were better than for the community that is still alive. Similar results were found for Economics and Literature. 
+%While the Physics community was more successful than Theoretical Physics and other considered communities, these differences are not as clear if we compare three different pairs of communities. For instance, some of the parameters for a closed Astronomy community were better than for the still active community. Similar results were found for Economics and Literature. 
 
 \begin{table}[h!]
 	%\footnotesize\sf\centering
@@ -98,4 +98,4 @@ We calculated Stack Exchange statistics for astronomy, economics, literature and
 	
 \end{table}
 
-This simple measurements presented in tables \ref{tab:site-info} and \ref{tab:se_c} and in figure \ref{fig:active_questions} do not provide us clear indications about community sustainability. Only for physics topic the difference between active and closed community is evident, while for other communities it is not so clear. Thus, we need deeper insights into structure and dynamics of these communities to understand. The structure of social interactions within communities and dynamics of collective trust may provide better explanation why some communities succeed and other died. 
+These simple measurements presented in tables \ref{tab:site-info} and \ref{tab:se_c} and Figure \ref{fig:active_questions} do not provide us clear indications about community sustainability. Only for physics topics the difference between active and closed communities is evident, while for other communities, it is not so clear. Thus, we need deeper insights into the structure and dynamics of these communities to understand. The structure of social interactions within communities and the dynamics of collective trust may provide a better explanation of why some communities succeed, and others die. 

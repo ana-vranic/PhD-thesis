@@ -2,9 +2,6 @@
 \chapter{The role of trust in knowledge-based communities} % Main chapter title
 \label{Ch:Trust}
 
-%Information and communications technologies (ICTs) have enabled faster and easier creation and sharing of knowledge. Furthermore, they have provided access to a large amount of data which enabled a detailed study of their emergence and evolution \cite{dankulov2015dynamics}, as well as user’s roles \cite{saxena2021users}, patterns of their activity \cite{santos2019activity, slag2015one, chhabra2020activity}. 
-%However, relatively small attention was given to the sustainability of SE communities. Most of the research was focused on the activity and factors that influence the increase of the users’ activity in these communities. Factors such as the need for experts and the quality of their contributions have been thoroughly investigated \cite{dev2018size}. It was shown that the growth of communities and mechanisms that drive it might depend on the topic around which the community was created \cite{santos2019self}.
-
 The \textbf{Stack Exchange} (SE) is a network of question-answer websites on diverse topics. In the beginning, the focus was on computer programming questions with StackOverflow \footnote{
 	More information about StackOverflow is available at \url{https://stackoverflow.co/}, and a broad introduction to the SE network is available at: \url{https://stackexchange.com/tour}. 
 }  community. Its popularity led to the Stack Exchange network, which counts more than 100 communities on different topics. The SE communities are self-moderating, and the questions and answers can be voted, allowing users to earn Stack Exchange reputation and privileges on the site. 
@@ -22,7 +19,7 @@ In the user interaction network, the link between two nodes, user $i$ and $j$, e
 The first approach is to aggregate all interactions in the first 180 days and study the properties of the static network. Many local and global network measures are dependent 
 \cite{boccaletti2006complex}, and it was shown that degree distribution, degree-degree correlations and clustering coefficient are sufficient for the description of the properties of complex networks \cite{orsini2015quantifying}. 
 
-We calculate the \textbf{degree distribution}, figure \ref{fig:fullnetdeg}, and compare the distributions of active and closed communities of the same topic. Degree distributions between active and closed communities follow similar lines. 
+We calculate the \textbf{degree distribution}, Figure \ref{fig:fullnetdeg}, and compare the distributions of active and closed communities of the same topic. Degree distributions between active and closed communities follow similar lines. 
 
 \begin{figure}[ht]
 	\centering
@@ -31,7 +28,7 @@ We calculate the \textbf{degree distribution}, figure \ref{fig:fullnetdeg}, and 
 	\label{fig:fullnetdeg}
 \end{figure}
 
-If we take a look into \textbf{neighbor degree} depending on the node degree $k_{nn}(k)$, figure \ref{fig:fullneighdeg}, we find that there are structural differences between networks formed in the active and closed communities. On average, $k$-degree users in active communities have neighbours with a larger degree than is the case in closed communities. The results are consistent for Physics, Economics and Literature. For Astronomy, we find different behaviour, where the $k_{nn}(k)$ distributions of closed communities are on top of the distributions of the active ones. 
+If we take a look into \textbf{neighbor degree} depending on the node degree $k_{nn}(k)$, Figure \ref{fig:fullneighdeg}, we find that there are structural differences between networks formed in the active and closed communities. On average, $k$-degree users in active communities have neighbours with a larger degree than is the case in closed communities. The results are consistent for Physics, Economics and Literature. For Astronomy, we find different behaviour, where the $k_{nn}(k)$ distributions of closed communities are on top of the distributions of the active ones. 
 
 \begin{figure}[!ht]
 	\centering
@@ -45,7 +42,7 @@ The \textbf{clustering coefficient} of a node quantifies the average connectivit
 c_{i}=\frac{e_{i}}{\frac{1}{2}k_{i}(k_{1}-1)} \ .
 \label{eq:clust}
 \end{equation}
-Here $e_{i}$ is the Number of links between neighbours of the node $i$ in a network, while $\frac{1}{2}k_{i}(k_{i}-1)$ is the maximal possible Number of links determined by the node degree $k_{i}$. The clustering coefficient of network $C$ is the value of clustering averaged over all nodes. A study on dynamics of social group growth shows that links between one’s friends that are members of a social group increase the probability that that individual will join the social group \cite{backstrom2006group}. Furthermore, successful social diffusion typically occurs in networks with a high value of clustering coefficient \cite{centola2007cascade}. These results suggest that high local cohesion should be a characteristic of sustainable communities. The dependence of the clustering coefficient on the node degree is shown in figure \ref{fig:fullclustering}. As expected, we find that active communities are more clustered.
+Here $e_{i}$ is the Number of links between neighbours of the node $i$ in a network, while $\frac{1}{2}k_{i}(k_{i}-1)$ is the maximal possible Number of links determined by the node degree $k_{i}$. The clustering coefficient of network $C$ is the value of clustering averaged over all nodes. A study on dynamics of social group growth shows that links between one’s friends that are members of a social group increase the probability that that individual will join the social group \cite{backstrom2006group}. Furthermore, successful social diffusion typically occurs in networks with a high value of clustering coefficient \cite{centola2007cascade}. These results suggest that high local cohesion should be a characteristic of sustainable communities. The dependence of the clustering coefficient on the node degree is shown in Figure \ref{fig:fullclustering}. As expected, we find that active communities are more clustered.
 
 \begin{figure}[h]
 	\centering
@@ -71,7 +68,7 @@ During the larger part of the observed period, an active community’s clusterin
 
 Previous research on Stack Exchange communities has attempted to explain how different types of users interact. In Question-Answer communities are expected to be popular and casual users \cite{santos2019activity, santos2019self}. Popular users generate the majority of interactions in the system; they are experts in the community and take care of answering questions and engaging the discussions through comments. As popular users, they considered the $10 \%$ of the most active users and showed that popular users are highly connected with themselves and casual users.
 
-We tested this theory on all eight communities. We focused on 30 days of sub-networks and showed how the Number of links per node among popular users and between popular and casual users evolves, figure \ref{fig:pop_cas_users}. We also compare active and closed communities of the same topic, so links per node in active sites are more significant than in closed communities.
+We tested this theory on all eight communities. We focused on 30 days of sub-networks and showed how the Number of links per node among popular users and between popular and casual users evolves, Figure \ref{fig:pop_cas_users}. We also compare active and closed communities of the same topic, so links per node in active sites are more significant than in closed communities.
 
 \begin{figure}[h!]
 	\centering
@@ -84,7 +81,7 @@ Although we find the difference between active and closed communities, the split
 
 We use the Stochastic Block Model (SBM) to infer the core-periphery structure of each 30 days network snapshot and analyses how the core structure evolves. The  SBM algorithm is adapted for inferring the core-periphery structure, \cite{gallagher2020clarified}. For each 30 days network, we run the sample of 50 iterations and choose the model parameters according to the minimum description length. As stochastic models start from the random configuration, they can converge to different states, so we analyzed the stability of the inferred structures. More details are given in the appendix. We found that obtained structures differ, but the minimum description length does not fluctuate much. Also, different similarity measures between inferred core configurations take values higher than 0.9, indicating that the core structure is stable. 
 
-The Number of users in the core of active communities is higher than in closed communities, the top panel on figure \ref{fig:core_size}. On the other hand, we do not find a big difference between the fraction of core users in the closed and active communities. Furthermore, the fraction of users in core differs from the $10\%$, and it is constantly changing, bottom panel \ref{fig:core_size}. 
+The Number of users in the core of active communities is higher than in closed communities, the top panel on Figure \ref{fig:core_size}. On the other hand, we do not find a big difference between the fraction of core users in the closed and active communities. Furthermore, the fraction of users in core differs from the $10\%$, and it is constantly changing, bottom panel \ref{fig:core_size}. 
 
 \begin{figure}[h!]
 	\centering
@@ -94,7 +91,7 @@ The Number of users in the core of active communities is higher than in closed c
 \end{figure}
 
 The Number of users is constantly changing. To quantify the stability of the core structure, we compute the Jaccard’s coefficient between core users in networks at time points $t_1$ and $t_2$. The Jaccard coefficient range from 0 to 1, so the larger values of the Jaccard index indicate the more similar cores. 
-The highest values are found around diagonal elements where we compare networks closer in time, see figure \ref{fig:jaccard_hm}. The core membership changes over time, and the change is more frequent in closed communities. 
+The highest values are found around diagonal elements where we compare networks closer in time, see Figure \ref{fig:jaccard_hm}. The core membership changes over time, and the change is more frequent in closed communities. 
 
 \begin{figure}[h!]
 	\centering
@@ -103,7 +100,7 @@ The highest values are found around diagonal elements where we compare networks 
 	\label{fig:jaccard_hm}
 \end{figure}  
 
-The average Jaccard index between cores in networks separated by time interval $t_i-t_j$ with the standard deviation confidence interval are shown in figure \ref{fig:jaccard_mean}. The Jaccard index decreases with the relative time difference between networks faster in closed communities. The relatively high overlap between distant networks confirms that active networks have a more stable core. 
+The average Jaccard index between cores in networks separated by time interval $t_i-t_j$ with the standard deviation confidence interval are shown in Figure \ref{fig:jaccard_mean}. The Jaccard index decreases with the relative time difference between networks faster in closed communities. The relatively high overlap between distant networks confirms that active networks have a more stable core. 
 
 \begin{figure}[h!]
 	\centering
@@ -112,7 +109,7 @@ The average Jaccard index between cores in networks separated by time interval $
 	\label{fig:jaccard_mean}
 \end{figure}
 
-Finally, we examine how the users’ connectivity in and between the core and periphery evolves. In the figure, we show the $L/N$ in the core, which is proportional to the average degree of the network $2L/N$, \ref{fig:links_per_node}. The Physics community has more than twice the connectivity than closed Theoretical Physics. For Literature, we also find higher connectivity. Still, at the end of the observation period, the connectivity in the active site drops and becomes similar to that in the closed one. The difference between active and closed sites is unclear for Economics and Astronomy. At the beginning of the period, connectivity is similar for the sites on the economic topic. After 50 days of community life, connectivity in active communities is starting to rise, while in the case of closed economics, it is dropping. Astronomy connectivity is higher in closed communities in the first 50 days. After this period, we find a sudden rise in the connectivity of active astronomy, but again it drops and becomes comparable to the connectivity values in the closed site. Similar conclusions can be drawn for the connectivity between the core and periphery. The largest difference between active and closed sites is observed in Physics.  
+Finally, we examine how the users’ connectivity in and between the core and periphery evolves. In the Figure \ref{fig:links_per_node}, we show the $L/N$ in the core, which is proportional to the average degree of the network $2L/N$, . The Physics community has more than twice the connectivity than closed Theoretical Physics. For Literature, we also find higher connectivity. Still, at the end of the observation period, the connectivity in the active site drops and becomes similar to that in the closed one. The difference between active and closed sites is unclear for Economics and Astronomy. At the beginning of the period, connectivity is similar for the sites on the economic topic. After 50 days of community life, connectivity in active communities is starting to rise, while in the case of closed economics, it is dropping. Astronomy connectivity is higher in closed communities in the first 50 days. After this period, we find a sudden rise in the connectivity of active astronomy, but again it drops and becomes comparable to the connectivity values in the closed site. Similar conclusions can be drawn for the connectivity between the core and periphery. The largest difference between active and closed sites is observed in Physics.  
 
 \begin{figure}[h]
 	\centering
@@ -134,7 +131,7 @@ We further explore the difference between active and closed communities through 
 
 Dynamical reputation model, introduced in section \ref{sec:met_dibrm}, has three parameters. We explored different parameter combinations to find the set of parameters the most suitable for a given system of Stack Exchange communities. First, the basic reputation is set to $I_{bn}=1$. The cumulative factor is $\alpha=2$, as we want to emphasize the frequent interactions. The parameter $\beta$ controls the reputation decay due to user inactivity. After the last activity, the user has a positive reputation for some period and is still impacting the other users. We optimized the Number of users with a reputation larger than $1$ according to the number of users in the 30 days network and concluded that parameter $\beta=0.96$. A more detailed discussion about the choice of parameters is in the appendix. 
 
-With selected model parameters, we calculated the reputation of each user. If a user has a reputation larger than $1$, it is considered active, but when the reputation drops below this threshold means that the user has not been active long enough; it does not make a valuable contribution to the community. The Number of active users and their mean reputation for different SE sites is shown in figure \ref{fig:dr6panel}. 
+With selected model parameters, we calculated the reputation of each user. If a user has a reputation larger than $1$, it is considered active, but when the reputation drops below this threshold means that the user has not been active long enough; it does not make a valuable contribution to the community. The Number of active users and their mean reputation for different SE sites is shown in Figure \ref{fig:dr6panel}. 
 
 From the properties of networks, we found that active communities are more cohesive and have a more stable core. Furthermore, we focus our analysis on the dynamic reputation of the core users. Figure \ref{fig:dr_core} shows the evolution of mean user reputation within the core. Active communities have a larger reputation than their closed counterpart. As it is previously suggested, the largest difference is found in the Physics community. For other communities, the difference is not so striking; on average, the core of active communities has a larger reputation than the core of closed communities. 
 
@@ -154,7 +151,7 @@ In the network's core are active users, and we expect a higher dynamic reputatio
 	\label{fig:dr_core_per}
 \end{figure}
 
-The distribution of the dynamic reputation of SE communities is skewed. We calculated the Gini coefficient to better express the difference between distribution reputations. This measure quantifies the inequality among users’ reputations. The Gini coefficient is calculated based on reputation values for each day; see figure \ref{fig:dynrep-gini}. The Gini coefficient is larger than $0.5$ in the first 180 days. Also, the active communities showed more reputation inequality, and dynamical reputation has a larger variation. 
+The distribution of the dynamic reputation of SE communities is skewed. We calculated the Gini coefficient to better express the difference between distribution reputations. This measure quantifies the inequality among users’ reputations. The Gini coefficient is calculated based on reputation values for each day; see Figure \ref{fig:dynrep-gini}. The Gini coefficient is larger than $0.5$ in the first 180 days. Also, the active communities showed more reputation inequality, and dynamical reputation has a larger variation. 
 
 \begin{figure}[h]
 	\centering

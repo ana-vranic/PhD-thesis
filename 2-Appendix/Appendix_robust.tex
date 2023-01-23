@@ -2,9 +2,9 @@
 \label{App:robust}
 \textbf{Precision and recall}
 
-Consider the network $G(V, L)$, with a set of nodes $V$ and a set of links between them $L$. The stochastic community detection algorithms may converge to different configurations. To quantify the similarity between the obtained structures and robustness of the algorithm, we run 50 iterations and calculate several similarity measures between pairwise partitions $C$ and $C^{'}$.
+Consider the network $G(V, L)$, with a set of nodes $V$ and a set of links between them $L$. The stochastic community detection algorithms may converge to different configurations. To quantify the similarity between the obtained structures and the algorithm's robustness, we run 50 iterations and calculate several similarity measures between pairwise partitions $C$ and $C^{'}$.
 
-The core-periphery structure has two groups so confusion matrix \cite{labatut2012accuracy} can be defined as:
+The core-periphery structure has two groups, so confusion matrix \cite{labatut2012accuracy} can be defined as:
 
 \begin{center}
 	
@@ -29,9 +29,9 @@ The \textbf{F1 measure} is the harmonic mean of precision and recall \cite{labat
 \begin{equation}
 F_1 = 2\frac{P \cdot R}{P+R} = \frac{2n_{TP}}{2n_{TP}+n_{FN} + n_{FP}}
 \end{equation}
-It can be interpreted as a measure of overlap between true and estimated classes; it is 0 for no overlap to 1 if overlap is complete.
+It can be interpreted as a measure of overlap between true and estimated classes; it is 0 for no overlap to 1 if the overlap is complete.
 
-The \textbf{Jaccard's} coefficient is the ratio of two classes' intersection to their union \cite{labatut2012accuracy}. It can also be expressed in terms of confusion matrix: 
+The \textbf{Jaccard's} coefficient is the ratio of two classes' intersection to their union \cite{labatut2012accuracy}. It can also be expressed in terms of a confusion matrix: 
 \begin{equation}
 J =  \frac{C_{core} \cap C^{'}_{core}}{C_{core} \cup C^{'}_{core}} =   \frac{n_{TP}}{n_{TP}+n_{FP} + n_{FN}}
 \end{equation}
@@ -50,19 +50,19 @@ where $P(i, j)= |U_i \cap U_j|/N$
 
 $NMI$ ranges from 0 when the partitions are independent to 1 if they are identical.   
 
-\textbf{Adjusted rand index.} For the set of nodes $V$, with $n$ nodes, consider all possible combination of pairs $(v_i, v_j)$. We can select the number of the pairs where nodes belong to the same group in both partitions, $C$ and  $C^{'}$, denoted as $a$. Similarly, as $b$, we can define the number of pairs whose nodes belong to different groups in partitions. Then, unadjusted rand index \cite{santos2009use} is given as $RI = \frac{a+b}{\binom{n}{2}}$, where $\binom{n}{2}$ is number of all possible pairs. The RI between two randomly assigned partitions is not close to zero; for that reason, it is common to use the adjusted rand index \cite{hubert1985comparing} , defined as:
+\textbf{Adjusted rand index.} For the set of nodes $V$, with $n$ nodes, consider all possible combination of pairs $(v_i, v_j)$. We can select the number of the pairs where nodes belong to the same group in both partitions, $C$ and  $C^{'}$, denoted as $a$. Similarly, as $b$, we can define the number of pairs whose nodes belong to different groups in partitions. Then, unadjusted rand index \cite{santos2009use} is given as $RI = \frac{a+b}{\binom{n}{2}}$, where $\binom{n}{2}$ is number of all possible pairs. The RI between two randomly assigned partitions is not close to zero; for that reason, it is common to use the adjusted rand index \cite{hubert1985comparing}, defined as:
 \begin{equation}
 ARI = \frac{RI - E[RI]}{max(RI)- E[RI]}
 \end{equation}
 where $E[RI]$ is expected value of RI, and $max(RI)$ is maximum value of $RI$. 
 
 \clearpage
-As example we show analysis of inferred sample of  core-periphery structures for 30 days closed Astronomy, Stack Exchange networks, Figure \ref{fig:sample}. We represent the mean minimum description length (MDL) and the mean number of nodes in the core with standard deviation. MDL does not change much between inferred core-periphery structures; the difference between obtained configurations is still notable in the number of nodes in the core.  To investigate in more details similarity between obtained core-periphery configurations in the sample we calculate several measures between pair-wise partitions such as normalized mutual information, adjusted rand index, F1 measure and Jaccard index. These measures are greater than 0.5 and, in most cases, greater than 0.9, indicating stability of the inferred core-periphery structures.
+For example, we show an analysis of an inferred sample of core-periphery structures for 30 days of closed Astronomy, Stack Exchange networks, Figure \ref{fig:sample}. We represent the mean minimum description length (MDL) and the mean number of nodes in the core with standard deviation. MDL does not change much between inferred core-periphery structures; the difference between obtained configurations is still notable in the number of nodes in the core. To investigate the similarity between obtained core-periphery configurations in the sample more deeply, we calculate several measures between pairwise partitions, such as normalized mutual information, adjusted rand index, F1 measure and Jaccard index. These measures are greater than 0.5 and, in most cases, greater than 0.9, indicating the stability of the inferred core-periphery structures.
 
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\linewidth]{figures/stackexchange/blockmodel_robust.pdf}
-	\caption[Stability of the core-periphery structures.]{Minimum description length, number of nodes in core, normalized mutual information, adjusted rand index, F1 measure and Jaccard index, among 50 samples for 30-days sub-networks. Results are given for closed astronomy. }
+	\caption[Stability of the core-periphery structures.]{Minimum description length, number of nodes in the core, normalized mutual information, adjusted rand index, F1 measure and Jaccard index, among 50 samples for 30-days sub-networks. Results are given for closed astronomy. }
 	\label{fig:sample}
 \end{figure}
