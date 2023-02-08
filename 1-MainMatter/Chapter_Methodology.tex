@@ -2,16 +2,25 @@
 \label{Ch:Method}
 
 \section{The measures of complex networks}
+%TODO 2.1 The measures of the complex networks structure
 
-The complex system can be represented by a complex network $G=(V, E)$, where the elements of a system (atoms, proteins, people) map to a set of $N$ nodes $V=\{1, 2, ..., N\}$. The interactions between elements map to $L$ links between nodes, $E = \{ e_1, e_2... e_L\}$. The \textbf{adjacency matrix} ${A} = N \times N$ has value $1$ if there is a connection between two nodes; otherwise, it is $0$ \cite{boccaletti2006complex}. There are a lot of measures to quantify the structure of the network. This section lists the most important measures, such as degree distribution, correlations, and shortest path measures. We also discuss different structures found in the network, such as core-periphery or community structures.  
+The complex system can be represented by a complex network $G=(V, E)$, where the elements of a system (atoms, proteins, people) map to a set of $N$ nodes $V=\{1, 2, ..., N\}$. The interactions between elements map to $L$ links between nodes, $E = \{ e_1, e_2... e_L\}$. The \textbf{adjacency matrix} ${A} = N \times N$ has value $1$ if there is a connection between two nodes; otherwise, it is $0$ \cite{boccaletti2006complex}.
+%TODO Ovakvom recenicnom kao da kazemo da samo imamo binarne mreze. Mozda bi bilo bolje da pre toga kazemo da cemo mi koristiti mahom binarne mreze. I onda ova recenica.
+There are a lot of measures to quantify the structure of the network. This section lists the most important measures, such as degree distribution, correlations, and shortest path measures. We also discuss different structures found in the network, such as core-periphery or community structures.  
 
 \subsection{Degree distribution}
 
-The simplest network measure is \textbf{node degree}, $k$. The degree of node $i$ gives the number of nodes attached to node $i$, $k_i = \sum_j A_{ij}$. The network density is the average degree divided by $N-1$, where $N$ is the number of nodes. It is a relative fraction of nodes in the network. In the case of regular networks, such as grids, each node has an equal degree, meaning that nodes in the network have similar roles. In the general case, the networks have a more complicated structure. If the degree sequence is skewed, we can identify nodes with high-degree (hubs). Removing hubs may partition a connected network into several components. 
+The simplest network measure is \textbf{node degree}, $k$. The degree of node $i$ gives %TODO is or equal 
+ the number of nodes attached %TODO adjacent
+ to node $i$, $k_i = \sum_j A_{ij}$. The network density is the average degree divided by $N-1$, where $N$ is the number of nodes. It is a relative fraction of nodes in the network.%TODO sta je ovo
+ 
+ In the case of regular networks, such as grids, each node has an equal degree, meaning that nodes in the network have similar roles. In the general case, the networks have a more complex structure. If the degree sequence is skewed, we can identify nodes with high-degree (hubs). Removing hubs may partition a connected network into several components. %TODO nedostaje citat
 
-To calculate the degree distribution, we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. It is the probability, $P(k)$, that a randomly chosen node has degree $k$. Similarly, we can order nodes according to their degree and plot the node degree.
+To calculate %TODO estimate. Bolje bi bilo da uvedes pro sta je P(k) pa onda kako je procenjujemo. 
+the degree distribution, we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. It is the probability, $P(k)$, that a randomly chosen node has degree $k$. Similarly, we can order nodes according to their degree and plot the node degree.
 
-If the graph nodes are statistically independent, the degree distribution completely determines the properties of a network \cite{dorogovtsev2002evolution}. Here we summarize the forms of degree distributions that are mostly found in the complex network theory:
+If the graph nodes are statistically independent, the degree distribution completely determines the properties of a network \cite{dorogovtsev2002evolution}.%TODO ovo je nejasna recenica
+Here we summarize the forms of degree distributions that are mostly found in the complex network theory:
 \begin{itemize}
 	\item The Poisson distribution. The degree distribution in a random network, where all nodes have the same connecting probability, follows Poisson distribution $P(k)= \frac{(Np)^ke^{-Np}}{k!}$, where $k$ is the mean degree distribution. 
 	
@@ -23,7 +32,7 @@ If the graph nodes are statistically independent, the degree distribution comple
 
 When plotting the degree distribution, it is common to use scaling of the axis. As many nodes have a low degree, like for power-law or exponential distribution, it is more useful to use a logarithmic scale. Now it is easier to notice that data points follow a straight line, meaning that degree distribution is some exponential function. 
 
-\subsection{Degree correlations}
+\subsection{Degree correlations} %TODO Degree-degree correlations.
 
 Correlation is defined through a correlation coefficient r. If x and y are two stochastic variables, for which we have a series of observation pairs $(x_1, y_1), (x_2, y_2), ...,(x_n, y_n)$. The correlation coefficient $r(x, y)$ between $x$ and $y$ is defined as \cite{van2010graph}:
 
@@ -41,19 +50,21 @@ r_{deg}(G) = \frac{\sum_{i=1}^{n}\sum_{i=1+1}^{n}((d_i - \bar{d}) (d_i - \bar{d}
 
 An adjacency matrix allows us to calculate the correlations between neighbouring nodes. If two nodes are not connected $A[i,j]=0$, the degree of correlation between them does not contribute to the $r$.
 
-The \textbf{degree-degree correlations} in the network are measured by \textbf{assortativity}. If correlations are positive, networks are assortative; there is a tendency for connections to existing between similar degree nodes. The negative correlations indicate that large-degree nodes prefer to connect nodes with a small degree, disassortative networks. The average first neighbor degree $k_{nn}$ can be calculated as $k_{nn} = \sum_{k^{'}}k^{'}P(k^{'}|{k})$. The $P$ is the conditional probability that an edge of degree $k$ points to a node with degree $k$. The norm is $\sum_{k^{'}}P(k^{'}|k)=1$, and detailed balance conditions \cite{boccaletti2006complex},  $kP(k^{'}|k)P(k) = k^{'}P(k|k^{'})P(k^{'})$ \cite{boccaletti2006complex}. If the node degrees are uncorrelated, $k_{nn}$ does not depend on the degree; otherwise, increasing/decreasing function indicates positive/negative correlations in the network \cite{park2003}.
+The \textbf{degree-degree correlations} in the network are measured by \textbf{assortativity}. %TODO assortativity index ne assortatiity. I nije jedino meren tako,
+If correlations are positive, networks are assortative; there is a tendency for connections to existing between similar degree nodes. The negative correlations indicate that large-degree nodes prefer to connect nodes with a small degree, disassortative networks. The average first neighbor degree $k_{nn}$ can be calculated as $k_{nn} = \sum_{k^{'}}k^{'}P(k^{'}|{k})$. The $P$ is the conditional probability that an edge of degree $k$ points to a node with degree $k$. The norm is $\sum_{k^{'}}P(k^{'}|k)=1$, and detailed balance conditions \cite{boccaletti2006complex},  $kP(k^{'}|k)P(k) = k^{'}P(k|k^{'})P(k^{'})$ \cite{boccaletti2006complex}. If the node degrees are uncorrelated, $k_{nn}$ does not depend on the degree; otherwise, increasing/decreasing function indicates positive/negative correlations in the network \cite{park2003}.
 
 The Newman defined the assortativity \cite{newman2002assortative} index $r$ in slightly different way:
 
 \begin{equation}
-r = \sum_{kl}kl(e_{kl} - q_lq_k) / \sigma_q^2
+r = \sum_{kl}kl(e_{kl} - q_lq_k) / \sigma_q^2 ,
 \end{equation}
 
-, where $e_{kl}$ is the probability that a randomly selected link connects nodes with degrees $k$ and $l$, $q_k$ is a probability that a randomly chosen node is connected to node $k$ and equals $q_k = kp_k / \langle k \rangle$, while $\sigma_q$ is a variance of the distribution $q_k$. 
+where $e_{kl}$ is the probability that a randomly selected link connects nodes with degrees $k$ and $l$, $q_k$ is a probability that a randomly chosen node is connected to node $k$ and equals $q_k = kp_k / \langle k \rangle$, while $\sigma_q$ is a variance of the distribution $q_k$. 
 
 \subsection{Clustering coefficient}
 
-The \textbf{clustering coefficient} is a measure describing the neighbourhood's structure. In networks, exist a tendency to form triangles or clusters \cite{barabasi2016network}. It is common in friendship networks where two friends of one person have a high probability of being friends. The clustering can be measured by computing the number of links between neighbours of one node,
+The \textbf{clustering coefficient} is a measure describing the neighbourhood's structure. In networks, exist a tendency to form triangles or clusters \cite{barabasi2016network}. It is common in friendship networks where two friends of one person have a high probability of being friends.%TODO citat nedostaje
+The clustering can be measured by computing the number of links between neighbours of one node,
 \begin{equation}
 c_i=2e_i/(k_i(k_i-1))
 \end{equation}
@@ -62,7 +73,7 @@ We can calculate the mean clustering coefficient by averaging it overall network
 
 Newman proposed the alternative definition for the clustering coefficient based on the number of triples and triangles in a graph \cite{newman2009random}. A triangle at node $v$ is a complete subgraph with three nodes, including $v$. A triple on the node v is a subgraph of exactly three nodes and two edges, where v is incident with two edges. The network transitivity is the ratio of the number of triangles in the network over the number of triples. The network transitivity is seen as global clustering, as it considers the whole network.  
 
-\subsection{Network paths}
+\subsection{Network paths} %TODO moze samo paths
 In the network structure, the interacting nodes are directly connected with the edge. In this representation, the distance between them is $d_{v_i, v_j} =1 $. Distance defined like this does not have any physical meaning, and its purpose is to describe how the position of nodes in the network structure influences the other distant nodes. 
 
 The \textbf{path} between two nodes \cite{van2010graph}, $v_i$ and $v_j$ is a sequence of edges $\{(v_1, v_2),  (v_2, v_3), ...(v_k, v_{k+1})\\,... (v_{n-1}, v_n)\}$, where $v_1=v_i$, $v_n=v_j$. In the path, the nodes are distinct. Otherwise, the sequence is called a \textbf{walk}, where each node can be visited many times. Also, it is possible to define a \textbf{cycle}, a path that starts and ends on the same node while other nodes in the cycle are distinct. The length of the path, walk or cycle is the number of links in the sequence. We can easily calculate the number of walks between two nodes using the adjacency matrix. The $A^2$ gives us walks of length $2$, the $A^3$, the number of walks of length 3, and so on. 
@@ -121,13 +132,16 @@ The network with $k$ communities could be represented using $k \times k$ matrix 
 	\includegraphics[width=0.8\textwidth]{chapter2/structures.png}
 	\caption[Stochastic Block Model]{ Different communities structures  (a) assortative. (b) disassortative. (c) core-periphery. (d) Erdos Renyi random graph.}
 	\label{fig:SBM}
+	%TODO ima li ova slika u boji?
 \end{figure}
 
-Different algorithms are used for detecting the community structure in the underlying network, optimizing different objective functions of the network partition. Still, if the ground-truth communities are unknown, there are no guarantees that we will infer the actual number of communities and entirely correct node assignments. Even though community detection algorithms are widely used in complex network analysis as they can give us a better understanding of network structure. In this section are explained two community detection models, the first one based on optimizing the modularity function, and the other based on the statistical inference of the Stochastic Block Model (SBM) where is optimized the likelihood function. 
+Different algorithms are used for detecting the community structure in the underlying network, optimizing different objective functions of the network partition. Still, if the ground-truth communities are unknown, there are no guarantees that we will infer the actual number of communities and entirely correct node assignments. Even though community detection algorithms are widely used in complex network analysis as they can give us a better understanding of network structure. %TODO citat
+In this section are explained two community detection models, the first one based on optimizing the modularity function, and the other based on the statistical inference of the Stochastic Block Model (SBM) where is optimized the likelihood function. %TODO citat
 
 \subsection{Louvain algorithm}
 
-Comparing the link density of the community with the link density obtained for the same group of nodes randomly connected, we could conclude if the community corresponds to the dense subgraph or if the structure is created entirely random. The \textbf{modularity} \cite{guimera2004modularity, good2010performance} is a function that measures the randomness of each partition. We can compare the communities with modularity and decide which one is better. For the network with $N$ nodes and $L$ links that partitions into $n_c$ communities. Each community has $N_c$ nodes and $L_c$ links. If the number of connections is larger than the expected number of links between $N_c$ nodes given in the expected node sequence, these nodes may form the community. We calculate the difference between real network connectivity $A_{ij}$ and the expected number of links between nodes if the network is randomly connected, $p_{ij}$. The $p_{ij}$ can be obtained by randomizing the original network but keeping the expected degree of each node unchanged, so $p_{ij}= \frac{k_ik_j}{2L}$.
+Comparing the link density of the community with the link density obtained for the same group of nodes randomly connected, we could conclude if the community corresponds to the dense subgraph or if the structure is created entirely random. The \textbf{modularity} \cite{guimera2004modularity, good2010performance} is a function that measures the randomness of each partition. %TODO definisati sta je partition
+We can compare the communities with modularity and decide which one is better. For the network with $N$ nodes and $L$ links that partitions into $n_c$ communities. Each community has $N_c$ nodes and $L_c$ links. If the number of connections is larger than the expected number of links between $N_c$ nodes given in the expected node sequence, these nodes may form the community. We calculate the difference between real network connectivity $A_{ij}$ and the expected number of links between nodes if the network is randomly connected, $p_{ij}$. The $p_{ij}$ can be obtained by randomizing the original network but keeping the expected degree of each node unchanged, so $p_{ij}= \frac{k_ik_j}{2L}$.
 
 \begin{equation}
 M_c = \frac{1}{2L}\sum(A_{ij}-p_{ij})
@@ -144,7 +158,7 @@ The higher modularity indicates that nodes are partitioned in better communities
 
 The first algorithm proposed for modularity optimization was \textbf{greedy algorithm}. First, it assigns each node to a community and starts with N communities. Then, we should merge each pair of communities and calculate the modularity difference $\Delta M$. We can join those two communities by identifying the pair for which the difference is the largest. It is repeated until all nodes merge into a single community. The best partition is one with the largest $M$. 
 
-\textbf{Louvain algorithm} \cite{blondel2008fast} is an optimization algorithm with better scalability than the greedy algorithm so it can operate on very large networks. Initially, each node is assigned to a different community, and similar to before, we calculate the difference in the modularity moving nodes to one of their neighbouring community. Then we move node $i$ to the community such that modularity becomes larger. It is applied to all nodes until no further improvement can be made. In the second step, we create a weighted network whose nodes are communities identified during the first step. The weight of the links between communities is the sum of the weights between nodes. The number of links inside the community is given as a weighted self-loop. Then, the first and second spets are repeated until there is no more change in the modularity. 
+\textbf{Louvain algorithm} \cite{blondel2008fast} is an optimization algorithm with better scalability than the greedy algorithm so it can operate on very large networks. Initially, each node is assigned to a different community, and similar to before, we calculate the difference in the modularity moving nodes to one of their neighbouring community. Then we move node $i$ to the community such that modularity becomes larger. It is applied to all nodes until no further improvement can be made. In the second step, we create a weighted network whose nodes are communities identified during the first step. The weight of the links between communities is the sum of the weights between nodes. The number of links inside the community is given as a weighted self-loop. Then, the first and second spets are repeated until there is no more change in the modularity. %TODO Posto je sekcija o Louain algoritmu, treba dodati jos par paragrafa o njemu. Konkretno njegove karakteristike (otezinjeni, usmereni grafovi...), zatim reyolucija, i najbitnije kako odredjuje optimalan broj zajednica. Pogledaj neki od Santoih poslednjih radoa na temu zajednica.
 
 \subsection{Stochastic block model}
 
@@ -160,11 +174,10 @@ The number of possible nodes between two groups $r$ and $s$:
 \begin{equation}
 n_{rs} = \begin{cases}
 n_r(n_{r}+1)/2 &\text{if  } r=s \\
-n_rn_s &\text{if  } r=s\\
+n_rn_s &\text{if  } r=s\\, 
 \end{cases}
 \end{equation}
-
-; while the number of possible edges depends on the adjacency matrix $A_{ij}$:
+while the number of possible edges depends on the adjacency matrix $A_{ij}$:
 \begin{equation}
 e_{rs}=\frac{1}{1+\delta_{rs}}\sum_{i \in r, j\in s} A_{ij}
 \end{equation}
@@ -214,6 +227,7 @@ Probability of having model parameters $\theta, p$ given network $G$ is proporti
 
 \newpage
 \section{Network models}
+%TODO Ovde treba ubaciti samo jedan pasus zasto su nam bitni modeli. Cemu sluze, zasto ih pravimo i slicno.
 
 \subsection{Random network model}
 
@@ -242,7 +256,7 @@ Two simple quantities that could be estimated are the average number of links an
 \end{equation}
 
 We conclude that the network's density equals probability $p$.
-The \textbf{average degree} is approximated as: $\langle k \rangle = 2 \langle L \rangle / N $, leading to:
+The \textbf{average degree} is approximated as $\langle k \rangle = 2 \langle L \rangle / N $, leading to:
 
 \begin{equation}
 \langle k \rangle = (N-1)p 
@@ -257,6 +271,7 @@ P(k) = \binom{N-1}{k}p^k(1-p)^{N-1-k}
 The probability that the node has degree $k$ is given with the second term $p^k$, while the probability that other N-1-k links are not created is given with the third part of the equation. Finally, there are  $\binom{N-1}{k}$ combinations for one node to have $k$ links from $N-1$ possible links. 
 
 The binomial distribution describes very well small networks. For larger networks, we find that they are sparse and that the average degree is much smaller than a number of nodes $\langle k \rangle << N$. In this limit, binomial distribution becomes the Poisson, which now depends only on one parameter $\langle k \rangle$
+%TODO pozvati se na sliku
 
 \begin{equation}
 p(k) = \frac{1}{k!}e^{-\langle k \rangle}\langle k \rangle^{k}
@@ -284,7 +299,7 @@ Inspired by the idea that real-world networks are highly clustered, and the aver
 	\item For each link in the network, with probability $p$, we choose a random node to rewire the link. This makes long-distance nodes connect, decreasing the network's average path length. 
 \end{itemize}
 
-The model interpolates between the regular graph when the probability is $p=0$ and the random graph with $p=1$ when all links are randomly rewired. Short distances and high clustering are present in the network for the critical probabilities.
+The model interpolates between the regular graph when the probability is $p=0$ and the random graph with $p=1$ when all links are randomly rewired. Short distances and high clustering are present in the network for the critical probabilities. %TODO kolika je verovatnoca
 
 \begin{figure}[H]
 	\centering
@@ -331,7 +346,8 @@ Degree distribution follows power-law, and for large k is approximated with $P(k
 P(k) = \frac{2m(m+1)}{k(k+1)(k+2)}
 \end{equation}
 
-For large $k$, it is exactly the power law. It is also independent of the time and size of the system, meaning the emergence of a stationary scale-free state. Distributions do not depend on the N. If we vary $m$, the slope of distributions is the same, but they are parallel. After rescaling $p(k)/m^2$, they fall on the same line \cite{barabasi2016network}. 
+For large $k$, it is exactly the power law. It is also independent of the time and size of the system, meaning the emergence of a stationary scale-free state. Distributions do not depend on the N. If we vary $m$, the slope of distributions is the same, but they are parallel. After rescaling $p(k)/m^2$, they fall on the same line \cite{barabasi2016network}.
+% TODO Glavna karakteristika BA modela je power-law degree distribution, To ovde nije ni priblizno ocigledno. Bilo bi lepo da postoji i slika., 
 
 %stationary degree distribution does not depend on the system parameters, so different systems have similar behaviour
 
@@ -405,12 +421,15 @@ As before, depending on model parameters network evolves into different structur
 \newpage
 
 \section{The probability distributions}
+%TODO mozda zameniti 2.3 i 2.4
 
 The shape of degree distribution is important for getting the first insight into the characteristics of the complex network. When nodes are generated randomly, and any two nodes are linked with the same probability $p$,  we expect the binomial distribution. For larger networks it is Poisson distribution $P(k) = \frac{1}{k!}e^{-\langle k \rangle}\langle k \rangle^{k}$, where $\langle k \rangle = Np$. A different approach is to add one node and connect it randomly to the network at each time step. The obtained network then has the exponential degree distribution $P(k)=e^{-\lambda k}$. These are exponentially bounded distributions, meaning they decay exponentially or faster for the large values \cite{barabasi2016network}. 
 
 On the other hand, heavy-tailed distributions decay slower than exponential, and the events for large values are rare but still possible. For example, in the preferential attachment model, degree distribution emerges to the power law \cite{barabasi2016network}. Also, many empirical data exhibit the heavy-tailed distribution. Even if they look like a power law, after statistical analysis, it may be concluded that the data deviate from the power law and could be equally good or even better fitted with some other distribution. Commonly used alternative distributions are lognormal distribution, stretched-exponential or power-law with an exponential cutoff. 
 
 This section gives an overview of relevant distributions and methods for fitting data and testing the quality of the performed fit. 
+
+%TODO Mozes da se ovde fokusiras na realne mreze vise neko na modelirane. Jer na kraju sve je krenulo od njih.
 
 \subsection{The properties of distributions}
 
@@ -474,6 +493,7 @@ p(k) = c k^{\beta - 1}e^{-(\lambda k)^{\beta}}
 the parameter $\beta$ is stretching exponent determining the properties of the function $p(k)$ \cite{barabasi2016network}. For $\beta=1$, the function is exponential. For $\beta<1$, it is hard to distinguish the distribution from the power law. We have a compressed exponential function for $\beta>1$, so $k$ varies in the narrow range. 
 
 \subsection{Plotting the distributions}
+%TODO ovo ne treba da bude deo teze
 
 The first step in analyzing the empirical data is to create the frequency plot or histogram. Data are binned in equal intervals, and the number of data points within the interval are plotted. It is hard to determine whether the distribution is exponential or power law when plotting heavy-tailed distributions \cite{caldarelli2007scalefree}. If data are from power law distribution on the double logarithmic scale, they will look linear:
 \begin{equation}
@@ -571,6 +591,7 @@ $$F_{RS}(s) = \frac{1}{N_s}\sum \frac{R_{\nu}(s)}{S_{\nu}(s)} \sim s^H$$
 , where the H is the Hurst exponent. Values $H<1/2$ indicate long-term anti-correlated data while $H>1/2$ long-term positively correlated data \cite{kantelhardt2008fractal}. 
 
 \subsection{Fluctuation analysis}
+%TODO pozvati se na slike
 
 The \textbf{fluctuation analysis} is based on the random walk theory \cite{kantelhardt2008fractal}. For given time series $\{x_i\}$ with length N, we first define the global profile in the form of cumulative sum, equation \ref{eq:cumsum}, where $\langle x\rangle $ represents the average of the time series. 
 
@@ -643,6 +664,7 @@ For the monofractal time series, H(q) is independent of q, meaning that scaling 
 %Also, large fluctuations are characterized by smaller scaling exponent. 
 
 \section{Dynamical reputation model} \label{sec:met_dibrm}
+%TODO Ok je da odredjivanje parametara bude u apednix-u ali to moras da kazes u samoj sekciji. Ja bih razmislila da moza odredjivanje parametara ne bude u apendixu nego ovde. I to je opcija.
 
 
 Consider a system where each component has an activity pattern that could be mapped to the discrete signal, representing the moments when the event happened, such as the activity pattern when users are sending an email or communicating, sharing opinions and information within the community. Users' behaviour directly influences their position in the community, which is measured through reputation. The trust among users depends on the amount of interaction between them, which means the trust changes over time. The computational model needs to capture the dynamic property of the trust. Furthermore, the important property of the trust is that it is easier lost than gained; the frequency of interaction also matters. The trust between users who interact frequently should increase faster than between users who rarely interact. 

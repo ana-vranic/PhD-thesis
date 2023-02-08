@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  6 FEB 2023 15:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  8 FEB 2023 15:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2233,31 +2233,31 @@ LaTeX Font Info:    Font shape `OT2/Tempora-TLF/b/n' will be
 File: figs/chapter1/Konigsberg_bridges.png Graphic file (type png)
 <use figs/chapter1/Konigsberg_bridges.png>
 Package pdftex.def Info: figs/chapter1/Konigsberg_bridges.png  used on input li
-ne 19.
+ne 26.
 (pdftex.def)             Requested size: 145.11053pt x 114.36089pt.
 <figs/chapter1/Konigsberg_graph.png, id=454, 501.875pt x 401.5pt>
 File: figs/chapter1/Konigsberg_graph.png Graphic file (type png)
 <use figs/chapter1/Konigsberg_graph.png>
 Package pdftex.def Info: figs/chapter1/Konigsberg_graph.png  used on input line
- 20.
+ 27.
 (pdftex.def)             Requested size: 145.11053pt x 116.08893pt.
  [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.33 
+l.40 
       <./figs/chapter1/Konigsberg_bridges.png> <./figs/chapter1/Konigsberg_grap
 h.png>]
 LaTeX Font Info:    Font shape `T1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 48.
+(Font)              scaled to size 8.0pt on input line 56.
 LaTeX Font Info:    Font shape `T1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 48.
+(Font)              scaled to size 6.0pt on input line 56.
 <figs/chapter1/directed_graph.pdf, id=499, 597.50786pt x 421.10078pt>
 File: figs/chapter1/directed_graph.pdf Graphic file (type pdf)
 <use figs/chapter1/directed_graph.pdf>
-Package pdftex.def Info: figs/chapter1/directed_graph.pdf  used on input line 5
-7.
+Package pdftex.def Info: figs/chapter1/directed_graph.pdf  used on input line 6
+5.
 (pdftex.def)             Requested size: 338.58632pt x 238.62276pt.
 
 
@@ -2267,20 +2267,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <figs/chapter1/multi_graph.pdf, id=519, 421.10078pt x 298.75392pt>
 File: figs/chapter1/multi_graph.pdf Graphic file (type pdf)
 <use figs/chapter1/multi_graph.pdf>
-Package pdftex.def Info: figs/chapter1/multi_graph.pdf  used on input line 68.
+Package pdftex.def Info: figs/chapter1/multi_graph.pdf  used on input line 76.
 (pdftex.def)             Requested size: 193.47578pt x 137.26436pt.
  [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.74 
+l.82 
      pdfTeX warning (ext4): destination with the same identifier (name{figure.1
 .3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.74 
+l.82 
       <./figs/chapter1/directed_graph.pdf> <./figs/chapter1/multi_graph.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figs/chapter1/multi_graph.pdf): PDF i
@@ -2290,27 +2290,27 @@ nclusion: multiple pdfs with page group included in a single page
 File: figs/chapter1/bipartite_graph.pdf Graphic file (type pdf)
 <use figs/chapter1/bipartite_graph.pdf>
 Package pdftex.def Info: figs/chapter1/bipartite_graph.pdf  used on input line 
-81.
+89.
 (pdftex.def)             Requested size: 338.58632pt x 238.62276pt.
  [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.91 
+l.99 
       <./figs/chapter1/bipartite_graph.pdf>]
 <figs/chapter1/temporal_network.pdf, id=556, 597.50786pt x 341.43306pt>
 File: figs/chapter1/temporal_network.pdf Graphic file (type pdf)
 <use figs/chapter1/temporal_network.pdf>
 Package pdftex.def Info: figs/chapter1/temporal_network.pdf  used on input line
- 96.
+ 104.
 (pdftex.def)             Requested size: 338.58632pt x 193.47789pt.
  [6pdfTeX warning (ext4): destination with the same identifier (name{figure.1.5
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.109 
+l.117 
        <./figs/chapter1/temporal_network.pdf>]) [7]
 \openout2 = `1-MainMatter/Chapter_Methodology.aux'.
 
@@ -2321,172 +2321,172 @@ l.109
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+Tempora-TLF on inpu
-t line 16.
+t line 25.
 
 (/usr/share/texlive/texmf-dist/tex/latex/tempora/TS1Tempora-TLF.fd
 File: TS1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for TS1/Tempora-
 TLF.
 )
 LaTeX Font Info:    Font shape `TS1/Tempora-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 16.
+(Font)              scaled to size 12.0pt on input line 25.
  [9]
 [10] [11] [12]
 <figs/chapter2/structures.png, id=673, 699.36281pt x 392.21532pt>
 File: figs/chapter2/structures.png Graphic file (type png)
 <use figs/chapter2/structures.png>
-Package pdftex.def Info: figs/chapter2/structures.png  used on input line 121.
+Package pdftex.def Info: figs/chapter2/structures.png  used on input line 132.
 (pdftex.def)             Requested size: 386.95897pt x 217.01776pt.
  [13pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.131 
-       <./figs/chapter2/structures.png>] [14] [15] [16]
-<figs/chapter2/ERgraph.pdf, id=731, 686.565pt x 249.77315pt>
+l.145 
+       <./figs/chapter2/structures.png>] [14] [15] [16] [17]
+<figs/chapter2/ERgraph.pdf, id=735, 686.565pt x 249.77315pt>
 File: figs/chapter2/ERgraph.pdf Graphic file (type pdf)
 <use figs/chapter2/ERgraph.pdf>
-Package pdftex.def Info: figs/chapter2/ERgraph.pdf  used on input line 231.
+Package pdftex.def Info: figs/chapter2/ERgraph.pdf  used on input line 245.
 (pdftex.def)             Requested size: 435.32422pt x 158.36787pt.
- [17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.258 
+l.272 
        <./figs/chapter2/ERgraph.pdf>]
-<figs/chapter2/ER_dist.pdf, id=758, 628.25824pt x 347.3324pt>
+<figs/chapter2/ER_dist.pdf, id=762, 628.25824pt x 347.3324pt>
 File: figs/chapter2/ER_dist.pdf Graphic file (type pdf)
 <use figs/chapter2/ER_dist.pdf>
-Package pdftex.def Info: figs/chapter2/ER_dist.pdf  used on input line 267.
+Package pdftex.def Info: figs/chapter2/ER_dist.pdf  used on input line 282.
 (pdftex.def)             Requested size: 435.32422pt x 240.66658pt.
- [18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.281 
+l.296 
        <./figs/chapter2/ER_dist.pdf>]
-<figs/chapter2/ws_graph.png, id=813, 885.3075pt x 287.0725pt>
+<figs/chapter2/ws_graph.png, id=817, 885.3075pt x 287.0725pt>
 File: figs/chapter2/ws_graph.png Graphic file (type png)
 <use figs/chapter2/ws_graph.png>
-Package pdftex.def Info: figs/chapter2/ws_graph.png  used on input line 291.
+Package pdftex.def Info: figs/chapter2/ws_graph.png  used on input line 306.
 (pdftex.def)             Requested size: 435.32422pt x 141.16173pt.
- [19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.309 T
+l.324 T
        he simplest formulation of the preferential attachment model is that ...
- <./figs/chapter2/ws_graph.png>] [20]
-<figs/chapter2/aging_nets.png, id=840, 818.30719pt x 260.47313pt>
+ <./figs/chapter2/ws_graph.png>] [21]
+<figs/chapter2/aging_nets.png, id=845, 818.30719pt x 260.47313pt>
 File: figs/chapter2/aging_nets.png Graphic file (type png)
 <use figs/chapter2/aging_nets.png>
-Package pdftex.def Info: figs/chapter2/aging_nets.png  used on input line 373.
+Package pdftex.def Info: figs/chapter2/aging_nets.png  used on input line 389.
 (pdftex.def)             Requested size: 483.69687pt x 153.96794pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21]
-<figs/chapter2/diagram.png, id=853, 470.4777pt x 344.0052pt>
+[22]
+<figs/chapter2/diagram.png, id=857, 470.4777pt x 344.0052pt>
 File: figs/chapter2/diagram.png Graphic file (type png)
 <use figs/chapter2/diagram.png>
-Package pdftex.def Info: figs/chapter2/diagram.png  used on input line 399.
+Package pdftex.def Info: figs/chapter2/diagram.png  used on input line 415.
 (pdftex.def)             Requested size: 290.22107pt x 212.20494pt.
- [22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.405 \newpage
+l.421 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {figure.2.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.405 \newpage
+l.421 \newpage
                <./figs/chapter2/aging_nets.png> <./figs/chapter2/diagram.png>]
-[23] [24]
-<figs/chapter2/Distributions_plots.pdf, id=899, 642.89563pt x 1158.83562pt>
+[24] [25]
+<figs/chapter2/Distributions_plots.pdf, id=903, 642.89563pt x 1158.83562pt>
 File: figs/chapter2/Distributions_plots.pdf Graphic file (type pdf)
 <use figs/chapter2/Distributions_plots.pdf>
 Package pdftex.def Info: figs/chapter2/Distributions_plots.pdf  used on input l
-ine 486.
+ine 506.
 (pdftex.def)             Requested size: 362.77264pt x 653.91228pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25] [26pdfTeX warning (ext4): destination with the same identifier (name{figur
+[26] [27pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.2.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.507 
-       <./figs/chapter2/Distributions_plots.pdf>] [27] [28]
-<figs/chapter2/hurst_signals.pdf, id=1008, 851.75085pt x 506.02989pt>
+l.527 
+       <./figs/chapter2/Distributions_plots.pdf>] [28] [29]
+<figs/chapter2/hurst_signals.pdf, id=1012, 851.75085pt x 506.02989pt>
 File: figs/chapter2/hurst_signals.pdf Graphic file (type pdf)
 <use figs/chapter2/hurst_signals.pdf>
-Package pdftex.def Info: figs/chapter2/hurst_signals.pdf  used on input line 58
-5.
+Package pdftex.def Info: figs/chapter2/hurst_signals.pdf  used on input line 60
+6.
 (pdftex.def)             Requested size: 386.95897pt x 229.89648pt.
- [29pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [30pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.591 
+l.612 
        <./figs/chapter2/hurst_signals.pdf>]
-<figs/chapter2/hurst_detrending.pdf, id=1057, 851.75085pt x 506.02989pt>
+<figs/chapter2/hurst_detrending.pdf, id=1061, 851.75085pt x 506.02989pt>
 File: figs/chapter2/hurst_detrending.pdf Graphic file (type pdf)
 <use figs/chapter2/hurst_detrending.pdf>
 Package pdftex.def Info: figs/chapter2/hurst_detrending.pdf  used on input line
- 611.
+ 632.
 (pdftex.def)             Requested size: 386.95897pt x 229.89648pt.
- [30pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.621 
+l.642 
        <./figs/chapter2/hurst_detrending.pdf>]
-<figs/chapter2/hurst_mfdfa.pdf, id=1118, 736.10825pt x 507.363pt>
+<figs/chapter2/hurst_mfdfa.pdf, id=1122, 736.10825pt x 507.363pt>
 File: figs/chapter2/hurst_mfdfa.pdf Graphic file (type pdf)
 <use figs/chapter2/hurst_mfdfa.pdf>
-Package pdftex.def Info: figs/chapter2/hurst_mfdfa.pdf  used on input line 637.
+Package pdftex.def Info: figs/chapter2/hurst_mfdfa.pdf  used on input line 658.
 
 (pdftex.def)             Requested size: 386.95897pt x 266.7102pt.
- [31pdfTeX warning (ext4): destination with the same identifier (name{equation.
+ [32pdfTeX warning (ext4): destination with the same identifier (name{equation.
 2.5.46}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.644 
+l.665 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.644 
+l.665 
        <./figs/chapter2/hurst_mfdfa.pdf>]
-<figs/chapter2/DIBRM.pdf, id=1197, 401.9909pt x 307.64925pt>
+<figs/chapter2/DIBRM.pdf, id=1201, 401.9909pt x 307.64925pt>
 File: figs/chapter2/DIBRM.pdf Graphic file (type pdf)
 <use figs/chapter2/DIBRM.pdf>
-Package pdftex.def Info: figs/chapter2/DIBRM.pdf  used on input line 670.
+Package pdftex.def Info: figs/chapter2/DIBRM.pdf  used on input line 692.
 (pdftex.def)             Requested size: 217.66211pt x 166.57877pt.
-<figs/chapter2/DIBRM_decay.pdf, id=1198, 413.9418pt x 273.59653pt>
+<figs/chapter2/DIBRM_decay.pdf, id=1202, 413.9418pt x 273.59653pt>
 File: figs/chapter2/DIBRM_decay.pdf Graphic file (type pdf)
 <use figs/chapter2/DIBRM_decay.pdf>
-Package pdftex.def Info: figs/chapter2/DIBRM_decay.pdf  used on input line 671.
+Package pdftex.def Info: figs/chapter2/DIBRM_decay.pdf  used on input line 693.
 
 (pdftex.def)             Requested size: 217.66211pt x 143.86575pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[32]) [33pdfTeX warning (ext4): destination with the same identifier (name{figu
+[33]) [34pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.2.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2497,17 +2497,17 @@ l.106 \include{1-MainMatter/Chapter_Methodology}
 \openout2 = `1-MainMatter/Chapter_DrivingSignal.aux'.
 
  (./1-MainMatter/Chapter_DrivingSignal.tex
-[34
-
-
-
-]
 <figs/chapter3/ciljevi.pdf, id=1292, 845.04686pt x 597.50786pt>
 File: figs/chapter3/ciljevi.pdf Graphic file (type pdf)
 <use figs/chapter3/ciljevi.pdf>
 Package pdftex.def Info: figs/chapter3/ciljevi.pdf  used on input line 14.
 (pdftex.def)             Requested size: 338.58632pt x 239.40005pt.
- [35]
+
+[35
+
+
+
+]
 <figs/chapter3/signal4.pdf, id=1303, 388.88727pt x 158.90115pt>
 File: figs/chapter3/signal4.pdf Graphic file (type pdf)
 <use figs/chapter3/signal4.pdf>
@@ -3352,7 +3352,7 @@ s/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (118 pages, 7727452 bytes).
+Output written on thesis.pdf (118 pages, 7728177 bytes).
 PDF statistics:
  3621 PDF objects out of 4296 (max. 8388607)
  1752 compressed objects within 18 object streams
