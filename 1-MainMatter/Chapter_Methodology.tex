@@ -1,8 +1,8 @@
 \chapter{Methodology} % Main chapter title
 \label{Ch:Method}
 
-\section{The measures of complex networks}
-%TODO 2.1 The measures of the complex networks structure
+\section{The measures of complex networks structure}
+%%TODO 2.1 The measures of the complex networks structure
 
 The complex system can be represented by a complex network $G=(V, E)$, where the elements of a system (atoms, proteins, people) map to a set of $N$ nodes $V=\{1, 2, ..., N\}$. The interactions between elements map to $L$ links between nodes, $E = \{ e_1, e_2... e_L\}$. The \textbf{adjacency matrix} ${A} = N \times N$ has value $1$ if there is a connection between two nodes; otherwise, it is $0$ \cite{boccaletti2006complex}.
 %TODO Ovakvom recenicnom kao da kazemo da samo imamo binarne mreze. Mozda bi bilo bolje da pre toga kazemo da cemo mi koristiti mahom binarne mreze. I onda ova recenica.
@@ -10,9 +10,9 @@ There are a lot of measures to quantify the structure of the network. This secti
 
 \subsection{Degree distribution}
 
-The simplest network measure is \textbf{node degree}, $k$. The degree of node $i$ gives %TODO is or equal 
- the number of nodes attached %TODO adjacent
- to node $i$, $k_i = \sum_j A_{ij}$. The network density is the average degree divided by $N-1$, where $N$ is the number of nodes. It is a relative fraction of nodes in the network.%TODO sta je ovo
+The simplest network measure is \textbf{node degree}, $k$. The degree of node $i$ is %gives %TODO is or equal 
+ the number of nodes adjacent %attached %TODO adjacent
+ to node $i$, $k_i = \sum_j A_{ij}$. The network density is the average degree divided by $N-1$, where $N$ is the number of nodes. %It is a relative fraction of nodes in the network.%TODO sta je ovo
  
  In the case of regular networks, such as grids, each node has an equal degree, meaning that nodes in the network have similar roles. In the general case, the networks have a more complex structure. If the degree sequence is skewed, we can identify nodes with high-degree (hubs). Removing hubs may partition a connected network into several components. %TODO nedostaje citat
 
@@ -32,7 +32,7 @@ Here we summarize the forms of degree distributions that are mostly found in the
 
 When plotting the degree distribution, it is common to use scaling of the axis. As many nodes have a low degree, like for power-law or exponential distribution, it is more useful to use a logarithmic scale. Now it is easier to notice that data points follow a straight line, meaning that degree distribution is some exponential function. 
 
-\subsection{Degree correlations} %TODO Degree-degree correlations.
+\subsection{Degree-degree correlations} %%TODO Degree-degree correlations.
 
 Correlation is defined through a correlation coefficient r. If x and y are two stochastic variables, for which we have a series of observation pairs $(x_1, y_1), (x_2, y_2), ...,(x_n, y_n)$. The correlation coefficient $r(x, y)$ between $x$ and $y$ is defined as \cite{van2010graph}:
 
@@ -50,7 +50,7 @@ r_{deg}(G) = \frac{\sum_{i=1}^{n}\sum_{i=1+1}^{n}((d_i - \bar{d}) (d_i - \bar{d}
 
 An adjacency matrix allows us to calculate the correlations between neighbouring nodes. If two nodes are not connected $A[i,j]=0$, the degree of correlation between them does not contribute to the $r$.
 
-The \textbf{degree-degree correlations} in the network are measured by \textbf{assortativity}. %TODO assortativity index ne assortatiity. I nije jedino meren tako,
+The \textbf{degree-degree correlations} in the network are measured by \textbf{assortativity index}. %%TODO assortativity index ne assortatiity. I nije jedino meren tako,
 If correlations are positive, networks are assortative; there is a tendency for connections to existing between similar degree nodes. The negative correlations indicate that large-degree nodes prefer to connect nodes with a small degree, disassortative networks. The average first neighbor degree $k_{nn}$ can be calculated as $k_{nn} = \sum_{k^{'}}k^{'}P(k^{'}|{k})$. The $P$ is the conditional probability that an edge of degree $k$ points to a node with degree $k$. The norm is $\sum_{k^{'}}P(k^{'}|k)=1$, and detailed balance conditions \cite{boccaletti2006complex},  $kP(k^{'}|k)P(k) = k^{'}P(k|k^{'})P(k^{'})$ \cite{boccaletti2006complex}. If the node degrees are uncorrelated, $k_{nn}$ does not depend on the degree; otherwise, increasing/decreasing function indicates positive/negative correlations in the network \cite{park2003}.
 
 The Newman defined the assortativity \cite{newman2002assortative} index $r$ in slightly different way:
@@ -73,7 +73,7 @@ We can calculate the mean clustering coefficient by averaging it overall network
 
 Newman proposed the alternative definition for the clustering coefficient based on the number of triples and triangles in a graph \cite{newman2009random}. A triangle at node $v$ is a complete subgraph with three nodes, including $v$. A triple on the node v is a subgraph of exactly three nodes and two edges, where v is incident with two edges. The network transitivity is the ratio of the number of triangles in the network over the number of triples. The network transitivity is seen as global clustering, as it considers the whole network.  
 
-\subsection{Network paths} %TODO moze samo paths
+\subsection{Paths} %Network paths} %TODO moze samo paths
 In the network structure, the interacting nodes are directly connected with the edge. In this representation, the distance between them is $d_{v_i, v_j} =1 $. Distance defined like this does not have any physical meaning, and its purpose is to describe how the position of nodes in the network structure influences the other distant nodes. 
 
 The \textbf{path} between two nodes \cite{van2010graph}, $v_i$ and $v_j$ is a sequence of edges $\{(v_1, v_2),  (v_2, v_3), ...(v_k, v_{k+1})\\,... (v_{n-1}, v_n)\}$, where $v_1=v_i$, $v_n=v_j$. In the path, the nodes are distinct. Otherwise, the sequence is called a \textbf{walk}, where each node can be visited many times. Also, it is possible to define a \textbf{cycle}, a path that starts and ends on the same node while other nodes in the cycle are distinct. The length of the path, walk or cycle is the number of links in the sequence. We can easily calculate the number of walks between two nodes using the adjacency matrix. The $A^2$ gives us walks of length $2$, the $A^3$, the number of walks of length 3, and so on. 
@@ -295,11 +295,11 @@ The phase transition occurs when the average degree is $ \langle k  \rangle = 1$
 Inspired by the idea that real-world networks are highly clustered, and the average distance is small, Watts and Strogatz \cite{watts1998collective} proposed the "small-world" model. The model starts from the regular lattice, and with rewiring links, the network starts to resemble small-world property. The procedure is the following:
 
 \begin{itemize}
-	\item At the beginning, nodes are placed on the ring lattice, and each node is connected to $k/2$ first neighbours on the left and the right side. Initially, the clustering coefficient is high, $c=3/4$. 
-	\item For each link in the network, with probability $p$, we choose a random node to rewire the link. This makes long-distance nodes connect, decreasing the network's average path length. 
+	\item At the beginning, nodes are placed on the ring lattice, see Figure \ref{fig:wsgraph}, and each node is connected to $k/2$ first neighbours on the left and the right side. Initially, the clustering coefficient is high, $c=3/4$. 
+	\item For each link in the network, with probability $p$, we choose a random node to rewire the link. This makes long-distance nodes connect, decreasing the network's average path length, Figure \ref{fig:wsgraph}.
 \end{itemize}
 
-The model interpolates between the regular graph when the probability is $p=0$ and the random graph with $p=1$ when all links are randomly rewired. Short distances and high clustering are present in the network for the critical probabilities. %TODO kolika je verovatnoca
+The model interpolates between the regular graph when the probability is $p=0$ and the random graph with $p=1$ when all links are randomly rewired. Short distances and high clustering are present in the network  for the critical probabilities ranging from $p \approx 0.01 - 0.1$ \cite{watts1998collective}. %%TODO kolika je verovatnoca
 
 \begin{figure}[H]
 	\centering
@@ -492,23 +492,23 @@ p(k) = c k^{\beta - 1}e^{-(\lambda k)^{\beta}}
 \end{equation}
 the parameter $\beta$ is stretching exponent determining the properties of the function $p(k)$ \cite{barabasi2016network}. For $\beta=1$, the function is exponential. For $\beta<1$, it is hard to distinguish the distribution from the power law. We have a compressed exponential function for $\beta>1$, so $k$ varies in the narrow range. 
 
-\subsection{Plotting the distributions}
-%TODO ovo ne treba da bude deo teze
+%\subsection{Plotting the distributions}
+%%TODO ovo ne treba da bude deo teze
 
-The first step in analyzing the empirical data is to create the frequency plot or histogram. Data are binned in equal intervals, and the number of data points within the interval are plotted. It is hard to determine whether the distribution is exponential or power law when plotting heavy-tailed distributions \cite{caldarelli2007scalefree}. If data are from power law distribution on the double logarithmic scale, they will look linear:
-\begin{equation}
-log p(k) = \gamma log(k) + c
-\end{equation}  
-On the log-log scale, we notice that noise in the tail of the distribution data exists. As the size of the bins is constant, the bins' density for large values also becomes large. To avoid the fluctuations in the tail, we can use logarithmic binning \cite{barabasi2014network, caldarelli2007scalefree, nair2022fundamentals}. The noise is reduced by dividing the $x$ axis into $n$ bins $b_n = c^n$, so the following bin is wider than the previous one. For the base $c$, we can choose any value $c>1$. Similarly, the binning can take the following form $b_n = k_0\exp{(cn)}$, where $k_0$ is the minimum data point, while the $c$ is the arbitrary base. All data points between values $[b_n, b_{n+1})$ are represented with one point $p(k_n) = N_n/b_n$, where $N_n$ is the number of nodes found in the bin $b_n$ and $k_n = \sum_i k_i / N_n$ is the average degree of the nodes in the bin $b_n$. By averaging over bins in the tail, noise in the tail of the distribution is reduced. Still, no matter how the bin size is chosen, the information about original data points is lost, especially in the distribution tail where bins are larger and include more samples. Figure \ref{fig:distributions} shows how different distributions look on linear (first column) and log-log scale (second column).
+%The first step in analyzing the empirical data is to create the frequency plot or histogram. Data are binned in equal intervals, and the number of data points within the interval are plotted. It is hard to determine whether the distribution is exponential or power law when plotting heavy-tailed distributions \cite{caldarelli2007scalefree}. If data are from power law distribution on the double logarithmic scale, they will look linear:
+%\begin{equation}
+%log p(k) = \gamma log(k) + c
+%\end{equation}  
+%On the log-log scale, we notice that noise in the tail of the distribution data exists. As the size of the bins is constant, the bins' density for large values also becomes large. To avoid the fluctuations in the tail, we can use logarithmic binning \cite{barabasi2014network, caldarelli2007scalefree, nair2022fundamentals}. The noise is reduced by dividing the $x$ axis into $n$ bins $b_n = c^n$, so the following bin is wider than the previous one. For the base $c$, we can choose any value $c>1$. Similarly, the binning can take the following form $b_n = k_0\exp{(cn)}$, where $k_0$ is the minimum data point, while the $c$ is the arbitrary base. All data points between values $[b_n, b_{n+1})$ are represented with one point $p(k_n) = N_n/b_n$, where $N_n$ is the number of nodes found in the bin $b_n$ and $k_n = \sum_i k_i / N_n$ is the average degree of the nodes in the bin $b_n$. By averaging over bins in the tail, noise in the tail of the distribution is reduced. Still, no matter how the bin size is chosen, the information about original data points is lost, especially in the distribution tail where bins are larger and include more samples. Figure \ref{fig:distributions} shows how different distributions look on linear (first column) and log-log scale (second column).
 
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.75\textwidth]{chapter2/Distributions_plots.pdf}
-	\caption{Probability distributions on a linear and double logarithmic scale.}
-	\label{fig:distributions}
-\end{figure}
+%\begin{figure}[!h]
+%	\centering
+%	\includegraphics[width=0.75\textwidth]{chapter2/Distributions_plots.pdf}
+%	\caption{Probability distributions on a linear and double logarithmic scale.}
+%	\label{fig:distributions}
+%\end{figure}
 
-Instead of plotting the probability distribution, it is possible to calculate the cumulative distribution, defined as $P(k) = \int_{k}^{\infty} p(k^{'}) dk^{'}$ for continuous function or as $P(k)=\sum_{k^{'}=1}^{k}p(k^{'})$ for the discrete function. For example, the CDF function for power law is also a power-law function but with exponent $\gamma -1$: $P(k)= k^{-(\gamma-1)}$. Note that for cumulative distribution, it is not necessary to use log-binning.
+%Instead of plotting the probability distribution, it is possible to calculate the cumulative distribution, defined as $P(k) = \int_{k}^{\infty} p(k^{'}) dk^{'}$ for continuous function or as $P(k)=\sum_{k^{'}=1}^{k}p(k^{'})$ for the discrete function. For example, the CDF function for power law is also a power-law function but with exponent $\gamma -1$: $P(k)= k^{-(\gamma-1)}$. Note that for cumulative distribution, it is not necessary to use log-binning.
 
 \subsection{Estimating the distribution parameters}
 
@@ -656,7 +656,7 @@ The fluctuating function scales as power-law $F_q(s) \sim s^{H(q)}$ and the anal
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{chapter2/hurst_mfdfa.pdf}
-	\caption{Fluctuating function and Hurst exponent.}{Dependence of the fluctuating functions on the scale for monofractal, multifractal and white noise signals, and the dependence of the Hurst exponent $H$ on the scale 1 $q$ for different types of signal (bottom right).  }
+	\caption[Fluctuating function and Hurst exponent.]{Dependence of the fluctuating functions on the scale for monofractal, multifractal and white noise signals, and the dependence of the Hurst exponent $H$ on the scale 1 $q$ for different types of signal (bottom right).}
 	\label{fig:hurst_mfdfa}
 \end{figure}
 
