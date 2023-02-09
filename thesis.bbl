@@ -11,6 +11,16 @@ Stefan Thurner, Rudolf Hanel, and Peter Klimekl.
 \newblock In {\em {Introduction to the Theory of Complex Systems}}. Oxford
   University Press, 09 2018.
 
+\bibitem{ladyman2013}
+James Ladyman, James Lambert, and Karoline Wiesner.
+\newblock What is a complex system?
+\newblock {\em European Journal for Philosophy of Science}, 3(1):33--67, 2013.
+
+\bibitem{latora2017complex}
+V.~Latora, V.~Nicosia, and G.~Russo.
+\newblock Complex networks: Principles, methods and applications.
+\newblock 2017.
+
 \bibitem{binney1992}
 J.~J. Binney, N.~J. Dowrick, A.~J. Fisher, and M.~E.~J. Newman.
 \newblock {\em {The theory of critical phenomena: an introduction to the
@@ -67,16 +77,6 @@ Michael~HR Stanley, Luis~AN Amaral, Sergey~V Buldyrev, Shlomo Havlin, Heiko
 V.~Verbavatz and M.~Barthelemy.
 \newblock {The growth equation of cities}.
 \newblock {\em Nature}, 587:397--401, 2020.
-
-\bibitem{ladyman2013}
-James Ladyman, James Lambert, and Karoline Wiesner.
-\newblock What is a complex system?
-\newblock {\em European Journal for Philosophy of Science}, 3(1):33--67, 2013.
-
-\bibitem{latora2017complex}
-V.~Latora, V.~Nicosia, and G.~Russo.
-\newblock Complex networks: Principles, methods and applications.
-\newblock 2017.
 
 \bibitem{myers2014}
 S.~A. Myers and J.~Leskovec.
@@ -313,6 +313,11 @@ A.~{Melnikov}, J.~{Lee}, V.~{Rivera}, M.~{Mazzara}, and L.~{Longo}.
 \newblock In {\em 2018 IEEE 32nd International Conference on Advanced
   Information Networking and Applications (AINA)}, pages 422--428, 2018.
 
+\bibitem{albert2000error}
+R{\'e}ka Albert, Hawoong Jeong, and Albert-L{\'a}szl{\'o} Barab{\'a}si.
+\newblock Error and attack tolerance of complex networks.
+\newblock {\em nature}, 406(6794):378--382, 2000.
+
 \bibitem{dorogovtsev2002evolution}
 Sergey~N Dorogovtsev and Jose~FF Mendes.
 \newblock Evolution of networks.
@@ -376,6 +381,29 @@ Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
 \newblock {\em Journal of statistical mechanics: theory and experiment},
   2008(10):P10008, 2008.
 
+\bibitem{lee2019review}
+Clement Lee and Darren~J Wilkinson.
+\newblock A review of stochastic block models and extensions for graph
+  clustering.
+\newblock {\em Applied Network Science}, 4(1):1--50, 2019.
+
+\bibitem{rosvall2019different}
+Martin Rosvall, Jean-Charles Delvenne, Michael~T Schaub, and Renaud Lambiotte.
+\newblock Different approaches to community detection.
+\newblock {\em Advances in network clustering and blockmodeling}, pages
+  105--119, 2019.
+
+\bibitem{karrer2011stochastic}
+Brian Karrer and Mark~EJ Newman.
+\newblock Stochastic blockmodels and community structure in networks.
+\newblock {\em Physical review E}, 83(1):016107, 2011.
+
+\bibitem{funke2019}
+Thorben Funke and Till Becker.
+\newblock Stochastic block models: A comparison of variants and inference
+  methods.
+\newblock {\em PLOS ONE}, 14(4):1--40, 04 2019.
+
 \bibitem{csermely2013structure}
 Peter Csermely, Andr{\'a}s London, Ling-Yun Wu, and Brian Uzzi.
 \newblock Structure and dynamics of core/periphery networks.
@@ -398,11 +426,6 @@ Xiao Zhang, Travis Martin, and Mark~EJ Newman.
 \newblock Identification of core-periphery structure in networks.
 \newblock {\em Physical Review E}, 91(3):032803, 2015.
 
-\bibitem{karrer2011stochastic}
-Brian Karrer and Mark~EJ Newman.
-\newblock Stochastic blockmodels and community structure in networks.
-\newblock {\em Physical review E}, 83(1):016107, 2011.
-
 \bibitem{bollobas2003mathematical}
 B{\'e}la Bollob{\'a}s and Oliver~M Riordan.
 \newblock Mathematical results on scale-free random graphs.
@@ -418,24 +441,6 @@ Pavel~L Krapivsky, Sidney Redner, and Eli Ben-Naim.
 Paul~L Krapivsky and Sidney Redner.
 \newblock Organization of growing random networks.
 \newblock {\em Physical Review E}, 63(6):066123, 2001.
-
-\bibitem{lee2019review}
-Clement Lee and Darren~J Wilkinson.
-\newblock A review of stochastic block models and extensions for graph
-  clustering.
-\newblock {\em Applied Network Science}, 4(1):1--50, 2019.
-
-\bibitem{rosvall2019different}
-Martin Rosvall, Jean-Charles Delvenne, Michael~T Schaub, and Renaud Lambiotte.
-\newblock Different approaches to community detection.
-\newblock {\em Advances in network clustering and blockmodeling}, pages
-  105--119, 2019.
-
-\bibitem{funke2019}
-Thorben Funke and Till Becker.
-\newblock Stochastic block models: A comparison of variants and inference
-  methods.
-\newblock {\em PLOS ONE}, 14(4):1--40, 04 2019.
 
 \bibitem{mitzenmacher2004brief}
 Michael Mitzenmacher.
@@ -456,11 +461,6 @@ Eckhard Limpert, Werner~A Stahel, and Markus Abbt.
   can provide deeper insight into variability and probability—normal or
   log-normal: that is the question.
 \newblock {\em BioScience}, 51(5):341--352, 2001.
-
-\bibitem{barabasi2014network}
-A.-L. Barab{\'a}si.
-\newblock {Network science book}.
-\newblock {\em Network Science}, 625, 2014.
 
 \bibitem{nair2022fundamentals}
 J.~Nair, A.~Wierman, and B.~Zwart.
@@ -603,12 +603,6 @@ Lars Backstrom, Dan Huttenlocher, Jon Kleinberg, and Xiangyang Lan.
 Jop Bri\"et and Peter Harremo\"es.
 \newblock Properties of classical and quantum jensen-shannon divergence.
 \newblock {\em Phys. Rev. A}, 79:052311, May 2009.
-
-\bibitem{powerlaw}
-Jeff Alstott, Ed~Bullmore, and Dietmar Plenz.
-\newblock powerlaw: A python package for analysis of heavy-tailed
-  distributions.
-\newblock {\em PLOS ONE}, 9(1):1--11, 01 2014.
 
 \bibitem{barabasi1999mean}
 Albert-L{\'a}szl{\'o} Barab{\'a}si, R{\'e}ka Albert, and Hawoong Jeong.

@@ -11,15 +11,18 @@ There are a lot of measures to quantify the structure of the network. This secti
 \subsection{Degree distribution}
 
 The simplest network measure is \textbf{node degree}, $k$. The degree of node $i$ is %gives %TODO is or equal 
- the number of nodes adjacent %attached %TODO adjacent
+the number of nodes adjacent %attached %TODO adjacent
  to node $i$, $k_i = \sum_j A_{ij}$. The network density is the average degree divided by $N-1$, where $N$ is the number of nodes. %It is a relative fraction of nodes in the network.%TODO sta je ovo
  
- In the case of regular networks, such as grids, each node has an equal degree, meaning that nodes in the network have similar roles. In the general case, the networks have a more complex structure. If the degree sequence is skewed, we can identify nodes with high-degree (hubs). Removing hubs may partition a connected network into several components. %TODO nedostaje citat
+In the case of regular networks, such as grids, each node has an equal degree, meaning that nodes in the network have similar roles. In the general case, the networks have a more complex structure. If the degree sequence is skewed, we can identify nodes with high-degree (hubs). Removing hubs may partition a connected network into several components \cite{albert2000error}. %%TODO nedostaje citat
+ 
+The degree distribution is the probability that a randomly chosen node has degree $k$. To estimate the degree distribution, we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. Similarly, we can order nodes according to their degree and plot the node degree.
 
-To calculate %TODO estimate. Bolje bi bilo da uvedes pro sta je P(k) pa onda kako je procenjujemo. 
-the degree distribution, we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. It is the probability, $P(k)$, that a randomly chosen node has degree $k$. Similarly, we can order nodes according to their degree and plot the node degree.
+%To estimate %calculate %TODO estimate. 
+%%TODO Bolje bi bilo da uvedes pro sta je P(k) pa onda kako je procenjujemo. 
+%the degree distribution, we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. It is the probability, $P(k)$, that a randomly chosen node has degree $k$. Similarly, we can order nodes according to their degree and plot the node degree.
 
-If the graph nodes are statistically independent, the degree distribution completely determines the properties of a network \cite{dorogovtsev2002evolution}.%TODO ovo je nejasna recenica
+%If the graph nodes are statistically independent, the degree distribution completely determines the properties of a network \cite{dorogovtsev2002evolution}.%TODO ovo je nejasna recenica
 Here we summarize the forms of degree distributions that are mostly found in the complex network theory:
 \begin{itemize}
 	\item The Poisson distribution. The degree distribution in a random network, where all nodes have the same connecting probability, follows Poisson distribution $P(k)= \frac{(Np)^ke^{-Np}}{k!}$, where $k$ is the mean degree distribution. 
@@ -63,7 +66,7 @@ where $e_{kl}$ is the probability that a randomly selected link connects nodes w
 
 \subsection{Clustering coefficient}
 
-The \textbf{clustering coefficient} is a measure describing the neighbourhood's structure. In networks, exist a tendency to form triangles or clusters \cite{barabasi2016network}. It is common in friendship networks where two friends of one person have a high probability of being friends.%TODO citat nedostaje
+The \textbf{clustering coefficient} is a measure describing the neighbourhood's structure. In networks, exist a tendency to form triangles or clusters \cite{barabasi2016network}. It is common in friendship networks where two friends of one person have a high probability of being friends. %TODO citat nedostaje
 The clustering can be measured by computing the number of links between neighbours of one node,
 \begin{equation}
 c_i=2e_i/(k_i(k_i-1))
@@ -270,17 +273,19 @@ P(k) = \binom{N-1}{k}p^k(1-p)^{N-1-k}
 
 The probability that the node has degree $k$ is given with the second term $p^k$, while the probability that other N-1-k links are not created is given with the third part of the equation. Finally, there are  $\binom{N-1}{k}$ combinations for one node to have $k$ links from $N-1$ possible links. 
 
-The binomial distribution describes very well small networks. For larger networks, we find that they are sparse and that the average degree is much smaller than a number of nodes $\langle k \rangle << N$. In this limit, binomial distribution becomes the Poisson, which now depends only on one parameter $\langle k \rangle$
-%TODO pozvati se na sliku
+The binomial distribution describes very well small networks, see Figure \ref{fig:erdist}. For larger networks, we find that they are sparse and that the average degree is much smaller than a number of nodes $\langle k \rangle << N$. In this limit, binomial distribution becomes the Poisson, as could be shown on Figure \ref{fig:erdist} which now depends only on one parameter $\langle k \rangle$
+
+%%TODO pozvati se na sliku
+%TODO ispraviti naziv na slici
 
 \begin{equation}
-p(k) = \frac{1}{k!}e^{-\langle k \rangle}\langle k \rangle^{k}
+p(k) = \frac{1}{k!}e^{-\langle k \rangle}\langle k \rangle^{k}.
 \end{equation}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{chapter2/ER_dist.pdf}
-	\caption[Degree distribution of Erdős-R\' {e}nyi graph.]{Degree distribution of ER graph. The degree distribution of small networks follows binominal. Larger networks are better approximated with Poison distribution, and degree distribution for fixed average degree $<k>$ becomes independent of the network size.}
+	\caption[Degree distribution of Erdős-R\' {e}nyi graph.]{Degree distribution of ER graph. The degree distribution of small networks follows binomial. Larger networks are better approximated with Poison distribution, and degree distribution for fixed average degree $<k>$ becomes independent of the network size.}
 	\label{fig:erdist}
 \end{figure}
 
@@ -416,7 +421,6 @@ As before, depending on model parameters network evolves into different structur
 	\caption[Phase diagram of aging network model]{Phase diagram of aging network model}
 	\label{fig:diagram}
 \end{figure}
-
 
 \newpage
 
@@ -591,7 +595,7 @@ $$F_{RS}(s) = \frac{1}{N_s}\sum \frac{R_{\nu}(s)}{S_{\nu}(s)} \sim s^H$$
 , where the H is the Hurst exponent. Values $H<1/2$ indicate long-term anti-correlated data while $H>1/2$ long-term positively correlated data \cite{kantelhardt2008fractal}. 
 
 \subsection{Fluctuation analysis}
-%TODO pozvati se na slike
+%%TODO pozvati se na slike
 
 The \textbf{fluctuation analysis} is based on the random walk theory \cite{kantelhardt2008fractal}. For given time series $\{x_i\}$ with length N, we first define the global profile in the form of cumulative sum, equation \ref{eq:cumsum}, where $\langle x\rangle $ represents the average of the time series. 
 
@@ -599,7 +603,7 @@ The \textbf{fluctuation analysis} is based on the random walk theory \cite{kante
 Y(j) = \sum_{i=0} ^j (x_i - \langle x\rangle), \quad j=1, ..., N
 \label{eq:cumsum}
 \end{equation}
-
+Figure \ref{fig:hurst_signals} shows examples of multifractal, monofractal and white noise signal with their global profiles.
 
 \begin{figure}[h]
 	\centering
@@ -616,11 +620,15 @@ F_2(s) = [\frac{1}{2N_s} \sum F^2(\nu,s)]^{1/2}  \sim s^H
 
 Several methods are proposed for calculating the fluctuating function $F^2(\nu, s)$:
 \begin{itemize}
-	\item The most straightforward way to calculate the fluctuations is to consider the difference in the values at the endpoints of each segment. It is the same as eliminating the linear trend from each segment.  
-	
+	\item {The most straightforward way to calculate the fluctuations is to consider the difference in the values at the endpoints of each segment. It is the same as eliminating the linear trend from each segment.  
 	$$ F^2(\nu, s) = [Y(\nu s) - Y((\nu +1)s)]^2$$ 
+    Figure \ref{fig:hurst_detrending} shows the global profile of the multifractal signal, divided in segments of the length $s=1000$. On the top panel, each segment $s$ is approximated with linear function.
+ }
 	
-	\item The trends present in the time series do not have to be linear \cite{hu2001effect}. When dealing with non-stationary time series, removing the polynomial trend within each segment is necessary by least-square fitting. The method is called detrended fluctuation analysis (DFA) \cite{kantelhardt2001detecting}. From each segment $\nu$, local trend $p^m_{\nu, s}$ - polynomial of order m - should be eliminated, and the variance $F^2(\nu, s)$ of a detrended signal is calculated as in equation:
+	\item The trends present in the time series do not have to be linear \cite{hu2001effect}. The middle and bottom panel in Figure \ref{fig:hurst_detrending} show that the segments of the signal could be very well approximated with some higher order functions: quadratic or cubic. In general, using the detrended fluctuation analysis (DFA) we could remove the polynomial trend of the order $m$ \cite{kantelhardt2001detecting}.  
+	% or any polynomial of order $m$. %When dealing with non-stationary time series, removing the polynomial trend within each segment is necessary by least-square fitting. 
+	%The method where polynomial trend is removed is called detrended fluctuation analysis (DFA) .
+	From each segment $\nu$, local trend $p^m_{\nu, s}$ - polynomial of order m - should be eliminated, and the variance $F^2(\nu, s)$ of a detrended signal is calculated as in equation:
 	
 	\begin{equation}
 	F^2(\nu, s) = \frac{1}{s}\sum_{j=1}^s \left[Y(j) - p^m_{\nu, s}(j)\right]^2
@@ -633,7 +641,6 @@ Several methods are proposed for calculating the fluctuating function $F^2(\nu, 
 	\caption{Detrending the signal for the segments of length $s=1000$.}
 	\label{fig:hurst_detrending}
 \end{figure}
-
 
 
 \subsection{Multifractality of the signals}
