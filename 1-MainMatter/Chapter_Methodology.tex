@@ -1,12 +1,14 @@
 \chapter{Methodology} % Main chapter title
 \label{Ch:Method}
 
-\section{The measures of complex networks structure}
+\section{The measures of complex network structure}
 %%TODO 2.1 The measures of the complex networks structure
 
-The complex system can be represented by a complex network $G=(V, E)$, where the elements of a system (atoms, proteins, people) map to a set of $N$ nodes $V=\{1, 2, ..., N\}$. The interactions between elements map to $L$ links between nodes, $E = \{ e_1, e_2... e_L\}$. The \textbf{adjacency matrix} ${A} = N \times N$ has value $1$ if there is a connection between two nodes; otherwise, it is $0$ \cite{boccaletti2006complex}.
-%TODO Ovakvom recenicnom kao da kazemo da samo imamo binarne mreze. Mozda bi bilo bolje da pre toga kazemo da cemo mi koristiti mahom binarne mreze. I onda ova recenica.
-There are a lot of measures to quantify the structure of the network. This section lists the most important measures, such as degree distribution, correlations, and shortest path measures. We also discuss different structures found in the network, such as core-periphery or community structures.  
+The complex system can be represented by a complex network $G=(V, E)$, where the elements of a system (atoms, proteins, people) map to a set of $N$ nodes $V=\{1, 2, ..., N\}$. The interactions between elements map to $L$ links between nodes, $E = \{ e_1, e_2... e_L\}$. There are a lot of measures to quantify the structure of the network. This section describes some of the important measures and their definitions on the undirected and unweighted networks, where the \textbf{adjacency matrix} ${A} = N \times N$ has value $1$ if there is a connection between two nodes; otherwise, it is $0$ \cite{boccaletti2006complex}; as this network representation is mostly used through the thesis. We list degree distribution, correlations, and shortest path measures. We also discuss different structures found in the network, such as core-periphery or community structures.   
+
+%The \textbf{adjacency matrix} ${A} = N \times N$ has value $1$ if there is a connection between two nodes; otherwise, it is $0$ \cite{boccaletti2006complex}.
+%%TODO Ovakvom recenicnom kao da kazemo da samo imamo binarne mreze. Mozda bi bilo bolje da pre toga kazemo da cemo mi koristiti mahom binarne mreze. I onda ova recenica.
+%There are a lot of measures to quantify the structure of the network. This section lists the most important measures, such as degree distribution, correlations, and shortest path measures. We also discuss different structures found in the network, such as core-periphery or community structures.  
 
 \subsection{Degree distribution}
 
@@ -16,7 +18,7 @@ the number of nodes adjacent %attached %TODO adjacent
  
 In the case of regular networks, such as grids, each node has an equal degree, meaning that nodes in the network have similar roles. In the general case, the networks have a more complex structure. If the degree sequence is skewed, we can identify nodes with high-degree (hubs). Removing hubs may partition a connected network into several components \cite{albert2000error}. %%TODO nedostaje citat
  
-The degree distribution is the probability that a randomly chosen node has degree $k$. To estimate the degree distribution, we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. Similarly, we can order nodes according to their degree and plot the node degree.
+The degree distribution is the probability, $P(k)$, that a randomly chosen node has degree $k$. To estimate the degree distribution, we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. Similarly, we can order nodes according to their degree and plot the node degree.
 
 %To estimate %calculate %TODO estimate. 
 %%TODO Bolje bi bilo da uvedes pro sta je P(k) pa onda kako je procenjujemo. 
@@ -66,8 +68,8 @@ where $e_{kl}$ is the probability that a randomly selected link connects nodes w
 
 \subsection{Clustering coefficient}
 
-The \textbf{clustering coefficient} is a measure describing the neighbourhood's structure. In networks, exist a tendency to form triangles or clusters \cite{barabasi2016network}. It is common in friendship networks where two friends of one person have a high probability of being friends. %TODO citat nedostaje
-The clustering can be measured by computing the number of links between neighbours of one node,
+The \textbf{clustering coefficient} is a measure describing the neighbourhood's structure. In networks, exist a tendency to form triangles or clusters \cite{barabasi2016network}. It is common in friendship networks where two friends of one person have a high probability of being friends \cite{mata2020complex}. %. %TODO citat nedostaje
+The clustering can be measured by computing the number of links between neighbours of one node \cite{watts1998collective},
 \begin{equation}
 c_i=2e_i/(k_i(k_i-1))
 \end{equation}
@@ -124,6 +126,8 @@ where  $\mu_j = (\sum_{i=1}^N p_i(j))/N$ is mean shortest path distribution.
 The first term in equation \ref{eq:dmeasure} compares local differences between two networks, and Jensen-Shannon divergence between $N$ shortest path distributions $J(P_{1},..., P_{N})$ is normed with network diameter $d(G)$. The second part determines global differences, computing  ${J(\mu_{G},\mu_{G^{'}})}$ between mean shortest path distributions. The D-measure ranges from $0$ to $1$. The lower D-measure is, the more similar networks are, and structures are isomorphic for D-measure $D = 0$.
 
 \newpage
+
+
 \section{Community structure}
 
 Nodes can be organized into groups called communities. In social networks, communities indicate that people share some common interests, or in biological networks, we can find that genes or neurons with similar functions are grouped. Identifying these hidden blocks can lead to interesting insights into the network. However, the community detection problem does not give a precise characterization of what a community is. A standard definition of a community is densely connected subgraph \cite{fortunato2010community, martin}, meaning that nodes in one community tend to associate, creating the assortative connectivity pattern. On the contrary, nodes could be organized in disassortative communities, where connections between groups are denser. 
@@ -138,12 +142,15 @@ The network with $k$ communities could be represented using $k \times k$ matrix 
 	%TODO ima li ova slika u boji?
 \end{figure}
 
-Different algorithms are used for detecting the community structure in the underlying network, optimizing different objective functions of the network partition. Still, if the ground-truth communities are unknown, there are no guarantees that we will infer the actual number of communities and entirely correct node assignments. Even though community detection algorithms are widely used in complex network analysis as they can give us a better understanding of network structure. %TODO citat
-In this section are explained two community detection models, the first one based on optimizing the modularity function, and the other based on the statistical inference of the Stochastic Block Model (SBM) where is optimized the likelihood function. %TODO citat
+Different algorithms are used for detecting the community structure in the underlying network, optimizing different objective functions of the network partition. Still, if the ground-truth communities are unknown, there are no guarantees that we will infer the actual number of communities and entirely correct node assignments \cite{peel2017ground}. Even though community detection algorithms are widely used in complex network analysis as they can give us a better understanding of network structure \cite{peel2017ground, cherifi2019community}.  %%TODO citat
+In this section are explained two community detection models, the first one based on optimizing the modularity function \cite{fortunato2010community, guimera2004modularity}, and the other based on the statistical inference of the Stochastic Block Model (SBM) where is optimized the likelihood function \cite{fortunato2010community, lee2019review, peixoto2019bayesian}. %%TODO citat
 
 \subsection{Louvain algorithm}
 
-Comparing the link density of the community with the link density obtained for the same group of nodes randomly connected, we could conclude if the community corresponds to the dense subgraph or if the structure is created entirely random. The \textbf{modularity} \cite{guimera2004modularity, good2010performance} is a function that measures the randomness of each partition. %TODO definisati sta je partition
+Comparing the link density of the community with the link density obtained for the same group of nodes randomly connected, we could conclude if the community corresponds to the dense subgraph or if the structure is created entirely random. The \textbf{modularity} \cite{newman2004finding, guimera2004modularity, good2010performance} is a function that measures the randomness of each partition. %TODO definisati sta je partition
+
+%While in graph partitioning the number and the size of communities is predefined, in community detection both parameters are unknown. We call a partition a division of a network into an arbitrary number of groups, such that each node belongs to one and only one group. The number of pos 10 0 sible partitions follows
+
 We can compare the communities with modularity and decide which one is better. For the network with $N$ nodes and $L$ links that partitions into $n_c$ communities. Each community has $N_c$ nodes and $L_c$ links. If the number of connections is larger than the expected number of links between $N_c$ nodes given in the expected node sequence, these nodes may form the community. We calculate the difference between real network connectivity $A_{ij}$ and the expected number of links between nodes if the network is randomly connected, $p_{ij}$. The $p_{ij}$ can be obtained by randomizing the original network but keeping the expected degree of each node unchanged, so $p_{ij}= \frac{k_ik_j}{2L}$.
 
 \begin{equation}
@@ -161,7 +168,9 @@ The higher modularity indicates that nodes are partitioned in better communities
 
 The first algorithm proposed for modularity optimization was \textbf{greedy algorithm}. First, it assigns each node to a community and starts with N communities. Then, we should merge each pair of communities and calculate the modularity difference $\Delta M$. We can join those two communities by identifying the pair for which the difference is the largest. It is repeated until all nodes merge into a single community. The best partition is one with the largest $M$. 
 
-\textbf{Louvain algorithm} \cite{blondel2008fast} is an optimization algorithm with better scalability than the greedy algorithm so it can operate on very large networks. Initially, each node is assigned to a different community, and similar to before, we calculate the difference in the modularity moving nodes to one of their neighbouring community. Then we move node $i$ to the community such that modularity becomes larger. It is applied to all nodes until no further improvement can be made. In the second step, we create a weighted network whose nodes are communities identified during the first step. The weight of the links between communities is the sum of the weights between nodes. The number of links inside the community is given as a weighted self-loop. Then, the first and second spets are repeated until there is no more change in the modularity. %TODO Posto je sekcija o Louain algoritmu, treba dodati jos par paragrafa o njemu. Konkretno njegove karakteristike (otezinjeni, usmereni grafovi...), zatim reyolucija, i najbitnije kako odredjuje optimalan broj zajednica. Pogledaj neki od Santoih poslednjih radoa na temu zajednica.
+\textbf{Louvain algorithm} \cite{blondel2008fast} is an optimization algorithm with better scalability than the greedy algorithm so it can operate on very large networks. Initially, each node is assigned to a different community, and similar to before, we calculate the difference in the modularity moving nodes to one of their neighbouring community. Then we move node $i$ to the community such that modularity becomes larger. It is applied to all nodes until no further improvement can be made. In the second step, we create a weighted network whose nodes are communities identified during the first step. The weight of the links between communities is the sum of the weights between nodes. The number of links inside the community is given as a weighted self-loop. Then, the first and second steps are repeated until there is no more change in the modularity. The number of clusters when algorithm stops is optimal number of communities. 
+
+%TODO Posto je sekcija o Louain algoritmu, treba dodati jos par paragrafa o njemu. Konkretno njegove karakteristike (otezinjeni, usmereni grafovi...), zatim reyolucija, i najbitnije kako odredjuje optimalan broj zajednica. Pogledaj neki od Santoih poslednjih radoa na temu zajednica.
 
 \subsection{Stochastic block model}
 
@@ -211,7 +220,7 @@ L = log(P(G|g, p)) = \sum_{r,s} e_{r,s} ln\frac{e_{rs}}{n_{rs}} + (n_{rs}-e_{rs}
 
 Instead of generating networks, the opposite task is network \textbf{inference}. For a given network $G$, and specified the number of communities $k$, we can use the SBM model to infer the nodes' assignments into groups, so we need to choose vector $g$ and SBM matrix $p$ such that the likelihood for generating network $G$ is maximized. 
 
-The formulation of the SBM model does not consider how to infer the optimal number of groups. Optimizing the likelihood function for different numbers of groups would increase likelihood while each node is not assigned to a different group. In practice, our found community structures for a fixed number of groups, and then the likelihood function could be penalized by the number of model parameters. One approach is calculating the \textbf{Minimum description length (MDL)}. For the variable that occurs with probability P(x), the necessary amount of information to describe it is $-log_2P(x)$. The numerator of posterior probability could be written as
+The formulation of the SBM model does not consider how to infer the optimal number of groups. Optimizing the likelihood function for different numbers of groups would increase likelihood while each node is not assigned to a different group. In practice, our found community structures for a fixed number of groups, and then the likelihood function could be penalized by the number of model parameters. One approach is calculating the \textbf{Minimum description length (MDL)} \cite{peixoto2019bayesian}. For the variable that occurs with probability P(x), the necessary amount of information to describe it is $-log_2P(x)$. The numerator of posterior probability could be written as
 \begin{equation}
 P(G|g)P(g) = P(G|p, g)P(p, g)=2^{-\Sigma}
 \end{equation}
@@ -220,7 +229,6 @@ where $\Sigma$ is the data's description length (DL). It means that if we find t
 This SBM model has many variants motivated by specific properties of real data. For example, for degree heterogeneous networks, there is degree corrected SBM \cite{karrer2011stochastic}. In some social networks, users can belong to more than one group, which can be modelled with mixed membership SBM. Other extensions include application to bipartite, weighted network, and hierarchical model \cite{funke2019}. Many community detection algorithms define the community as an assortative structure. With the SBM model, such limitations do not exist, and it is possible to directly use statistical inference for discovering core-periphery structures or even networks with bipartite structures.  
 
 \subsection{Core-periphery structure}
-
 
 Core-periphery structure describes a network whose nodes are divided into two communities, densely connected core and less connected periphery \cite{csermely2013structure}. With the average probabilities of edges within each group as $p_{11}$ and $p_{22}$, and between groups $p_{12}$, the core-periphery structure is defined under the condition  $p_{11}> p_{12} > p_{22}$. The simple method for finding core-periphery structures assumes that core nodes have higher degrees in the core than in the periphery. Another simple method is to construct k-cores \cite{malliaros2020core}. K core is a group of nodes connected to at least k other members. K-cores form a nested set and become denser with higher k. The core-periphery structure can be detected by optimizing the measure similar to modularity, as defined by Borgatti and Everett \cite{borgatti2000models}. Their goal is to find the division that minimizes the number of edges in the periphery. So they define the score function as equal to the number of edges in the periphery minus the expected number of such edges placed randomly. $\rho = \frac{1}{2}\sum_{ij}(A_{ij}-p)g_ig_j$.
 
@@ -231,6 +239,8 @@ Probability of having model parameters $\theta, p$ given network $G$ is proporti
 \newpage
 \section{Network models}
 %TODO Ovde treba ubaciti samo jedan pasus zasto su nam bitni modeli. Cemu sluze, zasto ih pravimo i slicno.
+
+The interest in analyzing real-world networks allowed us to describe their statistical properties and formulate models that can capture essential features in the data. The network models are used to understand the origin of the properties of the complex networks and so on to describe the real data. Models of evolving random networks try to capture the mechanisms of network creation and understand their influence on the network structure. In this section are explained the most important models of complex networks. The random and small-world network models are static as network size stays constant. The random model was important historically. On the other hand, the small world model try to understand emergence of network features, such as high clustering and small distances.  For the first time, the Barabasi-Albert model introduced the growth of the networks, representing the class of evolving network models.
 
 \subsection{Random network model}
 
@@ -276,7 +286,7 @@ The probability that the node has degree $k$ is given with the second term $p^k$
 The binomial distribution describes very well small networks, see Figure \ref{fig:erdist}. For larger networks, we find that they are sparse and that the average degree is much smaller than a number of nodes $\langle k \rangle << N$. In this limit, binomial distribution becomes the Poisson, as could be shown on Figure \ref{fig:erdist} which now depends only on one parameter $\langle k \rangle$
 
 %%TODO pozvati se na sliku
-%TODO ispraviti naziv na slici
+%%TODO ispraviti naziv na slici
 
 \begin{equation}
 p(k) = \frac{1}{k!}e^{-\langle k \rangle}\langle k \rangle^{k}.
@@ -304,7 +314,7 @@ Inspired by the idea that real-world networks are highly clustered, and the aver
 	\item For each link in the network, with probability $p$, we choose a random node to rewire the link. This makes long-distance nodes connect, decreasing the network's average path length, Figure \ref{fig:wsgraph}.
 \end{itemize}
 
-The model interpolates between the regular graph when the probability is $p=0$ and the random graph with $p=1$ when all links are randomly rewired. Short distances and high clustering are present in the network  for the critical probabilities ranging from $p \approx 0.01 - 0.1$ \cite{watts1998collective}. %%TODO kolika je verovatnoca
+The model interpolates between the regular graph when the probability is $p=0$ and the random graph with $p=1$ when all links are randomly rewired. Short distances and high clustering are present in the network  for the relatively small probabilities ranging from $p \approx 0.01 - 0.1$ \cite{watts1998collective}. %%TODO kolika je verovatnoca
 
 \begin{figure}[H]
 	\centering
@@ -345,13 +355,21 @@ k_i(t) = m \left(\frac{t}{t_i}\right)^{\frac{1}{2}}
 \end{equation}
 
 
-Degree distribution follows power-law, and for large k is approximated with $P(k) = k^{-\gamma}$, such that $\gamma=3$. More precisely, the degree distribution has form \cite{krapivsky2010kinetic}:
+\textbf{Degree distribution follows power-law}, and for large k is approximated with $P(k) = k^{-\gamma}$, such that $\gamma=3$. More precisely, the degree distribution has form \cite{krapivsky2010kinetic}:
 
 \begin{equation}
-P(k) = \frac{2m(m+1)}{k(k+1)(k+2)}
+P(k) = \frac{2m(m+1)}{k(k+1)(k+2)} \sim k^{-3}.
 \end{equation}
 
-For large $k$, it is exactly the power law. It is also independent of the time and size of the system, meaning the emergence of a stationary scale-free state. Distributions do not depend on the N. If we vary $m$, the slope of distributions is the same, but they are parallel. After rescaling $p(k)/m^2$, they fall on the same line \cite{barabasi2016network}.
+For large $k$, it is exactly the power law, as shown in Figure \ref{fig:bamodel} . It is also independent of the time and size of the system, meaning the emergence of a stationary scale-free state. Distributions do not depend on the N. If we vary $m$, the slope of distributions is the same, but they are parallel. After rescaling $p(k)/m^2$, they fall on the same line \cite{barabasi2016network}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{chapter2/BAmodel.pdf}
+	\caption[Barabasi-Albert model]{Barabasi-Alber model. The left panel shows the BA network, with 100 nodes. The right panel shows the degree distribution for BA network of $10^4$ nodes, that follows power-law.}
+	\label{fig:bamodel}
+\end{figure}
+
 % TODO Glavna karakteristika BA modela je power-law degree distribution, To ovde nije ni priblizno ocigledno. Bilo bi lepo da postoji i slika., 
 
 %stationary degree distribution does not depend on the system parameters, so different systems have similar behaviour
@@ -673,7 +691,6 @@ For the monofractal time series, H(q) is independent of q, meaning that scaling 
 \section{Dynamical reputation model} \label{sec:met_dibrm}
 %TODO Ok je da odredjivanje parametara bude u apednix-u ali to moras da kazes u samoj sekciji. Ja bih razmislila da moza odredjivanje parametara ne bude u apendixu nego ovde. I to je opcija.
 
-
 Consider a system where each component has an activity pattern that could be mapped to the discrete signal, representing the moments when the event happened, such as the activity pattern when users are sending an email or communicating, sharing opinions and information within the community. Users' behaviour directly influences their position in the community, which is measured through reputation. The trust among users depends on the amount of interaction between them, which means the trust changes over time. The computational model needs to capture the dynamic property of the trust. Furthermore, the important property of the trust is that it is easier lost than gained; the frequency of interaction also matters. The trust between users who interact frequently should increase faster than between users who rarely interact. 
 
 With Dynamic Interaction Based Reputation Model (DIBRM) \cite{melnikov2018toward}, we can quantify the user reputation $R_n$ after each interaction using equation \ref{eq:tn}, where $n$ is the number of interaction $n\in{1, N}$.
@@ -692,8 +709,6 @@ I_n  = I_{b_{n}}(1 +  \alpha  (1-\frac{1}{A_n+1}))
 
 When $\Delta_{n}<1$, a user is frequently active, meaning that the time between two interactions is less than the characteristic time window. The number of sequential activities $A_n$ increases by 1. On the other hand, when $\Delta_n>1$ is large, the reputation decays, while the number of activities resets to $A_n=1$. 
 
-
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.45\textwidth]{chapter2/DIBRM.pdf}
@@ -711,7 +726,7 @@ For $\beta$ values below $0.96$, the decay is fast, and within two to four month
 reduced below the threshold. On the other hand, with values of $\beta$, the decay process is more differentiated, and the high
 reputation becomes harder to lose, surviving up to a year of inactivity. For $\beta$ equal to $0.96$, reputation with starting value $5$ needs around one month to decay below the threshold. For higher reputations, $500$ or $1000$, the decay period is around $5$ months. 
 
-In this model, the user's reputation changes continuously through time, decreases when the user is inactive and grows with frequent and constant user contribution. The highest growth of a user's reputation is found through bursts of activity followed by a short period of inactivity. With model parameters, $I_{bn}, t_a, \alpha, \beta$, the dynamic of user reputation may be controlled and adapted to different communities. If the community has its reputation system, we can also fit the model parameters to mimic the actual reputation dynamic. 
+In this model, the user's reputation changes continuously through time, decreases when the user is inactive and grows with frequent and constant user contribution. The highest growth of a user's reputation is found through bursts of activity followed by a short period of inactivity. With model parameters, $I_{bn}, t_a, \alpha, \beta$, the dynamic of user reputation may be controlled and adapted to different communities. If the community has its reputation system, we can also fit the model parameters to mimic the actual reputation dynamic.
 
 
 

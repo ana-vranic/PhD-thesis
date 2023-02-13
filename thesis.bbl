@@ -318,11 +318,6 @@ R{\'e}ka Albert, Hawoong Jeong, and Albert-L{\'a}szl{\'o} Barab{\'a}si.
 \newblock Error and attack tolerance of complex networks.
 \newblock {\em nature}, 406(6794):378--382, 2000.
 
-\bibitem{dorogovtsev2002evolution}
-Sergey~N Dorogovtsev and Jose~FF Mendes.
-\newblock Evolution of networks.
-\newblock {\em Advances in physics}, 51(4):1079--1187, 2002.
-
 \bibitem{van2010graph}
 Maarten Van~Steen.
 \newblock Graph theory and complex networks.
@@ -337,6 +332,11 @@ Juyong Park and Mark~EJ Newman.
 Mark~EJ Newman.
 \newblock Assortative mixing in networks.
 \newblock {\em Physical review letters}, 89(20):208701, 2002.
+
+\bibitem{mata2020complex}
+Ang{\'e}lica Sousa~da Mata.
+\newblock Complex networks: a mini-review.
+\newblock {\em Brazilian Journal of Physics}, 50:658--672, 2020.
 
 \bibitem{newman2009random}
 Mark~EJ Newman.
@@ -365,10 +365,38 @@ Martin Rosvall, Jean{-}Charles Delvenne, Michael~T. Schaub, and Renaud
 \newblock Different approaches to community detection.
 \newblock {\em CoRR}, abs/1712.06468, 2017.
 
+\bibitem{peel2017ground}
+Leto Peel, Daniel~B Larremore, and Aaron Clauset.
+\newblock The ground truth about metadata and community detection in networks.
+\newblock {\em Science advances}, 3(5):e1602548, 2017.
+
+\bibitem{cherifi2019community}
+Hocine Cherifi, Gergely Palla, Boleslaw~K Szymanski, and Xiaoyan Lu.
+\newblock On community structure in complex networks: challenges and
+  opportunities.
+\newblock {\em Applied Network Science}, 4(1):1--35, 2019.
+
 \bibitem{guimera2004modularity}
 Roger Guimera, Marta Sales-Pardo, and Lu{\'\i}s A~Nunes Amaral.
 \newblock Modularity from fluctuations in random graphs and complex networks.
 \newblock {\em Physical Review E}, 70(2):025101, 2004.
+
+\bibitem{lee2019review}
+Clement Lee and Darren~J Wilkinson.
+\newblock A review of stochastic block models and extensions for graph
+  clustering.
+\newblock {\em Applied Network Science}, 4(1):1--50, 2019.
+
+\bibitem{peixoto2019bayesian}
+Tiago~P Peixoto.
+\newblock Bayesian stochastic blockmodeling.
+\newblock {\em Advances in network clustering and blockmodeling}, pages
+  289--332, 2019.
+
+\bibitem{newman2004finding}
+Mark~EJ Newman and Michelle Girvan.
+\newblock Finding and evaluating community structure in networks.
+\newblock {\em Physical review E}, 69(2):026113, 2004.
 
 \bibitem{good2010performance}
 Benjamin~H. Good, Yves-Alexandre de~Montjoye, and Aaron Clauset.
@@ -380,12 +408,6 @@ Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
 \newblock Fast unfolding of communities in large networks.
 \newblock {\em Journal of statistical mechanics: theory and experiment},
   2008(10):P10008, 2008.
-
-\bibitem{lee2019review}
-Clement Lee and Darren~J Wilkinson.
-\newblock A review of stochastic block models and extensions for graph
-  clustering.
-\newblock {\em Applied Network Science}, 4(1):1--50, 2019.
 
 \bibitem{rosvall2019different}
 Martin Rosvall, Jean-Charles Delvenne, Michael~T Schaub, and Renaud Lambiotte.
