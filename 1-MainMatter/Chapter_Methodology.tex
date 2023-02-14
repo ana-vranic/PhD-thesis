@@ -127,7 +127,6 @@ The first term in equation \ref{eq:dmeasure} compares local differences between 
 
 \newpage
 
-
 \section{Community structure}
 
 Nodes can be organized into groups called communities. In social networks, communities indicate that people share some common interests, or in biological networks, we can find that genes or neurons with similar functions are grouped. Identifying these hidden blocks can lead to interesting insights into the network. However, the community detection problem does not give a precise characterization of what a community is. A standard definition of a community is densely connected subgraph \cite{fortunato2010community, martin}, meaning that nodes in one community tend to associate, creating the assortative connectivity pattern. On the contrary, nodes could be organized in disassortative communities, where connections between groups are denser. 
@@ -148,6 +147,7 @@ In this section are explained two community detection models, the first one base
 \subsection{Louvain algorithm}
 
 Comparing the link density of the community with the link density obtained for the same group of nodes randomly connected, we could conclude if the community corresponds to the dense subgraph or if the structure is created entirely random. The \textbf{modularity} \cite{newman2004finding, guimera2004modularity, good2010performance} is a function that measures the randomness of each partition. %TODO definisati sta je partition
+Partition is division of the network into groups. As there are too many possible ways to partition network
 
 %While in graph partitioning the number and the size of communities is predefined, in community detection both parameters are unknown. We call a partition a division of a network into an arbitrary number of groups, such that each node belongs to one and only one group. The number of pos 10 0 sible partitions follows
 
@@ -235,12 +235,11 @@ Core-periphery structure describes a network whose nodes are divided into two co
 Another way to detect core-periphery structure is to use the inference method based on fits to a Stochastic Block Model (SBM) \cite{zhang2015identification, karrer2011stochastic}. In this method, we fit the observed network to a block model with two groups, such that edge probabilities have the form $p_{11}> p_{12} > p_{22}$. Vector $\theta_i = r$ indicates that node $i$ is in block $r$, while SBM matrix $\{p\}_{2x2}$, specify the probability $p_{rs}$ that nodes from group $r$ are connected to nodes in group $s$. The SBM model is looking for the most probable model that can reproduce a given network G \cite{gallagher2020clarified}. 
 Probability of having model parameters $\theta, p$ given network $G$ is proportional to the likelihood of generating network $G$, prior of SBM matrix $P(p)$ and prior on block assignments $P(\theta)$: $P(\theta, p| G) = P(G | \theta , p) P(p) P(\theta)$, while the likelihood function takes following form: $P(G | \theta , p) = \prod_{i<j} p_{r_is_j}^{A_{ij}}(1-p_{r_is_j})^{1-A_{ij}}$, where $A_{ij}$ is a number of edges between nodes $i$ and $j$. The prior $P(p)$ is modified for core-periphery model such that $P(p)  \sim I_{0<p_{22}<p_{12}<p_{11}<1}$, while prior  $P(\theta) $ consists of three parts: probability of having $2$ blocks; given the number of layers probability $P(n|2)$ of having groups of sizes ${n_1, n_2}$ and the probability $P(\theta|n)$ of having particular assignments of nodes to blocks. 
 
-
 \newpage
 \section{Network models}
 %TODO Ovde treba ubaciti samo jedan pasus zasto su nam bitni modeli. Cemu sluze, zasto ih pravimo i slicno.
 
-The interest in analyzing real-world networks allowed us to describe their statistical properties and formulate models that can capture essential features in the data. The network models are used to understand the origin of the properties of the complex networks and so on to describe the real data. Models of evolving random networks try to capture the mechanisms of network creation and understand their influence on the network structure. In this section are explained the most important models of complex networks. The random and small-world network models are static as network size stays constant. The random model was important historically. On the other hand, the small world model try to understand emergence of network features, such as high clustering and small distances.  For the first time, the Barabasi-Albert model introduced the growth of the networks, representing the class of evolving network models.
+The interest in analyzing real-world networks allowed us to describe their statistical properties and formulate models that can explain essential features in the data. With network models we can understand the origins of the properties of the complex networks, what mechanisms influence the generation of the network and how network properties emerge. In this section are considered random network model and small-world model, which are static models, as the number of nodes are fixed. Even though random network is not applicable on the real networks it is important historically as one of the first network models. The small-world model explains how properties of real networks such as high clustering and small distances may emerge. On the other hand, generative models, as models of preferential attachment, where network grows according to specific growing rules are important for understanding how network structure is created. They allow as to explore different growing mechanisms and comparing obtained networks with real data we can conclude which growth processes have influence on the network structure.     
 
 \subsection{Random network model}
 
@@ -354,14 +353,13 @@ Note that the new node that arrived at time point $t_i$ has degree $m$, as it li
 k_i(t) = m \left(\frac{t}{t_i}\right)^{\frac{1}{2}}
 \end{equation}
 
-
-\textbf{Degree distribution follows power-law}, and for large k is approximated with $P(k) = k^{-\gamma}$, such that $\gamma=3$. More precisely, the degree distribution has form \cite{krapivsky2010kinetic}:
-
+With this equation we can calculate the probability that node has degree smaller than k  as \\ $P[k_i(t)<k] = P(t_i > \frac{m^{1/\beta}t}{k^{1/\beta}})$. Assuming that we add nodes in constant time intervals we have $P(t_i) = 1/(m_0+t)$. The cumulative probability is then  $P(t_i>\frac{m^{1/\beta t}}{k^{1/\beta}}) = 1 - \frac{t}{t+m_0}\left(\frac{m}{k}\right)^{1/\beta} $.
+Finally, the degree distribution has following form
 \begin{equation}
-P(k) = \frac{2m(m+1)}{k(k+1)(k+2)} \sim k^{-3}.
+P(k) = \frac{\partial P[k_i(t)<k]}{ \partial k} \sim 2m^2 k^{-3} 
 \end{equation}
 
-For large $k$, it is exactly the power law, as shown in Figure \ref{fig:bamodel} . It is also independent of the time and size of the system, meaning the emergence of a stationary scale-free state. Distributions do not depend on the N. If we vary $m$, the slope of distributions is the same, but they are parallel. After rescaling $p(k)/m^2$, they fall on the same line \cite{barabasi2016network}.
+\textbf{Degree distribution follows power-law}, and for large k is approximated with $P(k) = k^{-\gamma}$, where $\gamma=3$. As the network grows, nodes with larger degrees become bigger and we end up with few nodes with many links, called hubs. Figure \ref{fig:bamodel} - left pane shows generated BA network, consisting of $N=100$ nodes, where even on this scale we can notice emergence of hubs. The right pane of Figure \ref{fig:bamodel} shows obtained degree distribution of larger network with $N=10^4$ nodes. Degree distribution is also independent of the time and size of the system, meaning the emergence of a stationary scale-free state.  If we vary $m$, the slope of distributions is the same, but they are parallel. After rescaling $p(k)/m^2$, they fall on the same line \cite{barabasi2016network}.  
 
 \begin{figure}[h]
 	\centering
@@ -370,11 +368,18 @@ For large $k$, it is exactly the power law, as shown in Figure \ref{fig:bamodel}
 	\label{fig:bamodel}
 \end{figure}
 
+%More precisely, the degree distribution has form \cite{krapivsky2010kinetic}:
+%\begin{equation}
+%P(k) = \frac{2m(m+1)}{k(k+1)(k+2)} \sim k^{-3}.
+%\end{equation}
+%For large $k$, it is exactly the power law, as shown in Figure \ref{fig:bamodel} . 
+%Distributions do not depend on the N.
 % TODO Glavna karakteristika BA modela je power-law degree distribution, To ovde nije ni priblizno ocigledno. Bilo bi lepo da postoji i slika., 
 
 %stationary degree distribution does not depend on the system parameters, so different systems have similar behaviour
-
-As the network grows, nodes with larger degrees become bigger, so we end up with few nodes with many links, called hubs. The \textbf{network diameter}, represents the maximum distance in network, $d \sim \frac{lnN}{lnlnN}$ \cite{bollobas2003mathematical}. The diameter grows slower than $lnN$, making the distances in the BA model smaller than in the random graph. The difference is found for large N. It is known that the BA network has hubs that shorten the path between less connected nodes. Also, if hubs are removed from the network, the network easily partitions into several components, losing its properties. The \textbf{clustering coefficient} of the BA model follows $C \sim \frac{ln N^2}{N}$ \cite{bollobas2003mathematical}. It differs from clustering found in random networks, and BA networks are generally more clustered. 
+%As the network grows, nodes with larger degrees become bigger, so we end up with few nodes with many links, called hubs.
+ 
+The \textbf{network diameter}, represents the maximum distance in network, $d \sim \frac{lnN}{lnlnN}$ \cite{bollobas2003mathematical}. The diameter grows slower than $lnN$, making the distances in the BA model smaller than in the random graph. The difference is found for large N. It is known that the BA network has hubs that shorten the path between less connected nodes. Also, if hubs are removed from the network, the network easily partitions into several components, losing its properties. The \textbf{clustering coefficient} of the BA model follows $C \sim \frac{ln N^2}{N}$ \cite{bollobas2003mathematical}. It differs from clustering found in random networks, and BA networks are generally more clustered. 
 
 The combination of the growth and preferential attachment linking is crucial for getting scale-free networks \cite{barabasi1999}. For example, eliminating the preferential attachment; in a growing network with random linking, degree distribution is stationary but follows exponential. In contrast, the absence of growth leads to the non-stationary degree distribution. When a number of nodes is fixed, the network grows only in the number of links, such that randomly chosen node $i$ connects to node $j$ according to probability $\Pi$. In the beginning, the degree distribution follows the power law, the same as in the BA model. As more links are added to the network, the distribution changes its shape; first, the peak appears, while at the end network becomes a complete graph, where all nodes have the same degree.  
 
@@ -726,7 +731,7 @@ For $\beta$ values below $0.96$, the decay is fast, and within two to four month
 reduced below the threshold. On the other hand, with values of $\beta$, the decay process is more differentiated, and the high
 reputation becomes harder to lose, surviving up to a year of inactivity. For $\beta$ equal to $0.96$, reputation with starting value $5$ needs around one month to decay below the threshold. For higher reputations, $500$ or $1000$, the decay period is around $5$ months. 
 
-In this model, the user's reputation changes continuously through time, decreases when the user is inactive and grows with frequent and constant user contribution. The highest growth of a user's reputation is found through bursts of activity followed by a short period of inactivity. With model parameters, $I_{bn}, t_a, \alpha, \beta$, the dynamic of user reputation may be controlled and adapted to different communities. If the community has its reputation system, we can also fit the model parameters to mimic the actual reputation dynamic.
+In this model, the user's reputation changes continuously through time, decreases when the user is inactive and grows with frequent and constant user contribution. The highest growth of a user's reputation is found through bursts of activity followed by a short period of inactivity. With model parameters, $I_{bn}, t_a, \alpha, \beta$, the dynamic of user reputation may be controlled and adapted to different communities. If the community has its reputation system, we can also fit the model parameters to mimic the actual reputation dynamic. In this thesis DIBRM model is used to analyse Stack Exchange communities, Chapter \ref{Ch:Trust}, while in Appendix \ref{App:parameters} we suggest procedure to estimate the model parameters for this specific system.
 
 
 
