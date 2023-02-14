@@ -409,6 +409,22 @@ Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
 \newblock {\em Journal of statistical mechanics: theory and experiment},
   2008(10):P10008, 2008.
 
+\bibitem{fortunato2007resolution}
+Santo Fortunato and Marc Barthélemy.
+\newblock Resolution limit in community detection.
+\newblock {\em Proceedings of the National Academy of Sciences}, 104(1):36--41,
+  2007.
+
+\bibitem{reichardt2006statistical}
+J{\"o}rg Reichardt and Stefan Bornholdt.
+\newblock Statistical mechanics of community detection.
+\newblock {\em Physical review E}, 74(1):016110, 2006.
+
+\bibitem{newman2004analysis}
+Mark~EJ Newman.
+\newblock Analysis of weighted networks.
+\newblock {\em Physical review E}, 70(5):056131, 2004.
+
 \bibitem{rosvall2019different}
 Martin Rosvall, Jean-Charles Delvenne, Michael~T Schaub, and Renaud Lambiotte.
 \newblock Different approaches to community detection.
@@ -453,11 +469,6 @@ B{\'e}la Bollob{\'a}s and Oliver~M Riordan.
 \newblock Mathematical results on scale-free random graphs.
 \newblock {\em Handbook of graphs and networks: from the genome to the
   internet}, pages 1--34, 2003.
-
-\bibitem{krapivsky2010kinetic}
-Pavel~L Krapivsky, Sidney Redner, and Eli Ben-Naim.
-\newblock {\em A kinetic view of statistical physics}.
-\newblock Cambridge University Press, 2010.
 
 \bibitem{krapivsky2001}
 Paul~L Krapivsky and Sidney Redner.

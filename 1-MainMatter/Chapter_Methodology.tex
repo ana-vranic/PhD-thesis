@@ -166,11 +166,17 @@ M=\sum_{c=1}^{n} [\frac{L_c}{L} - (\frac{k_c}{2L})^2]
 
 The higher modularity indicates that nodes are partitioned in better communities. When we put all nodes into only one community $M=0$, otherwise, if each node is the community itself $L_c=0$ and the sum is negative. Maximum network modularity indicates the best partions. As too many possible partitions exist, we need an algorithmic approach to identify the best separation. 
 
-The first algorithm proposed for modularity optimization was \textbf{greedy algorithm}. First, it assigns each node to a community and starts with N communities. Then, we should merge each pair of communities and calculate the modularity difference $\Delta M$. We can join those two communities by identifying the pair for which the difference is the largest. It is repeated until all nodes merge into a single community. The best partition is one with the largest $M$. 
+The first algorithm proposed for modularity optimization was \textbf{greedy algorithm}. First, it assigns each node to a community and starts with N communities. Then, we should merge each pair of communities and calculate the modularity difference $\Delta M$. We can join those two communities by identifying the pair for which the difference is the largest. It is repeated until all nodes merge into a single community. The best partition is one with the largest $M$.
+
+The community detection algorithms tend to merge small communtites, that should be independent \cite{fortunato2007resolution}. This consequence is easyly seen in graph consisting of N connected cliques, where higher moddularity is if two adjacent cliques are merged into communities, insted having each cliqe as single community. This lead to the modification of the modularity function as $Q= \frac{1}{2m}\sum_{i,j}[A-{i,j} - \gamma \frac{k_ik_j}{2m}]$, where $\gamma$ is resolution parameter \cite{reichardt2006statistical}. 
+
+The Newman showed that modularity function holds for weighted and multi-graphs. \cite{newman2004analysis} 
 
 \textbf{Louvain algorithm} \cite{blondel2008fast} is an optimization algorithm with better scalability than the greedy algorithm so it can operate on very large networks. Initially, each node is assigned to a different community, and similar to before, we calculate the difference in the modularity moving nodes to one of their neighbouring community. Then we move node $i$ to the community such that modularity becomes larger. It is applied to all nodes until no further improvement can be made. In the second step, we create a weighted network whose nodes are communities identified during the first step. The weight of the links between communities is the sum of the weights between nodes. The number of links inside the community is given as a weighted self-loop. Then, the first and second steps are repeated until there is no more change in the modularity. The number of clusters when algorithm stops is optimal number of communities. 
 
 %TODO Posto je sekcija o Louain algoritmu, treba dodati jos par paragrafa o njemu. Konkretno njegove karakteristike (otezinjeni, usmereni grafovi...), zatim reyolucija, i najbitnije kako odredjuje optimalan broj zajednica. Pogledaj neki od Santoih poslednjih radoa na temu zajednica.
+
+
 
 \subsection{Stochastic block model}
 
