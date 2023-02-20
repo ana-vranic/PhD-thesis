@@ -11,6 +11,46 @@ Stefan Thurner, Rudolf Hanel, and Peter Klimekl.
 \newblock In {\em {Introduction to the Theory of Complex Systems}}. Oxford
   University Press, 09 2018.
 
+\bibitem{myers2014}
+S.~A. Myers and J.~Leskovec.
+\newblock {The bursty dynamics of the twitter information network}.
+\newblock In {\em Proceedings of the 23rd international conference on World
+  wide web}, pages 913--924, 2014.
+
+\bibitem{sarigol2014}
+E.~Sarig{\"o}l, R.~Pfitzner, I.~Scholtes, A.~Garas, and F.~Schweitzer.
+\newblock {Predicting scientific success based on coauthorship networks}.
+\newblock {\em EPJ Data Science}, 3:9, 2014.
+
+\bibitem{fraiman2009ising}
+D.~Fraiman, P.~Balenzuela, J.~Foss, and D.~R. Chialvo.
+\newblock {Ising-like dynamics in large-scale functional brain networks}.
+\newblock {\em Phys. Rev. E}, 79:061922, 2009.
+
+\bibitem{schneider2011modeling}
+C.~M. Schneider, L.~de~Arcangelis, and H.~J. Herrmann.
+\newblock {Modeling the topology of protein interaction networks}.
+\newblock {\em Phys. Rev. E}, 84:016112, 2011.
+
+\bibitem{costa2007characterization}
+L~da~F Costa, Francisco~A Rodrigues, Gonzalo Travieso, and Paulino~Ribeiro
+  Villas~Boas.
+\newblock Characterization of complex networks: A survey of measurements.
+\newblock {\em Advances in physics}, 56(1):167--242, 2007.
+
+\bibitem{costa2011analyzing}
+Luciano da~Fontoura Costa, Osvaldo~N Oliveira~Jr, Gonzalo Travieso,
+  Francisco~Aparecido Rodrigues, Paulino~Ribeiro Villas~Boas, Lucas Antiqueira,
+  Matheus~Palhares Viana, and Luis~Enrique Correa~Rocha.
+\newblock Analyzing and modeling real-world phenomena with complex networks: a
+  survey of applications.
+\newblock {\em Advances in Physics}, 60(3):329--412, 2011.
+
+\bibitem{newman2003structure}
+M.~E.~J. Newman.
+\newblock {The structure and function of complex networks}.
+\newblock {\em SIAM review}, 45:167--256, 2003.
+
 \bibitem{ladyman2013}
 James Ladyman, James Lambert, and Karoline Wiesner.
 \newblock What is a complex system?
@@ -20,6 +60,16 @@ James Ladyman, James Lambert, and Karoline Wiesner.
 V.~Latora, V.~Nicosia, and G.~Russo.
 \newblock Complex networks: Principles, methods and applications.
 \newblock 2017.
+
+\bibitem{sen2014sociophysics}
+Parongama Sen and Bikas~K Chakrabarti.
+\newblock {\em Sociophysics: an introduction}.
+\newblock Oxford University Press, 2014.
+
+\bibitem{schweitzer2018sociophysics}
+Frank Schweitzer.
+\newblock Sociophysics.
+\newblock {\em Phys. Today}, 71(2):40, 2018.
 
 \bibitem{binney1992}
 J.~J. Binney, N.~J. Dowrick, A.~J. Fisher, and M.~E.~J. Newman.
@@ -77,46 +127,6 @@ Michael~HR Stanley, Luis~AN Amaral, Sergey~V Buldyrev, Shlomo Havlin, Heiko
 V.~Verbavatz and M.~Barthelemy.
 \newblock {The growth equation of cities}.
 \newblock {\em Nature}, 587:397--401, 2020.
-
-\bibitem{myers2014}
-S.~A. Myers and J.~Leskovec.
-\newblock {The bursty dynamics of the twitter information network}.
-\newblock In {\em Proceedings of the 23rd international conference on World
-  wide web}, pages 913--924, 2014.
-
-\bibitem{sarigol2014}
-E.~Sarig{\"o}l, R.~Pfitzner, I.~Scholtes, A.~Garas, and F.~Schweitzer.
-\newblock {Predicting scientific success based on coauthorship networks}.
-\newblock {\em EPJ Data Science}, 3:9, 2014.
-
-\bibitem{fraiman2009ising}
-D.~Fraiman, P.~Balenzuela, J.~Foss, and D.~R. Chialvo.
-\newblock {Ising-like dynamics in large-scale functional brain networks}.
-\newblock {\em Phys. Rev. E}, 79:061922, 2009.
-
-\bibitem{schneider2011modeling}
-C.~M. Schneider, L.~de~Arcangelis, and H.~J. Herrmann.
-\newblock {Modeling the topology of protein interaction networks}.
-\newblock {\em Phys. Rev. E}, 84:016112, 2011.
-
-\bibitem{costa2007characterization}
-L~da~F Costa, Francisco~A Rodrigues, Gonzalo Travieso, and Paulino~Ribeiro
-  Villas~Boas.
-\newblock Characterization of complex networks: A survey of measurements.
-\newblock {\em Advances in physics}, 56(1):167--242, 2007.
-
-\bibitem{costa2011analyzing}
-Luciano da~Fontoura Costa, Osvaldo~N Oliveira~Jr, Gonzalo Travieso,
-  Francisco~Aparecido Rodrigues, Paulino~Ribeiro Villas~Boas, Lucas Antiqueira,
-  Matheus~Palhares Viana, and Luis~Enrique Correa~Rocha.
-\newblock Analyzing and modeling real-world phenomena with complex networks: a
-  survey of applications.
-\newblock {\em Advances in Physics}, 60(3):329--412, 2011.
-
-\bibitem{newman2003structure}
-M.~E.~J. Newman.
-\newblock {The structure and function of complex networks}.
-\newblock {\em SIAM review}, 45:167--256, 2003.
 
 \bibitem{huberman1999}
 Bernardo~A Huberman and Lada~A Adamic.
@@ -365,6 +375,11 @@ Martin Rosvall, Jean{-}Charles Delvenne, Michael~T. Schaub, and Renaud
 \newblock Different approaches to community detection.
 \newblock {\em CoRR}, abs/1712.06468, 2017.
 
+\bibitem{fortunato2016community}
+Santo Fortunato and Darko Hric.
+\newblock Community detection in networks: A user guide.
+\newblock {\em Physics reports}, 659:1--44, 2016.
+
 \bibitem{peel2017ground}
 Leto Peel, Daniel~B Larremore, and Aaron Clauset.
 \newblock The ground truth about metadata and community detection in networks.
@@ -403,6 +418,16 @@ Benjamin~H. Good, Yves-Alexandre de~Montjoye, and Aaron Clauset.
 \newblock Performance of modularity maximization in practical contexts.
 \newblock {\em Phys. Rev. E}, 81:046106, Apr 2010.
 
+\bibitem{barabasi2014network}
+A.-L. Barab{\'a}si.
+\newblock {Network science book}.
+\newblock {\em Network Science}, 625, 2014.
+
+\bibitem{newman2004analysis}
+Mark~EJ Newman.
+\newblock Analysis of weighted networks.
+\newblock {\em Physical review E}, 70(5):056131, 2004.
+
 \bibitem{blondel2008fast}
 Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
 \newblock Fast unfolding of communities in large networks.
@@ -419,11 +444,6 @@ Santo Fortunato and Marc Barthélemy.
 J{\"o}rg Reichardt and Stefan Bornholdt.
 \newblock Statistical mechanics of community detection.
 \newblock {\em Physical review E}, 74(1):016110, 2006.
-
-\bibitem{newman2004analysis}
-Mark~EJ Newman.
-\newblock Analysis of weighted networks.
-\newblock {\em Physical review E}, 70(5):056131, 2004.
 
 \bibitem{rosvall2019different}
 Martin Rosvall, Jean-Charles Delvenne, Michael~T Schaub, and Renaud Lambiotte.
@@ -464,17 +484,6 @@ Xiao Zhang, Travis Martin, and Mark~EJ Newman.
 \newblock Identification of core-periphery structure in networks.
 \newblock {\em Physical Review E}, 91(3):032803, 2015.
 
-\bibitem{bollobas2003mathematical}
-B{\'e}la Bollob{\'a}s and Oliver~M Riordan.
-\newblock Mathematical results on scale-free random graphs.
-\newblock {\em Handbook of graphs and networks: from the genome to the
-  internet}, pages 1--34, 2003.
-
-\bibitem{krapivsky2001}
-Paul~L Krapivsky and Sidney Redner.
-\newblock Organization of growing random networks.
-\newblock {\em Physical Review E}, 63(6):066123, 2001.
-
 \bibitem{mitzenmacher2004brief}
 Michael Mitzenmacher.
 \newblock A brief history of generative models for power law and lognormal
@@ -505,6 +514,17 @@ J.~Nair, A.~Wierman, and B.~Zwart.
 Aaron Clauset, Cosma~Rohilla Shalizi, and Mark~EJ Newman.
 \newblock Power-law distributions in empirical data.
 \newblock {\em SIAM review}, 51(4):661--703, 2009.
+
+\bibitem{bollobas2003mathematical}
+B{\'e}la Bollob{\'a}s and Oliver~M Riordan.
+\newblock Mathematical results on scale-free random graphs.
+\newblock {\em Handbook of graphs and networks: from the genome to the
+  internet}, pages 1--34, 2003.
+
+\bibitem{krapivsky2001}
+Paul~L Krapivsky and Sidney Redner.
+\newblock Organization of growing random networks.
+\newblock {\em Physical Review E}, 63(6):066123, 2001.
 
 \bibitem{kantelhardt2008fractal}
 Jan~W Kantelhardt.
