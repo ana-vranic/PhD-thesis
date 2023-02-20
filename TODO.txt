@@ -14,11 +14,10 @@ Resolution limit of modularity maximization  eas by Fortunato and Barthelemy(200
 Modularity for the weighted networks Newman (2004b)
 Arenas et al. (2007) - modularity for the directed networks
 
-
 networks structure
 dynamic reputation
 knowledge exchange
 Stack Exchange
 sustainability of Q&A communities
 
-
+in this thesis paragraf > struktura i dinamika su glavni fokus
