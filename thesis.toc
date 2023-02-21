@@ -71,6 +71,7 @@
 \contentsline {section}{\numberline {5.3}Dynamical Reputation on Stack Exchange communities}{65}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Conclusions}{68}{section.5.4}%
 \contentsline {chapter}{\chapternumberline {6}Conclusions}{71}{chapter.6}%
+\babel@toc {serbianc}{}
 \babel@toc {english}{}
 \contentsline {appendix}{\chapternumberline {A}Stack Exchange}{73}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Comparison between active and closed SE communities}{74}{section.A.1}%

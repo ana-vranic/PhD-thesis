@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  21 FEB 2023 16:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  21 FEB 2023 21:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2204,7 +2204,7 @@ LaTeX Font Warning: Font shape `OT2/ptm/b/n' undefined
 LaTeX Font Info:    Font shape `OT2/Tempora-TLF/b/n' will be
 (Font)              scaled to size 24.88pt on input line 8.
 LaTeX Font Info:    Font shape `OT2/Tempora-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 30.
+(Font)              scaled to size 12.0pt on input line 32.
 ) [11
 
 
@@ -3324,7 +3324,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
 Here is how much of TeX's memory you used:
  21124 strings out of 482584
  318656 string characters out of 5956256
- 606926 words of memory out of 5000000
+ 606927 words of memory out of 5000000
  35089 multiletter control sequences out of 15000+600000
  609511 words of font info for 108 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
@@ -3369,7 +3369,7 @@ s/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (118 pages, 7603068 bytes).
+Output written on thesis.pdf (118 pages, 7603064 bytes).
 PDF statistics:
  3708 PDF objects out of 4296 (max. 8388607)
  1816 compressed objects within 19 object streams
