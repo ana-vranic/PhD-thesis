@@ -1,23 +1,11 @@
-%TODO definisati sta je partition
-%TODO Posto je sekcija o Louain algoritmu, treba dodati jos par paragrafa o njemu. Konkretno njegove karakteristike (otezinjeni, usmereni grafovi...), zatim reyolucija, i najbitnije kako odredjuje optimalan broj zajednica. Pogledaj neki od Santoih poslednjih radoa na temu zajednica.
 
-%TODO Ovde treba ubaciti samo jedan pasus zasto su nam bitni modeli. Cemu sluze, zasto ih pravimo i slicno.
-% TODO Glavna karakteristika BA modela je power-law degree distribution, To ovde nije ni priblizno ocigledno. Bilo bi lepo da postoji i slika., 
+
+%Radovi-community ddetection
+
+  Arenas et al. (2007) - modularity for the directed networks
+  
+  
+%TODO Ovaj section mi je OK do na primere. Kao sto si na primer istakla da WWW primer usmerene mreze, ne bi bilo lose da za svaki tip mreze imamo neki primer i citat
 
 %TODO Mozes da se ovde fokusiras na realne mreze vise neko na modelirane. Jer na kraju sve je krenulo od njih.
 
-
-Radovi-community ddetection
-
-Louvian method was proposed by Blondel et al (2008)
-Resolution limit of modularity maximization  eas by Fortunato and Barthelemy(2007)
-Modularity for the weighted networks Newman (2004b)
-Arenas et al. (2007) - modularity for the directed networks
-
-networks structure
-dynamic reputation
-knowledge exchange
-Stack Exchange
-sustainability of Q&A communities
-
-in this thesis paragraf > struktura i dinamika su glavni fokus

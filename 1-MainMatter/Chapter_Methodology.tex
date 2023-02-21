@@ -138,7 +138,7 @@ The network with $k$ communities could be represented using $k \times k$ matrix 
 	\includegraphics[width=0.8\textwidth]{chapter2/structures.png}
 	\caption[Stochastic Block Model]{ Different communities structures  (a) assortative. (b) disassortative. (c) core-periphery. (d) Erdos Renyi random graph.}
 	\label{fig:SBM}
-	%TODO ima li ova slika u boji?
+	%TODO ima li ova slika u boji? mozda uzeti prava
 \end{figure}
 
 Different algorithms are used for detecting the community structure in the underlying network, optimizing different objective functions of the network partition. Still, if the ground-truth communities are unknown, there are no guarantees that we will infer the actual number of communities and entirely correct node assignments \cite{peel2017ground}. Even though community detection algorithms are widely used in complex network analysis as they can give us a better understanding of network structure \cite{peel2017ground, cherifi2019community}.  %%TODO citat
@@ -161,7 +161,7 @@ If modularity is positive, the selected nodes may be a community, as their conne
 M=\sum_{c=1}^{n} [\frac{L_c}{L} - (\frac{k_c}{2L})^2]
 \end{equation}
 
-The higher modularity indicates that nodes are partitioned in better communities. When we put all nodes into only one community $M=0$, otherwise, if each node is the community itself $L_c=0$ and the sum is negative. The Newman showed that modularity function applies for weighted networks. \cite{newman2004analysis}.
+The higher modularity indicates that nodes are partitioned in better communities. When we put all nodes into only one community $M=0$, otherwise, if each node is the community itself $L_c=0$ and the sum is negative. The Newman showed that modularity function  \cite{newman2004analysis} applies for weighted networks.
 
 Maximum network modularity indicates the best partions. As too many possible partitions exist, we need an algorithmic approach to identify the best separation. The first algorithm proposed for modularity optimization was \textbf{greedy algorithm}. First, it assigns each node to a community and starts with N communities. Then, we should merge each pair of communities and calculate the modularity difference $\Delta M$. We can join those two communities by identifying the pair for which the difference is the largest. It is repeated until all nodes merge into a single community. The best partition is one with the largest $M$.
 
@@ -375,7 +375,7 @@ Here we use the standard two-tail hypothesis test \cite{clauset2009power}, assum
 %\newpage
 
 \section{Network models}
-%TODO Ovde treba ubaciti samo jedan pasus zasto su nam bitni modeli. Cemu sluze, zasto ih pravimo i slicno.
+%%TODO Ovde treba ubaciti samo jedan pasus zasto su nam bitni modeli. Cemu sluze, zasto ih pravimo i slicno.
 
 The interest in analyzing real-world networks allowed us to describe their statistical properties and formulate models that can explain essential features in the data. With network models we can understand the origins of the properties of the complex networks, what mechanisms influence the generation of the network and how network properties emerge. In this section are considered random network model and small-world model, which are static models, as the number of nodes are fixed. Even though random network is not applicable on the real networks it is important historically as one of the first network models. The small-world model explains how properties of real networks such as high clustering and small distances may emerge. On the other hand, generative models, as models of preferential attachment, where network grows according to specific growing rules are important for understanding how network structure is created. They allow as to explore different growing mechanisms and comparing obtained networks with real data we can conclude which growth processes have influence on the network structure.     
 
@@ -455,8 +455,8 @@ The model interpolates between the regular graph when the probability is $p=0$ a
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{chapter2/ws_graph.png}
-	\caption[Watts and Strogatz graph model creation]{Watts and Strogatz graph model creation.}
+	\includegraphics[width=1\linewidth]{chapter2/WS_model.pdf}
+	\caption[Watts and Strogatz graph model creation]{Watts and Strogatz graph model creation, for different rewiring probabilities.}
 	\label{fig:wsgraph}
 \end{figure}
 
@@ -513,7 +513,7 @@ P(k) = \frac{\partial P[k_i(t)<k]}{ \partial k} \sim 2m^2 k^{-3}
 %For large $k$, it is exactly the power law, as shown in Figure \ref{fig:bamodel} . 
 %Distributions do not depend on the N.
 %% TODO Glavna karakteristika BA modela je power-law degree distribution, To ovde nije ni priblizno ocigledno. Bilo bi lepo da postoji i slika., 
-%TODO dodati izvodjenje
+%%TODO dodati izvodjenje -OVO MOZDA
 
 %stationary degree distribution does not depend on the system parameters, so different systems have similar behaviour
 %As the network grows, nodes with larger degrees become bigger, so we end up with few nodes with many links, called hubs.
@@ -553,7 +553,7 @@ When $\alpha$ is negative, ageing overcomes the role of preferential attachment,
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=1\linewidth]{chapter2/aging_nets.png}
+	\includegraphics[width=1\linewidth]{chapter2/aging_model.pdf}
 	\caption[Aging model]{Aging model}
 	\label{fig:aging}
 \end{figure}
