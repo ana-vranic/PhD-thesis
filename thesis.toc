@@ -73,14 +73,14 @@
 \contentsline {chapter}{\chapternumberline {6}Conclusions}{71}{chapter.6}%
 \babel@toc {serbianc}{}
 \babel@toc {english}{}
-\contentsline {appendix}{\chapternumberline {A}Stack Exchange}{73}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Comparison between active and closed SE communities}{74}{section.A.1}%
-\contentsline {appendix}{\chapternumberline {B}Selection of Dynamical Reputation Model parameters}{77}{appendix.B}%
-\contentsline {appendix}{\chapternumberline {C}The choice of the sliding window}{81}{appendix.C}%
-\contentsline {appendix}{\chapternumberline {D}Robustness of core-periphery algorithm}{83}{appendix.D}%
-\contentsline {chapter}{Bibliography}{87}{appendix*.8}%
+\contentsline {appendix}{\chapternumberline {A}Stack Exchange}{75}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Comparison between active and closed SE communities}{76}{section.A.1}%
+\contentsline {appendix}{\chapternumberline {B}Selection of Dynamical Reputation Model parameters}{79}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {C}The choice of the sliding window}{83}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {D}Robustness of core-periphery algorithm}{85}{appendix.D}%
+\contentsline {chapter}{Bibliography}{89}{appendix*.8}%
 \babel@toc {english}{}
-\contentsline {chapter}{Biography of the author}{95}{appendix*.9}%
+\contentsline {chapter}{Biography of the author}{97}{appendix*.9}%
 \babel@toc {serbianc}{}
 \babel@toc {english}{}
 \babel@toc {serbianc}{}

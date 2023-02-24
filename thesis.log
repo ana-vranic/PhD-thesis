@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  21 FEB 2023 21:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  24 FEB 2023 15:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2184,9 +2184,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 LaTeX Font Info:    Font shape `T1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 19.
+(Font)              scaled to size 12.0pt on input line 18.
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--24
+Underfull \hbox (badness 10000) in paragraph at lines 16--23
 
  []
 
@@ -3060,22 +3060,22 @@ l.191
 
 
 
-] [71]) [72]
+] [71] [72]) [73]
 \openout2 = `2-Appendix/Appendix_SEdata.aux'.
 
 
-(./2-Appendix/Appendix_SEdata.tex [73
+(./2-Appendix/Appendix_SEdata.tex [74
 
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{table.A.1}) h
-as been already used, duplicate ignored
+] [75pdfTeX warning (ext4): destination with the same identifier (name{table.A.
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.41 
      ]
-<figs/appendixA/active_questions.pdf, id=3036, 1070.2673pt x 287.24126pt>
+<figs/appendixA/active_questions.pdf, id=3045, 1070.2673pt x 287.24126pt>
 File: figs/appendixA/active_questions.pdf Graphic file (type pdf)
 <use figs/appendixA/active_questions.pdf>
 Package pdftex.def Info: figs/appendixA/active_questions.pdf  used on input lin
@@ -3083,7 +3083,7 @@ e 65.
 (pdftex.def)             Requested size: 483.69687pt x 129.814pt.
 LaTeX Font Info:    Font shape `T1/Tempora-TLF/m/it' will be
 (Font)              scaled to size 12.0pt on input line 70.
- [74pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
+ [76pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -3095,7 +3095,7 @@ me{table.A.2}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.99 \end{table}
-                 <./figs/appendixA/active_questions.pdf>]) [75pdfTeX warning (e
+                 <./figs/appendixA/active_questions.pdf>]) [77pdfTeX warning (e
 xt4): destination with the same identifier (name{table.A.3}) has been already u
 sed, duplicate ignored
 
@@ -3106,18 +3106,18 @@ l.112 \include{2-Appendix/Appendix_SEdata}
 \openout2 = `2-Appendix/Appendix_SEparameters.aux'.
 
 
-(./2-Appendix/Appendix_SEparameters.tex [76
+(./2-Appendix/Appendix_SEparameters.tex [78
 
 
 
 ]
-<figs/appendixB/single_user_reputation.pdf, id=3100, 752.0742pt x 307.64925pt>
+<figs/appendixB/single_user_reputation.pdf, id=3108, 752.0742pt x 307.64925pt>
 File: figs/appendixB/single_user_reputation.pdf Graphic file (type pdf)
 <use figs/appendixB/single_user_reputation.pdf>
 Package pdftex.def Info: figs/appendixB/single_user_reputation.pdf  used on inp
 ut line 12.
 (pdftex.def)             Requested size: 386.95897pt x 158.29324pt.
- [77pdfTeX warning (ext4): destination with the same identifier (name{figure.B.
+ [79pdfTeX warning (ext4): destination with the same identifier (name{figure.B.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -3125,31 +3125,31 @@ ut line 12.
 l.19 T
       he reputation decay determines the \textbf{forgetting factor $\beta$}....
  <./figs/appendixB/single_user_reputation.pdf>]
-<figs/appendixB/rmse.pdf, id=3148, 1076.11423pt x 286.70801pt>
+<figs/appendixB/rmse.pdf, id=3157, 1076.11423pt x 286.70801pt>
 File: figs/appendixB/rmse.pdf Graphic file (type pdf)
 <use figs/appendixB/rmse.pdf>
 Package pdftex.def Info: figs/appendixB/rmse.pdf  used on input line 25.
 (pdftex.def)             Requested size: 483.69687pt x 128.86865pt.
-<figs/appendixB/active_users.pdf, id=3150, 958.24876pt x 505.49666pt>
+<figs/appendixB/active_users.pdf, id=3159, 958.24876pt x 505.49666pt>
 File: figs/appendixB/active_users.pdf Graphic file (type pdf)
 <use figs/appendixB/active_users.pdf>
 Package pdftex.def Info: figs/appendixB/active_users.pdf  used on input line 34
 .
 (pdftex.def)             Requested size: 483.69687pt x 255.16196pt.
- [78pdfTeX warning (ext4): destination with the same identifier (name{figure.B.
+ [80pdfTeX warning (ext4): destination with the same identifier (name{figure.B.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.38 
       <./figs/appendixB/rmse.pdf>]
-<figs/appendixB/permanent_users.pdf, id=3201, 1070.2673pt x 287.24126pt>
+<figs/appendixB/permanent_users.pdf, id=3209, 1070.2673pt x 287.24126pt>
 File: figs/appendixB/permanent_users.pdf Graphic file (type pdf)
 <use figs/appendixB/permanent_users.pdf>
 Package pdftex.def Info: figs/appendixB/permanent_users.pdf  used on input line
  43.
 (pdftex.def)             Requested size: 483.69687pt x 129.814pt.
- [79pdfTeX warning (ext4): destination with the same identifier (name{figure.B.
+ [81pdfTeX warning (ext4): destination with the same identifier (name{figure.B.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -3165,13 +3165,13 @@ l.48 \clearpage
 _users.pdf>])
 \openout2 = `2-Appendix/Appendix_sliding_window.aux'.
 
- (./2-Appendix/Appendix_sliding_window.tex [80
+ (./2-Appendix/Appendix_sliding_window.tex [82
 
 
 
 
 ]
-<figs/appendixC/sliding_window.pdf, id=3318, 864.7468pt x 1378.5183pt>
+<figs/appendixC/sliding_window.pdf, id=3327, 864.7468pt x 1378.5183pt>
 File: figs/appendixC/sliding_window.pdf Graphic file (type pdf)
 <use figs/appendixC/sliding_window.pdf>
 Package pdftex.def Info: figs/appendixC/sliding_window.pdf  used on input line 
@@ -3181,7 +3181,7 @@ Package pdftex.def Info: figs/appendixC/sliding_window.pdf  used on input line
 
 LaTeX Warning: Float too large for page by 6.35324pt on input line 16.
 
-) [81] [82pdfTeX warning (ext4): destination with the same identifier (name{fig
+) [83] [84pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.C.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -3191,18 +3191,18 @@ l.114 \include{2-Appendix/Appendix_sliding_window}
 ndow.pdf>]
 \openout2 = `2-Appendix/Appendix_robust.aux'.
 
- (./2-Appendix/Appendix_robust.tex [83
+ (./2-Appendix/Appendix_robust.tex [85
 
 
 
-] [84]
-<figs/appendixD/blockmodel_robust.pdf, id=3399, 727.9929pt x 503.97534pt>
+] [86]
+<figs/appendixD/blockmodel_robust.pdf, id=3407, 727.9929pt x 503.97534pt>
 File: figs/appendixD/blockmodel_robust.pdf Graphic file (type pdf)
 <use figs/appendixD/blockmodel_robust.pdf>
 Package pdftex.def Info: figs/appendixD/blockmodel_robust.pdf  used on input li
 ne 65.
 (pdftex.def)             Requested size: 386.95897pt x 267.89003pt.
-) [85
+) [87
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.D.1}) 
 has been already used, duplicate ignored
@@ -3211,37 +3211,37 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.115 \include{2-Appendix/Appendix_robust}
                                            <./figs/appendixD/blockmodel_robust.
-pdf>] [86
+pdf>] [88
 
 
 ] (./thesis.bbl
 bibitemlist
-[87
+[89
 
-] [88] [89]
+] [90] [91]
 Underfull \hbox (badness 1038) in paragraph at lines 315--320
 []\T1/Tempora-TLF/m/n/12 Ana Vrani¢, Alek-san-dar Toma²e-vi¢, Alek-san-dra Alor
 i¢, and Mar-ija Mitro-vi¢ Dankulov.
  []
 
-[90] [91] [92] [93]) [94]
+[92] [93] [94] [95]) [96]
 \openout2 = `3-BackMatter/Biography.aux'.
 
- (./3-BackMatter/Biography.tex [95
+ (./3-BackMatter/Biography.tex [97
 
 
 ])
 \openout2 = `3-BackMatter/Autorstvo.aux'.
 
 
-(./3-BackMatter/Autorstvo.tex [96
+(./3-BackMatter/Autorstvo.tex [98
 
 
 
 ]
 LaTeX Font Info:    Font shape `OT2/Tempora-TLF/b/n' will be
 (Font)              scaled to size 17.28pt on input line 18.
- [97]) [98]
+ [99]) [100]
 \openout2 = `3-BackMatter/Istovetnost.aux'.
 
  (./3-BackMatter/Istovetnost.tex
@@ -3250,11 +3250,11 @@ Underfull \hbox (badness 1478) in paragraph at lines 48--52
 cama digitalne biblioteke, u
  []
 
-[99
+[101
 
 
 
-]) [100]
+]) [102]
 \openout2 = `3-BackMatter/Koriscenje.aux'.
 
  (./3-BackMatter/Koriscenje.tex
@@ -3273,7 +3273,7 @@ Underfull \hbox (badness 1859) in paragraph at lines 34--38
 epozitorijumu Univerziteta u
  []
 
-[101
+[103
 
 
 
@@ -3283,7 +3283,7 @@ Overfull \hbox (1.59438pt too wide) in paragraph at lines 73--78
 Dozvo	avate umno^^Yava^^He, distribuciju i javno saopxtava^^He
  []
 
-) [102]
+) [104]
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -3322,9 +3322,9 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
  ) 
 Here is how much of TeX's memory you used:
- 21124 strings out of 482584
- 318656 string characters out of 5956256
- 606927 words of memory out of 5000000
+ 21126 strings out of 482584
+ 318672 string characters out of 5956256
+ 606928 words of memory out of 5000000
  35089 multiletter control sequences out of 15000+600000
  609511 words of font info for 108 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
@@ -3369,10 +3369,10 @@ s/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (118 pages, 7603064 bytes).
+Output written on thesis.pdf (120 pages, 7604001 bytes).
 PDF statistics:
- 3708 PDF objects out of 4296 (max. 8388607)
- 1816 compressed objects within 19 object streams
- 459 named destinations out of 1000 (max. 500000)
+ 3715 PDF objects out of 4296 (max. 8388607)
+ 1822 compressed objects within 19 object streams
+ 461 named destinations out of 1000 (max. 500000)
  656 words of extra memory for PDF output out of 10000 (max. 10000000)
 

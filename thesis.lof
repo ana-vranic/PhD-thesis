@@ -75,16 +75,16 @@
 \babel@toc {serbianc}{}
 \babel@toc {english}{}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Number of active questions within seven days sliding windows}}{74}{figure.A.1}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Number of active questions within seven days sliding windows}}{76}{figure.A.1}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Single users reputations.}}{77}{figure.B.1}%
-\contentsline {figure}{\numberline {B.2}{\ignorespaces RMSE between the number of users in 30 days sliding window and positive reputation.}}{78}{figure.B.2}%
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Number of users in 30 days sliding window and positive reputation.}}{79}{figure.B.3}%
-\contentsline {figure}{\numberline {B.4}{\ignorespaces Number of users in Stack Exchange community who remain to be active}}{79}{figure.B.4}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Single users reputations.}}{79}{figure.B.1}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces RMSE between the number of users in 30 days sliding window and positive reputation.}}{80}{figure.B.2}%
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Number of users in 30 days sliding window and positive reputation.}}{81}{figure.B.3}%
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Number of users in Stack Exchange community who remain to be active}}{81}{figure.B.4}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Stack Exchange properties for different sliding window.}}{82}{figure.C.1}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Stack Exchange properties for different sliding window.}}{84}{figure.C.1}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Stability of the core-periphery structures.}}{85}{figure.D.1}%
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Stability of the core-periphery structures.}}{87}{figure.D.1}%
 \babel@toc {english}{}
 \addvspace {10pt}
 \babel@toc {serbianc}{}
