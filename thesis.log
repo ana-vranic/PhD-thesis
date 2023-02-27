@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  24 FEB 2023 15:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  26 FEB 2023 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2335,23 +2335,24 @@ LaTeX Font Info:    Font shape `TS1/Tempora-TLF/m/n' will be
 
 ]
 [10] [11] [12]
-<figs/chapter2/structures.png, id=687, 699.36281pt x 392.21532pt>
-File: figs/chapter2/structures.png Graphic file (type png)
-<use figs/chapter2/structures.png>
-Package pdftex.def Info: figs/chapter2/structures.png  used on input line 138.
-(pdftex.def)             Requested size: 386.95897pt x 217.01776pt.
+<figs/chapter2/SBM_representations_1.pdf, id=687, 928.76306pt x 341.43306pt>
+File: figs/chapter2/SBM_representations_1.pdf Graphic file (type pdf)
+<use figs/chapter2/SBM_representations_1.pdf>
+Package pdftex.def Info: figs/chapter2/SBM_representations_1.pdf  used on input
+ line 138.
+(pdftex.def)             Requested size: 483.69687pt x 177.81711pt.
  [13pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.154 
-       <./figs/chapter2/structures.png>] [14] [15] [16]
-<figs/chapter2/Distributions_plots.pdf, id=770, 642.89563pt x 1158.83562pt>
+l.155 
+       <./figs/chapter2/SBM_representations_1.pdf>] [14] [15] [16]
+<figs/chapter2/Distributions_plots.pdf, id=9840, 642.89563pt x 1158.83562pt>
 File: figs/chapter2/Distributions_plots.pdf Graphic file (type pdf)
 <use figs/chapter2/Distributions_plots.pdf>
 Package pdftex.def Info: figs/chapter2/Distributions_plots.pdf  used on input l
-ine 254.
+ine 255.
 (pdftex.def)             Requested size: 362.77264pt x 653.91228pt.
 
 
@@ -2366,50 +2367,50 @@ Overfull \vbox (13.42792pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.273 \end{equation}
+l.274 \end{equation}
                      <./figs/chapter2/Distributions_plots.pdf>] [19] [20]
 [21]
-<figs/chapter2/ERgraph.pdf, id=891, 686.565pt x 249.77315pt>
+<figs/chapter2/ERgraph.pdf, id=9961, 686.565pt x 249.77315pt>
 File: figs/chapter2/ERgraph.pdf Graphic file (type pdf)
 <use figs/chapter2/ERgraph.pdf>
-Package pdftex.def Info: figs/chapter2/ERgraph.pdf  used on input line 395.
+Package pdftex.def Info: figs/chapter2/ERgraph.pdf  used on input line 396.
 (pdftex.def)             Requested size: 435.32422pt x 158.36787pt.
  [22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.417 \begin{equation}
+l.418 \begin{equation}
                        <./figs/chapter2/ERgraph.pdf>]
-<figs/chapter2/ER_dist.pdf, id=919, 628.25824pt x 353.40308pt>
+<figs/chapter2/ER_dist.pdf, id=9989, 628.25824pt x 353.40308pt>
 File: figs/chapter2/ER_dist.pdf Graphic file (type pdf)
 <use figs/chapter2/ER_dist.pdf>
-Package pdftex.def Info: figs/chapter2/ER_dist.pdf  used on input line 434.
+Package pdftex.def Info: figs/chapter2/ER_dist.pdf  used on input line 435.
 (pdftex.def)             Requested size: 435.32422pt x 244.87296pt.
  [23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.444 
+l.445 
        <./figs/chapter2/ER_dist.pdf>]
-<figs/chapter2/WS_model.pdf, id=977, 1170.77402pt x 382.42876pt>
+<figs/chapter2/WS_model.pdf, id=10047, 1170.77402pt x 382.42876pt>
 File: figs/chapter2/WS_model.pdf Graphic file (type pdf)
 <use figs/chapter2/WS_model.pdf>
-Package pdftex.def Info: figs/chapter2/WS_model.pdf  used on input line 458.
+Package pdftex.def Info: figs/chapter2/WS_model.pdf  used on input line 459.
 (pdftex.def)             Requested size: 483.69687pt x 157.99889pt.
  [24pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.470 	\item T
+l.471 	\item T
               he model starts from the small number, $n_0$ randomly connecte...
  <./figs/chapter2/WS_model.pdf>]
-<figs/chapter2/BAmodel.pdf, id=1006, 534.79799pt x 223.58217pt>
+<figs/chapter2/BAmodel.pdf, id=10076, 534.79799pt x 223.58217pt>
 File: figs/chapter2/BAmodel.pdf Graphic file (type pdf)
 <use figs/chapter2/BAmodel.pdf>
-Package pdftex.def Info: figs/chapter2/BAmodel.pdf  used on input line 504.
+Package pdftex.def Info: figs/chapter2/BAmodel.pdf  used on input line 505.
 (pdftex.def)             Requested size: 483.69687pt x 202.22168pt.
 
 
@@ -2420,13 +2421,13 @@ e.2.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.537 O
+l.538 O
        n the other hand, if $\beta<1$, the model is in a so-called sub-linea...
  <./figs/chapter2/BAmodel.pdf>]
-<figs/chapter2/aging_model.pdf, id=1052, 845.04686pt x 227.62204pt>
+<figs/chapter2/aging_model.pdf, id=10122, 845.04686pt x 227.62204pt>
 File: figs/chapter2/aging_model.pdf Graphic file (type pdf)
 <use figs/chapter2/aging_model.pdf>
-Package pdftex.def Info: figs/chapter2/aging_model.pdf  used on input line 556.
+Package pdftex.def Info: figs/chapter2/aging_model.pdf  used on input line 557.
 
 (pdftex.def)             Requested size: 483.69687pt x 130.28772pt.
  [27pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
@@ -2434,51 +2435,51 @@ Package pdftex.def Info: figs/chapter2/aging_model.pdf  used on input line 556.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.574 	\item F
+l.575 	\item F
               or $\alpha>\alpha^{*}$ networks have \textbf{gel-like small wo...
  <./figs/chapter2/aging_model.pdf>]
-<figs/chapter2/diagram.png, id=1065, 470.4777pt x 344.0052pt>
+<figs/chapter2/diagram.png, id=10135, 470.4777pt x 344.0052pt>
 File: figs/chapter2/diagram.png Graphic file (type png)
 <use figs/chapter2/diagram.png>
-Package pdftex.def Info: figs/chapter2/diagram.png  used on input line 582.
+Package pdftex.def Info: figs/chapter2/diagram.png  used on input line 583.
 (pdftex.def)             Requested size: 290.22107pt x 212.20494pt.
  [28pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.600 \end{equation}
+l.601 \end{equation}
                      <./figs/chapter2/diagram.png>] [29]
-<figs/chapter2/hurst_signals.pdf, id=1092, 851.75085pt x 506.02989pt>
+<figs/chapter2/hurst_signals.pdf, id=10162, 851.75085pt x 506.02989pt>
 File: figs/chapter2/hurst_signals.pdf Graphic file (type pdf)
 <use figs/chapter2/hurst_signals.pdf>
 Package pdftex.def Info: figs/chapter2/hurst_signals.pdf  used on input line 64
-2.
+3.
 (pdftex.def)             Requested size: 386.95897pt x 229.89648pt.
  [30pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.664 	
+l.665 	
         <./figs/chapter2/hurst_signals.pdf>]
-<figs/chapter2/hurst_detrending.pdf, id=1143, 851.75085pt x 506.02989pt>
+<figs/chapter2/hurst_detrending.pdf, id=10213, 851.75085pt x 506.02989pt>
 File: figs/chapter2/hurst_detrending.pdf Graphic file (type pdf)
 <use figs/chapter2/hurst_detrending.pdf>
 Package pdftex.def Info: figs/chapter2/hurst_detrending.pdf  used on input line
- 672.
+ 673.
 (pdftex.def)             Requested size: 386.95897pt x 229.89648pt.
  [31pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.691 \end{equation}
+l.692 \end{equation}
                      <./figs/chapter2/hurst_detrending.pdf>]
-<figs/chapter2/hurst_mfdfa.pdf, id=1205, 736.10825pt x 507.363pt>
+<figs/chapter2/hurst_mfdfa.pdf, id=10275, 736.10825pt x 507.363pt>
 File: figs/chapter2/hurst_mfdfa.pdf Graphic file (type pdf)
 <use figs/chapter2/hurst_mfdfa.pdf>
-Package pdftex.def Info: figs/chapter2/hurst_mfdfa.pdf  used on input line 697.
+Package pdftex.def Info: figs/chapter2/hurst_mfdfa.pdf  used on input line 698.
 
 (pdftex.def)             Requested size: 386.95897pt x 266.7102pt.
  [32pdfTeX warning (ext4): destination with the same identifier (name{equation.
@@ -2486,23 +2487,23 @@ Package pdftex.def Info: figs/chapter2/hurst_mfdfa.pdf  used on input line 697.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.713 \end{equation}
+l.714 \end{equation}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{figure.2.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.713 \end{equation}
+l.714 \end{equation}
                      <./figs/chapter2/hurst_mfdfa.pdf>]
-<figs/chapter2/DIBRM.pdf, id=1281, 401.9909pt x 307.64925pt>
+<figs/chapter2/DIBRM.pdf, id=10352, 401.9909pt x 307.64925pt>
 File: figs/chapter2/DIBRM.pdf Graphic file (type pdf)
 <use figs/chapter2/DIBRM.pdf>
-Package pdftex.def Info: figs/chapter2/DIBRM.pdf  used on input line 728.
+Package pdftex.def Info: figs/chapter2/DIBRM.pdf  used on input line 729.
 (pdftex.def)             Requested size: 217.66211pt x 166.57877pt.
-<figs/chapter2/DIBRM_decay.pdf, id=1282, 413.9418pt x 273.59653pt>
+<figs/chapter2/DIBRM_decay.pdf, id=10353, 413.9418pt x 273.59653pt>
 File: figs/chapter2/DIBRM_decay.pdf Graphic file (type pdf)
 <use figs/chapter2/DIBRM_decay.pdf>
-Package pdftex.def Info: figs/chapter2/DIBRM_decay.pdf  used on input line 729.
+Package pdftex.def Info: figs/chapter2/DIBRM_decay.pdf  used on input line 730.
 
 (pdftex.def)             Requested size: 217.66211pt x 143.86575pt.
  [33pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
@@ -2510,13 +2511,13 @@ Package pdftex.def Info: figs/chapter2/DIBRM_decay.pdf  used on input line 729.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.742 
+l.743 
        <./figs/chapter2/DIBRM.pdf> <./figs/chapter2/DIBRM_decay.pdf>]) [34]
 \openout2 = `1-MainMatter/Chapter_DrivingSignal.aux'.
 
 
 (./1-MainMatter/Chapter_DrivingSignal.tex
-<figs/chapter3/ciljevi.pdf, id=1375, 845.04686pt x 597.50786pt>
+<figs/chapter3/ciljevi.pdf, id=10445, 845.04686pt x 597.50786pt>
 File: figs/chapter3/ciljevi.pdf Graphic file (type pdf)
 <use figs/chapter3/ciljevi.pdf>
 Package pdftex.def Info: figs/chapter3/ciljevi.pdf  used on input line 14.
@@ -2532,38 +2533,38 @@ Package pdftex.def Info: figs/chapter3/ciljevi.pdf  used on input line 14.
                                                   \fi \fi 
 l.36 
       <./figs/chapter3/ciljevi.pdf>]
-<figs/chapter3/signal4.pdf, id=1395, 388.88727pt x 158.90115pt>
+<figs/chapter3/signal4.pdf, id=10465, 388.88727pt x 158.90115pt>
 File: figs/chapter3/signal4.pdf Graphic file (type pdf)
 <use figs/chapter3/signal4.pdf>
 Package pdftex.def Info: figs/chapter3/signal4.pdf  used on input line 42.
 (pdftex.def)             Requested size: 193.47578pt x 79.05516pt.
-<figs/chapter3/signal5.pdf, id=1396, 388.88727pt x 158.90115pt>
+<figs/chapter3/signal5.pdf, id=10466, 388.88727pt x 158.90115pt>
 File: figs/chapter3/signal5.pdf Graphic file (type pdf)
 <use figs/chapter3/signal5.pdf>
 Package pdftex.def Info: figs/chapter3/signal5.pdf  used on input line 43.
 (pdftex.def)             Requested size: 193.47578pt x 79.05516pt.
-<figs/chapter3/hurst_myspace.pdf, id=1397, 412.1774pt x 265.12738pt>
+<figs/chapter3/hurst_myspace.pdf, id=10467, 412.1774pt x 265.12738pt>
 File: figs/chapter3/hurst_myspace.pdf Graphic file (type pdf)
 <use figs/chapter3/hurst_myspace.pdf>
 Package pdftex.def Info: figs/chapter3/hurst_myspace.pdf  used on input line 47
 .
 (pdftex.def)             Requested size: 217.66211pt x 140.0071pt.
-<figs/chapter3/signal1.pdf, id=1398, 388.88727pt x 158.90115pt>
+<figs/chapter3/signal1.pdf, id=10468, 388.88727pt x 158.90115pt>
 File: figs/chapter3/signal1.pdf Graphic file (type pdf)
 <use figs/chapter3/signal1.pdf>
 Package pdftex.def Info: figs/chapter3/signal1.pdf  used on input line 58.
 (pdftex.def)             Requested size: 193.47578pt x 79.05516pt.
-<figs/chapter3/signal2.pdf, id=1399, 388.88727pt x 158.90115pt>
+<figs/chapter3/signal2.pdf, id=10469, 388.88727pt x 158.90115pt>
 File: figs/chapter3/signal2.pdf Graphic file (type pdf)
 <use figs/chapter3/signal2.pdf>
 Package pdftex.def Info: figs/chapter3/signal2.pdf  used on input line 59.
 (pdftex.def)             Requested size: 193.47578pt x 79.05516pt.
-<figs/chapter3/signal3.pdf, id=1400, 388.88727pt x 158.90115pt>
+<figs/chapter3/signal3.pdf, id=10470, 388.88727pt x 158.90115pt>
 File: figs/chapter3/signal3.pdf Graphic file (type pdf)
 <use figs/chapter3/signal3.pdf>
 Package pdftex.def Info: figs/chapter3/signal3.pdf  used on input line 60.
 (pdftex.def)             Requested size: 193.47578pt x 79.05516pt.
-<figs/chapter3/hurst_tech_1.pdf, id=1401, 412.1774pt x 265.12738pt>
+<figs/chapter3/hurst_tech_1.pdf, id=10471, 412.1774pt x 265.12738pt>
 File: figs/chapter3/hurst_tech_1.pdf Graphic file (type pdf)
 <use figs/chapter3/hurst_tech_1.pdf>
 Package pdftex.def Info: figs/chapter3/hurst_tech_1.pdf  used on input line 65.
@@ -2585,23 +2586,23 @@ l.75 \subsection{D-measure}
 al5.pdf> <./figs/chapter3/hurst_myspace.pdf> <./figs/chapter3/signal1.pdf> <./f
 igs/chapter3/signal2.pdf> <./figs/chapter3/signal3.pdf> <./figs/chapter3/hurst_
 tech_1.pdf>]
-<figs/chapter3/Ddistance.pdf, id=1620, 418.52371pt x 513.72365pt>
+<figs/chapter3/Ddistance.pdf, id=10690, 418.52371pt x 513.72365pt>
 File: figs/chapter3/Ddistance.pdf Graphic file (type pdf)
 <use figs/chapter3/Ddistance.pdf>
 Package pdftex.def Info: figs/chapter3/Ddistance.pdf  used on input line 83.
 (pdftex.def)             Requested size: 290.22107pt x 356.2491pt.
  [38]
-<figs/chapter3/b1.pdf, id=1634, 854.79347pt x 410.81918pt>
+<figs/chapter3/b1.pdf, id=10704, 854.79347pt x 410.81918pt>
 File: figs/chapter3/b1.pdf Graphic file (type pdf)
 <use figs/chapter3/b1.pdf>
 Package pdftex.def Info: figs/chapter3/b1.pdf  used on input line 104.
 (pdftex.def)             Requested size: 435.32422pt x 209.22038pt.
-<figs/chapter3/b3.pdf, id=1635, 854.79347pt x 410.81918pt>
+<figs/chapter3/b3.pdf, id=10705, 854.79347pt x 410.81918pt>
 File: figs/chapter3/b3.pdf Graphic file (type pdf)
 <use figs/chapter3/b3.pdf>
 Package pdftex.def Info: figs/chapter3/b3.pdf  used on input line 105.
 (pdftex.def)             Requested size: 435.32422pt x 209.22038pt.
-<figs/chapter3/b2.pdf, id=1636, 852.33115pt x 408.87442pt>
+<figs/chapter3/b2.pdf, id=10706, 852.33115pt x 408.87442pt>
 File: figs/chapter3/b2.pdf Graphic file (type pdf)
 <use figs/chapter3/b2.pdf>
 Package pdftex.def Info: figs/chapter3/b2.pdf  used on input line 106.
@@ -2631,13 +2632,13 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figs/chapter3/b3.pdf): PDF inclusion:
 pdfTeX warning: /usr/bin/pdflatex (file ./figs/chapter3/b2.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >]
-<figs/chapter3/monofractals.pdf, id=1916, 499.93336pt x 458.02995pt>
+<figs/chapter3/monofractals.pdf, id=10986, 499.93336pt x 458.02995pt>
 File: figs/chapter3/monofractals.pdf Graphic file (type pdf)
 <use figs/chapter3/monofractals.pdf>
 Package pdftex.def Info: figs/chapter3/monofractals.pdf  used on input line 133
 .
 (pdftex.def)             Requested size: 290.22107pt x 265.90216pt.
-<figs/chapter3/Ddist_M4_w10.5_w20.5.png, id=1918, 413.3844pt x 505.89pt>
+<figs/chapter3/Ddist_M4_w10.5_w20.5.png, id=10988, 413.3844pt x 505.89pt>
 File: figs/chapter3/Ddist_M4_w10.5_w20.5.png Graphic file (type png)
 <use figs/chapter3/Ddist_M4_w10.5_w20.5.png>
 Package pdftex.def Info: figs/chapter3/Ddist_M4_w10.5_w20.5.png  used on input 
@@ -2657,12 +2658,12 @@ l.152
 l.152 
        <./figs/chapter3/monofractals.pdf> <./figs/chapter3/Ddist_M4_w10.5_w20.5
 .png>]
-<figs/chapter3/aindex.pdf, id=1957, 404.25774pt x 270.8519pt>
+<figs/chapter3/aindex.pdf, id=11027, 404.25774pt x 270.8519pt>
 File: figs/chapter3/aindex.pdf Graphic file (type pdf)
 <use figs/chapter3/aindex.pdf>
 Package pdftex.def Info: figs/chapter3/aindex.pdf  used on input line 157.
 (pdftex.def)             Requested size: 217.66211pt x 145.83215pt.
-<figs/chapter3/clustering.pdf, id=1958, 395.85133pt x 270.8519pt>
+<figs/chapter3/clustering.pdf, id=11028, 395.85133pt x 270.8519pt>
 File: figs/chapter3/clustering.pdf Graphic file (type pdf)
 <use figs/chapter3/clustering.pdf>
 Package pdftex.def Info: figs/chapter3/clustering.pdf  used on input line 158.
@@ -2682,7 +2683,7 @@ l.170
 
 
 ]
-<figs/chapter4/Fig2.png, id=2070, 633.3261pt x 724.3863pt>
+<figs/chapter4/Fig2.png, id=11140, 633.3261pt x 724.3863pt>
 File: figs/chapter4/Fig2.png Graphic file (type png)
 <use figs/chapter4/Fig2.png>
 Package pdftex.def Info: figs/chapter4/Fig2.png  used on input line 18.
@@ -2694,7 +2695,7 @@ Package pdftex.def Info: figs/chapter4/Fig2.png  used on input line 18.
                                                   \fi \fi 
 l.31 
       <./figs/chapter4/Fig2.png>]
-<figs/chapter4/Fig1.png, id=2087, 628.0263pt x 445.9059pt>
+<figs/chapter4/Fig1.png, id=11157, 628.0263pt x 445.9059pt>
 File: figs/chapter4/Fig1.png Graphic file (type png)
 <use figs/chapter4/Fig1.png>
 Package pdftex.def Info: figs/chapter4/Fig1.png  used on input line 38.
@@ -2706,7 +2707,7 @@ Package pdftex.def Info: figs/chapter4/Fig1.png  used on input line 38.
                                                   \fi \fi 
 l.42 \newpage
               <./figs/chapter4/Fig1.png>] [48]
-<figs/chapter4/test.png, id=2115, 599.22362pt x 393.67175pt>
+<figs/chapter4/test.png, id=11185, 599.22362pt x 393.67175pt>
 File: figs/chapter4/test.png Graphic file (type png)
 <use figs/chapter4/test.png>
 Package pdftex.def Info: figs/chapter4/test.png  used on input line 68.
@@ -2718,7 +2719,7 @@ Package pdftex.def Info: figs/chapter4/test.png  used on input line 68.
                                                   \fi \fi 
 l.85 
       <./figs/chapter4/test.png>]
-<figs/chapter4/Fig5_a.png, id=2128, 463.4916pt x 382.5492pt>
+<figs/chapter4/Fig5_a.png, id=11198, 463.4916pt x 382.5492pt>
 File: figs/chapter4/Fig5_a.png Graphic file (type png)
 <use figs/chapter4/Fig5_a.png>
 Package pdftex.def Info: figs/chapter4/Fig5_a.png  used on input line 94.
@@ -2730,7 +2731,7 @@ Package pdftex.def Info: figs/chapter4/Fig5_a.png  used on input line 94.
                                                   \fi \fi 
 l.101 
        <./figs/chapter4/Fig5_a.png>]
-<figs/chapter4/model_N30.png, id=2138, 692.1057pt x 504.6855pt>
+<figs/chapter4/model_N30.png, id=11208, 692.1057pt x 504.6855pt>
 File: figs/chapter4/model_N30.png Graphic file (type png)
 <use figs/chapter4/model_N30.png>
 Package pdftex.def Info: figs/chapter4/model_N30.png  used on input line 104.
@@ -2742,7 +2743,7 @@ Package pdftex.def Info: figs/chapter4/model_N30.png  used on input line 104.
                                                   \fi \fi 
 l.109 \newpage
                <./figs/chapter4/model_N30.png>]
-<figs/chapter4/Fig3.png, id=2147, 637.4214pt x 560.3334pt>
+<figs/chapter4/Fig3.png, id=11217, 637.4214pt x 560.3334pt>
 File: figs/chapter4/Fig3.png Graphic file (type png)
 <use figs/chapter4/Fig3.png>
 Package pdftex.def Info: figs/chapter4/Fig3.png  used on input line 116.
@@ -2754,7 +2755,7 @@ Package pdftex.def Info: figs/chapter4/Fig3.png  used on input line 116.
                                                   \fi \fi 
 l.125 
        <./figs/chapter4/Fig3.png>]
-<figs/chapter4/Fig4.png, id=2161, 630.6762pt x 452.4102pt>
+<figs/chapter4/Fig4.png, id=11232, 630.6762pt x 452.4102pt>
 File: figs/chapter4/Fig4.png Graphic file (type png)
 <use figs/chapter4/Fig4.png>
 Package pdftex.def Info: figs/chapter4/Fig4.png  used on input line 160.
@@ -2777,7 +2778,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--174
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/chapter4/FigA1_data.png, id=2172, 686.565pt x 288.3573pt>
+<figs/chapter4/FigA1_data.png, id=11242, 686.565pt x 288.3573pt>
 File: figs/chapter4/FigA1_data.png Graphic file (type png)
 <use figs/chapter4/FigA1_data.png>
 Package pdftex.def Info: figs/chapter4/FigA1_data.png  used on input line 191.
@@ -2808,13 +2809,13 @@ me{table.4.3}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.215 \clearpage
                  <./figs/chapter4/FigA1_data.png>]
-<figs/chapter4/FigA2-model.png, id=2186, 689.4558pt x 288.3573pt>
+<figs/chapter4/FigA2-model.png, id=11256, 689.4558pt x 288.3573pt>
 File: figs/chapter4/FigA2-model.png Graphic file (type png)
 <use figs/chapter4/FigA2-model.png>
 Package pdftex.def Info: figs/chapter4/FigA2-model.png  used on input line 220.
 
 (pdftex.def)             Requested size: 386.95897pt x 161.84418pt.
-<figs/chapter4/users_degree_expfit.pdf, id=2191, 740.70477pt x 268.16835pt>
+<figs/chapter4/users_degree_expfit.pdf, id=11261, 740.70477pt x 268.16835pt>
 File: figs/chapter4/users_degree_expfit.pdf Graphic file (type pdf)
 <use figs/chapter4/users_degree_expfit.pdf>
 Package pdftex.def Info: figs/chapter4/users_degree_expfit.pdf  used on input l
@@ -2849,14 +2850,14 @@ LaTeX Font Info:    Trying to load font information for T1+pcr on input line 7.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [59]
-<figs/chapter5/degree_distribution_fullnet.pdf, id=2278, 1078.31299pt x 289.562
-42pt>
+<figs/chapter5/degree_distribution_fullnet.pdf, id=11348, 1078.31299pt x 289.56
+242pt>
 File: figs/chapter5/degree_distribution_fullnet.pdf Graphic file (type pdf)
 <use figs/chapter5/degree_distribution_fullnet.pdf>
 Package pdftex.def Info: figs/chapter5/degree_distribution_fullnet.pdf  used on
  input line 26.
 (pdftex.def)             Requested size: 483.69687pt x 129.89098pt.
-<figs/chapter5/neighdeg_fullnet.pdf, id=2280, 1071.8043pt x 289.56242pt>
+<figs/chapter5/neighdeg_fullnet.pdf, id=11350, 1071.8043pt x 289.56242pt>
 File: figs/chapter5/neighdeg_fullnet.pdf Graphic file (type pdf)
 <use figs/chapter5/neighdeg_fullnet.pdf>
 Package pdftex.def Info: figs/chapter5/neighdeg_fullnet.pdf  used on input line
@@ -2869,13 +2870,13 @@ Package pdftex.def Info: figs/chapter5/neighdeg_fullnet.pdf  used on input line
                                                   \fi \fi 
 l.46 
       <./figs/chapter5/degree_distribution_fullnet.pdf>]
-<figs/chapter5/clustering_fullnet.pdf, id=2333, 1078.31299pt x 289.56242pt>
+<figs/chapter5/clustering_fullnet.pdf, id=11403, 1078.31299pt x 289.56242pt>
 File: figs/chapter5/clustering_fullnet.pdf Graphic file (type pdf)
 <use figs/chapter5/clustering_fullnet.pdf>
 Package pdftex.def Info: figs/chapter5/clustering_fullnet.pdf  used on input li
 ne 49.
 (pdftex.def)             Requested size: 483.69687pt x 129.89098pt.
-<figs/chapter5/clustering.pdf, id=2335, 1076.97302pt x 287.24126pt>
+<figs/chapter5/clustering.pdf, id=11405, 1076.97302pt x 287.24126pt>
 File: figs/chapter5/clustering.pdf Graphic file (type pdf)
 <use figs/chapter5/clustering.pdf>
 Package pdftex.def Info: figs/chapter5/clustering.pdf  used on input line 62.
@@ -2894,7 +2895,7 @@ ame{figure.5.3}) has been already used, duplicate ignored
 l.65 \end{figure}
                   <./figs/chapter5/neighdeg_fullnet.pdf> <./figs/chapter5/clust
 ering_fullnet.pdf>]
-<figs/chapter5/popular_casual_users.pdf, id=2431, 918.4473pt x 394.84764pt>
+<figs/chapter5/popular_casual_users.pdf, id=11502, 918.4473pt x 394.84764pt>
 File: figs/chapter5/popular_casual_users.pdf Graphic file (type pdf)
 <use figs/chapter5/popular_casual_users.pdf>
 Package pdftex.def Info: figs/chapter5/popular_casual_users.pdf  used on input 
@@ -2914,12 +2915,12 @@ l.81
 l.81 
       <./figs/chapter5/clustering.pdf> <./figs/chapter5/popular_casual_users.pd
 f>]
-<figs/chapter5/core_users.pdf, id=2527, 914.6205pt x 394.84764pt>
+<figs/chapter5/core_users.pdf, id=11597, 914.6205pt x 394.84764pt>
 File: figs/chapter5/core_users.pdf Graphic file (type pdf)
 <use figs/chapter5/core_users.pdf>
 Package pdftex.def Info: figs/chapter5/core_users.pdf  used on input line 88.
 (pdftex.def)             Requested size: 483.69687pt x 208.81638pt.
-<figs/chapter5/jaccard_heatmap.pdf, id=2529, 914.59097pt x 413.43271pt>
+<figs/chapter5/jaccard_heatmap.pdf, id=11599, 914.59097pt x 413.43271pt>
 File: figs/chapter5/jaccard_heatmap.pdf Graphic file (type pdf)
 <use figs/chapter5/jaccard_heatmap.pdf>
 Package pdftex.def Info: figs/chapter5/jaccard_heatmap.pdf  used on input line 
@@ -2929,7 +2930,7 @@ Package pdftex.def Info: figs/chapter5/jaccard_heatmap.pdf  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figs/chapter5/jaccard.pdf, id=2531, 1078.83055pt x 290.07999pt>
+<figs/chapter5/jaccard.pdf, id=11601, 1078.83055pt x 290.07999pt>
 File: figs/chapter5/jaccard.pdf Graphic file (type pdf)
 <use figs/chapter5/jaccard.pdf>
 Package pdftex.def Info: figs/chapter5/jaccard.pdf  used on input line 107.
@@ -2944,7 +2945,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
                                                   \fi \fi 
 l.113 
        <./figs/chapter5/core_users.pdf>]
-<figs/chapter5/core_connectivity.pdf, id=2578, 902.71353pt x 394.84764pt>
+<figs/chapter5/core_connectivity.pdf, id=11648, 902.71353pt x 394.84764pt>
 File: figs/chapter5/core_connectivity.pdf Graphic file (type pdf)
 <use figs/chapter5/core_connectivity.pdf>
 Package pdftex.def Info: figs/chapter5/core_connectivity.pdf  used on input lin
@@ -2967,7 +2968,7 @@ l.124
                                                   \fi \fi 
 l.124 
        <./figs/chapter5/jaccard_heatmap.pdf> <./figs/chapter5/jaccard.pdf>]
-<figs/chapter5/reputation.pdf, id=2680, 902.23953pt x 394.84764pt>
+<figs/chapter5/reputation.pdf, id=11750, 902.23953pt x 394.84764pt>
 File: figs/chapter5/reputation.pdf Graphic file (type pdf)
 <use figs/chapter5/reputation.pdf>
 Package pdftex.def Info: figs/chapter5/reputation.pdf  used on input line 127.
@@ -2987,14 +2988,14 @@ l.133
 l.133 
        <./figs/chapter5/core_connectivity.pdf> <./figs/chapter5/reputation.pdf>
 ]
-<figs/chapter5/core_reputation.pdf, id=2773, 1088.88005pt x 287.24126pt>
+<figs/chapter5/core_reputation.pdf, id=11843, 1088.88005pt x 287.24126pt>
 File: figs/chapter5/core_reputation.pdf Graphic file (type pdf)
 <use figs/chapter5/core_reputation.pdf>
 Package pdftex.def Info: figs/chapter5/core_reputation.pdf  used on input line 
 140.
 (pdftex.def)             Requested size: 483.69687pt x 127.59622pt.
-<figs/chapter5/core_per_ratio_reputation.pdf, id=2774, 1069.30374pt x 287.24126
-pt>
+<figs/chapter5/core_per_ratio_reputation.pdf, id=11844, 1069.30374pt x 287.2412
+6pt>
 File: figs/chapter5/core_per_ratio_reputation.pdf Graphic file (type pdf)
 <use figs/chapter5/core_per_ratio_reputation.pdf>
 Package pdftex.def Info: figs/chapter5/core_per_ratio_reputation.pdf  used on i
@@ -3014,13 +3015,13 @@ l.155
 l.155 
        <./figs/chapter5/core_reputation.pdf> <./figs/chapter5/core_per_ratio_re
 putation.pdf>]
-<figs/chapter5/gini.pdf, id=2860, 1097.49709pt x 287.24126pt>
+<figs/chapter5/gini.pdf, id=11931, 1097.49709pt x 287.24126pt>
 File: figs/chapter5/gini.pdf Graphic file (type pdf)
 <use figs/chapter5/gini.pdf>
 Package pdftex.def Info: figs/chapter5/gini.pdf  used on input line 158.
 (pdftex.def)             Requested size: 483.69687pt x 126.59691pt.
-<figs/chapter5/reputation_assortativity.pdf, id=2862, 1079.40398pt x 287.24126p
-t>
+<figs/chapter5/reputation_assortativity.pdf, id=11933, 1079.40398pt x 287.24126
+pt>
 File: figs/chapter5/reputation_assortativity.pdf Graphic file (type pdf)
 <use figs/chapter5/reputation_assortativity.pdf>
 Package pdftex.def Info: figs/chapter5/reputation_assortativity.pdf  used on in
@@ -3040,7 +3041,7 @@ l.173
 l.173 
        <./figs/chapter5/gini.pdf> <./figs/chapter5/reputation_assortativity.pdf
 >]
-<figs/chapter5/correlations.pdf, id=2950, 910.38281pt x 394.84764pt>
+<figs/chapter5/correlations.pdf, id=12020, 910.38281pt x 394.84764pt>
 File: figs/chapter5/correlations.pdf Graphic file (type pdf)
 <use figs/chapter5/correlations.pdf>
 Package pdftex.def Info: figs/chapter5/correlations.pdf  used on input line 176
@@ -3075,7 +3076,7 @@ l.191
                                                   \fi \fi 
 l.41 
      ]
-<figs/appendixA/active_questions.pdf, id=3045, 1070.2673pt x 287.24126pt>
+<figs/appendixA/active_questions.pdf, id=12115, 1070.2673pt x 287.24126pt>
 File: figs/appendixA/active_questions.pdf Graphic file (type pdf)
 <use figs/appendixA/active_questions.pdf>
 Package pdftex.def Info: figs/appendixA/active_questions.pdf  used on input lin
@@ -3111,7 +3112,8 @@ l.112 \include{2-Appendix/Appendix_SEdata}
 
 
 ]
-<figs/appendixB/single_user_reputation.pdf, id=3108, 752.0742pt x 307.64925pt>
+<figs/appendixB/single_user_reputation.pdf, id=12178, 752.0742pt x 307.64925pt>
+
 File: figs/appendixB/single_user_reputation.pdf Graphic file (type pdf)
 <use figs/appendixB/single_user_reputation.pdf>
 Package pdftex.def Info: figs/appendixB/single_user_reputation.pdf  used on inp
@@ -3125,12 +3127,12 @@ ut line 12.
 l.19 T
       he reputation decay determines the \textbf{forgetting factor $\beta$}....
  <./figs/appendixB/single_user_reputation.pdf>]
-<figs/appendixB/rmse.pdf, id=3157, 1076.11423pt x 286.70801pt>
+<figs/appendixB/rmse.pdf, id=12227, 1076.11423pt x 286.70801pt>
 File: figs/appendixB/rmse.pdf Graphic file (type pdf)
 <use figs/appendixB/rmse.pdf>
 Package pdftex.def Info: figs/appendixB/rmse.pdf  used on input line 25.
 (pdftex.def)             Requested size: 483.69687pt x 128.86865pt.
-<figs/appendixB/active_users.pdf, id=3159, 958.24876pt x 505.49666pt>
+<figs/appendixB/active_users.pdf, id=12229, 958.24876pt x 505.49666pt>
 File: figs/appendixB/active_users.pdf Graphic file (type pdf)
 <use figs/appendixB/active_users.pdf>
 Package pdftex.def Info: figs/appendixB/active_users.pdf  used on input line 34
@@ -3143,7 +3145,7 @@ Package pdftex.def Info: figs/appendixB/active_users.pdf  used on input line 34
                                                   \fi \fi 
 l.38 
       <./figs/appendixB/rmse.pdf>]
-<figs/appendixB/permanent_users.pdf, id=3209, 1070.2673pt x 287.24126pt>
+<figs/appendixB/permanent_users.pdf, id=12279, 1070.2673pt x 287.24126pt>
 File: figs/appendixB/permanent_users.pdf Graphic file (type pdf)
 <use figs/appendixB/permanent_users.pdf>
 Package pdftex.def Info: figs/appendixB/permanent_users.pdf  used on input line
@@ -3171,7 +3173,7 @@ _users.pdf>])
 
 
 ]
-<figs/appendixC/sliding_window.pdf, id=3327, 864.7468pt x 1378.5183pt>
+<figs/appendixC/sliding_window.pdf, id=12397, 864.7468pt x 1378.5183pt>
 File: figs/appendixC/sliding_window.pdf Graphic file (type pdf)
 <use figs/appendixC/sliding_window.pdf>
 Package pdftex.def Info: figs/appendixC/sliding_window.pdf  used on input line 
@@ -3196,7 +3198,7 @@ ndow.pdf>]
 
 
 ] [86]
-<figs/appendixD/blockmodel_robust.pdf, id=3407, 727.9929pt x 503.97534pt>
+<figs/appendixD/blockmodel_robust.pdf, id=12477, 727.9929pt x 503.97534pt>
 File: figs/appendixD/blockmodel_robust.pdf Graphic file (type pdf)
 <use figs/appendixD/blockmodel_robust.pdf>
 Package pdftex.def Info: figs/appendixD/blockmodel_robust.pdf  used on input li
@@ -3323,8 +3325,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
  ) 
 Here is how much of TeX's memory you used:
  21126 strings out of 482584
- 318672 string characters out of 5956256
- 606928 words of memory out of 5000000
+ 318762 string characters out of 5956256
+ 605929 words of memory out of 5000000
  35089 multiletter control sequences out of 15000+600000
  609511 words of font info for 108 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
@@ -3369,10 +3371,10 @@ s/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (120 pages, 7604001 bytes).
+Output written on thesis.pdf (120 pages, 8588950 bytes).
 PDF statistics:
- 3715 PDF objects out of 4296 (max. 8388607)
- 1822 compressed objects within 19 object streams
+ 12785 PDF objects out of 12825 (max. 8388607)
+ 7830 compressed objects within 79 object streams
  461 named destinations out of 1000 (max. 500000)
  656 words of extra memory for PDF output out of 10000 (max. 10000000)
 
