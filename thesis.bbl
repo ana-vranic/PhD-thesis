@@ -61,6 +61,11 @@ V.~Latora, V.~Nicosia, and G.~Russo.
 \newblock Complex networks: Principles, methods and applications.
 \newblock 2017.
 
+\bibitem{boccaletti2006complex}
+Stefano Boccaletti, Vito Latora, Yamir Moreno, Martin Chavez, and D-U Hwang.
+\newblock Complex networks: Structure and dynamics.
+\newblock {\em Physics reports}, 424(4-5):175--308, 2006.
+
 \bibitem{sen2014sociophysics}
 Parongama Sen and Bikas~K Chakrabarti.
 \newblock {\em Sociophysics: an introduction}.
@@ -82,6 +87,12 @@ James~P Sethna.
 \newblock {\em Statistical mechanics: entropy, order parameters, and
   complexity}, volume~14.
 \newblock Oxford University Press, USA, 2021.
+
+\bibitem{kadanoff1990scaling}
+Leo~P Kadanoff.
+\newblock Scaling and universality in statistical physics.
+\newblock {\em Physica A: Statistical Mechanics and its Applications},
+  163(1):1--14, 1990.
 
 \bibitem{garas2012emotional}
 Antonios Garas, David Garcia, Marcin Skowron, and Frank Schweitzer.
@@ -233,11 +244,6 @@ Marija Mitrovi{\'{c}} and Bosiljka Tadi{\'{c}}.
 Gourab Ghoshal, Liping Chi, and Albert-L{\'a}szl{\'o} Barab{\'a}si.
 \newblock Uncovering the role of elementary processes in network evolution.
 \newblock {\em Scientific reports}, 3(1):1--8, 2013.
-
-\bibitem{boccaletti2006complex}
-Stefano Boccaletti, Vito Latora, Yamir Moreno, Martin Chavez, and D-U Hwang.
-\newblock Complex networks: Structure and dynamics.
-\newblock {\em Physics reports}, 424(4-5):175--308, 2006.
 
 \bibitem{caldarelli2007scalefree}
 Guido Caldarelli.
