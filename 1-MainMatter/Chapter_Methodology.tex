@@ -125,7 +125,6 @@ where  $\mu_j = (\sum_{i=1}^N p_i(j))/N$ is mean shortest path distribution.
 
 The first term in equation \ref{eq:dmeasure} compares local differences between two networks, and Jensen-Shannon divergence between $N$ shortest path distributions $J(P_{1},..., P_{N})$ is normed with network diameter $d(G)$. The second part determines global differences, computing  ${J(\mu_{G},\mu_{G^{'}})}$ between mean shortest path distributions. The D-measure ranges from $0$ to $1$. The lower D-measure is, the more similar networks are, and structures are isomorphic for D-measure $D = 0$.
 
-\newpage
 
 \section{Community structure}
 
@@ -378,7 +377,7 @@ Here we use the standard two-tail hypothesis test \cite{clauset2009power}, assum
 \section{Network models}
 %%TODO Ovde treba ubaciti samo jedan pasus zasto su nam bitni modeli. Cemu sluze, zasto ih pravimo i slicno.
 
-The interest in analyzing real-world networks allowed us to describe their statistical properties and formulate models that can explain essential features in the data. With network models we can understand the origins of the properties of the complex networks, what mechanisms influence the generation of the network and how network properties emerge. In this section are considered random network model and small-world model, which are static models, as the number of nodes are fixed. Even though random network is not applicable on the real networks it is important historically as one of the first network models. The small-world model explains how properties of real networks such as high clustering and small distances may emerge. On the other hand, generative models, as models of preferential attachment, where network grows according to specific growing rules are important for understanding how network structure is created. They allow as to explore different growing mechanisms and comparing obtained networks with real data we can conclude which growth processes have influence on the network structure.     
+The interest in analyzing real-world networks allowed us to describe their statistical properties and formulate models that can explain essential features in the data. With network models we can understand the origins of the properties of the complex networks, what mechanisms influence the generation of the network and how network properties emerge. In this section are considered random network model and small-world model, which are static models, as the number of nodes are fixed. Even though random network model is not applicable on the real networks it is important historically as one of the first network models. The small-world model explains how properties of real networks such as high clustering and small distances may emerge. On the other hand, generative models, such as models of preferential attachment, where network grows according to specific growing rules, are important for understanding how network structure is created. They allow as to explore different growing mechanisms and comparing obtained networks with real data we can conclude which growth processes have influence on the network structure.     
 
 \subsection{Random network model}
 
@@ -393,7 +392,7 @@ The creation of ER random network consists of the following steps:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{chapter2/ERgraph.pdf}
+	\includegraphics[width=0.8\linewidth]{chapter2/ERgraph.pdf}
 	\caption[Erdős-R\' {e}nyi]{Erdős-R\' {e}nyi graph with $N=100$ nodes and different linking probabilities $p$.}
 	\label{fig:erp}
 \end{figure}
@@ -432,7 +431,7 @@ p(k) = \frac{1}{k!}e^{-\langle k \rangle}\langle k \rangle^{k}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{chapter2/ER_dist.pdf}
+	\includegraphics[width=0.8\linewidth]{chapter2/ER_dist.pdf}
 	\caption[Degree distribution of Erdős-R\' {e}nyi graph.]{Degree distribution of ER graph. The degree distribution of small networks follows binomial. Larger networks are better approximated with Poison distribution, and degree distribution for fixed average degree $<k>$ becomes independent of the network size.}
 	\label{fig:erdist}
 \end{figure}
@@ -456,7 +455,7 @@ The model interpolates between the regular graph when the probability is $p=0$ a
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\linewidth]{chapter2/WS_model.pdf}
+	\includegraphics[width=0.8\linewidth]{chapter2/WS_model.pdf}
 	\caption[Watts and Strogatz graph model creation]{Watts and Strogatz graph model creation, for different rewiring probabilities.}
 	\label{fig:wsgraph}
 \end{figure}
@@ -474,7 +473,7 @@ The ER random graph model and WS small-world model are static models where the n
 
 The preferential attachment is important for generating a system with scale-free properties. In the real system, the linking between nodes is not a random process; the preference for specific types of nodes exists. For example, popular web pages can quickly get more visits, or it is expected that already popular papers will get more citations. This effect is also called rich-get-richer or preferential attachment.
 
-The simplest formulation of the preferential attachment model is that new nodes tend to connect with high-degree nodes. The linking probability $\Pi$ is then proportional to node degree $k$:  
+The simplest formulation of the preferential attachment model is that new nodes tend to connect with high-degree nodes. The linking probability $\Pi$ is then proportional to node degree $k$ \cite{albert2002statistical}:  
 
 \begin{equation}
 \Pi(k_i) = \frac{k_i}{\sum_jk_j} 
@@ -482,7 +481,7 @@ The simplest formulation of the preferential attachment model is that new nodes 
 
 As at each step one node arrives, we can estimate the number of nodes at the time step t, $N(t) = n_0+t$, with links $L(t) =m_0+ mt$. 
 
-First, we can calculate the evolution of network degrees in time.
+First, we can calculate the evolution of network degrees in time \cite{albert2002statistical}.
 \begin{equation}
 \frac{dk_i}{dt} = m\Pi(k_i) = m\frac{k_i}{\sum_jk_j} = m\frac{k_i}{m_0 + 2mt}
 \end{equation}
@@ -492,7 +491,7 @@ Note that the new node that arrived at time point $t_i$ has degree $m$, as it li
 k_i(t) = m \left(\frac{t}{t_i}\right)^{\frac{1}{2}}
 \end{equation}
 
-With this equation we can calculate the probability that node has degree smaller than k  as \\ $P[k_i(t)<k] = P(t_i > \frac{m^{1/\beta}t}{k^{1/\beta}})$. Assuming that we add nodes in constant time intervals we have $P(t_i) = 1/(m_0+t)$. The cumulative probability is then  $P(t_i>\frac{m^{1/\beta t}}{k^{1/\beta}}) = 1 - \frac{t}{t+m_0}\left(\frac{m}{k}\right)^{1/\beta} $.
+With this equation we can calculate the probability that node has degree smaller than k \cite{albert2002statistical} as \\ $P[k_i(t)<k] = P(t_i > \frac{m^{1/\beta}t}{k^{1/\beta}})$. Assuming that we add nodes in constant time intervals we have $P(t_i) = 1/(m_0+t)$. The cumulative probability is then  $P(t_i>\frac{m^{1/\beta t}}{k^{1/\beta}}) = 1 - \frac{t}{t+m_0}\left(\frac{m}{k}\right)^{1/\beta} $.
 Finally, the degree distribution has following form
 \begin{equation}
 P(k) = \frac{\partial P[k_i(t)<k]}{ \partial k} \sim 2m^2 k^{-3} 
@@ -502,7 +501,7 @@ P(k) = \frac{\partial P[k_i(t)<k]}{ \partial k} \sim 2m^2 k^{-3}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=1\linewidth]{chapter2/BAmodel.pdf}
+	\includegraphics[width=0.8\linewidth]{chapter2/BAmodel.pdf}
 	\caption[Barabasi-Albert model]{Barabasi-Alber model. The left panel shows the BA network, with 100 nodes. The right panel shows the degree distribution for BA network of $10^4$ nodes, that follows power-law.}
 	\label{fig:bamodel}
 \end{figure}
@@ -554,7 +553,7 @@ When $\alpha$ is negative, ageing overcomes the role of preferential attachment,
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=1\linewidth]{chapter2/aging_model.pdf}
+	\includegraphics[width=0.85\linewidth]{chapter2/aging_model.pdf}
 	\caption[Aging model]{Aging model}
 	\label{fig:aging}
 \end{figure}
