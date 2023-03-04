@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  2 MAR 2023 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  4 MAR 2023 20:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3240,21 +3240,21 @@ i¢, and Mar-ija Mitro-vi¢ Dankulov.
 [92] [93] [94] [95]) [96]
 \openout2 = `3-BackMatter/Biography.aux'.
 
- (./3-BackMatter/Biography.tex [97
+ (./3-BackMatter/Biography.tex) [97
 
 
-])
+]
 \openout2 = `3-BackMatter/Autorstvo.aux'.
 
 
-(./3-BackMatter/Autorstvo.tex [98
+(./3-BackMatter/Autorstvo.tex
+LaTeX Font Info:    Font shape `OT2/Tempora-TLF/b/n' will be
+(Font)              scaled to size 17.28pt on input line 18.
+) [98
 
 
 
 ]
-LaTeX Font Info:    Font shape `OT2/Tempora-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 18.
- [99]) [100]
 \openout2 = `3-BackMatter/Istovetnost.aux'.
 
  (./3-BackMatter/Istovetnost.tex
@@ -3263,11 +3263,11 @@ Underfull \hbox (badness 1478) in paragraph at lines 48--52
 cama digitalne biblioteke, u
  []
 
-[101
+) [99
 
 
 
-]) [102]
+]
 \openout2 = `3-BackMatter/Koriscenje.aux'.
 
  (./3-BackMatter/Koriscenje.tex
@@ -3286,7 +3286,7 @@ Underfull \hbox (badness 1859) in paragraph at lines 34--38
 epozitorijumu Univerziteta u
  []
 
-[103
+[100
 
 
 
@@ -3296,7 +3296,7 @@ Overfull \hbox (1.59438pt too wide) in paragraph at lines 73--78
 Dozvo	avate umno^^Yava^^He, distribuciju i javno saopxtava^^He
  []
 
-) [104]
+) [101]
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -3335,9 +3335,9 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
  ) 
 Here is how much of TeX's memory you used:
- 21130 strings out of 482584
- 318867 string characters out of 5956256
- 606017 words of memory out of 5000000
+ 21131 strings out of 482584
+ 318871 string characters out of 5956256
+ 606016 words of memory out of 5000000
  35091 multiletter control sequences out of 15000+600000
  609511 words of font info for 108 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
@@ -3360,32 +3360,31 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc} </home/a
-nav/.texlive2019/texmf-var/fonts/pk/ljfour/lh/lh-ot2/wnr12.600pk>{/usr/share/te
-xlive/texmf-dist/fonts/enc/dvips/tempora/tmp_aq2g6w.enc}{/usr/share/texlive/tex
-mf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dv
-ips/tempora/tmp_ac5xuc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/tempo
-ra/tmp_jglahm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/tempora/ot2-te
-mpora.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/tempora/Tempora-Bol
-d.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (120 pages, 8588908 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc}{/usr/sha
+re/texlive/texmf-dist/fonts/enc/dvips/tempora/tmp_aq2g6w.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/e
+nc/dvips/tempora/tmp_ac5xuc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/
+tempora/tmp_jglahm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/tempora/o
+t2-tempora.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/tempora/Tempor
+a-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tempora/Tempora-It
+alic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tempora/Tempora-Regu
+lar.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on thesis.pdf (117 pages, 8590277 bytes).
 PDF statistics:
- 12799 PDF objects out of 12825 (max. 8388607)
- 7844 compressed objects within 79 object streams
- 463 named destinations out of 1000 (max. 500000)
+ 12784 PDF objects out of 12825 (max. 8388607)
+ 7835 compressed objects within 79 object streams
+ 464 named destinations out of 1000 (max. 500000)
  656 words of extra memory for PDF output out of 10000 (max. 10000000)
 
