@@ -593,6 +593,19 @@ E.~Alexander F.~E.A.F.I. Ihlen.
   Matlab}.
 \newblock {\em Front. Psychol.}, 3:141, 2012.
 
+\bibitem{barabasi2002evolution}
+Albert-Laszlo Barab{\^a}si, Hawoong Jeong, Zoltan N{\'e}da, Erzsebet Ravasz,
+  Andras Schubert, and Tamas Vicsek.
+\newblock Evolution of the social network of scientific collaborations.
+\newblock {\em Physica A: Statistical mechanics and its applications},
+  311(3-4):590--614, 2002.
+
+\bibitem{newman2001structure}
+Mark~EJ Newman.
+\newblock The structure of scientific collaboration networks.
+\newblock {\em Proceedings of the national academy of sciences},
+  98(2):404--409, 2001.
+
 \bibitem{smiljanic2017associative}
 Jelena Smiljani{\'c} and Marija Mitrovi{\'c}~Dankulov.
 \newblock Associative nature of event participation dynamics: A network theory
