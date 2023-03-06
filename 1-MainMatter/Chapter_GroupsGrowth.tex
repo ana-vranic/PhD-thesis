@@ -1,9 +1,14 @@
 \chapter{The growth of social groups}
 \label{Ch:Groups}
 
-\section{Social groups}
+The evolving complex networks have tendency to separate into connected fragments, communities ot groups of nodes. These communities are formed around certain topics, interests, and they play important role in shaping the structure and dynamics of the network. The distribution of the sizes of these communities has universal shape. To understand how the dynamics and structure of the networks affects the distribution of community sizes we combine the empirical approaches and theoretical modeling. We analyse real-world social networks, collect data about their structure and community sizes, while theoretical modeling involves developing models able to capture essential features of social networks and explain emergence of universal distribution od group sizes.
 
-Two popular online platforms, \textbf{Reddit} and \textbf{Meetup}, are organized into different groups. On Reddit \footnote{https://www.reddit.com/}, users create subreddits, where they share web content and discussion on specific topics, so their interactions are online through posts and comments. The Meetup groups \footnote{www.meetup.com} are also topic-focused, but the primary purpose of these groups is to help users in organizing offline meetings. As meetings happen face-to-face, Meetup groups are geographically localized, so we'll focus on groups created in two towns, London and New York. 
+%%TODO Ovde nedostaje jedan paragraf pre ovoga koji objašnjava zašto ovo izučavamo. Nešto na sledeću temu: "Some of the evolving complex networks have tendency separate into connected fragments, communities or groups of nodes. In the case of social networks, these communities are seen as the groups of members who are grouped around certain topics or other common traits. As a social network evolves so does its segmentation into groups. The segmentation is closely related to social network structure and members' preferences. The distribution of the sizes of social groups often has an universal shape.  We combine empirical approach and theoretical modeling to study study how the shape of this distribution depends on the network structure."  Možda ovaj pasus da ide pre ove sekcije
+
+\section{Empirical analysis of the social group growth}
+%%TODO Ne "Social groups" nego "Empirical analysis of the social group growth"
+
+Two popular online platforms, \textbf{Reddit} and \textbf{Meetup}, are organized into different groups. On Reddit \footnote{https://www.reddit.com/}, users create subreddits, where they share web content and discussion on specific topics, so their interactions are online through posts and comments. The Meetup groups \footnote{www.meetup.com} are also topic-focused, but the primary purpose of these groups is to help users in organizing offline meetings. As meetings happen face-to-face, Meetup groups are geographically localized, so we'll focus on groups created in two towns, London and New York.  
 
 The Meetup data cover groups created from $2003$, when the Meetup site was founded, until $2018$, when we downloaded data using the Meetup API. We extracted the groups from London and New York that were active for at least two months. There were 4673 groups with 831685 members in London and $4752$ groups with 1059632 members in New York. For each group, we got information about organized meetings and users who attended them. From there, for each user, we can find the date when the user participated in a group event for the first time; it is considered the date when the user joined a group. 
 
@@ -13,13 +18,6 @@ The Reddit data were downloaded from the https://pushshift.io/ site. This site c
 
 We have information about when the user attended the group event for each Meetup group. In contrast, we have detailed data about user activity for the subreddit, so we can extract the information when a user creates a post for the first time. Those dates are considered as the timestamp when a user joins to group. So both datasets have the same structure: $(g, u, t)$, where $t$ is the timestamp when user $u$ joined group $g$. For each time step, we can calculate the number of new members in each group $N_i(t)$, and the group size $S_{i}(t)$. The group size at time step $t$ is $S_{i}(t)=\sum^{k=t}_{k=t_{0}}N_{i}(t)$, where $t_0$ is month when group is created. The group size is increasing over time, as we do not have information if the user stopped to be active. Also, we calculate the growth rate as the logarithm of successive sizes $R = log(S_{i}(t)/S_{i}(t-1))$.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\linewidth]{chapter4/Fig2.png}
-	\caption[Properties of Meetup and Subreddit groups]{The number of groups over time, normalized sizes distribution, normalized log-rates distribution and dependence of log-rates and group sizes for Meetup groups created in London from 08-2002 until 07-2017 that were active in 2017 and subreddits created in the period from 01-2006 to the  12-2011 that were active in 2017. }
-	\label{fig:data1}
-\end{figure}   
-
 Even though Meetup and Reddit are different online platforms, we find some common properties of these systems; see Figure \ref{fig:data1}. The number of groups and the number of new users grow exponentially. Still, subreddits are larger groups than Meetups. The distribution of groups sizes follows the lognormal distribution:
 \begin{equation}
 P(S)=\frac{1}{S\sigma\sqrt{2\pi}}exp(-\frac{(\ln(S)-\mu)^{2}}{2\sigma^{2}})
@@ -27,11 +25,16 @@ P(S)=\frac{1}{S\sigma\sqrt{2\pi}}exp(-\frac{(\ln(S)-\mu)^{2}}{2\sigma^{2}})
 \end{equation}
 where $S$ is the group size and $\mu$, and $\sigma$ are parameters of the distribution.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{chapter4/Fig2.png}
+	\caption[Properties of Meetup and Subreddit groups]{The number of groups over time, normalized sizes distribution, normalized log-rates distribution and dependence of log-rates and group sizes for Meetup groups created in London from 08-2002 until 07-2017 that were active in 2017 and subreddits created in the period from 01-2006 to the  12-2011 that were active in 2017. }
+	\label{fig:data1}
+\end{figure}   
+
 The distributions for Meetup group sizes in London and New York follow a similar lognormal distribution, with parameters $\mu= -0.93$, $\sigma = 1.38$ for London and $\mu=-0.99$ and $\sigma=1.49$ for New York. The group sizes distribution of Subreddits is a broad lognormal distribution that resembles the power law; it has parameters $\mu= -5.41$ and $\sigma = 3.07$.   Still, we used the log-likelihood ratio method and showed that lognormal distribution is a better fit for these data than the power-law. The Result section is given a detailed analysis that supports these findings.   
 
 The simplest model that generates the lognormal distribution is the multiplicative process \cite{mitzenmacher2004brief}. Gibrat used this model to explain the growth of firms. The main assumption of this model is that growth rates  $R = log\frac{S_t}{S_{t-\Delta t}}$ do not depend on the size $S$ and that they are uncorrelated. Further, this implies the lognormal distribution of the sizes, while the distribution of growth rates appears to be a normal distribution,  \cite{mondani2014fat}, \cite{fu2005growth}. Figure \ref{fig:scale} shows the distribution of the logrates that follow a lognormal distribution, contrary to the Gibrat law. Furthermore, logrates depend on the group size \ref{fig:scale}. For these reasons, the Gibrat law can not explain the growth of online social groups. Similar conclusions are shown in recent studies about cities or the growth of the internet \cite{frasco2014spatially, qian2014origin}.   
-
-The growth of online social groups has universal behavior independent of the group's size. If we aggregate the groups created in the same year $y$, and each group size normalizes with average size $<S^y>$, $s^{y}_{i}=S^{y}_{i}/<S^{y}>$ we will find that group sizes distributions for the same dataset and different years fall on the same line, Figure \ref{fig:scale}. The same characteristics are observed for the distribution of the normalized logrates \ref{fig:scale}. The growth is universal over time, and the group sizes distribution does not change from year to year.
 
 \begin{figure}[h]
 	\centering
@@ -39,8 +42,12 @@ The growth of online social groups has universal behavior independent of the gro
 	\caption[Universality in the Meetup and Reddit groups]{The figure shows the groups' sizes distributions and log-rates distributions. Each distribution collects groups founded in the same year and is normalized with its mean value. The group sizes are at the end of 2017 for meetups and 2011 for subreddits.}
 	\label{fig:scale}
 \end{figure}
+
+The growth of online social groups has universal behavior independent of the group's size. If we aggregate the groups created in the same year $y$, and each group size normalizes with average size $<S^y>$, $s^{y}_{i}=S^{y}_{i}/<S^{y}>$ we will find that group sizes distributions for the same dataset and different years fall on the same line, Figure \ref{fig:scale}. The same characteristics are observed for the distribution of the normalized logrates \ref{fig:scale}. The growth is universal over time, and the group sizes distribution does not change from year to year.
+
+\clearpage
 \newpage
-\section{The model}
+\section{Theoretical model of social group growth} %%TODO Theoretical model of social group growth
 
 Meetup and Reddit engage members in different activities. Still, there are some underlying processes same in both systems. Each member can create new groups and join existing ones. Both systems grow in the number of groups and users, and each user can belong to an arbitrary number of groups. In the previous section, we identified the universal patterns in the growth of social groups, but the growth can not be modelled with the Gibrat law. 
 
@@ -107,7 +114,7 @@ Finally, we compare how group size distribution depends on different rules in ra
 \end{figure}
 
 \newpage
-\section{Results}
+\section{The growth of real social groups} %%TODO The growth of real social groups
 
 The social systems do not grow at a constant rate. In Ref. \cite{vranic2021growth}, authors have shown that features of growth signal influence the structure of social networks. For these reasons, we use the real growth signal from Meetup groups located in London and New York and Reddit community to simulate the growth of the social groups in these systems. Figure \ref{fig:fig5} top panel shows the time series of the number of new members that join each of the three systems each month. All three systems have relatively low growth initially, which accelerates as the system becomes more popular.
 
@@ -242,9 +249,9 @@ We apply complex network theory and statistical physics methods to describe the 
 
 Meetup and Reddit may be platforms with different purposes, but on the lower level, both systems could be described with the same processes users perform: they can join existing groups or create new ones. Also, in these systems, new users constantly arrive. As we find the lognormal distribution in group sizes, our first attempt was to describe this system with the Gibrat model. It is a proportional growth size model, where group size distribution converges to the lognormal distribution while the log rates take the normal distribution. The second condition still needs to be met, so we need to use a more intricate method.
 
-To explore the growth of these systems in more detail, we use a model where the social system is presented with evolving bipartite and social networks \cite{zheleva2009co}. The bipartite network has partitions of users and groups, and a link exists if a user is a group member. The social network describes the social connections between members. At each time step, new users arrive in the system, following the time series of new users, and with probability, $p_a$ old members decide to be also active. The active users can create a new group with probability $p_g$; otherwise, they will join existing groups. Their decision to select a group based on social connection is determined with probability $p_{aff}$; otherwise, the choice is random. 
+To explore the growth of these systems in more detail, we used a model where the social system is presented with evolving bipartite and social networks \cite{zheleva2009co}. The bipartite network has partitions of users and groups, and a link exists if a user is a group member. The social network describes the social connections between members. At each time step, new users arrive in the system, following the time series of new users, and with probability, $p_a$ old members decide to be also active. The active users can create a new group with probability $p_g$; otherwise, they will join existing groups. Their decision to select a group based on social connection is determined with probability $p_{aff}$; otherwise, the choice is random. %%TODO proslo vreme
 
-We estimate model parameters $p_a$, $p_g$ and $p_{aff}$ from empirical data. We see that model approximates well the empirical distributions. For Meetup groups in London and New York, the $p_{aff}$ parameter is smaller, while for Reddit, $p_{aff}$ is higher, resulting in broader group size distribution. It also means that for Reddit members, social connections are more important for the choice of groups. 
+We estimated model parameters $p_a$, $p_g$ and $p_{aff}$ from empirical data. We saw that model approximates well the empirical distributions. For Meetup groups in London and New York, the $p_{aff}$ parameter is smaller, while for Reddit, $p_{aff}$ is higher, resulting in broader group size distribution. It also means that for Reddit members, social connections are more important for the choice of groups. %%TODO proslo vreme
 
 With results in this chapter, we contribute to the knowledge of the growth and segmentation of the socio-economic systems. Our work was motivated by the Co-evolution model \cite{zheleva2009co}. The authors explore the social groups in which group size distribution scales as power-law. We identified different universality class, the system where group size distribution follows log normal. Further, we marked off a set of linking rules which led to lognormal group size distribution and compared these two cases. By this, we expanded the classes of social systems that can be modelled.  
 

@@ -1,10 +1,11 @@
 
-\chapter{The role of trust in knowledge-based communities} % Main chapter title
+\chapter{The sustainability of evolving knowledge-based communities} % Main chapter title
 \label{Ch:Trust}
+%%TODO The sustainability of evolving knowledge-based communities
 
 The \textbf{Stack Exchange} (SE) is a network of question-answer websites on diverse topics. In the beginning, the focus was on computer programming questions with StackOverflow \footnote{
 	More information about StackOverflow is available at \url{https://stackoverflow.co/}, and a broad introduction to the SE network is available at: \url{https://stackexchange.com/tour}. 
-}  community. Its popularity led to the Stack Exchange network, which counts more than 100 communities on different topics. The SE communities are self-moderating, and the questions and answers can be voted, allowing users to earn Stack Exchange reputation and privileges on the site. 
+}  community. Its popularity led to the Stack Exchange network, which counts more than 100 communities on different topics. The SE communities are self-moderating, and the questions and answers can be voted, allowing users to earn Stack Exchange reputation and privileges on the site. %TODO nedostaje pasus da opise vezu izmedju odrzivosti, evolucije istrukture mreze
 
 The new site topics are proposed through site Area51 \footnote{Visit \url{https://area51.stackexchange.com/faq} for more details about closed and beta SE communities and the review process.}, and if the community finds them relevant, they are created. Every proposed  StackExchange site needs interested users to commit to the community and contribute by posting questions, answers and comments. After a successful private beta phase site reaches the public beta phase, other members can join the community. The site can be in the public beta phase for a long time until it meets specific SE evaluation criteria for graduation. Otherwise, it may be closed with a decline in users’ activity. However, SE criteria for graduation have not been applied consistently on every SE site, as many sites graduated without reaching all required thresholds. As those measures only quantify the overall number of questions, answers or highly active users, we want to understand how SE community structure evolves and identify factors that influence sustainability. The need to share knowledge with others motivates users to use Q-A platforms. Still, the fact that they interact with each other reveals their sense of belonging to the community and the presence of trust among users. Our proxy for measuring trust in the community is the Dynamic Interaction Based Reputation Model.
 
@@ -37,12 +38,14 @@ If we take a look into \textbf{neighbor degree} depending on the node degree $k_
 	\label{fig:fullneighdeg}
 \end{figure}
 
-The \textbf{clustering coefficient} of a node quantifies the average connectivity between its neighbours and cohesion of its neighbourhood \cite{boccaletti2006complex}. It is a probability that two neighbours of a node are also neighbours and is calculated using the following formula:
-\begin{equation}
-c_{i}=\frac{e_{i}}{\frac{1}{2}k_{i}(k_{1}-1)} \ .
-\label{eq:clust}
-\end{equation}
-Here $e_{i}$ is the Number of links between neighbours of the node $i$ in a network, while $\frac{1}{2}k_{i}(k_{i}-1)$ is the maximal possible Number of links determined by the node degree $k_{i}$. The clustering coefficient of network $C$ is the value of clustering averaged over all nodes. A study on dynamics of social group growth shows that links between one’s friends that are members of a social group increase the probability that that individual will join the social group \cite{backstrom2006group}. Furthermore, successful social diffusion typically occurs in networks with a high value of clustering coefficient \cite{centola2007cascade}. These results suggest that high local cohesion should be a characteristic of sustainable communities. The dependence of the clustering coefficient on the node degree is shown in Figure \ref{fig:fullclustering}. As expected, we find that active communities are more clustered.
+%The \textbf{clustering coefficient} of a node quantifies the average connectivity between its neighbours and cohesion of its neighbourhood \cite{boccaletti2006complex}. It is a probability that two neighbours of a node are also neighbours and is calculated using the following formula:
+%\begin{equation}
+%c_{i}=\frac{e_{i}}{\frac{1}{2}k_{i}(k_{1}-1)} \ .
+%\label{eq:clust}
+%\end{equation}
+%%TODO clusteing je vec opiasan
+%Here $e_{i}$ is the Number of links between neighbours of the node $i$ in a network, while $\frac{1}{2}k_{i}(k_{i}-1)$ is the maximal possible. Number of links determined by the node degree $k_{i}$. The clustering coefficient of network $C$ is the value of clustering averaged over all nodes. 
+A study on dynamics of social group growth shows that links between one’s friends that are members of a social group increase the probability that that individual will join the social group \cite{backstrom2006group}. Furthermore, successful social diffusion typically occurs in networks with a high value of clustering coefficient \cite{centola2007cascade}. These results suggest that high local cohesion should be a characteristic of sustainable communities. The dependence of the clustering coefficient on the node degree is shown in Figure \ref{fig:fullclustering}. As expected, we find that active communities are more clustered.
 
 \begin{figure}[h]
 	\centering
@@ -178,6 +181,7 @@ Finally, we are interested in how dynamical reputation correlates with network m
 	\label{fig:dyn_rep_centrality}
 \end{figure}
 
+\newpage
 \section{Conclusions}
 
 The Stack Exchange sites bring together users interested in knowledge sharing. They create different topic communities where each member can post topic-related questions and get the correct answer from other users. The SE developed, in one sense, the trust among users, as many people see the SE as a valuable source of knowledge and seek their answers directly in these communities. Not all SE sites were launched, and some were closed because they did not fulfil the Stack Exchange criteria of the successful community. These criteria rely on basic measures such as the number of active users, posted questions, and answers, so we were interested in investigating the structure and dynamics of SE communities to understand how trustworthy and self-sustainable community emerges. 

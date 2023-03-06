@@ -31,43 +31,43 @@ Warning--empty publisher in guide_temporal
 Warning--empty booktitle in yashkina2020
 You've used 132 entries,
             1791 wiz_defined-function locations,
-            1200 strings with 25372 characters,
-and the built_in function-call counts, 31470 in all, are:
-= -- 2813
+            1200 strings with 25333 characters,
+and the built_in function-call counts, 31496 in all, are:
+= -- 2815
 > -- 1400
 < -- 15
 + -- 520
 - -- 388
-* -- 2341
-:= -- 5009
+* -- 2348
+:= -- 5012
 add.period$ -- 401
 call.type$ -- 132
 change.case$ -- 122
 chr.to.int$ -- 0
 cite$ -- 135
-duplicate$ -- 1339
-empty$ -- 3056
+duplicate$ -- 1340
+empty$ -- 3060
 format.name$ -- 388
-if$ -- 6922
+if$ -- 6928
 int.to.chr$ -- 0
 int.to.str$ -- 132
 missing$ -- 142
 newline$ -- 663
 num.names$ -- 132
-pop$ -- 260
+pop$ -- 258
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
 skip$ -- 587
 stack$ -- 0
-substring$ -- 2395
+substring$ -- 2398
 swap$ -- 257
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 322
+while$ -- 323
 width$ -- 135
-write$ -- 1445
+write$ -- 1446
 (There were 4 warnings)
