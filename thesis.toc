@@ -9,13 +9,25 @@
 \contentsline {chapter}{Abstract}{ix}{chapter*.3}%
 \babel@toc {serbianc}{}
 \babel@toc {english}{}
+\babel@toc {serbianc}{}
 \babel@toc {english}{}
-\contentsline {chapter}{Contents}{xii}{section*.5}%
+\babel@toc {serbianc}{}
 \babel@toc {english}{}
-\contentsline {chapter}{List of figures}{xiv}{section*.6}%
+\babel@toc {serbianc}{}
+\babel@toc {english}{}
+\babel@toc {serbianc}{}
+\babel@toc {english}{}
+\babel@toc {serbianc}{}
+\babel@toc {english}{}
+\babel@toc {serbianc}{}
 \babel@toc {english}{}
 \babel@toc {english}{}
-\contentsline {chapter}{List of Tables}{xv}{section*.7}%
+\contentsline {chapter}{Contents}{xiii}{section*.5}%
+\babel@toc {english}{}
+\contentsline {chapter}{List of figures}{xv}{section*.6}%
+\babel@toc {english}{}
+\babel@toc {english}{}
+\contentsline {chapter}{List of Tables}{xvi}{section*.7}%
 \babel@toc {english}{}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}The complex networks}{4}{section.1.1}%
@@ -47,7 +59,7 @@
 \contentsline {subsection}{\numberline {2.5.2}Rescaled range analysis}{29}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}Fluctuation analysis}{29}{subsection.2.5.3}%
 \contentsline {subsection}{\numberline {2.5.4}Multifractality of the signals}{31}{subsection.2.5.4}%
-\contentsline {section}{\numberline {2.6}Dynamical reputation model}{31}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Dynamical reputation model}{32}{section.2.6}%
 \contentsline {chapter}{\chapternumberline {3}Evolving complex network structure dependence on the properties of growth signals}{35}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Aging network model with growth signal}{35}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Characteristics of growth signals}{36}{subsection.3.1.1}%
@@ -68,7 +80,7 @@
 \contentsline {chapter}{\chapternumberline {5}The sustainability of evolving knowledge-based communities}{59}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Network properties of Stack Exchange data}{60}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Core-periphery structure}{62}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Dynamical Reputation on Stack Exchange communities}{64}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Dynamical Reputation on Stack Exchange communities}{65}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Conclusions}{68}{section.5.4}%
 \contentsline {chapter}{\chapternumberline {6}Conclusions}{71}{chapter.6}%
 \babel@toc {serbianc}{}

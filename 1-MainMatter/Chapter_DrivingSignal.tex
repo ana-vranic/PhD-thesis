@@ -1,25 +1,17 @@
 % Chapter 1
 
-\chapter{Evolving complex network structure dependence on the properties of growth signals} % Main chapter title
-%Driving signal
-%%TODO "Evolving complex network structure dependence on the properties of growth signals" Mislim da je ovo bolji naslov.
-\label{Ch:signals} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+\chapter{Evolving complex network structure dependence on the properties of growth signals} 
+\label{Ch:signals}
 
-Complex networks grow by adding new nodes, and growing network models consider growth constant over time. This approximation is sufficient for explaining how properties of complex networks can emerge; for example, 
-we find power-law %scaling of 
-degree distribution in the Barabasi-Albert model \cite{barabasi1999}. %%TODO ne scaling nego power-law. I stavi citat na kraju.
+Complex networks grow by adding new nodes, and growing network models consider growth constant over time. This approximation is sufficient for explaining how properties of complex networks can emerge; for example, we find power-law degree distribution in the Barabasi-Albert model \cite{barabasi1999}. 
 Models mainly focus on linking rules and their influence on the topology of complex networks. 
 
-Still, the growth of real systems changes over time. In online social networks, new users join daily, and the users' activity might have bursty nature. We can consider a co-authorship network, where links are created between scientists when they publish a paper \cite{barabasi2002evolution, newman2001structure}. %%TODO citati nedostaju
-The dynamics of real networks can be complex and highly influenced by nonlinear signals. The growth signal, the number of new nodes in each time step, has cycles and trends. Circadian cycles are directly reflected in growth signals, and we also find long-range correlations and multifractal properties \cite{fan2012fractal}. %%TODO citati
+Still, the growth of real systems changes over time. In online social networks, new users join daily, and the users' activity might have bursty nature. We can consider a co-authorship network, where links are created between scientists when they publish a paper \cite{barabasi2002evolution, newman2001structure}. The dynamics of real networks can be complex and highly influenced by nonlinear signals. The growth signal, the number of new nodes in each time step, has cycles and trends. Circadian cycles are directly reflected in growth signals, and we also find long-range correlations and multifractal properties \cite{fan2012fractal}. 
 
 In this chapter, we study how growth signals influence the network structure. We explain the properties of growth signals, both real and computer-generated, and
 analyze networks created with a growing network model where the interplay between aging and preferential attachment shapes their structure. We are interested in incorporating non-constant growth signals into the model and measuring their impact on complex networks. Differences between networks with the same number of nodes and links can be observed by analyzing connectivity patterns. Figure \ref{fig:ciljevi} summarizes our goals. 
-%%TODO Čekaj, zar ne objašnjavamo vezu između stukture mreže i osobina signala? U biti, ovo što sam ja opisala treba da bude prva rečenica. A onda ova tvoja treba da prati jer je početak opisa šta je sve rađeno u sekciji. 
 
-%%TODO ageing aging fix kroz celu tezu
-
-\begin{figure}[!ht]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{chapter3/ciljevi.pdf}
 	\caption[Nonlinear growth of the network.]{The open question is how nonlinear signals, in combination with the network model, influence the network's structure. Under what circumstances do networks have the scale-free, hub-spoke, or chain structure? }
@@ -38,7 +30,7 @@ We add $M(t)$ nodes with $L$ links at each time step. As multiple links between 
 
 For the model, we choose the aging model where linking probability depends on network degree $k$ and its age $\tau$, $\Pi_{i}(t)\sim k_{i}(t)^{\beta}\tau_{i}^{\alpha}$. With this linking probability, the master equation was solved for $M(t)=const.=1$, using approach \cite{dorogovtsev2001b}. When $M(t)$ is the correlated function, the equation is not solvable analytically. Instead, we use numerical simulations to study the influence of the signal $M(t)$ on the network structure. When we add only one link per node $L=1$, networks are uncorrelated trees. To obtain the clustered structures, we need to use $L>1$; each new node can create more than one link. Finally, we focus on the aging model parameters $-\infty<\alpha\leq-1$ and $\beta\geq1$. We expect a critical line $\beta(\alpha^{*})$ where scale-free networks can be found. Under critical line, networks have stretched exponential degree distribution, and for large $\beta$ small-world networks are present. 
 
-Finally, we need to define the new nodes' time series. We focus on the growth of two real systems, the \textbf{TECH} \cite{smiljanic2017associative} community in the Meetup website and on two months of \textbf{MySpace} \cite{suvakov2013} social network. Besides these signals, we use randomized MySpace and TECH signals and uncorrelated Poissonian signals.    %%TODO Formalno gledano imamo i randomizovane signale i Poasonov signal
+Finally, we need to define the new nodes' time series. We focus on the growth of two real systems, the \textbf{TECH} \cite{smiljanic2017associative} community in the Meetup website and on two months of \textbf{MySpace} \cite{suvakov2013} social network. Besides these signals, we use randomized MySpace and TECH signals and uncorrelated Poissonian signals.  
 
 \subsection{Characteristics of growth signals} %%TODO A zašto ovde ne opišeš i Poasonov signal?
 
@@ -83,7 +75,6 @@ The TECH is a group from the Meetup website that gathers users interested in tec
 
 
 \subsection{Structural differences between evolving complex networks}
-%%TODO Ovo su više "Structural differences between evolving complex networks" Ne definišeš ovde D-meru
 
 We can compare the networks with the same number of nodes and links generated with growth signals with different properties. We use a growing network model where we vary parameters $-3<\alpha\leq-1$ and $-3\leq\beta\leq1$. We also vary the network density, $L\in\{1,2,3\}$. For each set of model parameters $\alpha, \beta, L$ and each signal $M(t)$, we create the sample of $100$ networks. Besides this, for the same set of parameters, we generate the sample of networks with $N=10000$ and $N=3217$ nodes grown with constant signal $M(t)=1$; one node is added to the network at each time step. To examine how different growing signals influence the structure of networks, we use D-measure \cite{tiago2}, defined methodology chapter. We equally consider the global and local properties, setting parameter $w=0.5$. We compare the networks grown with the constant and fluctuating signal with D-measure for all network pairs between two samples and average the result. The advantage this measure has is that it can measure the distance between two network structures, even if they are generated with the same model; that was not the case with Hamming distance or graph editing distance \cite{tiago2}.
 
@@ -146,7 +137,6 @@ The Fourier filtering method generates the Gaussian distributed data, so data ar
 	\label{fig:monofractals}
 \end{figure}  
 
-
 As before, we focus on the region of the model phase diagram with negative $\alpha$ and positive $\beta$ as the transition line from stretched-exponential across scale-free to the small world-gel networks are found. We take a range of parameters  $-3\leq\alpha\leq-0.5$ and $1\leq\beta\leq3$ with steps $0.5$, and we also vary the number of links each new node can create $L\in{1, 2, 3}$. For each combination of $(\alpha, \beta, L)$, we generate the sample of $100$ networks and compare the structure of the network grown with fluctuating signals with different Hurst exponent $H \in \{0.5, 0.6, 0.7, 0.8, 0.9, 1.0\}$ and constant signal $M=4$. The results represented by D-measure, shown in Figure \ref{fig:Ddist_m}, are obtained by averaging the D-measure between all possible pairs of generated networks.   
 
 The higher values of the D-measure are found in the region of critical line $\beta(\alpha^{*})$. The most considerable influence is on networks with scale-free distribution. Comparing D-distance in only one point of the phase diagram, for example, $L=1, \alpha = -2.5, \beta = 2.5$, we find that when the Hurst exponent is more prominent, correlations in the signal make a bigger impact on the network structure. D-measure between networks grown by signal with Hurst exponent $H=1.0$ and the constant signal is $D(H=1.0, M=4) = 0.405$, while between networks grown with a signal with $H=0.8$ and the constant signal is $D(H=0.8, M=4) = 0.316$. For $\alpha>\alpha^{*}$, networks have similar structural properties, and D-measure is close to 0. In the region of networks with stretched exponential degree distribution, $\alpha<\alpha^{*}$  differences are small. 
@@ -157,7 +147,6 @@ The higher values of the D-measure are found in the region of critical line $\be
 	\caption[D-distance for networks generated with monofractal signals. ]{D-distance between networks generated with different long-range correlated signals with a fixed value of Hurst exponent and networks generated with constant signal M=4.}
 	\label{fig:Ddist_m}
 \end{figure}
-
 
 We further explore the assortativity index and clustering coefficient of generated networks. Figure \ref{fig:aindex} are results for several aging model parameters that show the difference between networks this model can produce. All networks are disassortative, with a negative degree-degree correlation index. For the parameters below critical line values, $\alpha=-2.5, \beta=1.5$ $r$ does not depend on the Hurst exponent. Above the critical line are small-world networks, and they are disassortative. The minimum value of the assortativity index is $r =-1$, for $L=1$, indicating the presence of hubs connecting many nodes. The assortativity index grows slightly with link density. 
 
@@ -179,11 +168,9 @@ In this chapter, we focused on the properties of growth signals and their influe
 
 The aging model can generate different complex networks depending on the model parameters. Our results showed that the most significant difference between networks generated with a constant and fluctuating signal is found on the critical line, where networks have broad degree distribution. While temporal correlations do not affect the degree distribution, the networks generated with fluctuating signals are more clustered and have more significant degree-degree correlations. The D-measure indicates that structural differences exist even for networks generated with white noise. For multifractal signals, we find the larger values of the D-measure. Furthermore, if we focus only on monofractal signals, characterized by the fixed value of Hurst exponent, $H$, the difference between networks rises with $H$. 
 
-Away from the critical line, the fluctuations do not have a strong influence on %strongly influence %TODO ili does not have a strong influence ili do not have influence. Ne može do not hae a strong influence
-on the network structure; D-measure is close to zero. In small-world networks, super-hubs emerge, and no matter how strong correlations, trends, or cycles exist in the signal, the structure of small-world networks does not change. Similar conclusions are found under the critical line, where networks with stretched exponential degree distribution appear. As $\alpha<<\alpha^{*}$, the new nodes attach to close ancestors, and monofractals do not impact the network structure. Only signals with multifractal properties may contribute to the formation of hubs, which is reflected in larger D-measure between networks. 
+Away from the critical line, the fluctuations do not have a strong influence on the network structure; D-measure is close to zero. In small-world networks, super-hubs emerge, and no matter how strong correlations, trends, or cycles exist in the signal, the structure of small-world networks does not change. Similar conclusions are found under the critical line, where networks with stretched exponential degree distribution appear. As $\alpha<<\alpha^{*}$, the new nodes attach to close ancestors, and monofractals do not impact the network structure. Only signals with multifractal properties may contribute to the formation of hubs, which is reflected in larger D-measure between networks. 
 
-Previous research on temporal networks \cite{holme2012} has shown that edge activation properties impact the complex system's dynamics. Also, different studies indicated the importance of fluctuating signals \cite{huberman1999, mitrovic2015, liu2019}. %%TODO citati
-Our results imply that modeling the social and technological networks should include non-constant growth. In combination with local linking rules, the properties of growth signals can significantly alter the network structure. 
+Previous research on temporal networks \cite{holme2012} has shown that edge activation properties impact the complex system's dynamics. Also, different studies indicated the importance of fluctuating signals \cite{huberman1999, mitrovic2015, liu2019}. Our results imply that modeling the social and technological networks should include non-constant growth. In combination with local linking rules, the properties of growth signals can significantly alter the network structure. 
 
 %----------------------------------------------------------------------------------------
 

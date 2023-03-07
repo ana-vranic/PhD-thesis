@@ -1,12 +1,11 @@
-\chapter{The sustainability of evolving knowledge-based communities} % Main chapter title
+\chapter{The sustainability of evolving knowledge-based communities} 
 \label{Ch:Trust}
-%%TODO The sustainability of evolving knowledge-based communities
 
 One of the key findings from the research on complex networks is that the structure of social interactions plays a significant role in their sustainability \cite{smiljanic2017associative, torok2017cascading}. Social interactions can be positive and negative, playing a vital role in shaping network dynamics. Positive interactions, such as cooperation, can lead to the formation of clusters or communities within the network, promoting its sustainability \cite{gross2008adaptive, han2017emergence}. In contrast, negative interactions, such as competition, can lead to the breakdown of the network structure and decrease its sustainability \cite{lhorincz2019collapse, torok2017cascading}. Social interactions can also influence the emergence of collective behavior, which can significantly impact its sustainability \cite{smiljanic2017associative, torok2017cascading}. In this chapter, we study Stack Exchange communities' structure, dynamics, and sustainability. 
 
 The \textbf{Stack Exchange} (SE) is a network of question-answer websites on diverse topics. In the beginning, the focus was on computer programming questions with Stack Overflow \footnote{
 	More information about StackOverflow is available at \url{https://stackoverflow.co/}, and a broad introduction to the SE network is available at: \url{https://stackexchange.com/tour}. 
-}  community. Its popularity led to the Stack Exchange network, which counts more than 100 communities on different topics. The SE communities are self-moderating, and the questions and answers can be voted, allowing users to earn Stack Exchange reputation and privileges on the site. %%TODO nedostaje pasus da opise vezu izmedju odrzivosti, evolucije istrukture mreze
+}  community. Its popularity led to the Stack Exchange network, which counts more than 100 communities on different topics. The SE communities are self-moderating, and the questions and answers can be voted, allowing users to earn Stack Exchange reputation and privileges on the site. 
 
 The new site topics are proposed through site Area51 \footnote{Visit \url{https://area51.stackexchange.com/faq} for more details about closed and beta SE communities and the review process.}, and if the community finds them relevant, they are created. Every proposed  StackExchange site needs interested users to commit to the community and contribute by posting questions, answers, and comments. After a successful private beta phase site reaches the public beta phase, other members can join the community. The site can be in the public beta phase for a long time until it meets specific SE evaluation criteria for graduation. Otherwise, it may be closed with a decline in users' activity. However, SE criteria for graduation have not been applied consistently on every SE site, as many sites graduated without reaching all required thresholds. As those measures only quantify the overall number of questions, answers, or highly active users, we want to understand how the SE community structure evolves and identify factors that influence sustainability. The need to share knowledge with others motivates users to use Q-A platforms. Still, the fact that they interact with each other reveals their sense of belonging to the community and the presence of trust among users. Our proxy for measuring trust in the community is the Dynamic Interaction Based Reputation Model.
 
@@ -26,7 +25,7 @@ We calculate the \textbf{degree distribution}, Figure \ref{fig:fullnetdeg}, and 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\linewidth]{chapter5/degree_distribution_fullnet.pdf}
-	\caption{Degree distribution.}
+	\caption[Degree distribution of Stack Exchange websites.]{Degree distribution of four pairs of Stack Exchange websites: Physics, Economics, Astronomy and Literature.}
 	\label{fig:fullnetdeg}
 \end{figure}
 
@@ -35,23 +34,16 @@ If we take a look into \textbf{neighbor degree} depending on the node degree $k_
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=\linewidth]{chapter5/neighdeg_fullnet.pdf}
-	\caption{Neighbour degree.}
+	\caption[Neighbor degree dependence on the node degree of Stack Exchange websites.]{Neighbor degree dependence on the node degree of four pairs of Stack Exchange websites: Physics, Economics, Astronomy and Literature.}
 	\label{fig:fullneighdeg}
 \end{figure}
 
-%The \textbf{clustering coefficient} of a node quantifies the average connectivity between its neighbors and cohesion of its neighborhood \cite{boccaletti2006complex}. It is a probability that two neighbors of a node are also neighbors and is calculated using the following formula:
-%\begin{equation}
-%c_{i}=\frac{e_{i}}{\frac{1}{2}k_{i}(k_{1}-1)} \ .
-%\label{eq:clust}
-%\end{equation}
-%%TODO clusteing je vec opiasan
-%Here $e_{i}$ is the Number of links between neighbours of the node $i$ in a network, while $\frac{1}{2}k_{i}(k_{i}-1)$ is the maximal possible. The number of links is determined by the node degree $k_{i}$. The clustering coefficient of network $C$ is the value of clustering averaged over all nodes. 
 A study on dynamics of social group growth shows that links between one's friends that are members of a social group increase the probability that that individual will join the social group \cite{backstrom2006group}. Furthermore, successful social diffusion typically occurs in networks with a high value of clustering coefficient \cite{centola2007cascade}. These results suggest that high local cohesion should be a characteristic of sustainable communities. The dependence of the clustering coefficient on the node degree is shown in Figure \ref{fig:fullclustering}. As expected, we find that active communities are more clustered.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{chapter5/clustering_fullnet.pdf}
-	\caption{Clustering coefficient.}
+	\caption[Clustering coefficient dependence on the node degree of Stack Exchange websites.]{Clustering coefficient dependence on the node degree of four pairs of Stack Exchange websites: Physics, Economics, Astronomy and Literature.}
 	\label{fig:fullclustering}
 \end{figure}
 
@@ -63,8 +55,8 @@ During the larger part of the observed period, an active community's clustering 
 
 \begin{figure}
 	\centering
-	\includegraphics[width=\linewidth]{chapter5/clustering.pdf}%Figures/figures_SE/Fig3.pdf}
-	\caption{Mean clustering coefficient.}
+	\includegraphics[width=\linewidth]{chapter5/clustering.pdf}
+	\caption[Mean clustering coefficient of Stack Exchange websites.]{Mean clustering coefficient of four pairs of Stack Exchange websites: Physics, Economics, Astronomy and Literature.}
 	\label{fig:clustering}
 \end{figure}
 
@@ -77,7 +69,7 @@ We tested this theory on all eight communities. We focused on 30 days of sub-net
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\linewidth]{chapter5/popular_casual_users.pdf}
-	\caption[Number of links per node]{Links per node among popular users (top 10\% of users) and between popular and casual users (everyone but popular users).}
+	\caption[Number of links per node of Stack Exchange websites.]{Links per node among popular users (top 10\% of users) and between popular and casual users (everyone but popular users) of four pairs four pairs of Stack Exchange websites: Physics, Economics, Astronomy and Literature. }
 	\label{fig:pop_cas_users}
 \end{figure} 
 
@@ -90,7 +82,7 @@ The Number of users in the core of active communities is higher than in closed c
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\linewidth]{chapter5/core_users.pdf}
-	\caption[The size of the core]{The size of the core (top) and a fraction of users in the core (bottom). Solid lines - active sites; dashed lines - closed sites.}
+	\caption[The size of the core of Stack Exchange websites.]{The size of the core (top) and a fraction of users in the core (bottom) of four pairs four pairs of Stack Exchange websites: Physics, Economics, Astronomy and Literature.}
 	\label{fig:core_size}
 \end{figure}
 
@@ -100,7 +92,7 @@ The highest values are found around diagonal elements where we compare networks 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\linewidth]{chapter5/jaccard_heatmap.pdf}
-	\caption[Mean Jaccard index between core users.]{Jaccard index between core users in  sub-networks at time points $t1$ and $t2$.}
+	\caption[Jaccard index between core users of Stack Exchange websites.]{Jaccard index between core users in  sub-networks at time points $t1$ and $t2$ for four pairs of Stack Exchange websites: Physics, Economics, Astronomy and Literature.}
 	\label{fig:jaccard_hm}
 \end{figure}  
 
@@ -109,7 +101,7 @@ The average Jaccard index between cores in networks separated by time interval $
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\linewidth]{chapter5/jaccard.pdf}
-	\caption[Mean Jaccard index between core users.]{Jaccard index between core users in 30 days sub-networks for all possible pairs of 30 days sub-networks separated by time interval $|t_i - t_j|$.}
+	\caption[Mean Jaccard index between core users of Stack Exchange websites.]{Jaccard index between core users in 30 days sub-networks for all possible pairs of 30 days sub-networks separated by time interval $|t_i - t_j|$ for four pairs of Stack Exchange websites: Physics, Economics, Astronomy and Literature.}
 	\label{fig:jaccard_mean}
 \end{figure}
 
@@ -118,7 +110,7 @@ Finally, we examine how the users' connectivity in and between the core and peri
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{chapter5/core_connectivity.pdf}
-	\caption{Links per node in core and links per node between core and periphery.}
+	\caption[Number of links per node of Stack Exchange websites.]{Number of links per node in core (top panel) and between core and periphery (bottom panel) for four pairs of Stack Exchange websites: Physics, Economics, Astronomy and Literature.}
 	\label{fig:links_per_node}
 \end{figure}
 
@@ -129,7 +121,7 @@ We further explore the difference between active and closed communities through 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{chapter5/reputation.pdf}
-	\caption[Dynamic Reputation of Stack Exchange websites.]{Dynamic Reputation on the four pairs of Stack Exchange websites: Astronomy, Literature, Economics,  Physics and Theoretical Physics.}
+	\caption[Number of active users and dynamic reputation of Stack Exchange websites.]{Number of active users (top panel) and mean reputation (bottom panel) of four pairs of Stack Exchange websites: Physics, Economics, Astronomy and Literature.}
 	\label{fig:dr6panel}
 \end{figure}
 
@@ -142,7 +134,7 @@ From the properties of networks, we found that active communities are more cohes
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{chapter5/core_reputation.pdf}
-	\caption{Dynamical reputation within the core.}
+	\caption[Dynamical reputation within core of Stack Exchange websites.]{Dynamical reputation within the core of four pairs of Stack Exchange websites: Physics, Economics, Astronomy and Literature.}
 	\label{fig:dr_core}
 \end{figure}
 
@@ -151,7 +143,7 @@ In the network's core are active users, and we expect a higher dynamic reputatio
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\linewidth]{chapter5/core_per_ratio_reputation.pdf}
-	\caption[Ratio between the total reputation within network core and periphery.]{Ratio between the total reputation within network core and periphery. Solid lines active communities, dashed lines closed communities.}
+	\caption[Ratio between the total reputation within network core and periphery of Stack Exchange websites.]{Ratio between the total reputation within network core and periphery of four pairs of Stack Exchange websites: Physics, Economics, Astronomy and Literature. }
 	\label{fig:dr_core_per}
 \end{figure}
 
@@ -160,7 +152,7 @@ The distribution of the dynamic reputation of SE communities is skewed. We calcu
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{chapter5/gini.pdf}
-	\caption[Gini index of dynamic reputation]{Gini index of dynamic reputation within the population.}
+	\caption[Gini index of dynamic reputation of Stack Exchange websites.]{Gini index of dynamic reputation within the population of four pairs of Stack Exchange websites: Physics, Economics, Astronomy and Literature.}
 	\label{fig:dynrep-gini}
 \end{figure} 
 
@@ -169,7 +161,7 @@ Further, we investigate how the properties of user interaction networks correlat
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{chapter5/reputation_assortativity.pdf}
-	\caption[Dynamic Reputation assortativity]{Dynamic Reputation assortativity in the network of interactions (questions, answers, comments, unweighted, undirected network). Solid lines - active sites; dashed lines - closed sites.}
+	\caption[Dynamic reputation assortativity of Stack Exchange websites.]{Dynamic Reputation assortativity in the network of interactions of four pairs of Stack Exchange websites: Physics, Economics, Astronomy and Literature.}
 	\label{fig:dyn_rep_assort}
 \end{figure}
 
@@ -178,7 +170,7 @@ Finally, we are interested in how dynamical reputation correlates with network m
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{chapter5/correlations.pdf}
-	\caption[Coefficient correlation between ]{Coefficient of correlation between users' Dynamic Reputation and users' network degree (top) and users' betweenness centrality (bottom). Solid lines - active sites; dashed lines - closed sites.}
+	\caption[Coefficient of correlation between users' dynamic reputation of Stack Exchange websites. ]{Coefficient of correlation between users' Dynamic Reputation and users' network degree (top) and users' betweenness centrality (bottom) of four pairs of Stack Exchange websites: Physics, Economics, Astronomy and Literature.}
 	\label{fig:dyn_rep_centrality}
 \end{figure}
 
