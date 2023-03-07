@@ -67,7 +67,7 @@
 \contentsline {section}{\numberline {4.4}Conclusions}{58}{section.4.4}%
 \contentsline {chapter}{\chapternumberline {5}The sustainability of evolving knowledge-based communities}{59}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Network properties of Stack Exchange data}{60}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Core-periphery structure}{61}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Core-periphery structure}{62}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Dynamical Reputation on Stack Exchange communities}{64}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Conclusions}{68}{section.5.4}%
 \contentsline {chapter}{\chapternumberline {6}Conclusions}{71}{chapter.6}%
@@ -80,7 +80,7 @@
 \contentsline {appendix}{\chapternumberline {D}Robustness of core-periphery algorithm}{85}{appendix.D}%
 \contentsline {chapter}{Bibliography}{89}{appendix*.8}%
 \babel@toc {english}{}
-\contentsline {chapter}{Biography of the author}{97}{appendix*.9}%
+\contentsline {chapter}{Biography of the author}{99}{appendix*.9}%
 \babel@toc {serbianc}{}
 \babel@toc {english}{}
 \babel@toc {serbianc}{}

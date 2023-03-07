@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  7 MAR 2023 00:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  7 MAR 2023 11:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2184,9 +2184,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 LaTeX Font Info:    Font shape `T1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 16.
+(Font)              scaled to size 12.0pt on input line 20.
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--21
+Underfull \hbox (badness 10000) in paragraph at lines 18--25
 
  []
 
@@ -2860,8 +2860,8 @@ expfit.pdf>]) [58]
 \openout2 = `1-MainMatter/Chapter_Trust1.aux'.
 
  (./1-MainMatter/Chapter_Trust1.tex
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 8.
-
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -2870,61 +2870,56 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 
 
 ]
-<figs/chapter5/degree_distribution_fullnet.pdf, id=11369, 1078.31299pt x 289.56
+<figs/chapter5/degree_distribution_fullnet.pdf, id=11380, 1078.31299pt x 289.56
 242pt>
 File: figs/chapter5/degree_distribution_fullnet.pdf Graphic file (type pdf)
 <use figs/chapter5/degree_distribution_fullnet.pdf>
 Package pdftex.def Info: figs/chapter5/degree_distribution_fullnet.pdf  used on
- input line 27.
+ input line 29.
 (pdftex.def)             Requested size: 483.69687pt x 129.89098pt.
-<figs/chapter5/neighdeg_fullnet.pdf, id=11371, 1071.8043pt x 289.56242pt>
+<figs/chapter5/neighdeg_fullnet.pdf, id=11382, 1071.8043pt x 289.56242pt>
 File: figs/chapter5/neighdeg_fullnet.pdf Graphic file (type pdf)
 <use figs/chapter5/neighdeg_fullnet.pdf>
 Package pdftex.def Info: figs/chapter5/neighdeg_fullnet.pdf  used on input line
- 36.
+ 38.
 (pdftex.def)             Requested size: 483.69687pt x 130.67744pt.
-<figs/chapter5/clustering_fullnet.pdf, id=11375, 1078.31299pt x 289.56242pt>
-File: figs/chapter5/clustering_fullnet.pdf Graphic file (type pdf)
-<use figs/chapter5/clustering_fullnet.pdf>
-Package pdftex.def Info: figs/chapter5/clustering_fullnet.pdf  used on input li
-ne 52.
-(pdftex.def)             Requested size: 483.69687pt x 129.89098pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[60pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
-}) has been already used, duplicate ignored
+ [60pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.59 H
-      ere we investigate how the SE community’s clustering coefficient cha...
- <./figs/chapter5/degree_distribution_fullnet.pdf>]
-<figs/chapter5/clustering.pdf, id=11425, 1076.97302pt x 287.24126pt>
+l.51 
+      <./figs/chapter5/degree_distribution_fullnet.pdf>]
+<figs/chapter5/clustering_fullnet.pdf, id=11435, 1078.31299pt x 289.56242pt>
+File: figs/chapter5/clustering_fullnet.pdf Graphic file (type pdf)
+<use figs/chapter5/clustering_fullnet.pdf>
+Package pdftex.def Info: figs/chapter5/clustering_fullnet.pdf  used on input li
+ne 54.
+(pdftex.def)             Requested size: 483.69687pt x 129.89098pt.
+<figs/chapter5/clustering.pdf, id=11437, 1076.97302pt x 287.24126pt>
 File: figs/chapter5/clustering.pdf Graphic file (type pdf)
 <use figs/chapter5/clustering.pdf>
-Package pdftex.def Info: figs/chapter5/clustering.pdf  used on input line 65.
+Package pdftex.def Info: figs/chapter5/clustering.pdf  used on input line 67.
 (pdftex.def)             Requested size: 483.69687pt x 129.00754pt.
  [61pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.73 
+l.75 
      pdfTeX warning (ext4): destination with the same identifier (name{figure.5
 .3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.73 
+l.75 
       <./figs/chapter5/neighdeg_fullnet.pdf> <./figs/chapter5/clustering_fullne
 t.pdf>]
-<figs/chapter5/popular_casual_users.pdf, id=11523, 918.4473pt x 394.84764pt>
+<figs/chapter5/popular_casual_users.pdf, id=11533, 918.4473pt x 394.84764pt>
 File: figs/chapter5/popular_casual_users.pdf Graphic file (type pdf)
 <use figs/chapter5/popular_casual_users.pdf>
 Package pdftex.def Info: figs/chapter5/popular_casual_users.pdf  used on input 
-line 78.
+line 80.
 (pdftex.def)             Requested size: 483.69687pt x 207.94276pt.
  [62pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 4}) has been already used, duplicate ignored
@@ -2940,25 +2935,25 @@ l.86
 l.86 
       <./figs/chapter5/clustering.pdf> <./figs/chapter5/popular_casual_users.pd
 f>]
-<figs/chapter5/core_users.pdf, id=11616, 914.6205pt x 394.84764pt>
+<figs/chapter5/core_users.pdf, id=11628, 914.6205pt x 394.84764pt>
 File: figs/chapter5/core_users.pdf Graphic file (type pdf)
 <use figs/chapter5/core_users.pdf>
-Package pdftex.def Info: figs/chapter5/core_users.pdf  used on input line 91.
+Package pdftex.def Info: figs/chapter5/core_users.pdf  used on input line 93.
 (pdftex.def)             Requested size: 483.69687pt x 208.81638pt.
-<figs/chapter5/jaccard_heatmap.pdf, id=11618, 914.59097pt x 413.43271pt>
+<figs/chapter5/jaccard_heatmap.pdf, id=11630, 914.59097pt x 413.43271pt>
 File: figs/chapter5/jaccard_heatmap.pdf Graphic file (type pdf)
 <use figs/chapter5/jaccard_heatmap.pdf>
 Package pdftex.def Info: figs/chapter5/jaccard_heatmap.pdf  used on input line 
-101.
+103.
 (pdftex.def)             Requested size: 483.69687pt x 218.65146pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figs/chapter5/jaccard.pdf, id=11620, 1078.83055pt x 290.07999pt>
+<figs/chapter5/jaccard.pdf, id=11632, 1078.83055pt x 290.07999pt>
 File: figs/chapter5/jaccard.pdf Graphic file (type pdf)
 <use figs/chapter5/jaccard.pdf>
-Package pdftex.def Info: figs/chapter5/jaccard.pdf  used on input line 110.
+Package pdftex.def Info: figs/chapter5/jaccard.pdf  used on input line 112.
 (pdftex.def)             Requested size: 483.69687pt x 130.05675pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2968,22 +2963,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.116 
+l.118 
        <./figs/chapter5/core_users.pdf>]
-<figs/chapter5/core_connectivity.pdf, id=11667, 902.71353pt x 394.84764pt>
+<figs/chapter5/core_connectivity.pdf, id=11679, 902.71353pt x 394.84764pt>
 File: figs/chapter5/core_connectivity.pdf Graphic file (type pdf)
 <use figs/chapter5/core_connectivity.pdf>
 Package pdftex.def Info: figs/chapter5/core_connectivity.pdf  used on input lin
-e 119.
+e 121.
 (pdftex.def)             Requested size: 483.69687pt x 211.56975pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/chapter5/reputation.pdf, id=11668, 902.23953pt x 394.84764pt>
+<figs/chapter5/reputation.pdf, id=11680, 902.23953pt x 394.84764pt>
 File: figs/chapter5/reputation.pdf Graphic file (type pdf)
 <use figs/chapter5/reputation.pdf>
-Package pdftex.def Info: figs/chapter5/reputation.pdf  used on input line 130.
+Package pdftex.def Info: figs/chapter5/reputation.pdf  used on input line 132.
 (pdftex.def)             Requested size: 483.69687pt x 211.68422pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2993,45 +2988,46 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.136 
+l.138 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 5.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.136 
+l.138 
        <./figs/chapter5/jaccard_heatmap.pdf> <./figs/chapter5/jaccard.pdf>]
 [65pdfTeX warning (ext4): destination with the same identifier (name{figure.5.9
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.140 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-5.10}) has been already used, duplicate ignored
+l.141 F
+       rom the properties of networks, we found that active communities are ...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.10})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.140 
-       <./figs/chapter5/core_connectivity.pdf> <./figs/chapter5/reputation.pdf>
-]
-<figs/chapter5/core_reputation.pdf, id=11863, 1088.88005pt x 287.24126pt>
+l.141 F
+       rom the properties of networks, we found that active communities are ...
+ <./figs/chapter5/core_connectivity.pdf> <./figs/chapter5/reputation.pdf>]
+<figs/chapter5/core_reputation.pdf, id=11875, 1088.88005pt x 287.24126pt>
 File: figs/chapter5/core_reputation.pdf Graphic file (type pdf)
 <use figs/chapter5/core_reputation.pdf>
 Package pdftex.def Info: figs/chapter5/core_reputation.pdf  used on input line 
-143.
+145.
 (pdftex.def)             Requested size: 483.69687pt x 127.59622pt.
-<figs/chapter5/core_per_ratio_reputation.pdf, id=11864, 1069.30374pt x 287.2412
+<figs/chapter5/core_per_ratio_reputation.pdf, id=11876, 1069.30374pt x 287.2412
 6pt>
 File: figs/chapter5/core_per_ratio_reputation.pdf Graphic file (type pdf)
 <use figs/chapter5/core_per_ratio_reputation.pdf>
 Package pdftex.def Info: figs/chapter5/core_per_ratio_reputation.pdf  used on i
-nput line 152.
+nput line 154.
 (pdftex.def)             Requested size: 483.69687pt x 129.93233pt.
-<figs/chapter5/gini.pdf, id=11866, 1097.49709pt x 287.24126pt>
+<figs/chapter5/gini.pdf, id=11878, 1097.49709pt x 287.24126pt>
 File: figs/chapter5/gini.pdf Graphic file (type pdf)
 <use figs/chapter5/gini.pdf>
-Package pdftex.def Info: figs/chapter5/gini.pdf  used on input line 161.
+Package pdftex.def Info: figs/chapter5/gini.pdf  used on input line 163.
 (pdftex.def)             Requested size: 483.69687pt x 126.59691pt.
 
 
@@ -3042,26 +3038,26 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.167 
+l.169 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 5.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.167 
+l.169 
        <./figs/chapter5/core_reputation.pdf> <./figs/chapter5/core_per_ratio_re
 putation.pdf>]
-<figs/chapter5/reputation_assortativity.pdf, id=11952, 1079.40398pt x 287.24126
+<figs/chapter5/reputation_assortativity.pdf, id=11964, 1079.40398pt x 287.24126
 pt>
 File: figs/chapter5/reputation_assortativity.pdf Graphic file (type pdf)
 <use figs/chapter5/reputation_assortativity.pdf>
 Package pdftex.def Info: figs/chapter5/reputation_assortativity.pdf  used on in
-put line 170.
+put line 172.
 (pdftex.def)             Requested size: 483.69687pt x 128.71826pt.
-<figs/chapter5/correlations.pdf, id=11954, 910.38281pt x 394.84764pt>
+<figs/chapter5/correlations.pdf, id=11966, 910.38281pt x 394.84764pt>
 File: figs/chapter5/correlations.pdf Graphic file (type pdf)
 <use figs/chapter5/correlations.pdf>
-Package pdftex.def Info: figs/chapter5/correlations.pdf  used on input line 179
+Package pdftex.def Info: figs/chapter5/correlations.pdf  used on input line 181
 .
 (pdftex.def)             Requested size: 483.69687pt x 209.78638pt.
 
@@ -3073,20 +3069,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.184 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{figure.5.14}) has been already used, duplicate ignored
+l.189 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.184 \newpage
-               <./figs/chapter5/gini.pdf> <./figs/chapter5/reputation_assortati
-vity.pdf>] [68pdfTeX warning (ext4): destination with the same identifier (name
-{figure.5.15}) has been already used, duplicate ignored
+l.189 
+       <./figs/chapter5/gini.pdf> <./figs/chapter5/reputation_assortativity.pdf
+>] [68pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.195 
+l.196 
        <./figs/chapter5/correlations.pdf>]) [69]
 \openout2 = `1-MainMatter/Chapter_Conclusions.aux'.
 
@@ -3110,7 +3106,7 @@ l.195
                                                   \fi \fi 
 l.41 
      ]
-<figs/appendixA/active_questions.pdf, id=12135, 1070.2673pt x 287.24126pt>
+<figs/appendixA/active_questions.pdf, id=12147, 1070.2673pt x 287.24126pt>
 File: figs/appendixA/active_questions.pdf Graphic file (type pdf)
 <use figs/appendixA/active_questions.pdf>
 Package pdftex.def Info: figs/appendixA/active_questions.pdf  used on input lin
@@ -3146,7 +3142,7 @@ l.112 \include{2-Appendix/Appendix_SEdata}
 
 
 ]
-<figs/appendixB/single_user_reputation.pdf, id=12199, 752.0742pt x 307.64925pt>
+<figs/appendixB/single_user_reputation.pdf, id=12211, 752.0742pt x 307.64925pt>
 
 File: figs/appendixB/single_user_reputation.pdf Graphic file (type pdf)
 <use figs/appendixB/single_user_reputation.pdf>
@@ -3161,12 +3157,12 @@ ut line 12.
 l.19 T
       he reputation decay determines the \textbf{forgetting factor $\beta$}....
  <./figs/appendixB/single_user_reputation.pdf>]
-<figs/appendixB/rmse.pdf, id=12247, 1076.11423pt x 286.70801pt>
+<figs/appendixB/rmse.pdf, id=12259, 1076.11423pt x 286.70801pt>
 File: figs/appendixB/rmse.pdf Graphic file (type pdf)
 <use figs/appendixB/rmse.pdf>
 Package pdftex.def Info: figs/appendixB/rmse.pdf  used on input line 25.
 (pdftex.def)             Requested size: 483.69687pt x 128.86865pt.
-<figs/appendixB/active_users.pdf, id=12249, 958.24876pt x 505.49666pt>
+<figs/appendixB/active_users.pdf, id=12261, 958.24876pt x 505.49666pt>
 File: figs/appendixB/active_users.pdf Graphic file (type pdf)
 <use figs/appendixB/active_users.pdf>
 Package pdftex.def Info: figs/appendixB/active_users.pdf  used on input line 34
@@ -3179,7 +3175,7 @@ Package pdftex.def Info: figs/appendixB/active_users.pdf  used on input line 34
                                                   \fi \fi 
 l.38 
       <./figs/appendixB/rmse.pdf>]
-<figs/appendixB/permanent_users.pdf, id=12299, 1070.2673pt x 287.24126pt>
+<figs/appendixB/permanent_users.pdf, id=12311, 1070.2673pt x 287.24126pt>
 File: figs/appendixB/permanent_users.pdf Graphic file (type pdf)
 <use figs/appendixB/permanent_users.pdf>
 Package pdftex.def Info: figs/appendixB/permanent_users.pdf  used on input line
@@ -3207,7 +3203,7 @@ _users.pdf>])
 
 
 ]
-<figs/appendixC/sliding_window.pdf, id=12417, 864.7468pt x 1378.5183pt>
+<figs/appendixC/sliding_window.pdf, id=12429, 864.7468pt x 1378.5183pt>
 File: figs/appendixC/sliding_window.pdf Graphic file (type pdf)
 <use figs/appendixC/sliding_window.pdf>
 Package pdftex.def Info: figs/appendixC/sliding_window.pdf  used on input line 
@@ -3232,7 +3228,7 @@ ndow.pdf>]
 
 
 ] [86]
-<figs/appendixD/blockmodel_robust.pdf, id=12498, 727.9929pt x 503.97534pt>
+<figs/appendixD/blockmodel_robust.pdf, id=12510, 727.9929pt x 503.97534pt>
 File: figs/appendixD/blockmodel_robust.pdf Graphic file (type pdf)
 <use figs/appendixD/blockmodel_robust.pdf>
 Package pdftex.def Info: figs/appendixD/blockmodel_robust.pdf  used on input li
@@ -3254,20 +3250,20 @@ pdf>] [88
 bibitemlist
 [89
 
-] [90] [91] [92] [93] [94] [95]) [96]
+] [90] [91] [92] [93] [94] [95] [96]) [97]
 \openout2 = `3-BackMatter/Biography.aux'.
 
- (./3-BackMatter/Biography.tex)
-[97
+ (./3-BackMatter/Biography.tex
+[98
 
 
-]
+]) [99]
 \openout2 = `3-BackMatter/Autorstvo.aux'.
 
  (./3-BackMatter/Autorstvo.tex
 LaTeX Font Info:    Font shape `OT2/Tempora-TLF/b/n' will be
 (Font)              scaled to size 17.28pt on input line 18.
-) [98
+) [100
 
 
 
@@ -3280,7 +3276,7 @@ Underfull \hbox (badness 1478) in paragraph at lines 48--52
 cama digitalne biblioteke, u
  []
 
-) [99
+) [101
 
 
 
@@ -3303,7 +3299,7 @@ Underfull \hbox (badness 1859) in paragraph at lines 34--38
 epozitorijumu Univerziteta u
  []
 
-[100
+[102
 
 
 
@@ -3313,7 +3309,7 @@ Overfull \hbox (1.59438pt too wide) in paragraph at lines 73--78
 Dozvo	avate umno^^Yava^^He, distribuciju i javno saopxtava^^He
  []
 
-) [101]
+) [103]
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -3352,10 +3348,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
  ) 
 Here is how much of TeX's memory you used:
- 21133 strings out of 482584
- 318941 string characters out of 5956256
- 607209 words of memory out of 5000000
- 35092 multiletter control sequences out of 15000+600000
+ 21145 strings out of 482584
+ 319168 string characters out of 5956256
+ 607418 words of memory out of 5000000
+ 35097 multiletter control sequences out of 15000+600000
  609511 words of font info for 108 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
  55i,17n,96p,1830b,623s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3398,10 +3394,10 @@ sfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (117 pages, 8592179 bytes).
+Output written on thesis.pdf (119 pages, 8595795 bytes).
 PDF statistics:
- 12791 PDF objects out of 12825 (max. 8388607)
- 7842 compressed objects within 79 object streams
- 465 named destinations out of 1000 (max. 500000)
+ 12814 PDF objects out of 12825 (max. 8388607)
+ 7863 compressed objects within 79 object streams
+ 472 named destinations out of 1000 (max. 500000)
  656 words of extra memory for PDF output out of 10000 (max. 10000000)
 

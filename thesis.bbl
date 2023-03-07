@@ -698,6 +698,37 @@ Jure Leskovec, Lars Backstrom, Ravi Kumar, and Andrew Tomkins.
 \newblock In {\em Proceedings of the 14th ACM SIGKDD international conference
   on Knowledge discovery and data mining}, pages 462--470, 2008.
 
+\bibitem{torok2017cascading}
+J{\'a}nos T{\"o}r{\"o}k and J{\'a}nos Kert{\'e}sz.
+\newblock Cascading collapse of online social networks.
+\newblock {\em Scientific reports}, 7(1):1--8, 2017.
+
+\bibitem{torok2013opinions}
+J{\'a}nos T{\"o}r{\"o}k, Gerardo I{\~n}iguez, Taha Yasseri, Maxi San~Miguel,
+  Kimmo Kaski, and J{\'a}nos Kert{\'e}sz.
+\newblock Opinions, conflicts, and consensus: modeling social dynamics in a
+  collaborative environment.
+\newblock {\em Physical review letters}, 110(8):088701, 2013.
+
+\bibitem{gross2008adaptive}
+Thilo Gross and Bernd Blasius.
+\newblock Adaptive coevolutionary networks: a review.
+\newblock {\em Journal of the Royal Society Interface}, 5(20):259--271, 2008.
+
+\bibitem{han2017emergence}
+Xiao Han, Shinan Cao, Zhesi Shen, Boyu Zhang, Wen-Xu Wang, Ross Cressman, and
+  H~Eugene Stanley.
+\newblock Emergence of communities and diversity in social networks.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  114(11):2887--2891, 2017.
+
+\bibitem{lhorincz2019collapse}
+L{\'a}szl{\'o} L{\H{o}}rincz, J{\'u}lia Koltai, Anna~Fruzsina Gy{\H{o}}r, and
+  K{\'a}roly Tak{\'a}cs.
+\newblock Collapse of an online social network: Burning social capital to
+  create it?
+\newblock {\em Social Networks}, 57:43--53, 2019.
+
 \bibitem{orsini2015quantifying}
 C.~Orsini, M.~Mitrovi\'c~Dankulov, P.~Colomer-de Sim{\'o}n, A.~Jamakovic,
   P.~Mahadevan, A.~Vahdat, K.~E. Bassler, Z.~Toroczkai, M.~Bogu{\~n}{\'a},
