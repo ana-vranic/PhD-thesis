@@ -21,6 +21,8 @@
 \babel@toc {english}{}
 \babel@toc {serbianc}{}
 \babel@toc {english}{}
+\babel@toc {serbianc}{}
+\babel@toc {english}{}
 \babel@toc {english}{}
 \contentsline {chapter}{Contents}{ix}{section*.5}%
 \babel@toc {english}{}

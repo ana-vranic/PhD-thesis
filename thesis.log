@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  8 MAR 2023 08:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  8 MAR 2023 17:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2166,6 +2166,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/Tempora-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 11.
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--16
+
+ []
+
 )pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -2215,35 +2220,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--20
 \openout2 = `0-FrontMatter/Abstract-Srb.aux'.
 
  (./0-FrontMatter/Abstract-Srb.tex
-LaTeX Font Info:    Font shape `OT2/Tempora-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 4.
-
-
-LaTeX Font Warning: Font shape `OT2/ptm/b/n' undefined
-(Font)              using `OT2/ptm/m/n' instead on input line 8.
-
 LaTeX Font Info:    Font shape `OT2/Tempora-TLF/b/n' will be
-(Font)              scaled to size 24.88pt on input line 8.
+(Font)              scaled to size 24.88pt on input line 3.
+LaTeX Font Info:    Font shape `OT2/Tempora-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 5.
 
-Underfull \hbox (badness 2626) in paragraph at lines 11--12
+Underfull \hbox (badness 2626) in paragraph at lines 7--8
 \OT2/Tempora-TLF/m/n/12 ispo^^Havaju kolektivno ponaxa^^He. Kompleksne mre^^Ye 
 predstav	aju opxti pristup za
  []
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 11--12
+Underfull \hbox (badness 1910) in paragraph at lines 7--8
 \OT2/Tempora-TLF/m/n/12 reprezentaciju obrazaca interakcija u kompleksnim siste
 mima. Struktura kompleksne
  []
 
 
-Underfull \hbox (badness 1661) in paragraph at lines 11--12
+Underfull \hbox (badness 1661) in paragraph at lines 7--8
 \OT2/Tempora-TLF/m/n/12 fizike, raqunarske fizike, teorije kompleksnih mre^^Ya,
  kompjuterskih nauka kako bi
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 15--16
+Underfull \hbox (badness 1337) in paragraph at lines 11--12
 \OT2/Tempora-TLF/m/n/12 korelacija. Kombinujemo ih sa mre^^Ynim modelom starost
 i qvorova da bismo deta	no
  []
@@ -2253,8 +2253,13 @@ i qvorova da bismo deta	no
 
 
 ]
+Underfull \hbox (badness 1242) in paragraph at lines 19--20
+\OT2/Tempora-TLF/m/n/12 na osnovu druxtvenih veza. Pokazali smo da su druxtvene
+ interakcije bitan faktor
+ []
+
 LaTeX Font Info:    Font shape `OT2/Tempora-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 24.
+(Font)              scaled to size 12.0pt on input line 26.
 ) [8]
 \openout2 = `0-FrontMatter/Contents.aux'.
 
@@ -3300,20 +3305,24 @@ LaTeX Font Info:    Font shape `OT2/Tempora-TLF/b/n' will be
 \openout2 = `3-BackMatter/Istovetnost.aux'.
 
 
-(./3-BackMatter/Istovetnost.tex
+(./3-BackMatter/Istovetnost.tex [102
+
+
+
+]
 Underfull \hbox (badness 1478) in paragraph at lines 48--52
 []\OT2/Tempora-TLF/m/n/12 Ovi liqni podaci mogu se objaviti na mre^^Ynim strani
 cama digitalne biblioteke, u
  []
 
-) [102
+) [103]
+\openout2 = `3-BackMatter/Koriscenje.aux'.
+
+ (./3-BackMatter/Koriscenje.tex [104
 
 
 
 ]
-\openout2 = `3-BackMatter/Koriscenje.aux'.
-
- (./3-BackMatter/Koriscenje.tex
 LaTeX Font Info:    Trying to load font information for OT1+Tempora-TLF on inpu
 t line 20.
 
@@ -3329,17 +3338,13 @@ Underfull \hbox (badness 1859) in paragraph at lines 34--38
 epozitorijumu Univerziteta u
  []
 
-[103
-
-
-
-]
+[105]
 Overfull \hbox (1.59438pt too wide) in paragraph at lines 73--78
 []\OT2/Tempora-TLF/b/n/12 Autorstvo -- nekomercijalno. \OT2/Tempora-TLF/m/n/12 
 Dozvo	avate umno^^Yava^^He, distribuciju i javno saopxtava^^He
  []
 
-) [104]
+) [106]
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -3378,13 +3383,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 21140 strings out of 482584
- 319103 string characters out of 5956256
- 608251 words of memory out of 5000000
- 35096 multiletter control sequences out of 15000+600000
- 609511 words of font info for 108 fonts, out of 8000000 for 9000
+ 21141 strings out of 482584
+ 319105 string characters out of 5956256
+ 607250 words of memory out of 5000000
+ 35095 multiletter control sequences out of 15000+600000
+ 609087 words of font info for 107 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 55i,17n,96p,1980b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,96p,1980b,651s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -3424,10 +3429,10 @@ sfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (120 pages, 8599872 bytes).
+Output written on thesis.pdf (122 pages, 8602189 bytes).
 PDF statistics:
- 12814 PDF objects out of 12825 (max. 8388607)
- 7862 compressed objects within 79 object streams
- 468 named destinations out of 1000 (max. 500000)
+ 12825 PDF objects out of 12825 (max. 8388607)
+ 7871 compressed objects within 79 object streams
+ 470 named destinations out of 1000 (max. 500000)
  656 words of extra memory for PDF output out of 10000 (max. 10000000)
 
