@@ -49,7 +49,7 @@ MySpace signal is the number of new members who appear for the first time in the
 		\includegraphics[width=\textwidth]{chapter3/hurst_myspace.pdf}
 		\vspace{0.01cm}
 	\end{minipage}
-	\caption[Properties of MySpace signal.]{MySpace signal, the random MySpace signal (left pane) and the dependence of multifractal Hurst exponent $H(q)$ of the scale $q$. (right pane)}
+	\caption[Properties of MySpace signal.]{MySpace signal, the random MySpace signal (left pane) and the dependence of multifractal Hurst exponent $H(q)$ of the scale $q$ (right pane).}
 	\label{fig:myspace_signals}
 \end{figure}
 
@@ -67,7 +67,7 @@ MySpace signal is the number of new members who appear for the first time in the
 		\includegraphics[width=\textwidth]{chapter3/hurst_tech_1.pdf}
 		\vspace{1cm}
 	\end{minipage}
-	\caption[Properties of the TECH and Poisson signals.]{TECH signal, the random TECH signal (left pane) and the dependence of multifractal Hurst exponent $H(q)$ of the scale $q$. (right pane)}
+	\caption[Properties of the TECH and Poisson signals.]{TECH signal, the random TECH signal (left pane) and the dependence of multifractal Hurst exponent $H(q)$ of the scale $q$ (right pane).}
 	\label{fig:tech_signals}
 \end{figure}
 
@@ -116,15 +116,15 @@ The previous section showed that the growth signal of real systems has complex d
 
 The long range correlated data have power-law correlations $C(s)= <x_i x_{i+s}> = s ^ {-\gamma}$ characterized with coefficient $\gamma$. Hurst exponent depends on $\gamma$ as  $H = 1- \frac{\gamma}{2}$. The Fourier transform gives us the power spectrum of the time series $S(f)$, which is a function of the frequency $f$. For the long-range correlated data, it depends on coefficient $\beta = 1-\gamma$ and has the form:
 \begin{equation}
-S(f) \sim f^{-\beta}
+S(f) \sim f^{-\beta}.
 \end{equation}
 We can generate the data using Fourier filtering with $\beta = 2H - 1$, as following:
 
 \begin{itemize}
-	\item first generate one-dimensional sequence of uncorrelated random numbers $u_i$ from Gaussian distribution with $\sigma=1$.
-	\item calculate the Fourier transform of the generated sequence, $u_q$, the spectrum is flat as data correspond to white noise.
-	\item then filter the power spectrum with $f^{-\beta/2}$, so the function will follow the power spectrum expected for data with long-range correlations. 	
-	\item  calculate the inverse Fourier transform $x_i$. It converts data to the time domain where the signal has desired long-range correlations.
+	\item First generate one-dimensional sequence of uncorrelated random numbers $u_i$ from Gaussian distribution with $\sigma=1$.
+	\item Calculate the Fourier transform of the generated sequence, $u_q$, the spectrum is flat as data correspond to white noise.
+	\item Then filter the power spectrum with $f^{-\beta/2}$, so the function will follow the power spectrum expected for data with long-range correlations. 	
+	\item  Calculate the inverse Fourier transform $x_i$. It converts data to the time domain where the signal has desired long-range correlations.
 	
 \end{itemize}     
 
@@ -133,7 +133,7 @@ The Fourier filtering method generates the Gaussian distributed data, so data ar
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=0.6\linewidth]{chapter3/monofractals.pdf}
-	\caption[Long range correlated monofractal signals]{Monofractal signals generated with Fourier filtering method for different Hurst exponents}
+	\caption[Long range correlated monofractal signals.]{Monofractal signals generated with Fourier filtering method for different Hurst exponents}
 	\label{fig:monofractals}
 \end{figure}  
 
@@ -144,7 +144,7 @@ The higher values of the D-measure are found in the region of critical line $\be
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{chapter3/Ddist_M4_w10.5_w20.5.png}
-	\caption[D-distance for networks generated with monofractal signals. ]{D-distance between networks generated with different long-range correlated signals with a fixed value of Hurst exponent and networks generated with constant signal M=4.}
+	\caption[D-distance for networks generated with monofractal signals.]{D-distance between networks generated with different long-range correlated signals with a fixed value of Hurst exponent and networks generated with constant signal M=4.}
 	\label{fig:Ddist_m}
 \end{figure}
 

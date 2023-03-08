@@ -22,7 +22,7 @@ The complex network theory originates from the graph theory in mathematics. The 
 	\centering
 	\includegraphics[width=0.3\linewidth]{chapter1/Konigsberg_bridges.png} \hspace{2cm}
 	\includegraphics[width=0.3\linewidth]{chapter1/Konigsberg_graph.png}
-	\caption[\selectlanguage{english}Konigsberg problem of seven bridges.]{The Kronigsber problem of seven bridges. The left panel shows the original map of the bridges; the right panel shows its graph representation. }
+	\caption[\selectlanguage{english}Konigsberg problem of seven bridges.]{The Kronigsber problem of seven bridges. The left panel shows the original map of the bridges; the right panel shows its graph representation.}
 	
 	\label{fig:Krgraph}
 \end{figure}
@@ -44,12 +44,12 @@ Real networks are much more heterogeneous than networks obtained in simple model
 
 The graph or network $G$ is defined as $G=(\boldsymbol{V}, \boldsymbol{E})$, where $\boldsymbol{V} = \{ v_1, v_2, ... v_N\}$ is a set of $N$ nodes (vertices), and  $\boldsymbol{E} = \{e_1, .. e_L\}$ is a set of $L$ edges (links). The edge is pair of nodes $e = (v_i, v_j), $ such that $\{v_i,v_j\}\in \boldsymbol{V}$. The most basic network representation considers \textbf{unweighted and undirected} structure. The edges are unweighted, meaning that all interactions in the network are equally important. Because the network is un-directed, edges are symmetric, so $(v_i, v_j)$ implies $(v_j, v_i)$. In \textbf{directed} networks, this symmetry is broken. The interaction between two nodes, $v_i$ and $v_j$, can be only in one direction. A typical example is World Wide Web, where webpages are nodes and hyperlinks are directed edges. In biological networks, gene regulation and neural activation can be described as a directed network. The first column a) in Figure \ref{fig:graph_dir} shows the graphical representation of two networks with an equal number of nodes; the first is undirected, and the second is directed. 
 
-Even though graphical representation can be useful for describing the network structure, mathematical representation allows us to characterize the statistical properties of the networks. The graph $G$, with $N$ nodes could be represented with \textbf{adjacency matrix} $|A| = N \times N$ \cite{boccaletti2006complex}. The matrix elements are positive if there is a connection between two nodes $v_i$ and $v_j$. 
+Even though graphical representation can be useful for describing the network structure, mathematical representation allows us to characterize the statistical properties of the networks. The graph $G$, with $N$ nodes could be represented with \textbf{adjacency matrix} $|A| = N \times N$ \cite{boccaletti2006complex}. The matrix elements are positive if there is a connection between two nodes $v_i$ and $v_j$:
 \begin{equation}
 A_{ij} =
 \begin{cases}
 1 & \text{ ($v_i$, $v_j$) $\in$ $E$}\\
-0 & \text{ ($v_i$, $v_j$) $\notin$ $E$}
+0 & \text{ ($v_i$, $v_j$) $\notin$ $E$}.
 \end{cases}       
 \end{equation}
 
@@ -97,7 +97,7 @@ The temporal network is a collection of timestamped edges; see Figure \ref{fig:t
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{chapter1/temporal_network.pdf} 
-	\caption[Temporal network.]{Temporal network. Top panel represents collection of timestamped edges. Bottom panel represents sequence of static networks.}
+	\caption[Temporal network.]{Top panel represents temporal network as collection of timestamped edges. Bottom panel represents sequence of static networks.}
 	\label{fig:temporal}
 \end{figure}
 

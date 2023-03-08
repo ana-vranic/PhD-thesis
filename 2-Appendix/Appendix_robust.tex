@@ -27,32 +27,32 @@ From the confusion matrix, we can write the precision $P =n_{TP}/(n_{TP}+n_{FP})
 
 The \textbf{F1 measure} is the harmonic mean of precision and recall \cite{labatut2012accuracy}:
 \begin{equation}
-F_1 = 2\frac{P \cdot R}{P+R} = \frac{2n_{TP}}{2n_{TP}+n_{FN} + n_{FP}}
+F_1 = 2\frac{P \cdot R}{P+R} = \frac{2n_{TP}}{2n_{TP}+n_{FN} + n_{FP}}.
 \end{equation}
 It can be interpreted as a measure of overlap between true and estimated classes; it is 0 for no overlap to 1 if the overlap is complete.
 
 The \textbf{Jaccard's} coefficient is the ratio of two classes' intersection to their union \cite{labatut2012accuracy}. It can also be expressed in terms of a confusion matrix: 
 \begin{equation}
-J =  \frac{C_{core} \cap C^{'}_{core}}{C_{core} \cup C^{'}_{core}} =   \frac{n_{TP}}{n_{TP}+n_{FP} + n_{FN}}
+J =  \frac{C_{core} \cap C^{'}_{core}}{C_{core} \cup C^{'}_{core}} =   \frac{n_{TP}}{n_{TP}+n_{FP} + n_{FN}}.
 \end{equation}
 
 \textbf{Normalized mutual information (NMI)} is similarity measure between to partitions $C$ and $C^{'}$  based on information theory \cite{danon2005comparing}:
 
 \begin{equation}
-NMI(C, C^{'}) = \frac{MI(C, C^{'})}{(H(C)+H(C^{'})/2}
+NMI(C, C^{'}) = \frac{MI(C, C^{'})}{(H(C)+H(C^{'})/2}.
 \end{equation}
 
 where $MI$ is mutual information between sets $C$ and $C^{'}$, while $H(C)$ is entropy of given partition. The entropy is defined as $H(C) = - \sum_{i=1}^{|C|}P(i)log(P(i))$, where $P(i) = |U_i|/N$ is the probability that an object is randomly classified as $i$ (in this special case $i=0$, the node belongs to the core, or $i=1$, the node belongs to the periphery). The mutual information between sets $C$ and $C^{'}$ measures the probability that the randomly chosen node is a member of the same group in both partitions:
 \begin{equation}
-MI(C, C) = \sum_i\sum_j P(i, j) log(\frac{P(i,j)}{P(i)P^{'}(j)})    
+MI(C, C) = \sum_i\sum_j P(i, j) log(\frac{P(i,j)}{P(i)P^{'}(j)})    .
 \end{equation}
-where $P(i, j)= |U_i \cap U_j|/N$
+where $P(i, j)= |U_i \cap U_j|/N$.
 
 $NMI$ ranges from 0 when the partitions are independent to 1 if they are identical.   
 
 \textbf{Adjusted rand index.} For the set of nodes $V$, with $n$ nodes, consider all possible combination of pairs $(v_i, v_j)$. We can select the number of the pairs where nodes belong to the same group in both partitions, $C$ and  $C^{'}$, denoted as $a$. Similarly, as $b$, we can define the number of pairs whose nodes belong to different groups in partitions. Then, unadjusted rand index \cite{santos2009use} is given as $RI = \frac{a+b}{\binom{n}{2}}$, where $\binom{n}{2}$ is number of all possible pairs. The RI between two randomly assigned partitions is not close to zero; for that reason, it is common to use the adjusted rand index \cite{hubert1985comparing}, defined as:
 \begin{equation}
-ARI = \frac{RI - E[RI]}{max(RI)- E[RI]}
+ARI = \frac{RI - E[RI]}{max(RI)- E[RI]},
 \end{equation}
 where $E[RI]$ is expected value of RI, and $max(RI)$ is maximum value of $RI$. 
 

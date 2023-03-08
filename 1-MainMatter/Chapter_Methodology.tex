@@ -28,10 +28,10 @@ When plotting the degree distribution, it is common to use scaling of the axis. 
 
 \subsection{Degree-degree correlations} 
 
-Correlation is defined through a correlation coefficient r. If x and y are two stochastic variables, for which we have a series of observation pairs $(x_1, y_1), (x_2, y_2), ...,(x_n, y_n)$. The correlation coefficient $r(x, y)$ between $x$ and $y$ is defined as \cite{van2010graph}:
+Correlation is defined through a correlation coefficient r. If x and y are two stochastic variables, for which we have a series of observation pairs $(x_1, y_1), (x_2, y_2), ...,(x_n, y_n)$. The correlation coefficient $r(x, y)$ between $x$ and $y$ is defined as \cite{van2010graph}
 
 \begin{equation}
-r(x, y) = \frac{\frac{1}{n}\sum_{i=1}^{n}((x_i - \bar{x} ) (y_i - \bar{y}) )}{\sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2} \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \bar{y})^2} }
+r(x, y) = \frac{\frac{1}{n}\sum_{i=1}^{n}((x_i - \bar{x} ) (y_i - \bar{y}) )}{\sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2} \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \bar{y})^2} },
 \end{equation}
 
 where $\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i$, is the average over variable $x$.
@@ -39,7 +39,7 @@ where $\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i$, is the average over variable $x$
 Using the correlation coefficient definition, we can define correlations for vertex degrees. For simple graph G with vertex set $V(G) = \{v_1, ..v_n\}$, $\boldsymbol{A}[i,j] = 1$ if there is a link between nodes $v_i$ and $v_j$. If G is a simple graph with adjacency matrix $\boldsymbol{A}$ and degree sequence $\boldsymbol{d} = [d_1, ..., d_n]$
 
 \begin{equation}
-r_{deg}(G) = \frac{\sum_{i=1}^{n}\sum_{i=1+1}^{n}((d_i - \bar{d}) (d_i - \bar{d}) \boldsymbol{A}[i,j] )}{\sum_{i=1}^{n}(d_i - \bar{d})^2}
+r_{deg}(G) = \frac{\sum_{i=1}^{n}\sum_{i=1+1}^{n}((d_i - \bar{d}) (d_i - \bar{d}) \boldsymbol{A}[i,j] )}{\sum_{i=1}^{n}(d_i - \bar{d})^2}.
 \end{equation}
 
 An adjacency matrix allows us to calculate the correlations between neighboring nodes. If two nodes are not connected $A[i,j]=0$, the degree of correlation between them does not contribute to the $r$.
@@ -56,9 +56,9 @@ where $e_{kl}$ is the probability that a randomly selected link connects nodes w
 
 \subsection{Clustering coefficient}
 
-The \textbf{clustering coefficient} is a measure describing the neighborhood's structure. In networks, exist a tendency to form triangles or clusters \cite{barabasi2016network}. It is common in friendship networks where two friends of one person have a high probability of being friends \cite{mata2020complex}. The clustering can be measured by computing the number of links between neighbors of one node \cite{watts1998collective},
+The \textbf{clustering coefficient} is a measure describing the neighborhood's structure. In networks, exist a tendency to form triangles or clusters \cite{barabasi2016network}. It is common in friendship networks where two friends of one person have a high probability of being friends \cite{mata2020complex}. The clustering can be measured by computing the number of links between neighbors of one node \cite{watts1998collective}
 \begin{equation}
-c_i=2e_i/(k_i(k_i-1))
+c_i=2e_i/(k_i(k_i-1)).
 \end{equation}
 
 We can calculate the mean clustering coefficient by averaging it overall network nodes. It ranges from  $\langle c \rangle = 0$ where connections between neighboring nodes do not exist; the network has a tree structure. On the other hand, $\langle c \rangle = 1$ indicates a fully connected network. 
@@ -77,16 +77,16 @@ In the case of weighted networks, it is the path with minimal weight, and the le
 
 The \textbf{radius} is the minimum overall eccentricity value. In contrast, the \textbf{diameter} defines the largest distance between nodes in the network \cite{van2010graph}. These definitions apply to directed and undirected graphs. 
 
-If G is a connected graph with vertex set V and $\bar{d}(u)$ is the average length of the shortest paths from node u to any other node v in network G \cite{van2010graph}.
+If G is a connected graph with vertex set V and $\bar{d}(u)$ is the average length of the shortest paths from node u to any other node v in network G \cite{van2010graph}
 
 \begin{equation}
-\bar{d}(u) = \frac{1}{|V|-1} \sum_{v\in V, v \notin u} d(u,v)  
+\bar{d}(u) = \frac{1}{|V|-1} \sum_{v\in V, v \notin u} d(u,v).
 \end{equation}
 
-From there, the \textbf{average path length} is the mean value over $\bar{d}(u)$.
+From there, the \textbf{average path length} is the mean value over $\bar{d}(u)$
 
 \begin{equation}
-\bar{d}(G) = \frac{1}{|V|}\sum_{u \in V} \bar{d}(u)
+\bar{d}(G) = \frac{1}{|V|}\sum_{u \in V} \bar{d}(u),
 \end{equation}
 
 while the \textbf{characteristic path} length of G is median over all $\bar{d}(u)$.
@@ -97,14 +97,14 @@ while the \textbf{characteristic path} length of G is median over all $\bar{d}(u
 For each node $i$, we can define the distribution of the shortest paths between node $i$ and all other nodes in the network, $P_{i}=\{p_{i}(j)\}$, where $p_{i}(j)$ is the percent of nodes at a distance $j$ from node $i$. The connectivity patterns can efficiently describe the difference between the two networks.    
 To specify how much $G$ and $G^{'}$ are similar we use D-measure \cite{tiago2}
 \begin{equation}
-D(G, G^{'}) = \omega \left| \sqrt{\frac{J(P_1,..P_N)}{log(d)}}-\sqrt{\frac{J(P_1^{'},..P_N^{'})}{log(d^{'})}} \right| + (1-\omega) \sqrt{\frac{J(\mu_{G},\mu_{G^{'}})}{log2}}
+D(G, G^{'}) = \omega \left| \sqrt{\frac{J(P_1,..P_N)}{log(d)}}-\sqrt{\frac{J(P_1^{'},..P_N^{'})}{log(d^{'})}} \right| + (1-\omega) \sqrt{\frac{J(\mu_{G},\mu_{G^{'}})}{log2}}.
 \label{eq:dmeasure}
 \end{equation}
 
 D-measure calculates Jensen-Shannon divergence between $N$ shortest path distributions,
 
 \begin{equation}
-J(P_1,.., P_N)) = \sum_{i,j}p_i(j)log(\frac{p_i(j)}{\mu_j})
+J(P_1,.., P_N)) = \sum_{i,j}p_i(j)log(\frac{p_i(j)}{\mu_j}),
 \end{equation}
 
 where  $\mu_j = (\sum_{i=1}^N p_i(j))/N$ is mean shortest path distribution.
@@ -121,7 +121,7 @@ The network with $k$ communities could be represented using $k \times k$ matrix 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1.\textwidth]{chapter2/SBM_representations_1.pdf}
-	\caption[Stochastic Block Model]{ Different communities structures  (a) assortative. (b) disassortative. (c) core-periphery. (d) Erdos Renyi random graph.}
+	\caption[Different communities structures.]{ Different communities structures  (a) assortative. (b) disassortative. (c) core-periphery. (d) Erdos Renyi random graph.}
 	\label{fig:SBM}
 \end{figure}
 
@@ -130,15 +130,15 @@ In this section are explained two community detection models, the first one base
 
 \subsection{Community detection based on modularity function optimization} 
 
-Comparing the link density of the community with the link density obtained for the same group of nodes randomly connected, we could conclude if the community corresponds to the dense subgraph or if the structure is created entirely random. The \textbf{modularity} \cite{newman2004finding, guimera2004modularity, good2010performance} is a function that measures the randomness of each partition. Partition is the division of the network into $n_c$ groups, where each node belongs to only one group \cite{barabasi2014network}.  For the network with $N$ nodes and $L$ links partitioned into $n_c$ communities where each community has $N_c$ nodes and $L_c$ links. If the number of connections is larger than the expected number of links between $N_c$ nodes given in the expected node sequence, these nodes may form the community. We calculate the difference between real network connectivity $A_{ij}$ and the expected number of links between nodes if the network is randomly connected, $p_{ij}$. The $p_{ij}$ can be obtained by randomizing the original network but keeping the expected degree of each node unchanged, so $p_{ij}= \frac{k_ik_j}{2L}$
+Comparing the link density of the community with the link density obtained for the same group of nodes randomly connected, we could conclude if the community corresponds to the dense subgraph or if the structure is created entirely random. The \textbf{modularity} \cite{newman2004finding, guimera2004modularity, good2010performance} is a function that measures the randomness of each partition. Partition is the division of the network into $n_c$ groups, where each node belongs to only one group \cite{barabasi2014network}.  For the network with $N$ nodes and $L$ links partitioned into $n_c$ communities where each community has $N_c$ nodes and $L_c$ links. If the number of connections is larger than the expected number of links between $N_c$ nodes given in the expected node sequence, these nodes may form the community. We calculate the difference between real network connectivity $A_{ij}$ and the expected number of links between nodes if the network is randomly connected, $p_{ij}$. The $p_{ij}$ can be obtained by randomizing the original network but keeping the expected degree of each node unchanged, so $p_{ij}= \frac{k_ik_j}{2L}$, and modularity has form:
 
 \begin{equation}
-M_c = \frac{1}{2L}\sum(A_{ij}-p_{ij})
+M_c = \frac{1}{2L}\sum(A_{ij}-p_{ij}).
 \end{equation}
 
 If modularity is positive, the selected nodes may be a community, as their connectivity is far from random. If $M_c$ is zero, then the connectivity between nodes is arbitrary, and if $M_c$ is negative, the nodes do not form the community. The same idea can be generalized to the whole network: The modularity of the network partitioned into $n_c$ communities is then defined as:
 \begin{equation}
-M=\sum_{c=1}^{n} [\frac{L_c}{L} - (\frac{k_c}{2L})^2]
+M=\sum_{c=1}^{n} [\frac{L_c}{L} - (\frac{k_c}{2L})^2].
 \end{equation}
 
 The higher modularity indicates that nodes are partitioned in better communities. When we put all nodes into only one community $M=0$, otherwise, if each node is the community itself $L_c=0$ and the sum is negative. The Newman showed that modularity function  \cite{newman2004analysis} applies for weighted networks.
@@ -154,8 +154,8 @@ The community detection algorithms tend to merge small communities, which should
 Another approach for studying the community structure of complex networks, the Stochastic Block Model (SBM), assumes that nodes are clustered in the groups, and the relations between nodes depend on the probabilities for group memberships \cite{lee2019review}. In one group, nodes have similar connectivity patterns. To describe the network $G(N, L)$ with the SBM model, we need to define the following:
 
 \begin{itemize}
-	\item k: number of groups
-	\item group assignment vector, g: $g_i \in\{1,2..k\}$, gives the group index of node $i$.
+	\item k: number of groups.
+	\item Group assignment vector, g: $g_i \in\{1,2..k\}$, gives the group index of node $i$.
 	\item SBM matrix, $p_{k \times k}$, whose elements $p_{rs}$ are the probabilities that edges between groups $r$ and $s$ exist. Note that nodes within one group have the same connection probabilities. 
 \end{itemize}
 
@@ -163,41 +163,41 @@ The number of possible nodes between two groups $r$ and $s$:
 \begin{equation}
 n_{rs} = \begin{cases}
 n_r(n_{r}+1)/2 &\text{if  } r=s \\
-n_rn_s &\text{if  } r=s\\, 
+n_rn_s &\text{if  } r=s,
 \end{cases}
 \end{equation}
-while the number of possible edges depends on the adjacency matrix $A_{ij}$:
+while the number of possible edges depends on the adjacency matrix $A_{ij}$ is
 \begin{equation}
-e_{rs}=\frac{1}{1+\delta_{rs}}\sum_{i \in r, j\in s} A_{ij}
+e_{rs}=\frac{1}{1+\delta_{rs}}\sum_{i \in r, j\in s} A_{ij}.
 \end{equation}
 
 The benefit of this model is that we can \textbf{generate} many networks with similar network structure \cite{rosvall2019different}. When model parameters are initialized, the network can be easily generated. For each pair of nodes $i$ and $j$ in network $G$, we draw a link if random number $r_{ij}<p_{r, s}$. 
 
 The likelihood of generating network $G$ for given model parameters is:
 \begin{equation}
-P(G|p, g) = \prod_{i,j} Pr(i \rightarrow j| p, g) = \prod_{(i,j)\in E} Pr(i \rightarrow j| p, g)\prod_{(i,j)\notin E} ( 1 - Pr(i \rightarrow j| p, g))
+P(G|p, g) = \prod_{i,j} Pr(i \rightarrow j| p, g) = \prod_{(i,j)\in E} Pr(i \rightarrow j| p, g)\prod_{(i,j)\notin E} ( 1 - Pr(i \rightarrow j| p, g)).
 \end{equation}
 
 In the processes where the connection between two nodes is described with Bernoulli distribution, the likelihood takes the form:
 \begin{equation}
-P(G|p, g) = \prod_{(i,j)\in E} p_{g_ig_j}\prod_{(i,j)\notin E} ( 1 - p_{g_ig_j})
+P(G|p, g) = \prod_{(i,j)\in E} p_{g_ig_j}\prod_{(i,j)\notin E} ( 1 - p_{g_ig_j}).
 \end{equation}
 
 In the likelihood equation, we iterate over all pairs of nodes, separating the product over edges present in the network and edges that are not present.  
 As all nodes are considered independent, we can switch the product over nodes with the product over groups such that
 \begin{equation}
-P(G|p, g) = \prod_{(r,s)} p_{rs}^{e_{rs}}(1-p_{rs})^{n_{rs}-e_{rs}}
+P(G|p, g) = \prod_{(r,s)} p_{rs}^{e_{rs}}(1-p_{rs})^{n_{rs}-e_{rs}}.
 \end{equation}
 As it is easier to work with the logarithm of the likelihood function, after taking the logarithm of the likelihood function, we get the following expression:
 \begin{equation}
-L = log(P(G|g, p)) = \sum_{r,s} e_{r,s} ln\frac{e_{rs}}{n_{rs}} + (n_{rs}-e_{rs})ln(\frac{e_{rs}-e_{rs}}{n_{rs}})
+L = log(P(G|g, p)) = \sum_{r,s} e_{r,s} ln\frac{e_{rs}}{n_{rs}} + (n_{rs}-e_{rs})ln(\frac{e_{rs}-e_{rs}}{n_{rs}}).
 \end{equation}
 
 Instead of generating networks, the opposite task is network \textbf{inference}. For a given network $G$, and specified the number of communities $k$, we can use the SBM model to infer the nodes' assignments into groups, so we need to choose vector $g$ and SBM matrix $p$ such that the likelihood for generating network $G$ is maximized. 
 
 The formulation of the SBM model does not consider how to infer the optimal number of groups. Optimizing the likelihood function for different numbers of groups would increase likelihood while each node is not assigned to a different group. In practice, our found community structures for a fixed number of groups, and then the likelihood function could be penalized by the number of model parameters. One approach is calculating the \textbf{Minimum description length (MDL)} \cite{peixoto2019bayesian}. For the variable that occurs with probability P(x), the necessary amount of information to describe it is $-log_2P(x)$. The numerator of posterior probability could be written as
 \begin{equation}
-P(G|g)P(g) = P(G|p, g)P(p, g)=2^{-\Sigma}
+P(G|g)P(g) = P(G|p, g)P(p, g)=2^{-\Sigma},
 \end{equation}
 where $\Sigma$ is the data's description length (DL). It means that if we find the network partition that maximizes the posterior distribution, we also find the MDL. The MDL consists of two terms: $\Sigma = -log2(p(G|p,g))-log2P(p,g)$. In the first part of the equation, the amount of information necessary to describe the model decreases with the number of groups. The second contribution comes only from the model, and as the model becomes more complex, with a larger number of groups, this part increases. The optimal solution represents the balance between these two terms in the MDL equation.  
 
@@ -230,44 +230,44 @@ This section gives an overview of relevant distributions and methods for fitting
 \textbf{Power-law distribution.} The power-law distribution \cite{mitzenmacher2004brief, newman2005power} is defined as 
 
 \begin{equation}
-p(k) = C k^{-\gamma}
+p(k) = C k^{-\gamma},
 \end{equation}
 where parameter $\gamma$ is an exponent of the power-law distribution while the C is the normalizing constant. 
 
 The distribution can take discrete and continuous values, defined for positive values $k>0$, so there is a lower bound to the power-law function $k_{min}$. For the discrete case $C=1/\zeta(\gamma, k_{min})$, while in the continuous case $C=(\gamma-1)k_{min}^{\gamma-1}$. 
 
-The power-law distribution is called scale-free distribution. If we scale the value $k$ for the factor $2$, the ratio of $p(x)/p(2x)$ is constant and does not depend on the $k$ \cite{caldarelli2007scalefree}. We'll find that these criteria are not satisfied by any other distribution. 
+The power-law distribution is called scale-free distribution. If we scale the value $k$ for the factor $2$, the ratio of $p(x)/p(2x)$ is constant and does not depend on the $k$ \cite{caldarelli2007scalefree}. We'll find that these criteria are not satisfied by any other distribution
 \begin{equation}
-\frac{p(k)}{p(2k)} = \frac{Ak^{-\gamma}}{A(2k)^{-\gamma}} = 2^{\gamma}
+\frac{p(k)}{p(2k)} = \frac{Ak^{-\gamma}}{A(2k)^{-\gamma}} = 2^{\gamma},
 \end{equation}
 
 The scale-free function is defined as $p(bx) = g(b)p(x)$. The solution of this equation is $p(x)=p(1)x^{-\gamma}$, where  $\gamma=-p(1)/p^{'}(1)$ leads us to the conclusion that if the function is self-similar, it has to be power-law.
 
-\textbf{Lognormal distribution}. The variable $x$ has the lognormal distribution if the random variable $y=ln(x)$ is distributed as normal distribution \cite{limpert2001log}. 
+\textbf{Lognormal distribution}. The variable $x$ has the lognormal distribution if the random variable $y=ln(x)$ is distributed as normal distribution \cite{limpert2001log} 
 
 \begin{equation}
-f(y) = \frac{1}{2\pi\sigma}e^{-(y-\mu)^2/2\sigma^2}
+f(y) = \frac{1}{2\pi\sigma}e^{-(y-\mu)^2/2\sigma^2},
 \end{equation}
 where $\mu$ is the mean, and $\sigma$ is the standard deviation. The density distribution of the lognormal distribution is defined as
 \begin{equation}
-f(x) = \frac{1}{x \sigma \sqrt{2\pi}}e^{-(log(x)-\mu)^2 /2\sigma^2} 
+f(x) = \frac{1}{x \sigma \sqrt{2\pi}}e^{-(log(x)-\mu)^2 /2\sigma^2} .
 \end{equation}
 
 The lognormal distribution has finite mean $e^{\mu+1/2\sigma^2}$, and the variance $e^{2\mu+\sigma^2}(e^{\sigma^2 -1})$.  \cite{mitzenmacher2004brief}. Despite the finite moments, the lognormal distribution can be similar to the power-law distribution. If the variance is large, then the probability function on the log-log plot appears linear for a large range of values. 
 
-Using the \textbf{multiplicative processes}, we can generate the lognormal distribution \cite{caldarelli2007scalefree, mitzenmacher2004brief}. The lognormal distribution is generated by processes that economist Gibrat called the law of proportionate effect. If we start from the organism of size $S_0$. At each time step, the organism may grow or shrink according to the random variable $\epsilon$, 
+Using the \textbf{multiplicative processes}, we can generate the lognormal distribution \cite{caldarelli2007scalefree, mitzenmacher2004brief}. The lognormal distribution is generated by processes that economist Gibrat called the law of proportionate effect. If we start from the organism of size $S_0$. At each time step, the organism may grow or shrink according to the random variable $\epsilon$
 \begin{equation}
-S_t = \epsilon_t S_{t-1}
+S_t = \epsilon_t S_{t-1}.
 \end{equation}
 
 When the system's state at time t is proportional to the state at the previous time step, we have the multiplicative process. The $\epsilon$ is a proportionality constant that can change over time. The current state depends only on the initial size $S_0$ and the $\epsilon$ variables.:
 \begin{equation}
-S_t = \epsilon_t S_{t-1} = \epsilon_t \epsilon_{t-1}... \epsilon_2 \epsilon_1 S_{0}
+S_t = \epsilon_t S_{t-1} = \epsilon_t \epsilon_{t-1}... \epsilon_2 \epsilon_1 S_{0}.
 \end{equation}
 
 If $\epsilon_t$ is drawn from the lognormal distribution, then $S_t$ also follows lognormal, as the product of lognormal distributions is again lognormal. Still, the $\epsilon$ distribution does not determine the distribution of the $S_t$. Taking the logarithm of the equation:
 \begin{equation}
-ln(S_t) = ln(S_0) + \sum_{i=0}^{t} ln(\epsilon_i)
+ln(S_t) = ln(S_0) + \sum_{i=0}^{t} ln(\epsilon_i).
 \end{equation}
 
 The sum of the logarithms of the $\epsilon_t$, according to the Central Limit Theorem (CLT), follows the normal distribution. The CLT states that the sum of identically distributed random variables with finite variance converges to the normal distribution. If $ln(S_t)$ is normally distributed, then $S_t$ follows the lognormal distribution.   
@@ -276,22 +276,22 @@ The multiplicative processes generate the lognormal distribution. Introducing a 
 
 \textbf{Power law with exponential cutoff}. The density function has the following form 
 \begin{equation}
-p(k) = C k^{-\gamma}e^{-\lambda k}
+p(k) = C k^{-\gamma}e^{-\lambda k}.
 \end{equation}
 where $k>0$ and $\gamma>0$. This function combines the power-law and exponential terms responsible for an exponentially bounded tail \cite{barabasi2016network}. Taking the logarithm $ln(p(k)) = lnC - \gamma lnk - \lambda k$, when $k<<1/\lambda$ the second term dominates, so distribution follows the power-law, with exponent $\gamma$. Otherwise, the $\lambda x$ term dominates, resulting in an exponential cutoff for high values. 
 
 \textbf{Streched exponential} The stretched exponential distribution is defined as:
 \begin{equation}
-p(k) = c k^{\beta - 1}e^{-(\lambda k)^{\beta}}
+p(k) = c k^{\beta - 1}e^{-(\lambda k)^{\beta}}.
 \end{equation}
 the parameter $\beta$ is stretching exponent determining the properties of the function $p(k)$ \cite{barabasi2016network}. For $\beta=1$, the function is exponential. For $\beta<1$, it is hard to distinguish the distribution from the power law. We have a compressed exponential function for $\beta>1$, so $k$ varies in the narrow range.
 
 \subsection{Estimating the distribution parameters}
 
-The maximum likelihood estimation(MLE) is a method where we consider that data comes from a particular distribution, so we want to maximize the likelihood of the data to find the distribution parameters. For a given set of i.i.d. observations $x_1, x_2, ...x_n$, sampled from the distribution $p(x)$, we can define the likelihood function  \cite{nair2022fundamentals}. The likelihood function tells us how likely it is to have the given data if the distribution parameters are $\theta$. 
+The maximum likelihood estimation(MLE) is a method where we consider that data comes from a particular distribution, so we want to maximize the likelihood of the data to find the distribution parameters. For a given set of i.i.d. observations $x_1, x_2, ...x_n$, sampled from the distribution $p(x)$, we can define the likelihood function  \cite{nair2022fundamentals}. The likelihood function tells us how likely it is to have the given data if the distribution parameters are $\theta$
 
 \begin{equation}
-L (\theta| x_1, ... x_n) = \prod_{i=1}^{i=n} p(x_i | \theta)
+L (\theta| x_1, ... x_n) = \prod_{i=1}^{i=n} p(x_i | \theta).
 \end{equation}
 
 The parameter that maximizes the likelihood function is $\theta_{max} \in arg max L(\theta| x_1,... x_n)$.
@@ -308,19 +308,19 @@ Another method, the \textbf{likelihood ratio test}, allows us to compare two dis
 The likelihoods are defined as $L_1=\prod_{i=1}^{n}p_1(x)$ and $L_2=\prod_{i=1}^{n}p_2(x)$, or the ratio of likelihoods as $R=\frac{L_1}{L_2} = \prod_{i=1}^{n} \frac{p_1(x)}{p_2(x)}$. Taking the logarithm, we obtain the log-likelihood ratio
 
 \begin{equation}
-\mathcal{R} = \sum_{i=1}^{n} \left[log p_1(x_i) - log p_2(x_i)\right]
+\mathcal{R} = \sum_{i=1}^{n} \left[log p_1(x_i) - log p_2(x_i)\right].
 \end{equation}
 
 As data $x_i$ are independent, by central limit theorem, their sum $\mathcal{R}$ becomes normally distributed, with expected variance $\sigma^2$. We can approximate the variance as 
 
-$$\sigma^2 = \frac{1}{n}\sum_{1}^{n}[(l_i - l_i) - (<l>^{(1)}- <l>^{(2)})]$$
+$$\sigma^2 = \frac{1}{n}\sum_{1}^{n}[(l_i - l_i) - (<l>^{(1)}- <l>^{(2)})]$$.
 
 When $R>0$, the first distribution is a better fit to the data, and then $R<0$, the other one should be chosen. When $R=0$, it is not possible to distinguish between two distributions. The sign of $R$ is not enough criteria to conclude which distribution is a better fit, and it is a random variable subject to statistical fluctuations. We need a log-likelihood ratio that is sufficiently positive or negative to ensure that its sign does not result from fluctuations.
 
 If we are suspected that the expectation value of the log-likelihood ratio is zero, the observed sign of $\mathcal {} $ is simply the product of fluctuations and can not be trusted. The probability that the measured log-likelihood ratio has a magnitude as large or larger than the observed value R is given as
 
 \begin{equation}
-p = \frac{1}{\sqrt{2\pi n \sigma^2}} \int_{-\infty}^{-|\mathcal{R}|}e^{-x^2/2n\sigma^2}dx + \int_{|\mathcal{R}|}^{\infty}e^{-x^2/2n\sigma^2}dx
+p = \frac{1}{\sqrt{2\pi n \sigma^2}} \int_{-\infty}^{-|\mathcal{R}|}e^{-x^2/2n\sigma^2}dx + \int_{|\mathcal{R}|}^{\infty}e^{-x^2/2n\sigma^2}dx.
 \end{equation}
 
 Here we use the standard two-tail hypothesis test \cite{clauset2009power}, assuming that the null hypothesis is  $R= 0$. If the p-value is larger than a threshold, the R sign is unreliable, and the test does not favor any distribution. If p is small, $p<0.1$, then it is unlikely that the observed sign is obtained by chance, so we reject the null hypothesis that $R=0$. 
@@ -336,15 +336,15 @@ The random graph model was introduced by mathematicians Paul Erdős and Alfred R
 
 The creation of ER random network consists of the following steps:
 \begin{itemize}
-	\item we start with $N$ isolated nodes.
-	\item between each $N(N-1)/2$ pair of nodes we create link with probability $p$; sampling random number $r \in (0,1)$, we create link if $r \leq p$, see Figure \ref{fig:erp}.
+	\item We start with $N$ isolated nodes.
+	\item Between each $N(N-1)/2$ pair of nodes we create link with probability $p$; sampling random number $r \in (0,1)$, we create link if $r \leq p$, see Figure \ref{fig:erp}.
 \end{itemize}
 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{chapter2/ERgraph.pdf}
-	\caption[Erdős-R\' {e}nyi]{Erdős-R\' {e}nyi graph with $N=100$ nodes and different linking probabilities $p$.}
+	\caption[Erdős-R\' {e}nyi graph.]{Erdős-R\' {e}nyi graph with $N=100$ nodes and different linking probabilities $p$.}
 	\label{fig:erp}
 \end{figure}
 
@@ -353,20 +353,20 @@ We should note that this process is stochastic. The networks $G(N, p)$ with the 
 Two simple quantities that could be estimated are the average number of links and the average degree. For a complete graph with $N$ nodes, the number of edges is $N(N-1)/2$. As the probability of drawing every edge is $p$, the \textbf{average number of links} is given as 
 
 \begin{equation}
-\langle L \rangle = \frac{N(N-1)}{2}p
+\langle L \rangle = \frac{N(N-1)}{2}p.
 \end{equation}
 
 We conclude that the network's density equals probability $p$.
 The \textbf{average degree} is approximated as $\langle k \rangle = 2 \langle L \rangle / N $, leading to:
 
 \begin{equation}
-\langle k \rangle = (N-1)p 
+\langle k \rangle = (N-1)p .
 \end{equation}
 
 The \textbf{degree distribution} of ER random graph follows the binomial distribution \cite{barabasi2016network}. 
 
 \begin{equation}
-P(k) = \binom{N-1}{k}p^k(1-p)^{N-1-k}
+P(k) = \binom{N-1}{k}p^k(1-p)^{N-1-k}.
 \end{equation}
 
 The probability that the node has degree $k$ is given with the second term $p^k$, while the probability that other N-1-k links are not created is given with the third part of the equation. Finally, there are  $\binom{N-1}{k}$ combinations for one node to have $k$ links from $N-1$ possible links. 
@@ -404,7 +404,7 @@ The model interpolates between the regular graph when the probability is $p=0$ a
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{chapter2/WS_model.pdf}
-	\caption[Watts and Strogatz graph model creation]{Watts and Strogatz graph model creation, for different rewiring probabilities.}
+	\caption[Watts and Strogatz graph model creation.]{Watts and Strogatz graph model creation, for different rewiring probabilities.}
 	\label{fig:wsgraph}
 \end{figure}
 
@@ -421,28 +421,28 @@ The ER random graph model and WS small-world model are static models where the n
 
 The preferential attachment is important for generating a system with scale-free properties. In the real system, the linking between nodes is not a random process; the preference for specific types of nodes exists. For example, popular web pages can quickly get more visits, or it is expected that already popular papers will get more citations. This effect is also called rich-get-richer or preferential attachment.
 
-The simplest formulation of the preferential attachment model is that new nodes tend to connect with high-degree nodes. The linking probability $\Pi$ is then proportional to node degree $k$ \cite{albert2002statistical}:  
+The simplest formulation of the preferential attachment model is that new nodes tend to connect with high-degree nodes. The linking probability $\Pi$ is then proportional to node degree $k$ \cite{albert2002statistical} 
 
 \begin{equation}
-\Pi(k_i) = \frac{k_i}{\sum_jk_j} 
+\Pi(k_i) = \frac{k_i}{\sum_jk_j}.
 \end{equation} 
 
 As at each step one node arrives, we can estimate the number of nodes at the time step t, $N(t) = n_0+t$, with links $L(t) =m_0+ mt$. 
 
 First, we can calculate the evolution of network degrees in time \cite{albert2002statistical}.
 \begin{equation}
-\frac{dk_i}{dt} = m\Pi(k_i) = m\frac{k_i}{\sum_jk_j} = m\frac{k_i}{m_0 + 2mt}
+\frac{dk_i}{dt} = m\Pi(k_i) = m\frac{k_i}{\sum_jk_j} = m\frac{k_i}{m_0 + 2mt}.
 \end{equation}
 
-Note that the new node that arrived at time point $t_i$ has degree $m$, as it links to $m$ old nodes. Solving the equation, we get that at $t>t_i$, it has a degree that grows as the square root of time; it also shows that younger nodes easily acquire a larger degree. 
+Note that the new node that arrived at time point $t_i$ has degree $m$, as it links to $m$ old nodes. Solving the equation, we get that at $t>t_i$, it has a degree that grows as the square root of time; it also shows that younger nodes easily acquire a larger degree
 \begin{equation}
-k_i(t) = m \left(\frac{t}{t_i}\right)^{\frac{1}{2}}
+k_i(t) = m \left(\frac{t}{t_i}\right)^{\frac{1}{2}}.
 \end{equation}
 
 With this equation, we can calculate the probability that node has a degree smaller than k \cite{albert2002statistical} as \\ $P[k_i(t)<k] = P(t_i > \frac{m^{1/\beta}t}{k^{1/\beta}})$. Assuming that we add nodes in constant time intervals, we have $P(t_i) = 1/(m_0+t)$. The cumulative probability is then  $P(t_i>\frac{m^{1/\beta t}}{k^{1/\beta}}) = 1 - \frac{t}{t+m_0}\left(\frac{m}{k}\right)^{1/\beta} $.
 Finally, the degree distribution has the following form
 \begin{equation}
-P(k) = \frac{\partial P[k_i(t)<k]}{ \partial k} \sim 2m^2 k^{-3} 
+P(k) = \frac{\partial P[k_i(t)<k]}{ \partial k} \sim 2m^2 k^{-3}.
 \end{equation}
 
 \textbf{Degree distribution follows power-law}, and for large k is approximated with $P(k) = k^{-\gamma}$, where $\gamma=3$. As the network grows, nodes with larger degrees become bigger, and we end up with few nodes with many links, called hubs. Figure \ref{fig:bamodel} - left pane shows generated BA network, consisting of $N=100$ nodes, where even on this scale, we can notice the emergence of hubs. The right pane of Figure \ref{fig:bamodel} shows obtained degree distribution of a larger network with $N=10^4$ nodes. The degree distribution is also independent of the time and size of the system, meaning the emergence of a stationary scale-free state. If we vary $m$, the slope of distributions is the same, but they are parallel. After rescaling $p(k)/m^2$, they fall on the same line \cite{barabasi2016network}.  
@@ -450,7 +450,7 @@ P(k) = \frac{\partial P[k_i(t)<k]}{ \partial k} \sim 2m^2 k^{-3}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\linewidth]{chapter2/BAmodel.pdf}
-	\caption[Barabasi-Albert model]{Barabasi-Alber model. The left panel shows the BA network, with 100 nodes. The right panel shows the degree distribution for BA network of $10^4$ nodes that follow the power-law.}
+	\caption[Barabasi-Albert model.]{Barabasi-Alber model. The left panel shows the BA network, with 100 nodes. The right panel shows the degree distribution for BA network of $10^4$ nodes that follow the power-law.}
 	\label{fig:bamodel}
 \end{figure}
  
@@ -463,7 +463,7 @@ The combination of the growth and preferential attachment linking is crucial for
 In the nonlinear preferential attachment model linking probability also depends on the node degree. The dependence is not linear and has the following a form \cite{krapivsky2001}:
 
 \begin{equation}
-\Pi(k_i) = {k_i}^{\beta}
+\Pi(k_i) = {k_i}^{\beta}.
 \end{equation} 
 
 The probability that a newly added node attaches to node $i$ depends on the existing $i$-th node degree $k_i$ and the parameter $\beta$. When $\beta=1$, the model is the BA model, where degree distribution follows the power law. When $\beta=0$, linking probability becomes uniform; i.e., it corresponds to a random network model, and the degree distribution is Poisson; there is exponential decay. 
@@ -475,9 +475,9 @@ On the other hand, if $\beta<1$, the model is in a so-called sub-linear preferen
 
 \subsection{Aging model}
 
-To understand how aging can impact the network structure, we look into probability dependent on two parameters, nodes degree $k$ and age of node $i$ at the time point $t$ $\tau_i=(t-t_i)$, where $t_i$ is the time when node $i$ is added to the network \cite{dorogovtsev2000b}. 
+To understand how aging can impact the network structure, we look into probability dependent on two parameters, nodes degree $k$ and age of node $i$ at the time point $t$ $\tau_i=(t-t_i)$, where $t_i$ is the time when node $i$ is added to the network \cite{dorogovtsev2000b} 
 \begin{equation}
-\Pi_{i}(t)\sim k_{i}\tau_{i}^{\alpha} 
+\Pi_{i}(t)\sim k_{i}\tau_{i}^{\alpha}.
 \label{eq:aging}
 \end{equation}
 
@@ -505,14 +505,14 @@ As before, depending on model parameters network evolves into different structur
 	
 	\item For $\alpha>\alpha^{*}$ networks have \textbf{gel-like small world} behavior.
 	
-	\item For $\alpha<\alpha^{*}$ and near critical line $\beta(\alpha^{*})$ degree distribution has \textbf{stretched exponential} shape
+	\item For $\alpha<\alpha^{*}$ and near critical line $\beta(\alpha^{*})$ degree distribution has \textbf{stretched exponential} shape.
 	
 \end{itemize}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\linewidth]{chapter2/diagram.png}
-	\caption[Phase diagram of aging network model]{Phase diagram of aging network model}
+	\caption[Phase diagram of aging network model.]{Phase diagram of aging network model.}
 	\label{fig:diagram}
 \end{figure}
 
@@ -521,49 +521,49 @@ As before, depending on model parameters network evolves into different structur
 \section{Fractal analysis}
 
 One of the approaches in studying complex systems is detecting the time series of selected variables \cite{kantelhardt2008fractal}. In complex systems, the periodic behavior of time series is not limited to one or two characteristic frequencies. They extend over a broad spectrum and fluctuations on many time scales, and broad distributions \cite{fan2012fractal, sidorov2018fractality}. In these cases, the system's dynamics are characterized by scaling laws, valid over a wide range of time scales or frequencies. When only one scaling exponent describes the system dynamics, the time series is monofractal.
-On the other hand, we deal with multifractal time series. Rescaling time $t$ by a factor $a$ may require rescaling the time-series values $x(t)$ by a factor $a^H$; then, we have the self-similarity. The Hurst exponent, $H$, characterizes the type of self-affinity. 
-$$x(t) = a^Hx(at)$$. 
+On the other hand, we deal with multifractal time series. Rescaling time $t$ by a factor $a$ may require rescaling the time-series values $x(t)$ by a factor $a^H$; then, we have the self-similarity. The Hurst exponent, $H$, characterizes the type of self-affinity 
+$$x(t) = a^Hx(at).$$
 
 \subsection{Long and short-term correlations}
-The time series are persistent, meaning that large values usually follow a large value \cite{kantelhardt2008fractal}. Considering the increments $\delta x_i = x_i - x_{i-1}$, of self-affine series $i = 1,.., N$, with N values measured equidistant in time, $\delta x_i$ can be either persistent, independent or anti-persistent. For the random walk with $H=0.5$, the increments are independent. For stationary data with constant mean and standard deviation, the auto-covariance function can determine the degree of persistence. 
+The time series are persistent, meaning that large values usually follow a large value \cite{kantelhardt2008fractal}. Considering the increments $\delta x_i = x_i - x_{i-1}$, of self-affine series $i = 1,.., N$, with N values measured equidistant in time, $\delta x_i$ can be either persistent, independent or anti-persistent. For the random walk with $H=0.5$, the increments are independent. For stationary data with constant mean and standard deviation, the auto-covariance function can determine the degree of persistence 
 
 \begin{equation}
-C(s) = \langle \Delta x_i \Delta x_{i+s} \rangle = \frac{1}{N-s} \sum_{i=1}^{N-s}\Delta x_i \Delta x_{i+s}
+C(s) = \langle \Delta x_i \Delta x_{i+s} \rangle = \frac{1}{N-s} \sum_{i=1}^{N-s}\Delta x_i \Delta x_{i+s}.
 \end{equation}
 
 
 If the data are uncorrelated, the $C(s)=0$. Short-range correlations are described by $C(s)$ declining exponentially
-$$C(s) = exp(-s/t_c)$$
+$$C(s) = exp(-s/t_c),$$
 such behavior is typical for increments generated by an auto-regressive process 
-$$ \Delta x_i = c\Delta x_{i-1} + \epsilon_i $$
+$$ \Delta x_i = c\Delta x_{i-1} + \epsilon_i ,$$
 with random uncorrelated offsets $\epsilon_i$ and $c = exp(-1/t_c)$.
 
 For long-range correlations, $\int C(s)$ diverges in the limit for long series. In practice, this means that we can not define the characteristic time because it increases with N. Contrary to short-range correlations, the correlation function decline as power-law 
-$$C(s) = s^{-\gamma}$$
+$$C(s) = s^{-\gamma}.$$
 Fourier filtering techniques can model this type of behavior. Long-term correlated behavior of $\Delta x_i$ leads to self-affine scaling behavior characterized by Hurst exponent $H=1-\gamma/2$. 
 
 A direct calculation of the $C(s)$ is complex due to present noise in the data and non-stationarity. Non-stationarities make the definition of $C(s)$ problematic because its average is not well defined. Also, $C(s)$ fluctuates around zero on large scales s, so it is impossible to obtain the correct correlation exponent $\gamma$. Instead of calculating $C(s)$, we can calculate the Hurst exponent $H$.
 
 \subsection{Rescaled range analysis} 
 
-Hurst proposed a method called the \textbf{rescaled range analysis} $R/S$, \cite{hurst1951long}. It begins with splitting the time series $x_i$ into non-overlapping segments $\nu$ of the size s, having $N_s = int(N/s)$ segments. Then is calculated the profile in each segment is. 
+Hurst proposed a method called the \textbf{rescaled range analysis} $R/S$, \cite{hurst1951long}. It begins with splitting the time series $x_i$ into non-overlapping segments $\nu$ of the size s, having $N_s = int(N/s)$ segments. Then is calculated the profile in each segment is
 
-$$Y_\nu(j) = \sum_{i=1}^{j} (x_{\nu s +i} - \langle x_{\nu s + i } \rangle _s)$$
+$$Y_\nu(j) = \sum_{i=1}^{j} (x_{\nu s +i} - \langle x_{\nu s + i } \rangle _s).$$
 
 Substracting the averages, constant trends in the data are eliminated. The differences between minimum and maximum value and the standard deviation in each segment are calculated as $R_{\nu}(s) = max Y_\nu(j) - min Y_{\nu}(j)$, $S_{\nu}(s) = \sqrt{\frac{1}{s}\sum Y^2_{\nu}(j)}$
 
-Finally, the rescaled range is averaged over all segments to obtain the fluctuation function F(s).
+Finally, the rescaled range is averaged over all segments to obtain the fluctuation function F(s),
 
-$$F_{RS}(s) = \frac{1}{N_s}\sum \frac{R_{\nu}(s)}{S_{\nu}(s)} \sim s^H$$
+$$F_{RS}(s) = \frac{1}{N_s}\sum \frac{R_{\nu}(s)}{S_{\nu}(s)} \sim s^H,$$
 
-, where the H is the Hurst exponent. Values $H<1/2$ indicate long-term anti-correlated data while $H>1/2$ long-term positively correlated data \cite{kantelhardt2008fractal}. 
+where the H is the Hurst exponent. Values $H<1/2$ indicate long-term anti-correlated data while $H>1/2$ long-term positively correlated data \cite{kantelhardt2008fractal}. 
 
 \subsection{Fluctuation analysis}
 
-The \textbf{fluctuation analysis} is based on the random walk theory \cite{kantelhardt2008fractal}. For given time series $\{x_i\}$ with length N, we first define the global profile in the form of cumulative sum, equation \ref{eq:cumsum}, where $\langle x\rangle $ represents the average of the time series. 
+The \textbf{fluctuation analysis} is based on the random walk theory \cite{kantelhardt2008fractal}. For given time series $\{x_i\}$ with length N, we first define the global profile in the form of cumulative sum, equation \ref{eq:cumsum}, where $\langle x\rangle $ represents the average of the time series 
 
 \begin{equation}
-Y(j) = \sum_{i=0} ^j (x_i - \langle x\rangle), \quad j=1, ..., N
+Y(j) = \sum_{i=0} ^j (x_i - \langle x\rangle), \quad j=1, ..., N .
 \label{eq:cumsum}
 \end{equation}
 Figure \ref{fig:hurst_signals} shows examples of multifractal, monofractal and white noise signal with their global profiles.
@@ -575,10 +575,10 @@ Figure \ref{fig:hurst_signals} shows examples of multifractal, monofractal and w
 	\label{fig:hurst_signals}
 \end{figure}
 
-The profile of the signal Y is divided into $N_s = int (N/s)$ non-overlapping segments of length $s$. The last segment will be shorter if $N$ is not divisible with $s$. That is handled by doing the same division from the opposite side of the time series, giving us $2N_s$ segments. Then we calculate the fluctuations in each segment $F^2(\nu, s)$ and, finally, average overall subsequences, obtaining the mean fluctuation. From the scaling of the function, we can determine the Hurst exponent. 
+The profile of the signal Y is divided into $N_s = int (N/s)$ non-overlapping segments of length $s$. The last segment will be shorter if $N$ is not divisible with $s$. That is handled by doing the same division from the opposite side of the time series, giving us $2N_s$ segments. Then we calculate the fluctuations in each segment $F^2(\nu, s)$ and, finally, average overall subsequences, obtaining the mean fluctuation. From the scaling of the function, we can determine the Hurst exponent
 
 \begin{equation}
-F_2(s) = [\frac{1}{2N_s} \sum F^2(\nu,s)]^{1/2}  \sim s^H
+F_2(s) = [\frac{1}{2N_s} \sum F^2(\nu,s)]^{1/2}  \sim s^H.
 \end{equation} 
 
 Several methods are proposed for calculating the fluctuating function $F^2(\nu, s)$:
@@ -591,14 +591,14 @@ Several methods are proposed for calculating the fluctuating function $F^2(\nu, 
 	\item The trends present in the time series do not have to be linear \cite{hu2001effect}. The middle and bottom panel in Figure \ref{fig:hurst_detrending} show that the segments of the signal could be very well approximated with some higher order functions: quadratic or cubic. In general, using the detrended fluctuation analysis (DFA) we could remove the polynomial trend of the order $m$ \cite{kantelhardt2001detecting}. From each segment $\nu$, local trend $p^m_{\nu, s}$ - polynomial of order m - should be eliminated, and the variance $F^2(\nu, s)$ of a detrended signal is calculated as in equation:
 	
 	\begin{equation}
-	F^2(\nu, s) = \frac{1}{s}\sum_{j=1}^s \left[Y(j) - p^m_{\nu, s}(j)\right]^2
+	F^2(\nu, s) = \frac{1}{s}\sum_{j=1}^s \left[Y(j) - p^m_{\nu, s}(j)\right]^2.
 	\label{eq:var}
 	\end{equation}
 \end{itemize}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{chapter2/hurst_detrending.pdf}
-	\caption{Detrending of multifractal signal for the segments of length $s=1000$. Panel A- linear detrending, panel B-quadratic detrending, panel C- cubic detrending. }
+	\caption[Detrending multifractal signal.]{Detrending of multifractal signal for the segments of length $s=1000$. Panel A- linear detrending, panel B-quadratic detrending, panel C- cubic detrending. }
 	\label{fig:hurst_detrending}
 \end{figure}
 
@@ -606,15 +606,15 @@ Several methods are proposed for calculating the fluctuating function $F^2(\nu, 
 
 The scaling behavior in many data may be more complicated, and different scaling exponents can be found for many interwoven subsets of the time series, representing multifractal. The multifractality may come from the broad probability distribution of the time series values. In this case, the multifractal properties can not be destroyed with shuffling time series. The source of multifractality may be from different small and large fluctuations correlations. In this case, the probability density function of the values can be regular distribution with finite moments, and the corresponding shuffled series will exhibit non-multifractal scaling as correlations are destroyed with the shuffling procedure. When both kinds of multifractality are present, the shuffled time series will show weaker multifractality. 
 
-The multifractal analysis will reveal higher-order correlations. Multifractal scaling can be observed if the scaling behavior of small and large fluctuations is different. Multifractal detrended fluctuation analysis (MFDFA) is used \cite{kantelhardt2002, ihlen2012} to estimate multifractal Hurst exponent H(q). 
+The multifractal analysis will reveal higher-order correlations. Multifractal scaling can be observed if the scaling behavior of small and large fluctuations is different. Multifractal detrended fluctuation analysis (MFDFA) is used \cite{kantelhardt2002, ihlen2012} to estimate multifractal Hurst exponent H(q) 
 
 \begin{equation}
-F_q(s) = \left\{\frac{1}{2N_s}\sum_{\nu}^{2N_s}\left[F^2(\nu, s)\right]^{\frac{q}{2}}\right\}^{\frac{1}{q}},  q \neq 0 \nonumber
+F_q(s) = \left\{\frac{1}{2N_s}\sum_{\nu}^{2N_s}\left[F^2(\nu, s)\right]^{\frac{q}{2}}\right\}^{\frac{1}{q}},  q \neq 0 \nonumber.
 \end{equation}
 
 The MFDFA for $q=2$ is equivalent to the DFA method. The value of $H(0)$, which corresponds to the limit $H(q), q-0$, cannot be determined directly because the exponent diverges. Instead, the logarithmic averaging procedure has to be considered. 
 \begin{equation}
-F_0(s) = \exp \left\{\frac{1}{4N_s}\sum_{\nu}^{2N_s}ln \left[F^2(\nu, s)\right]\right\}, q=0
+F_0(s) = \exp \left\{\frac{1}{4N_s}\sum_{\nu}^{2N_s}ln \left[F^2(\nu, s)\right]\right\}, q=0.
 \end{equation}
 
 The fluctuating function scales as power-law $F_q(s) \sim s^{H(q)}$ and the analysis of log-log plots $F_q(s)$ gives us an estimate of multifractal Hurst exponent $H(q)$, see Figure \ref{fig:hurst_mfdfa}.
@@ -632,18 +632,18 @@ For the monofractal time series, H(q) is independent of q, meaning that scaling 
 
 Consider a system where each component has an activity pattern that could be mapped to the discrete signal, representing the moments when the event happened, such as the activity pattern when users are sending an email or communicating, sharing opinions and information within the community. Users' behavior directly influences their position in the community, which is measured through reputation. The trust among users depends on the amount of interaction between them, which means the trust changes over time. The computational model needs to capture the dynamic property of the trust. Furthermore, the important property of trust is that it is easier lost than gained; the frequency of interaction also matters. The trust between users who interact frequently should increase faster than between users who rarely interact. 
 
-With Dynamic Interaction Based Reputation Model (DIBRM) \cite{melnikov2018toward}, we can quantify the user reputation $R_n$ after each interaction using equation \ref{eq:tn}, where $n$ is the number of interaction $n\in{1, N}$.
+With Dynamic Interaction Based Reputation Model (DIBRM) \cite{melnikov2018toward}, we can quantify the user reputation $R_n$ after each interaction using equation \ref{eq:tn}, where $n$ is the number of interaction $n\in{1, N}$
 \begin{equation}\label{eq:tn}
-R_{n}=R_{n-1} \beta^{\Delta_{n}} + I_{n}
+R_{n}=R_{n-1} \beta^{\Delta_{n}} + I_{n}.
 \end{equation}
 
 The first part of the equation considers the reputation value after the previous interaction $R_{n-1}$, weighted with coefficient $\beta^\Delta_{n}$. Depending on the frequency of the interaction, reputation will rise or decay. Parameter $\beta$ ranges from $0<\beta < 1$ is forgetting factor. The $\Delta_n$ measures time between two interactions $t_n$ and $t_{n-1}$: 
 \begin{equation}\label{eq:deltan}
-\Delta_{n}=\frac{t_{n}-t_{n-1}}{t_{a}}
+\Delta_{n}=\frac{t_{n}-t_{n-1}}{t_{a}},
 \end{equation}
-where $t_a$ is the characteristic time window of interaction. In the second part of the equation, $I_n$ is the reputation gained within each interaction. The basic value of each interaction is given as $I_{bn}$, and the parameter $\alpha$ is the weight of the cumulative part. 
+where $t_a$ is the characteristic time window of interaction. In the second part of the equation, $I_n$ is the reputation gained within each interaction. The basic value of each interaction is given as $I_{bn}$, and the parameter $\alpha$ is the weight of the cumulative part 
 \begin{equation}\label{eq:ibn}
-I_n  = I_{b_{n}}(1 +  \alpha  (1-\frac{1}{A_n+1}))
+I_n  = I_{b_{n}}(1 +  \alpha  (1-\frac{1}{A_n+1})).
 \end{equation}
 
 When $\Delta_{n}<1$, a user is frequently active, meaning that the time between two interactions is less than the characteristic time window. The number of sequential activities $A_n$ increases by 1. On the other hand, when $\Delta_n>1$ is large, the reputation decays, while the number of activities resets to $A_n=1$. 
@@ -652,7 +652,7 @@ When $\Delta_{n}<1$, a user is frequently active, meaning that the time between 
 	\centering
 	\includegraphics[width=0.45\textwidth]{chapter2/DIBRM.pdf}
 	\includegraphics[width=0.45\textwidth]{chapter2/DIBRM_decay.pdf}
-	\caption[User reputation]{Left panel shows the dynamics of user reputation obtained in DIBRM model for different model parameters $\alpha$ and $\beta$. Right panel shows the dependence of parameter $\beta$ and number of days to reputation from starting value $I_n$ drops below threshold $I_n=1$.}
+	\caption[User reputations.]{Left panel shows the dynamics of user reputation obtained in DIBRM model for different model parameters $\alpha$ and $\beta$. Right panel shows the dependence of parameter $\beta$ and number of days to reputation from starting value $I_n$ drops below threshold $I_n=1$.}
 	\label{fig:reputation}
 \end{figure}  
 
