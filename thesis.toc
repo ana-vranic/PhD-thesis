@@ -95,26 +95,4 @@
 \contentsline {chapter}{Bibliography}{89}{appendix*.8}%
 \babel@toc {english}{}
 \contentsline {chapter}{Biography of the author}{99}{appendix*.9}%
-\babel@toc {serbianc}{}
 \babel@toc {english}{}
-\babel@toc {serbianc}{}
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {serbianc}{}
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {serbianc}{}
-\babel@toc {english}{}
-\babel@toc {serbianc}{}

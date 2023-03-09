@@ -21,9 +21,6 @@ A level-1 auxiliary file: 2-Appendix/Appendix_sliding_window.aux
 A level-1 auxiliary file: 2-Appendix/Appendix_robust.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: 3-BackMatter/Biography.aux
-A level-1 auxiliary file: 3-BackMatter/Autorstvo.aux
-A level-1 auxiliary file: 3-BackMatter/Istovetnost.aux
-A level-1 auxiliary file: 3-BackMatter/Koriscenje.aux
 Database file #1: sample_sort.bib
 Warning--I didn't find a database entry for "power-law"
 Warning--empty journal in latora2017complex
@@ -31,7 +28,7 @@ Warning--empty publisher in guide_temporal
 Warning--empty booktitle in yashkina2020
 You've used 138 entries,
             1791 wiz_defined-function locations,
-            1230 strings with 26403 characters,
+            1227 strings with 26322 characters,
 and the built_in function-call counts, 33091 in all, are:
 = -- 2961
 > -- 1477

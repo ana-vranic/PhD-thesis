@@ -33,13 +33,21 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 \usepackage[explicit]{titlesec}
 \usepackage{setspace}
 \usepackage{enumitem}
-%\usepackage{pdfpages}
+\usepackage{pdfpages}
 \usepackage{ragged2e}
 \usepackage[caption=false,labelformat=empty]{subfig}
 \usepackage{titleps}
 \usepackage{fancyhdr}
 \usepackage{float}
 \usepackage[bottom]{footmisc}
+\usepackage{afterpage}
+
+
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+	\addtocounter{page}{-1}%
+	\newpage}
 
 
 %\SingleSpacing %single spacing by default
@@ -119,11 +127,15 @@ bookmarks=true,bookmarksopenlevel=2]{hyperref}
 \bibliographystyle{unsrt}
 \bibliography{sample_sort}
 
-\include{3-BackMatter/Biography}
-\include{3-BackMatter/Autorstvo}
-\include{3-BackMatter/Istovetnost}
-\include{3-BackMatter/Koriscenje}
 
+\include{3-BackMatter/Biography}
+
+\includepdf[pages=-]{3-BackMatter/Autorstvo-potpisano.pdf}
+%\include{3-BackMatter/Autorstvo}
+%\include{3-BackMatter/Istovetnost}
+\includepdf[pages=-]{3-BackMatter/Istovetnost-potpisano.pdf}
+%\include{3-BackMatter/Koriscenje}
+\includepdf[pages=-]{3-BackMatter/Koriscenje-potpisano.pdf}
 
 \end{document}
 
