@@ -26,45 +26,45 @@ Warning--I didn't find a database entry for "power-law"
 Warning--empty journal in latora2017complex
 Warning--empty publisher in guide_temporal
 Warning--empty booktitle in yashkina2020
-You've used 138 entries,
+You've used 139 entries,
             1791 wiz_defined-function locations,
-            1227 strings with 26322 characters,
-and the built_in function-call counts, 33091 in all, are:
-= -- 2961
-> -- 1477
+            1230 strings with 26407 characters,
+and the built_in function-call counts, 33255 in all, are:
+= -- 2974
+> -- 1485
 < -- 15
-+ -- 548
-- -- 410
-* -- 2490
-:= -- 5268
-add.period$ -- 419
-call.type$ -- 138
++ -- 551
+- -- 412
+* -- 2495
+:= -- 5294
+add.period$ -- 422
+call.type$ -- 139
 change.case$ -- 128
 chr.to.int$ -- 0
-cite$ -- 141
-duplicate$ -- 1395
-empty$ -- 3208
-format.name$ -- 410
-if$ -- 7265
+cite$ -- 142
+duplicate$ -- 1405
+empty$ -- 3227
+format.name$ -- 412
+if$ -- 7304
 int.to.chr$ -- 0
-int.to.str$ -- 138
-missing$ -- 148
-newline$ -- 693
-num.names$ -- 138
-pop$ -- 262
+int.to.str$ -- 139
+missing$ -- 150
+newline$ -- 698
+num.names$ -- 139
+pop$ -- 269
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 607
+skip$ -- 610
 stack$ -- 0
 substring$ -- 2554
-swap$ -- 263
+swap$ -- 264
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 342
-width$ -- 141
-write$ -- 1513
+while$ -- 343
+width$ -- 142
+write$ -- 1523
 (There were 4 warnings)

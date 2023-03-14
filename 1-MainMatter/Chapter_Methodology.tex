@@ -8,23 +8,23 @@ The complex system can be represented by a complex network $G=(V, E)$, where the
 \subsection{Degree distribution}
 
 The simplest network measure is \textbf{node degree}, $k$. The degree of node $i$ is the number of nodes adjacent 
-to node $i$, $k_i = \sum_j A_{ij}$. The network density is the average degree divided by $N-1$, where $N$ is the number of nodes. 
+to node $i$, $k_i = \sum_j A_{ij}$ \cite{boccaletti2006complex, newman2010}. The network density is the average degree divided by $N-1$, where $N$ is the number of nodes \cite{estrada2015first}. 
  
 In the case of regular networks, such as grids, each node has an equal degree, meaning that nodes in the network have similar roles. In the general case, the networks have a more complex structure. If the degree sequence is skewed, we can identify nodes with high-degree (hubs). Removing hubs may partition a connected network into several components \cite{albert2000error}.
  
-The degree distribution is the probability, $P(k)$, that a randomly chosen node has degree $k$. To estimate the degree distribution, we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. Similarly, we can order nodes according to their degree and plot the node degree.
+The degree distribution is the probability, $P(k)$, that a randomly chosen node has degree $k$ \cite{newman2010, estrada2015first}. To estimate the degree distribution, we can consider the fraction of $k$ degree nodes $N_k$, $p(k) = N_k/N$. Similarly, we can order nodes according to their degree and plot the node degree.
 
 Here we summarize the forms of degree distributions that are mostly found in the complex network theory:
 \begin{itemize}
-	\item The Poisson distribution. The degree distribution in a random network, where all nodes have the same connecting probability, follows Poisson distribution $P(k)= \frac{(Np)^ke^{-Np}}{k!}$, where $k$ is the mean degree distribution. 
+	\item The Poisson distribution. The degree distribution in a random network, where all nodes have the same connecting probability, follows Poisson distribution $P(k)= \frac{(Np)^ke^{-Np}}{k!}$, where $k$ is the mean degree distribution \cite{barabasi2016network}. 
 	
-	\item Exponential distribution. $P(k) = e^{-k/ \- k}$. It is the degree distribution of the growing random graph. Even for infinite networks, all moments of distributions are finite and have a natural scale of the order of average degree.
+	\item Exponential distribution. $P(k) = e^{-k/ \- k}$. It is the degree distribution of the growing random graph \cite{barabasi2016network}. Even for infinite networks, all moments of distributions are finite and have a natural scale of the order of average degree.
 	
-	\item In many real networks, degree distribution follows a power law. $P(k) = k ^ {-\gamma} $, where $\gamma$ is exponent of the distribution. No natural scale exists in this distribution, so they are called scale-free networks. In infinite networks, all higher moments diverge. If the average degree of scale-free networks is finite, then the $\gamma$ exponent should be $\gamma>2$. Therefore, real networks have a scale-free structure with the emergence of the hubs \cite{newman2010}. 
+	\item In many real networks, degree distribution follows a power law \cite{barabasi2016network, newman2010}. $P(k) = k ^ {-\gamma} $, where $\gamma$ is exponent of the distribution. No natural scale exists in this distribution, so they are called scale-free networks. In infinite networks, all higher moments diverge. If the average degree of scale-free networks is finite, then the $\gamma$ exponent should be $\gamma>2$. Therefore, real networks have a scale-free structure with the emergence of the hubs \cite{newman2010}. 
 
 \end{itemize}
 
-When plotting the degree distribution, it is common to use scaling of the axis. As many nodes have a low degree, like for power-law or exponential distribution, it is more useful to use a logarithmic scale. Now it is easier to notice that data points follow a straight line, meaning that degree distribution is some exponential function. 
+When plotting the degree distribution, it is common to use scaling of the axis. As many nodes have a low degree, like for power-law or exponential distribution, it is more useful to use a logarithmic scale \cite{caldarelli2007scalefree}. Now it is easier to notice that data points follow a straight line, meaning that degree distribution is some exponential function. 
 
 \subsection{Degree-degree correlations} 
 
@@ -38,7 +38,7 @@ r(x, y) = \frac{\frac{1}{n}\sum_{i=1}^{n}((x_i - \bar{x} ) (y_i - \bar{y}) )}{\s
 
 where $\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i$, is the average over variable $x$.
 
-Using the correlation coefficient definition, we can define correlations for vertex degrees. For graph $G$ which consists of $n$ nodes and is characterized with with adjacency matrix $\boldsymbol{A}$ and degree sequence $\boldsymbol{d} = [d_1, ..., d_n]$, correlation of vertex degree has form:
+Using the correlation coefficient definition, we can define correlations for vertex degrees \cite{van2010graph}. For graph $G$ which consists of $n$ nodes and is characterized with with adjacency matrix $\boldsymbol{A}$ and degree sequence $\boldsymbol{d} = [d_1, ..., d_n]$, correlation of vertex degree has form:
 
 %For simple graph G with vertex set $V(G) = \{v_1, ..v_n\}$, $\boldsymbol{A}[i,j] = 1$ if there is a link between nodes $v_i$ and $v_j$. If G is a simple graph with adjacency matrix $\boldsymbol{A}$ and degree sequence $\boldsymbol{d} = [d_1, ..., d_n]$
 
@@ -48,7 +48,7 @@ r_{deg}(G) = \frac{\sum_{i=1}^{n}\sum_{i=1+1}^{n}((d_i - \bar{d}) (d_i - \bar{d}
 
 An adjacency matrix allows us to calculate the correlations between neighboring nodes. If two nodes are not connected $A[i,j]=0$, the degree of correlation between them does not contribute to the $r$.
 
-The \textbf{degree-degree correlations} in the network are measured by \textbf{assortativity index}. If correlations are positive, networks are assortative; there is a tendency for connections to exist between similar degree nodes. The negative correlations indicate that nodes with large degree are more likely to connect nodes with small degree, disassortative networks. The average first neighbor degree $k_{nn}$ can be calculated as $k_{nn} = \sum_{k^{'}}k^{'}P(k^{'}|{k})$. The $P$ is the conditional probability that an edge of degree $k$ points to a node with degree $k$. The norm is $\sum_{k^{'}}P(k^{'}|k)=1$, and detailed balance conditions \cite{boccaletti2006complex},  $kP(k^{'}|k)P(k) = k^{'}P(k|k^{'})P(k^{'})$ \cite{boccaletti2006complex}. If the node degrees are uncorrelated, $k_{nn}$ does not depend on the degree; otherwise, increasing/decreasing function indicates positive/negative correlations in the network \cite{park2003}.
+The \textbf{degree-degree correlations} in the network are measured by \textbf{assortativity index}. If correlations are positive, networks are assortative; there is a tendency for connections to exist between similar degree nodes \cite{barabasi2016network}. The negative correlations indicate that nodes with large degree are more likely to connect nodes with small degree, disassortative networks. The average first neighbor degree $k_{nn}$ can be calculated as $k_{nn} = \sum_{k^{'}}k^{'}P(k^{'}|{k})$. The $P$ is the conditional probability that an edge of degree $k$ points to a node with degree $k$. The norm is $\sum_{k^{'}}P(k^{'}|k)=1$, and detailed balance conditions \cite{boccaletti2006complex},  $kP(k^{'}|k)P(k) = k^{'}P(k|k^{'})P(k^{'})$ \cite{boccaletti2006complex}. If the node degrees are uncorrelated, $k_{nn}$ does not depend on the degree; otherwise, increasing/decreasing function indicates positive/negative correlations in the network \cite{park2003}.
 
 The Newman defined the assortativity \cite{newman2002assortative} index $r$ in slightly different way:
 
@@ -67,7 +67,7 @@ c_i=2e_i/(k_i(k_i-1)),
 
 where $e_i$ is number of links among neighbors of node $i$ and $k_i$ is node degree. 
 
-We can calculate the mean clustering coefficient by averaging it overall network nodes. It ranges from  $\langle c \rangle = 0$ where connections between neighboring nodes do not exist; the network has a tree structure. On the other hand, $\langle c \rangle = 1$ indicates a fully connected network.
+We can calculate the mean clustering coefficient by averaging it overall network nodes. It ranges from  $\langle c \rangle = 0$ where connections between neighboring nodes do not exist; the network has a tree structure \cite{barabasi2016network}. On the other hand, $\langle c \rangle = 1$ indicates a fully connected network \cite{barabasi2016network}.
 
 Alternative definition of the clustering coefficient was proposed by Newman \cite{newman2009random}. The network transitivity is seen as global clustering as it takes into account whole network properties. It is calculated as ratio of number of triangles and triples in the network. While triangle is complete subgraph of tree nodes, a triple has tree nodes, but only two edges. 
 
@@ -108,13 +108,13 @@ while it is also possible to define the \textbf{characteristic path} length of G
 \subsection{D-measure}
 
 For each node $i$, we can define the distribution of the shortest paths between node $i$ and all other nodes in the network, $P_{i}=\{p_{i}(j)\}$, where $p_{i}(j)$ is the percent of nodes at a distance $j$ from node $i$. The connectivity patterns can efficiently describe the difference between the two networks.    
-To specify how much $G$ and $G^{'}$ are similar we use D-measure \cite{tiago2}
+To specify how much $G$ and $G^{'}$ are similar we use D-measure \cite{tiago2}:
 \begin{equation}
 D(G, G^{'}) = \omega \left| \sqrt{\frac{J(P_1,..P_N)}{log(d)}}-\sqrt{\frac{J(P_1^{'},..P_N^{'})}{log(d^{'})}} \right| + (1-\omega) \sqrt{\frac{J(\mu_{G},\mu_{G^{'}})}{log2}}.
 \label{eq:dmeasure}
 \end{equation}
 
-D-measure calculates Jensen-Shannon divergence between $N$ shortest path distributions,
+D-measure calculates Jensen-Shannon divergence between $N$ shortest path distributions:
 
 \begin{equation}
 J(P_1,.., P_N)) = \sum_{i,j}p_i(j)log(\frac{p_i(j)}{\mu_j}),
@@ -149,7 +149,7 @@ The \textbf{modularity}  \cite{newman2004finding, guimera2004modularity, good201
 M_c = \frac{1}{2L}\sum(A_{ij}-p_{ij}),
 \end{equation}
 
-where the first part of equation measures number of links $A_{ij}$ within community $c$, while second term is number of links within community if network is randomly connected $p_{ij}= \frac{k_ik_j}{2L}$. If the first term is larger than the second term, the modularity is positive and the partition is considered to be better than random, otherwise we can not consider that nodes in given group form community structure. The same idea can be generalized to the whole network: The modularity of the network partitioned into $n_c$ communities is then defined as:
+where the first part of equation measures number of links $A_{ij}$ within community $c$, while second term is number of links within community if network is randomly connected $p_{ij}= \frac{k_ik_j}{2L}$. If the first term is larger than the second term, the modularity is positive and the partition is considered to be better than random, otherwise we can not consider that nodes in given group form community structure. The same idea can be generalized to the whole network: the modularity of the network partitioned into $n_c$ communities is then defined as:
 \begin{equation}
 M=\sum_{c=1}^{n} [\frac{L_c}{L} - (\frac{k_c}{2L})^2].
 \end{equation}
@@ -286,7 +286,7 @@ f(x) = \frac{1}{x \sigma \sqrt{2\pi}}e^{-(log(x)-\mu)^2 /2\sigma^2} .
 
 The lognormal distribution has finite mean $e^{\mu+1/2\sigma^2}$, and the variance $e^{2\mu+\sigma^2}(e^{\sigma^2 -1})$.  \cite{mitzenmacher2004brief}. Despite the finite moments, the lognormal distribution can be similar to the power-law distribution. If the variance is large, then the probability function on the log-log plot appears linear for a large range of values. 
 
-Using the \textbf{multiplicative processes}, we can generate the lognormal distribution \cite{caldarelli2007scalefree, mitzenmacher2004brief}. The lognormal distribution is generated by processes that economist Gibrat called the law of proportionate effect. If we start from the organism of size $S_0$. At each time step, the organism may grow or shrink according to the random variable $\epsilon$
+Using the \textbf{multiplicative processes}, we can generate the lognormal distribution \cite{caldarelli2007scalefree, mitzenmacher2004brief}. The lognormal distribution is generated by processes that economist Gibrat called the law of proportionate effect. If we start from the organism of size $S_0$, at each time step, the organism may grow or shrink according to the random variable $\epsilon$ \cite{mitzenmacher2004brief}
 \begin{equation}
 S_t = \epsilon_t S_{t-1}.
 \end{equation}
@@ -301,7 +301,7 @@ If $\epsilon_t$ is drawn from the lognormal distribution, then $S_t$ also follow
 ln(S_t) = ln(S_0) + \sum_{i=0}^{t} ln(\epsilon_i).
 \end{equation}
 
-The sum of the logarithms of the $\epsilon_t$, according to the Central Limit Theorem (CLT), follows the normal distribution. The CLT states that the sum of identically distributed random variables with finite variance converges to the normal distribution. If $ln(S_t)$ is normally distributed, then $S_t$ follows the lognormal distribution.   
+The sum of the logarithms of the $\epsilon_t$, according to the Central Limit Theorem (CLT), follows the normal distribution. The CLT states that the sum of identically distributed random variables with finite variance converges to the normal distribution. If $ln(S_t)$ is normally distributed, then $S_t$ follows the lognormal distribution \cite{mitzenmacher2004brief}.   
 
 The multiplicative processes generate the lognormal distribution. Introducing a threshold in the multiplicative process leads to the power law. For example, in the Champernowne model \cite{caldarelli2007scalefree}, individuals are divided into classes according to their income. The minimum income is m. People between incomes m and $\gamma m$ are in the first class, and the second class is people with incomes between $\gamma m$ and $\gamma^2 m $. The individuals can change their class, so it is described as a multiplicative process, but with a threshold, as income can not be lower than m. If we fix $\gamma=2$, and consider that with probability $p_{i,i-1}=2/3$, the change is from higher to lower class. In contrast, with probability, $p_{i, i+1}=1/3$ individual goes to a higher class. In this process, the distribution of incomes emerges as the power-law distribution.
 
@@ -344,7 +344,7 @@ The likelihoods are defined as $L_1=\prod_{i=1}^{n}p_1(x)$ and $L_2=\prod_{i=1}^
 
 As data $x_i$ are independent, by central limit theorem, their sum $\mathcal{R}$ becomes normally distributed, with expected variance $\sigma^2$. We can approximate the variance as 
 
-$$\sigma^2 = \frac{1}{n}\sum_{1}^{n}[(l_i - l_i) - (<l>^{(1)}- <l>^{(2)})]$$.
+$$\sigma^2 = \frac{1}{n}\sum_{1}^{n}[(l_i - l_i) - (<l>^{(1)}- <l>^{(2)})].$$
 
 When $R>0$, the first distribution is a better fit to the data, and then $R<0$, the other one should be chosen. When $R=0$, it is not possible to distinguish between two distributions. The sign of $R$ is not enough criteria to conclude which distribution is a better fit, and it is a random variable subject to statistical fluctuations. We need a log-likelihood ratio that is sufficiently positive or negative to ensure that its sign does not result from fluctuations.
 
@@ -555,7 +555,7 @@ The study of time series is an important approach in understanding complex syste
 
 $$x(t) = a^Hx(at).$$
 
-In other words, having self-similarity, means that rescaling time $t$ by a factor $a$, may require rescaling the time-series values $x(t)$ by a factor $a^H$.
+In other words, having self-similarity, means that if we rescale time $t$ by a factor $a$, the time-series values $x(t)$ are rescaled by a factor $a^H$.
 Monofractal \cite{fan2012fractal, sidorov2018fractality} time series is characterized by a single scaling exponent that applies across all time scales. On the other hand, time series is called multifractal. 
 
 %One of the approaches in studying complex systems is detecting the time series of selected variables \cite{kantelhardt2008fractal}. In complex systems, the periodic behavior of time series is not limited to one or two characteristic frequencies. They extend over a broad spectrum and fluctuations on many time scales, and broad distributions \cite{fan2012fractal, sidorov2018fractality}. In these cases, the system's dynamics are characterized by scaling laws, valid over a wide range of time scales or frequencies. When only one scaling exponent describes the system dynamics, the time series is monofractal.
@@ -564,7 +564,7 @@ Monofractal \cite{fan2012fractal, sidorov2018fractality} time series is characte
 
 \subsection{Long and short-term correlations}
 
-The autocovariance function $C(s)$ can be used to quantify the degree of persistence or correlation of a stationary time series \cite{kantelhardt2008fractal}, where the mean and variance do not change with time. The autocovariance function measures the linear dependence between the increments $\Delta x_i$ and $\Delta x_{i+s}$ at a lag $s$, and it is defined as the expected value of their product:
+The autocovariance function $C(s)$ can be used to quantify the degree of persistence or correlation of a stationary time series \cite{kantelhardt2008fractal}, where the mean and variance do not change with time. The autocovariance function measures the linear dependence between the increments $\Delta x_i$ and $\Delta x_{i+s}$ at a lag $s$, where $\Delta x_i = x_i - x_{i-1}$, of time series $\{x_i\}, i=1...N$, and it is defined as the expected value of their product:
 
 \begin{equation}
 C(s) = \langle \Delta x_i \Delta x_{i+s} \rangle = \frac{1}{N-s} \sum_{i=1}^{N-s}\Delta x_i \Delta x_{i+s}.
@@ -583,7 +583,7 @@ with random uncorrelated offsets $\epsilon_i$ and $c = exp(-1/t_c)$.
 Fourier filtering techniques can model this type of behavior. The Hurst exponent $H$ is related to the power-law exponent $\gamma$ by $H=1-\gamma/2$. Therefore, if we can estimate the Hurst exponent, we can infer the degree of persistence or long-range correlations of the time series.
 
 
-%The time series are persistent, meaning that large values usually follow a large value \cite{kantelhardt2008fractal}. Considering the increments $\delta x_i = x_i - x_{i-1}$, of self-affine series $i = 1,.., N$, with N values measured equidistant in time, $\delta x_i$ can be either persistent, independent or anti-persistent. For the random walk with $H=0.5$, the increments are independent. For stationary data with constant mean and standard deviation, the auto-covariance function can determine the degree of persistence 
+%The time series are persistent, meaning that large values usually follow a large value \cite{kantelhardt2008fractal}. Considering the increments x_$\delta x_i = x_i - {i-1}$, of self-affine series $i = 1,.., N$, with N values measured equidistant in time, $\delta x_i$ can be either persistent, independent or anti-persistent. For the random walk with $H=0.5$, the increments are independent. For stationary data with constant mean and standard deviation, the auto-covariance function can determine the degree of persistence 
 
 %\begin{equation}
 %C(s) = \langle \Delta x_i \Delta x_{i+s} \rangle = \frac{1}{N-s} %\sum_{i=1}^{N-s}\Delta x_i \Delta x_{i+s}.
@@ -600,25 +600,23 @@ Fourier filtering techniques can model this type of behavior. The Hurst exponent
 %$$C(s) = s^{-\gamma}.$$
 %Fourier filtering techniques can model this type of behavior. Long-term correlated behavior of $\Delta x_i$ leads to self-affine scaling behavior characterized by Hurst exponent $H=1-\gamma/2$. 
 
-A direct calculation of the $C(s)$ is complex due to present noise in the data and non-stationarity. Non-stationarities make the definition of $C(s)$ problematic because its average is not well defined. Also, $C(s)$ fluctuates around zero on large scales s, so it is impossible to obtain the correct correlation exponent $\gamma$. For that reason, instead of calculating auto-covariance function $C(s)$, it is common to calculate the Hurst exponent $H$.
+
+Due to the presence of noise in the data and non-stationarity, directly calculating the auto-covariance function $C(s)$ can be a challenging task. This is because non-stationarities make it difficult to define $C(s)$ properly, as its average may not be well-defined. Additionally, on large scales, $C(s)$ fluctuates around zero, which makes it impossible to determine the correct correlation exponent $\gamma$. Therefore, instead of computing $C(s)$, it is common to estimate the Hurst exponent $H$.
+
+%A direct calculation of the $C(s)$ is complex due to present noise in the data and non-stationarity. Non-stationarities make the definition of $C(s)$ problematic because its average is not well defined. Also, $C(s)$ fluctuates around zero on large scales s, so it is impossible to obtain the correct correlation exponent $\gamma$. For that reason, instead of calculating auto-covariance function $C(s)$, it is common to calculate the Hurst exponent $H$.
 
 \subsection{Rescaled range analysis} 
 
-The rescaled range analysis (R/S) method proposed by Hurst \cite{hurst1951long}. is a popular technique to estimate the Hurst exponent of a time series. It is a simple and robust method that works well for a wide range of self-similar processes. The method is based on the observation that the range $R(s)$ of a random walk with uncorrelated increments scales as the square root of the number of steps $s$, 
-$R_{\nu}(s) = max Y_\nu(j) - min Y_{\nu}(j)$; $S_{\nu}(s) = \sqrt{\frac{1}{s}\sum Y^2_{\nu}(j)}$, where $Y_\nu$ is profile of each segment of the size $s$, to which we split the time series $x_i$:
+The rescaled range analysis (R/S) method proposed by Hurst \cite{hurst1951long}. is a popular technique to estimate the Hurst exponent of a time series. It is a simple method that works well for a wide range of self-similar processes. For time series $x_i$, we can define the profile $Y_\nu$ for each segment of the size $s$:
 
 $$Y_\nu(j) = \sum_{i=1}^{j} (x_{\nu s +i} - \langle x_{\nu s + i } \rangle _s).$$
+Constant trends in the data are removed by removing the average values over segment $\langle x_{\nu s + i } \rangle _s$. From there we can define the range between minimum and maximum value of obtained profile as $R_{\nu}(s) = max Y_\nu(j) - min Y_{\nu}(j)$, and standard deviation is $S_{\nu}(s) = \sqrt{\frac{1}{s}\sum Y^2_{\nu}(j)}$. 
 
 Finally, the rescaled range is averaged over all segments to obtain the fluctuation function F(s),
 
 $$F_{RS}(s) = \frac{1}{N_s}\sum \frac{R_{\nu}(s)}{S_{\nu}(s)} \sim s^H,$$
 
 where the H is the Hurst exponent. The Hurst exponent can be estimated from the slope of the line in a log-log plot of $R(s)/S(s)$ versus $s$. Values $H<1/2$ indicate long-term anti-correlated data while $H>1/2$ long-term positively correlated data \cite{kantelhardt2008fractal}. 
-
-
-
-
-
 
 %Hurst proposed a method called the \textbf{rescaled range analysis} $R/S$, \cite{hurst1951long}. It begins with splitting the time series $x_i$ into non-overlapping segments $\nu$ of the size s, having $N_s = int(N/s)$ segments. Then is calculated the profile in each segment is
 
@@ -697,7 +695,7 @@ Multifractal detrended fluctuation analysis (MFDFA) is used \cite{kantelhardt200
 F_q(s) = \left\{\frac{1}{2N_s}\sum_{\nu}^{2N_s}\left[F^2(\nu, s)\right]^{\frac{q}{2}}\right\}^{\frac{1}{q}},  q \neq 0 \nonumber.
 \end{equation}
 
-The MFDFA for $q=2$ is equivalent to the DFA method. The value of $H(0)$, which corresponds to the limit $F(q), q-0$, cannot be determined directly because the exponent diverges. Instead, the logarithmic averaging procedure has to be considered. 
+The MFDFA for $q=2$ is equivalent to the DFA method. The value of $H(0)$, which corresponds to the limit $F(q), q -> 0$, cannot be calculated directly because the exponent diverges. Instead, the logarithmic averaging procedure has to be considered. 
 \begin{equation}
 F_0(s) = \exp \left\{\frac{1}{4N_s}\sum_{\nu}^{2N_s}ln \left[F^2(\nu, s)\right]\right\}, q=0.
 \end{equation}
@@ -711,10 +709,9 @@ The fluctuating function scales as power-law $F_q(s) \sim s^{H(q)}$ and the anal
 	\label{fig:hurst_mfdfa}
 \end{figure}
 
-For the monofractal time series, H(q) is independent of q, meaning that scaling is identical for all segments, and averaging fluctuations gives identical scaling for all values of q. If small and large changes scale differently, H(q) will depend on q. Positive values of q, segments with large variance are dominant in the Fq(s), so positive q describes segments with large fluctuations. The negative values of q, H(q) describe the scaling of the segments with small fluctuations. 
+For monofractal time series, the scaling properties of all segments are the same, regardless of their size or magnitude of change. This means that the value of H(q) will be the same for all values of q \cite{kantelhardt2002, kantelhardt2008fractal}. If the series exhibits multifractal behavior, then the scaling properties of different segments of the series will be different, and the value of H(q) will vary depending on the magnitude of change in the segment being analyzed. Positive values of q will indicate segments with large fluctuations, while negative values of q will describe the scaling of segments with small fluctuations \cite{kantelhardt2008fractal}.
 
-
-
+%For the monofractal time series, H(q) is independent of q, meaning that scaling is identical for all segments, and averaging fluctuations gives identical scaling for all values of q. If small and large changes scale differently, H(q) will depend on q. Positive values of q, segments with large variance are dominant in the Fq(s), so positive q describes segments with large fluctuations. The negative values of q, H(q) describe the scaling of the segments with small fluctuations. 
 
 
 \section{Dynamical reputation model} \label{sec:met_dibrm}
