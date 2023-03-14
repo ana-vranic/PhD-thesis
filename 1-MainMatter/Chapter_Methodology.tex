@@ -28,7 +28,9 @@ When plotting the degree distribution, it is common to use scaling of the axis. 
 
 \subsection{Degree-degree correlations} 
 
-Correlation is defined through a correlation coefficient r. If x and y are two stochastic variables, for which we have a series of observation pairs $(x_1, y_1), (x_2, y_2), ...,(x_n, y_n)$. The correlation coefficient $r(x, y)$ between $x$ and $y$ is defined as \cite{van2010graph}
+Correlation is defined through a correlation coefficient $r(x, y)$. For two variables $x$ and $y$, which represent pairs $(x_1, y_1), (x_2, y_2), ...,(x_n, y_n)$ we can define correlation coefficient \cite{van2010graph} as: 
+
+%If x and y are two stochastic variables, for which we have a series of observation pairs $(x_1, y_1), (x_2, y_2), ...,(x_n, y_n)$. The correlation coefficient $r(x, y)$ between $x$ and $y$ is defined as \cite{van2010graph}
 
 \begin{equation}
 r(x, y) = \frac{\frac{1}{n}\sum_{i=1}^{n}((x_i - \bar{x} ) (y_i - \bar{y}) )}{\sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2} \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \bar{y})^2} },
@@ -36,7 +38,9 @@ r(x, y) = \frac{\frac{1}{n}\sum_{i=1}^{n}((x_i - \bar{x} ) (y_i - \bar{y}) )}{\s
 
 where $\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i$, is the average over variable $x$.
 
-Using the correlation coefficient definition, we can define correlations for vertex degrees. For simple graph G with vertex set $V(G) = \{v_1, ..v_n\}$, $\boldsymbol{A}[i,j] = 1$ if there is a link between nodes $v_i$ and $v_j$. If G is a simple graph with adjacency matrix $\boldsymbol{A}$ and degree sequence $\boldsymbol{d} = [d_1, ..., d_n]$
+Using the correlation coefficient definition, we can define correlations for vertex degrees. For graph $G$ which consists of $n$ nodes and is characterized with with adjacency matrix $\boldsymbol{A}$ and degree sequence $\boldsymbol{d} = [d_1, ..., d_n]$, correlation of vertex degree has form:
+
+%For simple graph G with vertex set $V(G) = \{v_1, ..v_n\}$, $\boldsymbol{A}[i,j] = 1$ if there is a link between nodes $v_i$ and $v_j$. If G is a simple graph with adjacency matrix $\boldsymbol{A}$ and degree sequence $\boldsymbol{d} = [d_1, ..., d_n]$
 
 \begin{equation}
 r_{deg}(G) = \frac{\sum_{i=1}^{n}\sum_{i=1+1}^{n}((d_i - \bar{d}) (d_i - \bar{d}) \boldsymbol{A}[i,j] )}{\sum_{i=1}^{n}(d_i - \bar{d})^2}.
@@ -44,7 +48,7 @@ r_{deg}(G) = \frac{\sum_{i=1}^{n}\sum_{i=1+1}^{n}((d_i - \bar{d}) (d_i - \bar{d}
 
 An adjacency matrix allows us to calculate the correlations between neighboring nodes. If two nodes are not connected $A[i,j]=0$, the degree of correlation between them does not contribute to the $r$.
 
-The \textbf{degree-degree correlations} in the network are measured by \textbf{assortativity index}. If correlations are positive, networks are assortative; there is a tendency for connections to exist between similar degree nodes. The negative correlations indicate that large-degree nodes prefer to connect nodes with a small degree, disassortative networks. The average first neighbor degree $k_{nn}$ can be calculated as $k_{nn} = \sum_{k^{'}}k^{'}P(k^{'}|{k})$. The $P$ is the conditional probability that an edge of degree $k$ points to a node with degree $k$. The norm is $\sum_{k^{'}}P(k^{'}|k)=1$, and detailed balance conditions \cite{boccaletti2006complex},  $kP(k^{'}|k)P(k) = k^{'}P(k|k^{'})P(k^{'})$ \cite{boccaletti2006complex}. If the node degrees are uncorrelated, $k_{nn}$ does not depend on the degree; otherwise, increasing/decreasing function indicates positive/negative correlations in the network \cite{park2003}.
+The \textbf{degree-degree correlations} in the network are measured by \textbf{assortativity index}. If correlations are positive, networks are assortative; there is a tendency for connections to exist between similar degree nodes. The negative correlations indicate that nodes with large degree are more likely to connect nodes with small degree, disassortative networks. The average first neighbor degree $k_{nn}$ can be calculated as $k_{nn} = \sum_{k^{'}}k^{'}P(k^{'}|{k})$. The $P$ is the conditional probability that an edge of degree $k$ points to a node with degree $k$. The norm is $\sum_{k^{'}}P(k^{'}|k)=1$, and detailed balance conditions \cite{boccaletti2006complex},  $kP(k^{'}|k)P(k) = k^{'}P(k|k^{'})P(k^{'})$ \cite{boccaletti2006complex}. If the node degrees are uncorrelated, $k_{nn}$ does not depend on the degree; otherwise, increasing/decreasing function indicates positive/negative correlations in the network \cite{park2003}.
 
 The Newman defined the assortativity \cite{newman2002assortative} index $r$ in slightly different way:
 
@@ -52,18 +56,23 @@ The Newman defined the assortativity \cite{newman2002assortative} index $r$ in s
 r = \sum_{kl}kl(e_{kl} - q_lq_k) / \sigma_q^2 ,
 \end{equation}
 
-where $e_{kl}$ is the probability that a randomly selected link connects nodes with degrees $k$ and $l$, $q_k$ is a probability that a randomly chosen node is connected to node $k$ and equals $q_k = kp_k / \langle k \rangle$, while $\sigma_q$ is a variance of the distribution $q_k$. 
+where $e_{kl}$ is that a randomly selected link connects nodes with degrees $k$ and $l$, $q_k$ is a probability that a randomly chosen node is connected to node $k$ and equals $q_k = kp_k / \langle k \rangle$, while $\sigma_q$ is a variance of the distribution $q_k$. 
 
 \subsection{Clustering coefficient}
 
-The \textbf{clustering coefficient} is a measure describing the neighborhood's structure. In networks, exist a tendency to form triangles or clusters \cite{barabasi2016network}. It is common in friendship networks where two friends of one person have a high probability of being friends \cite{mata2020complex}. The clustering can be measured by computing the number of links between neighbors of one node \cite{watts1998collective}
+The \textbf{clustering coefficient} is a measure describing the neighborhood's structure. In networks, exist a tendency to form triangles or clusters \cite{barabasi2016network}. It is common property of friendship networks; there is high probability that neighbors of one nodes are connected \cite{mata2020complex}. The clustering of node $i$ can be measured  as \cite{watts1998collective}: 
 \begin{equation}
-c_i=2e_i/(k_i(k_i-1)).
+c_i=2e_i/(k_i(k_i-1)),
 \end{equation}
 
-We can calculate the mean clustering coefficient by averaging it overall network nodes. It ranges from  $\langle c \rangle = 0$ where connections between neighboring nodes do not exist; the network has a tree structure. On the other hand, $\langle c \rangle = 1$ indicates a fully connected network. 
+where $e_i$ is number of links among neighbors of node $i$ and $k_i$ is node degree. 
 
-Newman proposed the alternative definition for the clustering coefficient based on the number of triples and triangles in a graph \cite{newman2009random}. A triangle at node $v$ is a complete subgraph with three nodes, including $v$. A triple on the node v is a subgraph of exactly three nodes and two edges, where v is incident with two edges. The network transitivity is the ratio of the number of triangles in the network over the number of triples. The network transitivity is seen as global clustering, as it considers the whole network.  
+We can calculate the mean clustering coefficient by averaging it overall network nodes. It ranges from  $\langle c \rangle = 0$ where connections between neighboring nodes do not exist; the network has a tree structure. On the other hand, $\langle c \rangle = 1$ indicates a fully connected network.
+
+Alternative definition of the clustering coefficient was proposed by Newman \cite{newman2009random}. The network transitivity is seen as global clustering as it takes into account whole network properties. It is calculated as ratio of number of triangles and triples in the network. While triangle is complete subgraph of tree nodes, a triple has tree nodes, but only two edges. 
+
+%Newman proposed the alternative definition for the clustering coefficient based on the number of triples and triangles in a graph \cite{newman2009random}. 
+%A triangle at node $v$ is a complete subgraph with three nodes, including $v$. A triple on the node v is a subgraph of exactly three nodes and two edges, where v is incident with two edges. The network transitivity is the ratio of the number of triangles in the network over the number of triples. The network transitivity is seen as global clustering, as it considers the whole network.  
 
 \subsection{Paths} 
 In the network structure, the interacting nodes are directly connected with the edge. In this representation, the distance between them is $d_{v_i, v_j} =1 $. Distance defined like this does not have any physical meaning, and its purpose is to describe how the position of nodes in the network structure influences the other distant nodes. 
@@ -73,23 +82,27 @@ The \textbf{path} between two nodes \cite{van2010graph}, $v_i$ and $v_j$ is a se
 The network is connected if it can define the path between every two nodes. When it is not the case, the network is disconnected into two or more connected components. Note that the component can be an isolated node. Also, in directed networks may happen that node $v_i$ is reachable from node $v_j$, but if we start from $v_j$, we can not find the path to the $v_i$. Such a graph is connected but is called a weakly connected component \cite{jackson2010social}.
 
 We can find different paths between two nodes in the network, but the most important one is the \textbf{shortest path} \cite{van2010graph, jackson2010social}. The distance between two nodes $d(v_i, v_j)$ is defined as the shortest path length between two nodes. 
-In the case of weighted networks, it is the path with minimal weight, and the length of such a path does not have to be minimal. Distances on the network can give us insight into how similar networks are and indicate the node's relative importance in the network. 
+In the case of weighted networks, it is the path with minimal weight, but its length is not necessary minimal. Distances on the network can give us insight into how similar networks are and indicate the node's relative importance in the network. 
 
 The \textbf{radius} is the minimum overall eccentricity value. In contrast, the \textbf{diameter} defines the largest distance between nodes in the network \cite{van2010graph}. These definitions apply to directed and undirected graphs. 
 
-If G is a connected graph with vertex set V and $\bar{d}(u)$ is the average length of the shortest paths from node u to any other node v in network G \cite{van2010graph}
+Also for each node $u$ in network $G$ we can calculate the average length of the shortest paths to any other node in the network \cite{van2010graph}:
+
+%If G is a connected graph with vertex set V and $\bar{d}(u)$ is the average length of the shortest paths from node u to any other node v in network G \cite{van2010graph}
 
 \begin{equation}
 \bar{d}(u) = \frac{1}{|V|-1} \sum_{v\in V, v \notin u} d(u,v).
 \end{equation}
 
-From there, the \textbf{average path length} is the mean value over $\bar{d}(u)$
+The \textbf{average path length} of the network is then calculated as:
+
+%From there, the \textbf{average path length} is the mean value over $\bar{d}(u)$
 
 \begin{equation}
 \bar{d}(G) = \frac{1}{|V|}\sum_{u \in V} \bar{d}(u),
 \end{equation}
 
-while the \textbf{characteristic path} length of G is median over all $\bar{d}(u)$.
+while it is also possible to define the \textbf{characteristic path} length of G as median value of all nodes shortest paths. % is median over all $\bar{d}(u)$.
 
 
 \subsection{D-measure}
@@ -130,22 +143,36 @@ In this section are explained two community detection models, the first one base
 
 \subsection{Community detection based on modularity function optimization} 
 
-Comparing the link density of the community with the link density obtained for the same group of nodes randomly connected, we could conclude if the community corresponds to the dense subgraph or if the structure is created entirely random. The \textbf{modularity} \cite{newman2004finding, guimera2004modularity, good2010performance} is a function that measures the randomness of each partition. Partition is the division of the network into $n_c$ groups, where each node belongs to only one group \cite{barabasi2014network}.  For the network with $N$ nodes and $L$ links partitioned into $n_c$ communities where each community has $N_c$ nodes and $L_c$ links. If the number of connections is larger than the expected number of links between $N_c$ nodes given in the expected node sequence, these nodes may form the community. We calculate the difference between real network connectivity $A_{ij}$ and the expected number of links between nodes if the network is randomly connected, $p_{ij}$. The $p_{ij}$ can be obtained by randomizing the original network but keeping the expected degree of each node unchanged, so $p_{ij}= \frac{k_ik_j}{2L}$, and modularity has form:
+The \textbf{modularity}  \cite{newman2004finding, guimera2004modularity, good2010performance}  is a measure used to evaluate the quality of a partition or clustering of nodes into communities. Partition is the division of the network with $N$ nodes and $L$ links into $n_c$ communities, where each node belongs to only one group \cite{barabasi2014network}. The modularity measures the degree to which nodes in the same community are more connected to each other than expected by chance, while taking into account the expected degree sequence of the network. The modularity has form: 
 
 \begin{equation}
-M_c = \frac{1}{2L}\sum(A_{ij}-p_{ij}).
+M_c = \frac{1}{2L}\sum(A_{ij}-p_{ij}),
 \end{equation}
 
-If modularity is positive, the selected nodes may be a community, as their connectivity is far from random. If $M_c$ is zero, then the connectivity between nodes is arbitrary, and if $M_c$ is negative, the nodes do not form the community. The same idea can be generalized to the whole network: The modularity of the network partitioned into $n_c$ communities is then defined as:
+where the first part of equation measures number of links $A_{ij}$ within community $c$, while second term is number of links within community if network is randomly connected $p_{ij}= \frac{k_ik_j}{2L}$. If the first term is larger than the second term, the modularity is positive and the partition is considered to be better than random, otherwise we can not consider that nodes in given group form community structure. The same idea can be generalized to the whole network: The modularity of the network partitioned into $n_c$ communities is then defined as:
 \begin{equation}
 M=\sum_{c=1}^{n} [\frac{L_c}{L} - (\frac{k_c}{2L})^2].
 \end{equation}
 
+
+
+%Comparing the link density of the community with the link density obtained for the same group of nodes randomly connected, we could conclude if the community corresponds to the dense subgraph or if the structure is created entirely random. The \textbf{modularity} \cite{newman2004finding, guimera2004modularity, good2010performance} is a function that measures the randomness of each partition.
+
+%Partition is the division of the network into $n_c$ groups, where each node belongs to only one group \cite{barabasi2014network}.  For the network with $N$ nodes and $L$ links partitioned into $n_c$ communities where each community has $N_c$ nodes and $L_c$ links. If the number of connections is larger than the expected number of links between $N_c$ nodes given in the expected node sequence, these nodes may form the community. We calculate the difference between real network connectivity $A_{ij}$ and the expected number of links between nodes if the network is randomly connected, $p_{ij}$. The $p_{ij}$ can be obtained by randomizing the original network but keeping the expected degree of each node unchanged, so $p_{ij}= \frac{k_ik_j}{2L}$, and modularity has form:
+
+
+
+%If modularity is positive, the selected nodes may be a community, as their connectivity is far from random. If $M_c$ is zero, then the connectivity between nodes is arbitrary, and if $M_c$ is negative, there is no community structure among nodes. The same idea can be generalized to the whole network: The modularity of the network partitioned into $n_c$ communities is then defined as:
+%\begin{equation}
+%M=\sum_{c=1}^{n} [\frac{L_c}{L} - (\frac{k_c}{2L})^2].
+%\end{equation}
+
 The higher modularity indicates that nodes are partitioned in better communities. When we put all nodes into only one community $M=0$, otherwise, if each node is the community itself $L_c=0$ and the sum is negative. The Newman showed that modularity function  \cite{newman2004analysis} applies for weighted networks.
 
-Maximum network modularity indicates the best partions. As too many possible partitions exist, we need an algorithmic approach to identify the best separation. The first algorithm proposed for modularity optimization was \textbf{greedy algorithm}. First, it assigns each node to a community and starts with N communities. Then, we should merge each pair of communities and calculate the modularity difference $\Delta M$. We can join those two communities by identifying the pair for which the difference is the largest. It is repeated until all nodes merge into a single community. The best partition is one with the largest $M$.
+Maximum network modularity indicates the best partions. As too many possible partitions exist, we need an algorithmic approach to identify the best separation. The first algorithm proposed for modularity optimization was \textbf{greedy algorithm}. First, it assigns each node to a community and starts with N communities. Then, we should merge each pair of communities and calculate the modularity difference $\Delta M$. We can join those two communities by identifying the pair for which the difference is the largest. It is repeated until we get single community. The best partition is one with the largest $M$.
 
-\textbf{Louvain algorithm} \cite{blondel2008fast} is an optimization algorithm with better scalability than the greedy algorithm so it can operate on very large networks. Initially, each node is assigned to a different community, and similar to before, we calculate the difference in the modularity moving nodes to one of their neighboring community. Then we move node $i$ to the community such that modularity becomes larger. It is applied to all nodes until no further improvement can be made. In the second step, we create a weighted network whose nodes are communities identified during the first step. The weight of the links between communities is the sum of the weights between nodes. The number of links inside the community is given as a weighted self-loop. Then, the first and second steps are repeated until there is no more change in the modularity. The obtained number of clusters when the algorithm stops is an optimal number of communities. 
+\textbf{Louvain algorithm} \cite{blondel2008fast} is an optimization algorithm with better scalability than the greedy algorithm so it can operate on very large networks. Initially, each node is in different community%is assigned to a different community,
+and similar to before, we calculate the difference in the modularity moving nodes to one of their neighboring community. Then we move node $i$ to the community such that modularity becomes larger. It is repeated with all nodes in the network, until there is no improvement in the modularity. In the second step, we create a weighted network whose nodes are communities identified during the first step. The weight of the links between communities is the sum of the weights between nodes \cite{barabasi2014network}. The number of links inside the community is given as a weighted self-loop. Then, the first and second steps are repeated until there is no more change in the modularity. The obtained number of clusters when the algorithm stops is an optimal number of communities. 
 
 The community detection algorithms tend to merge small communities, which should be independent \cite{fortunato2007resolution}. This consequence is easily seen in the graph consisting of N-connected cliques, where higher modularity is if two adjacent cliques are merged into communities instead of having each clique as a single community. This lead to the modification of the modularity function as $M= \frac{1}{2L}\sum_{i,j}[A_{i,j} - \gamma \frac{k_ik_j}{2L}]$, where $\gamma$ is resolution parameter \cite{reichardt2006statistical}, which controls the size of communities to be detected. With $\gamma<1$, detecting small communities undetected with the original model would be possible. 
 
@@ -195,17 +222,21 @@ L = log(P(G|g, p)) = \sum_{r,s} e_{r,s} ln\frac{e_{rs}}{n_{rs}} + (n_{rs}-e_{rs}
 
 Instead of generating networks, the opposite task is network \textbf{inference}. For a given network $G$, and specified the number of communities $k$, we can use the SBM model to infer the nodes' assignments into groups, so we need to choose vector $g$ and SBM matrix $p$ such that the likelihood for generating network $G$ is maximized. 
 
-The formulation of the SBM model does not consider how to infer the optimal number of groups. Optimizing the likelihood function for different numbers of groups would increase likelihood while each node is not assigned to a different group. In practice, our found community structures for a fixed number of groups, and then the likelihood function could be penalized by the number of model parameters. One approach is calculating the \textbf{Minimum description length (MDL)} \cite{peixoto2019bayesian}. For the variable that occurs with probability P(x), the necessary amount of information to describe it is $-log_2P(x)$. The numerator of posterior probability could be written as
+The formulation of the SBM model does not consider how to infer the optimal number of groups. Optimizing the likelihood function for different numbers of groups would increase likelihood while each node is not assigned to a different group. In practice, our found community structures for a fixed number of groups, and then the likelihood function could be penalized by the number of model parameters. One approach is calculating the \textbf{Minimum description length (MDL)} \cite{peixoto2019bayesian}. The variable which has probability P(x), is described with amount of information $-log_2P(x)$. The numerator of posterior probability could be written as
 \begin{equation}
 P(G|g)P(g) = P(G|p, g)P(p, g)=2^{-\Sigma},
 \end{equation}
-where $\Sigma$ is the data's description length (DL). It means that if we find the network partition that maximizes the posterior distribution, we also find the MDL. The MDL consists of two terms: $\Sigma = -log2(p(G|p,g))-log2P(p,g)$. In the first part of the equation, the amount of information necessary to describe the model decreases with the number of groups. The second contribution comes only from the model, and as the model becomes more complex, with a larger number of groups, this part increases. The optimal solution represents the balance between these two terms in the MDL equation.  
+where $\Sigma$ is the data's description length (DL). The MDL consists of two terms: $\Sigma = -log2(p(G|p,g))-log2P(p,g)$. In the first part of the equation, the amount of information necessary to describe the model decreases with the number of groups \cite{peixoto2019bayesian}. The second contribution comes only from the model, and as the model becomes more complex, with a larger number of groups, this part increases \cite{peixoto2019bayesian}. The optimal solution represents the balance between these two terms in the MDL equation.  
 
 This SBM model has many variants motivated by specific properties of real data. For example, for degree heterogeneous networks, there is degree corrected SBM \cite{karrer2011stochastic}. In some social networks, users can belong to more than one group, which can be modeled with mixed membership SBM. Other extensions include application to bipartite, weighted network, and hierarchical model \cite{funke2019}. Many community detection algorithms define the community as an assortative structure. With the SBM model, such limitations do not exist, and it is possible to directly use statistical inference for discovering core-periphery structures or even networks with bipartite structures.  
 
 \subsection{Core-periphery structure}
 
-Core-periphery structure describes a network whose nodes are divided into two communities, densely connected core and less connected periphery \cite{csermely2013structure}. With the average probabilities of edges within each group as $p_{11}$ and $p_{22}$, and between groups $p_{12}$, the core-periphery structure is defined under the condition  $p_{11}> p_{12} > p_{22}$. The simple method for finding core-periphery structures assumes that core nodes have higher degrees in the core than in the periphery. Another simple method is to construct k-cores \cite{malliaros2020core}. K core is a group of nodes connected to at least k other members. K-cores form a nested set and become denser with higher k. The core-periphery structure can be detected by optimizing the measure similar to modularity, as defined by Borgatti and Everett \cite{borgatti2000models}. Their goal is to find the division that minimizes the number of edges in the periphery. So they define the score function as equal to the number of edges in the periphery minus the expected number of such edges placed randomly. $\rho = \frac{1}{2}\sum_{ij}(A_{ij}-p)g_ig_j$.
+The core-periphery structure is characterized by a group of densely connected nodes in the core, which are more connected to each other than to the less connected nodes in the periphery \cite{csermely2013structure, newman2010}. The condition $p_{11} > p_{12} > p_{22}$ implies that the probability of edges within the core is higher than the probability of edges between the core and the periphery, which in turn is higher than the probability of edges within the periphery. One way to identify the core-periphery structure is to use the degree criterion, which assumes that the core nodes have higher degrees in the core than in the periphery. Another approach is to use k-cores \cite{malliaros2020core}, which are groups of nodes that are connected to at least k other members of the group. The k-cores form a nested hierarchy, and the core-periphery structure can be detected by identifying the densest k-core. Borgatti and Everett \cite{borgatti2000models} proposed a measure similar to modularity to detect core-periphery structures, where the goal is to minimize the number of edges in the periphery. The score function $\rho$ balances the number of observed edges in the periphery with the expected number of edges in a null model where the nodes in the periphery are randomly connected. The optimization problem seeks to maximize the score function $\rho$, which is defined as $\rho = \frac{1}{2}\sum_{ij}(A_{ij}-p)g_ig_j$, where $A_{ij}$ is the adjacency matrix of the network, $p$ is the expected probability of an edge between two nodes, and $g_i$ is a variable that indicates whether node $i$ belongs to the core or the periphery.
+
+%Core-periphery structure describes a network whose nodes are divided into two communities, densely connected core and less connected periphery \cite{csermely2013structure}. With the average probabilities of edges within each group as $p_{11}$ and $p_{22}$, and between groups $p_{12}$, the core-periphery structure is defined under the condition  $p_{11}> p_{12} > p_{22}$. The simple method for finding core-periphery structures assumes that core nodes have higher degrees in the core than in the periphery. Another simple method is to construct k-cores \cite{malliaros2020core}. K core is a group of nodes connected to at least k other members. K-cores form a nested set and become denser with higher k. The core-periphery structure can be detected by optimizing the measure similar to modularity, as defined by Borgatti and Everett \cite{borgatti2000models}. Their goal is to find the minimize the number of edges in the periphery. The score function which should be optimized balance between number of edges found in the periphery and number of expected number of edges if nodes in periphery are randomly connected: $\rho = \frac{1}{2}\sum_{ij}(A_{ij}-p)g_ig_j$.
+
+%So they define the score function as equal to the number of edges in the periphery minus the expected number of such edges placed randomly. 
 
 Another way to detect core-periphery structure is to use the inference method based on fits to a Stochastic Block Model (SBM) \cite{zhang2015identification, karrer2011stochastic}. In this method, we fit the observed network to a block model with two groups, such that edge probabilities have the form $p_{11}> p_{12} > p_{22}$. Vector $\theta_i = r$ indicates that node $i$ is in block $r$, while SBM matrix $\{p\}_{2x2}$, specify the probability $p_{rs}$ that nodes from group $r$ are connected to nodes in group $s$. The SBM model is looking for the most probable model that can reproduce a given network G \cite{gallagher2020clarified}. 
 Probability of having model parameters $\theta, p$ given network $G$ is proportional to the likelihood of generating network $G$, prior of SBM matrix $P(p)$ and prior on block assignments $P(\theta)$: $P(\theta, p| G) = P(G | \theta , p) P(p) P(\theta)$, while the likelihood function takes following form: $P(G | \theta , p) = \prod_{i<j} p_{r_is_j}^{A_{ij}}(1-p_{r_is_j})^{1-A_{ij}}$, where $A_{ij}$ is a number of edges between nodes $i$ and $j$. The prior $P(p)$ is modified for core-periphery model such that $P(p)  \sim I_{0<p_{22}<p_{12}<p_{11}<1}$, while prior  $P(\theta) $ consists of three parts: probability of having $2$ blocks; given the number of layers probability $P(n|2)$ of having groups of sizes ${n_1, n_2}$ and the probability $P(\theta|n)$ of having particular assignments of nodes to blocks. 
@@ -220,7 +251,7 @@ This section gives an overview of relevant distributions and methods for fitting
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.75\textwidth]{chapter2/Distributions_plots.pdf}
+	\includegraphics[width=0.76\textwidth]{chapter2/Distributions_plots.pdf}
 	\caption{Probability distributions on a linear and double logarithmic scale.}
 	\label{fig:distributions}
 \end{figure}
@@ -328,7 +359,7 @@ Here we use the standard two-tail hypothesis test \cite{clauset2009power}, assum
 
 \section{Network models}
 
-The interest in analyzing real-world networks allowed us to describe their statistical properties and formulate models to explain essential data features. With network models, we can understand the origins of the properties of complex networks, what mechanisms influence the generation of the network, and how network properties emerge. This section considers the random network and small-world models, which are static models, as the number of nodes is fixed. Even though the random network model is not applicable to real networks, it is important historically as one of the first network models. The small-world model explains how properties of real networks, such as high clustering and small distances may emerge. On the other hand, generative models, such as models of preferential attachment, where the network grows according to specific growing rules, are important for understanding how network structure is created. They allow us to explore different growing mechanisms, and by comparing obtained networks with real data, we can conclude which growth processes have an influence on the network structure.          
+The interest in analyzing real-world networks allowed us to describe their statistical properties and formulate models to explain essential data features. With network models, we can understand the origins of the properties of complex networks, what mechanisms influence the generation of the network, and how network properties emerge \cite{newman2010, barabasi2016network}. This section considers the random network and small-world models, which are static models, as the number of nodes is fixed. Even though the random network model is not applicable to real networks, it is important historically as one of the first network models. The small-world model explains how properties of real networks, such as high clustering and small distances may emerge. On the other hand, generative models, such as models of preferential attachment, where the network grows according to specific growing rules, are important for understanding how network structure is created. They allow us to explore different growing mechanisms, and by comparing obtained networks with real data, we can conclude which growth processes have an influence on the network structure.          
 
 \subsection{Random network model}
 
@@ -520,52 +551,98 @@ As before, depending on model parameters network evolves into different structur
 
 \section{Fractal analysis}
 
-One of the approaches in studying complex systems is detecting the time series of selected variables \cite{kantelhardt2008fractal}. In complex systems, the periodic behavior of time series is not limited to one or two characteristic frequencies. They extend over a broad spectrum and fluctuations on many time scales, and broad distributions \cite{fan2012fractal, sidorov2018fractality}. In these cases, the system's dynamics are characterized by scaling laws, valid over a wide range of time scales or frequencies. When only one scaling exponent describes the system dynamics, the time series is monofractal.
-On the other hand, we deal with multifractal time series. Rescaling time $t$ by a factor $a$ may require rescaling the time-series values $x(t)$ by a factor $a^H$; then, we have the self-similarity. The Hurst exponent, $H$, characterizes the type of self-affinity 
+The study of time series is an important approach in understanding complex systems \cite{kantelhardt2008fractal}, and the analysis of scaling laws and fractality in time series is particularly useful in characterizing their dynamics. With the Hurst exponent $H$, we can describe the degree of self-similarity or self-affinity across different scales of time in time series $x(t)$:
+
 $$x(t) = a^Hx(at).$$
 
+In other words, having self-similarity, means that rescaling time $t$ by a factor $a$, may require rescaling the time-series values $x(t)$ by a factor $a^H$.
+Monofractal \cite{fan2012fractal, sidorov2018fractality} time series is characterized by a single scaling exponent that applies across all time scales. On the other hand, time series is called multifractal. 
+
+%One of the approaches in studying complex systems is detecting the time series of selected variables \cite{kantelhardt2008fractal}. In complex systems, the periodic behavior of time series is not limited to one or two characteristic frequencies. They extend over a broad spectrum and fluctuations on many time scales, and broad distributions \cite{fan2012fractal, sidorov2018fractality}. In these cases, the system's dynamics are characterized by scaling laws, valid over a wide range of time scales or frequencies. When only one scaling exponent describes the system dynamics, the time series is monofractal.
+%On the other hand, we deal with multifractal time series. Rescaling time $t$ by a factor $a$ may require rescaling the time-series values $x(t)$ by a factor $a^H$; then, we have the self-similarity. The Hurst exponent, $H$, characterizes the type of self-affinity 
+%$$x(t) = a^Hx(at).$$
+
 \subsection{Long and short-term correlations}
-The time series are persistent, meaning that large values usually follow a large value \cite{kantelhardt2008fractal}. Considering the increments $\delta x_i = x_i - x_{i-1}$, of self-affine series $i = 1,.., N$, with N values measured equidistant in time, $\delta x_i$ can be either persistent, independent or anti-persistent. For the random walk with $H=0.5$, the increments are independent. For stationary data with constant mean and standard deviation, the auto-covariance function can determine the degree of persistence 
+
+The autocovariance function $C(s)$ can be used to quantify the degree of persistence or correlation of a stationary time series \cite{kantelhardt2008fractal}, where the mean and variance do not change with time. The autocovariance function measures the linear dependence between the increments $\Delta x_i$ and $\Delta x_{i+s}$ at a lag $s$, and it is defined as the expected value of their product:
 
 \begin{equation}
 C(s) = \langle \Delta x_i \Delta x_{i+s} \rangle = \frac{1}{N-s} \sum_{i=1}^{N-s}\Delta x_i \Delta x_{i+s}.
 \end{equation}
 
-
-If the data are uncorrelated, the $C(s)=0$. Short-range correlations are described by $C(s)$ declining exponentially
+If the time series is uncorrelated, $C(s)$ is zero for all lags $s$. If the time series has short-range correlations, $C(s)$ decays exponentially with lag $s$, indicating that the correlations decay quickly with distance in time:
 $$C(s) = exp(-s/t_c),$$
-such behavior is typical for increments generated by an auto-regressive process 
+and this behavior is typical of time series generated by autoregressive processes,
 $$ \Delta x_i = c\Delta x_{i-1} + \epsilon_i ,$$
 with random uncorrelated offsets $\epsilon_i$ and $c = exp(-1/t_c)$.
+ 
+ If the time series has long-range correlations, $C(s)$ decays as a power-law with lag $s$, indicating that the correlations persist over long time scales. This behavior is typical of self-similar or fractal time series, and it is characterized by a power-law exponent $\gamma$ such that:
+ 
+ $$C(s) = s^{-\gamma}.$$
+ 
+Fourier filtering techniques can model this type of behavior. The Hurst exponent $H$ is related to the power-law exponent $\gamma$ by $H=1-\gamma/2$. Therefore, if we can estimate the Hurst exponent, we can infer the degree of persistence or long-range correlations of the time series.
 
-For long-range correlations, $\int C(s)$ diverges in the limit for long series. In practice, this means that we can not define the characteristic time because it increases with N. Contrary to short-range correlations, the correlation function decline as power-law 
-$$C(s) = s^{-\gamma}.$$
-Fourier filtering techniques can model this type of behavior. Long-term correlated behavior of $\Delta x_i$ leads to self-affine scaling behavior characterized by Hurst exponent $H=1-\gamma/2$. 
 
-A direct calculation of the $C(s)$ is complex due to present noise in the data and non-stationarity. Non-stationarities make the definition of $C(s)$ problematic because its average is not well defined. Also, $C(s)$ fluctuates around zero on large scales s, so it is impossible to obtain the correct correlation exponent $\gamma$. Instead of calculating $C(s)$, we can calculate the Hurst exponent $H$.
+%The time series are persistent, meaning that large values usually follow a large value \cite{kantelhardt2008fractal}. Considering the increments $\delta x_i = x_i - x_{i-1}$, of self-affine series $i = 1,.., N$, with N values measured equidistant in time, $\delta x_i$ can be either persistent, independent or anti-persistent. For the random walk with $H=0.5$, the increments are independent. For stationary data with constant mean and standard deviation, the auto-covariance function can determine the degree of persistence 
+
+%\begin{equation}
+%C(s) = \langle \Delta x_i \Delta x_{i+s} \rangle = \frac{1}{N-s} %\sum_{i=1}^{N-s}\Delta x_i \Delta x_{i+s}.
+%\end{equation}
+
+
+%If the data are uncorrelated, the $C(s)=0$. Short-range correlations are described by $C(s)$ declining exponentially
+%$$C(s) = exp(-s/t_c),$$
+%such behavior is typical for increments generated by an auto-regressive process 
+%$$ \Delta x_i = c\Delta x_{i-1} + \epsilon_i ,$$
+%with random uncorrelated offsets $\epsilon_i$ and $c = exp(-1/t_c)$.
+
+%For long-range correlations, $\int C(s)$ diverges in the limit for long series. In practice, this means that we can not define the characteristic time because it increases with N. Contrary to short-range correlations, the correlation function decline as power-law 
+%$$C(s) = s^{-\gamma}.$$
+%Fourier filtering techniques can model this type of behavior. Long-term correlated behavior of $\Delta x_i$ leads to self-affine scaling behavior characterized by Hurst exponent $H=1-\gamma/2$. 
+
+A direct calculation of the $C(s)$ is complex due to present noise in the data and non-stationarity. Non-stationarities make the definition of $C(s)$ problematic because its average is not well defined. Also, $C(s)$ fluctuates around zero on large scales s, so it is impossible to obtain the correct correlation exponent $\gamma$. For that reason, instead of calculating auto-covariance function $C(s)$, it is common to calculate the Hurst exponent $H$.
 
 \subsection{Rescaled range analysis} 
 
-Hurst proposed a method called the \textbf{rescaled range analysis} $R/S$, \cite{hurst1951long}. It begins with splitting the time series $x_i$ into non-overlapping segments $\nu$ of the size s, having $N_s = int(N/s)$ segments. Then is calculated the profile in each segment is
+The rescaled range analysis (R/S) method proposed by Hurst \cite{hurst1951long}. is a popular technique to estimate the Hurst exponent of a time series. It is a simple and robust method that works well for a wide range of self-similar processes. The method is based on the observation that the range $R(s)$ of a random walk with uncorrelated increments scales as the square root of the number of steps $s$, 
+$R_{\nu}(s) = max Y_\nu(j) - min Y_{\nu}(j)$; $S_{\nu}(s) = \sqrt{\frac{1}{s}\sum Y^2_{\nu}(j)}$, where $Y_\nu$ is profile of each segment of the size $s$, to which we split the time series $x_i$:
 
 $$Y_\nu(j) = \sum_{i=1}^{j} (x_{\nu s +i} - \langle x_{\nu s + i } \rangle _s).$$
-
-Substracting the averages, constant trends in the data are eliminated. The differences between minimum and maximum value and the standard deviation in each segment are calculated as $R_{\nu}(s) = max Y_\nu(j) - min Y_{\nu}(j)$, $S_{\nu}(s) = \sqrt{\frac{1}{s}\sum Y^2_{\nu}(j)}$
 
 Finally, the rescaled range is averaged over all segments to obtain the fluctuation function F(s),
 
 $$F_{RS}(s) = \frac{1}{N_s}\sum \frac{R_{\nu}(s)}{S_{\nu}(s)} \sim s^H,$$
 
-where the H is the Hurst exponent. Values $H<1/2$ indicate long-term anti-correlated data while $H>1/2$ long-term positively correlated data \cite{kantelhardt2008fractal}. 
+where the H is the Hurst exponent. The Hurst exponent can be estimated from the slope of the line in a log-log plot of $R(s)/S(s)$ versus $s$. Values $H<1/2$ indicate long-term anti-correlated data while $H>1/2$ long-term positively correlated data \cite{kantelhardt2008fractal}. 
+
+
+
+
+
+
+%Hurst proposed a method called the \textbf{rescaled range analysis} $R/S$, \cite{hurst1951long}. It begins with splitting the time series $x_i$ into non-overlapping segments $\nu$ of the size s, having $N_s = int(N/s)$ segments. Then is calculated the profile in each segment is
+
+%$$Y_\nu(j) = \sum_{i=1}^{j} (x_{\nu s +i} - \langle x_{\nu s + i } \rangle _s).$$
+
+%Substracting the averages, constant trends in the data are eliminated. The differences between minimum and maximum value and the standard deviation in each segment are calculated as $R_{\nu}(s) = max Y_\nu(j) - min Y_{\nu}(j)$, $S_{\nu}(s) = \sqrt{\frac{1}{s}\sum Y^2_{\nu}(j)}$
+
+%Finally, the rescaled range is averaged over all segments to obtain the fluctuation function F(s),
+
+%$$F_{RS}(s) = \frac{1}{N_s}\sum \frac{R_{\nu}(s)}{S_{\nu}(s)} \sim s^H,$$
+
+%where the H is the Hurst exponent. Values $H<1/2$ indicate long-term anti-correlated data while $H>1/2$ long-term positively correlated data \cite{kantelhardt2008fractal}. 
 
 \subsection{Fluctuation analysis}
 
-The \textbf{fluctuation analysis} is based on the random walk theory \cite{kantelhardt2008fractal}. For given time series $\{x_i\}$ with length N, we first define the global profile in the form of cumulative sum, equation \ref{eq:cumsum}, where $\langle x\rangle $ represents the average of the time series 
+The fluctuation analysis is a method that relies on the principles of random walk theory \cite{kantelhardt2008fractal}. It involves taking a time series ${x_i}$ of length $N$ and creating a global profile by calculating the cumulative sum using equation \ref{eq:cumsum}. In this equation, $\langle x\rangle $ represents the average value of the time series.
+
+%The \textbf{fluctuation analysis} is based on the random walk theory \cite{kantelhardt2008fractal}. For given time series $\{x_i\}$ with length N, we first define the global profile in the form of cumulative sum, equation \ref{eq:cumsum}, where $\langle x\rangle $ represents the average of the time series 
 
 \begin{equation}
 Y(j) = \sum_{i=0} ^j (x_i - \langle x\rangle), \quad j=1, ..., N .
 \label{eq:cumsum}
 \end{equation}
+
 Figure \ref{fig:hurst_signals} shows examples of multifractal, monofractal and white noise signal with their global profiles.
 
 \begin{figure}[h]
@@ -581,20 +658,20 @@ The profile of the signal Y is divided into $N_s = int (N/s)$ non-overlapping se
 F_2(s) = [\frac{1}{2N_s} \sum F^2(\nu,s)]^{1/2}  \sim s^H.
 \end{equation} 
 
-Several methods are proposed for calculating the fluctuating function $F^2(\nu, s)$:
-\begin{itemize}
-	\item {The most straightforward way to calculate the fluctuations is to consider the difference in the values at the endpoints of each segment. It is the same as eliminating the linear trend from each segment.  
-		$$ F^2(\nu, s) = [Y(\nu s) - Y((\nu +1)s)]^2$$ 
-		Figure \ref{fig:hurst_detrending} shows the global profile of the multifractal signal, divided in segments of the length $s=1000$. On the top panel, each segment $s$ is approximated with linear function.
+%Several methods are proposed for calculating the fluctuating function $F^2(\nu, s)$:
+
+{The most straightforward way to calculate the fluctuations is to consider the difference in the values at the endpoints of each segment. It is the same as eliminating the linear trend from each segment.  
+$$ F^2(\nu, s) = [Y(\nu s) - Y((\nu +1)s)]^2$$ 
+Figure \ref{fig:hurst_detrending} shows the global profile of the multifractal signal, divided in segments of the length $s=1000$. On the top panel, each segment $s$ is approximated with linear function.
 	}
 	
-	\item The trends present in the time series do not have to be linear \cite{hu2001effect}. The middle and bottom panel in Figure \ref{fig:hurst_detrending} show that the segments of the signal could be very well approximated with some higher order functions: quadratic or cubic. In general, using the detrended fluctuation analysis (DFA) we could remove the polynomial trend of the order $m$ \cite{kantelhardt2001detecting}. From each segment $\nu$, local trend $p^m_{\nu, s}$ - polynomial of order m - should be eliminated, and the variance $F^2(\nu, s)$ of a detrended signal is calculated as in equation:
+ The trends present in the time series do not have to be linear \cite{hu2001effect}. The middle and bottom panel in Figure \ref{fig:hurst_detrending} show that the segments of the signal could be very well approximated with some higher order functions: quadratic or cubic. In general, using the detrended fluctuation analysis (DFA) we could remove the polynomial trend of the order $m$ \cite{kantelhardt2001detecting}. From each segment $\nu$, local trend $p^m_{\nu, s}$ - polynomial of order m - should be eliminated, and the variance $F^2(\nu, s)$ of a detrended signal is calculated as in equation:
 	
 	\begin{equation}
 	F^2(\nu, s) = \frac{1}{s}\sum_{j=1}^s \left[Y(j) - p^m_{\nu, s}(j)\right]^2.
 	\label{eq:var}
 	\end{equation}
-\end{itemize}
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{chapter2/hurst_detrending.pdf}
@@ -602,17 +679,25 @@ Several methods are proposed for calculating the fluctuating function $F^2(\nu, 
 	\label{fig:hurst_detrending}
 \end{figure}
 
+\newpage
+\clearpage
+
 \subsection{Multifractality of the signals}
 
-The scaling behavior in many data may be more complicated, and different scaling exponents can be found for many interwoven subsets of the time series, representing multifractal. The multifractality may come from the broad probability distribution of the time series values. In this case, the multifractal properties can not be destroyed with shuffling time series. The source of multifractality may be from different small and large fluctuations correlations. In this case, the probability density function of the values can be regular distribution with finite moments, and the corresponding shuffled series will exhibit non-multifractal scaling as correlations are destroyed with the shuffling procedure. When both kinds of multifractality are present, the shuffled time series will show weaker multifractality. 
+The scaling behavior in many data may be more complicated, resulting that interwoven subset of time series have different scaling exponents. This property is known as multifractality.  The multifractality may be caused by the time series values' large probability distribution \cite{kantelhardt2002, ihlen2012}. In this situation, shuffling time series cannot eliminate the multifractal features. The source of multifractality may also come from different small and large fluctuations correlations. If density function is distribution with finite moments, the shuffled time series will lose multifractal properties as correlations are easily destroyed with randomization. In situations where multifractality is caused by both types, the randomized time series has weaker multifractality. 
+ 
+%The scaling behavior in many data may be more complicated, and different scaling exponents can be found for many interwoven subsets of the time series, representing multifractal. The multifractality may come from the broad probability distribution of the time series values. In this case, the multifractal properties can not be destroyed with shuffling time series. 
 
-The multifractal analysis will reveal higher-order correlations. Multifractal scaling can be observed if the scaling behavior of small and large fluctuations is different. Multifractal detrended fluctuation analysis (MFDFA) is used \cite{kantelhardt2002, ihlen2012} to estimate multifractal Hurst exponent H(q) 
+%The source of multifractality may be from different small and large fluctuations correlations. In this case, the probability density function of the values can be regular distribution with finite moments, and the corresponding shuffled series will exhibit non-multifractal scaling as correlations are destroyed with the shuffling procedure. When both kinds of multifractality are present, the shuffled time series will show weaker multifractality. 
+
+%The multifractal analysis will reveal higher-order correlations. Multifractal scaling can be observed if the scaling behavior of small and large fluctuations is different. 
+Multifractal detrended fluctuation analysis (MFDFA) is used \cite{kantelhardt2002, ihlen2012} to estimate multifractal Hurst exponent H(q) 
 
 \begin{equation}
 F_q(s) = \left\{\frac{1}{2N_s}\sum_{\nu}^{2N_s}\left[F^2(\nu, s)\right]^{\frac{q}{2}}\right\}^{\frac{1}{q}},  q \neq 0 \nonumber.
 \end{equation}
 
-The MFDFA for $q=2$ is equivalent to the DFA method. The value of $H(0)$, which corresponds to the limit $H(q), q-0$, cannot be determined directly because the exponent diverges. Instead, the logarithmic averaging procedure has to be considered. 
+The MFDFA for $q=2$ is equivalent to the DFA method. The value of $H(0)$, which corresponds to the limit $F(q), q-0$, cannot be determined directly because the exponent diverges. Instead, the logarithmic averaging procedure has to be considered. 
 \begin{equation}
 F_0(s) = \exp \left\{\frac{1}{4N_s}\sum_{\nu}^{2N_s}ln \left[F^2(\nu, s)\right]\right\}, q=0.
 \end{equation}
@@ -626,7 +711,11 @@ The fluctuating function scales as power-law $F_q(s) \sim s^{H(q)}$ and the anal
 	\label{fig:hurst_mfdfa}
 \end{figure}
 
-For the monofractal time series, H(q) is independent of q, meaning that scaling is identical for all segments, and averaging fluctuations gives identical scaling for all values of q. If small and large changes scale differently, h(q) will depend on q. Positive values of q, segments with large variance are dominant in the Fq(s), so positive q describes segments with large fluctuations. The negative values of q, H(q) describe the scaling of the segments with small fluctuations. 
+For the monofractal time series, H(q) is independent of q, meaning that scaling is identical for all segments, and averaging fluctuations gives identical scaling for all values of q. If small and large changes scale differently, H(q) will depend on q. Positive values of q, segments with large variance are dominant in the Fq(s), so positive q describes segments with large fluctuations. The negative values of q, H(q) describe the scaling of the segments with small fluctuations. 
+
+
+
+
 
 \section{Dynamical reputation model} \label{sec:met_dibrm}
 
@@ -665,7 +754,7 @@ For $\beta$ values below $0.96$, the decay is fast, and within two to four month
 reduced below the threshold. On the other hand, with values of $\beta$, the decay process is more differentiated, and the high
 reputation becomes harder to lose, surviving up to a year of inactivity. For $\beta$ equal to $0.96$, reputation with starting value $5$ needs around one month to decay below the threshold. For higher reputations, $500$ or $1000$, the decay period is around $5$ months. 
 
-In this model, the user's reputation changes continuously through time, decreases when the user is inactive, and grows with frequent and constant user contribution. The highest growth of a user's reputation is found through bursts of activity followed by a short period of inactivity. With model parameters, $I_{bn}, t_a, \alpha, \beta$, the dynamic of user reputation may be controlled and adapted to different communities. If the community has its reputation system, we can also fit the model parameters to mimic the actual reputation dynamic. In this thesis DIBRM model is used to analyze Stack Exchange communities, Chapter \ref{Ch:Trust}, while in Appendix \ref{App:parameters}, we suggest the procedure to estimate the model parameters for this specific system. 
+In this model, the user's reputation changes continuously through time, decreases when the user is inactive, and grows with frequent and constant user contribution. The reputation has highest growth when user shows burst in activity. With model parameters, $I_{bn}, t_a, \alpha, \beta$, the dynamic of user reputation may be controlled and adapted to different communities. If the community has its reputation system, we can also fit the model parameters to mimic the actual reputation dynamic. In this thesis DIBRM model is used to analyze Stack Exchange communities, Chapter \ref{Ch:Trust}, while in Appendix \ref{App:parameters}, we suggest the procedure to estimate the model parameters for this specific system. 
 
 
 
