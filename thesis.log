@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  14 MAR 2023 18:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.26)  15 MAR 2023 10:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2610,12 +2610,12 @@ l.713
 <figs/chapter2/DIBRM.pdf, id=10375, 401.9909pt x 307.64925pt>
 File: figs/chapter2/DIBRM.pdf Graphic file (type pdf)
 <use figs/chapter2/DIBRM.pdf>
-Package pdftex.def Info: figs/chapter2/DIBRM.pdf  used on input line 742.
+Package pdftex.def Info: figs/chapter2/DIBRM.pdf  used on input line 739.
 (pdftex.def)             Requested size: 217.66211pt x 166.57877pt.
 <figs/chapter2/DIBRM_decay.pdf, id=10376, 413.9418pt x 273.59653pt>
 File: figs/chapter2/DIBRM_decay.pdf Graphic file (type pdf)
 <use figs/chapter2/DIBRM_decay.pdf>
-Package pdftex.def Info: figs/chapter2/DIBRM_decay.pdf  used on input line 743.
+Package pdftex.def Info: figs/chapter2/DIBRM_decay.pdf  used on input line 740.
 
 (pdftex.def)             Requested size: 217.66211pt x 143.86575pt.
 
@@ -2897,10 +2897,6 @@ Package pdftex.def Info: figs/chapter4/Fig4.png  used on input line 162.
                                                   \fi \fi 
 l.166 
       ]
-
-LaTeX Warning: Citation `power-law' on page 55 undefined on input line 172.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 176--176
 
  []
@@ -2908,7 +2904,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--176
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/chapter4/FigA1_data.png, id=11282, 686.565pt x 288.3573pt>
+<figs/chapter4/FigA1_data.png, id=11283, 686.565pt x 288.3573pt>
 File: figs/chapter4/FigA1_data.png Graphic file (type png)
 <use figs/chapter4/FigA1_data.png>
 Package pdftex.def Info: figs/chapter4/FigA1_data.png  used on input line 193.
@@ -2939,13 +2935,13 @@ me{table.4.3}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.216 \clearpage
                  <./figs/chapter4/FigA1_data.png>]
-<figs/chapter4/FigA2-model.png, id=11296, 689.4558pt x 288.3573pt>
+<figs/chapter4/FigA2-model.png, id=11297, 689.4558pt x 288.3573pt>
 File: figs/chapter4/FigA2-model.png Graphic file (type png)
 <use figs/chapter4/FigA2-model.png>
 Package pdftex.def Info: figs/chapter4/FigA2-model.png  used on input line 221.
 
 (pdftex.def)             Requested size: 386.95897pt x 161.84418pt.
-<figs/chapter4/users_degree_expfit.pdf, id=11301, 740.70477pt x 268.16835pt>
+<figs/chapter4/users_degree_expfit.pdf, id=11302, 740.70477pt x 268.16835pt>
 File: figs/chapter4/users_degree_expfit.pdf Graphic file (type pdf)
 <use figs/chapter4/users_degree_expfit.pdf>
 Package pdftex.def Info: figs/chapter4/users_degree_expfit.pdf  used on input l
@@ -2980,14 +2976,14 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 
 
 ]
-<figs/chapter5/degree_distribution_fullnet.pdf, id=11396, 1078.31299pt x 289.56
+<figs/chapter5/degree_distribution_fullnet.pdf, id=11397, 1078.31299pt x 289.56
 242pt>
 File: figs/chapter5/degree_distribution_fullnet.pdf Graphic file (type pdf)
 <use figs/chapter5/degree_distribution_fullnet.pdf>
 Package pdftex.def Info: figs/chapter5/degree_distribution_fullnet.pdf  used on
  input line 27.
 (pdftex.def)             Requested size: 483.69687pt x 129.89098pt.
-<figs/chapter5/neighdeg_fullnet.pdf, id=11398, 1071.8043pt x 289.56242pt>
+<figs/chapter5/neighdeg_fullnet.pdf, id=11399, 1071.8043pt x 289.56242pt>
 File: figs/chapter5/neighdeg_fullnet.pdf Graphic file (type pdf)
 <use figs/chapter5/neighdeg_fullnet.pdf>
 Package pdftex.def Info: figs/chapter5/neighdeg_fullnet.pdf  used on input line
@@ -3000,7 +2996,7 @@ Package pdftex.def Info: figs/chapter5/neighdeg_fullnet.pdf  used on input line
                                                   \fi \fi 
 l.42 
       <./figs/chapter5/degree_distribution_fullnet.pdf>]
-<figs/chapter5/clustering_fullnet.pdf, id=11450, 1078.31299pt x 289.56242pt>
+<figs/chapter5/clustering_fullnet.pdf, id=11451, 1078.31299pt x 289.56242pt>
 File: figs/chapter5/clustering_fullnet.pdf Graphic file (type pdf)
 <use figs/chapter5/clustering_fullnet.pdf>
 Package pdftex.def Info: figs/chapter5/clustering_fullnet.pdf  used on input li
@@ -3020,12 +3016,12 @@ l.55
 l.55 
       <./figs/chapter5/neighdeg_fullnet.pdf> <./figs/chapter5/clustering_fullne
 t.pdf>]
-<figs/chapter5/clustering.pdf, id=11544, 1076.97302pt x 287.24126pt>
+<figs/chapter5/clustering.pdf, id=11545, 1076.97302pt x 287.24126pt>
 File: figs/chapter5/clustering.pdf Graphic file (type pdf)
 <use figs/chapter5/clustering.pdf>
 Package pdftex.def Info: figs/chapter5/clustering.pdf  used on input line 58.
 (pdftex.def)             Requested size: 483.69687pt x 129.00754pt.
-<figs/chapter5/popular_casual_users.pdf, id=11548, 918.4473pt x 394.84764pt>
+<figs/chapter5/popular_casual_users.pdf, id=11549, 918.4473pt x 394.84764pt>
 File: figs/chapter5/popular_casual_users.pdf Graphic file (type pdf)
 <use figs/chapter5/popular_casual_users.pdf>
 Package pdftex.def Info: figs/chapter5/popular_casual_users.pdf  used on input 
@@ -3042,12 +3038,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
                                                   \fi \fi 
 l.81 
       <./figs/chapter5/clustering.pdf>]
-<figs/chapter5/core_users.pdf, id=11600, 914.6205pt x 394.84764pt>
+<figs/chapter5/core_users.pdf, id=11601, 914.6205pt x 394.84764pt>
 File: figs/chapter5/core_users.pdf Graphic file (type pdf)
 <use figs/chapter5/core_users.pdf>
 Package pdftex.def Info: figs/chapter5/core_users.pdf  used on input line 84.
 (pdftex.def)             Requested size: 483.69687pt x 208.81638pt.
-<figs/chapter5/jaccard_heatmap.pdf, id=11602, 914.59097pt x 413.43271pt>
+<figs/chapter5/jaccard_heatmap.pdf, id=11603, 914.59097pt x 413.43271pt>
 File: figs/chapter5/jaccard_heatmap.pdf Graphic file (type pdf)
 <use figs/chapter5/jaccard_heatmap.pdf>
 Package pdftex.def Info: figs/chapter5/jaccard_heatmap.pdf  used on input line 
@@ -3071,7 +3067,7 @@ l.100
 l.100 
        <./figs/chapter5/popular_casual_users.pdf> <./figs/chapter5/core_users.p
 df>]
-<figs/chapter5/jaccard.pdf, id=11692, 1078.83055pt x 290.07999pt>
+<figs/chapter5/jaccard.pdf, id=11693, 1078.83055pt x 290.07999pt>
 File: figs/chapter5/jaccard.pdf Graphic file (type pdf)
 <use figs/chapter5/jaccard.pdf>
 Package pdftex.def Info: figs/chapter5/jaccard.pdf  used on input line 103.
@@ -3089,13 +3085,13 @@ l.109
                                                   \fi \fi 
 l.109 
        <./figs/chapter5/jaccard_heatmap.pdf> <./figs/chapter5/jaccard.pdf>]
-<figs/chapter5/core_connectivity.pdf, id=11796, 902.71353pt x 394.84764pt>
+<figs/chapter5/core_connectivity.pdf, id=11797, 902.71353pt x 394.84764pt>
 File: figs/chapter5/core_connectivity.pdf Graphic file (type pdf)
 <use figs/chapter5/core_connectivity.pdf>
 Package pdftex.def Info: figs/chapter5/core_connectivity.pdf  used on input lin
 e 112.
 (pdftex.def)             Requested size: 483.69687pt x 211.56975pt.
-<figs/chapter5/reputation.pdf, id=11797, 902.23953pt x 394.84764pt>
+<figs/chapter5/reputation.pdf, id=11798, 902.23953pt x 394.84764pt>
 File: figs/chapter5/reputation.pdf Graphic file (type pdf)
 <use figs/chapter5/reputation.pdf>
 Package pdftex.def Info: figs/chapter5/reputation.pdf  used on input line 123.
@@ -3115,13 +3111,13 @@ l.129
 l.129 
        <./figs/chapter5/core_connectivity.pdf> <./figs/chapter5/reputation.pdf>
 ]
-<figs/chapter5/core_reputation.pdf, id=11890, 1088.88005pt x 287.24126pt>
+<figs/chapter5/core_reputation.pdf, id=11891, 1088.88005pt x 287.24126pt>
 File: figs/chapter5/core_reputation.pdf Graphic file (type pdf)
 <use figs/chapter5/core_reputation.pdf>
 Package pdftex.def Info: figs/chapter5/core_reputation.pdf  used on input line 
 136.
 (pdftex.def)             Requested size: 483.69687pt x 127.59622pt.
-<figs/chapter5/core_per_ratio_reputation.pdf, id=11891, 1069.30374pt x 287.2412
+<figs/chapter5/core_per_ratio_reputation.pdf, id=11892, 1069.30374pt x 287.2412
 6pt>
 File: figs/chapter5/core_per_ratio_reputation.pdf Graphic file (type pdf)
 <use figs/chapter5/core_per_ratio_reputation.pdf>
@@ -3132,7 +3128,7 @@ nput line 145.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figs/chapter5/gini.pdf, id=11893, 1097.49709pt x 287.24126pt>
+<figs/chapter5/gini.pdf, id=11894, 1097.49709pt x 287.24126pt>
 File: figs/chapter5/gini.pdf Graphic file (type pdf)
 <use figs/chapter5/gini.pdf>
 Package pdftex.def Info: figs/chapter5/gini.pdf  used on input line 154.
@@ -3147,7 +3143,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
                                                   \fi \fi 
 l.160 
        <./figs/chapter5/core_reputation.pdf>]
-<figs/chapter5/reputation_assortativity.pdf, id=11940, 1079.40398pt x 287.24126
+<figs/chapter5/reputation_assortativity.pdf, id=11941, 1079.40398pt x 287.24126
 pt>
 File: figs/chapter5/reputation_assortativity.pdf Graphic file (type pdf)
 <use figs/chapter5/reputation_assortativity.pdf>
@@ -3174,7 +3170,7 @@ l.169
 l.169 
        <./figs/chapter5/core_per_ratio_reputation.pdf> <./figs/chapter5/gini.pd
 f> <./figs/chapter5/reputation_assortativity.pdf>]
-<figs/chapter5/correlations.pdf, id=12066, 910.38281pt x 394.84764pt>
+<figs/chapter5/correlations.pdf, id=12067, 910.38281pt x 394.84764pt>
 File: figs/chapter5/correlations.pdf Graphic file (type pdf)
 <use figs/chapter5/correlations.pdf>
 Package pdftex.def Info: figs/chapter5/correlations.pdf  used on input line 172
@@ -3209,7 +3205,7 @@ l.185
                                                   \fi \fi 
 l.41 
      ]
-<figs/appendixA/active_questions.pdf, id=12163, 1070.2673pt x 287.24126pt>
+<figs/appendixA/active_questions.pdf, id=12164, 1070.2673pt x 287.24126pt>
 File: figs/appendixA/active_questions.pdf Graphic file (type pdf)
 <use figs/appendixA/active_questions.pdf>
 Package pdftex.def Info: figs/appendixA/active_questions.pdf  used on input lin
@@ -3245,7 +3241,7 @@ l.119 \include{2-Appendix/Appendix_SEdata}
 
 
 ]
-<figs/appendixB/single_user_reputation.pdf, id=12226, 752.0742pt x 307.64925pt>
+<figs/appendixB/single_user_reputation.pdf, id=12227, 752.0742pt x 307.64925pt>
 
 File: figs/appendixB/single_user_reputation.pdf Graphic file (type pdf)
 <use figs/appendixB/single_user_reputation.pdf>
@@ -3259,12 +3255,12 @@ ut line 12.
                                                   \fi \fi 
 l.18 
       <./figs/appendixB/single_user_reputation.pdf>]
-<figs/appendixB/rmse.pdf, id=12274, 1076.11423pt x 286.70801pt>
+<figs/appendixB/rmse.pdf, id=12275, 1076.11423pt x 286.70801pt>
 File: figs/appendixB/rmse.pdf Graphic file (type pdf)
 <use figs/appendixB/rmse.pdf>
 Package pdftex.def Info: figs/appendixB/rmse.pdf  used on input line 25.
 (pdftex.def)             Requested size: 483.69687pt x 128.86865pt.
-<figs/appendixB/active_users.pdf, id=12276, 958.24876pt x 505.49666pt>
+<figs/appendixB/active_users.pdf, id=12277, 958.24876pt x 505.49666pt>
 File: figs/appendixB/active_users.pdf Graphic file (type pdf)
 <use figs/appendixB/active_users.pdf>
 Package pdftex.def Info: figs/appendixB/active_users.pdf  used on input line 34
@@ -3277,7 +3273,7 @@ Package pdftex.def Info: figs/appendixB/active_users.pdf  used on input line 34
                                                   \fi \fi 
 l.38 
       <./figs/appendixB/rmse.pdf>]
-<figs/appendixB/permanent_users.pdf, id=12326, 1070.2673pt x 287.24126pt>
+<figs/appendixB/permanent_users.pdf, id=12327, 1070.2673pt x 287.24126pt>
 File: figs/appendixB/permanent_users.pdf Graphic file (type pdf)
 <use figs/appendixB/permanent_users.pdf>
 Package pdftex.def Info: figs/appendixB/permanent_users.pdf  used on input line
@@ -3305,7 +3301,7 @@ _users.pdf>])
 
 
 ]
-<figs/appendixC/sliding_window.pdf, id=12444, 864.7468pt x 1378.5183pt>
+<figs/appendixC/sliding_window.pdf, id=12445, 864.7468pt x 1378.5183pt>
 File: figs/appendixC/sliding_window.pdf Graphic file (type pdf)
 <use figs/appendixC/sliding_window.pdf>
 Package pdftex.def Info: figs/appendixC/sliding_window.pdf  used on input line 
@@ -3330,7 +3326,7 @@ ndow.pdf>]
 
 
 ] [86]
-<figs/appendixD/blockmodel_robust.pdf, id=12525, 727.9929pt x 503.97534pt>
+<figs/appendixD/blockmodel_robust.pdf, id=12526, 727.9929pt x 503.97534pt>
 File: figs/appendixD/blockmodel_robust.pdf Graphic file (type pdf)
 <use figs/appendixD/blockmodel_robust.pdf>
 Package pdftex.def Info: figs/appendixD/blockmodel_robust.pdf  used on input li
@@ -3360,7 +3356,7 @@ bibitemlist
 
 
 ] [99]) [100]
-<3-BackMatter/Autorstvo-potpisano.pdf, id=12634, 597.432pt x 844.83629pt>
+<3-BackMatter/Autorstvo-potpisano.pdf, id=12635, 597.432pt x 844.83629pt>
 File: 3-BackMatter/Autorstvo-potpisano.pdf Graphic file (type pdf)
 <use 3-BackMatter/Autorstvo-potpisano.pdf>
 Package pdftex.def Info: 3-BackMatter/Autorstvo-potpisano.pdf  used on input li
@@ -3371,7 +3367,7 @@ File: 3-BackMatter/Autorstvo-potpisano.pdf Graphic file (type pdf)
 Package pdftex.def Info: 3-BackMatter/Autorstvo-potpisano.pdf  used on input li
 ne 133.
 (pdftex.def)             Requested size: 597.43054pt x 844.83423pt.
-<3-BackMatter/Autorstvo-potpisano.pdf, id=12637, page=1, 597.432pt x 844.83629p
+<3-BackMatter/Autorstvo-potpisano.pdf, id=12638, page=1, 597.432pt x 844.83629p
 t>
 File: 3-BackMatter/Autorstvo-potpisano.pdf Graphic file (type pdf)
 <use 3-BackMatter/Autorstvo-potpisano.pdf, page 1>
@@ -3401,7 +3397,7 @@ nput line 133.
  [101
 
  <./3-BackMatter/Autorstvo-potpisano.pdf>]
-<3-BackMatter/Istovetnost-potpisano.pdf, id=12644, 597.432pt x 844.83629pt>
+<3-BackMatter/Istovetnost-potpisano.pdf, id=12645, 597.432pt x 844.83629pt>
 File: 3-BackMatter/Istovetnost-potpisano.pdf Graphic file (type pdf)
 <use 3-BackMatter/Istovetnost-potpisano.pdf>
 Package pdftex.def Info: 3-BackMatter/Istovetnost-potpisano.pdf  used on input 
@@ -3412,7 +3408,7 @@ File: 3-BackMatter/Istovetnost-potpisano.pdf Graphic file (type pdf)
 Package pdftex.def Info: 3-BackMatter/Istovetnost-potpisano.pdf  used on input 
 line 136.
 (pdftex.def)             Requested size: 597.43054pt x 844.83423pt.
-<3-BackMatter/Istovetnost-potpisano.pdf, id=12647, page=1, 597.432pt x 844.8362
+<3-BackMatter/Istovetnost-potpisano.pdf, id=12648, page=1, 597.432pt x 844.8362
 9pt>
 File: 3-BackMatter/Istovetnost-potpisano.pdf Graphic file (type pdf)
 <use 3-BackMatter/Istovetnost-potpisano.pdf, page 1>
@@ -3440,7 +3436,7 @@ Package pdftex.def Info: 3-BackMatter/Istovetnost-potpisano.pdf , page1 used on
  input line 136.
 (pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
  [102 <./3-BackMatter/Istovetnost-potpisano.pdf>]
-<3-BackMatter/Koriscenje-potpisano.pdf, id=12654, 597.432pt x 844.83629pt>
+<3-BackMatter/Koriscenje-potpisano.pdf, id=12655, 597.432pt x 844.83629pt>
 File: 3-BackMatter/Koriscenje-potpisano.pdf Graphic file (type pdf)
 <use 3-BackMatter/Koriscenje-potpisano.pdf>
 Package pdftex.def Info: 3-BackMatter/Koriscenje-potpisano.pdf  used on input l
@@ -3451,7 +3447,7 @@ File: 3-BackMatter/Koriscenje-potpisano.pdf Graphic file (type pdf)
 Package pdftex.def Info: 3-BackMatter/Koriscenje-potpisano.pdf  used on input l
 ine 138.
 (pdftex.def)             Requested size: 597.43054pt x 844.83423pt.
-<3-BackMatter/Koriscenje-potpisano.pdf, id=12657, page=1, 597.432pt x 844.83629
+<3-BackMatter/Koriscenje-potpisano.pdf, id=12658, page=1, 597.432pt x 844.83629
 pt>
 File: 3-BackMatter/Koriscenje-potpisano.pdf Graphic file (type pdf)
 <use 3-BackMatter/Koriscenje-potpisano.pdf, page 1>
@@ -3479,7 +3475,7 @@ Package pdftex.def Info: 3-BackMatter/Koriscenje-potpisano.pdf , page1 used on
 input line 138.
 (pdftex.def)             Requested size: 597.93192pt x 845.54323pt.
  [103 <./3-BackMatter/Koriscenje-potpisano.pdf>]
-<3-BackMatter/Koriscenje-potpisano.pdf, id=12664, page=2, 597.432pt x 844.83629
+<3-BackMatter/Koriscenje-potpisano.pdf, id=12665, page=2, 597.432pt x 844.83629
 pt>
 File: 3-BackMatter/Koriscenje-potpisano.pdf Graphic file (type pdf)
 <use 3-BackMatter/Koriscenje-potpisano.pdf, page 2>
@@ -3529,15 +3525,12 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
  ) 
 Here is how much of TeX's memory you used:
  21849 strings out of 482584
  330649 string characters out of 5956256
- 620159 words of memory out of 5000000
+ 620160 words of memory out of 5000000
  35816 multiletter control sequences out of 15000+600000
  607051 words of font info for 104 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
@@ -3580,10 +3573,10 @@ public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/uc
 rr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (120 pages, 9837921 bytes).
+Output written on thesis.pdf (120 pages, 9837444 bytes).
 PDF statistics:
- 12834 PDF objects out of 15390 (max. 8388607)
- 7865 compressed objects within 79 object streams
+ 12835 PDF objects out of 15390 (max. 8388607)
+ 7866 compressed objects within 79 object streams
  454 named destinations out of 1000 (max. 500000)
  697 words of extra memory for PDF output out of 10000 (max. 10000000)
 

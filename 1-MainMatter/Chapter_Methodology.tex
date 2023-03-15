@@ -122,7 +122,7 @@ J(P_1,.., P_N)) = \sum_{i,j}p_i(j)log(\frac{p_i(j)}{\mu_j}),
 
 where  $\mu_j = (\sum_{i=1}^N p_i(j))/N$ is mean shortest path distribution.
 
-The first term in equation \ref{eq:dmeasure} compares local differences between two networks, and Jensen-Shannon divergence between $N$ shortest path distributions $J(P_{1},..., P_{N})$ is normed with network diameter $d(G)$. The second part determines global differences, computing  ${J(\mu_{G},\mu_{G^{'}})}$ between mean shortest path distributions. The D-measure ranges from $0$ to $1$. The lower D-measure is, the more similar networks are, and structures are isomorphic for D-measure $D = 0$.
+The first term in equation \ref{eq:dmeasure} compares local differences between two networks, and Jensen-Shannon divergence between $N$ shortest path distributions $J(P_{1},..., P_{N})$ is normed with network diameter $d(G)$. The second part determines global differences, computing  ${J(\mu_{G},\mu_{G^{'}})}$ between mean shortest path distributions. Parameter $0 \leq \omega \leq1$ determines importance of first and second term in D-measure. The D-measure ranges from $0$ to $1$. The lower D-measure is, the more similar networks are, and structures are isomorphic for D-measure $D = 0$.
 
 
 \section{Community structure}
