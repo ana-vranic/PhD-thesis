@@ -245,6 +245,50 @@ Gourab Ghoshal, Liping Chi, and Albert-L{\'a}szl{\'o} Barab{\'a}si.
 \newblock Uncovering the role of elementary processes in network evolution.
 \newblock {\em Scientific reports}, 3(1):1--8, 2013.
 
+\bibitem{velickovic2017graph}
+Petar Velickovic, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro
+  Lio, Yoshua Bengio, et~al.
+\newblock Graph attention networks.
+\newblock {\em stat}, 1050(20):10--48550, 2017.
+
+\bibitem{xu2018powerful}
+Keyulu Xu, Weihua Hu, Jure Leskovec, and Stefanie Jegelka.
+\newblock How powerful are graph neural networks?
+\newblock {\em arXiv preprint arXiv:1810.00826}, 2018.
+
+\bibitem{zhou2020graph}
+Jie Zhou, Ganqu Cui, Shengding Hu, Zhengyan Zhang, Cheng Yang, Zhiyuan Liu,
+  Lifeng Wang, Changcheng Li, and Maosong Sun.
+\newblock Graph neural networks: A review of methods and applications.
+\newblock {\em AI open}, 1:57--81, 2020.
+
+\bibitem{eksombatchai2018pixie}
+Chantat Eksombatchai, Pranav Jindal, Jerry~Zitao Liu, Yuchen Liu, Rahul Sharma,
+  Charles Sugnet, Mark Ulrich, and Jure Leskovec.
+\newblock Pixie: A system for recommending 3+ billion items to 200+ million
+  users in real-time.
+\newblock In {\em Proceedings of the 2018 world wide web conference}, pages
+  1775--1784, 2018.
+
+\bibitem{monti1902fake}
+Federico Monti, Fabrizio Frasca, Davide Eynard, Damon Mannion, and Michael~M
+  Bronstein.
+\newblock Fake news detection on social media using geometric deep learning.
+  2019.
+\newblock {\em arXiv preprint arXiv:1902.06673}, 1902.
+
+\bibitem{zhou2019optimization}
+Zhenpeng Zhou, Steven Kearnes, Li~Li, Richard~N Zare, and Patrick Riley.
+\newblock Optimization of molecules via deep reinforcement learning.
+\newblock {\em Scientific reports}, 9(1):1--10, 2019.
+
+\bibitem{stokes2020deep}
+Jonathan~M Stokes, Kevin Yang, Kyle Swanson, Wengong Jin, Andres Cubillos-Ruiz,
+  Nina~M Donghia, Craig~R MacNair, Shawn French, Lindsey~A Carfrae, Zohar
+  Bloom-Ackermann, et~al.
+\newblock A deep learning approach to antibiotic discovery.
+\newblock {\em Cell}, 180(4):688--702, 2020.
+
 \bibitem{caldarelli2007scalefree}
 Guido Caldarelli.
 \newblock {\em Scale-free networks: complex webs in nature and technology}.
