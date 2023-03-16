@@ -32,8 +32,8 @@
 \contentsline {chapter}{List of Tables}{xii}{section*.7}%
 \babel@toc {english}{}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}The complex networks}{4}{section.1.1}%
-\contentsline {section}{\numberline {1.2}In this thesis}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.1}Complex networks}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Thesis outline}{7}{section.1.2}%
 \babel@toc {english}{}
 \babel@toc {english}{}
 \contentsline {chapter}{\chapternumberline {2}Methodology}{9}{chapter.2}%
